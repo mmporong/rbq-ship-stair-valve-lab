@@ -1,0 +1,5 @@
+[
+  {"case_id":"dev-01","lateral_m":0.0,"yaw_deg":0.0,"joint_seed":201,"joint_noise_rad":0.0},
+  {"case_id":"dev-02","lateral_m":0.01,"yaw_deg":-1.0,"joint_seed":202,"joint_noise_rad":0.003},
+  {"case_id":"dev-03","lateral_m":-0.01,"yaw_deg":1.0,"joint_seed":203,"joint_noise_rad":0.003}
+]

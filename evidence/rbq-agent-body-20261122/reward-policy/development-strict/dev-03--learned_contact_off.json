@@ -1,0 +1,11 @@
+{
+  "case_id": "dev-03",
+  "candidate_id": "learned_contact_off",
+  "state_sha256": "fa6b27d5c90a284c43ff6e789a32e34ec0579e28d9d04621c111f0951b85f3c7",
+  "strict_success": false,
+  "complete_horizon": false,
+  "outcome": "early_termination",
+  "first_failure": "terrain_body_contact",
+  "simulated_s": 1.474,
+  "maximum_angle_deg": 0.0
+}

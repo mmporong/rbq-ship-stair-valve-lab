@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": {
+    "row_count": 17,
+    "physical_row_count": 14,
+    "planning_row_count": 3,
+    "all_scene_result_raw_hashes_match": true,
+    "all_raw_timesteps_match_scene": true,
+    "all_observed_settings_match_protocol": true,
+    "all_control_profiles_match_frozen_profile": true,
+    "frozen_source_commit": "2c91d83ff3a222bc2919c3156b93920ebcff5ec4",
+    "source_root_sha256_gate": true,
+    "official_reverification_count": 14,
+    "official_scene_count": 17,
+    "supplemental_failure_scene_count": 1,
+    "nominal_landings_evaluated": 20,
+    "nominal_raw_endpoint_s": 135.71500000028396,
+    "raw_files_copied": 0
+  }
+}

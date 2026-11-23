@@ -1,0 +1,16 @@
+50 0.2 order RL-RR-FL-FR foot_y 0.142 clear 0.03 [('RL', 30), ('RR', 0), ('FL', 96), ('FR', 68)]
+50 0.2 order RL-RR-FL-FR foot_y 0.2 clear 0.03 [('RL', 4), ('RR', 0), ('FL', 77), ('FR', 68)]
+50 0.2 order FL-FR-RL-RR foot_y 0.142 clear 0.03 [('FL', 121), ('FR', 0), ('RL', 0), ('RR', 0)]
+50 0.2 order FL-FR-RL-RR foot_y 0.2 clear 0.03 [('FL', 123), ('FR', 0), ('RL', 0), ('RR', 0)]
+50 0.2 order RL-FL-RR-FR foot_y 0.142 clear 0.03 [('RL', 30), ('FL', 52), ('RR', 0), ('FR', 68)]
+50 0.2 order RL-FL-RR-FR foot_y 0.2 clear 0.03 [('RL', 4), ('FL', 23), ('RR', 0), ('FR', 68)]
+50 0.2 order FR-RL-FL-RR foot_y 0.142 clear 0.03 [('FR', 122), ('RL', 0), ('FL', 0), ('RR', 0)]
+50 0.2 order FR-RL-FL-RR foot_y 0.2 clear 0.03 [('FR', 126), ('RL', 0), ('FL', 0), ('RR', 0)]
+50 0.2 order RL-RR-FL-FR foot_y 0.2 clear 0.015 [('RL', 46), ('RR', 0), ('FL', 131), ('FR', 319)]
+60 0.2 order RL-FL-RR-FR foot_y 0.2 clear 0.015 [('RL', 0), ('FL', 0), ('RR', 0), ('FR', 0)]
+
+real	10m32.420s
+user	0m0.015s
+sys	0m0.031s
+
+[exited with code 0]

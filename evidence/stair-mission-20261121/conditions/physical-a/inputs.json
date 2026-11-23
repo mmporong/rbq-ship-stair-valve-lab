@@ -1,0 +1,28 @@
+{
+  "controller_parent": "294c505a7870f0ab9b3df49e9dc1f0b1eb395903",
+  "tested_commit": "25117a003b785a0358ae77eaf2dd61628edf6d84",
+  "controller_grasp_motion_git_blob": "1c96608d94e0c85908d8e379559e8da7c10614f6",
+  "controller_patch": "controller.patch",
+  "controller_patch_sha256": "d1e631fe05006512cf0bd9a883a414ab9d236d0c2a36d281eec33c2285202102",
+  "protocol": "../../protocol.json",
+  "source": "fresh Windows CPU process per run",
+  "verified_reference": {
+    "samples": 36801,
+    "nominal_arrays_identical": true,
+    "anchor_s": 89.6,
+    "planner_sha256": {
+      "src/go2_wall/pose_search.py": "f88f4e4c632e7ee70f840525ccfdf37996db4281f0a732bd5167402fd70a1cbf",
+      "src/go2_wall/robot.py": "8c4bf030f05ee4fd7e05a9d96049eacf8d6a7d4589c1f181107c84101131ebb4",
+      "src/go2_wall/stairs.py": "a0dff6cef937dc81a1f3ac126382dd9ec0bd243111c5e825cd5017d3de35696f",
+      "src/go2_wall/statics.py": "30a9b1da0e6b057af33b4012d43487907296d5412e5447afd61e7b9f5e070841",
+      "src/go2_wall/transition.py": "2e1e3a502876854c4a6126b522bfd3f65e92bbeff33e0880c61e30e831bb87b1",
+      "tools/probe_stair_transfer.py": "a9208f54d5df499e158bb3f92ed36457cb8bd833297cf7fdcfe4f98639d6a39f",
+      "tools/replay_stair_entry.py": "8bd0a7e2a5f61b7415b7fe35d4bef59348f5f6bf4e0ba484a36f969e9d92b80c",
+      "tools/replay_stair_sequence.py": "b1f8584915aeb189c825d9a95c16c20551e5af50211c8372a65550eeb4394e24",
+      "tools/replay_stair_transfer.py": "d4e0fe0554fffaff751791ccc47353c65683f5e2376af4e17261b0917f789514",
+      "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7"
+    },
+    "cache_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac"
+  },
+  "evaluation": "Each physical case starts on the floor. A failed prefix establishes a failed full requirement at the first measured violation. An intact prefix must continue in a fresh floor-to-floor process before a case can pass."
+}

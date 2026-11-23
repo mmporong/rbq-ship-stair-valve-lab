@@ -1,0 +1,41 @@
+{
+  "control_source_sha256": "af752d2fe2bd424a3722a693a06b67c4e1ddf0cbec1487a2ed9084dcbf80f1a4",
+  "simulation_source_sha256": "780aa8467d1d46640dde9b4a3b80c87f45bc0077edb68a2e9f5f9075d3be3d1f",
+  "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+  "reference_sha256": "eb4277b6bf9acb727eef323dbd3e40cbc20455d8e6633b31c38c3b5cb86d5773",
+  "clock_s": {
+    "physics": 0.001,
+    "torque": 0.005,
+    "ppo": 0.02,
+    "horizon": 127.75
+  },
+  "schema": "rbq_agent_recovery_selection_freeze_v1",
+  "protocol_sha256": "d14e1888135846aed34c6d0b3a69b2e8b491c49e1b3859488540b49660f5a174",
+  "decision_relpath": "decision-v3/summary.json",
+  "decision_sha256": "44c395fd32cbf3882e90f08c04a35dc5e2d286e1e59fa397c286ddc0f467dfb2",
+  "adopted_candidate": "contact_gated_reference",
+  "development_best_fixed": "contact_gated_reference",
+  "without_observation_first_proposal": "contact_gated_reference",
+  "evaluated_modes": [
+    "contact_gated_reference",
+    "edge_slow_rule",
+    "joint_reference_pd",
+    "no_intervention",
+    "phase_25",
+    "teacher_open_loop"
+  ],
+  "scoring_source_sha256": "a67d4ddd84f9076b00c907e6746c9e3d02253de513e777801d1a4e9a6bcf246a",
+  "engine_commit": "5e9bfe804d8545f0d5fb64a1039e9ed44ca6480e",
+  "host_commit": "a4fd299",
+  "ppo_bundle_hashes": {
+    "actor.npz": "b3c6b881cc0951c0558ea954c5a4851952d307cccbf68a3f121238023802db7e",
+    "fixtures.npz": "04cc403e736e07a172e25abf792d0d3b617bc5b194fcbe68b0e0017adda73d39",
+    "manifest.json": "862c1920a1ae78a8afadaf5777150e34b79ae89f1b1902fdc7be0509c8204c12",
+    "scene.xml": "201a0532ace8cecf4acb2b252cd449e66414bf74596f53717969592eade52730",
+    "starts.npz": "a504077c2a49286dec018191b402c67f671f93d1697d074b7e1a2bf35dc44c26"
+  },
+  "demonstration_sha256": "362cbd836802d2f29b8febd2917a4ba987d9990bea4e02ec32f84f7978bf96b9",
+  "video_case": "First precommitted holdout case in the input file, regardless of outcome.",
+  "native_protocol": "Frozen PPO checkpoint 9100 with no_intervention, phase_25 and edge_slow_rule on the original fixed-arm 19.96 s model.",
+  "analysis": "Both blocks are paired. The best fixed and agent choice share a unique physical rollout when their candidate ID is identical."
+}

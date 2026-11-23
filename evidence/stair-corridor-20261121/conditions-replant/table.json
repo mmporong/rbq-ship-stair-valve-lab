@@ -1,0 +1,1412 @@
+{
+  "schema": 1,
+  "counts": {
+    "success": 0,
+    "planning_failed": 3,
+    "physical_failed": 14,
+    "pending": 0
+  },
+  "scope_verdict": "success means success only within through-task scope",
+  "schedule": {
+    "original_landings": 156,
+    "supplementary_replant_landings": 1,
+    "total_landings": 157,
+    "nominal_short_scope_landings_evaluated": 20,
+    "nominal_raw_endpoint_s": 135.71500000028396
+  },
+  "rows": [
+    {
+      "id": "nominal",
+      "label": "\uae30\uc900 \uc870\uac74",
+      "group": "single_factor",
+      "changes": {},
+      "execution": "physical",
+      "scope": "through-task",
+      "physics_timestep_s": 0.001,
+      "actuation_period_s": 0.005,
+      "impratio": 100.0,
+      "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "control_profile": {
+        "name": "rl-mid-replant-k3075-v1",
+        "trigger_landing_index": 15,
+        "trigger_time_s": 78.8,
+        "trigger_leg": "RR",
+        "replant_leg": "RL",
+        "replant_time_s": 81.6,
+        "duration_s": 2.8,
+        "kind": "physical same-tread unload, swing, and relanding",
+        "slip_spring_gain_n_per_m": 3075.0,
+        "slip_spring_active_s": [
+          116.65,
+          129.4
+        ],
+        "slip_spring_leg": "RL",
+        "terminal_overtravel_deg": 1.3,
+        "stance_spring_gain_n_per_m": 2500.0,
+        "apply_replant_sha256_lf": "3edced7a592966b091070e83468cf8308a2caeef9cd2319d31e47b67d817400a",
+        "replant_landings_sha256_lf": "3babe7ef96e214b4c31c4091c7598d05bdcbe9455845e9d4bfb4607fecbbbdf0",
+        "source_file": "tools/stair_mission_control_profile.py"
+      },
+      "raw_endpoint_s": 135.71500000028396,
+      "m1": {
+        "passed": false,
+        "first_failure": {
+          "stage": "continuity",
+          "time_s": null,
+          "metric": "qp_relaxed_ticks",
+          "measured": 19,
+          "limit": 0,
+          "message": "run metadata violates the mission contract"
+        }
+      },
+      "n1": {
+        "passed": false,
+        "landings_evaluated": 20,
+        "max_stance_slip_mm": 12.804,
+        "first_failure": {
+          "stage": "return",
+          "time_s": 127.83100000024632,
+          "metric": "stance_slip_m",
+          "measured": 0.010000207723255565,
+          "limit": "<= 0.01"
+        }
+      },
+      "outcome": "physical_failed",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.83100000024632,
+        "metric": "stance_slip_m",
+        "measured": 0.010000207723255565,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 127829,
+        "time_s": 127.83000000024632,
+        "path": "scenes/nominal.png"
+      },
+      "source": {
+        "result": ".omx/mission-success-20261121/conditions-replant-one-thread/nominal/result.json",
+        "scene": ".omx/mission-success-20261121/conditions-replant-one-thread/nominal/scene.json",
+        "raw": ".omx/mission-success-20261121/conditions-replant-one-thread/nominal/mission.npz",
+        "result_sha256": "42459578e3b38aa8437156e0680c54b171d21e5a5110fc4da0e0e7c78a1610d6",
+        "scene_sha256": "1fb66656d94afce7c2eff5ec26dd5bdbcd96113b0996f80e26d0420e418b1bf7",
+        "raw_sha256": "eeb6acd2fb1efb17a80014a5faa6d7ff8584efac4939a0e389d2d3d9fc1f4a87"
+      },
+      "official_reverification": {
+        "reproduced": true,
+        "path": "raw-verification/nominal.json"
+      }
+    },
+    {
+      "id": "slope_60",
+      "label": "\uc120\ubc15\ud615 \uacbd\uc0ac 60\u00b0",
+      "group": "single_factor",
+      "changes": {
+        "slope_deg": 60
+      },
+      "execution": "planning",
+      "scope": "reference_generation",
+      "m1": {
+        "passed": null,
+        "reached": false,
+        "first_failure": null
+      },
+      "n1": {
+        "passed": null,
+        "reached": false,
+        "landings_evaluated": 0
+      },
+      "outcome": "planning_failed",
+      "first_failure": {
+        "stage": "segment_16_shift",
+        "time_s": 13.6,
+        "metric": "unexpected_overlap_m",
+        "measured": 0.000684301907967113,
+        "limit": 0.0001
+      },
+      "snapshot": {
+        "type": "planned pose",
+        "time_s": 13.6,
+        "path": "scenes/slope_60.png"
+      },
+      "source": {
+        "failure": "evidence/stair-mission-20261121/conditions/v2/condition-60.failure.json",
+        "failure_sha256": "b5d9b3c8c089276d4b3f30b4e4cd92b9296a6ee51747161c06bc333075a5e0af",
+        "planner_source_sha256": {
+          "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+          "tools/replay_stair_sequence.py": "b1f8584915aeb189c825d9a95c16c20551e5af50211c8372a65550eeb4394e24",
+          "tools/probe_stair_transfer.py": "a9208f54d5df499e158bb3f92ed36457cb8bd833297cf7fdcfe4f98639d6a39f",
+          "tools/replay_stair_entry.py": "8bd0a7e2a5f61b7415b7fe35d4bef59348f5f6bf4e0ba484a36f969e9d92b80c",
+          "tools/replay_stair_transfer.py": "d4e0fe0554fffaff751791ccc47353c65683f5e2376af4e17261b0917f789514",
+          "src/go2_wall/pose_search.py": "f88f4e4c632e7ee70f840525ccfdf37996db4281f0a732bd5167402fd70a1cbf",
+          "src/go2_wall/stairs.py": "a0dff6cef937dc81a1f3ac126382dd9ec0bd243111c5e825cd5017d3de35696f",
+          "src/go2_wall/transition.py": "2e1e3a502876854c4a6126b522bfd3f65e92bbeff33e0880c61e30e831bb87b1",
+          "src/go2_wall/robot.py": "8c4bf030f05ee4fd7e05a9d96049eacf8d6a7d4589c1f181107c84101131ebb4",
+          "src/go2_wall/statics.py": "30a9b1da0e6b057af33b4012d43487907296d5412e5447afd61e7b9f5e070841"
+        }
+      }
+    },
+    {
+      "id": "rise_165",
+      "label": "\ub2e8 \ub192\uc774 165 mm",
+      "group": "single_factor",
+      "changes": {
+        "rise_m": 0.165
+      },
+      "execution": "planning",
+      "scope": "reference_generation",
+      "m1": {
+        "passed": null,
+        "reached": false,
+        "first_failure": null
+      },
+      "n1": {
+        "passed": null,
+        "reached": false,
+        "landings_evaluated": 0
+      },
+      "outcome": "planning_failed",
+      "first_failure": {
+        "stage": "segment_58_swing",
+        "time_s": 55.95999999999998,
+        "metric": "max_foot_ik_error_m",
+        "measured": 0.002213606451974058,
+        "limit": 0.002
+      },
+      "snapshot": {
+        "type": "planned pose",
+        "time_s": 55.95999999999998,
+        "path": "scenes/rise_165.png"
+      },
+      "source": {
+        "failure": "evidence/stair-mission-20261121/conditions/v2/condition-165.failure.json",
+        "failure_sha256": "561e3b2f67cedf0bfba6ea80ccc9d7f2ccee3d80246dac3432273f2286d6fe45",
+        "planner_source_sha256": {
+          "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+          "tools/replay_stair_sequence.py": "b1f8584915aeb189c825d9a95c16c20551e5af50211c8372a65550eeb4394e24",
+          "tools/probe_stair_transfer.py": "a9208f54d5df499e158bb3f92ed36457cb8bd833297cf7fdcfe4f98639d6a39f",
+          "tools/replay_stair_entry.py": "8bd0a7e2a5f61b7415b7fe35d4bef59348f5f6bf4e0ba484a36f969e9d92b80c",
+          "tools/replay_stair_transfer.py": "d4e0fe0554fffaff751791ccc47353c65683f5e2376af4e17261b0917f789514",
+          "src/go2_wall/pose_search.py": "f88f4e4c632e7ee70f840525ccfdf37996db4281f0a732bd5167402fd70a1cbf",
+          "src/go2_wall/stairs.py": "a0dff6cef937dc81a1f3ac126382dd9ec0bd243111c5e825cd5017d3de35696f",
+          "src/go2_wall/transition.py": "2e1e3a502876854c4a6126b522bfd3f65e92bbeff33e0880c61e30e831bb87b1",
+          "src/go2_wall/robot.py": "8c4bf030f05ee4fd7e05a9d96049eacf8d6a7d4589c1f181107c84101131ebb4",
+          "src/go2_wall/statics.py": "30a9b1da0e6b057af33b4012d43487907296d5412e5447afd61e7b9f5e070841"
+        }
+      }
+    },
+    {
+      "id": "rise_200",
+      "label": "\ub2e8 \ub192\uc774 200 mm",
+      "group": "single_factor",
+      "changes": {
+        "rise_m": 0.2
+      },
+      "execution": "planning",
+      "scope": "reference_generation",
+      "m1": {
+        "passed": null,
+        "reached": false,
+        "first_failure": null
+      },
+      "n1": {
+        "passed": null,
+        "reached": false,
+        "landings_evaluated": 0
+      },
+      "outcome": "planning_failed",
+      "first_failure": {
+        "stage": "segment_36_shift",
+        "time_s": 34.51999999999999,
+        "metric": "max_foot_ik_error_m",
+        "measured": 0.006968599759779576,
+        "limit": 0.002
+      },
+      "snapshot": {
+        "type": "planned pose",
+        "time_s": 34.51999999999999,
+        "path": "scenes/rise_200.png"
+      },
+      "source": {
+        "failure": "evidence/stair-mission-20261121/conditions/v2/condition-200.failure.json",
+        "failure_sha256": "3d2a741935b8ab2ce016483eb2bc63167408a400816c65d3913fea77fcbf1c92",
+        "planner_source_sha256": {
+          "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+          "tools/replay_stair_sequence.py": "b1f8584915aeb189c825d9a95c16c20551e5af50211c8372a65550eeb4394e24",
+          "tools/probe_stair_transfer.py": "a9208f54d5df499e158bb3f92ed36457cb8bd833297cf7fdcfe4f98639d6a39f",
+          "tools/replay_stair_entry.py": "8bd0a7e2a5f61b7415b7fe35d4bef59348f5f6bf4e0ba484a36f969e9d92b80c",
+          "tools/replay_stair_transfer.py": "d4e0fe0554fffaff751791ccc47353c65683f5e2376af4e17261b0917f789514",
+          "src/go2_wall/pose_search.py": "f88f4e4c632e7ee70f840525ccfdf37996db4281f0a732bd5167402fd70a1cbf",
+          "src/go2_wall/stairs.py": "a0dff6cef937dc81a1f3ac126382dd9ec0bd243111c5e825cd5017d3de35696f",
+          "src/go2_wall/transition.py": "2e1e3a502876854c4a6126b522bfd3f65e92bbeff33e0880c61e30e831bb87b1",
+          "src/go2_wall/robot.py": "8c4bf030f05ee4fd7e05a9d96049eacf8d6a7d4589c1f181107c84101131ebb4",
+          "src/go2_wall/statics.py": "30a9b1da0e6b057af33b4012d43487907296d5412e5447afd61e7b9f5e070841"
+        }
+      }
+    },
+    {
+      "id": "floor_mu_050",
+      "label": "\ubc1c\u2013\uacc4\ub2e8 \ub9c8\ucc30 0.50",
+      "group": "single_factor",
+      "changes": {
+        "floor_mu": 0.5
+      },
+      "execution": "physical",
+      "scope": "through-task",
+      "physics_timestep_s": 0.001,
+      "actuation_period_s": 0.005,
+      "impratio": 100.0,
+      "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "control_profile": {
+        "name": "rl-mid-replant-k3075-v1",
+        "trigger_landing_index": 15,
+        "trigger_time_s": 78.8,
+        "trigger_leg": "RR",
+        "replant_leg": "RL",
+        "replant_time_s": 81.6,
+        "duration_s": 2.8,
+        "kind": "physical same-tread unload, swing, and relanding",
+        "slip_spring_gain_n_per_m": 3075.0,
+        "slip_spring_active_s": [
+          116.65,
+          129.4
+        ],
+        "slip_spring_leg": "RL",
+        "terminal_overtravel_deg": 1.3,
+        "stance_spring_gain_n_per_m": 2500.0,
+        "apply_replant_sha256_lf": "3edced7a592966b091070e83468cf8308a2caeef9cd2319d31e47b67d817400a",
+        "replant_landings_sha256_lf": "3babe7ef96e214b4c31c4091c7598d05bdcbe9455845e9d4bfb4607fecbbbdf0",
+        "source_file": "tools/stair_mission_control_profile.py"
+      },
+      "raw_endpoint_s": 135.71500000028396,
+      "m1": {
+        "passed": false,
+        "first_failure": {
+          "stage": "continuity",
+          "time_s": null,
+          "metric": "qp_relaxed_ticks",
+          "measured": 38,
+          "limit": 0,
+          "message": "run metadata violates the mission contract"
+        }
+      },
+      "n1": {
+        "passed": false,
+        "landings_evaluated": 20,
+        "max_stance_slip_mm": 12.845,
+        "first_failure": {
+          "stage": "return",
+          "time_s": 127.65600000024548,
+          "metric": "qp_attempt",
+          "measured": 1.0,
+          "limit": "== 0"
+        }
+      },
+      "outcome": "physical_failed",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.65600000024548,
+        "metric": "qp_attempt",
+        "measured": 1.0,
+        "limit": "== 0"
+      },
+      "snapshot": {
+        "raw_index": 127654,
+        "time_s": 127.65500000024548,
+        "path": "scenes/floor_mu_050.png"
+      },
+      "source": {
+        "result": ".omx/mission-success-20261121/conditions-replant-one-thread/floor_mu_050/result.json",
+        "scene": ".omx/mission-success-20261121/conditions-replant-one-thread/floor_mu_050/scene.json",
+        "raw": ".omx/mission-success-20261121/conditions-replant-one-thread/floor_mu_050/mission.npz",
+        "result_sha256": "15a1bd03390ba9d236d1104bdf9a59668e6eae7d1ac2e541ad3654ceb5961fd6",
+        "scene_sha256": "399d2745f45ca6ed29cf70124f9d9f55d8198f8143a9b37b740f4846ed10c8d7",
+        "raw_sha256": "223a9d632befeed8cb32a021b1a4eab11388a1b6700124fdbd7e9dac071db360"
+      },
+      "official_reverification": {
+        "reproduced": true,
+        "path": "raw-verification/floor_mu_050.json"
+      }
+    },
+    {
+      "id": "floor_mu_080",
+      "label": "\ubc1c\u2013\uacc4\ub2e8 \ub9c8\ucc30 0.80",
+      "group": "single_factor",
+      "changes": {
+        "floor_mu": 0.8
+      },
+      "execution": "physical",
+      "scope": "through-task",
+      "physics_timestep_s": 0.001,
+      "actuation_period_s": 0.005,
+      "impratio": 100.0,
+      "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "control_profile": {
+        "name": "rl-mid-replant-k3075-v1",
+        "trigger_landing_index": 15,
+        "trigger_time_s": 78.8,
+        "trigger_leg": "RR",
+        "replant_leg": "RL",
+        "replant_time_s": 81.6,
+        "duration_s": 2.8,
+        "kind": "physical same-tread unload, swing, and relanding",
+        "slip_spring_gain_n_per_m": 3075.0,
+        "slip_spring_active_s": [
+          116.65,
+          129.4
+        ],
+        "slip_spring_leg": "RL",
+        "terminal_overtravel_deg": 1.3,
+        "stance_spring_gain_n_per_m": 2500.0,
+        "apply_replant_sha256_lf": "3edced7a592966b091070e83468cf8308a2caeef9cd2319d31e47b67d817400a",
+        "replant_landings_sha256_lf": "3babe7ef96e214b4c31c4091c7598d05bdcbe9455845e9d4bfb4607fecbbbdf0",
+        "source_file": "tools/stair_mission_control_profile.py"
+      },
+      "raw_endpoint_s": 135.71500000028396,
+      "m1": {
+        "passed": false,
+        "first_failure": {
+          "stage": "continuity",
+          "time_s": null,
+          "metric": "qp_relaxed_ticks",
+          "measured": 11,
+          "limit": 0,
+          "message": "run metadata violates the mission contract"
+        }
+      },
+      "n1": {
+        "passed": false,
+        "landings_evaluated": 20,
+        "max_stance_slip_mm": 12.877,
+        "first_failure": {
+          "stage": "return",
+          "time_s": 127.83000000024632,
+          "metric": "stance_slip_m",
+          "measured": 0.010000560389329437,
+          "limit": "<= 0.01"
+        }
+      },
+      "outcome": "physical_failed",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.83000000024632,
+        "metric": "stance_slip_m",
+        "measured": 0.010000560389329437,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 127828,
+        "time_s": 127.82900000024631,
+        "path": "scenes/floor_mu_080.png"
+      },
+      "source": {
+        "result": ".omx/mission-success-20261121/conditions-replant-one-thread/floor_mu_080/result.json",
+        "scene": ".omx/mission-success-20261121/conditions-replant-one-thread/floor_mu_080/scene.json",
+        "raw": ".omx/mission-success-20261121/conditions-replant-one-thread/floor_mu_080/mission.npz",
+        "result_sha256": "64c5c8e1c0b554558313241227bfd430d1d9369c0f6ce901c649833d3b061238",
+        "scene_sha256": "f4d6a549923c1bbf848955f0211235f06a5a379111fa486c0273883ffc62f150",
+        "raw_sha256": "8da14f91532c803be993e3274dd2e027dba0e6a48b6181c6214fd88d715de7fa"
+      },
+      "official_reverification": {
+        "reproduced": true,
+        "path": "raw-verification/floor_mu_080.json"
+      }
+    },
+    {
+      "id": "resistance_5",
+      "label": "\ubc38\ube0c \uc800\ud56d 5 N\u00b7m",
+      "group": "single_factor",
+      "changes": {
+        "resistance_nm": 5
+      },
+      "execution": "physical",
+      "scope": "through-task",
+      "physics_timestep_s": 0.001,
+      "actuation_period_s": 0.005,
+      "impratio": 100.0,
+      "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "control_profile": {
+        "name": "rl-mid-replant-k3075-v1",
+        "trigger_landing_index": 15,
+        "trigger_time_s": 78.8,
+        "trigger_leg": "RR",
+        "replant_leg": "RL",
+        "replant_time_s": 81.6,
+        "duration_s": 2.8,
+        "kind": "physical same-tread unload, swing, and relanding",
+        "slip_spring_gain_n_per_m": 3075.0,
+        "slip_spring_active_s": [
+          116.65,
+          129.4
+        ],
+        "slip_spring_leg": "RL",
+        "terminal_overtravel_deg": 1.3,
+        "stance_spring_gain_n_per_m": 2500.0,
+        "apply_replant_sha256_lf": "3edced7a592966b091070e83468cf8308a2caeef9cd2319d31e47b67d817400a",
+        "replant_landings_sha256_lf": "3babe7ef96e214b4c31c4091c7598d05bdcbe9455845e9d4bfb4607fecbbbdf0",
+        "source_file": "tools/stair_mission_control_profile.py"
+      },
+      "raw_endpoint_s": 135.71500000028396,
+      "m1": {
+        "passed": false,
+        "first_failure": {
+          "stage": "operate",
+          "time_s": 100.62000000011639,
+          "metric": "max_base_shift_m",
+          "measured": 0.01002688798756198,
+          "limit": "<= 0.01",
+          "message": "M1 stability limit exceeded"
+        }
+      },
+      "n1": {
+        "passed": false,
+        "landings_evaluated": 20,
+        "max_stance_slip_mm": 12.956,
+        "first_failure": {
+          "stage": "operate",
+          "time_s": 100.92600000011785,
+          "metric": "base_track_m",
+          "measured": 0.030028597482625857,
+          "limit": "<= 0.03"
+        }
+      },
+      "outcome": "physical_failed",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 100.62000000011639,
+        "metric": "max_base_shift_m",
+        "measured": 0.01002688798756198,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 100618,
+        "time_s": 100.61900000011639,
+        "path": "scenes/resistance_5.png"
+      },
+      "source": {
+        "result": ".omx/mission-success-20261121/conditions-replant-one-thread/resistance_5/result.json",
+        "scene": ".omx/mission-success-20261121/conditions-replant-one-thread/resistance_5/scene.json",
+        "raw": ".omx/mission-success-20261121/conditions-replant-one-thread/resistance_5/mission.npz",
+        "result_sha256": "891689dc0bd1e09fcf569740a230ebc67bd9e3306193473e379db1c4616cea32",
+        "scene_sha256": "bbb4232f91000e92a85a37d1f0d644c60f3138d7c83e808078e34fdfac9bb466",
+        "raw_sha256": "541c0e59eb1b30c21cdd66089968c425c4f1d0c841f6a086ba8b3b3c8dda3b08"
+      },
+      "official_reverification": {
+        "reproduced": true,
+        "path": "raw-verification/resistance_5.json"
+      }
+    },
+    {
+      "id": "resistance_15",
+      "label": "\ubc38\ube0c \uc800\ud56d 15 N\u00b7m",
+      "group": "single_factor",
+      "changes": {
+        "resistance_nm": 15
+      },
+      "execution": "physical",
+      "scope": "through-task",
+      "physics_timestep_s": 0.001,
+      "actuation_period_s": 0.005,
+      "impratio": 100.0,
+      "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "control_profile": {
+        "name": "rl-mid-replant-k3075-v1",
+        "trigger_landing_index": 15,
+        "trigger_time_s": 78.8,
+        "trigger_leg": "RR",
+        "replant_leg": "RL",
+        "replant_time_s": 81.6,
+        "duration_s": 2.8,
+        "kind": "physical same-tread unload, swing, and relanding",
+        "slip_spring_gain_n_per_m": 3075.0,
+        "slip_spring_active_s": [
+          116.65,
+          129.4
+        ],
+        "slip_spring_leg": "RL",
+        "terminal_overtravel_deg": 1.3,
+        "stance_spring_gain_n_per_m": 2500.0,
+        "apply_replant_sha256_lf": "3edced7a592966b091070e83468cf8308a2caeef9cd2319d31e47b67d817400a",
+        "replant_landings_sha256_lf": "3babe7ef96e214b4c31c4091c7598d05bdcbe9455845e9d4bfb4607fecbbbdf0",
+        "source_file": "tools/stair_mission_control_profile.py"
+      },
+      "raw_endpoint_s": 135.71500000028396,
+      "m1": {
+        "passed": false,
+        "first_failure": {
+          "stage": "operate",
+          "time_s": 102.57900000012575,
+          "metric": "max_base_shift_m",
+          "measured": 0.010011330221381108,
+          "limit": "<= 0.01",
+          "message": "M1 stability limit exceeded"
+        }
+      },
+      "n1": {
+        "passed": false,
+        "landings_evaluated": 20,
+        "max_stance_slip_mm": 9.798,
+        "first_failure": {
+          "stage": "operate",
+          "time_s": 103.7840000001315,
+          "metric": "unexpected_contact_force_n",
+          "measured": 70.74256009369032,
+          "limit": "<= 10 N"
+        }
+      },
+      "outcome": "physical_failed",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 102.57900000012575,
+        "metric": "max_base_shift_m",
+        "measured": 0.010011330221381108,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 102577,
+        "time_s": 102.57800000012574,
+        "path": "scenes/resistance_15.png"
+      },
+      "source": {
+        "result": ".omx/mission-success-20261121/conditions-replant-one-thread/resistance_15/result.json",
+        "scene": ".omx/mission-success-20261121/conditions-replant-one-thread/resistance_15/scene.json",
+        "raw": ".omx/mission-success-20261121/conditions-replant-one-thread/resistance_15/mission.npz",
+        "result_sha256": "2fac137e7d86b5ff81cdb1227f24a9689f56e10cf33c3726f710659f925cea82",
+        "scene_sha256": "37a9d8a03f209aa97ef23f3b23cde44f6b8d29fc8c6afdcca9c5437879851217",
+        "raw_sha256": "7bdf6696549205b18d067d6152b4c91a9742c4fcd492359028736ed5053acf2d"
+      },
+      "official_reverification": {
+        "reproduced": true,
+        "path": "raw-verification/resistance_15.json"
+      }
+    },
+    {
+      "id": "sensitivity_lever_m_0_1",
+      "label": "\ub808\ubc84 0.10 m",
+      "group": "sensitivity",
+      "changes": {
+        "lever_m": 0.1
+      },
+      "execution": "physical",
+      "scope": "through-task",
+      "physics_timestep_s": 0.001,
+      "actuation_period_s": 0.005,
+      "impratio": 100.0,
+      "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "control_profile": {
+        "name": "rl-mid-replant-k3075-v1",
+        "trigger_landing_index": 15,
+        "trigger_time_s": 78.8,
+        "trigger_leg": "RR",
+        "replant_leg": "RL",
+        "replant_time_s": 81.6,
+        "duration_s": 2.8,
+        "kind": "physical same-tread unload, swing, and relanding",
+        "slip_spring_gain_n_per_m": 3075.0,
+        "slip_spring_active_s": [
+          116.65,
+          129.4
+        ],
+        "slip_spring_leg": "RL",
+        "terminal_overtravel_deg": 1.3,
+        "stance_spring_gain_n_per_m": 2500.0,
+        "apply_replant_sha256_lf": "3edced7a592966b091070e83468cf8308a2caeef9cd2319d31e47b67d817400a",
+        "replant_landings_sha256_lf": "3babe7ef96e214b4c31c4091c7598d05bdcbe9455845e9d4bfb4607fecbbbdf0",
+        "source_file": "tools/stair_mission_control_profile.py"
+      },
+      "raw_endpoint_s": 135.71500000028396,
+      "m1": {
+        "passed": false,
+        "first_failure": {
+          "stage": "operate",
+          "time_s": 100.5580000001161,
+          "metric": "pad_contact_loss_s",
+          "measured": 0.021000000000100272,
+          "limit": "<= 0.02",
+          "message": "a pad lost contact too long"
+        }
+      },
+      "n1": {
+        "passed": false,
+        "landings_evaluated": 20,
+        "max_stance_slip_mm": 11.785,
+        "first_failure": {
+          "stage": "return",
+          "time_s": 127.97100000024699,
+          "metric": "qp_attempt",
+          "measured": 1.0,
+          "limit": "== 0"
+        }
+      },
+      "outcome": "physical_failed",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 100.5580000001161,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.021000000000100272,
+        "limit": "<= 0.02"
+      },
+      "snapshot": {
+        "raw_index": 100556,
+        "time_s": 100.55700000011609,
+        "path": "scenes/sensitivity_lever_m_0_1.png"
+      },
+      "source": {
+        "result": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_lever_m_0_1/result.json",
+        "scene": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_lever_m_0_1/scene.json",
+        "raw": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_lever_m_0_1/mission.npz",
+        "result_sha256": "2eff194713598d3d5d816d4aad0f4a67ef01ae03f6cc6e28d4fd2c01f4ece32d",
+        "scene_sha256": "c57dde1362ea1e22d064a28b37b01fae9b2b4730e1db72868779a67684f9fe88",
+        "raw_sha256": "adfd57078fca2e5878b3e6d6cfb75623d38cbb9502c948360605843c509190b1"
+      },
+      "official_reverification": {
+        "reproduced": true,
+        "path": "raw-verification/sensitivity_lever_m_0_1.json"
+      }
+    },
+    {
+      "id": "sensitivity_lever_m_0_14",
+      "label": "\ub808\ubc84 0.14 m",
+      "group": "sensitivity",
+      "changes": {
+        "lever_m": 0.14
+      },
+      "execution": "physical",
+      "scope": "through-task",
+      "physics_timestep_s": 0.001,
+      "actuation_period_s": 0.005,
+      "impratio": 100.0,
+      "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "control_profile": {
+        "name": "rl-mid-replant-k3075-v1",
+        "trigger_landing_index": 15,
+        "trigger_time_s": 78.8,
+        "trigger_leg": "RR",
+        "replant_leg": "RL",
+        "replant_time_s": 81.6,
+        "duration_s": 2.8,
+        "kind": "physical same-tread unload, swing, and relanding",
+        "slip_spring_gain_n_per_m": 3075.0,
+        "slip_spring_active_s": [
+          116.65,
+          129.4
+        ],
+        "slip_spring_leg": "RL",
+        "terminal_overtravel_deg": 1.3,
+        "stance_spring_gain_n_per_m": 2500.0,
+        "apply_replant_sha256_lf": "3edced7a592966b091070e83468cf8308a2caeef9cd2319d31e47b67d817400a",
+        "replant_landings_sha256_lf": "3babe7ef96e214b4c31c4091c7598d05bdcbe9455845e9d4bfb4607fecbbbdf0",
+        "source_file": "tools/stair_mission_control_profile.py"
+      },
+      "raw_endpoint_s": 135.71500000028396,
+      "m1": {
+        "passed": false,
+        "first_failure": {
+          "stage": "continuity",
+          "time_s": null,
+          "metric": "qp_relaxed_ticks",
+          "measured": 20,
+          "limit": 0,
+          "message": "run metadata violates the mission contract"
+        }
+      },
+      "n1": {
+        "passed": false,
+        "landings_evaluated": 20,
+        "max_stance_slip_mm": 13.219,
+        "first_failure": {
+          "stage": "return",
+          "time_s": 125.93900000023729,
+          "metric": "stance_slip_m",
+          "measured": 0.010000001126633696,
+          "limit": "<= 0.01"
+        }
+      },
+      "outcome": "physical_failed",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 125.93900000023729,
+        "metric": "stance_slip_m",
+        "measured": 0.010000001126633696,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 125937,
+        "time_s": 125.93800000023728,
+        "path": "scenes/sensitivity_lever_m_0_14.png"
+      },
+      "source": {
+        "result": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_lever_m_0_14/result.json",
+        "scene": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_lever_m_0_14/scene.json",
+        "raw": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_lever_m_0_14/mission.npz",
+        "result_sha256": "953fa6c026e74e196bb95ec64d24e29961d1a480802e08b100179c755c5eef40",
+        "scene_sha256": "9637c1afce9d48612a7a3b98aadae1b395334b0aa7ec03a0f40b6f0a8e1ef977",
+        "raw_sha256": "00858682a148af218ca70d3db57a80437acf677d9451ca2cd29e8eedc3464063"
+      },
+      "official_reverification": {
+        "reproduced": true,
+        "path": "raw-verification/sensitivity_lever_m_0_14.json"
+      }
+    },
+    {
+      "id": "sensitivity_pad_mu_0_6",
+      "label": "\ud328\ub4dc \ub9c8\ucc30 0.6",
+      "group": "sensitivity",
+      "changes": {
+        "pad_mu": 0.6
+      },
+      "execution": "physical",
+      "scope": "through-task",
+      "physics_timestep_s": 0.001,
+      "actuation_period_s": 0.005,
+      "impratio": 100.0,
+      "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "control_profile": {
+        "name": "rl-mid-replant-k3075-v1",
+        "trigger_landing_index": 15,
+        "trigger_time_s": 78.8,
+        "trigger_leg": "RR",
+        "replant_leg": "RL",
+        "replant_time_s": 81.6,
+        "duration_s": 2.8,
+        "kind": "physical same-tread unload, swing, and relanding",
+        "slip_spring_gain_n_per_m": 3075.0,
+        "slip_spring_active_s": [
+          116.65,
+          129.4
+        ],
+        "slip_spring_leg": "RL",
+        "terminal_overtravel_deg": 1.3,
+        "stance_spring_gain_n_per_m": 2500.0,
+        "apply_replant_sha256_lf": "3edced7a592966b091070e83468cf8308a2caeef9cd2319d31e47b67d817400a",
+        "replant_landings_sha256_lf": "3babe7ef96e214b4c31c4091c7598d05bdcbe9455845e9d4bfb4607fecbbbdf0",
+        "source_file": "tools/stair_mission_control_profile.py"
+      },
+      "raw_endpoint_s": 135.71500000028396,
+      "m1": {
+        "passed": false,
+        "first_failure": {
+          "stage": "continuity",
+          "time_s": null,
+          "metric": "qp_relaxed_ticks",
+          "measured": 17,
+          "limit": 0,
+          "message": "run metadata violates the mission contract"
+        }
+      },
+      "n1": {
+        "passed": false,
+        "landings_evaluated": 20,
+        "max_stance_slip_mm": 12.723,
+        "first_failure": {
+          "stage": "return",
+          "time_s": 127.87300000024652,
+          "metric": "stance_slip_m",
+          "measured": 0.010000984066392157,
+          "limit": "<= 0.01"
+        }
+      },
+      "outcome": "physical_failed",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.87300000024652,
+        "metric": "stance_slip_m",
+        "measured": 0.010000984066392157,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 127871,
+        "time_s": 127.87200000024652,
+        "path": "scenes/sensitivity_pad_mu_0_6.png"
+      },
+      "source": {
+        "result": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_pad_mu_0_6/result.json",
+        "scene": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_pad_mu_0_6/scene.json",
+        "raw": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_pad_mu_0_6/mission.npz",
+        "result_sha256": "e9e152dd1e7ab97b12455ccd006ad2d515ebc197d70cc588a40830da1a7eda31",
+        "scene_sha256": "fee6ad82cbf482056c1142a4643e132aae92f565ebfafae7e41a73effb4a26ec",
+        "raw_sha256": "465cfd5854ccf644779070de5090e479a5b1ebf85f5ae78ad6cce77c91471f0b"
+      },
+      "official_reverification": {
+        "reproduced": true,
+        "path": "raw-verification/sensitivity_pad_mu_0_6.json"
+      }
+    },
+    {
+      "id": "sensitivity_pad_mu_1",
+      "label": "\ud328\ub4dc \ub9c8\ucc30 1.0",
+      "group": "sensitivity",
+      "changes": {
+        "pad_mu": 1.0
+      },
+      "execution": "physical",
+      "scope": "through-task",
+      "physics_timestep_s": 0.001,
+      "actuation_period_s": 0.005,
+      "impratio": 100.0,
+      "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "control_profile": {
+        "name": "rl-mid-replant-k3075-v1",
+        "trigger_landing_index": 15,
+        "trigger_time_s": 78.8,
+        "trigger_leg": "RR",
+        "replant_leg": "RL",
+        "replant_time_s": 81.6,
+        "duration_s": 2.8,
+        "kind": "physical same-tread unload, swing, and relanding",
+        "slip_spring_gain_n_per_m": 3075.0,
+        "slip_spring_active_s": [
+          116.65,
+          129.4
+        ],
+        "slip_spring_leg": "RL",
+        "terminal_overtravel_deg": 1.3,
+        "stance_spring_gain_n_per_m": 2500.0,
+        "apply_replant_sha256_lf": "3edced7a592966b091070e83468cf8308a2caeef9cd2319d31e47b67d817400a",
+        "replant_landings_sha256_lf": "3babe7ef96e214b4c31c4091c7598d05bdcbe9455845e9d4bfb4607fecbbbdf0",
+        "source_file": "tools/stair_mission_control_profile.py"
+      },
+      "raw_endpoint_s": 135.71500000028396,
+      "m1": {
+        "passed": false,
+        "first_failure": {
+          "stage": "hold",
+          "time_s": 111.65100000016906,
+          "metric": "angle_deg",
+          "measured": 89.67201632689441,
+          "limit": "90.0 +/- 0.25",
+          "message": "hold angle left the allowed band"
+        }
+      },
+      "n1": {
+        "passed": false,
+        "landings_evaluated": 20,
+        "max_stance_slip_mm": 12.854,
+        "first_failure": {
+          "stage": "return",
+          "time_s": 127.76800000024602,
+          "metric": "stance_slip_m",
+          "measured": 0.010000008732972096,
+          "limit": "<= 0.01"
+        }
+      },
+      "outcome": "physical_failed",
+      "first_failure": {
+        "stage": "hold",
+        "time_s": 111.65100000016906,
+        "metric": "angle_deg",
+        "measured": 89.67201632689441,
+        "limit": "90.0 +/- 0.25"
+      },
+      "snapshot": {
+        "raw_index": 111649,
+        "time_s": 111.65000000016906,
+        "path": "scenes/sensitivity_pad_mu_1.png"
+      },
+      "source": {
+        "result": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_pad_mu_1/result.json",
+        "scene": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_pad_mu_1/scene.json",
+        "raw": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_pad_mu_1/mission.npz",
+        "result_sha256": "5d8346e1a91f9fa07a631162feb1018f7fcd4bb39d6417aa05a325375954d9b4",
+        "scene_sha256": "619f9a921e24f140e7d7fa90239c501458ff180db255ba6e76ec89c76b8b3074",
+        "raw_sha256": "dca46bc4793df9deea8c52343bfaa7a3c95da603498fb382280e8dc0fb29474b"
+      },
+      "official_reverification": {
+        "reproduced": true,
+        "path": "raw-verification/sensitivity_pad_mu_1.json"
+      }
+    },
+    {
+      "id": "sensitivity_finger_force_limit_n_75",
+      "label": "\uc190\uac00\ub77d \ud798 \ud55c\uacc4 75 N",
+      "group": "sensitivity",
+      "changes": {
+        "finger_force_limit_n": 75
+      },
+      "execution": "physical",
+      "scope": "through-task",
+      "physics_timestep_s": 0.001,
+      "actuation_period_s": 0.005,
+      "impratio": 100.0,
+      "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "control_profile": {
+        "name": "rl-mid-replant-k3075-v1",
+        "trigger_landing_index": 15,
+        "trigger_time_s": 78.8,
+        "trigger_leg": "RR",
+        "replant_leg": "RL",
+        "replant_time_s": 81.6,
+        "duration_s": 2.8,
+        "kind": "physical same-tread unload, swing, and relanding",
+        "slip_spring_gain_n_per_m": 3075.0,
+        "slip_spring_active_s": [
+          116.65,
+          129.4
+        ],
+        "slip_spring_leg": "RL",
+        "terminal_overtravel_deg": 1.3,
+        "stance_spring_gain_n_per_m": 2500.0,
+        "apply_replant_sha256_lf": "3edced7a592966b091070e83468cf8308a2caeef9cd2319d31e47b67d817400a",
+        "replant_landings_sha256_lf": "3babe7ef96e214b4c31c4091c7598d05bdcbe9455845e9d4bfb4607fecbbbdf0",
+        "source_file": "tools/stair_mission_control_profile.py"
+      },
+      "raw_endpoint_s": 135.71500000028396,
+      "m1": {
+        "passed": false,
+        "first_failure": {
+          "stage": "operate",
+          "time_s": 100.46000000011563,
+          "metric": "pad_contact_loss_s",
+          "measured": 0.021000000000100272,
+          "limit": "<= 0.02",
+          "message": "a pad lost contact too long"
+        }
+      },
+      "n1": {
+        "passed": false,
+        "landings_evaluated": 20,
+        "max_stance_slip_mm": 12.267,
+        "first_failure": {
+          "stage": "return",
+          "time_s": 127.94700000024687,
+          "metric": "stance_slip_m",
+          "measured": 0.010001028574462119,
+          "limit": "<= 0.01"
+        }
+      },
+      "outcome": "physical_failed",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 100.46000000011563,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.021000000000100272,
+        "limit": "<= 0.02"
+      },
+      "snapshot": {
+        "raw_index": 100458,
+        "time_s": 100.45900000011562,
+        "path": "scenes/sensitivity_finger_force_limit_n_75.png"
+      },
+      "source": {
+        "result": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_finger_force_limit_n_75/result.json",
+        "scene": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_finger_force_limit_n_75/scene.json",
+        "raw": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_finger_force_limit_n_75/mission.npz",
+        "result_sha256": "4d7cdca7eee9d526a87e7eccecf9e1749e33edb7f74f235071e64440175eb176",
+        "scene_sha256": "9a91b6c9d1fcca25d63c1e2f6cfc605c9a2337efcbbc839c1e80316c312124ee",
+        "raw_sha256": "7ed9606c1d239d4e6d8beb30dae02cf6d9a9052d993bbb2f275958e2b2f51f0f"
+      },
+      "official_reverification": {
+        "reproduced": true,
+        "path": "raw-verification/sensitivity_finger_force_limit_n_75.json"
+      }
+    },
+    {
+      "id": "sensitivity_finger_slide_frictionloss_n_15",
+      "label": "\uc190\uac00\ub77d \ubbf8\ub044\ub7fc \uc190\uc2e4 15 N",
+      "group": "sensitivity",
+      "changes": {
+        "finger_slide_frictionloss_n": 15
+      },
+      "execution": "physical",
+      "scope": "through-task",
+      "physics_timestep_s": 0.001,
+      "actuation_period_s": 0.005,
+      "impratio": 100.0,
+      "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "control_profile": {
+        "name": "rl-mid-replant-k3075-v1",
+        "trigger_landing_index": 15,
+        "trigger_time_s": 78.8,
+        "trigger_leg": "RR",
+        "replant_leg": "RL",
+        "replant_time_s": 81.6,
+        "duration_s": 2.8,
+        "kind": "physical same-tread unload, swing, and relanding",
+        "slip_spring_gain_n_per_m": 3075.0,
+        "slip_spring_active_s": [
+          116.65,
+          129.4
+        ],
+        "slip_spring_leg": "RL",
+        "terminal_overtravel_deg": 1.3,
+        "stance_spring_gain_n_per_m": 2500.0,
+        "apply_replant_sha256_lf": "3edced7a592966b091070e83468cf8308a2caeef9cd2319d31e47b67d817400a",
+        "replant_landings_sha256_lf": "3babe7ef96e214b4c31c4091c7598d05bdcbe9455845e9d4bfb4607fecbbbdf0",
+        "source_file": "tools/stair_mission_control_profile.py"
+      },
+      "raw_endpoint_s": 135.71500000028396,
+      "m1": {
+        "passed": false,
+        "first_failure": {
+          "stage": "continuity",
+          "time_s": null,
+          "metric": "qp_relaxed_ticks",
+          "measured": 19,
+          "limit": 0,
+          "message": "run metadata violates the mission contract"
+        }
+      },
+      "n1": {
+        "passed": false,
+        "landings_evaluated": 20,
+        "max_stance_slip_mm": 12.806,
+        "first_failure": {
+          "stage": "return",
+          "time_s": 127.83100000024632,
+          "metric": "stance_slip_m",
+          "measured": 0.010000582520050042,
+          "limit": "<= 0.01"
+        }
+      },
+      "outcome": "physical_failed",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.83100000024632,
+        "metric": "stance_slip_m",
+        "measured": 0.010000582520050042,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 127829,
+        "time_s": 127.83000000024632,
+        "path": "scenes/sensitivity_finger_slide_frictionloss_n_15.png"
+      },
+      "source": {
+        "result": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_finger_slide_frictionloss_n_15/result.json",
+        "scene": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_finger_slide_frictionloss_n_15/scene.json",
+        "raw": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_finger_slide_frictionloss_n_15/mission.npz",
+        "result_sha256": "6acd5d2d138b31656acbbaaabced6bc24c43b6161c59ec6edffef186d8d7980c",
+        "scene_sha256": "e71914f53ef5a72631d4e6099a700e6f0db29e0fedab467d748b45db32c2f4ec",
+        "raw_sha256": "a96da02fe6e8533acb994b2b4aeb05d58d614891fe2cb60c50a279b826e7d20f"
+      },
+      "official_reverification": {
+        "reproduced": true,
+        "path": "raw-verification/sensitivity_finger_slide_frictionloss_n_15.json"
+      }
+    },
+    {
+      "id": "sensitivity_arm_limits_named_lims_ex_joint_limits",
+      "label": "\ud314 \uad00\uc808 \ud55c\uacc4 LIMS-EX",
+      "group": "sensitivity",
+      "changes": {
+        "arm_limits": "named LIMS-EX joint limits"
+      },
+      "execution": "physical",
+      "scope": "through-task",
+      "physics_timestep_s": 0.001,
+      "actuation_period_s": 0.005,
+      "impratio": 100.0,
+      "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "control_profile": {
+        "name": "rl-mid-replant-k3075-v1",
+        "trigger_landing_index": 15,
+        "trigger_time_s": 78.8,
+        "trigger_leg": "RR",
+        "replant_leg": "RL",
+        "replant_time_s": 81.6,
+        "duration_s": 2.8,
+        "kind": "physical same-tread unload, swing, and relanding",
+        "slip_spring_gain_n_per_m": 3075.0,
+        "slip_spring_active_s": [
+          116.65,
+          129.4
+        ],
+        "slip_spring_leg": "RL",
+        "terminal_overtravel_deg": 1.3,
+        "stance_spring_gain_n_per_m": 2500.0,
+        "apply_replant_sha256_lf": "3edced7a592966b091070e83468cf8308a2caeef9cd2319d31e47b67d817400a",
+        "replant_landings_sha256_lf": "3babe7ef96e214b4c31c4091c7598d05bdcbe9455845e9d4bfb4607fecbbbdf0",
+        "source_file": "tools/stair_mission_control_profile.py"
+      },
+      "raw_endpoint_s": 135.71500000028396,
+      "m1": {
+        "passed": false,
+        "first_failure": {
+          "stage": "operate",
+          "time_s": 100.40100000011535,
+          "metric": "max_friction_use",
+          "measured": 1.0,
+          "limit": "<= 0.8",
+          "message": "M1 stability limit exceeded"
+        }
+      },
+      "n1": {
+        "passed": false,
+        "landings_evaluated": 20,
+        "max_stance_slip_mm": 1626.005,
+        "first_failure": {
+          "stage": "operate",
+          "time_s": 100.40100000011535,
+          "metric": "requested_torque_ratio",
+          "measured": 2.006824450634009,
+          "limit": "<= 1.0"
+        }
+      },
+      "outcome": "physical_failed",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 100.40100000011535,
+        "metric": "requested_torque_ratio",
+        "measured": 2.006824450634009,
+        "limit": "<= 1.0"
+      },
+      "snapshot": {
+        "raw_index": 100399,
+        "time_s": 100.40000000011534,
+        "path": "scenes/sensitivity_arm_limits_named_lims_ex_joint_limits.png"
+      },
+      "source": {
+        "result": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_arm_limits_named_lims_ex_joint_limits/result.json",
+        "scene": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_arm_limits_named_lims_ex_joint_limits/scene.json",
+        "raw": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_arm_limits_named_lims_ex_joint_limits/mission.npz",
+        "result_sha256": "98c1c19c7ebd72405d1361a0bd8cfa49c4b6835c8beea46dc873c425dc52f00e",
+        "scene_sha256": "6fcc70ac0838c63f94db844aacb4f855933e6d905ce8fb9da73ffc77644b0c04",
+        "raw_sha256": "bf077717ba8cd71fd5397921b0a368796f57b9210da4d8c8846bcbfc988f767c"
+      },
+      "official_reverification": {
+        "reproduced": true,
+        "path": "raw-verification/sensitivity_arm_limits_named_lims_ex_joint_limits.json"
+      }
+    },
+    {
+      "id": "sensitivity_timestep_s_0_0025",
+      "label": "\ubb3c\ub9ac \uac04\uaca9 2.5 ms",
+      "group": "sensitivity",
+      "changes": {
+        "timestep_s": 0.0025
+      },
+      "execution": "physical",
+      "scope": "through-task",
+      "physics_timestep_s": 0.0025,
+      "actuation_period_s": 0.005,
+      "impratio": 100.0,
+      "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "control_profile": {
+        "name": "rl-mid-replant-k3075-v1",
+        "trigger_landing_index": 15,
+        "trigger_time_s": 78.8,
+        "trigger_leg": "RR",
+        "replant_leg": "RL",
+        "replant_time_s": 81.6,
+        "duration_s": 2.8,
+        "kind": "physical same-tread unload, swing, and relanding",
+        "slip_spring_gain_n_per_m": 3075.0,
+        "slip_spring_active_s": [
+          116.65,
+          129.4
+        ],
+        "slip_spring_leg": "RL",
+        "terminal_overtravel_deg": 1.3,
+        "stance_spring_gain_n_per_m": 2500.0,
+        "apply_replant_sha256_lf": "3edced7a592966b091070e83468cf8308a2caeef9cd2319d31e47b67d817400a",
+        "replant_landings_sha256_lf": "3babe7ef96e214b4c31c4091c7598d05bdcbe9455845e9d4bfb4607fecbbbdf0",
+        "source_file": "tools/stair_mission_control_profile.py"
+      },
+      "raw_endpoint_s": 135.71499999991283,
+      "m1": {
+        "passed": false,
+        "first_failure": {
+          "stage": "operate",
+          "time_s": 100.40249999994494,
+          "metric": "start_angle_deg",
+          "measured": 0.3788404844932397,
+          "limit": "abs <= 0.25",
+          "message": "valve did not start open"
+        }
+      },
+      "n1": {
+        "passed": false,
+        "landings_evaluated": 20,
+        "max_stance_slip_mm": 12.183,
+        "first_failure": {
+          "stage": "return",
+          "time_s": 127.95249999991988,
+          "metric": "stance_slip_m",
+          "measured": 0.010014758073852091,
+          "limit": "<= 0.01"
+        }
+      },
+      "outcome": "physical_failed",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 100.40249999994494,
+        "metric": "start_angle_deg",
+        "measured": 0.3788404844932397,
+        "limit": "abs <= 0.25"
+      },
+      "snapshot": {
+        "raw_index": 40159,
+        "time_s": 100.39999999994494,
+        "path": "scenes/sensitivity_timestep_s_0_0025.png"
+      },
+      "source": {
+        "result": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_timestep_s_0_0025/result.json",
+        "scene": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_timestep_s_0_0025/scene.json",
+        "raw": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_timestep_s_0_0025/mission.npz",
+        "result_sha256": "b48f6b3d209269c82d1460bcf66334f7b1aac1486c29aeea88572243e3ef9d35",
+        "scene_sha256": "1497e39fed254fe17575e66936383354fadb6c8d8cae32610555710cabf5573b",
+        "raw_sha256": "bd0c6dd183e2c9eeeb5bddc529dca6a6dfd87e842096595a00ac48844777ba05"
+      },
+      "official_reverification": {
+        "reproduced": true,
+        "path": "raw-verification/sensitivity_timestep_s_0_0025.json"
+      }
+    },
+    {
+      "id": "sensitivity_impratio_10",
+      "label": "\uc811\ucd09 \uc784\ud53c\ub358\uc2a4 \ube44 10",
+      "group": "sensitivity",
+      "changes": {
+        "impratio": 10
+      },
+      "execution": "physical",
+      "scope": "through-task",
+      "physics_timestep_s": 0.001,
+      "actuation_period_s": 0.005,
+      "impratio": 10.0,
+      "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "control_profile": {
+        "name": "rl-mid-replant-k3075-v1",
+        "trigger_landing_index": 15,
+        "trigger_time_s": 78.8,
+        "trigger_leg": "RR",
+        "replant_leg": "RL",
+        "replant_time_s": 81.6,
+        "duration_s": 2.8,
+        "kind": "physical same-tread unload, swing, and relanding",
+        "slip_spring_gain_n_per_m": 3075.0,
+        "slip_spring_active_s": [
+          116.65,
+          129.4
+        ],
+        "slip_spring_leg": "RL",
+        "terminal_overtravel_deg": 1.3,
+        "stance_spring_gain_n_per_m": 2500.0,
+        "apply_replant_sha256_lf": "3edced7a592966b091070e83468cf8308a2caeef9cd2319d31e47b67d817400a",
+        "replant_landings_sha256_lf": "3babe7ef96e214b4c31c4091c7598d05bdcbe9455845e9d4bfb4607fecbbbdf0",
+        "source_file": "tools/stair_mission_control_profile.py"
+      },
+      "raw_endpoint_s": 135.71500000028396,
+      "m1": {
+        "passed": false,
+        "first_failure": {
+          "stage": "prewalk",
+          "time_s": 51.7469999999701,
+          "metric": "unexpected_contact_force_n",
+          "measured": 575.2866429757913,
+          "limit": "<= 10.0",
+          "message": "unexpected contact exceeded its limit"
+        }
+      },
+      "n1": {
+        "passed": false,
+        "landings_evaluated": 20,
+        "max_stance_slip_mm": 1192.887,
+        "first_failure": {
+          "stage": "prewalk",
+          "time_s": 81.6,
+          "metric": "physical_replant",
+          "measured": false,
+          "limit": "released, positive measured lift, and reloaded within 0.035 m"
+        }
+      },
+      "outcome": "physical_failed",
+      "first_failure": {
+        "stage": "prewalk",
+        "time_s": 4.196999999999736,
+        "metric": "stance_slip_m",
+        "measured": 0.010001474806524878,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "type": "chronological first physical failure",
+        "time_s": 4.196999999999736,
+        "path": "scenes/sensitivity_impratio_10.png"
+      },
+      "source": {
+        "result": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_impratio_10/result.json",
+        "scene": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_impratio_10/scene.json",
+        "raw": ".omx/mission-success-20261121/conditions-replant-one-thread/sensitivity_impratio_10/mission.npz",
+        "result_sha256": "b8ef2e5bbb2d8269b4a2e9e2e9b2377eb3d6b36e72d174101c29137e093e9a00",
+        "scene_sha256": "36ed9c1748af335588f11109a2cf3571648b14293c45d5aa6b5753b5a7f9cf19",
+        "raw_sha256": "21702422bc207d336c32aa48808387518a0a577813148a169191e685193f8208"
+      },
+      "archived_result_first_failure": {
+        "stage": "prewalk",
+        "time_s": 51.7469999999701,
+        "metric": "unexpected_contact_force_n",
+        "measured": 575.2866429757913,
+        "limit": "<= 10.0",
+        "message": "unexpected contact exceeded its limit"
+      },
+      "chronological_first_failure": {
+        "stage": "prewalk",
+        "time_s": 4.196999999999736,
+        "metric": "stance_slip_m",
+        "measured": 0.010001474806524878,
+        "limit": "<= 0.01"
+      },
+      "control_profile_failure": {
+        "stage": "prewalk",
+        "time_s": 81.6,
+        "metric": "physical_replant",
+        "measured": false,
+        "limit": "released, positive measured lift, and reloaded within 0.035 m"
+      },
+      "additional_snapshots": [
+        {
+          "type": "physical replant failure",
+          "time_s": 81.6,
+          "path": "scenes/sensitivity_impratio_10-replant.png"
+        }
+      ],
+      "official_reverification": {
+        "reproduced": true,
+        "path": "raw-verification/sensitivity_impratio_10.json"
+      }
+    }
+  ],
+  "integrity": {
+    "frozen_source_commit": "2c91d83ff3a222bc2919c3156b93920ebcff5ec4",
+    "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+    "low_load_control_sha256": "03c5da8f27b93f6a951a9db8d77dccea9312e175f26aceb6f30c7a1df197b012",
+    "controller_source_sha256": {
+      "tools/replay_stair_mission.py": "511f2ba2595fd6fd0691799b0999139a3eb2fdcaa1f5b566176b3f4697adcb79",
+      "tools/stair_mission_control_profile.py": "d4a74d5e312b588ad04746e7dc0069be55f3b52630d77f3934c294ee33956fcc",
+      "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+      "tools/stair_mission_reference.py": "9c51e60516804438b53db1c4ee64eb5508a5236657d3158cde8626e266b9caeb",
+      "tools/stair_mission_trace.py": "9c0790c0d9918ba977360381a2eaaa0b5cf6c4dd50e51bfca353771d66158638",
+      "tools/replay_stair_sequence.py": "bcd28c7baa4e0dd869e3e24a754f8061bc35bc4b2292adb579e4ba8aab5d716e",
+      "src/go2_wall/grasp_motion.py": "01d3717f6f20e08497ee517343512bf5ccdfeb04bb145bca8a0ddf2d0f3eeb22",
+      "src/go2_wall/stair_valve.py": "c032a75c4c0c8d356d205dee7490a2a91487890c5f36704a6d468332791c53d3",
+      "src/go2_wall/transition.py": "6372f217d171df2480f6c2ee5ef91669dc722ea1584212ceba3a0f13ac30fbfc",
+      "src/go2_wall/gripper_control.py": "f753eca35d2a0d0902863503571f7d54b5a6e08ef8a9d015e85bc0de04be1057",
+      "src/go2_wall/stair_loads.py": "08b9dd9cd64cda48fd50761402de3a6273004d81300652386c1a190241e49771",
+      "src/go2_wall/mission_verdict.py": "b99448d31bb1c84eb71fcedb4fdd39b8ecc671b0755de7d20b2801995e724b8c",
+      "tools/stair_mission_limits.py": "ca87784e73c96eff026bf4d83de4e3b3e739aad5704fec22b16a1a68b3c82a88",
+      "src/go2_wall/stair_walking_control.py": "baf47c2f255abac60da2ce0767bd2863d4e32857c3fe60103a51921a695645bb"
+    },
+    "official_reverification_count": 14,
+    "official_scene_count": 17,
+    "supplemental_failure_scene_count": 1,
+    "raw_files_copied": 0,
+    "execution_environment": {
+      "schema": 1,
+      "scope": "14 physical through-task condition processes",
+      "device": "CPU MuJoCo",
+      "command_mode": {
+        "corridor_feedback": true,
+        "extent": "through-task",
+        "control_profile": "rl-mid-replant-k3075-v1"
+      },
+      "observed_child_process_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "CUDA_VISIBLE_DEVICES": "-1"
+      },
+      "observation_method": "Read the live Windows child process environment block during execution.",
+      "reproducibility_note": "The published 17-row set uses the same pinned CPU environment and corridor-feedback command mode as the bound full runs. The inherited-environment comparison is reported separately and is not mixed into this table."
+    }
+  }
+}

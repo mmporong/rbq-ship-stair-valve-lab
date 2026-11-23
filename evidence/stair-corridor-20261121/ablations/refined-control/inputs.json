@@ -1,0 +1,73 @@
+{
+  "controller_commit": "8a39abbca28a4140e0cdeded6b870816468981fe",
+  "walking_reference": "evidence/stair-corridor-20261121/refined/walk50.npz",
+  "walking_sha256": "78bd8f3370267a8f6556f80b74c7bcf7f9b0085f0f113442a7579d3312c17bf2",
+  "physical_step_s": 0.001,
+  "motor_step_s": 0.005,
+  "structural_observer": "first",
+  "common_channels": [
+    "arm_target_rad",
+    "base_track_m",
+    "base_xyz_m",
+    "ctrl",
+    "feet_xyz_m",
+    "fell",
+    "finger_slide_m",
+    "foot_force_world_n",
+    "foot_friction_use",
+    "foot_normal_force_n",
+    "gripper_open",
+    "handle_axial_position_m",
+    "handle_axis_offset_m",
+    "handle_nonpad_force_n",
+    "hinge_friction_torque_nm",
+    "nominal_arm_target_rad",
+    "pad_closing_tangent_force_n",
+    "pad_closing_torque_nm",
+    "pad_normal_force_n",
+    "pad_surface_gap_m",
+    "qp_attempt",
+    "qpos",
+    "qvel",
+    "requested_finger_force_n",
+    "robot_torque_requested_nm",
+    "signed_hinge_friction_torque_nm",
+    "stage",
+    "stance_slip_m",
+    "time_s",
+    "torque_nm",
+    "tread_load_n",
+    "unexpected_contact_force_n",
+    "valve_angle_deg",
+    "valve_speed_rad_s"
+  ],
+  "common_source_files": 13,
+  "raw": [
+    {
+      "relative_local_file": ".omx/mission-success-20261121/refined-full-a/mission.npz",
+      "bytes": 1687957304,
+      "sha256": "c5e1481da7b5b0e0b8650c06b45f71605ab746ce205eeedcdb4a77b3df36b0e2"
+    },
+    {
+      "relative_local_file": ".omx/mission-success-20261121/refined-full-b/mission.npz",
+      "bytes": 612280254,
+      "sha256": "55f0d9efba6abf00bcde88c7ce1498402bab4163fc0255d6dd73fc1f199c4016"
+    }
+  ],
+  "common_arguments": [
+    "--extent",
+    "full",
+    "--corridor-feedback",
+    "--timestep",
+    ".001",
+    "--motion-seconds",
+    "9",
+    "--jaw-load-bias-m",
+    ".0005",
+    "--stance-spring-gain-n-per-m",
+    "2500",
+    "--extra-settle-seconds",
+    "2"
+  ],
+  "storage": "The intermediate recordings are retained locally at the paths in raw. Replays can be regenerated using the archived controller commit, walking reference, settings and observer selection."
+}

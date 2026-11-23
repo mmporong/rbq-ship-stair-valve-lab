@@ -1,0 +1,180 @@
+quantity,component,unit,value_at_absolute_peak,time_s,stage
+joint_torque,FL_hip_joint,N m,27.355094525476655,198.94100000058586,return
+joint_torque,FL_thigh_joint,N m,-88.26606041543397,199.29600000058755,return
+joint_torque,FL_calf_joint,N m,-83.11409621606954,343.71599999878407,return
+joint_torque,FR_hip_joint,N m,-31.079800048812082,363.71599999831113,return
+joint_torque,FR_thigh_joint,N m,-66.26115307885965,736.9559999894852,return
+joint_torque,FR_calf_joint,N m,-82.16359125471504,338.81599999889994,return
+joint_torque,RL_hip_joint,N m,-31.89542495748065,851.0859999867864,return
+joint_torque,RL_thigh_joint,N m,68.2412080319712,806.1109999878499,return
+joint_torque,RL_calf_joint,N m,118.44072064234594,186.35100000052574,return
+joint_torque,RR_hip_joint,N m,84.88951355011463,333.7209999990204,return
+joint_torque,RR_thigh_joint,N m,71.36557582951266,369.0159999981858,return
+joint_torque,RR_calf_joint,N m,-118.01812214117065,369.0159999981858,return
+joint_torque,arm_joint1,N m,16.27801049778377,267.60600000058383,return
+joint_torque,arm_joint2,N m,29.77773210142057,93.15100000008073,approach
+joint_torque,arm_joint3,N m,-27.025822843197307,106.46100000014428,operate
+joint_torque,arm_joint4,N m,-17.440221267119913,105.74100000014084,operate
+joint_torque,arm_joint5,N m,17.926285805024115,101.42600000012024,operate
+joint_torque,arm_joint6,N m,2.2995203462922347,95.60600000009245,contact
+joint_torque_ratio,FL_hip_joint,1,0.27355094525476653,198.94100000058586,return
+joint_torque_ratio,FL_thigh_joint,1,0.8826606041543397,199.29600000058755,return
+joint_torque_ratio,FL_calf_joint,1,0.554093974773797,343.71599999878407,return
+joint_torque_ratio,FR_hip_joint,1,0.31079800048812084,363.71599999831113,return
+joint_torque_ratio,FR_thigh_joint,1,0.6626115307885965,736.9559999894852,return
+joint_torque_ratio,FR_calf_joint,1,0.5477572750314337,338.81599999889994,return
+joint_torque_ratio,RL_hip_joint,1,0.3189542495748065,851.0859999867864,return
+joint_torque_ratio,RL_thigh_joint,1,0.682412080319712,806.1109999878499,return
+joint_torque_ratio,RL_calf_joint,1,0.7896048042823063,186.35100000052574,return
+joint_torque_ratio,RR_hip_joint,1,0.8488951355011463,333.7209999990204,return
+joint_torque_ratio,RR_thigh_joint,1,0.7136557582951266,369.0159999981858,return
+joint_torque_ratio,RR_calf_joint,1,0.7867874809411377,369.0159999981858,return
+joint_torque_ratio,arm_joint1,1,0.1627801049778377,267.60600000058383,return
+joint_torque_ratio,arm_joint2,1,0.2977773210142057,93.15100000008073,approach
+joint_torque_ratio,arm_joint3,1,0.27025822843197306,106.46100000014428,operate
+joint_torque_ratio,arm_joint4,1,0.17440221267119912,105.74100000014084,operate
+joint_torque_ratio,arm_joint5,1,0.17926285805024114,101.42600000012024,operate
+joint_torque_ratio,arm_joint6,1,0.022995203462922345,95.60600000009245,contact
+joint_reaction,FL_hip_joint,N,272.4661289285028,222.12500000069656,return
+joint_reaction,FL_thigh_joint,N,309.1019545455203,222.10500000069646,return
+joint_reaction,FL_calf_joint,N,327.1954719454669,222.10500000069646,return
+joint_reaction,FR_hip_joint,N,219.97039350882022,737.304999989477,return
+joint_reaction,FR_thigh_joint,N,255.4101046152667,737.304999989477,return
+joint_reaction,FR_calf_joint,N,272.99692239740614,737.304999989477,return
+joint_reaction,RL_hip_joint,N,429.05901699630016,35.20500000000865,prewalk
+joint_reaction,RL_thigh_joint,N,523.0729234763977,35.20500000000865,prewalk
+joint_reaction,RL_calf_joint,N,559.5199328168053,35.20500000000865,prewalk
+joint_reaction,RR_hip_joint,N,237.99305728334576,369.0199999981857,return
+joint_reaction,RR_thigh_joint,N,373.65001480171355,648.8179999915694,return
+joint_reaction,RR_calf_joint,N,435.28120977346407,648.8199999915694,return
+joint_reaction,arm_joint1,N,172.54604652082799,333.7249999990203,return
+joint_reaction,arm_joint2,N,154.75697247895013,113.85500000017959,release
+joint_reaction,arm_joint3,N,131.16609488149257,113.85100000017957,release
+joint_reaction,arm_joint4,N,124.27418561720106,113.85500000017959,release
+joint_reaction,arm_joint5,N,114.21770923550487,113.85500000017959,release
+joint_reaction,arm_joint6,N,107.3288177048657,113.85500000017959,release
+off_axis_bending,FL_hip_joint,N m,107.22753082703281,199.3050000005876,return
+off_axis_bending,FL_thigh_joint,N m,84.15747496745783,199.3050000005876,return
+off_axis_bending,FL_calf_joint,N m,53.281940684979794,199.3050000005876,return
+off_axis_bending,FR_hip_joint,N m,67.97668044113117,737.4099999894745,return
+off_axis_bending,FR_thigh_joint,N m,44.185126997022714,738.5339999894479,return
+off_axis_bending,FR_calf_joint,N m,29.362922436443828,738.5339999894479,return
+off_axis_bending,RL_hip_joint,N m,70.02426066835856,806.1109999878499,return
+off_axis_bending,RL_thigh_joint,N m,45.9438842443582,35.20500000000865,prewalk
+off_axis_bending,RL_calf_joint,N m,53.89013740576376,223.52000000070322,return
+off_axis_bending,RR_hip_joint,N m,52.607214305293176,369.0199999981857,return
+off_axis_bending,RR_thigh_joint,N m,54.89854780039588,424.7199999968686,return
+off_axis_bending,RR_calf_joint,N m,42.12281260936944,648.8179999915694,return
+off_axis_bending,arm_joint1,N m,44.4233792175179,333.7249999990203,return
+off_axis_bending,arm_joint2,N m,33.324585577377185,333.7249999990203,return
+off_axis_bending,arm_joint3,N m,28.48810931971615,113.86500000017963,release
+off_axis_bending,arm_joint4,N m,26.256077431365803,107.37000000014862,settle
+off_axis_bending,arm_joint5,N m,18.270441188525457,113.84000000017951,hold
+off_axis_bending,arm_joint6,N m,16.520982307780706,113.84000000017951,hold
+foot_surface_reaction,FL/floor,N,281.5526768094313,975.2089999838513,return
+foot_surface_reaction,FL/tread1,N,248.6875163620227,958.3999999842488,return
+foot_surface_reaction,FL/tread2,N,265.6986831579585,936.9999999847548,return
+foot_surface_reaction,FL/tread3,N,265.7494637733416,916.399999985242,return
+foot_surface_reaction,FL/tread4,N,269.36411033810583,895.7999999857291,return
+foot_surface_reaction,FL/tread5,N,313.8389518238135,857.8149999866273,return
+foot_surface_reaction,FL/tread6,N,317.67730600854065,817.7849999875739,return
+foot_surface_reaction,FL/tread7,N,331.96549445292936,222.10500000069646,return
+foot_surface_reaction,FL/tread8,N,321.7918968015527,722.5649999898255,return
+foot_surface_reaction,FL/tread9,N,264.8939844813026,687.2599999906604,return
+foot_surface_reaction,FL/tread10,N,267.41852269438573,665.4799999911754,return
+foot_surface_reaction,FL/platform,N,227.76559484434276,621.9909999922038,return
+foot_surface_reaction,FR/floor,N,231.73957173116744,971.1089999839483,return
+foot_surface_reaction,FR/tread1,N,212.90532845602763,14.921999999997169,prewalk
+foot_surface_reaction,FR/tread2,N,249.75035875776558,939.529999984695,return
+foot_surface_reaction,FR/tread3,N,260.4115443971724,55.44499999996148,prewalk
+foot_surface_reaction,FR/tread4,N,260.79524426340413,76.04499999999905,prewalk
+foot_surface_reaction,FR/tread5,N,237.53908538029225,136.1000000002858,return
+foot_surface_reaction,FR/tread6,N,238.8408472188227,828.9549999873097,return
+foot_surface_reaction,FR/tread7,N,236.56963427260985,777.605999988524,return
+foot_surface_reaction,FR/tread8,N,277.3314714771204,737.304999989477,return
+foot_surface_reaction,FR/tread9,N,243.76526351174897,307.1899999996478,return
+foot_surface_reaction,FR/tread10,N,259.43519576666455,333.16499999903357,return
+foot_surface_reaction,FR/platform,N,258.95629201125155,650.8399999915216,return
+foot_surface_reaction,RL/floor,N,556.5245203122835,35.20500000000865,prewalk
+foot_surface_reaction,RL/tread1,N,252.8870626717569,931.6909999848804,return
+foot_surface_reaction,RL/tread2,N,254.52961030200262,66.66999999995429,prewalk
+foot_surface_reaction,RL/tread3,N,268.6984964006193,888.5799999858998,return
+foot_surface_reaction,RL/tread4,N,249.163081896655,850.0499999868109,return
+foot_surface_reaction,RL/tread5,N,370.69245364385836,186.35500000052576,return
+foot_surface_reaction,RL/tread6,N,367.06114250989316,223.5350000007033,return
+foot_surface_reaction,RL/tread7,N,291.3406725947017,291.43000000002047,return
+foot_surface_reaction,RL/tread8,N,257.2738227096613,323.12999999927086,return
+foot_surface_reaction,RL/tread9,N,255.05611988204117,343.9099999987795,return
+foot_surface_reaction,RL/tread10,N,342.7779806340964,653.7199999914535,return
+foot_surface_reaction,RL/platform,N,244.13118919677615,625.617999992118,return
+foot_surface_reaction,RR/floor,N,283.9281570001096,6.505000000000507,prewalk
+foot_surface_reaction,RR/tread1,N,224.3303441315572,50.60499999997276,prewalk
+foot_surface_reaction,RR/tread2,N,218.29355336844407,71.20499999997594,prewalk
+foot_surface_reaction,RR/tread3,N,223.59750945888112,128.0150000002472,return
+foot_surface_reaction,RR/tread4,N,290.47302372469915,154.39500000037316,return
+foot_surface_reaction,RR/tread5,N,231.30204493006875,200.06500000059123,return
+foot_surface_reaction,RR/tread6,N,191.12032315159826,245.47000000080803,return
+foot_surface_reaction,RR/tread7,N,206.48967027243475,299.1749999998373,return
+foot_surface_reaction,RR/tread8,N,219.23552418443637,328.324999999148,return
+foot_surface_reaction,RR/tread9,N,217.03151324578906,348.9249999986609,return
+foot_surface_reaction,RR/tread10,N,398.2008769411867,648.8199999915694,return
+foot_surface_reaction,RR/platform,N,320.5203698244531,630.9179999919927,return
+foot_surface_vertical,FL/floor,N,277.6316813764539,975.2089999838513,return
+foot_surface_vertical,FL/tread1,N,248.57568918012143,958.3999999842488,return
+foot_surface_vertical,FL/tread2,N,264.7567657045983,936.9999999847548,return
+foot_surface_vertical,FL/tread3,N,264.80821997897766,916.399999985242,return
+foot_surface_vertical,FL/tread4,N,268.46502919209604,895.7999999857291,return
+foot_surface_vertical,FL/tread5,N,312.6047809500905,857.8149999866273,return
+foot_surface_vertical,FL/tread6,N,316.88109504211627,817.7849999875739,return
+foot_surface_vertical,FL/tread7,N,329.942908075638,222.10500000069646,return
+foot_surface_vertical,FL/tread8,N,319.62048965669896,722.5649999898255,return
+foot_surface_vertical,FL/tread9,N,264.07180823624213,687.2599999906604,return
+foot_surface_vertical,FL/tread10,N,266.4499094002801,665.4799999911754,return
+foot_surface_vertical,FL/platform,N,226.3329951105035,621.9909999922038,return
+foot_surface_vertical,FR/floor,N,230.6604429970591,971.1089999839483,return
+foot_surface_vertical,FR/tread1,N,212.89363789408085,14.921999999997169,prewalk
+foot_surface_vertical,FR/tread2,N,245.41855289781597,939.529999984695,return
+foot_surface_vertical,FR/tread3,N,259.16229868125566,55.44499999996148,prewalk
+foot_surface_vertical,FR/tread4,N,259.44935792688943,76.04499999999905,prewalk
+foot_surface_vertical,FR/tread5,N,237.3987653211846,136.1000000002858,return
+foot_surface_vertical,FR/tread6,N,234.01018888258722,828.9549999873097,return
+foot_surface_vertical,FR/tread7,N,230.41296711749303,774.2349999886037,return
+foot_surface_vertical,FR/tread8,N,272.7829738565324,737.3099999894769,return
+foot_surface_vertical,FR/tread9,N,243.50689831924518,307.1899999996478,return
+foot_surface_vertical,FR/tread10,N,258.4208763128068,333.16499999903357,return
+foot_surface_vertical,FR/platform,N,256.658389563487,353.76499999854644,return
+foot_surface_vertical,RL/floor,N,481.3835860622571,35.20500000000865,prewalk
+foot_surface_vertical,RL/tread1,N,251.28282736973338,46.089999999983284,prewalk
+foot_surface_vertical,RL/tread2,N,253.69812610453963,66.68999999995438,prewalk
+foot_surface_vertical,RL/tread3,N,267.5996205784107,888.5799999858998,return
+foot_surface_vertical,RL/tread4,N,247.29336227075356,850.0499999868109,return
+foot_surface_vertical,RL/tread5,N,370.14012372667486,186.35500000052576,return
+foot_surface_vertical,RL/tread6,N,359.6699102975704,223.5350000007033,return
+foot_surface_vertical,RL/tread7,N,290.9332057542638,291.43000000002047,return
+foot_surface_vertical,RL/tread8,N,256.42619692483186,323.12999999927086,return
+foot_surface_vertical,RL/tread9,N,254.18806556190776,343.9099999987795,return
+foot_surface_vertical,RL/tread10,N,293.92969348376914,653.7199999914535,return
+foot_surface_vertical,RL/platform,N,233.51763580878344,408.52499999725154,return
+foot_surface_vertical,RR/floor,N,283.0734685936348,6.505000000000507,prewalk
+foot_surface_vertical,RR/tread1,N,223.67311791785696,50.60499999997276,prewalk
+foot_surface_vertical,RR/tread2,N,217.42958828849197,71.20499999997594,prewalk
+foot_surface_vertical,RR/tread3,N,222.47169194018377,128.0150000002472,return
+foot_surface_vertical,RR/tread4,N,288.2431641265587,154.39500000037316,return
+foot_surface_vertical,RR/tread5,N,229.05868156556824,200.06500000059123,return
+foot_surface_vertical,RR/tread6,N,186.80711231554847,245.47000000080803,return
+foot_surface_vertical,RR/tread7,N,205.091832736621,300.6349999998028,return
+foot_surface_vertical,RR/tread8,N,218.34561272512823,328.324999999148,return
+foot_surface_vertical,RR/tread9,N,216.07546261648923,348.9249999986609,return
+foot_surface_vertical,RR/tread10,N,341.45443498959895,648.8199999915694,return
+foot_surface_vertical,RR/platform,N,280.985414398026,424.7199999968686,return
+mount_force,force_x_n,N,-83.42767113062625,98.7360000001074,operate
+mount_force,force_y_n,N,122.42345228815554,333.7249999990203,return
+mount_force,force_z_n,N,168.49090866204654,113.85500000017959,release
+mount_moment,moment_x_nm,N m,-31.919951684048883,551.8199999938631,return
+mount_moment,moment_y_nm,N m,49.056878277641005,648.8179999915694,return
+mount_moment,moment_z_nm,N m,-41.406163218903714,333.7249999990203,return
+hinge_resistance,hinge,N m,10.0,98.7370000001074,operate
+pad_closing_torque,pads,N m,-10.117044407888137,97.19000000010001,contact
+pad_normal_force,upper,N,178.18237838552227,97.2070000001001,contact
+pad_normal_force,lower,N,140.20312757026593,97.2070000001001,contact
+pad_closing_tangent_force,pads,N,-90.28092506268918,97.19000000010001,contact

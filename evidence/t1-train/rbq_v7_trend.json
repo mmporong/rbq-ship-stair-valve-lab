@@ -1,0 +1,12 @@
+{
+  "run": "logs/rsl_rl/rbq10_rb1_stairs/2026-11-10_17-45-51_v7",
+  "scalars": {
+    "Curriculum/terrain_levels": {},
+    "Train/mean_episode_length": {},
+    "Train/mean_reward": {},
+    "Episode_Reward/track_linear_velocity": {},
+    "Episode_Termination/time_out": {},
+    "Episode_Termination/fell_over": {},
+    "Episode_Termination/illegal_contact": {}
+  }
+}

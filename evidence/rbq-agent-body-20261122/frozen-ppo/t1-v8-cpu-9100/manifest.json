@@ -1,0 +1,262 @@
+{
+  "task": "RBQ10RB1-Stairs",
+  "checkpoint": "model_9100.pt",
+  "checkpoint_sha256": "6d39b7c28c9cdda9c3964c3b37493c3bcd24f81ca46f5e367618a7f264cfc757",
+  "source_mujoco": "3.5.0",
+  "seed": 20261120,
+  "levels": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "terrain_columns": [
+    "flat",
+    "stairs_up",
+    "stairs_up",
+    "stairs_down",
+    "stairs_down",
+    "open_stairs_up",
+    "open_stairs_up",
+    "open_stairs_up",
+    "open_stairs_down",
+    "open_stairs_down"
+  ],
+  "world_columns": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    5,
+    5,
+    5,
+    6,
+    6,
+    6,
+    7,
+    7,
+    7,
+    8,
+    8,
+    8,
+    9,
+    9,
+    9
+  ],
+  "samples_per_column": 3,
+  "actor_terms": [
+    "base_ang_vel",
+    "projected_gravity",
+    "command",
+    "phase",
+    "joint_pos",
+    "joint_vel",
+    "actions",
+    "height_scan"
+  ],
+  "actor_term_dims": [
+    [
+      3
+    ],
+    [
+      3
+    ],
+    [
+      3
+    ],
+    [
+      2
+    ],
+    [
+      12
+    ],
+    [
+      12
+    ],
+    [
+      12
+    ],
+    [
+      187
+    ]
+  ],
+  "joint_names": [
+    "robot/RR_hip_joint",
+    "robot/RR_thigh_joint",
+    "robot/RR_calf_joint",
+    "robot/RL_hip_joint",
+    "robot/RL_thigh_joint",
+    "robot/RL_calf_joint",
+    "robot/FR_hip_joint",
+    "robot/FR_thigh_joint",
+    "robot/FR_calf_joint",
+    "robot/FL_hip_joint",
+    "robot/FL_thigh_joint",
+    "robot/FL_calf_joint"
+  ],
+  "default_joint_pos": [
+    0.0,
+    0.8115779161453247,
+    -1.3962631225585938,
+    0.0,
+    0.8115779161453247,
+    -1.3962631225585938,
+    0.0,
+    0.7941246628761292,
+    -1.4311697483062744,
+    0.0,
+    0.7941246628761292,
+    -1.4311697483062744
+  ],
+  "default_joint_vel": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "action_joints": [
+    "robot/RR_hip_joint",
+    "robot/RR_thigh_joint",
+    "robot/RR_calf_joint",
+    "robot/RL_hip_joint",
+    "robot/RL_thigh_joint",
+    "robot/RL_calf_joint",
+    "robot/FR_hip_joint",
+    "robot/FR_thigh_joint",
+    "robot/FR_calf_joint",
+    "robot/FL_hip_joint",
+    "robot/FL_thigh_joint",
+    "robot/FL_calf_joint"
+  ],
+  "action_offset": [
+    0.0,
+    0.8115779161453247,
+    -1.3962631225585938,
+    0.0,
+    0.8115779161453247,
+    -1.3962631225585938,
+    0.0,
+    0.7941246628761292,
+    -1.4311697483062744,
+    0.0,
+    0.7941246628761292,
+    -1.4311697483062744
+  ],
+  "action_scale": 0.25,
+  "clip_actions": null,
+  "model_joint_order": [
+    "robot/floating_base_joint",
+    "robot/RR_hip_joint",
+    "robot/RR_thigh_joint",
+    "robot/RR_calf_joint",
+    "robot/RL_hip_joint",
+    "robot/RL_thigh_joint",
+    "robot/RL_calf_joint",
+    "robot/FR_hip_joint",
+    "robot/FR_thigh_joint",
+    "robot/FR_calf_joint",
+    "robot/FL_hip_joint",
+    "robot/FL_thigh_joint",
+    "robot/FL_calf_joint"
+  ],
+  "actuator_names": [
+    "robot/RR_hip_joint",
+    "robot/RL_hip_joint",
+    "robot/FR_hip_joint",
+    "robot/FL_hip_joint",
+    "robot/RR_thigh_joint",
+    "robot/RL_thigh_joint",
+    "robot/FR_thigh_joint",
+    "robot/FL_thigh_joint",
+    "robot/RR_calf_joint",
+    "robot/RL_calf_joint",
+    "robot/FR_calf_joint",
+    "robot/FL_calf_joint"
+  ],
+  "scan_body": "robot/base_link",
+  "scan_geom_groups": [
+    0,
+    1,
+    2
+  ],
+  "scan_excludes_body": true,
+  "scan_max_distance_m": 5.0,
+  "scan_scale": 0.2,
+  "period_s": 0.6,
+  "heading_target_rad": 0.0,
+  "heading_gain": 0.5,
+  "yaw_rate_limits": [
+    -0.8,
+    0.8
+  ],
+  "physics_timestep_s": 0.005,
+  "integrator": "mjINT_IMPLICITFAST",
+  "control_timestep_s": 0.02,
+  "steps": 998,
+  "fall_angle_rad": 1.2217304763960306,
+  "illegal_contact_sensors": [
+    "nonfoot_ground_touch_base_link_collision1_force",
+    "nonfoot_ground_touch_RB1_Base_Yaw_collision1_force",
+    "nonfoot_ground_touch_RB1_Shoulder_Pitch_collision1_force",
+    "nonfoot_ground_touch_RB1_Elbow_Pitch_collision1_force",
+    "nonfoot_ground_touch_RB1_Elbow_Yaw_collision1_force",
+    "nonfoot_ground_touch_RB1_Wrist_Pitch_collision1_force",
+    "nonfoot_ground_touch_RB1_Wrist_Yaw_collision1_force",
+    "nonfoot_ground_touch_RB1_finger_upper_collision_force",
+    "nonfoot_ground_touch_RB1_finger_lower_collision_force"
+  ],
+  "illegal_contact_force_n": 10.0,
+  "promote_m": 3.0,
+  "demote_m": 1.0,
+  "observation_noise": false,
+  "disabled_events": [
+    "push_robot",
+    "foot_friction",
+    "encoder_bias",
+    "base_com"
+  ],
+  "xml_roundtrip_max_abs_error": {
+    "qpos0": 0.0,
+    "jnt_axis": 0.0,
+    "jnt_range": 0.0,
+    "dof_armature": 3.499999999892478e-08,
+    "dof_damping": 0.0,
+    "dof_frictionloss": 0.0,
+    "body_mass": 0.054880380630493164,
+    "body_inertia": 49.48223114013672,
+    "body_ipos": 3.3999999998757247e-07,
+    "geom_size": 4.999613224088151e-06,
+    "geom_pos": 4.9985036030264496e-05,
+    "geom_friction": 0.0,
+    "geom_solref": 0.0,
+    "geom_solimp": 0.0,
+    "actuator_gainprm": 0.0003799999999927195,
+    "actuator_biasprm": 0.0003799999999927195,
+    "actuator_forcerange": 0.0
+  }
+}

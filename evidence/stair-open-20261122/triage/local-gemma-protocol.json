@@ -1,0 +1,43 @@
+{
+  "schema": "rbq_local_triage_protocol_v1",
+  "model": "gemma3:4b",
+  "provider_class": "local_ollama_exploratory_not_registered_nemotron",
+  "endpoint": "http://127.0.0.1:11434/api/chat",
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_gpu": 0,
+    "num_predict": 512
+  },
+  "assessment_sha256": "c3779fe3f38507c67b725074945bd29b2a2893aa81d627d121d9618c27b09d5b",
+  "allowed_actions": [
+    "runtime_com_state",
+    "runtime_contact_window",
+    "runtime_reward_window",
+    "reset_base_com_stability",
+    "HOLD"
+  ],
+  "allowed_citations": [
+    "fresh_rbq.v7.work_platform_reached",
+    "fresh_rbq.v8.work_platform_reached",
+    "fresh_rbq.v7.maximum_supported_tread",
+    "fresh_rbq.v8.maximum_supported_tread",
+    "fresh_rbq.v7.termination",
+    "fresh_rbq.v8.termination",
+    "registered_scope.supported_task",
+    "registered_scope.rbq_compatible"
+  ],
+  "host_gate": {
+    "supported_task": "Isaac-Velocity-Flat-Unitree-Go2-v0",
+    "rbq_case_admitted": false,
+    "selected_check_result": "HOLD_without_execution",
+    "approval_created": false,
+    "intervention_created": false
+  },
+  "claim_limits": {
+    "official_rl_triage_agent_result": false,
+    "nemotron_result": false,
+    "diagnosis_accuracy_measured": false,
+    "rbq_improvement_measured": false
+  }
+}

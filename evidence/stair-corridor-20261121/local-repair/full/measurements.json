@@ -1,0 +1,84 @@
+{
+  "result": "evidence/stair-corridor-20261121/local-repair/full/first/result.json",
+  "raw_check": "evidence/stair-corridor-20261121/local-repair/full/first/raw-check.json",
+  "reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+  "raw_sha256": "9e338635a2c193423795744222b7394322e72fed448d448d7e1d4bf5838ebffd",
+  "physics_samples": 976240,
+  "endpoint_s": 976.2399999838269,
+  "actuation_s": 0.005,
+  "physics_s": 0.001,
+  "first_mission_failure": {
+    "stage": "hold",
+    "time_s": 111.76800000016962,
+    "metric": "stance_slip_m",
+    "measured": 0.010000016097540768,
+    "limit": "<= 0.01"
+  },
+  "full_mission_pass": false,
+  "full_valve_pass": false,
+  "loaded_angle_bins": 16,
+  "pad_loss_s": 0.0,
+  "hold_range_deg": [
+    89.75665266175773,
+    90.06807264219331
+  ],
+  "hold_samples": 5000,
+  "manipulation_max_foot_shift_mm": 4.937045505191955,
+  "manipulation_max_base_shift_mm": 4.9007045947029075,
+  "first_post_release_contact": null,
+  "after_confirmed_release": {
+    "observation_s": 860.1759999836368,
+    "samples": 860176,
+    "pad_maxima_n": [
+      0.0,
+      0.0
+    ],
+    "nonpad_maximum_n": 0.0,
+    "contact_samples_above_1e_6_n": 0
+  },
+  "max_stance_slip_mm_by_leg": {
+    "FL": 23.783,
+    "FR": 10.842,
+    "RL": 16.9,
+    "RR": 10.52
+  },
+  "unexpected_contact_pair_peaks_n": {
+    "FL_calf+world": 136.4541830865264,
+    "FR_calf+RB1_Shoulder_Pitch": 5.26957237786848
+  },
+  "solver_failed_ticks": 8,
+  "solver_relaxed_ticks": 604,
+  "robot_saturated_steps": 0,
+  "first_unexpected_force": {
+    "stage": "return",
+    "time_s": 187.3460000005305,
+    "metric": "unexpected_contact_force_n",
+    "measured": 13.07783654695218,
+    "limit": "<= 10 N"
+  },
+  "first_observed_fall_s": null,
+  "scheduled_landings": 156,
+  "supported_landings": 156,
+  "first_support_on_platform_s": 377.71500000000003,
+  "first_platform_turn_s": 496.615,
+  "greatest_supported_platform_heading_deg": 179.925825344189,
+  "greatest_supported_platform_heading_s": 504.815,
+  "final_valve_angle_deg": 90.00000000001306,
+  "stable_floor_return": {
+    "time_s": [
+      975.74,
+      976.24
+    ],
+    "sample_count": 500,
+    "max_start_xy_error_m": 0.02821079786380644,
+    "min_up_z": 0.9974994674716754,
+    "max_linear_speed_mps": 0.0026425370063903513,
+    "max_angular_speed_radps": 0.004966427373025027,
+    "min_floor_force_n": 68.71334117161035,
+    "verified": true
+  },
+  "maximum_final_tilt_deg": 4.052699690907214,
+  "state_resets": 0,
+  "max_applied_generalized_force": 0.0,
+  "max_applied_external_wrench": 0.0
+}

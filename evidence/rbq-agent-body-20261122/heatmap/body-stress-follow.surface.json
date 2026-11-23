@@ -1,0 +1,27 @@
+{
+  "method": "MuJoCo geom segmentation plus depth reprojected to base-local coordinates",
+  "base_geom_ids": [
+    14,
+    15
+  ],
+  "added_overlay_geoms": 0,
+  "samples": [
+    {
+      "time_s": 35.20100000000866,
+      "mesh_pixel_count": 14692,
+      "unique_20mpa_colour_bands": 4,
+      "visible_min_mpa": 2.1937377037855956,
+      "visible_max_mpa": 65.62919832145671,
+      "visible_mean_mpa": 21.35600260044953
+    },
+    {
+      "time_s": 66.24199999995224,
+      "mesh_pixel_count": 13861,
+      "unique_20mpa_colour_bands": 2,
+      "visible_min_mpa": 1.6386328642559511,
+      "visible_max_mpa": 23.621096942668522,
+      "visible_mean_mpa": 7.9312017416300575
+    }
+  ],
+  "visible_mean_change_mpa": 13.42480085881947
+}

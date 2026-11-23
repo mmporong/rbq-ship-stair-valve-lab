@@ -1,0 +1,289 @@
+{
+  "scope": "through-task",
+  "physics_steps": 132915,
+  "raw_sha256": "a46147fc5cfa2aa10d17da70a422a6a680307840c05b6c0216db40bec809a4c9",
+  "scene_sha256": "9db829a0549c5e10ba628d1d588e05644294bacb7b2434bae4b1a9fd83ebbf52",
+  "fingerprints_match_original": true,
+  "time_axis_verified": true,
+  "stage_schedule_verified": true,
+  "verified_walk_sha256": "0ce148501742caacaeebfcf95caafbd8bdb3dd0a9f93c710b64bbc6e6bc8b5c6",
+  "actuation_period_s": 0.005,
+  "physics_steps_per_actuation_tick": 5,
+  "walking": {
+    "landings_evaluated": 19,
+    "verified": false,
+    "first_failure": {
+      "stage": "hold",
+      "time_s": 111.95900000017053,
+      "metric": "stance_slip_m",
+      "measured": 0.01000004173544747,
+      "limit": "<= 0.01"
+    },
+    "failures": [
+      {
+        "stage": "hold",
+        "time_s": 111.95900000017053,
+        "metric": "stance_slip_m",
+        "measured": 0.01000004173544747,
+        "limit": "<= 0.01"
+      }
+    ]
+  },
+  "valve": {
+    "verified": true,
+    "first_failure": null,
+    "failures": [],
+    "measurements": {
+      "max_record_step_s": 0.0010000000000047748,
+      "total_saturated_steps": 0,
+      "contact_hold_s": 0.39500000000188606,
+      "max_angle_deg": 90.06808138860332,
+      "hold_s": 5.000000000023874,
+      "resistance_limit_nm": 9.98,
+      "loaded_angle_bins": 16,
+      "pad_closing_torque_by_bin_nm": [
+        {
+          "angle_deg": [
+            5.0,
+            10.0
+          ],
+          "min_nm": 9.999949756198456,
+          "max_nm": 10.00020432543487
+        },
+        {
+          "angle_deg": [
+            10.0,
+            15.0
+          ],
+          "min_nm": 9.99989942935203,
+          "max_nm": 10.000224269671826
+        },
+        {
+          "angle_deg": [
+            15.0,
+            20.0
+          ],
+          "min_nm": 9.99983205350703,
+          "max_nm": 10.00023336375304
+        },
+        {
+          "angle_deg": [
+            20.0,
+            25.0
+          ],
+          "min_nm": 9.999806988763082,
+          "max_nm": 10.00025021001423
+        },
+        {
+          "angle_deg": [
+            25.0,
+            30.0
+          ],
+          "min_nm": 9.999828093051764,
+          "max_nm": 10.000362877772059
+        },
+        {
+          "angle_deg": [
+            30.0,
+            35.0
+          ],
+          "min_nm": 9.99976890725001,
+          "max_nm": 10.000221945615493
+        },
+        {
+          "angle_deg": [
+            35.0,
+            40.0
+          ],
+          "min_nm": 9.999765581799377,
+          "max_nm": 10.000284681449488
+        },
+        {
+          "angle_deg": [
+            40.0,
+            45.0
+          ],
+          "min_nm": 9.999846213072088,
+          "max_nm": 10.000220260655064
+        },
+        {
+          "angle_deg": [
+            45.0,
+            50.0
+          ],
+          "min_nm": 9.99985530044055,
+          "max_nm": 10.000087057958204
+        },
+        {
+          "angle_deg": [
+            50.0,
+            55.0
+          ],
+          "min_nm": 9.999866987473638,
+          "max_nm": 10.000097303172126
+        },
+        {
+          "angle_deg": [
+            55.0,
+            60.0
+          ],
+          "min_nm": 9.999862655110006,
+          "max_nm": 10.000037553818439
+        },
+        {
+          "angle_deg": [
+            60.0,
+            65.0
+          ],
+          "min_nm": 9.999860137867381,
+          "max_nm": 10.000013592710008
+        },
+        {
+          "angle_deg": [
+            65.0,
+            70.0
+          ],
+          "min_nm": 9.999819509478089,
+          "max_nm": 10.000040356189583
+        },
+        {
+          "angle_deg": [
+            70.0,
+            75.0
+          ],
+          "min_nm": 9.999783780023105,
+          "max_nm": 10.000040287715613
+        },
+        {
+          "angle_deg": [
+            75.0,
+            80.0
+          ],
+          "min_nm": 9.999773046491399,
+          "max_nm": 10.000003657074659
+        },
+        {
+          "angle_deg": [
+            80.0,
+            85.0
+          ],
+          "min_nm": 9.999831700409704,
+          "max_nm": 9.99994530018081
+        }
+      ],
+      "max_pad_loss_s": 0.0,
+      "max_base_shift_m": 0.005165322625576919,
+      "max_foot_shift_m": 0.004940711299008813,
+      "max_friction_use": 0.45960991507982546,
+      "min_foot_normal_force_n": 44.21019390638919,
+      "release_hold_s": 6.28500000003001,
+      "post_release_observation_s": 16.850000000080456
+    }
+  },
+  "grip_diagnostics": {
+    "bilateral_loaded_rotation_samples_5_to_85_deg": 6450,
+    "pad_closing_torque_nm": {
+      "min": 9.999765581799377,
+      "max": 10.000362877772059
+    },
+    "pad_closing_tangent_force_n": {
+      "min": 82.49185571370062,
+      "max": 85.00207994901612
+    },
+    "snapshots": {
+      "peak_pad_closing_torque_nm": {
+        "time_s": 101.39000000012007,
+        "valve_angle_deg": 26.27183361131712,
+        "pad_normal_force_n": [
+          90.98061110816079,
+          8.218344110122109
+        ],
+        "finger_slide_m": [
+          0.009712256697417668,
+          0.009861957895841954
+        ],
+        "pad_surface_gap_m": [
+          -0.0008496720428283911,
+          0.0006696467604857832
+        ],
+        "pad_midpoint_along_lever_m": 0.12692372471835758,
+        "pose_reconstructed_contacts": [
+          {
+            "pad": "RB1_finger_upper_collision",
+            "position_world_m": [
+              0.8560672051451245,
+              -0.0004086678953414266,
+              1.467100082586201
+            ]
+          },
+          {
+            "pad": "RB1_finger_upper_collision",
+            "position_world_m": [
+              0.8625398001522996,
+              -0.0004442256457189847,
+              1.4783475136557929
+            ]
+          },
+          {
+            "pad": "RB1_finger_lower_collision",
+            "position_world_m": [
+              0.8452276654542912,
+              0.0004184272535536033,
+              1.4899059447028784
+            ]
+          }
+        ]
+      },
+      "peak_pad_closing_tangent_force_n": {
+        "time_s": 106.01000000014213,
+        "valve_angle_deg": 84.9953593945587,
+        "pad_normal_force_n": [
+          91.82504261322826,
+          5.140891430327878
+        ],
+        "finger_slide_m": [
+          0.009722738075442076,
+          0.009727497940568883
+        ],
+        "pad_surface_gap_m": [
+          -0.0007388887582254807,
+          0.0007870739974017681
+        ],
+        "pad_midpoint_along_lever_m": 0.12735016916873865,
+        "pose_reconstructed_contacts": [
+          {
+            "pad": "RB1_finger_upper_collision",
+            "position_world_m": [
+              0.781479868993375,
+              -0.0004178059001476997,
+              1.5599120828174242
+            ]
+          },
+          {
+            "pad": "RB1_finger_upper_collision",
+            "position_world_m": [
+              0.7939226232833303,
+              -0.0004468641960490311,
+              1.560333838763701
+            ]
+          },
+          {
+            "pad": "RB1_finger_lower_collision",
+            "position_world_m": [
+              0.7943815254961655,
+              0.0004563338828784949,
+              1.581067751529777
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "comparison_with_original": {
+    "walking": true,
+    "valve_pass_fail": true,
+    "valve_measurements": true,
+    "valve_failures": true
+  },
+  "reproduced": true
+}

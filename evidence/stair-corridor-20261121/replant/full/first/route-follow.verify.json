@@ -1,0 +1,44 @@
+{
+  "scope": "full",
+  "verified": true,
+  "peaks": {
+    "joint_torque_ratio": {
+      "value": 1.0,
+      "time_s": 190.7610000005468,
+      "raw_index": 190760
+    },
+    "foot_surface_force_n": {
+      "value": 1878.5886719429861,
+      "time_s": 248.2720000008214,
+      "raw_index": 248271
+    },
+    "pad_closing_torque_nm": {
+      "value": 10.845386723435983,
+      "time_s": 116.67000000019303,
+      "raw_index": 116669
+    },
+    "joint_torque_nm": {
+      "value": 150.0,
+      "time_s": 191.07100000054828,
+      "raw_index": 191070
+    }
+  },
+  "frame_count": 980,
+  "fps": 25.0,
+  "playback_speed": 25.0,
+  "duration_s": 39.2,
+  "max_caption_time_error_s": 0.0010000000000331966,
+  "walking_caption_samples": {
+    "stance_slip_m": 980,
+    "unexpected_contact_force_n": 980
+  },
+  "physical_seconds_per_frame": 1.0,
+  "sha256": {
+    "mission.npz": "b86c249c84e93a852f73d58ccdae1366acec49eac984a338223ab8557b000f11",
+    "route-follow.mp4": "64200174bf3dfbda1867bfb79793b5a3f6039e035c4d81eab11400dfeb97a293",
+    "route-follow.ass": "c0f9d29e8d9fcf5fd00946c6ce2d933dea560f4924c4fef12342f0a616c7fafa",
+    "route-follow.peaks.json": "6ef1d823f679d27ae1b076500b4a3488071a09503abe04d16f8846ef1e5951ee",
+    "route-follow.loads.csv": "6f939aaf310d5d72d153651f7de8124344932975339a555847cc51563ba020a5",
+    "route-follow.heatmap.html": "4f18985ec1283ee8c008e109541005349e7e350cb06914ece01d2b5174e41cf6"
+  }
+}

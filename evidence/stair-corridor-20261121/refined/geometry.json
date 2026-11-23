@@ -1,0 +1,27 @@
+{
+  "scope": "kinematic walking samples before and after manipulation",
+  "walking_sha256": "78bd8f3370267a8f6556f80b74c7bcf7f9b0085f0f113442a7579d3312c17bf2",
+  "parent_walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+  "footprint_profile": "fixed-side-72-upper-v2",
+  "samples": 50828,
+  "inserted_samples": 14027,
+  "max_swing_offset_m": 0.0,
+  "changed_pose_samples": 42132,
+  "scheduled_landings": 156,
+  "walking_duration_s": 906.645,
+  "task_anchor_s": 89.6,
+  "max_foot_ik_error_m": 0.00194223714618889,
+  "max_unexpected_penetration_m": 0.0,
+  "min_closed_valve_clearance_m": 0.010302050947032083,
+  "nominal_time_at_closest_closed_valve_s": 611.3631578947345,
+  "ik_limit_m": 0.002,
+  "penetration_limit_m": 0.0001,
+  "verified": true,
+  "statics": {
+    "changed_rows": 42132,
+    "friction_pyramid_mu": 0.42,
+    "failed_rows": [],
+    "peak_torque_ratio": 0.6228467471979772,
+    "verified": true
+  }
+}

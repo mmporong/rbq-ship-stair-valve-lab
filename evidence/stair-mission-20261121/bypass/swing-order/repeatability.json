@@ -1,0 +1,169 @@
+{
+  "bitwise_identical": true,
+  "first_raw_sha256": "5a1843010b243a8d368fafc6a979abf2da685fcdb0008a0f1635f67764ef8a10",
+  "repeat_raw_sha256": "5a1843010b243a8d368fafc6a979abf2da685fcdb0008a0f1635f67764ef8a10",
+  "repeat_raw_preserved": false,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "arrays": {
+    "time": {
+      "equal": true,
+      "shape": [
+        10500
+      ],
+      "dtype": "float64",
+      "content_sha256": "8281f1a7dbe27696505bcacb2025272261e345d3f34d6e5c4a5242bcef5e9fc3"
+    },
+    "torque": {
+      "equal": true,
+      "shape": [
+        10500,
+        18
+      ],
+      "dtype": "float64",
+      "content_sha256": "a29c0e992bdd4913800c8df482b3abc866ff1cee986ca711e387cb0874a452c9"
+    },
+    "force": {
+      "equal": true,
+      "shape": [
+        10500,
+        4,
+        3
+      ],
+      "dtype": "float64",
+      "content_sha256": "b2d62dc8ad16fc69e1b2c04ac44d51bb1581291d45b7c502b47f772abb831e94"
+    },
+    "base": {
+      "equal": true,
+      "shape": [
+        10500,
+        7
+      ],
+      "dtype": "float64",
+      "content_sha256": "e03001820146b87f3cee63dccc0e5e2653d72e6fc066fe1764f685aba611e942"
+    },
+    "feet": {
+      "equal": true,
+      "shape": [
+        10500,
+        4,
+        3
+      ],
+      "dtype": "float64",
+      "content_sha256": "54d0df7589c219c41c8b7bda2aa471abc8d0deacba94334dad143af6caa70a59"
+    },
+    "extra": {
+      "equal": true,
+      "shape": [
+        10500,
+        14
+      ],
+      "dtype": "float64",
+      "content_sha256": "47bdfa7927e285eed45774fb88cd20053a39d4b51573de1bf8f9168b1326554e"
+    },
+    "qpos": {
+      "equal": true,
+      "shape": [
+        10500,
+        28
+      ],
+      "dtype": "float64",
+      "content_sha256": "1294de292749799ecc185ab065f14bdaae5afe08f89da478cc9ac5d5d86af2d6"
+    },
+    "qvel": {
+      "equal": true,
+      "shape": [
+        10500,
+        27
+      ],
+      "dtype": "float64",
+      "content_sha256": "83ffda1c28dc99e6d9886863eaa9bbc9659f1321c2ee661a93a6faf1a562bdfe"
+    },
+    "ctrl": {
+      "equal": true,
+      "shape": [
+        10500,
+        19
+      ],
+      "dtype": "float64",
+      "content_sha256": "1df30829f767cc18f6a076e5f1e3b64712c7be5569544e3c0af88a7a7a1be326"
+    },
+    "attempt": {
+      "equal": true,
+      "shape": [
+        10500
+      ],
+      "dtype": "int64",
+      "content_sha256": "3c34904d8d15a242a23629606ae8074c2bf18883eb5dc54b44f96f9ff29aed31"
+    },
+    "commanded": {
+      "equal": true,
+      "shape": [
+        10500,
+        4,
+        3
+      ],
+      "dtype": "float64",
+      "content_sha256": "5fe195298d87d7630844ae38e079c37e2b55d450ae49408a9afc45607e06aa23"
+    },
+    "physics_time_s": {
+      "equal": true,
+      "shape": [
+        10500
+      ],
+      "dtype": "float64",
+      "content_sha256": "9d31501c77242fa3b5d3960e4810141b411ea475ea8fc6712e292d51df9733f0"
+    },
+    "requested_finger_force_n": {
+      "equal": true,
+      "shape": [
+        10500
+      ],
+      "dtype": "float64",
+      "content_sha256": "21bce305f1b421b8dfda1c7c39901b5781c211fb836ce209bb5492515fab241c"
+    },
+    "unexpected_contact_n": {
+      "equal": true,
+      "shape": [
+        10500
+      ],
+      "dtype": "float64",
+      "content_sha256": "17c3ebe26568a0bac72f2a1a1dd7cc92cdc95a7d3d57f5420658947740c6d464"
+    },
+    "robot_torque_requested_nm": {
+      "equal": true,
+      "shape": [
+        10500,
+        18
+      ],
+      "dtype": "float64",
+      "content_sha256": "a29c0e992bdd4913800c8df482b3abc866ff1cee986ca711e387cb0874a452c9"
+    },
+    "base_track_m": {
+      "equal": true,
+      "shape": [
+        10500
+      ],
+      "dtype": "float64",
+      "content_sha256": "d90238b3e7682f73049c127266dd1038b7d188d46084d1ed094f397aa3356891"
+    },
+    "stance_slip_m": {
+      "equal": true,
+      "shape": [
+        10500
+      ],
+      "dtype": "float64",
+      "content_sha256": "ed47d5e0de9462e29304320721ed66e836f872b8ba819ea90455279cd137323a"
+    },
+    "fell": {
+      "equal": true,
+      "shape": [
+        10500
+      ],
+      "dtype": "bool",
+      "content_sha256": "120774b7a9824087a749b589728f3491eea22818906d1a8d69e5100d3e9339f2"
+    }
+  }
+}

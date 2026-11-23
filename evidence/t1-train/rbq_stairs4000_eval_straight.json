@@ -1,0 +1,293 @@
+{
+  "checkpoint": "logs/rsl_rl/rbq10_rb1_stairs/2026-11-09_22-39-10_rbq2048/model_3999.pt",
+  "command": "straight",
+  "num_envs": 1000,
+  "steps": 998,
+  "levels": {
+    "0": {
+      "flat": {
+        "envs": 100,
+        "survived": 0.93,
+        "distance_median_m": 0.4,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.524,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.05,
+        "tracking_error_median_mps": 0.6
+      },
+      "stairs_up": {
+        "envs": 200,
+        "survived": 0.945,
+        "distance_median_m": 0.4,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.526,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "stairs_down": {
+        "envs": 200,
+        "survived": 0.93,
+        "distance_median_m": 0.41,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.526,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "open_stairs_up": {
+        "envs": 300,
+        "survived": 0.95,
+        "distance_median_m": 0.4,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.526,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.05,
+        "tracking_error_median_mps": 0.6
+      },
+      "open_stairs_down": {
+        "envs": 200,
+        "survived": 0.915,
+        "distance_median_m": 0.41,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.527,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.05,
+        "tracking_error_median_mps": 0.6
+      }
+    },
+    "2": {
+      "flat": {
+        "envs": 100,
+        "survived": 0.93,
+        "distance_median_m": 0.41,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.527,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "stairs_up": {
+        "envs": 200,
+        "survived": 0.96,
+        "distance_median_m": 0.39,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.525,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "stairs_down": {
+        "envs": 200,
+        "survived": 0.95,
+        "distance_median_m": 0.4,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.528,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "open_stairs_up": {
+        "envs": 300,
+        "survived": 0.923,
+        "distance_median_m": 0.4,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.527,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "open_stairs_down": {
+        "envs": 200,
+        "survived": 0.865,
+        "distance_median_m": 0.4,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.527,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      }
+    },
+    "4": {
+      "flat": {
+        "envs": 100,
+        "survived": 0.9,
+        "distance_median_m": 0.38,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.524,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "stairs_up": {
+        "envs": 200,
+        "survived": 0.97,
+        "distance_median_m": 0.36,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.525,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "stairs_down": {
+        "envs": 200,
+        "survived": 0.905,
+        "distance_median_m": 0.37,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.528,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "open_stairs_up": {
+        "envs": 300,
+        "survived": 0.973,
+        "distance_median_m": 0.41,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.526,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "open_stairs_down": {
+        "envs": 200,
+        "survived": 0.92,
+        "distance_median_m": 0.41,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.525,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.05,
+        "tracking_error_median_mps": 0.6
+      }
+    },
+    "6": {
+      "flat": {
+        "envs": 100,
+        "survived": 0.94,
+        "distance_median_m": 0.42,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.524,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "stairs_up": {
+        "envs": 200,
+        "survived": 0.985,
+        "distance_median_m": 0.38,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.525,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "stairs_down": {
+        "envs": 200,
+        "survived": 0.89,
+        "distance_median_m": 0.41,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.528,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "open_stairs_up": {
+        "envs": 300,
+        "survived": 0.963,
+        "distance_median_m": 0.41,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.525,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "open_stairs_down": {
+        "envs": 200,
+        "survived": 0.89,
+        "distance_median_m": 0.42,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.527,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      }
+    },
+    "9": {
+      "flat": {
+        "envs": 100,
+        "survived": 0.96,
+        "distance_median_m": 0.4,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.526,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "stairs_up": {
+        "envs": 200,
+        "survived": 0.94,
+        "distance_median_m": 0.38,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.524,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "stairs_down": {
+        "envs": 200,
+        "survived": 0.835,
+        "distance_median_m": 0.38,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.529,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "open_stairs_up": {
+        "envs": 300,
+        "survived": 0.923,
+        "distance_median_m": 0.39,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.527,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      },
+      "open_stairs_down": {
+        "envs": 200,
+        "survived": 0.735,
+        "distance_median_m": 0.34,
+        "promote_share": 0.0,
+        "demote_share": 1.0,
+        "dz_median_m": 0.527,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.06,
+        "tracking_error_median_mps": 0.6
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "scope": "cold-closed valve walking diagnostic",
+  "duration_s": 107.50000000014924,
+  "timestep_s": 0.001,
+  "cold_initial_hinge_deg": 90.0,
+  "external_force_n": 0.0,
+  "gain": 1.5,
+  "metrics": {
+    "passed": false,
+    "fell": false,
+    "saturated_steps": 0,
+    "qp_failed_ticks": 0,
+    "qp_relaxed_ticks": 0,
+    "max_ratio": 0.6450078840124851,
+    "max_base_track_mm": 22.256694540850916,
+    "max_tilt_track_deg": 10.501619848850046,
+    "return_error_mm": 13.271452985849304,
+    "feet_down_at_end": false,
+    "max_stance_slip_mm": {
+      "FL": 6.767,
+      "FR": 5.471,
+      "RL": 4.826,
+      "RR": 2.657
+    },
+    "max_friction_use": {
+      "FL": 1.0,
+      "FR": 1.0,
+      "RL": 1.0,
+      "RR": 0.76
+    },
+    "unexpected_contacts_n": {
+      "base+valve": 90.62126563854234,
+      "RB1_Base_Yaw+valve": 80.57068516180976
+    },
+    "floor_mu": 0.6,
+    "wall_mu": 0.6,
+    "physics": {},
+    "gains_scale": 1.5,
+    "mode": "force",
+    "seconds": 107.50000000000003,
+    "gripper_audit": {
+      "physics_steps": 107500,
+      "finger_clipped_steps": 0,
+      "qpos_write_count_after_start": 0,
+      "qvel_write_count_after_start": 0,
+      "act_write_count_after_start": 0,
+      "mocap_write_count_after_start": 0,
+      "state_reset_count": 0,
+      "max_qfrc_applied_n": 0.0,
+      "max_xfrc_applied_n": 0.0
+    }
+  },
+  "first_lever_contact": {
+    "time_s": 100.3070000001149,
+    "part": "base",
+    "force_n": 90.62126563854234
+  },
+  "peak_lever_contact": {
+    "time_s": 100.3070000001149,
+    "part": "base",
+    "force_n": 90.62126563854234
+  },
+  "first_unexpected_contact_over_10n": {
+    "time_s": 100.3070000001149,
+    "force_n": 90.62126563854234,
+    "bodies": [
+      "valve",
+      "base"
+    ],
+    "geoms": [
+      "valve_lever",
+      "geom[15]"
+    ]
+  },
+  "peak_unexpected_contact": {
+    "time_s": 100.3070000001149,
+    "force_n": 90.62126563854234,
+    "bodies": [
+      "valve",
+      "base"
+    ],
+    "geoms": [
+      "valve_lever",
+      "geom[15]"
+    ]
+  },
+  "min_finger_slide_m": [
+    0.040003462867349605,
+    0.04000197703461043
+  ],
+  "raw_sha256": "36b6be946ff907abdff4587b33031a2a09ca3d08ad6dd45ff3d36561655c8667",
+  "trace_sha256": "a04fc5351ab82f02e3829e28f5a1043e24531c377823ed2370166e275f437045",
+  "valve_angle_range_deg": [
+    90.0,
+    90.03411208953217
+  ],
+  "peak_pad_normal_n": 0.0,
+  "peak_pad_torque_nm": 0.0,
+  "first_contact_sample": {
+    "sample_index": 100306,
+    "time_s": 100.3070000001149,
+    "max_joint_torque_nm": 30.178713092466438,
+    "foot_force_world_n": [
+      [
+        27.47444023705725,
+        -18.584283595323285,
+        174.2065359292162
+      ],
+      [
+        18.58284886485141,
+        24.66871773610835,
+        140.44384050967176
+      ],
+      [
+        -24.66419717775338,
+        -1.4920603957133218,
+        92.16189451626128
+      ],
+      [
+        -17.99169918455538,
+        -8.482514932770398,
+        76.86479472482635
+      ]
+    ],
+    "base_track_mm": 11.0963161517351,
+    "stance_slip_mm": 6.766943679226384,
+    "fell": false,
+    "valve_angle_deg": 90.0
+  }
+}

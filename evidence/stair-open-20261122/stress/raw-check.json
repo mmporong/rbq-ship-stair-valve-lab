@@ -1,0 +1,18 @@
+{
+  "verified": true,
+  "raw_sha256": "362cbd836802d2f29b8febd2917a4ba987d9990bea4e02ec32f84f7978bf96b9",
+  "csv_samples": 127750,
+  "time_and_stage_match": true,
+  "independent_method": "SciPy inverse rotation and rectangular-section formulas over the entire CSV",
+  "max_absolute_error_mpa": {
+    "bending_vertical_mpa": 2.842170943040401e-14,
+    "bending_lateral_mpa": 8.881784197001252e-16,
+    "torsion_mpa": 7.105427357601002e-15,
+    "von_mises_mpa": 3.552713678800501e-14
+  },
+  "stage_peak_time_and_value_matches": 10,
+  "spot_check_method": "MuJoCo quaternion-to-matrix plus go2_wall.loads.bracket_stress",
+  "scalar_samples": 139,
+  "max_scalar_error_mpa": 7.105427357601002e-14,
+  "png_digests_match_report": true
+}

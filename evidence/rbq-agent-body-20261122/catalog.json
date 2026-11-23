@@ -1,0 +1,35 @@
+{
+  "schema": "rbq_intervention_catalog_v1",
+  "candidates": [
+    {
+      "candidate_id": "no_intervention",
+      "description": "Use checkpoint 9100's leg position commands at 50 Hz and the native position-servo gains.",
+      "executable": true,
+      "mechanics": {"leg_targets": "frozen PPO", "observation": "body motion, joints, gait phase and terrain scan"}
+    },
+    {
+      "candidate_id": "phase_25",
+      "description": "Advance the observed gait clock by 25 policy steps while keeping the checkpoint and forward command.",
+      "executable": true,
+      "mechanics": {"leg_targets": "frozen PPO", "phase_offset_steps": 25}
+    },
+    {
+      "candidate_id": "edge_slow_rule",
+      "description": "Lower the forward command from 0.60 to 0.22 m/s as the measured body reaches the stairs.",
+      "executable": true,
+      "mechanics": {"leg_targets": "frozen PPO", "edge_speed_mps": 0.22, "observation": "base position"}
+    },
+    {
+      "candidate_id": "joint_reference_pd",
+      "description": "Use an expert demonstration on the articulated plant and correct its torques with joint angle and velocity feedback.",
+      "executable": true,
+      "mechanics": {"leg_targets": "expert demonstration", "observation": "joint angles and velocities", "switches_controller": true}
+    },
+    {
+      "candidate_id": "contact_gated_reference",
+      "description": "Use the same demonstration, distributing a body-pose correction among supporting feet and positioning swing feet in world coordinates.",
+      "executable": true,
+      "mechanics": {"leg_targets": "expert demonstration", "observation": "joint motion, body pose, foot loads and position", "switches_controller": true}
+    }
+  ]
+}

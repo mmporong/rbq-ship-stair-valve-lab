@@ -1,0 +1,86 @@
+[
+  {
+    "case_id": "repair-confirm-01",
+    "lateral_m": 0.01680264865775162,
+    "yaw_deg": -0.8629350071365138,
+    "joint_seed": 7811616664998003577,
+    "joint_noise_rad": 0.004809435386240264
+  },
+  {
+    "case_id": "repair-confirm-02",
+    "lateral_m": -0.02362782828758958,
+    "yaw_deg": 1.4349443661592902,
+    "joint_seed": 3349999441433611837,
+    "joint_noise_rad": 0.004305929754434049
+  },
+  {
+    "case_id": "repair-confirm-03",
+    "lateral_m": 0.013626080856617498,
+    "yaw_deg": -2.4589367659626262,
+    "joint_seed": 7293375413433461184,
+    "joint_noise_rad": 0.0036924436678736888
+  },
+  {
+    "case_id": "repair-confirm-04",
+    "lateral_m": -0.022039888600257025,
+    "yaw_deg": -2.2183383128897467,
+    "joint_seed": 6128472811349538752,
+    "joint_noise_rad": 0.0032282596809423024
+  },
+  {
+    "case_id": "repair-confirm-05",
+    "lateral_m": -0.009818953208874066,
+    "yaw_deg": 0.5274011464672892,
+    "joint_seed": 6733233961621097269,
+    "joint_noise_rad": 0.0038205018927823034
+  },
+  {
+    "case_id": "repair-confirm-06",
+    "lateral_m": -0.006352055096605174,
+    "yaw_deg": -0.897782341250305,
+    "joint_seed": 3306158861680947194,
+    "joint_noise_rad": 0.004693693740226772
+  },
+  {
+    "case_id": "repair-confirm-07",
+    "lateral_m": 0.0015552942724934467,
+    "yaw_deg": 0.21015709669108773,
+    "joint_seed": 4843676811462312744,
+    "joint_noise_rad": 0.0035409950099641574
+  },
+  {
+    "case_id": "repair-confirm-08",
+    "lateral_m": -0.02004318565677346,
+    "yaw_deg": 1.9107168821584972,
+    "joint_seed": 4643602451955801715,
+    "joint_noise_rad": 0.003051336788915118
+  },
+  {
+    "case_id": "repair-confirm-09",
+    "lateral_m": 0.004039613828144377,
+    "yaw_deg": -1.9056919067796714,
+    "joint_seed": 2897172868104244905,
+    "joint_noise_rad": 0.004740203509351587
+  },
+  {
+    "case_id": "repair-confirm-10",
+    "lateral_m": 0.003068484002120609,
+    "yaw_deg": -0.06960509706148077,
+    "joint_seed": 6472127494401786000,
+    "joint_noise_rad": 0.004900668019498022
+  },
+  {
+    "case_id": "repair-confirm-11",
+    "lateral_m": 0.006805607710927766,
+    "yaw_deg": -0.1100017524002288,
+    "joint_seed": 6406009471682380976,
+    "joint_noise_rad": 0.0031762917881262252
+  },
+  {
+    "case_id": "repair-confirm-12",
+    "lateral_m": -0.0039791851234236945,
+    "yaw_deg": -2.4495945427192725,
+    "joint_seed": 7461789375647243683,
+    "joint_noise_rad": 0.004738074573693847
+  }
+]

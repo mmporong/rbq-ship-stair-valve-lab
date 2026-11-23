@@ -1,0 +1,11 @@
+{
+  "case_id": "dev-03",
+  "candidate_id": "initial",
+  "state_sha256": "18f5834a5962abb3e87d5056e1cea07a64268c431d5ab8ff9af1462993ed1aec",
+  "strict_success": false,
+  "complete_horizon": false,
+  "outcome": "early_termination",
+  "first_failure": "terrain_body_contact",
+  "simulated_s": 7.606,
+  "maximum_angle_deg": 0.0
+}

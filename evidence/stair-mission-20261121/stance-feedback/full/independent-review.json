@@ -1,0 +1,129 @@
+{
+  "scope": "read-only independent review of the completed fixed-walk full replay and its 131750-sample prefix",
+  "source": {
+    "commit": "0db7b29e7130fbf7ad416dfb1986a32bb4f71c75",
+    "full_folder": ".omx/mission-closeout-20261121/stance-integration/full-endpoint-settle2",
+    "fixed_walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+    "physics_timestep_s": 0.001,
+    "actuation_period_s": 0.005,
+    "extra_settle_s": 2.0
+  },
+  "fingerprints": {
+    "full_mission_bytes": 513334086,
+    "full_mission_sha256": "c8c9b7b96e07d10a07b3ecb0ee5294529f7688e27c198a01a45be1cc2d6ac1b3",
+    "scene_sha256": "ec88081b8ceddf65357432c9e44bc383b877d74c10310c9d65b8233bca705561",
+    "result_sha256": "246c4747545afa50d460d4d20a5baeaa53888c7dd2ad761b9aa9537733d8a23f",
+    "result_embedded_raw_and_scene_sha_match": true,
+    "restored_prefix_samples": 131750,
+    "restored_prefix_sha256": "801f7bc4e263367b5931ba3289c07e8b64f4ef4d3221ba29f585b1143ee9e77a",
+    "restored_prefix_matches_fixed_walk_through_task_recording": true,
+    "replanned_worker_sha256_excluded": "85c1443034c05752886ee68fb9d3feb1918e3388a8593285c06e03ac711b803d"
+  },
+  "endpoint": {
+    "physics_steps": 773250,
+    "planned_end_s": 773.25,
+    "last_command_time_s": 773.249,
+    "last_post_step_observation_time_s": 773.249999988627,
+    "reported_controller_seconds": 773.2499999999973,
+    "time_axis_matches_command_plus_one_step": true,
+    "maximum_time_axis_absolute_error_s": 1.1373003871995024e-08
+  },
+  "first_mission_failure": {
+    "index": 111850,
+    "stage": "hold",
+    "post_step_observation_time_s": 111.85100000017002,
+    "metric": "stance_slip_m",
+    "measured": 0.01000009856095136,
+    "limit": "<= 0.01",
+    "matches_result_json": true
+  },
+  "first_fall": {
+    "index": 181258,
+    "stage": "return",
+    "command_time_s": 181.258,
+    "post_step_observation_time_s": 181.25900000050143,
+    "base_xyz_m": [
+      0.8794275524535673,
+      0.026121178173244986,
+      1.3976429731163886
+    ],
+    "matches_walking_failure": true
+  },
+  "landing_support": {
+    "scheduled_and_evaluated_landings": 156,
+    "fully_supported_300ms_dwell_landings": 25,
+    "support_flags_match_all_result_milestones": true,
+    "first_unsupported_landing": {
+      "landing": 26,
+      "motion_end_s": 168.05,
+      "command_time_s": 167.75,
+      "post_step_observation_time_s": 167.75100000043693,
+      "stage": "return",
+      "minimum_expected_support_n": 0.0,
+      "expected_surface_indices": [
+        7,
+        7,
+        5,
+        5
+      ]
+    }
+  },
+  "floor_return": {
+    "final_window_command_time_s": [
+      772.75,
+      773.249
+    ],
+    "sample_count": 500,
+    "max_start_xy_error_m": 2.2732541111960165,
+    "min_up_z": -0.5860714541311673,
+    "max_linear_speed_mps": 0.0014351243679163563,
+    "max_angular_speed_radps": 0.006743536675683127,
+    "min_floor_force_n": 0.0,
+    "final_each_foot_floor_force_n": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "stable_floor_return": false,
+    "first_transient_all_feet_floor_observation_s": 380.90999999790455,
+    "last_transient_all_feet_floor_observation_s": 383.7719999978369,
+    "matches_result_stable_floor_return": true
+  },
+  "post_release_contact": {
+    "measured_release_window_start_s": 117.5660000001973,
+    "measured_release_established_s": 118.06500000019969,
+    "pad_recontact_after_release": false,
+    "first_nonpad_handle_recontact": {
+      "index": 137553,
+      "stage": "return",
+      "command_time_s": 137.553,
+      "post_step_observation_time_s": 137.55400000029275,
+      "handle_nonpad_force_n": 90.63326230745689,
+      "pad_normal_force_n": [
+        0.0,
+        0.0
+      ]
+    },
+    "matches_result_post_release_contact_failure": true
+  },
+  "code_validation": {
+    "targeted_tests": "3 passed",
+    "full_tests": "130 passed",
+    "ruff": "passed",
+    "compileall": "passed",
+    "lsp_or_pyright": "unavailable in this environment"
+  },
+  "review_verdict": {
+    "failure_evidence_and_reported_metrics": "APPROVE",
+    "physical_success": "NOT APPROVED",
+    "critical_issues": 0,
+    "high_issues": 0,
+    "medium_issues": 0,
+    "notes": [
+      "The fixed-walk 4 s settling prefix is 801f7bc4..., not the replanned 85c144... worker recording.",
+      "The full trace reaches the planned endpoint but fails before it: stance slip at 111.851 s, non-pad handle recontact at 137.554 s, first unsupported landing at 167.751 s, and first fall at 181.259 s.",
+      "Only 25 of 156 landing dwell windows meet the complete support criterion and the final floor-return window fails."
+    ]
+  }
+}

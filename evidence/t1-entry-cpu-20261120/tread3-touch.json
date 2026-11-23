@@ -1,0 +1,61 @@
+{
+  "case": {
+    "checkpoint": 9100,
+    "checkpoint_sha256": "6d39b7c28c9cdda9c3964c3b37493c3bcd24f81ca46f5e367618a7f264cfc757",
+    "phase_offset_steps": 25,
+    "edge_speed_mps": null,
+    "speed_mps": 0.6,
+    "passed_round_trip": false,
+    "last_phase": "ascend",
+    "termination": "fell_over",
+    "events": {
+      "ascend_s": 0.0
+    },
+    "ascent_treads": [
+      1,
+      2,
+      3
+    ],
+    "descent_treads": [],
+    "maximum_body_z_m": 0.6795957014034197,
+    "maximum_forward_x_m": -0.09272567496261577,
+    "final_body_xyz_m": [
+      -1.1211022383487792,
+      -0.8255060896135565,
+      0.4532510433574927
+    ],
+    "peak_torque_ratio": 1.0,
+    "first_illegal_contacts": [],
+    "first_route_violation": {
+      "reason": "off_route_support",
+      "time_s": 2.2449999999999743,
+      "phase": "ascend",
+      "foot": "robot/FR_foot_collision",
+      "surface": "approach_floor",
+      "contact_xyz_m": [
+        0.17176349576937713,
+        -0.06683347184551958,
+        -0.0013441806469605133
+      ]
+    },
+    "stable_return_s": 0.0
+  },
+  "first_tread3_support": {
+    "time_s": 2.9349999999999596,
+    "foot": "FL",
+    "tread": 3,
+    "vertical_normal_force_n": 160.5848157593796,
+    "contact_xyz_m": [
+      0.3270162834023117,
+      0.2398322192080086,
+      0.5613207075314663
+    ],
+    "base_xyz_m": [
+      -0.13495568262113963,
+      -0.00964711054215179,
+      0.5889885690357415
+    ],
+    "base_up_angle_deg": 15.653016467545264
+  },
+  "termination_time_s": 4.2999999999999305
+}

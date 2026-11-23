@@ -1,0 +1,55 @@
+{
+  "schema": "rbq_local_triage_result_v1",
+  "provider_class": "local_ollama_exploratory_not_registered_nemotron",
+  "model_requested": "gemma3:4b",
+  "model_returned": "gemma3:4b",
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_gpu": 0,
+    "num_predict": 512
+  },
+  "wall_s": 30.19425980001688,
+  "prompt_sha256": "1fb857a251f56cb57191161e0dab99998dd51b7a3997d3e600b896b1202f1933",
+  "decision": {
+    "action": "runtime_contact_window",
+    "cited_facts": [
+      "registered_scope.supported_task",
+      "registered_scope.rbq_compatible"
+    ],
+    "reason": "The supported task is Isaac-Velocity-Flat-Unitree-Go2-v0, and the RBQ platform is not compatible with this task."
+  },
+  "host_disposition": "HOLD_without_execution",
+  "host_gate": {
+    "supported_task": "Isaac-Velocity-Flat-Unitree-Go2-v0",
+    "rbq_case_admitted": false,
+    "selected_check_result": "HOLD_without_execution",
+    "approval_created": false,
+    "intervention_created": false
+  },
+  "model_calls": 1,
+  "checks_executed": 0,
+  "approvals_created": 0,
+  "interventions_created": 0,
+  "rbq_improvement_measured": false,
+  "claim_limits": {
+    "official_rl_triage_agent_result": false,
+    "nemotron_result": false,
+    "diagnosis_accuracy_measured": false,
+    "rbq_improvement_measured": false
+  },
+  "facts": {
+    "fresh_rbq.v7.work_platform_reached": 0,
+    "fresh_rbq.v8.work_platform_reached": 0,
+    "fresh_rbq.v7.maximum_supported_tread": 1,
+    "fresh_rbq.v8.maximum_supported_tread": 1,
+    "fresh_rbq.v7.termination": [
+      "illegal_contact"
+    ],
+    "fresh_rbq.v8.termination": [
+      "illegal_contact"
+    ],
+    "registered_scope.supported_task": "Isaac-Velocity-Flat-Unitree-Go2-v0",
+    "registered_scope.rbq_compatible": false
+  }
+}

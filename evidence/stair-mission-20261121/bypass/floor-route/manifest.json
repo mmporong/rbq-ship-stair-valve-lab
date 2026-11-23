@@ -1,0 +1,240 @@
+{
+  "scope": "50 degree floor-start walking sensitivity with the valve initialized at 90 degrees",
+  "shared_walk": {
+    "path": "../swing-order/walk50.npz",
+    "sha256": "10711a9e5ce58e6db3cebc4c2e56abb586570202acd4e06050e19d7b514472bf"
+  },
+  "physics": {
+    "timestep_s": 0.001,
+    "cold_initial_hinge_deg": 90.0,
+    "external_force_n": 0.0,
+    "gain": 1.5,
+    "controller_mode": "force",
+    "tracking_limit_m": 0.03,
+    "collision_criterion": "Measured contact force. Four foot geoms may contact terrain; every other active contact is unexpected. First unexpected threshold is 10 N. Lever contact is also recorded above 1 N.",
+    "actuation_period_s": 0.001,
+    "force_allocation_period_s": 0.01,
+    "gripper_initial_slide_m": [
+      0.04,
+      0.04
+    ],
+    "gripper_command_n": 100.0,
+    "finger_geoms": [
+      "RB1_finger_upper",
+      "RB1_finger_lower"
+    ],
+    "finger_slide_order": [
+      "upper_m",
+      "lower_m"
+    ],
+    "allowed_contact_rule": "Only the four foot geoms may contact terrain.",
+    "allowed_task_contact_pairs": [],
+    "gripper_positive_command_direction": "open"
+  },
+  "extra_columns": [
+    "valve_angle_deg",
+    "valve_speed_rad_s",
+    "upper_pad_normal_force_n",
+    "lower_pad_normal_force_n",
+    "pad_closing_torque_nm",
+    "max_unexpected_lever_contact_n",
+    "max_any_lever_contact_n"
+  ],
+  "baseline": {
+    "input": "../swing-order/walk50.npz",
+    "raw_sha256": "36b6be946ff907abdff4587b33031a2a09ca3d08ad6dd45ff3d36561655c8667",
+    "trace_sha256": "a04fc5351ab82f02e3829e28f5a1043e24531c377823ed2370166e275f437045",
+    "result_file": "baseline-result.json",
+    "minimum_finger_slide_m": [
+      0.040003462867349605,
+      0.04000197703461043
+    ],
+    "first_and_peak_unexpected_contact": {
+      "physics_time_s": 100.3070000001149,
+      "pair": "base+valve",
+      "bodies": [
+        "valve",
+        "base"
+      ],
+      "geoms": [
+        "valve_lever",
+        "geom[15]"
+      ],
+      "force_n": 90.62126563854234
+    }
+  },
+  "verified_prefix": {
+    "input": "verified-prefix-control.npz",
+    "input_sha256": "8f8c60faa13e889e805cff5ccc732cd91840313aaa28c51515b83297035a7788",
+    "raw_sha256": "8261155fc8545ca457373c3e302ca8598a24a464391693e9a78eff043058ac02",
+    "trace_sha256": "1abf1548cb7bb337532d7674192e7443fd08d7b7623d158453faa5d7993cf23c",
+    "result_file": "verified-prefix-result.json",
+    "minimum_finger_slide_m": [
+      0.040003462867349605,
+      0.04000197703461043
+    ],
+    "verified_through_s": 107.4,
+    "verified_through_physics_time_s": 107.40000000014876,
+    "max_base_track_m_through_verified_time": 0.018869770340797547,
+    "max_stance_slip_m_through_verified_time": 0.0067669436792263836,
+    "max_requested_torque_ratio_through_verified_time": 0.7086750201630951,
+    "saturated_steps_through_verified_time": 0,
+    "qp_failed_ticks_through_verified_time": 0,
+    "fell_through_verified_time": false,
+    "lever_peak_n_through_s": 0.0,
+    "unexpected_contact_peak_n_through_s": 0.0,
+    "first_tracking_violation_physics_time_s": 107.41200000014882,
+    "first_tracking_violation_m": 0.03249619003609343,
+    "note": "The dedicated path ends at 107.40 s. The robot resumes the reference walk and crosses 30 mm at the physical time reported here.",
+    "end_s": 107.5
+  },
+  "extension_attempt": {
+    "input": "extension-attempt-control.npz",
+    "input_sha256": "9ff6d801eed438769c17b0a627fa2611ea63206f41edc17f245479cb30c6454f",
+    "raw_sha256": "eb28ae261cdd0147fa562952765ac04d0f3c8d38ba84268b4810ae5e530ddf25",
+    "trace_sha256": "764dc080f15899d7bbd3bf929246a32815fc06c0e7243a8d791c53cfc0844038",
+    "result_file": "extension-attempt-result.json",
+    "minimum_finger_slide_m": [
+      0.0395374013270985,
+      0.03850271240481909
+    ],
+    "search_evaluations": 8800,
+    "planned_end_s": 111.82,
+    "cap_aware_static_first_failure_s": 111.86,
+    "physical_first_tracking_violation_s": 107.27000000014814,
+    "physical_first_tracking_violation_m": 0.030294290757256398,
+    "physical_first_qp_failure_s": 107.98100000015154,
+    "physical_first_fall_s": 108.67500000015485,
+    "physical_first_unexpected_contact": {
+      "physics_time_s": 108.98900000015635,
+      "pair": "RR_calf+world",
+      "bodies": [
+        "world",
+        "RR_calf"
+      ],
+      "geoms": [
+        "tread3",
+        "geom[22]"
+      ],
+      "force_n": 682.2912563709588
+    },
+    "physical_peak_unexpected_contact": {
+      "physics_time_s": 109.07300000015675,
+      "pair": "RR_thigh+world",
+      "bodies": [
+        "RR_thigh",
+        "world"
+      ],
+      "geoms": [
+        "geom[18]",
+        "stringerR"
+      ],
+      "force_n": 7770.102802995011
+    },
+    "claim_boundary": "The joined controls violate the tracking criterion before the proposed 112.02 s connection.",
+    "end_s": 111.82
+  },
+  "target_frontier_112_02": {
+    "verified_prefix_end_base_xyz_difference_m": 0.06060698738163127,
+    "verified_prefix_end_max_foot_difference_m": 0.20800626974246353,
+    "unverified_planned_111_82_base_xyz_difference_m": 0.07767528518126267,
+    "unverified_planned_111_82_max_foot_difference_m": 0.03310564663398399
+  },
+  "trace_columns": [
+    "time",
+    "physics_time_s",
+    "extra",
+    "unexpected_contact_n",
+    "base_track_m",
+    "stance_slip_m",
+    "fell",
+    "attempt",
+    "torque",
+    "force",
+    "finger_slide_m",
+    "finger_command_n",
+    "peak_requested_torque_ratio"
+  ],
+  "trace_notes": {
+    "attempt": "QP/control-attempt index; -1 means no static solution, 0 is the nominal attempt, and values greater than 0 are relaxed attempts.",
+    "raw_policy": "The trace contains all 1 ms samples of the named channels. The raw SHA-256 identifies all channels produced by the replay.",
+    "time": "time is command time; physics_time_s is the measured post-step timestamp used for every reported event."
+  },
+  "single_thread_audit": {
+    "environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1"
+    },
+    "baseline": "Same 100.307 s contact and no fall or QP failure; peak force differed by -0.006424 N and maximum tracking by -0.001991 mm.",
+    "extension": "Same failure class; first >10 N contact shifted +0.001 s and peak force differed by -1277.850318 N, confirming thread-sensitive post-fall divergence."
+  },
+  "base_commit": "632fcc21a2c6f0ceed236cfe83cef5837736c791",
+  "replay_provenance": {
+    "source_sha256_lf": {
+      "configs/assets.lock.json": "f8f259306ef584fd4397ea71a9c2228132583bacb29a231e65df1dadb07aa3a1",
+      "configs/d1_parameters.json": "19a144b06a4b9936f3d516166ab7ae68cacd6efb4b17b4873ff221619ff55ab8",
+      "evidence/t1-stair-ascent-20261120/target-round-trip-geometry.json": "38f5f74a7c36dcf17d6f5466b1d407785b9cb6835f87f1992478bad93df1480a",
+      "evidence/t1-stair-ascent-20261120/target-round-trip-plan.json": "6f98b509bb28375dffac36b6589b185ea9032a0dafaa8ce7044feeb73ed5a56f",
+      "evidence/t1-stair-posture-20261120/front-pair.json": "7eb8da1890b629862925390bf2d01e782e13663930f19a719271f013abd8b27c",
+      "evidence/t3-valve-20261120/fixed-body-candidates.json": "76b31a10b1faf1c6ae35889d35f8cb40614c2e97dac83f513c8adab2ebc83791",
+      "pyproject.toml": "efafd00dbcb36cbb8dd32b6426341663e5bd85c37b21aac7e4fe4e23da0d7753",
+      "src/go2_wall/grasp_motion.py": "08071870d3097fec5e9b466c8ced0011489af137732fefcb3fb4eb64900cff86",
+      "src/go2_wall/gripper_control.py": "f753eca35d2a0d0902863503571f7d54b5a6e08ef8a9d015e85bc0de04be1057",
+      "src/go2_wall/hold.py": "b8a58688721cd70f47f262fe1a2c48e1d65523779ed6b3d74bd9f8abdf2b9fd6",
+      "src/go2_wall/pose_search.py": "f88f4e4c632e7ee70f840525ccfdf37996db4281f0a732bd5167402fd70a1cbf",
+      "src/go2_wall/robot.py": "8c4bf030f05ee4fd7e05a9d96049eacf8d6a7d4589c1f181107c84101131ebb4",
+      "src/go2_wall/stair_valve.py": "c032a75c4c0c8d356d205dee7490a2a91487890c5f36704a6d468332791c53d3",
+      "src/go2_wall/stairs.py": "a0dff6cef937dc81a1f3ac126382dd9ec0bd243111c5e825cd5017d3de35696f",
+      "src/go2_wall/statics.py": "30a9b1da0e6b057af33b4012d43487907296d5412e5447afd61e7b9f5e070841",
+      "src/go2_wall/transition.py": "b57d7ee17c39c1d2f72976b81106d237b5bdf9dc52fd613ce5b3c49c1d5ddf69",
+      "tools/probe_stair_transfer.py": "a9208f54d5df499e158bb3f92ed36457cb8bd833297cf7fdcfe4f98639d6a39f",
+      "tools/replay_stair_entry.py": "8bd0a7e2a5f61b7415b7fe35d4bef59348f5f6bf4e0ba484a36f969e9d92b80c",
+      "tools/replay_stair_sequence.py": "b1f8584915aeb189c825d9a95c16c20551e5af50211c8372a65550eeb4394e24",
+      "tools/replay_stair_transfer.py": "d4e0fe0554fffaff751791ccc47353c65683f5e2376af4e17261b0917f789514",
+      "tools/replay_valve_bypass.py": "9f18ff9496cbc37e01d05c27b10500e5af3296e7d40439b6f5df77c30ab4b518",
+      "tools/stair_bypass_inputs.py": "c367fe6c094b12d4c550e1130bfebaff3815f3d2430fe4384d9a14c4c8134981",
+      "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7"
+    },
+    "rbq_asset_commit": "c7b80ba49f9a79f983cb977e2726cb2246701fcf",
+    "rbq_asset_files": {
+      "resources/meshes/rb1/Link0.stl": "45e637f4a07d34238c401682389316b23b2e59c01a492534700c635388928e86",
+      "resources/meshes/rb1/Link1.stl": "581e578df79d66f03cf2587f551dcf92c4843f05ac20a0f44199988e467b3108",
+      "resources/meshes/rb1/Link2.stl": "2c2d632ab45575b91710c7a94dc47910319eee940d8262859546126ae1b937a9",
+      "resources/meshes/rb1/Link3.stl": "c5e21860caa8e6cd6d853fe7cdb7e8e6d85ba89443e2e63165fcc5e23c6d3559",
+      "resources/meshes/rb1/Link4.stl": "d0a6191685e902b21b32d64fc12ba4a14b97c05b688a350317bc9ad7d9bfb130",
+      "resources/meshes/rb1/Link5.stl": "47d90e2501197dd80083be31363b54624c33d81878e015e9c6b38e17e41910a6",
+      "resources/meshes/rb1/Link6.stl": "ee45c66ce6d93bb439eb26e473bb8e1b7a2252b321e9a101a85ddcd060f8e2f4",
+      "resources/meshes/rb1/RB1_Handcam.stl": "f414e54ef898f4f3510269c4e7dfadc5a094616234e8a7a0f5742121840a814d",
+      "resources/meshes/rb1/RB1_Palm.stl": "6e6a1a93e3500d7f2150b29156b03c2bf2620bff9063cd89fe021cc61c2cbb1d",
+      "resources/meshes/rb1/RB1_finger_lower.stl": "8d3219788aa6db0c7ac271f063aa87fb2186b189dd1a1c166858fd0c8d2e51de",
+      "resources/meshes/rb1/RB1_finger_upper.stl": "f0c6967aa54b2d2aa8a91bb7c11bb2524847201d3fccac91f16470ba3a9de4cf",
+      "resources/meshes/rbq/calf.obj": "c690fa922cef7734c7649f09f6a040035353f38873a9dda874fdd010928517e9",
+      "resources/meshes/rbq/hip2.obj": "0c260eaf543767ebc60da2082bd1027c27377244eb93d440a7be89d447d59c1a",
+      "resources/meshes/rbq/hip3.obj": "7603867d4b96061301f226637ebbbad31c54fad9c799e8b66b01b063e50b5945",
+      "resources/meshes/rbq/thigh.obj": "575533eaa7dbee1779a67b6ec292e5aa6b158a1b7dd002cf3e1ecd082e0aeb8f",
+      "resources/meshes/rbq/trunk.obj": "f11a4ff2065b7483112400456df8d7c9210fb7279c150f62bf0acdb8d2ac2891",
+      "resources/model/README.md": "5685135a54f76044fe7e28cf217fa45de70edc6689fb948924d9d932a90e0fdc",
+      "resources/model/rbq10_with_rb1.xml": "fa01e1ff0df8575a60773efef9339f15ce710e7beb3d6dc4af7009238909f32a"
+    },
+    "runtime": {
+      "python": "3.14.0",
+      "mujoco": "4.0.0",
+      "numpy": "2.5.5",
+      "scipy": "1.18.1"
+    }
+  },
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null
+  },
+  "public_files_sha256": {
+    "extension-attempt-control.npz": "9ff6d801eed438769c17b0a627fa2611ea63206f41edc17f245479cb30c6454f",
+    "verified-prefix-control.npz": "8f8c60faa13e889e805cff5ccc732cd91840313aaa28c51515b83297035a7788",
+    "baseline-result.json": "6792f3a0dc54cfdd4276614d8c4c3202d94a7ec88a5f57961fb0846f43c77ed6",
+    "extension-attempt-result.json": "04fd5f682158662ac494304fa56386c41e60875c18fa424b917c6c975cde24f1",
+    "verified-prefix-result.json": "6d475adbb55144149ec5924dc5b4e3e1d81b647a628f2d67f935afcdf9da67fa",
+    "baseline-trace.npz": "a04fc5351ab82f02e3829e28f5a1043e24531c377823ed2370166e275f437045",
+    "extension-attempt-trace.npz": "764dc080f15899d7bbd3bf929246a32815fc06c0e7243a8d791c53cfc0844038",
+    "verified-prefix-trace.npz": "1abf1548cb7bb337532d7674192e7443fd08d7b7623d158453faa5d7993cf23c"
+  }
+}

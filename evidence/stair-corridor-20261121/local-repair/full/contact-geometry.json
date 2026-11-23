@@ -1,0 +1,65 @@
+{
+  "raw_sha256": "9e338635a2c193423795744222b7394322e72fed448d448d7e1d4bf5838ebffd",
+  "scene_sha256": "e8afbe3426838cf0f566627b05f007b8cf4cb9ec379a2a3465fc6b33ca189040",
+  "limit_n": 10.0,
+  "events": [
+    {
+      "event": "first_over_limit",
+      "sample_index": 187345,
+      "state_time_s": 187.3460000005305,
+      "recorded_force_n": 13.07783654695218,
+      "contacts_in_forward_solve": [
+        {
+          "bodies": [
+            "world",
+            "FL_calf"
+          ],
+          "geoms": [
+            "stringerL",
+            null
+          ],
+          "geom_ids": [
+            12,
+            46
+          ],
+          "location_world_m": [
+            0.8929075061672304,
+            0.31455074647854614,
+            1.2511463212996785
+          ],
+          "signed_distance_m": 0.000995685736820507,
+          "recomputed_force_n": 13.077834288543063
+        }
+      ]
+    },
+    {
+      "event": "peak",
+      "sample_index": 198940,
+      "state_time_s": 198.94100000058586,
+      "recorded_force_n": 136.4541830865264,
+      "contacts_in_forward_solve": [
+        {
+          "bodies": [
+            "world",
+            "FL_calf"
+          ],
+          "geoms": [
+            "stringerL",
+            null
+          ],
+          "geom_ids": [
+            12,
+            46
+          ],
+          "location_world_m": [
+            0.8924926208509175,
+            0.3150731715336949,
+            1.2502618520160096
+          ],
+          "signed_distance_m": -0.00016325998457501135,
+          "recomputed_force_n": 136.45487228914993
+        }
+      ]
+    }
+  ]
+}

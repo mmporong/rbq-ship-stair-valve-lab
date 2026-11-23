@@ -1,0 +1,160 @@
+{
+  "plan_commit": "953e36ca48f070a62e72e4d3d0d0d38d36705ecc",
+  "baseline_commit": "54c8a123cfd5318dcb776d39ac0ff109d65a01a7",
+  "physics": {
+    "engine": "MuJoCo",
+    "version": "4.0.0",
+    "device": "CPU",
+    "timestep_s": 0.001,
+    "baseline_only": true,
+    "actuation_period_s": 0.005,
+    "sensitivity_override": {
+      "sensitivity_timestep_s_0_0025": 0.0025
+    }
+  },
+  "robot": "RBQ-10+RB1",
+  "geometry": {
+    "slope_deg": 50,
+    "rise_m": 0.19,
+    "treads": 10,
+    "tread_depth_m": 0.127,
+    "width_m": 0.61
+  },
+  "actuation": {
+    "nominal_hinge_resistance_nm": 10,
+    "lever_m": 0.12,
+    "candidate": 4,
+    "anchor_move_index": 15,
+    "foot_treads": [
+      5,
+      5,
+      3,
+      3
+    ],
+    "base_z_offset_m": -0.04
+  },
+  "gripper": {
+    "pad_mu": 0.8,
+    "pad_mu_grade": "assumption",
+    "finger_force_limit_n": 100,
+    "finger_slide_frictionloss_n": 30,
+    "floor_mu": 0.6
+  },
+  "contact": {
+    "each_pad_min_n": 1,
+    "acquire_s": 0.2,
+    "max_dropout_s": 0.02
+  },
+  "low_load": {
+    "hinge_resistance_nm": 1,
+    "target_deg": 20,
+    "loaded_bins_deg": [
+      5,
+      10,
+      15
+    ],
+    "opposing_friction_min_nm": 0.98,
+    "pad_torque_min_nm": 0.98,
+    "max_axial_slip_m": 0.002
+  },
+  "loaded_turn": {
+    "start_deg": 0,
+    "target_deg": 90,
+    "angle_tolerance_deg": 0.25,
+    "hold_s": 5,
+    "moving_from_deg": 5,
+    "moving_to_deg": 85,
+    "angle_bin_deg": 5,
+    "min_speed_rad_s": 0.02,
+    "resistance_tolerance_nm": 0.02,
+    "max_body_motion_m": 0.01,
+    "max_foot_motion_m": 0.005,
+    "max_friction_use": 0.8,
+    "min_expected_tread_load_n": 1
+  },
+  "release": {
+    "min_surface_gap_m": 0.005,
+    "zero_force_dwell_s": 0.5,
+    "min_observation_s": 5,
+    "max_angle_error_deg_until_floor": 0.25
+  },
+  "nominal_round_trip": {
+    "landings": 156,
+    "independent_process_repeats": 2,
+    "all_existing_n1_checks": true,
+    "qp_failed_ticks": 0,
+    "qp_relaxed_ticks": 0,
+    "saturated_steps": 0,
+    "post_start_state_writes": 0
+  },
+  "comparison_slope_decision": {
+    "choice": "ship_stair",
+    "slope_deg": 60,
+    "rise_m": 0.19,
+    "source": "user Q2, 2026-11-21"
+  },
+  "single_factor_cases": {
+    "nominal": {},
+    "slope_60": {
+      "slope_deg": 60
+    },
+    "rise_165": {
+      "rise_m": 0.165
+    },
+    "rise_200": {
+      "rise_m": 0.2
+    },
+    "floor_mu_050": {
+      "floor_mu": 0.5
+    },
+    "floor_mu_080": {
+      "floor_mu": 0.8
+    },
+    "resistance_5": {
+      "resistance_nm": 5
+    },
+    "resistance_15": {
+      "resistance_nm": 15
+    }
+  },
+  "sensitivity": {
+    "lever_m": [
+      0.1,
+      0.14
+    ],
+    "pad_mu": [
+      0.6,
+      1.0
+    ],
+    "finger_force_limit_n": [
+      75
+    ],
+    "finger_slide_frictionloss_n": [
+      15
+    ],
+    "arm_limits": [
+      "named LIMS-EX joint limits"
+    ],
+    "timestep_s": [
+      0.0025
+    ],
+    "impratio": [
+      10
+    ]
+  },
+  "inputs_sha256_windows_worktree": {
+    "evidence/t1-stair-ascent-20261120/target-round-trip-geometry.json": "db898347ce07a9cee49f4a967bea0592e785b6e7171ee9a7fcb3b3bd898ea325",
+    "evidence/t1-stair-posture-20261120/front-pair.json": "f4237c7a1d5cd5e3bfbe2c2b924b7c467c50f01b9feba0e4703e003164507010",
+    "evidence/t1-stair-ascent-20261120/target-round-trip-plan.json": "017857a0f866666bd1b8af1bbd8e5c522728205da3d4f690e3684ed09d4b1642",
+    "evidence/t3-valve-20261120/fixed-body-candidates.json": "71e54a28215658d3d2472e4fe0d5505563160f8bd62c6abe62c37f74e5046883",
+    "configs/assets.lock.json": "4f775b3a5b295650a5c2ffb17da74009b96160549b8262cd82d435ead526be11"
+  },
+  "evaluation_scope": {
+    "physical_rows": 14,
+    "planning_rows": 3,
+    "extent": "through-task",
+    "walking_reference": "evidence/stair-corridor-20261121/local-repair/walk50.npz",
+    "terminal_overtravel_deg": 1.2,
+    "note": "The 1 ms value is the physical baseline, not the timestep sensitivity row."
+  }
+}

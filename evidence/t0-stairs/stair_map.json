@@ -1,0 +1,199 @@
+[
+ {
+  "slope_deg": 50,
+  "rise_m": 0.165,
+  "going_m": 0.1385,
+  "found": false,
+  "reason": "no pose for swing ['RR', 'FL']",
+  "candidates": [
+   432,
+   3,
+   0,
+   0,
+   11
+  ],
+  "gap": 2
+ },
+ {
+  "slope_deg": 50,
+  "rise_m": 0.2,
+  "going_m": 0.1678,
+  "found": false,
+  "reason": "no pose for swing ['RR']",
+  "candidates": [
+   301,
+   30,
+   0,
+   96,
+   68
+  ],
+  "gap": 2
+ },
+ {
+  "slope_deg": 50,
+  "rise_m": 0.235,
+  "going_m": 0.1972,
+  "found": false,
+  "reason": "no pose for swing ['RR']",
+  "candidates": [
+   74,
+   9,
+   0,
+   123,
+   42
+  ],
+  "gap": 2
+ },
+ {
+  "slope_deg": 50,
+  "rise_m": 0.27,
+  "going_m": 0.2266,
+  "found": false,
+  "reason": "no start stance",
+  "candidates": [
+   0
+  ],
+  "gap": 2
+ },
+ {
+  "slope_deg": 50,
+  "rise_m": 0.305,
+  "going_m": 0.2559,
+  "found": false,
+  "reason": "no pose for swing ['RR', 'FL']",
+  "candidates": [
+   648,
+   51,
+   0,
+   0,
+   239
+  ],
+  "gap": 1
+ },
+ {
+  "slope_deg": 60,
+  "rise_m": 0.165,
+  "going_m": 0.0953,
+  "found": false,
+  "reason": "no pose for swing ['RL', 'RR', 'FL', 'FR']",
+  "candidates": [
+   18,
+   0,
+   0,
+   0,
+   0
+  ],
+  "gap": 3
+ },
+ {
+  "slope_deg": 60,
+  "rise_m": 0.2,
+  "going_m": 0.1155,
+  "found": false,
+  "reason": "no pose for swing ['RL', 'RR', 'FL', 'FR']",
+  "candidates": [
+   33,
+   0,
+   0,
+   0,
+   0
+  ],
+  "gap": 2
+ },
+ {
+  "slope_deg": 60,
+  "rise_m": 0.235,
+  "going_m": 0.1357,
+  "found": false,
+  "reason": "no pose for swing ['RL', 'RR', 'FL', 'FR']",
+  "candidates": [
+   32,
+   0,
+   0,
+   0,
+   0
+  ],
+  "gap": 2
+ },
+ {
+  "slope_deg": 60,
+  "rise_m": 0.27,
+  "going_m": 0.1559,
+  "found": false,
+  "reason": "no pose for swing ['RL', 'RR', 'FR']",
+  "candidates": [
+   2,
+   0,
+   0,
+   2,
+   0
+  ],
+  "gap": 2
+ },
+ {
+  "slope_deg": 60,
+  "rise_m": 0.305,
+  "going_m": 0.1761,
+  "found": false,
+  "reason": "no start stance",
+  "candidates": [
+   0
+  ],
+  "gap": 2
+ },
+ {
+  "slope_deg": 70,
+  "rise_m": 0.165,
+  "going_m": 0.0601,
+  "found": false,
+  "reason": "no start stance",
+  "candidates": [
+   0
+  ],
+  "gap": 3
+ },
+ {
+  "slope_deg": 70,
+  "rise_m": 0.2,
+  "going_m": 0.0728,
+  "found": false,
+  "reason": "no start stance",
+  "candidates": [
+   0
+  ],
+  "gap": 2
+ },
+ {
+  "slope_deg": 70,
+  "rise_m": 0.235,
+  "going_m": 0.0855,
+  "found": false,
+  "reason": "no start stance",
+  "candidates": [
+   0
+  ],
+  "gap": 2
+ },
+ {
+  "slope_deg": 70,
+  "rise_m": 0.27,
+  "going_m": 0.0983,
+  "found": false,
+  "reason": "no start stance",
+  "candidates": [
+   0
+  ],
+  "gap": 2
+ },
+ {
+  "slope_deg": 70,
+  "rise_m": 0.305,
+  "going_m": 0.111,
+  "found": false,
+  "reason": "no start stance",
+  "candidates": [
+   0
+  ],
+  "gap": 2
+ }
+]

@@ -1,0 +1,10 @@
+# Recorded SHA-256 values cover the original simulator and renderer output bytes.
+scene.json -text
+result.json -text
+replant/short-control/*-result.json -text
+replant/short-control/*-scene.json -text
+*.failure.json -text
+*.ass -text
+*.loads.csv -text
+*.peaks.json -text
+*.heatmap.html -text

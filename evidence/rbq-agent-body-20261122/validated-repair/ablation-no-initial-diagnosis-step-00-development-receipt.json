@@ -1,0 +1,40 @@
+{
+  "schema": "rbq_validated_residual_candidate_receipt_v1",
+  "opaque_id": "opt-3013",
+  "source_variant": "learned_contact_off",
+  "development_source": {
+    "path": "C:/Users/LIMMM/go2-wall-reach-lab/evidence/rbq-agent-body-20261122/reward-policy/development-evaluation.json",
+    "sha256": "8f8778df73c2f412a038754ff8822f365d1d2f1e1d97a3dc36cba85433d2a9a6"
+  },
+  "measurement": {
+    "case_count": 3,
+    "strict_success_count": 0,
+    "body_collision_count": 3,
+    "work_stance_success_count": 0,
+    "strict_source": "official_strict_development_verdicts",
+    "case_verdicts": [
+      {
+        "case_id": "dev-01",
+        "strict_success": false,
+        "outcome": "early_termination",
+        "source_sha256": "2bc264c5cccc258abb45a32d2777397a06999e1548e007cbc5e8a0065880319e",
+        "state_sha256": "c33e1f2007233d59dacdb667711b5213f4b016141f18fc59eb8cea3d50ec2574"
+      },
+      {
+        "case_id": "dev-02",
+        "strict_success": false,
+        "outcome": "early_termination",
+        "source_sha256": "8ee6b8546f8ba9e500878637dfbef895b88e5652ea582d95c9124f94e9e77442",
+        "state_sha256": "9afae0bcc952c593769f3b1204f0820a7cc1437e27f7649842d232b14476c891"
+      },
+      {
+        "case_id": "dev-03",
+        "strict_success": false,
+        "outcome": "early_termination",
+        "source_sha256": "e2d481f19549f255f1952136ac338c251c7f3405b4a8df4047100908a07e44ae",
+        "state_sha256": "fa6b27d5c90a284c43ff6e789a32e34ec0579e28d9d04621c111f0951b85f3c7"
+      }
+    ]
+  },
+  "receipt_sha256": "33b95a12380cd8afd9fde68d7691b8e7b10cbac8732d661f90eb0d1062d980eb"
+}

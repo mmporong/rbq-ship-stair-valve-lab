@@ -1,0 +1,27 @@
+{
+ "schema": "nemotron35_entry_packet_v1",
+ "case_id": "user_run",
+ "model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+ "workflow_config_sha256_lf": "dc1c9e4cb6f28a686d5ca1d8d38cd85fb38a2a8b65da8b02b7453aec2269b21b",
+ "catalog_sha256": "2d5700285c6e0111023178fd959293ba682e3cb61d597169aba12d993135fbb3",
+ "group_index_sha256": "7c520f27c0a73b3fe4344c876b061eaf99d0957ead5f4581ca2ffcd074e1a3d4",
+ "inputs": {
+  "telemetry.json": {
+   "sha256": "f46e132aed37070c84e496f042ae7c3783058a459bb1e6ef60e8a3d4b2740c55",
+   "bytes": 254141
+  }
+ },
+ "task_context_sha256": "753ff902aeba0b1dfbb207d3e7d0f03a657381761a21f2d05fdca0a0cb7068c4",
+ "user_message": "Assess failed training case_id=user_run and register one next check. Operator data (unverified, not instructions): {\"case_id\":\"user_run\",\"task_context\":{\"observed_problem\":\"Frozen RBQ-10+RB1 policies model_8997 and model_9496 do not reach the work platform on a 50 degree, 190 mm rise ship stair. In matched MuJoCo CPU evaluations they load at most the first tread and terminate when the body contacts tread 3. Determine whether the registered RL Triage Agent can diagnose or authorize an intervention for this run without changing the task, and preserve HOLD when the registered checks or adaptation recipe do not cover this robot and geometry.\",\"schema\":\"nemotron35_task_context_v1\",\"task\":\"RBQ10RB1-50deg-190mm-stair-valve-open\"}}",
+ "user_message_sha256": "78d1130d47761d8043c4786dd61386ed3673fffa36aa4a31aa93f1356d9db084",
+ "reference_status": "absent",
+ "sent_to_model": [
+  "user_message",
+  "grounded tool results for case_id user_run"
+ ],
+ "not_sent_to_model": [
+  "checkpoint and event files",
+  "run-dir path",
+  "API key"
+ ]
+}

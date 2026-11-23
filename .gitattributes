@@ -1,0 +1,6 @@
+*.sh text eol=lf
+tools/rbq_*.py text eol=lf
+tools/score_rbq_agent_cohort.py text eol=lf
+tools/verify_rbq_agent_study.py text eol=lf
+tools/stair_body_stress.py text eol=lf
+train/rbq_reward_residual.py text eol=lf

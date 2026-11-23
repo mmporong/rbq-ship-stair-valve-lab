@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="648" viewBox="0 0 1280 648">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#172033}.h{font-weight:700;font-size:20px}.r{font-size:13px}.bad{fill:#b42318}.ok{fill:#067647}</style>
+<text x="24" y="32" class="h">T4 17-condition first outcomes</text>
+<circle cx="30" cy="57" r="6" class="bad"/>
+<text x="46" y="62" class="r">nominal: physical_failed; stance_slip_m 10.000016 mm (한계 ≤ 10.000000 mm) @ 111.768 s</text>
+<circle cx="30" cy="91" r="6" class="bad"/>
+<text x="46" y="96" class="r">slope_60: planning_failed; unexpected_overlap_m 0.684302 mm (한계 0.100000 mm) @ 13.600 s</text>
+<circle cx="30" cy="125" r="6" class="bad"/>
+<text x="46" y="130" class="r">rise_165: planning_failed; max_foot_ik_error_m 2.213606 mm (한계 2.000000 mm) @ 55.960 s</text>
+<circle cx="30" cy="159" r="6" class="bad"/>
+<text x="46" y="164" class="r">rise_200: planning_failed; max_foot_ik_error_m 6.968600 mm (한계 2.000000 mm) @ 34.520 s</text>
+<circle cx="30" cy="193" r="6" class="bad"/>
+<text x="46" y="198" class="r">floor_mu_050: physical_failed; stance_slip_m 10.000176 mm (한계 ≤ 10.000000 mm) @ 111.902 s</text>
+<circle cx="30" cy="227" r="6" class="bad"/>
+<text x="46" y="232" class="r">floor_mu_080: physical_failed; stance_slip_m 10.000115 mm (한계 ≤ 10.000000 mm) @ 111.865 s</text>
+<circle cx="30" cy="261" r="6" class="bad"/>
+<text x="46" y="266" class="r">resistance_5: physical_failed; max_base_shift_m 10.051080 mm (한계 ≤ 10.000000 mm) @ 97.820 s</text>
+<circle cx="30" cy="295" r="6" class="bad"/>
+<text x="46" y="300" class="r">resistance_15: physical_failed; max_base_shift_m 10.003112 mm (한계 ≤ 10.000000 mm) @ 99.781 s</text>
+<circle cx="30" cy="329" r="6" class="bad"/>
+<text x="46" y="334" class="r">sensitivity_lever_m_0_1: physical_failed; pad_contact_loss_s 0.021 s (한계 ≤ 0.020 s) @ 97.758 s</text>
+<circle cx="30" cy="363" r="6" class="bad"/>
+<text x="46" y="368" class="r">sensitivity_lever_m_0_14: physical_failed; stance_slip_m 10.000196 mm (한계 ≤ 10.000000 mm) @ 110.644 s</text>
+<circle cx="30" cy="397" r="6" class="bad"/>
+<text x="46" y="402" class="r">sensitivity_pad_mu_0_6: physical_failed; stance_slip_m 10.000042 mm (한계 ≤ 10.000000 mm) @ 111.959 s</text>
+<circle cx="30" cy="431" r="6" class="bad"/>
+<text x="46" y="436" class="r">sensitivity_pad_mu_1: physical_failed; angle_deg 89.660° (한계 90.000° ± 0.250°) @ 108.851 s</text>
+<circle cx="30" cy="465" r="6" class="bad"/>
+<text x="46" y="470" class="r">sensitivity_finger_force_limit_n_75: physical_failed; pad_contact_loss_s 0.021 s (한계 ≤ 0.020 s) @ 97.660 s</text>
+<circle cx="30" cy="499" r="6" class="bad"/>
+<text x="46" y="504" class="r">sensitivity_finger_slide_frictionloss_n_15: physical_failed; stance_slip_m 10.000139 mm (한계 ≤ 10.000000 mm) @ 111.785 s</text>
+<circle cx="30" cy="533" r="6" class="bad"/>
+<text x="46" y="538" class="r">sensitivity_arm_limits_named_lims_ex_joint_limits: physical_failed; requested_torque_ratio 2.006× (한계 ≤ 1.000×) @ 97.601 s</text>
+<circle cx="30" cy="567" r="6" class="bad"/>
+<text x="46" y="572" class="r">sensitivity_timestep_s_0_0025: physical_failed; start_angle_deg 0.394° (한계 절댓값 ≤ 0.250°) @ 97.602 s</text>
+<circle cx="30" cy="601" r="6" class="bad"/>
+<text x="46" y="606" class="r">sensitivity_impratio_10: physical_failed; stance_slip_m 10.001475 mm (한계 ≤ 10.000000 mm) @ 4.197 s</text>
+</svg>

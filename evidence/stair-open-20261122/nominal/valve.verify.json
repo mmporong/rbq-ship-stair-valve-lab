@@ -1,0 +1,41 @@
+{
+  "scope": "open-at-station",
+  "verified": true,
+  "peaks": {
+    "joint_torque_ratio": {
+      "value": 0.40239457782820853,
+      "time_s": 107.35100000014853,
+      "raw_index": 107350
+    },
+    "foot_surface_force_n": {
+      "value": 194.84566698460105,
+      "time_s": 117.65600000019774,
+      "raw_index": 117655
+    },
+    "pad_closing_torque_nm": {
+      "value": 10.126169555319828,
+      "time_s": 96.79500000009813,
+      "raw_index": 96794
+    },
+    "joint_torque_nm": {
+      "value": 60.35918667423128,
+      "time_s": 107.35100000014853,
+      "raw_index": 107350
+    }
+  },
+  "frame_count": 546,
+  "fps": 25.0,
+  "playback_speed": 1.5,
+  "duration_s": 21.84,
+  "max_caption_time_error_s": 1.4210854715202004e-14,
+  "mount_stress_caption_samples": 546,
+  "physical_seconds_per_frame": 0.06,
+  "sha256": {
+    "mission.npz": "362cbd836802d2f29b8febd2917a4ba987d9990bea4e02ec32f84f7978bf96b9",
+    "valve.mp4": "a6ca52fb5021b86e979e50ecf6d7e984c1308d633f9f7cdb516d25d0f290ad79",
+    "valve.ass": "ef3f58ce152eb62cf1b375773533498bed37f04253d0835749e477b9b511c047",
+    "valve.peaks.json": "c9ab4626dbd1164b6e8655fc82cba4d3511ea137d489576718eea679b675a406",
+    "valve.loads.csv": "97b643682d8218828bec2ad3a27e02c68086a432c58c9e2bc2c3e035777b8770",
+    "valve.heatmap.html": "27547ca2668ab255850d87e0c2bd570f42761e19e182bfdf3938fe3bb30e371f"
+  }
+}

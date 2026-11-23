@@ -1,0 +1,367 @@
+{
+  "protocol_plan_commit": "953e36ca48f070a62e72e4d3d0d0d38d36705ecc",
+  "counts": {
+    "success": 0,
+    "planning_failed": 3,
+    "physical_failed": 14,
+    "pending": 0
+  },
+  "conditions": [
+    {
+      "id": "nominal",
+      "group": "single_factor",
+      "changes": {},
+      "outcome": "physical_failed",
+      "evidence_path": "nominal/result.json",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.83100000024632,
+        "metric": "stance_slip_m",
+        "measured": 0.010000207723255565,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 127829,
+        "time_s": 127.83000000024632,
+        "path": "assessment/scenes/nominal.png"
+      }
+    },
+    {
+      "id": "slope_60",
+      "group": "single_factor",
+      "changes": {
+        "slope_deg": 60
+      },
+      "outcome": "planning_failed",
+      "evidence_path": "assessment/planning/condition-60.failure.json",
+      "first_failure": {
+        "stage": "shift",
+        "time_s": 13.6,
+        "metric": "unexpected_overlap_m",
+        "measured": 0.000684301907967113,
+        "limit": 0.0001
+      },
+      "snapshot": {
+        "type": "planned pose",
+        "time_s": 13.6,
+        "path": "assessment/scenes/slope_60.png"
+      }
+    },
+    {
+      "id": "rise_165",
+      "group": "single_factor",
+      "changes": {
+        "rise_m": 0.165
+      },
+      "outcome": "planning_failed",
+      "evidence_path": "assessment/planning/condition-165.failure.json",
+      "first_failure": {
+        "stage": "swing",
+        "time_s": 55.95999999999998,
+        "metric": "max_foot_ik_error_m",
+        "measured": 0.002213606451974058,
+        "limit": 0.002
+      },
+      "snapshot": {
+        "type": "planned pose",
+        "time_s": 55.95999999999998,
+        "path": "assessment/scenes/rise_165.png"
+      }
+    },
+    {
+      "id": "rise_200",
+      "group": "single_factor",
+      "changes": {
+        "rise_m": 0.2
+      },
+      "outcome": "planning_failed",
+      "evidence_path": "assessment/planning/condition-200.failure.json",
+      "first_failure": {
+        "stage": "shift",
+        "time_s": 34.51999999999999,
+        "metric": "max_foot_ik_error_m",
+        "measured": 0.006968599759779576,
+        "limit": 0.002
+      },
+      "snapshot": {
+        "type": "planned pose",
+        "time_s": 34.51999999999999,
+        "path": "assessment/scenes/rise_200.png"
+      }
+    },
+    {
+      "id": "floor_mu_050",
+      "group": "single_factor",
+      "changes": {
+        "floor_mu": 0.5
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "floor_mu_050/result.json",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.65600000024548,
+        "metric": "qp_attempt",
+        "measured": 1.0,
+        "limit": "== 0"
+      },
+      "snapshot": {
+        "raw_index": 127654,
+        "time_s": 127.65500000024548,
+        "path": "assessment/scenes/floor_mu_050.png"
+      }
+    },
+    {
+      "id": "floor_mu_080",
+      "group": "single_factor",
+      "changes": {
+        "floor_mu": 0.8
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "floor_mu_080/result.json",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.83000000024632,
+        "metric": "stance_slip_m",
+        "measured": 0.010000560389329437,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 127828,
+        "time_s": 127.82900000024631,
+        "path": "assessment/scenes/floor_mu_080.png"
+      }
+    },
+    {
+      "id": "resistance_5",
+      "group": "single_factor",
+      "changes": {
+        "resistance_nm": 5
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "resistance_5/result.json",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 100.62000000011639,
+        "metric": "max_base_shift_m",
+        "measured": 0.01002688798756198,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 100618,
+        "time_s": 100.61900000011639,
+        "path": "assessment/scenes/resistance_5.png"
+      }
+    },
+    {
+      "id": "resistance_15",
+      "group": "single_factor",
+      "changes": {
+        "resistance_nm": 15
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "resistance_15/result.json",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 102.57900000012575,
+        "metric": "max_base_shift_m",
+        "measured": 0.010011330221381108,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 102577,
+        "time_s": 102.57800000012574,
+        "path": "assessment/scenes/resistance_15.png"
+      }
+    },
+    {
+      "id": "sensitivity_lever_m_0_1",
+      "group": "sensitivity",
+      "changes": {
+        "lever_m": 0.1
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "sensitivity_lever_m_0_1/result.json",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 100.5580000001161,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.021000000000100272,
+        "limit": "<= 0.02"
+      },
+      "snapshot": {
+        "raw_index": 100556,
+        "time_s": 100.55700000011609,
+        "path": "assessment/scenes/sensitivity_lever_m_0_1.png"
+      }
+    },
+    {
+      "id": "sensitivity_lever_m_0_14",
+      "group": "sensitivity",
+      "changes": {
+        "lever_m": 0.14
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "sensitivity_lever_m_0_14/result.json",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 125.93900000023729,
+        "metric": "stance_slip_m",
+        "measured": 0.010000001126633696,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 125937,
+        "time_s": 125.93800000023728,
+        "path": "assessment/scenes/sensitivity_lever_m_0_14.png"
+      }
+    },
+    {
+      "id": "sensitivity_pad_mu_0_6",
+      "group": "sensitivity",
+      "changes": {
+        "pad_mu": 0.6
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "sensitivity_pad_mu_0_6/result.json",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.87300000024652,
+        "metric": "stance_slip_m",
+        "measured": 0.010000984066392157,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 127871,
+        "time_s": 127.87200000024652,
+        "path": "assessment/scenes/sensitivity_pad_mu_0_6.png"
+      }
+    },
+    {
+      "id": "sensitivity_pad_mu_1",
+      "group": "sensitivity",
+      "changes": {
+        "pad_mu": 1.0
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "sensitivity_pad_mu_1/result.json",
+      "first_failure": {
+        "stage": "hold",
+        "time_s": 111.65100000016906,
+        "metric": "angle_deg",
+        "measured": 89.67201632689441,
+        "limit": "90.0 +/- 0.25"
+      },
+      "snapshot": {
+        "raw_index": 111649,
+        "time_s": 111.65000000016906,
+        "path": "assessment/scenes/sensitivity_pad_mu_1.png"
+      }
+    },
+    {
+      "id": "sensitivity_finger_force_limit_n_75",
+      "group": "sensitivity",
+      "changes": {
+        "finger_force_limit_n": 75
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "sensitivity_finger_force_limit_n_75/result.json",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 100.46000000011563,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.021000000000100272,
+        "limit": "<= 0.02"
+      },
+      "snapshot": {
+        "raw_index": 100458,
+        "time_s": 100.45900000011562,
+        "path": "assessment/scenes/sensitivity_finger_force_limit_n_75.png"
+      }
+    },
+    {
+      "id": "sensitivity_finger_slide_frictionloss_n_15",
+      "group": "sensitivity",
+      "changes": {
+        "finger_slide_frictionloss_n": 15
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "sensitivity_finger_slide_frictionloss_n_15/result.json",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.83100000024632,
+        "metric": "stance_slip_m",
+        "measured": 0.010000582520050042,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 127829,
+        "time_s": 127.83000000024632,
+        "path": "assessment/scenes/sensitivity_finger_slide_frictionloss_n_15.png"
+      }
+    },
+    {
+      "id": "sensitivity_arm_limits_named_lims_ex_joint_limits",
+      "group": "sensitivity",
+      "changes": {
+        "arm_limits": "named LIMS-EX joint limits"
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "sensitivity_arm_limits_named_lims_ex_joint_limits/result.json",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 100.40100000011535,
+        "metric": "requested_torque_ratio",
+        "measured": 2.006824450634009,
+        "limit": "<= 1.0"
+      },
+      "snapshot": {
+        "raw_index": 100399,
+        "time_s": 100.40000000011534,
+        "path": "assessment/scenes/sensitivity_arm_limits_named_lims_ex_joint_limits.png"
+      }
+    },
+    {
+      "id": "sensitivity_timestep_s_0_0025",
+      "group": "sensitivity",
+      "changes": {
+        "timestep_s": 0.0025
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "sensitivity_timestep_s_0_0025/result.json",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 100.40249999994494,
+        "metric": "start_angle_deg",
+        "measured": 0.3788404844932397,
+        "limit": "abs <= 0.25"
+      },
+      "snapshot": {
+        "raw_index": 40159,
+        "time_s": 100.39999999994494,
+        "path": "assessment/scenes/sensitivity_timestep_s_0_0025.png"
+      }
+    },
+    {
+      "id": "sensitivity_impratio_10",
+      "group": "sensitivity",
+      "changes": {
+        "impratio": 10
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "sensitivity_impratio_10/result.json",
+      "first_failure": {
+        "stage": "prewalk",
+        "time_s": 4.196999999999736,
+        "metric": "stance_slip_m",
+        "measured": 0.010001474806524878,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 4195,
+        "time_s": 4.195999999999736,
+        "path": "assessment/scenes/sensitivity_impratio_10.png"
+      }
+    }
+  ],
+  "unmatched_evidence": []
+}

@@ -1,0 +1,14 @@
+{
+  "source_commit": "dbe915c95f0476e4f71736c42fd2bffd10f32831",
+  "fixed_walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+  "refresh_leg": "RL",
+  "refresh_after_landing_index": 15,
+  "refresh_start_s": 78.8,
+  "refresh_kind": "physical same-tread lift and relanding + post-hold RL K=3075.0",
+  "refresh_duration_s": 2.8,
+  "foot_centre_spring_gain_n_per_m": 2500.0,
+  "contact_velocity_modified": false,
+  "stance_slip_measurement_modified": false,
+  "runner_sha256_lf": "50ee7ad3cd79a53a83e4afc50034496ba9973a40f1dfb41ae57566c509cf545a",
+  "original_make_mission_sha256_lf": "ef5f944b9fbd27c9579a7a53ae28b052cab1e4439338e6c0bc22e998f7670278"
+}

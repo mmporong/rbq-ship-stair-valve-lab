@@ -1,0 +1,40 @@
+{
+  "scope": "full",
+  "verified": true,
+  "peaks": {
+    "joint_torque_ratio": {
+      "value": 1.0,
+      "time_s": 149.91499999993616,
+      "raw_index": 29982
+    },
+    "foot_surface_force_n": {
+      "value": 1400.2487067643785,
+      "time_s": 443.1249999996695,
+      "raw_index": 88624
+    },
+    "pad_closing_torque_nm": {
+      "value": 10.753434243819303,
+      "time_s": 111.35999999997121,
+      "raw_index": 22271
+    },
+    "joint_torque_nm": {
+      "value": 150.0,
+      "time_s": 170.34499999991758,
+      "raw_index": 34068
+    }
+  },
+  "frame_count": 800,
+  "fps": 25.0,
+  "playback_speed": 24.0,
+  "duration_s": 32.0,
+  "max_caption_time_error_s": 0.005000000000109139,
+  "physical_seconds_per_frame": 0.96,
+  "sha256": {
+    "mission.npz": "9c75b913fde4bb84e270a6f368e9987613ad649e23dffc644f4ee0c224d726ab",
+    "full-trip.mp4": "6648175762b607ce10ff5db3b672f9a546b26fea990c5b44c7bc9d80dcce2b87",
+    "full-trip.ass": "620a0c612fbe469a7f1275b534847c0f7b4fac0bfe119c2e865dd80c89364cc1",
+    "full-trip.peaks.json": "b60cb22178c0e218458368540812ed64c3a414729295fa8f45d303af555e3bd8",
+    "full-trip.loads.csv": "cf199f7ed1085dc26993d6d03003ac85310599f4c06069a64f5d1591eda13d09",
+    "full-trip.heatmap.html": "30b4705f35c135575360922a521956fe5fd6058b675819b8a3cdee0173eec0c3"
+  }
+}

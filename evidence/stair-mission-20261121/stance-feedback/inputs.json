@@ -1,0 +1,196 @@
+{
+  "replay_source_commit": "0db7b29e7130fbf7ad416dfb1986a32bb4f71c75",
+  "walking_reference_source_commit": "25117a003b785a0358ae77eaf2dd61628edf6d84",
+  "walk": {
+    "file": "../full/walk50.npz",
+    "sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac"
+  },
+  "reference_low_load": {
+    "file": "../conditions/physical-b/low-control/frozen-grip-loaded.json.gz",
+    "gzip_sha256": "1d55f98bb4bac4ed74922c032b07e757126f9e55d47ecbc6e71c13c5b3d5fd9e",
+    "role": "supplemental low-load input to the full replay result, separate from its physics"
+  },
+  "common_replay_arguments": [
+    "--walk",
+    "walk50.npz",
+    "--case",
+    "nominal",
+    "--timestep",
+    "0.001",
+    "--motion-seconds",
+    "9",
+    "--jaw-load-bias-m",
+    "0.0005",
+    "--stance-spring-gain-n-per-m",
+    "2500"
+  ],
+  "runtime": {
+    "python": "3.14.0",
+    "mujoco": "4.0.0",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1"
+  },
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "CUDA_VISIBLE_DEVICES": "-1"
+  },
+  "cases": [
+    {
+      "folder": "settle-2s",
+      "extra_arguments": [
+        "--extent",
+        "through-task",
+        "--extra-settle-seconds",
+        "0"
+      ],
+      "archive": "settle-2s/raw-parts/parts.json"
+    },
+    {
+      "folder": "settle-4s",
+      "extra_arguments": [
+        "--extent",
+        "through-task",
+        "--extra-settle-seconds",
+        "2"
+      ],
+      "raw_recovery": {
+        "full_archive": "full/raw-parts/parts.json",
+        "samples": 131750,
+        "original_raw_bytes": 105913786,
+        "original_raw_sha256": "801f7bc4e263367b5931ba3289c07e8b64f4ef4d3221ba29f585b1143ee9e77a",
+        "independent_through_task_bytes_equal_to_full_prefix": true,
+        "result": "settle-4s/raw-check.json"
+      }
+    },
+    {
+      "folder": "full",
+      "extra_arguments": [
+        "--extent",
+        "full",
+        "--extra-settle-seconds",
+        "2",
+        "--low-run",
+        "frozen-grip-loaded.json.gz"
+      ],
+      "raw_bytes": 513334086,
+      "raw_sha256": "c8c9b7b96e07d10a07b3ecb0ee5294529f7688e27c198a01a45be1cc2d6ac1b3",
+      "scene_sha256": "ec88081b8ceddf65357432c9e44bc383b877d74c10310c9d65b8233bca705561",
+      "result_sha256": "246c4747545afa50d460d4d20a5baeaa53888c7dd2ad761b9aa9537733d8a23f",
+      "archive": "full/raw-parts/parts.json",
+      "raw_rejudge": "full/raw-check.json",
+      "cpu_process_id": 66956,
+      "process_start": "2026-11-21T12:07:13+09:00",
+      "scene_source_sha256_count": 11,
+      "scene_planner_source_sha256_count": 10,
+      "per_surface_3d_load_capture_enabled": false,
+      "measurements": {
+        "recorded_physics_steps": 773250,
+        "raw_array_count": 34,
+        "last_sample_s": 773.249999988627,
+        "outcome": "physical_failed",
+        "first_failure": {
+          "stage": "hold",
+          "time_s": 111.85100000017002,
+          "metric": "stance_slip_m",
+          "measured": 0.01000009856095136,
+          "limit": "<= 0.01"
+        },
+        "first_valve_failure": {
+          "stage": "hold",
+          "time_s": 114.00800000018032,
+          "metric": "max_foot_shift_m",
+          "measured": 0.005000076556645975,
+          "limit": "<= 0.005",
+          "message": "M1 stability limit exceeded"
+        },
+        "first_walking_failure": {
+          "stage": "hold",
+          "time_s": 111.85100000017002,
+          "metric": "stance_slip_m",
+          "measured": 0.01000009856095136,
+          "limit": "<= 0.01"
+        },
+        "hold_samples": 5000,
+        "hold_range_deg": [
+          89.79207921352847,
+          90.06814554732094
+        ],
+        "end_valve_deg": 73.34820732332652,
+        "first_fall_s": 181.25900000050143,
+        "first_nonpad_lever_contact": {
+          "time_s": 137.55400000029275,
+          "force_n": 90.63326230745689,
+          "nearby_raw_poses": [
+            {
+              "raw_index": 137552,
+              "time_s": 137.55300000029274,
+              "recorded_nonpad_n": 0.0,
+              "pose_reconstructed_body_pairs": []
+            },
+            {
+              "raw_index": 137553,
+              "time_s": 137.55400000029275,
+              "recorded_nonpad_n": 90.63326230745689,
+              "pose_reconstructed_body_pairs": [
+                [
+                  "valve",
+                  "base"
+                ]
+              ]
+            }
+          ]
+        },
+        "scheduled_landings_observed": 156,
+        "landings_with_all_expected_feet_loaded": 25,
+        "first_all_four_on_platform_s": null,
+        "first_platform_turn_s": null,
+        "last_half_second": {
+          "time_s": [
+            772.7499999999973,
+            773.2499999999973
+          ],
+          "sample_count": 500,
+          "max_start_xy_error_m": 2.2732541111960165,
+          "min_up_z": -0.5860714541311658,
+          "max_linear_speed_mps": 0.0014351243679163563,
+          "max_angular_speed_radps": 0.006743536675683127,
+          "min_floor_force_n": 0.0,
+          "verified": false
+        },
+        "last_half_second_max_tilt_deg": 125.87871944909749,
+        "state_resets": 0,
+        "first_landing_support_violation": {
+          "stage": "return",
+          "time_s": 167.75100000043693,
+          "metric": "landing_support_n",
+          "measured": 0.0,
+          "limit": ">= 1 N",
+          "landing": 26
+        }
+      }
+    }
+  ],
+  "independent_review": {
+    "file": "full/independent-review.json",
+    "sha256": "9328357c700856bd63ad4bfdcf52fce503b9c2792ea5a40ba5ebcfd24896224d",
+    "scope": "full endpoint, fixed-walk prefix, first slip and fall, release contact, landing support and floor return"
+  },
+  "same_feedback_low_load_crosscheck": {
+    "raw_gzip": "standalone/low-loaded.json.gz",
+    "gzip_sha256": "65bbbedd5d6bf636771767e3d9dc2de150249a7fcbc6228bfcfa7a210fb9cab7",
+    "low_load_verified": true,
+    "low_load_max_angle_deg": 21.92151266921915,
+    "low_load_verdict_equals_standalone": true,
+    "mission_verdict_equals_full_result": true,
+    "verified": false,
+    "first_failure": {
+      "stage": "hold",
+      "time_s": 111.85100000017002,
+      "metric": "stance_slip_m",
+      "measured": 0.01000009856095136,
+      "limit": "<= 0.01"
+    }
+  }
+}

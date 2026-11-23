@@ -1,0 +1,16 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-22T01:36:31.0410456Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"candidate_id\":\"opt-72b8\",\"mechanics_fact_id\":\"mechanics:opt-72b8:control_law\", \"observation_fact_id\": \"observation:development:nonzero_ppo_torque_case_count\",\"reason\":\"The candidate's use of a frozen optimized three-coefficient vector for both contact authority and checkpoint residual authority aligns with the objective of repairing the development failure while preserving the completed work stance. The inclusion of position-error-dependent contact authority is also beneficial.\"}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 36379055000,
+  "load_duration": 8479417700,
+  "prompt_eval_count": 656,
+  "prompt_eval_duration": 9147745000,
+  "eval_count": 111,
+  "eval_duration": 18738282000
+}

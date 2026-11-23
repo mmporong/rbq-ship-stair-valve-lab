@@ -1,0 +1,120 @@
+{
+  "checkpoint": "logs/rsl_rl/rbq10_rb1_stairs/2026-11-10_09-46-33_v3/model_1800.pt",
+  "note": "_step_reward per step mean over 6 s, straight 0.6 m/s",
+  "levels": {
+    "0": {
+      "flat": {
+        "track_linear_velocity": 0.8491,
+        "pose": 0.92,
+        "is_terminated": 0.0,
+        "foot_gait": 0.4243,
+        "foot_clearance": -0.1835,
+        "stand_still": 0.0,
+        "shin_contact": 0.0,
+        "foot_z_at_spawn": 0.051,
+        "foot_above_ground_at_spawn": 0.051
+      },
+      "stairs_up": {
+        "track_linear_velocity": 0.7985,
+        "pose": 0.9031,
+        "is_terminated": 0.0,
+        "foot_gait": 0.4121,
+        "foot_clearance": -0.17,
+        "stand_still": 0.0,
+        "shin_contact": -0.3447,
+        "foot_z_at_spawn": 0.019,
+        "foot_above_ground_at_spawn": 0.051
+      },
+      "stairs_down": {
+        "track_linear_velocity": 0.836,
+        "pose": 0.9227,
+        "is_terminated": 0.0,
+        "foot_gait": 0.4167,
+        "foot_clearance": -0.184,
+        "stand_still": 0.0,
+        "shin_contact": 0.0,
+        "foot_z_at_spawn": 0.18,
+        "foot_above_ground_at_spawn": 0.051
+      },
+      "open_stairs_up": {
+        "track_linear_velocity": 0.8211,
+        "pose": 0.9174,
+        "is_terminated": 0.0,
+        "foot_gait": 0.4198,
+        "foot_clearance": -0.1712,
+        "stand_still": 0.0,
+        "shin_contact": 0.0,
+        "foot_z_at_spawn": -0.054,
+        "foot_above_ground_at_spawn": 0.051
+      },
+      "open_stairs_down": {
+        "track_linear_velocity": 0.8282,
+        "pose": 0.9247,
+        "is_terminated": 0.0,
+        "foot_gait": 0.4165,
+        "foot_clearance": -0.1826,
+        "stand_still": 0.0,
+        "shin_contact": -0.0024,
+        "foot_z_at_spawn": 0.17,
+        "foot_above_ground_at_spawn": 0.051
+      }
+    },
+    "4": {
+      "flat": {
+        "track_linear_velocity": 0.8482,
+        "pose": 0.9163,
+        "is_terminated": 0.0,
+        "foot_gait": 0.4263,
+        "foot_clearance": -0.1866,
+        "stand_still": 0.0,
+        "shin_contact": 0.0,
+        "foot_z_at_spawn": 0.051,
+        "foot_above_ground_at_spawn": 0.051
+      },
+      "stairs_up": {
+        "track_linear_velocity": 0.3581,
+        "pose": 0.8463,
+        "is_terminated": 0.0,
+        "foot_gait": 0.3113,
+        "foot_clearance": -0.0638,
+        "stand_still": 0.0,
+        "shin_contact": 0.0,
+        "foot_z_at_spawn": -0.924,
+        "foot_above_ground_at_spawn": 0.051
+      },
+      "stairs_down": {
+        "track_linear_velocity": 0.3599,
+        "pose": 0.8785,
+        "is_terminated": -0.0333,
+        "foot_gait": 0.3056,
+        "foot_clearance": -0.0759,
+        "stand_still": 0.0,
+        "shin_contact": -0.0023,
+        "foot_z_at_spawn": 1.082,
+        "foot_above_ground_at_spawn": 0.051
+      },
+      "open_stairs_up": {
+        "track_linear_velocity": 0.3913,
+        "pose": 0.8587,
+        "is_terminated": 0.0,
+        "foot_gait": 0.3164,
+        "foot_clearance": -0.0696,
+        "stand_still": 0.0,
+        "shin_contact": -0.0599,
+        "foot_z_at_spawn": -0.783,
+        "foot_above_ground_at_spawn": 0.051
+      },
+      "open_stairs_down": {
+        "track_linear_velocity": 0.3901,
+        "pose": 0.893,
+        "is_terminated": 0.0,
+        "foot_gait": 0.316,
+        "foot_clearance": -0.0753,
+        "stand_still": 0.0,
+        "shin_contact": -0.014,
+        "foot_z_at_spawn": 1.008,
+        "foot_above_ground_at_spawn": 0.051
+      }
+    }
+  }
+}

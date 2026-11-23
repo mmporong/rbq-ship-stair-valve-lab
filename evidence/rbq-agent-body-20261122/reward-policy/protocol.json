@@ -1,0 +1,52 @@
+{
+  "schema": "rbq_reward_policy_holdout_commitment_v1",
+  "count": 12,
+  "case_set_sha256": "f0d31ec70f45427d4164e23ac82358120b0f83ca12eaa4bab50b6eacaa0c4a3d",
+  "distribution": {
+    "lateral_m": [
+      -0.025,
+      0.025
+    ],
+    "yaw_deg": [
+      -2.5,
+      2.5
+    ],
+    "joint_noise_rad": [
+      0.003,
+      0.005
+    ]
+  },
+  "comparison_variants": [
+    "learned",
+    "initial",
+    "fixed_contact",
+    "teacher_open_loop",
+    "learned_no_ppo",
+    "learned_contact_off"
+  ],
+  "primary_endpoint": "FL/FR tread 5 and RL/RR tread 3 for 0.5 s, then physical 90 degree passive valve mission",
+  "training": {
+    "algorithm": "CEM on physical rollout return",
+    "seed": 20261122,
+    "generations": 3,
+    "population": 8,
+    "elite": 3,
+    "horizon_s": 20.0
+  },
+  "heldout_horizon_s": 127.75,
+  "heldout_metrics": [
+    "work_stance_success_rate",
+    "strict_full_mission_success_rate",
+    "body_collision_rate",
+    "maximum_supported_tread",
+    "mean_contact_authority",
+    "mean_ppo_authority",
+    "ppo_torque_rms_nm"
+  ],
+  "comparison_contract": "Every variant uses the same scene, start, horizon, motor limits and endpoint. Learned parameters are frozen after development.",
+  "modification_budgets": {
+    "development": "code, reward and parameters may change before the freeze commit",
+    "heldout": "zero code, reward, parameter, seed or threshold changes after reveal"
+  },
+  "rule": "Commit code, learned parameters and this commitment before opening the case set."
+}

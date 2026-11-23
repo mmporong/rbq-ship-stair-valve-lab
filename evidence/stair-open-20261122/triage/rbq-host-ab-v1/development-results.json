@@ -1,0 +1,329 @@
+{
+  "host_contract": "rbq_stair_intervention_v1",
+  "registered_nvidia_task": false,
+  "checkpoint": 9100,
+  "checkpoint_sha256": "6d39b7c28c9cdda9c3964c3b37493c3bcd24f81ca46f5e367618a7f264cfc757",
+  "cpu_only": true,
+  "geometry": {
+    "slope_deg": 50,
+    "rise_m": 0.19,
+    "treads": 10
+  },
+  "work_stance": {
+    "FL": 5,
+    "FR": 5,
+    "RL": 3,
+    "RR": 3,
+    "hold_s": 0.5
+  },
+  "case_set_sha256": "fe0881b0bb8b6ddd6eeadd3d33e88143fbb57edfa9e50d5989aaefd2ca108913",
+  "groups": {
+    "no_intervention": {
+      "summary": {
+        "n": 3,
+        "work_stance_rate": 0.0,
+        "mean_maximum_work_stance_s": 0.0,
+        "mean_highest_supported_tread": 1.6666666666666667,
+        "body_collision_rate": 1.0,
+        "mean_maximum_forward_x_m": 0.002330154893559245,
+        "mean_maximum_abs_pitch_deg": 16.222243413633514
+      },
+      "trials": [
+        {
+          "case_id": "dev-01",
+          "candidate_id": "no_intervention",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.04223833007202235,
+          "maximum_body_z_m": 0.6028307876629109,
+          "maximum_abs_pitch_deg": 10.869763576690143,
+          "final_body_xyz_m": [
+            -0.04223833007202235,
+            0.02900769196941748,
+            0.5959319204111978
+          ],
+          "simulated_s": 2.399999999999971
+        },
+        {
+          "case_id": "dev-02",
+          "candidate_id": "no_intervention",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 3,
+          "supported_treads": [
+            2,
+            3
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": 0.0741770194856592,
+          "maximum_body_z_m": 0.7100771287753677,
+          "maximum_abs_pitch_deg": 23.179799341720354,
+          "final_body_xyz_m": [
+            0.0741770194856592,
+            -0.09328033144526533,
+            0.6566777826486986
+          ],
+          "simulated_s": 13.900000000000773
+        },
+        {
+          "case_id": "dev-03",
+          "candidate_id": "no_intervention",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.02494822473295912,
+          "maximum_body_z_m": 0.6360204221441871,
+          "maximum_abs_pitch_deg": 14.61716732249004,
+          "final_body_xyz_m": [
+            -0.02494822473295912,
+            -0.10476905560196653,
+            0.6243728370345715
+          ],
+          "simulated_s": 4.0199999999999365
+        }
+      ]
+    },
+    "phase_15": {
+      "summary": {
+        "n": 3,
+        "work_stance_rate": 0.0,
+        "mean_maximum_work_stance_s": 0.0,
+        "mean_highest_supported_tread": 1.6666666666666667,
+        "body_collision_rate": 1.0,
+        "mean_maximum_forward_x_m": -0.02677746927798293,
+        "mean_maximum_abs_pitch_deg": 17.937305157259924
+      },
+      "trials": [
+        {
+          "case_id": "dev-01",
+          "candidate_id": "phase_15",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.06318841852774788,
+          "maximum_body_z_m": 0.6662665070770883,
+          "maximum_abs_pitch_deg": 19.00123176475107,
+          "final_body_xyz_m": [
+            -0.06318841852774788,
+            -0.016778077733270506,
+            0.58144892570421
+          ],
+          "simulated_s": 4.399999999999928
+        },
+        {
+          "case_id": "dev-02",
+          "candidate_id": "phase_15",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": 0.07137949817407009,
+          "maximum_body_z_m": 0.7390590359347371,
+          "maximum_abs_pitch_deg": 24.876348128691934,
+          "final_body_xyz_m": [
+            0.07137949817407009,
+            -0.13355681152265203,
+            0.6653683601439575
+          ],
+          "simulated_s": 13.460000000000704
+        },
+        {
+          "case_id": "dev-03",
+          "candidate_id": "phase_15",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.088523487480271,
+          "maximum_body_z_m": 0.6455937377503791,
+          "maximum_abs_pitch_deg": 9.934335578336771,
+          "final_body_xyz_m": [
+            -0.088523487480271,
+            0.059079682305974004,
+            0.5307739140818413
+          ],
+          "simulated_s": 2.6199999999999664
+        }
+      ]
+    },
+    "phase_25": {
+      "summary": {
+        "n": 3,
+        "work_stance_rate": 0.0,
+        "mean_maximum_work_stance_s": 0.0,
+        "mean_highest_supported_tread": 2.3333333333333335,
+        "body_collision_rate": 0.3333333333333333,
+        "mean_maximum_forward_x_m": -0.06855335684534848,
+        "mean_maximum_abs_pitch_deg": 29.522656760616616
+      },
+      "trials": [
+        {
+          "case_id": "dev-01",
+          "candidate_id": "phase_25",
+          "termination": "fell_over",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 3,
+          "supported_treads": [
+            1,
+            2,
+            3
+          ],
+          "body_collision": false,
+          "maximum_forward_x_m": -0.09272567496261577,
+          "maximum_body_z_m": 0.6795957014034197,
+          "maximum_abs_pitch_deg": 40.125183880746036,
+          "final_body_xyz_m": [
+            -1.1211022383487792,
+            -0.8255060896135565,
+            0.4532510433574927
+          ],
+          "simulated_s": 4.2999999999999305
+        },
+        {
+          "case_id": "dev-02",
+          "candidate_id": "phase_25",
+          "termination": "phase_timeout",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": false,
+          "maximum_forward_x_m": -0.10943079145837349,
+          "maximum_body_z_m": 0.7020864657316369,
+          "maximum_abs_pitch_deg": 27.148440970205044,
+          "final_body_xyz_m": [
+            -0.18288746144116105,
+            -0.26690126443850437,
+            0.6624399214404084
+          ],
+          "simulated_s": 19.960000000000313
+        },
+        {
+          "case_id": "dev-03",
+          "candidate_id": "phase_25",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.0035036041150561933,
+          "maximum_body_z_m": 0.6797834930277981,
+          "maximum_abs_pitch_deg": 21.294345430898773,
+          "final_body_xyz_m": [
+            -0.0035036041150561933,
+            -0.1312381850486225,
+            0.6091610950575748
+          ],
+          "simulated_s": 6.519999999999883
+        }
+      ]
+    },
+    "edge_slow_rule": {
+      "summary": {
+        "n": 3,
+        "work_stance_rate": 0.0,
+        "mean_maximum_work_stance_s": 0.0,
+        "mean_highest_supported_tread": 0.3333333333333333,
+        "body_collision_rate": 1.0,
+        "mean_maximum_forward_x_m": -0.08656020114168654,
+        "mean_maximum_abs_pitch_deg": 8.335762882028424
+      },
+      "trials": [
+        {
+          "case_id": "dev-01",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.08601106448738333,
+          "maximum_body_z_m": 0.6101367623181807,
+          "maximum_abs_pitch_deg": 6.716636687963199,
+          "final_body_xyz_m": [
+            -0.08601106448738333,
+            -0.07534814816439364,
+            0.5896670042275995
+          ],
+          "simulated_s": 2.7199999999999642
+        },
+        {
+          "case_id": "dev-02",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.08933039859371922,
+          "maximum_body_z_m": 0.6140306969762498,
+          "maximum_abs_pitch_deg": 7.256664314479458,
+          "final_body_xyz_m": [
+            -0.08933039859371922,
+            -0.0036699539566489524,
+            0.5849160375942094
+          ],
+          "simulated_s": 2.539999999999968
+        },
+        {
+          "case_id": "dev-03",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.08433914034395705,
+          "maximum_body_z_m": 0.6422112289353679,
+          "maximum_abs_pitch_deg": 11.033987643642613,
+          "final_body_xyz_m": [
+            -0.08433914034395705,
+            0.02755185658279938,
+            0.6025085360001794
+          ],
+          "simulated_s": 3.339999999999951
+        }
+      ]
+    }
+  }
+}

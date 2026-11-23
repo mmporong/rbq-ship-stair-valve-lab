@@ -1,0 +1,49 @@
+{
+  "schema": "rbq_strict_source_bound_recovery_confirmation_v1",
+  "origin": "The observed single proposal on development chose the failed residual unchanged (commit 9a8599f). This separate prospective check tests the effect of excluding previously failed configurations and requiring a strict physical result.",
+  "count": 12,
+  "case_set_sha256": "9d1aba33c1972ee24b6046e9c3bbe72d2327eff388636ebe3fa30b2b35135ede",
+  "case_id_prefix": "repair-confirm-",
+  "distribution": {
+    "lateral_m": [
+      -0.025,
+      0.025
+    ],
+    "yaw_deg": [
+      -2.5,
+      2.5
+    ],
+    "joint_noise_rad": [
+      0.003,
+      0.005
+    ],
+    "joint_seed": "independent 63-bit system RNG"
+  },
+  "unchanged_controls": [
+    "learned",
+    "initial",
+    "fixed_contact",
+    "teacher_open_loop",
+    "learned_no_ppo",
+    "learned_contact_off"
+  ],
+  "observed_arm": "Use only failures of the learned configuration in three development starts. One independent real provider proposal per round, up to three new candidate physics evaluations with source-bound receipts. Record failures and physical results. A previously tested, strictly failed configuration cannot be adopted.",
+  "without_observation": "Same menu, model, tried baseline and physics budget; omit initial measured failure observations. Report both choice and outcome.",
+  "selection_gate": "Only a new candidate with strict whole mission success on all three development cases and zero body collision may be adopted. If no qualified proposal, retain the failed baseline for the intention-to-treat comparison.",
+  "test_gate": "Publish both choices and provider output before revealing the twelve cases. Run all six physically distinct controls once per held-out case.",
+  "endpoints": [
+    "work_stance_reached",
+    "strict_success",
+    "body_collision"
+  ],
+  "comparisons": [
+    "each post-fix arm vs unchanged learned",
+    "each post-fix arm vs its observed single-proposal predecessor and actual no-observation comparator",
+    "each post-fix arm vs fixed_contact"
+  ],
+  "positive_repair_criterion": "At least 0.25 absolute gain in paired strict full mission success versus the unchanged learned controller and no higher body collision fraction. Identical candidate IDs share results and imply zero difference.",
+  "attribution": "Separate the effect of the validated workflow, the provider choice with observations, and the contribution of the physical policy. This is a follow-up designed after the single proposal on development, not a change to its result.",
+  "policy_sha256": "18c530360e1144180606dfb02e8fb351f0a8b1562c6aec7f776aabac953aad44",
+  "source_sha256": "0368f4323f0758d1996558033f5064d6e9c1e8195478b22b1adeb9f2ba4d4430",
+  "scoring_source_sha256": "a67d4ddd84f9076b00c907e6746c9e3d02253de513e777801d1a4e9a6bcf246a"
+}

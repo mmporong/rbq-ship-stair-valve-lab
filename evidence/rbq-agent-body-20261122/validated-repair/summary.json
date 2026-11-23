@@ -1,0 +1,269 @@
+{
+  "schema": "rbq_validated_residual_repair_result_v1",
+  "model": "gemma3:4b",
+  "protocol": {
+    "path": "protocol.json",
+    "sha256": "ecd5a0a229cf600376e1940e26c3eb6eb777893ed00b3a18433d7fdca6c8c2a5"
+  },
+  "candidate_map": {
+    "path": "candidate-map.json",
+    "sha256": "aee2fad3a3c0e3d7870f04686ee17adeefe9d98727835a28129ff1c06a48e560"
+  },
+  "original_agent": {
+    "module_path": "C:/Users/LIMMM/go2-wall-reach-lab/.omx/rbq-agent-body-dev/rl-triage-worktree/src/rl_triage/grounded_recovery.py",
+    "module_sha256": "791ca1d7e19a20f40b967eeeb9b73c11e798c1119a33f0ab1f27bc1844d6fd36",
+    "git_repository": "C:/Users/LIMMM/go2-wall-reach-lab/.omx/rbq-agent-body-dev/rl-triage-worktree",
+    "git_sha": "f3234eace3b32881b3e2ded4ac72b7d819142f31",
+    "explicit_src_override": true,
+    "api": "rl_triage.grounded_recovery.bind_typed_proposal"
+  },
+  "arms": {
+    "ablation": {
+      "label": "ablation-no-initial-diagnosis",
+      "attempted_opaque_ids": [
+        "opt-3013",
+        "opt-01b7"
+      ],
+      "attempted_source_variants": [
+        "learned_contact_off",
+        "learned_no_ppo"
+      ],
+      "adopted": {
+        "opaque_id": "opt-01b7",
+        "source_variant": "learned_no_ppo"
+      },
+      "termination": "strict_development_adoption",
+      "trace": [
+        {
+          "label": "ablation-no-initial-diagnosis-step-00",
+          "eligible_order": [
+            "opt-844b",
+            "opt-3013",
+            "opt-2a5e",
+            "opt-6cb8",
+            "opt-01b7"
+          ],
+          "prompt_sha256": "61f4838cf6fa9a6e154c62d1ed59d7c940f55942c0baf51c0bd69020dbea83ae",
+          "provider_path": "ablation-no-initial-diagnosis-step-00-provider.json",
+          "provider_sha256": "5da15690b8ac2b0b7b813d29540b8659737affd210af29da4b88c9310445b59d",
+          "status": "valid",
+          "proposal": {
+            "candidate_id": "opt-3013",
+            "mechanics_fact_id": "mechanics:opt-3013:control_law",
+            "observation_fact_id": null,
+            "citations": [
+              {
+                "id": "mechanics:opt-3013:control_law",
+                "value": "Contact-feedback authority fixed at 0.0; bounded checkpoint residual authority from the frozen optimized three-coefficient vector.",
+                "role": "mechanics"
+              }
+            ],
+            "reason": "The description 'Contact-feedback authority fixed at 0.0; bounded checkpoint residual authority from the frozen optimized three-coefficient vector' suggests a more targeted and potentially robust approach to addressing the strict valve failure compared to other candidates.",
+            "citation_mode": "typed_fact_ids_host_binds_exact_values",
+            "native_diagnosis": {
+              "action": "hold",
+              "reason": "domain_not_registered_for_native_six_mechanism_diagnosis",
+              "synthetic_ranking_created": false
+            }
+          },
+          "host_resolution": {
+            "opaque_id": "opt-3013",
+            "source_variant": "learned_contact_off"
+          },
+          "development_receipt_path": "ablation-no-initial-diagnosis-step-00-development-receipt.json",
+          "development_receipt_sha256": "0fd89555189c95d8fdfdccb334e46fe36c07fb51564812225b93981d867d619c",
+          "host_state": {
+            "attempted": [
+              "opt-3013"
+            ],
+            "status": "continue",
+            "adopted": null,
+            "strict_development_gate_met": false
+          }
+        },
+        {
+          "label": "ablation-no-initial-diagnosis-step-01",
+          "eligible_order": [
+            "opt-844b",
+            "opt-2a5e",
+            "opt-6cb8",
+            "opt-01b7"
+          ],
+          "prompt_sha256": "419cf241e1222b8fee826dfe1b0a3a23dcfa9c963ffc9c67e3cf9dcf7145d10a",
+          "provider_path": "ablation-no-initial-diagnosis-step-01-provider.json",
+          "provider_sha256": "f77e04a9e34911add4200092cca9b41b05cae88e2b3e743fcece173293be889a",
+          "status": "valid",
+          "proposal": {
+            "candidate_id": "opt-01b7",
+            "mechanics_fact_id": "mechanics:opt-01b7:control_law",
+            "observation_fact_id": "receipt:opt-3013:strict_source",
+            "citations": [
+              {
+                "id": "mechanics:opt-01b7:control_law",
+                "value": "Position-error-dependent contact authority from the frozen optimized three-coefficient vector; checkpoint residual authority fixed at 0.0.",
+                "role": "mechanics"
+              },
+              {
+                "id": "receipt:opt-3013:strict_source",
+                "value": "official_strict_development_verdicts",
+                "role": "observation"
+              }
+            ],
+            "reason": "The candidate description explicitly states 'Position-error-dependent contact authority from the frozen optimized three-coefficient vector; checkpoint residual authority fixed at 0.0.', aligning with the objective of correcting a strict valve failure while preserving the work stance.",
+            "citation_mode": "typed_fact_ids_host_binds_exact_values",
+            "native_diagnosis": {
+              "action": "hold",
+              "reason": "domain_not_registered_for_native_six_mechanism_diagnosis",
+              "synthetic_ranking_created": false
+            }
+          },
+          "host_resolution": {
+            "opaque_id": "opt-01b7",
+            "source_variant": "learned_no_ppo"
+          },
+          "development_receipt_path": "ablation-no-initial-diagnosis-step-01-development-receipt.json",
+          "development_receipt_sha256": "e088115679056a2fba188002949b77e07fc0023cd18909407bd347d8e0d45fd1",
+          "host_state": {
+            "attempted": [
+              "opt-3013",
+              "opt-01b7"
+            ],
+            "status": "adopted",
+            "adopted": "opt-01b7",
+            "strict_development_gate_met": true
+          }
+        }
+      ]
+    },
+    "observed": {
+      "label": "observed-initial-diagnosis",
+      "attempted_opaque_ids": [
+        "opt-6cb8",
+        "opt-01b7"
+      ],
+      "attempted_source_variants": [
+        "initial",
+        "learned_no_ppo"
+      ],
+      "adopted": {
+        "opaque_id": "opt-01b7",
+        "source_variant": "learned_no_ppo"
+      },
+      "termination": "strict_development_adoption",
+      "trace": [
+        {
+          "label": "observed-initial-diagnosis-step-00",
+          "eligible_order": [
+            "opt-844b",
+            "opt-3013",
+            "opt-2a5e",
+            "opt-6cb8",
+            "opt-01b7"
+          ],
+          "prompt_sha256": "1d547c5a0e4beea46c432461b03a6f4f721d44f8c7575f72b5c11f44bd98f64c",
+          "provider_path": "observed-initial-diagnosis-step-00-provider.json",
+          "provider_sha256": "3d7973f4ed00cddee477918bdb88d5e0172b6bd51597413fa130dd6bea062c01",
+          "status": "valid",
+          "proposal": {
+            "candidate_id": "opt-6cb8",
+            "mechanics_fact_id": "mechanics:opt-6cb8:control_law",
+            "observation_fact_id": "observation:development:work_stance_success_count",
+            "citations": [
+              {
+                "id": "mechanics:opt-6cb8:control_law",
+                "value": "Position-error-dependent contact authority and bounded checkpoint residual authority from the fixed pre-optimization three-coefficient vector.",
+                "role": "mechanics"
+              },
+              {
+                "id": "observation:development:work_stance_success_count",
+                "value": 3,
+                "role": "observation"
+              }
+            ],
+            "reason": "The candidate's description of 'Position-error-dependent contact authority and bounded checkpoint residual authority from the fixed pre-optimization three-coefficient vector' aligns with a plausible repair strategy for correcting the strict valve failure while maintaining the completed work stance. The available observations, particularly `observation:development:work_stance_success_count`, suggest a successful implementation of this approach.",
+            "citation_mode": "typed_fact_ids_host_binds_exact_values",
+            "native_diagnosis": {
+              "action": "hold",
+              "reason": "domain_not_registered_for_native_six_mechanism_diagnosis",
+              "synthetic_ranking_created": false
+            }
+          },
+          "host_resolution": {
+            "opaque_id": "opt-6cb8",
+            "source_variant": "initial"
+          },
+          "development_receipt_path": "observed-initial-diagnosis-step-00-development-receipt.json",
+          "development_receipt_sha256": "bc8bc7c7a7c0054496ac156ad737b3d99af4d425226d48942e78c6b04fe7af08",
+          "host_state": {
+            "attempted": [
+              "opt-6cb8"
+            ],
+            "status": "continue",
+            "adopted": null,
+            "strict_development_gate_met": false
+          }
+        },
+        {
+          "label": "observed-initial-diagnosis-step-01",
+          "eligible_order": [
+            "opt-844b",
+            "opt-3013",
+            "opt-2a5e",
+            "opt-01b7"
+          ],
+          "prompt_sha256": "3daa277b32b718485a299641bedc18279f2fe7d30319f56eb7ce71e241b218d3",
+          "provider_path": "observed-initial-diagnosis-step-01-provider.json",
+          "provider_sha256": "fa4d2b5c074022f0c120c8fe3e26b597fad7723fe1e57ed71023974ac5183ae1",
+          "status": "valid",
+          "proposal": {
+            "candidate_id": "opt-01b7",
+            "mechanics_fact_id": "mechanics:opt-01b7:control_law",
+            "observation_fact_id": "observation:development:work_stance_success_count",
+            "citations": [
+              {
+                "id": "mechanics:opt-01b7:control_law",
+                "value": "Position-error-dependent contact authority from the frozen optimized three-coefficient vector; checkpoint residual authority fixed at 0.0.",
+                "role": "mechanics"
+              },
+              {
+                "id": "observation:development:work_stance_success_count",
+                "value": 3,
+                "role": "observation"
+              }
+            ],
+            "reason": "The candidate's description focuses on a position-error-dependent contact authority and frozen optimized three-coefficient vector, aligning with the objective of correcting a strict valve failure while preserving the work stance. The available observations support this approach.",
+            "citation_mode": "typed_fact_ids_host_binds_exact_values",
+            "native_diagnosis": {
+              "action": "hold",
+              "reason": "domain_not_registered_for_native_six_mechanism_diagnosis",
+              "synthetic_ranking_created": false
+            }
+          },
+          "host_resolution": {
+            "opaque_id": "opt-01b7",
+            "source_variant": "learned_no_ppo"
+          },
+          "development_receipt_path": "observed-initial-diagnosis-step-01-development-receipt.json",
+          "development_receipt_sha256": "e088115679056a2fba188002949b77e07fc0023cd18909407bd347d8e0d45fd1",
+          "host_state": {
+            "attempted": [
+              "opt-6cb8",
+              "opt-01b7"
+            ],
+            "status": "adopted",
+            "adopted": "opt-01b7",
+            "strict_development_gate_met": true
+          }
+        }
+      ]
+    }
+  },
+  "adoption": {
+    "ablation_variant": "learned_no_ppo",
+    "observed_variant": "learned_no_ppo"
+  },
+  "retry_performed": false,
+  "heldout_or_private_inputs_consumed": false,
+  "efficacy_claim_supported": false,
+  "efficacy_note": "Development repair adoption is not sealed-cohort efficacy evidence."
+}

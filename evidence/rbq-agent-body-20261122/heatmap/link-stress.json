@@ -1,0 +1,176 @@
+{
+  "schema": "rbq_link_conditional_stress_v1",
+  "mission_sha256": "362cbd836802d2f29b8febd2917a4ba987d9990bea4e02ec32f84f7978bf96b9",
+  "samples": 127750,
+  "scale_mpa": [
+    0.0,
+    20.0
+  ],
+  "chassis_scale_mpa": [
+    0.0,
+    80.0
+  ],
+  "colour_order": [
+    "blue",
+    "cyan",
+    "green",
+    "yellow",
+    "red"
+  ],
+  "formula": "sqrt((|F|/A + |M_bend|/Z_min)^2 + 3*(|M_torsion|/(2*A_m*t))^2)",
+  "load_origin": "MuJoCo mj_rnePostConstraint parent reaction at each of 18 joint anchors",
+  "scope": "conditional thin-wall link-section estimate; not an FEA result or component rating",
+  "sections": {
+    "hip": {
+      "width_m": 0.08,
+      "height_m": 0.055,
+      "wall_m": 0.003,
+      "source": "pinned model envelope plus assumed wall"
+    },
+    "thigh": {
+      "width_m": 0.07,
+      "height_m": 0.045,
+      "wall_m": 0.003,
+      "source": "pinned model envelope plus assumed wall"
+    },
+    "calf": {
+      "width_m": 0.045,
+      "height_m": 0.03,
+      "wall_m": 0.003,
+      "source": "pinned model envelope plus assumed wall"
+    },
+    "arm_base": {
+      "width_m": 0.08,
+      "height_m": 0.07,
+      "wall_m": 0.004,
+      "source": "pinned model envelope plus assumed wall"
+    },
+    "arm_upper": {
+      "width_m": 0.09,
+      "height_m": 0.07,
+      "wall_m": 0.004,
+      "source": "pinned model envelope plus assumed wall"
+    },
+    "arm_fore": {
+      "width_m": 0.07,
+      "height_m": 0.055,
+      "wall_m": 0.003,
+      "source": "pinned model envelope plus assumed wall"
+    },
+    "arm_wrist": {
+      "width_m": 0.06,
+      "height_m": 0.05,
+      "wall_m": 0.003,
+      "source": "pinned model envelope plus assumed wall"
+    }
+  },
+  "joint_families": {
+    "FL_hip_joint": "hip",
+    "FL_thigh_joint": "thigh",
+    "FL_calf_joint": "calf",
+    "FR_hip_joint": "hip",
+    "FR_thigh_joint": "thigh",
+    "FR_calf_joint": "calf",
+    "RL_hip_joint": "hip",
+    "RL_thigh_joint": "thigh",
+    "RL_calf_joint": "calf",
+    "RR_hip_joint": "hip",
+    "RR_thigh_joint": "thigh",
+    "RR_calf_joint": "calf",
+    "arm_joint1": "arm_base",
+    "arm_joint2": "arm_upper",
+    "arm_joint3": "arm_fore",
+    "arm_joint4": "arm_fore",
+    "arm_joint5": "arm_wrist",
+    "arm_joint6": "arm_wrist"
+  },
+  "peak": {
+    "link": "RL_calf_joint",
+    "time_s": 66.31099999995257,
+    "stage": "prewalk",
+    "equivalent_mpa": 20.888178844669124
+  },
+  "chassis_zones": {
+    "FL chassis": "FL_hip_joint",
+    "FR chassis": "FR_hip_joint",
+    "RL chassis": "RL_hip_joint",
+    "RR chassis": "RR_hip_joint"
+  },
+  "chassis_surface": {
+    "render_target": "visible pixels of the original MuJoCo base geoms only",
+    "added_overlay_geoms": 0,
+    "diagnostic_body_local_samples": 119,
+    "sources": [
+      "FL chassis",
+      "FR chassis",
+      "RL chassis",
+      "RR chassis",
+      "RB1 mount conditional plate"
+    ],
+    "method": "geom segmentation and depth/camera reprojection to base-local XY, followed by inverse-distance interpolation with 35 mm smoothing radius",
+    "warning": "spatial visualization combines four conditional hip link sections with the separate Go2+D1 conditional RB1 mounting-plate estimate; it is not FEA",
+    "maximum_spatial_range_mpa": 70.2179076665104,
+    "maximum_spatial_range_time_s": 35.20500000000865,
+    "field_min_at_that_time_mpa": 1.8672015816284555,
+    "field_max_at_that_time_mpa": 72.08510924813885,
+    "mean_field_temporal_range_mpa": 18.06414095006165
+  },
+  "renders": [
+    {
+      "video": "body-stress-follow.mp4",
+      "video_sha256": "7fce8a61964aef8fff3eb88c01fa055bc683d781c420a1b9211a5940b6207e0d",
+      "subtitle_sha256": "ac62e34f41d6997afda0e7b7e45d1f2974b0def8230acb3a22556bef30ae8302",
+      "frames": 400,
+      "duration_s": 16.0,
+      "avg_frame_rate": "25/1",
+      "caption_samples_verified": 400,
+      "surface_sha256": "cbfb5fd40336994020a7793a723b2f07b99c9842f78673c69cf3694837fe9169",
+      "surface_mask_verification": {
+        "method": "MuJoCo geom segmentation plus depth reprojected to base-local coordinates",
+        "base_geom_ids": [
+          14,
+          15
+        ],
+        "added_overlay_geoms": 0,
+        "samples": [
+          {
+            "time_s": 35.20100000000866,
+            "mesh_pixel_count": 14692,
+            "unique_20mpa_colour_bands": 4,
+            "visible_min_mpa": 2.1937377037855956,
+            "visible_max_mpa": 65.62919832145671,
+            "visible_mean_mpa": 21.35600260044953
+          },
+          {
+            "time_s": 66.24199999995224,
+            "mesh_pixel_count": 13861,
+            "unique_20mpa_colour_bands": 2,
+            "visible_min_mpa": 1.6386328642559511,
+            "visible_max_mpa": 23.621096942668522,
+            "visible_mean_mpa": 7.9312017416300575
+          }
+        ],
+        "visible_mean_change_mpa": 13.42480085881947
+      }
+    },
+    {
+      "video": "body-stress-valve.mp4",
+      "video_sha256": "aa7363108e04ab02e15a8ecd8f7d0922caa847aac98f0f85ace69b17c6aa9bee",
+      "subtitle_sha256": "4c73aee22e39c1c365a0efe35260b9d970b5893be7e2258c6adfccb96ae1de46",
+      "frames": 440,
+      "duration_s": 17.6,
+      "avg_frame_rate": "25/1",
+      "caption_samples_verified": 440,
+      "surface_sha256": "4e3aaa0e18b0b9767f1454d1ff287d20a364c28cfeabf97a255aee24ddb462a0",
+      "surface_mask_verification": {
+        "method": "MuJoCo geom segmentation plus depth reprojected to base-local coordinates",
+        "base_geom_ids": [
+          14,
+          15
+        ],
+        "added_overlay_geoms": 0,
+        "samples": []
+      }
+    }
+  ]
+}

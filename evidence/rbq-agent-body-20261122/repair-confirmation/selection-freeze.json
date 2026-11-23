@@ -1,0 +1,19 @@
+{
+  "choices": {
+    "unchanged_learned": "learned",
+    "fixed_contact": "fixed_contact",
+    "single_observed": "learned",
+    "validated_observed": "learned_no_ppo",
+    "single_ablation": "learned_no_ppo",
+    "validated_ablation": "learned_no_ppo"
+  },
+  "adoption": {
+    "ablation_variant": "learned_no_ppo",
+    "observed_variant": "learned_no_ppo"
+  },
+  "decision_relpath": "validated-repair/summary.json",
+  "decision_sha256": "3619b3e658027f3957b9d16341fef867b8073e063bcdbf160210401c77777059",
+  "single_decision_sha256": "8c44cc000b9417acea93690c6e1c1dda31f32368e8dce8a9ea2197b66262cf90",
+  "protocol_sha256": "faa773f419090c5a499f8d7da36e7b2db6bde1b76ad62281b2ddceb0e3ca68f7",
+  "policy_sha256": "18c530360e1144180606dfb02e8fb351f0a8b1562c6aec7f776aabac953aad44"
+}

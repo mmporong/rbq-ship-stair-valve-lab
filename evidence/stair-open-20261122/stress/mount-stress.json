@@ -1,0 +1,143 @@
+{
+  "schema": "rbq_rb1_bracket_stress_v1",
+  "mission": {
+    "filename": "mission.npz",
+    "sha256": "362cbd836802d2f29b8febd2917a4ba987d9990bea4e02ec32f84f7978bf96b9",
+    "samples": 127750
+  },
+  "component": "RBQ 장착부 하중을 받은 Go2+D1 가정 단면",
+  "stress_model": "conditional cantilever-section upper bound using an older Go2+D1 assumption",
+  "provenance_warning": "The RBQ model provides a mount wrench but no mounting section or material. The 80 x 6 mm section, 150 mm cantilever, and 6061-T6 material come from the Go2+D1 study and are not RBQ component specifications.",
+  "section": {
+    "z_vertical_m3": 4.8e-07,
+    "z_lateral_m3": 6.4000000000000006e-06,
+    "torsion_m3": 9.6e-07,
+    "width_m": 0.08,
+    "thickness_m": 0.006,
+    "cantilever_m": 0.15,
+    "grade": "assumption"
+  },
+  "material": {
+    "name": "6061-T6 aluminium plate (assumed)",
+    "yield_mpa": 276.0,
+    "grade": "derived"
+  },
+  "peak": {
+    "sample_index": 35204,
+    "time_s": 35.20500000000865,
+    "stage": "prewalk",
+    "von_mises_mpa": 76.77509222141663,
+    "bending_vertical_mpa": 73.52361340714818,
+    "bending_lateral_mpa": 0.15993222739431043,
+    "torsion_mpa": 12.451905989704597,
+    "safety_factor_to_yield": 3.5949159032466653,
+    "force_base_frame_n": [
+      -144.95154607805293,
+      50.45458803873705,
+      -70.55408085232905
+    ],
+    "moment_bolt_line_nm": [
+      -11.953829750116412,
+      -35.291334435431125,
+      1.023566255323587
+    ]
+  },
+  "stage_peaks": [
+    {
+      "stage": "prewalk",
+      "peak_mpa": 76.77509222141663,
+      "time_s": 35.20500000000865
+    },
+    {
+      "stage": "position",
+      "peak_mpa": 29.468960516368806,
+      "time_s": 89.95000000006544
+    },
+    {
+      "stage": "approach",
+      "peak_mpa": 38.15597887792349,
+      "time_s": 93.40500000008194
+    },
+    {
+      "stage": "contact",
+      "peak_mpa": 20.166000674337788,
+      "time_s": 96.17000000009514
+    },
+    {
+      "stage": "operate",
+      "peak_mpa": 41.53536207470803,
+      "time_s": 101.55000000012083
+    },
+    {
+      "stage": "settle",
+      "peak_mpa": 21.21417698022963,
+      "time_s": 107.42100000014887
+    },
+    {
+      "stage": "hold",
+      "peak_mpa": 14.823399459928877,
+      "time_s": 113.74600000017907
+    },
+    {
+      "stage": "release",
+      "peak_mpa": 29.445424041656455,
+      "time_s": 115.9530000001896
+    },
+    {
+      "stage": "retract",
+      "peak_mpa": 32.95200707481721,
+      "time_s": 117.61500000019754
+    },
+    {
+      "stage": "station",
+      "peak_mpa": 29.381273904236384,
+      "time_s": 122.75100000022206
+    }
+  ],
+  "scales_mpa": {
+    "fixed_min": 0.0,
+    "fixed_max": 276.0,
+    "detail_min": 0.0,
+    "detail_max": 80.0
+  },
+  "thickness_sensitivity": [
+    {
+      "thickness_mm": 4.0,
+      "peak_mpa": 172.6288416780965,
+      "time_s": 35.20500000000865,
+      "safety_factor_to_yield": 1.5988058386828614
+    },
+    {
+      "thickness_mm": 6.0,
+      "peak_mpa": 76.77509222141663,
+      "time_s": 35.20500000000865,
+      "safety_factor_to_yield": 3.5949159032466653
+    },
+    {
+      "thickness_mm": 8.0,
+      "peak_mpa": 43.21476997274549,
+      "time_s": 35.20500000000865,
+      "safety_factor_to_yield": 6.3867052902067165
+    }
+  ],
+  "calculation_check": {
+    "load_n": 10.0,
+    "cantilever_m": 0.15,
+    "moment_nm": 1.5,
+    "vertical_section_modulus_m3": 4.8e-07,
+    "expected_vertical_bending_mpa": 3.125,
+    "formula": "(10 N * 0.15 m) / (4.8e-7 m^3) / 1e6 = 3.125 MPa"
+  },
+  "excluded": [
+    "uniform axial stress and transverse shear",
+    "bolt-hole stress concentration",
+    "fastener and weld stress",
+    "plate deflection",
+    "leg-link stress",
+    "arm-link stress"
+  ],
+  "artifacts": {
+    "mount-stress.png": "cfca0c80707f3e52a4ac96b20b738ffb6f63fcaadcd11a556b4f9b2975208034",
+    "mount-stress-pose.png": "61ee9c312cac5c3e340810cc974d75efe8a134ec74029973f421d206007dde23"
+  }
+}

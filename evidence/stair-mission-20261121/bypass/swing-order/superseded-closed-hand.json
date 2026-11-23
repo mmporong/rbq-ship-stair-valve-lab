@@ -1,0 +1,11 @@
+{
+  "status": "superseded",
+  "reason": "The two RB1 finger slide positions were 0.0 m, which is closed rather than the required 0.04 m open-hand state.",
+  "preserved_scratch_raw_sha256": "db544842206d310f2957eb5aef73824b35751fa252538462dc0d3b3a80efb64f",
+  "previous_static_track_sha256": "ee9e3ae3d79b394af6263f1ec350c85b1bc042199dd4422f9dccf7f1d568f782",
+  "previous_dynamic_outcome": "dynamic_failed",
+  "previous_first_base_tracking_over_30mm_s": 6.972,
+  "previous_first_lever_contact_s": 7.333,
+  "previous_first_qp_failure_s": 8.16,
+  "claim": "Preserved only for audit comparison; it is not valid open-hand evidence."
+}

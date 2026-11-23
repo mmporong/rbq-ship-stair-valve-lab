@@ -1,0 +1,34 @@
+{
+  "verified_from_git_blobs": true,
+  "archive_commit": "436096f778b22895869bac44c1d7e37781e1c01b",
+  "remote_ref_checked": "origin refs/heads/main",
+  "remote_head_at_check": "436096f778b22895869bac44c1d7e37781e1c01b",
+  "published_groups_this_run": [
+    "cb4d6cc6559e4aeddbf72504f590d7fbf79e5533",
+    "c0ebd68effe4f717a206b39cb8b1d998f1cea547",
+    "4b583026e470214945586f5d8f3a5d9b2d29c57e",
+    "430d56470c21006f77d799601fe9aab56f44410e",
+    "436096f778b22895869bac44c1d7e37781e1c01b"
+  ],
+  "parts": 37,
+  "bytes": 1817100836,
+  "raw_sha256": "b86c249c84e93a852f73d58ccdae1366acec49eac984a338223ab8557b000f11",
+  "repeat_raw_sha256": "a66654a8f80aee04ccce04b5265291f3e1f62ca59b150e310e3bedc0e5069f84",
+  "notes": "All member sizes and SHA-256 values and the joined original SHA-256 were checked from local Git objects at the confirmed remote tip. The independent repeat restores from this recording.",
+  "restored_full_rejudgment": {
+    "first": {
+      "raw_sha256": "b86c249c84e93a852f73d58ccdae1366acec49eac984a338223ab8557b000f11",
+      "physics_steps": 979040,
+      "last_landing_covered": true,
+      "identical_to_independent_source_rejudgment": true,
+      "strict_full_mission": false
+    },
+    "repeat": {
+      "raw_sha256": "a66654a8f80aee04ccce04b5265291f3e1f62ca59b150e310e3bedc0e5069f84",
+      "physics_steps": 979040,
+      "last_landing_covered": true,
+      "identical_to_independent_source_rejudgment": true,
+      "strict_full_mission": false
+    }
+  }
+}

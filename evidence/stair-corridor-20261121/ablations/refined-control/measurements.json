@@ -1,0 +1,80 @@
+{
+  "result": "evidence/stair-corridor-20261121/ablations/refined-control/first/result.json",
+  "raw_check": "evidence/stair-corridor-20261121/ablations/refined-control/first/raw-check.json",
+  "reference_sha256": "78bd8f3370267a8f6556f80b74c7bcf7f9b0085f0f113442a7579d3312c17bf2",
+  "raw_sha256": "c5e1481da7b5b0e0b8650c06b45f71605ab746ce205eeedcdb4a77b3df36b0e2",
+  "physics_samples": 943895,
+  "endpoint_s": 943.8949999845918,
+  "actuation_s": 0.005,
+  "physics_s": 0.001,
+  "first_mission_failure": {
+    "stage": "hold",
+    "time_s": 111.85100000017002,
+    "metric": "stance_slip_m",
+    "measured": 0.01000009856095136,
+    "limit": "<= 0.01"
+  },
+  "full_mission_pass": false,
+  "full_valve_pass": false,
+  "loaded_angle_bins": 16,
+  "pad_loss_s": 0.0,
+  "hold_range_deg": [
+    89.79207921352847,
+    90.06814554732094
+  ],
+  "hold_samples": 5000,
+  "manipulation_max_foot_shift_mm": 5.329130176353783,
+  "manipulation_max_base_shift_mm": 4.664481044332811,
+  "first_post_release_contact": {
+    "state_time_s": 195.56500000056974,
+    "pad_normal_force_n": [
+      0.0,
+      0.0
+    ],
+    "recorded_nonpad_force_n": 63.22691895289687,
+    "lever_contact_geom_pairs_from_recorded_pose": [
+      [
+        {
+          "geom_id": 66,
+          "geom_name": "valve_lever",
+          "body": "valve"
+        },
+        {
+          "geom_id": 35,
+          "geom_name": null,
+          "body": "FR_thigh"
+        }
+      ]
+    ]
+  },
+  "first_unexpected_force": {
+    "stage": "return",
+    "time_s": 161.8370000004087,
+    "metric": "unexpected_contact_force_n",
+    "measured": 316.97780846802,
+    "limit": "<= 10 N"
+  },
+  "first_observed_fall_s": 217.81100000067596,
+  "scheduled_landings": 156,
+  "supported_landings": 26,
+  "first_support_on_platform_s": null,
+  "first_platform_turn_s": null,
+  "final_valve_angle_deg": 89.9896256003243,
+  "stable_floor_return": {
+    "time_s": [
+      943.395,
+      943.895
+    ],
+    "sample_count": 500,
+    "max_start_xy_error_m": 2.416508799719544,
+    "min_up_z": -0.31463913742081073,
+    "max_linear_speed_mps": 3.00348863356786e-05,
+    "max_angular_speed_radps": 0.0001515790789490087,
+    "min_floor_force_n": 0.0,
+    "verified": false
+  },
+  "maximum_final_tilt_deg": 108.33903023024479,
+  "state_resets": 0,
+  "max_applied_generalized_force": 0.0,
+  "max_applied_external_wrench": 0.0
+}

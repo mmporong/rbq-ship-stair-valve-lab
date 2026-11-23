@@ -1,0 +1,82 @@
+{
+  "time_range_s": [
+    187.00000000052884,
+    194.99900000056704
+  ],
+  "mission_seconds": 8.000000000038193,
+  "mount_reference": "RB1_Base origin; force XYZ then moment XYZ in world axes",
+  "metrics": {
+    "joint_torque_nm": {
+      "value": 150.0,
+      "time_s": 191.07100000054828,
+      "stage": "return",
+      "sample_index": 4071,
+      "item": "FR_calf_joint"
+    },
+    "joint_torque_ratio": {
+      "value": 1.0,
+      "time_s": 190.7610000005468,
+      "stage": "return",
+      "sample_index": 3761,
+      "item": "FR_hip_joint"
+    },
+    "joint_off_axis_bending_nm": {
+      "value": 714.8145542976591,
+      "time_s": 191.69100000055124,
+      "stage": "return",
+      "sample_index": 4691,
+      "item": "RR_thigh_joint"
+    },
+    "joint_reaction_n": {
+      "value": 5276.603445378552,
+      "time_s": 191.44600000055007,
+      "stage": "return",
+      "sample_index": 4446,
+      "item": "FR_thigh_joint"
+    },
+    "rb1_mount_force_n": {
+      "value": 1761.1469993868932,
+      "time_s": 191.010000000548,
+      "stage": "return",
+      "sample_index": 4010
+    },
+    "rb1_mount_moment_nm": {
+      "value": 327.04173478793547,
+      "time_s": 191.010000000548,
+      "stage": "return",
+      "sample_index": 4010
+    },
+    "foot_surface_force_n": {
+      "value": 1164.7864252053175,
+      "time_s": 192.09400000055317,
+      "stage": "return",
+      "sample_index": 5094,
+      "item": "FR/floor"
+    },
+    "hinge_friction_torque_nm": {
+      "value": 3.350958680668774e-10,
+      "time_s": 187.00000000052884,
+      "stage": "return",
+      "sample_index": 0
+    },
+    "pad_closing_torque_nm": {
+      "value": 0.0,
+      "time_s": 187.00000000052884,
+      "stage": "return",
+      "sample_index": 0
+    },
+    "pad_normal_force_n": {
+      "value": 0.0,
+      "time_s": 187.00000000052884,
+      "stage": "return",
+      "sample_index": 0,
+      "item": "upper"
+    },
+    "pad_closing_tangent_force_n": {
+      "value": 0.0,
+      "time_s": 187.00000000052884,
+      "stage": "return",
+      "sample_index": 0
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "loaded": {
+    "source_file": "frozen-grip-loaded.json.gz",
+    "original_stamp": "post-step physical time",
+    "judged_stage_stamp": "controller sample time = step_index * physics_dt",
+    "changed_stage_samples": 4,
+    "verdict": {
+      "verified": true,
+      "first_failure": null,
+      "failures": [],
+      "measurements": {
+        "max_record_step_s": 0.005000000000000782,
+        "total_saturated_steps": 0,
+        "contact_hold_s": 0.3949999999999916,
+        "low_load_max_angle_deg": 21.66047960652494,
+        "low_load_max_axial_slip_m": 8.881672222965653e-05
+      }
+    }
+  },
+  "open": {
+    "source_file": "frozen-grip-open.json.gz",
+    "original_stamp": "post-step physical time",
+    "judged_stage_stamp": "controller sample time = step_index * physics_dt",
+    "changed_stage_samples": 4,
+    "verdict": {
+      "verified": false,
+      "first_failure": {
+        "stage": "contact",
+        "time_s": 4.999999999999916,
+        "metric": "two_pad_contact_hold_s",
+        "measured": 0.0,
+        "limit": ">= 0.2",
+        "message": "both pads did not secure the handle"
+      },
+      "failures": [
+        {
+          "stage": "contact",
+          "time_s": 4.999999999999916,
+          "metric": "two_pad_contact_hold_s",
+          "measured": 0.0,
+          "limit": ">= 0.2",
+          "message": "both pads did not secure the handle"
+        },
+        {
+          "stage": "low_load",
+          "time_s": 7.414999999999864,
+          "metric": "two_loaded_pads_n",
+          "measured": 0.0,
+          "limit": 1.0,
+          "message": "both pads must carry the rotating handle"
+        },
+        {
+          "stage": "low_load",
+          "time_s": 7.414999999999864,
+          "metric": "pad_closing_torque_nm",
+          "measured": 0.0,
+          "limit": ">= 0.98",
+          "message": "measured low-load torque is insufficient"
+        },
+        {
+          "stage": "low_load",
+          "time_s": 7.529999999999862,
+          "metric": "two_loaded_pads_n",
+          "measured": 0.0,
+          "limit": 1.0,
+          "message": "both pads must carry the rotating handle"
+        },
+        {
+          "stage": "low_load",
+          "time_s": 7.529999999999862,
+          "metric": "pad_closing_torque_nm",
+          "measured": 0.0,
+          "limit": ">= 0.98",
+          "message": "measured low-load torque is insufficient"
+        }
+      ],
+      "measurements": {
+        "max_record_step_s": 0.005000000000000782,
+        "total_saturated_steps": 0,
+        "contact_hold_s": 0.0,
+        "low_load_max_angle_deg": 37.698010771459195
+      }
+    }
+  }
+}

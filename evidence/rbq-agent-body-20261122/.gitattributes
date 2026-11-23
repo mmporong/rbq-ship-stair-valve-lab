@@ -1,0 +1,6 @@
+# Keep source and media receipts byte-identical across checkouts.
+*.json -text
+*.csv -text
+*.html -text
+*.ass -text
+frozen-ppo/t1-v8-cpu-9100/scene.xml -text

@@ -1,0 +1,23 @@
+{
+  "scope": "walking reference interpolated at every 5 ms motor tick including both endpoints",
+  "walking_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+  "parent_walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+  "footprint_profile": "fixed-side-72-upper-v2",
+  "samples": 188199,
+  "inserted_samples": 14149,
+  "max_swing_offset_m": 0.0,
+  "changed_pose_samples": 42254,
+  "scheduled_landings": 156,
+  "walking_duration_s": 940.99,
+  "task_anchor_s": 89.6,
+  "max_foot_ik_error_m": 0.00197981915326943,
+  "max_unexpected_penetration_m": 0.0,
+  "min_closed_valve_clearance_m": 0.00012499389680247115,
+  "nominal_time_at_closest_closed_valve_s": 126.66902265372175,
+  "ik_limit_m": 0.002,
+  "penetration_limit_m": 0.0001,
+  "verified": true,
+  "reference_pose_count": 50950,
+  "rejected_ticks": 0,
+  "first_rejected_walk_time_s": null
+}

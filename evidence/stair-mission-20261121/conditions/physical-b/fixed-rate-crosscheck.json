@@ -1,0 +1,139 @@
+{
+  "source_commits": [
+    "25117a003b785a0358ae77eaf2dd61628edf6d84",
+    "874f3bee820322502f0025180c4f279308d353c0"
+  ],
+  "matched_physics_step_s": 0.005,
+  "identical_five_ms_cases": {
+    "nominal": {
+      "steps": 25300,
+      "exact_shared_arrays": 39,
+      "raw_sha256": [
+        "33988075b67df7751c98db91c58562e216977112fec1c7e3b76aad7ef808da8f",
+        "00fc0dd3839909694d7c907d92d9b2553501fafc06a13f3c16c21e47ca2f645e"
+      ]
+    },
+    "floor_mu_050": {
+      "steps": 25300,
+      "exact_shared_arrays": 33,
+      "raw_sha256": [
+        "76a3379c8832325b1213cec068d43636e3afd8fbcac8f95fc2f83d2c6c4e9a2e",
+        "3951ace965e9e2c67eacdc4e9ecadbb2d7df388504ee4fdbe80c86b1bd077f17"
+      ]
+    },
+    "floor_mu_080": {
+      "steps": 25300,
+      "exact_shared_arrays": 33,
+      "raw_sha256": [
+        "f4fd3b8508a6cfe2fa93c794090371b9f77c415c18e6c851f4f5740d89395a56",
+        "fce620feab546788e4fc8d390680523e321e8cb4ee842a0077bbe20b29408a01"
+      ]
+    },
+    "resistance_5": {
+      "steps": 25300,
+      "exact_shared_arrays": 33,
+      "raw_sha256": [
+        "50e20d2b41d0380d9c7d263305f5b2c6f8b6d551daf54d436c981a6953ce1a2a",
+        "8b7d45cc0ee67df02f650e89c381d13878b0a25121626b6c914b2db4f4787623"
+      ]
+    },
+    "resistance_15": {
+      "steps": 25300,
+      "exact_shared_arrays": 33,
+      "raw_sha256": [
+        "4284dfaa9de6e4a9b523e5655c03c8a92db579a6e4d275442d4d1aa7405d0d28",
+        "61a3f2f4fa65fa93ffff0862e16b317273c550a8c60423b7aa01fe6d3a0b544b"
+      ]
+    },
+    "sensitivity_lever_m_0_1": {
+      "steps": 25300,
+      "exact_shared_arrays": 33,
+      "raw_sha256": [
+        "c0835acae0d098cfd92920907779e8b4b312bff88761ed4aaf0158c5b5712004",
+        "a2c0b6e49bd3f3c71cd46dea5b2c7deb4b744ca744923e03a695dc59095fa427"
+      ]
+    },
+    "sensitivity_lever_m_0_14": {
+      "steps": 25300,
+      "exact_shared_arrays": 33,
+      "raw_sha256": [
+        "f394a576f9cd1601f17ed4c24a8f4fd64a2f5c66be140d1d36dacaaee91cedcc",
+        "bd7d4be92f55ede17f46884570f4622417a2662612e8732325eefe7cfe9753e9"
+      ]
+    },
+    "sensitivity_pad_mu_0_6": {
+      "steps": 25300,
+      "exact_shared_arrays": 33,
+      "raw_sha256": [
+        "f5e4bde891f34bf6017636bb1f5e3d6dc6dafb3fd7a761bd272ad7cc022fa3e5",
+        "6ec428cb39456286b0b363b807eb189cd3be271f311fff087db78461a85b58a0"
+      ]
+    },
+    "sensitivity_pad_mu_1": {
+      "steps": 25300,
+      "exact_shared_arrays": 33,
+      "raw_sha256": [
+        "f30685a6ff57df8a2ca99eb649994941cc0f986d9847b25ee07cfd1610958304",
+        "3722eedfc5814ed46c3a71a4c9d08c0944d6df38c7e539b9051c5b4a958a0ca9"
+      ]
+    },
+    "sensitivity_finger_force_limit_n_75": {
+      "steps": 25300,
+      "exact_shared_arrays": 33,
+      "raw_sha256": [
+        "d3e33a601c7a8080e01d5788db38ce69997fbf24d5676b21ff0222484c6e9457",
+        "2be7af6be97c15d78b60a7bd822a4abf15c4de34586bffa17229f70e1f3ceea7"
+      ]
+    },
+    "sensitivity_finger_slide_frictionloss_n_15": {
+      "steps": 25300,
+      "exact_shared_arrays": 33,
+      "raw_sha256": [
+        "69238463bb733e20cc1b38d56a0c085c9418721bb9bbe8ba4c7ebb27040a6abe",
+        "0861588ce18c9a2a95deea8b17356939f34d1bff6382f1277fd6288b95271af1"
+      ]
+    },
+    "sensitivity_arm_limits_named_lims_ex_joint_limits": {
+      "steps": 25300,
+      "exact_shared_arrays": 33,
+      "raw_sha256": [
+        "094451b156605fed07ef7445c2c72b1f3493210fd83202cd5da0777a7a6c7873",
+        "d31ed9a6b944572132869fc295f55338bcafedff027104d4ce7730e951bd970d"
+      ]
+    },
+    "sensitivity_impratio_10": {
+      "steps": 25300,
+      "exact_shared_arrays": 33,
+      "raw_sha256": [
+        "035f6f7d4f4c94c607418cc9c30209d8b1bd5d32266af075c6f16e9e4ed756bd",
+        "9bda65bb5cfc7898b51afe6c37eaef5667bb9dd791ce9c2250bbeaaf4bf9bcfa"
+      ]
+    }
+  },
+  "two_and_a_half_ms_first_violation": {
+    "step_updated": {
+      "physics_step_s": 0.0025,
+      "command_period_s": 0.0025,
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.60249999994748,
+        "metric": "start_angle_deg",
+        "measured": 0.37345710914722186,
+        "limit": "abs <= 0.25",
+        "message": "valve did not start open"
+      }
+    },
+    "held": {
+      "physics_step_s": 0.0025,
+      "command_period_s": 0.005,
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.60249999994748,
+        "metric": "start_angle_deg",
+        "measured": 0.27524989543348527,
+        "limit": "abs <= 0.25",
+        "message": "valve did not start open"
+      }
+    }
+  }
+}

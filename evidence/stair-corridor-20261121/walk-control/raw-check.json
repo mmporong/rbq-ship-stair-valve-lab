@@ -1,0 +1,51 @@
+{
+  "scope": "independent recalculation from sampled N1 support arrays",
+  "runs": [
+    {
+      "trial": "dt0.001",
+      "sha256": "1f0d36fe825f1aa67a868490b842d18684d0ac8e3b07741163148d6f7055b8da",
+      "samples": 73600,
+      "support_windows": 156,
+      "landings_confirmed": 156,
+      "physics_timestep_s": 0.001,
+      "stable_floor_return": {
+        "time_s": [
+          735.4999999999973,
+          735.9999999999973
+        ],
+        "sample_count": 50,
+        "max_start_xy_error_m": 0.028209160913917605,
+        "min_up_z": 0.9974996124794272,
+        "max_linear_speed_mps": 0.0026407269748713502,
+        "max_angular_speed_radps": 0.004966247891746429,
+        "min_floor_force_n": 68.7228067805053,
+        "verified": true
+      },
+      "first_platform_s": 244.2,
+      "first_turn_s": 363.1
+    },
+    {
+      "trial": "dt0.005",
+      "sha256": "987c6ef6925fe3b292647315d05f3d9064b4f9786cc36fc9fc028d2245caa2b7",
+      "samples": 73600,
+      "support_windows": 156,
+      "landings_confirmed": 156,
+      "physics_timestep_s": 0.005,
+      "stable_floor_return": {
+        "time_s": [
+          735.4999999999973,
+          735.9999999999973
+        ],
+        "sample_count": 50,
+        "max_start_xy_error_m": 0.02824988564237424,
+        "min_up_z": 0.9974793856232747,
+        "max_linear_speed_mps": 0.002725355043441605,
+        "max_angular_speed_radps": 0.005106753746825762,
+        "min_floor_force_n": 69.27748219936508,
+        "verified": true
+      },
+      "first_platform_s": 244.2,
+      "first_turn_s": 363.1
+    }
+  ]
+}

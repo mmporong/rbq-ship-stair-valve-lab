@@ -1,0 +1,19 @@
+{
+  "runs": {
+    "nominal": "nominal/through-task/result.json",
+    "floor_mu_050": "floor_mu_050/through-task/result.json",
+    "floor_mu_080": "floor_mu_080/through-task/result.json",
+    "resistance_5": "resistance_5/through-task/result.json",
+    "resistance_15": "resistance_15/through-task/result.json",
+    "sensitivity_lever_m_0_1": "sensitivity_lever_m_0_1/through-task/result.json",
+    "sensitivity_lever_m_0_14": "sensitivity_lever_m_0_14/through-task/result.json",
+    "sensitivity_pad_mu_0_6": "sensitivity_pad_mu_0_6/through-task/result.json",
+    "sensitivity_pad_mu_1": "sensitivity_pad_mu_1/through-task/result.json",
+    "sensitivity_finger_force_limit_n_75": "sensitivity_finger_force_limit_n_75/through-task/result.json",
+    "sensitivity_finger_slide_frictionloss_n_15": "sensitivity_finger_slide_frictionloss_n_15/through-task/result.json",
+    "sensitivity_arm_limits_named_lims_ex_joint_limits": "sensitivity_arm_limits_named_lims_ex_joint_limits/through-task/result.json",
+    "sensitivity_timestep_s_0_0025": "sensitivity_timestep_s_0_0025/through-task/result.json",
+    "sensitivity_impratio_10": "sensitivity_impratio_10/through-task/result.json"
+  },
+  "execution_errors": {}
+}

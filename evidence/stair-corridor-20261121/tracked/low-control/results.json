@@ -1,0 +1,228 @@
+{
+  "controller_commit": "fcdf5d881b17c6b3d46490350a6ee2b340d932d7",
+  "physics_step_s": 0.001,
+  "actuation_period_s": 0.005,
+  "minimum_acquisition_s": 0.2,
+  "inputs": [
+    "evidence/t3-valve-20261120/fixed-body-candidates.json",
+    "evidence/t1-stair-ascent-20261120/target-round-trip-geometry.json"
+  ],
+  "arguments": [
+    "--target-deg",
+    "20",
+    "--resistance-nm",
+    "1",
+    "--motion-seconds",
+    "4",
+    "--timestep",
+    ".001",
+    "--jaw-load-bias-m",
+    ".0005",
+    "--stance-spring-gain-n-per-m",
+    "2500"
+  ],
+  "open_control_extra": "--open-hand-control",
+  "runs": [
+    {
+      "name": "loaded",
+      "raw_source_sha256": "1cd10e9fd3e61fb29d6b492535abc54404be723aa4295138e54cd28f9d3d8f17",
+      "gzip_sha256": "03c5da8f27b93f6a951a9db8d77dccea9312e175f26aceb6f30c7a1df197b012",
+      "source_files": {
+        "src/go2_wall/grasp_motion.py": "01d3717f6f20e08497ee517343512bf5ccdfeb04bb145bca8a0ddf2d0f3eeb22",
+        "tools/replay_contact_valve.py": "dfdf89a9d4bbcdea37cdc5fabc3422573048558865580729342cb39950913edd",
+        "src/go2_wall/transition.py": "100136d8a18d36a5af541670d3fb57cc96f3f19c1fb0293404885789c7c2b336",
+        "src/go2_wall/gripper_control.py": "f753eca35d2a0d0902863503571f7d54b5a6e08ef8a9d015e85bc0de04be1057",
+        "src/go2_wall/stair_valve.py": "c032a75c4c0c8d356d205dee7490a2a91487890c5f36704a6d468332791c53d3",
+        "src/go2_wall/mission_verdict.py": "b99448d31bb1c84eb71fcedb4fdd39b8ecc671b0755de7d20b2801995e724b8c"
+      },
+      "physics_steps": 24250,
+      "target_deg": 20.0,
+      "actual_resistance_nm": 1.0,
+      "rejudged": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000012221,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.3950000000001319,
+          "low_load_max_angle_deg": 21.92151266921915,
+          "low_load_max_axial_slip_m": 1.497253572693702e-05
+        }
+      },
+      "common_raw_channels": [
+        "arm_feedback_applied_target_rad",
+        "arm_feedback_raw_target_rad",
+        "arm_target_rad",
+        "base_track_m",
+        "base_xyz_m",
+        "feet_xyz_m",
+        "fell",
+        "finger_ctrl_n",
+        "finger_slide_m",
+        "foot_friction_use",
+        "foot_normal_force_n",
+        "gripper_open",
+        "handle_axial_position_m",
+        "handle_axis_offset_m",
+        "handle_nonpad_force_n",
+        "hinge_friction_torque_nm",
+        "nominal_arm_target_rad",
+        "pad_closing_tangent_force_n",
+        "pad_closing_torque_nm",
+        "pad_normal_force_n",
+        "pad_surface_gap_m",
+        "phase",
+        "qp_attempt",
+        "robot_ctrl_nm",
+        "robot_torque_requested_nm",
+        "signed_hinge_friction_torque_nm",
+        "stage",
+        "stance_slip_m",
+        "time_s",
+        "unexpected_contact_force_n",
+        "valve_angle_deg",
+        "valve_speed_rad_s"
+      ],
+      "previous_control_comparison": {
+        "original": "evidence/stair-mission-20261121/stance-feedback/standalone/low-loaded.json.gz",
+        "old_extra_settle_s": 2.0,
+        "current_extra_settle_s": 0.0,
+        "last_compared_physics_state_s": 9.250000000000313,
+        "samples": 9250,
+        "different_channels_through_loaded_turn": [
+          "arm_feedback_applied_target_rad",
+          "arm_feedback_raw_target_rad",
+          "foot_friction_use",
+          "foot_normal_force_n",
+          "pad_closing_tangent_force_n",
+          "pad_closing_torque_nm",
+          "pad_normal_force_n",
+          "robot_ctrl_nm",
+          "robot_torque_requested_nm",
+          "valve_speed_rad_s"
+        ]
+      }
+    },
+    {
+      "name": "open",
+      "raw_source_sha256": "86bf91d51e429c43b547251054bc04edf84c5e130733fab1fa14bb88e0d85998",
+      "gzip_sha256": "40e75c4a2034422bfc35ed03fc081d3a8c572d53cd390bb84dfd4096b34bea36",
+      "source_files": {
+        "src/go2_wall/grasp_motion.py": "01d3717f6f20e08497ee517343512bf5ccdfeb04bb145bca8a0ddf2d0f3eeb22",
+        "tools/replay_contact_valve.py": "dfdf89a9d4bbcdea37cdc5fabc3422573048558865580729342cb39950913edd",
+        "src/go2_wall/transition.py": "100136d8a18d36a5af541670d3fb57cc96f3f19c1fb0293404885789c7c2b336",
+        "src/go2_wall/gripper_control.py": "f753eca35d2a0d0902863503571f7d54b5a6e08ef8a9d015e85bc0de04be1057",
+        "src/go2_wall/stair_valve.py": "c032a75c4c0c8d356d205dee7490a2a91487890c5f36704a6d468332791c53d3",
+        "src/go2_wall/mission_verdict.py": "b99448d31bb1c84eb71fcedb4fdd39b8ecc671b0755de7d20b2801995e724b8c"
+      },
+      "physics_steps": 24250,
+      "target_deg": 20.0,
+      "actual_resistance_nm": 1.0,
+      "rejudged": {
+        "verified": false,
+        "first_failure": {
+          "stage": "contact",
+          "time_s": 5.000000000000004,
+          "metric": "two_pad_contact_hold_s",
+          "measured": 0.0,
+          "limit": ">= 0.2",
+          "message": "both pads did not secure the handle"
+        },
+        "failures": [
+          {
+            "stage": "contact",
+            "time_s": 5.000000000000004,
+            "metric": "two_pad_contact_hold_s",
+            "measured": 0.0,
+            "limit": ">= 0.2",
+            "message": "both pads did not secure the handle"
+          },
+          {
+            "stage": "low_load",
+            "time_s": 8.58800000000068,
+            "metric": "two_loaded_pads_n",
+            "measured": 0.0,
+            "limit": 1.0,
+            "message": "both pads must carry the rotating handle"
+          },
+          {
+            "stage": "low_load",
+            "time_s": 9.250000000000313,
+            "metric": "max_angle_deg",
+            "measured": 7.198680654892628,
+            "limit": ">= 20.0",
+            "message": "low-load rotation did not reach its target"
+          },
+          {
+            "stage": "low_load",
+            "time_s": 9.250000000000313,
+            "metric": "angle_bin_10_15_deg",
+            "measured": 0,
+            "limit": ">= 1 sample",
+            "message": "low-load angle coverage is missing"
+          }
+        ],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000012221,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.0,
+          "low_load_max_angle_deg": 7.198680654892628
+        }
+      },
+      "common_raw_channels": [
+        "arm_feedback_applied_target_rad",
+        "arm_feedback_raw_target_rad",
+        "arm_target_rad",
+        "base_track_m",
+        "base_xyz_m",
+        "feet_xyz_m",
+        "fell",
+        "finger_ctrl_n",
+        "finger_slide_m",
+        "foot_friction_use",
+        "foot_normal_force_n",
+        "gripper_open",
+        "handle_axial_position_m",
+        "handle_axis_offset_m",
+        "handle_nonpad_force_n",
+        "hinge_friction_torque_nm",
+        "nominal_arm_target_rad",
+        "pad_closing_tangent_force_n",
+        "pad_closing_torque_nm",
+        "pad_normal_force_n",
+        "pad_surface_gap_m",
+        "phase",
+        "qp_attempt",
+        "robot_ctrl_nm",
+        "robot_torque_requested_nm",
+        "signed_hinge_friction_torque_nm",
+        "stage",
+        "stance_slip_m",
+        "time_s",
+        "unexpected_contact_force_n",
+        "valve_angle_deg",
+        "valve_speed_rad_s"
+      ],
+      "previous_control_comparison": {
+        "original": "evidence/stair-mission-20261121/stance-feedback/standalone/low-open.json.gz",
+        "old_extra_settle_s": 2.0,
+        "current_extra_settle_s": 0.0,
+        "last_compared_physics_state_s": 9.250000000000313,
+        "samples": 9250,
+        "different_channels_through_loaded_turn": [
+          "arm_feedback_applied_target_rad",
+          "arm_feedback_raw_target_rad",
+          "foot_friction_use",
+          "foot_normal_force_n",
+          "pad_closing_tangent_force_n",
+          "pad_closing_torque_nm",
+          "pad_normal_force_n",
+          "robot_ctrl_nm",
+          "robot_torque_requested_nm",
+          "valve_speed_rad_s"
+        ]
+      }
+    }
+  ]
+}

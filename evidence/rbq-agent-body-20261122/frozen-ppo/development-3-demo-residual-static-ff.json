@@ -1,0 +1,222 @@
+{
+  "scope": "development_only_previous_cases",
+  "cpu_only": true,
+  "checkpoint": 9100,
+  "checkpoint_sha256": "6d39b7c28c9cdda9c3964c3b37493c3bcd24f81ca46f5e367618a7f264cfc757",
+  "teacher_disclosure": "weight 1 replaces PPO leg targets after activation; 0<weight<1 is a PPO actor residual",
+  "groups": {
+    "demo_r35": {
+      "candidate": {
+        "candidate_id": "demo_r35",
+        "speed_mps": 0.6,
+        "phase_offset_steps": 25,
+        "teacher_weight": 0.35,
+        "teacher_time_scale": 0.18,
+        "activation_x_m": -0.46,
+        "teacher_command_speed_mps": 0.0
+      },
+      "summary": {
+        "n": 3,
+        "work_stance_rate": 0.0,
+        "mean_highest_supported_tread": 0.0,
+        "body_collision_rate": 1.0,
+        "mean_maximum_forward_x_m": -0.2539491213265508
+      },
+      "trials": [
+        {
+          "case_id": "dev-01",
+          "candidate_id": "demo_r35",
+          "controller_class": "frozen_ppo_actor_residual",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.2544410882161478,
+          "maximum_body_z_m": 0.5695595173164741,
+          "maximum_abs_pitch_deg": 12.391330416272272,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.62,
+          "simulated_s": 4.399999999999928
+        },
+        {
+          "case_id": "dev-02",
+          "candidate_id": "demo_r35",
+          "controller_class": "frozen_ppo_actor_residual",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.2529887328640159,
+          "maximum_body_z_m": 0.5742818688480508,
+          "maximum_abs_pitch_deg": 12.688020233510983,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.62,
+          "simulated_s": 4.31999999999993
+        },
+        {
+          "case_id": "dev-03",
+          "candidate_id": "demo_r35",
+          "controller_class": "frozen_ppo_actor_residual",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.25441754289948854,
+          "maximum_body_z_m": 0.5715026023859371,
+          "maximum_abs_pitch_deg": 12.790246119474473,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.62,
+          "simulated_s": 4.33999999999993
+        }
+      ]
+    },
+    "demo_r60": {
+      "candidate": {
+        "candidate_id": "demo_r60",
+        "speed_mps": 0.6,
+        "phase_offset_steps": 25,
+        "teacher_weight": 0.6,
+        "teacher_time_scale": 0.18,
+        "activation_x_m": -0.46,
+        "teacher_command_speed_mps": 0.0
+      },
+      "summary": {
+        "n": 3,
+        "work_stance_rate": 0.0,
+        "mean_highest_supported_tread": 0.0,
+        "body_collision_rate": 1.0,
+        "mean_maximum_forward_x_m": -0.34365534595400343
+      },
+      "trials": [
+        {
+          "case_id": "dev-01",
+          "candidate_id": "demo_r60",
+          "controller_class": "frozen_ppo_actor_residual",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.34530870415333875,
+          "maximum_body_z_m": 0.5746892119655903,
+          "maximum_abs_pitch_deg": 14.837186123933797,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.62,
+          "simulated_s": 3.659999999999944
+        },
+        {
+          "case_id": "dev-02",
+          "candidate_id": "demo_r60",
+          "controller_class": "frozen_ppo_actor_residual",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.34198560877135664,
+          "maximum_body_z_m": 0.5798617727565041,
+          "maximum_abs_pitch_deg": 14.94826434615422,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.62,
+          "simulated_s": 3.6799999999999438
+        },
+        {
+          "case_id": "dev-03",
+          "candidate_id": "demo_r60",
+          "controller_class": "frozen_ppo_actor_residual",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.34367172493731485,
+          "maximum_body_z_m": 0.5774293554507322,
+          "maximum_abs_pitch_deg": 15.516488922965229,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.62,
+          "simulated_s": 3.6799999999999438
+        }
+      ]
+    },
+    "demo_teacher": {
+      "candidate": {
+        "candidate_id": "demo_teacher",
+        "speed_mps": 0.6,
+        "phase_offset_steps": 25,
+        "teacher_weight": 1.0,
+        "teacher_time_scale": 0.18,
+        "activation_x_m": -0.46,
+        "teacher_command_speed_mps": 0.0
+      },
+      "summary": {
+        "n": 3,
+        "work_stance_rate": 0.0,
+        "mean_highest_supported_tread": 0.0,
+        "body_collision_rate": 1.0,
+        "mean_maximum_forward_x_m": -0.07564178923963806
+      },
+      "trials": [
+        {
+          "case_id": "dev-01",
+          "candidate_id": "demo_teacher",
+          "controller_class": "teacher_leg_target_replacement",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.07571578970681099,
+          "maximum_body_z_m": 0.8002237028840571,
+          "maximum_abs_pitch_deg": 32.0821021333349,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.62,
+          "simulated_s": 5.019999999999915
+        },
+        {
+          "case_id": "dev-02",
+          "candidate_id": "demo_teacher",
+          "controller_class": "teacher_leg_target_replacement",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.07620832654308675,
+          "maximum_body_z_m": 0.7993873313964363,
+          "maximum_abs_pitch_deg": 32.818176281363996,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.62,
+          "simulated_s": 5.159999999999912
+        },
+        {
+          "case_id": "dev-03",
+          "candidate_id": "demo_teacher",
+          "controller_class": "teacher_leg_target_replacement",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.07500125146901647,
+          "maximum_body_z_m": 0.8011825103757699,
+          "maximum_abs_pitch_deg": 29.330757692857457,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.62,
+          "simulated_s": 5.019999999999915
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "scope": "development_only_previous_cases",
+  "cpu_only": true,
+  "checkpoint": 9100,
+  "checkpoint_sha256": "6d39b7c28c9cdda9c3964c3b37493c3bcd24f81ca46f5e367618a7f264cfc757",
+  "teacher_disclosure": "weight 1 replaces PPO leg targets after activation; 0<weight<1 is a PPO actor residual",
+  "groups": {
+    "demo_r35": {
+      "candidate": {
+        "candidate_id": "demo_r35",
+        "speed_mps": 0.6,
+        "phase_offset_steps": 25,
+        "teacher_weight": 0.35,
+        "teacher_time_scale": 0.22,
+        "activation_x_m": -0.58
+      },
+      "summary": {
+        "n": 3,
+        "work_stance_rate": 0.0,
+        "mean_highest_supported_tread": 1.0,
+        "body_collision_rate": 1.0,
+        "mean_maximum_forward_x_m": -0.08977858189743548
+      },
+      "trials": [
+        {
+          "case_id": "dev-01",
+          "candidate_id": "demo_r35",
+          "controller_class": "frozen_ppo_actor_residual",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.0880674047622679,
+          "maximum_body_z_m": 0.5951837456843785,
+          "maximum_abs_pitch_deg": 16.171396917042184,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.4000000000000001,
+          "simulated_s": 3.37999999999995
+        },
+        {
+          "case_id": "dev-02",
+          "candidate_id": "demo_r35",
+          "controller_class": "frozen_ppo_actor_residual",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.08426296175398647,
+          "maximum_body_z_m": 0.5978221017467522,
+          "maximum_abs_pitch_deg": 16.549127672398846,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.4000000000000001,
+          "simulated_s": 3.239999999999953
+        },
+        {
+          "case_id": "dev-03",
+          "candidate_id": "demo_r35",
+          "controller_class": "frozen_ppo_actor_residual",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.09700537917605204,
+          "maximum_body_z_m": 0.6265964167120419,
+          "maximum_abs_pitch_deg": 19.74838639488157,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.4000000000000001,
+          "simulated_s": 3.37999999999995
+        }
+      ]
+    },
+    "demo_r60": {
+      "candidate": {
+        "candidate_id": "demo_r60",
+        "speed_mps": 0.6,
+        "phase_offset_steps": 25,
+        "teacher_weight": 0.6,
+        "teacher_time_scale": 0.22,
+        "activation_x_m": -0.58
+      },
+      "summary": {
+        "n": 3,
+        "work_stance_rate": 0.0,
+        "mean_highest_supported_tread": 0.0,
+        "body_collision_rate": 1.0,
+        "mean_maximum_forward_x_m": -0.19938499118927497
+      },
+      "trials": [
+        {
+          "case_id": "dev-01",
+          "candidate_id": "demo_r60",
+          "controller_class": "frozen_ppo_actor_residual",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.16952278589088535,
+          "maximum_body_z_m": 0.5742221304297959,
+          "maximum_abs_pitch_deg": 19.61531727747779,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.4000000000000001,
+          "simulated_s": 3.659999999999944
+        },
+        {
+          "case_id": "dev-02",
+          "candidate_id": "demo_r60",
+          "controller_class": "frozen_ppo_actor_residual",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.22168283027048907,
+          "maximum_body_z_m": 0.5740665217408987,
+          "maximum_abs_pitch_deg": 16.880173265769304,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.4000000000000001,
+          "simulated_s": 3.5999999999999455
+        },
+        {
+          "case_id": "dev-03",
+          "candidate_id": "demo_r60",
+          "controller_class": "frozen_ppo_actor_residual",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.20694935740645054,
+          "maximum_body_z_m": 0.5743339674374325,
+          "maximum_abs_pitch_deg": 17.627358204344137,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.4000000000000001,
+          "simulated_s": 3.579999999999946
+        }
+      ]
+    },
+    "demo_teacher": {
+      "candidate": {
+        "candidate_id": "demo_teacher",
+        "speed_mps": 0.6,
+        "phase_offset_steps": 25,
+        "teacher_weight": 1.0,
+        "teacher_time_scale": 0.22,
+        "activation_x_m": -0.58
+      },
+      "summary": {
+        "n": 3,
+        "work_stance_rate": 0.0,
+        "mean_highest_supported_tread": 0.0,
+        "body_collision_rate": 1.0,
+        "mean_maximum_forward_x_m": -0.24147986562165968
+      },
+      "trials": [
+        {
+          "case_id": "dev-01",
+          "candidate_id": "demo_teacher",
+          "controller_class": "teacher_leg_target_replacement",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.23981284296420988,
+          "maximum_body_z_m": 0.7817206588822001,
+          "maximum_abs_pitch_deg": 25.51956675393031,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.4000000000000001,
+          "simulated_s": 6.079999999999893
+        },
+        {
+          "case_id": "dev-02",
+          "candidate_id": "demo_teacher",
+          "controller_class": "teacher_leg_target_replacement",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.24351517289080957,
+          "maximum_body_z_m": 0.7829438299415411,
+          "maximum_abs_pitch_deg": 26.143494793947085,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.4000000000000001,
+          "simulated_s": 6.099999999999892
+        },
+        {
+          "case_id": "dev-03",
+          "candidate_id": "demo_teacher",
+          "controller_class": "teacher_leg_target_replacement",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.24111158100995964,
+          "maximum_body_z_m": 0.7806215655010021,
+          "maximum_abs_pitch_deg": 26.063018784981363,
+          "teacher_activated": true,
+          "teacher_activation_s": 1.4000000000000001,
+          "simulated_s": 6.079999999999893
+        }
+      ]
+    }
+  }
+}

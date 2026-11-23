@@ -1,0 +1,61 @@
+{
+  "raw_sha256": [
+    "7e5d6052a8cfcdbcb006ed6e3bf1bc79a543c3313b2c6c4dab3142fc3df5b87a",
+    "7e5d6052a8cfcdbcb006ed6e3bf1bc79a543c3313b2c6c4dab3142fc3df5b87a"
+  ],
+  "physics_steps": [
+    129750,
+    129750
+  ],
+  "actuation_period_s": [
+    0.005,
+    0.005
+  ],
+  "exact_raw_file_match": true,
+  "scene_field_differences": [],
+  "source_files_changed": [
+    "src/go2_wall/grasp_motion.py",
+    "src/go2_wall/transition.py",
+    "tools/replay_stair_mission.py"
+  ],
+  "checked_raw_fields": [
+    "arm_target_rad",
+    "base_track_m",
+    "base_xyz_m",
+    "ctrl",
+    "feet_xyz_m",
+    "fell",
+    "finger_slide_m",
+    "foot_force_world_n",
+    "foot_friction_use",
+    "foot_normal_force_n",
+    "gripper_open",
+    "handle_axial_position_m",
+    "handle_axis_offset_m",
+    "handle_nonpad_force_n",
+    "hinge_friction_torque_nm",
+    "nominal_arm_target_rad",
+    "pad_closing_tangent_force_n",
+    "pad_closing_torque_nm",
+    "pad_normal_force_n",
+    "pad_surface_gap_m",
+    "qp_attempt",
+    "qpos",
+    "qvel",
+    "requested_finger_force_n",
+    "robot_torque_requested_nm",
+    "signed_hinge_friction_torque_nm",
+    "stage",
+    "stance_slip_m",
+    "time_s",
+    "torque_nm",
+    "tread_load_n",
+    "unexpected_contact_force_n",
+    "valve_angle_deg",
+    "valve_speed_rad_s"
+  ],
+  "unmatched_sensor_fields": [],
+  "raw_differences": {},
+  "same_scene_and_common_samples": true,
+  "same_source_scene_and_common_samples": false
+}

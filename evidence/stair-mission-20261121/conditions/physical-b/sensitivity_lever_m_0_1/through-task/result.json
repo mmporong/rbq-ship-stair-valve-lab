@@ -1,0 +1,522 @@
+{
+  "extent": "through-task",
+  "metrics": {
+    "passed": false,
+    "fell": true,
+    "saturated_steps": 54,
+    "qp_failed_ticks": 2578,
+    "qp_relaxed_ticks": 44,
+    "max_ratio": 1.0,
+    "max_base_track_mm": 2468.991581908481,
+    "max_tilt_track_deg": 179.43053263492544,
+    "return_error_mm": 2467.5474672799523,
+    "feet_down_at_end": false,
+    "max_stance_slip_mm": {
+      "FL": 2444.176,
+      "FR": 2644.53,
+      "RL": 2411.167,
+      "RR": 2636.032
+    },
+    "max_friction_use": {
+      "FL": 1.0,
+      "FR": 1.0,
+      "RL": 4.154,
+      "RR": 1.0
+    },
+    "unexpected_contacts_n": {
+      "RB1_finger_lower+RB1_finger_upper": 27.242169636225743,
+      "RL_thigh+world": 450.03083565165133,
+      "base+world": 10449.153304291252,
+      "FL_foot+RL_thigh": 835.7345163194302,
+      "FR_foot+RR_thigh": 1608.9718631006829,
+      "RB1_Wrist_Pitch+world": 569.4374633642784,
+      "RB1_finger_upper+world": 239.90696821833657,
+      "FR_thigh+world": 4210.2303009149355,
+      "FR_calf+world": 3365.7679557859406,
+      "FL_calf+world": 163.46331555237083,
+      "RB1_finger_lower+RR_calf": 270.29732220620605,
+      "RB1_finger_lower+RR_thigh": 127.03605001219802,
+      "RB1_Elbow_Pitch+base": 133.70943877193702,
+      "RB1_finger_lower+base": 201.6332909051666,
+      "RB1_Wrist_Pitch+RR_thigh": 0.0
+    },
+    "floor_mu": 0.6,
+    "wall_mu": 0.6,
+    "physics": {
+      "timestep": 0.005
+    },
+    "gains_scale": 1.5,
+    "mode": "force",
+    "seconds": 126.50000000000001,
+    "gripper_audit": {
+      "physics_steps": 25300,
+      "finger_clipped_steps": 0,
+      "qpos_write_count_after_start": 0,
+      "qvel_write_count_after_start": 0,
+      "act_write_count_after_start": 0,
+      "mocap_write_count_after_start": 0,
+      "state_reset_count": 0,
+      "max_qfrc_applied_n": 0.0,
+      "max_xfrc_applied_n": 0.0
+    }
+  },
+  "audit": {
+    "physics_steps": 25300,
+    "finger_clipped_steps": 0,
+    "qpos_write_count_after_start": 0,
+    "qvel_write_count_after_start": 0,
+    "act_write_count_after_start": 0,
+    "mocap_write_count_after_start": 0,
+    "state_reset_count": 0,
+    "max_qfrc_applied_n": 0.0,
+    "max_xfrc_applied_n": 0.0,
+    "physics_timestep_s": 0.005,
+    "record_every_step": true,
+    "finger_equality_count": 1,
+    "other_equality_count": 0,
+    "hinge_actuator_count": 0,
+    "valve_resistance_nm": 10.0,
+    "robot_saturated_steps": 54,
+    "finger_saturated_steps": 0,
+    "qp_failed_ticks": 2578,
+    "qp_relaxed_ticks": 44,
+    "fell": true
+  },
+  "walking": {
+    "landings_evaluated": 19,
+    "verified": false,
+    "first_failure": {
+      "stage": "operate",
+      "time_s": 99.9299999999816,
+      "metric": "unexpected_contact_force_n",
+      "measured": 27.242169636225743,
+      "limit": "<= 10 N"
+    },
+    "failures": [
+      {
+        "stage": "operate",
+        "time_s": 99.9299999999816,
+        "metric": "unexpected_contact_force_n",
+        "measured": 27.242169636225743,
+        "limit": "<= 10 N"
+      },
+      {
+        "stage": "operate",
+        "time_s": 100.0499999999815,
+        "metric": "base_track_m",
+        "measured": 0.03034812112464173,
+        "limit": "<= 0.03"
+      },
+      {
+        "stage": "operate",
+        "time_s": 100.18499999998137,
+        "metric": "stance_slip_m",
+        "measured": 0.010090440588544547,
+        "limit": "<= 0.01"
+      },
+      {
+        "stage": "operate",
+        "time_s": 100.19499999998136,
+        "metric": "fell",
+        "measured": 1.0,
+        "limit": "<= 0"
+      },
+      {
+        "stage": "operate",
+        "time_s": 100.28499999998128,
+        "metric": "qp_attempt",
+        "measured": 2.0,
+        "limit": "== 0"
+      },
+      {
+        "stage": "operate",
+        "time_s": 101.32499999998034,
+        "metric": "requested_torque_ratio",
+        "measured": 1.0568326758062134,
+        "limit": "<= 1.0"
+      },
+      {
+        "stage": "return",
+        "time_s": 126.2049999999577,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 19
+      },
+      {
+        "stage": "return",
+        "time_s": 126.49999999995744,
+        "metric": "landing_xy_m",
+        "measured": 2.424817894753575,
+        "limit": "<= 0.035",
+        "landing": 19
+      }
+    ]
+  },
+  "settings": {
+    "slope_deg": 50.0,
+    "rise_m": 0.19,
+    "floor_mu": 0.6,
+    "pad_mu": 0.8,
+    "resistance_nm": 10.0,
+    "handle_length_m": 0.1,
+    "finger_force_n": 100.0,
+    "slide_loss_n": 30.0
+  },
+  "scene_sha256": "6814f6973d25b6cf7604e570bb5bf573f2679825dd4e68178b2c1f16a3a8bc9c",
+  "raw_sha256": "a2c0b6e49bd3f3c71cd46dea5b2c7deb4b744ca744923e03a695dc59095fa427",
+  "arm_feedback": {
+    "samples": 4000,
+    "correction_limited_steps": 3142,
+    "slew_limited_steps": 245,
+    "max_position_error_m": 2.4470403846665283,
+    "max_rotation_error_rad": 0.9999981694675423,
+    "max_raw_correction_rad": 10.403343910323368,
+    "correction_limit_rad": 0.15,
+    "target_step_limit_rad": 0.01
+  },
+  "valve": {
+    "verified": false,
+    "first_failure": {
+      "stage": "contact",
+      "time_s": 97.59999999998372,
+      "metric": "two_pad_contact_hold_s",
+      "measured": 0.13499999999988077,
+      "limit": ">= 0.2",
+      "message": "both pads did not secure the handle"
+    },
+    "failures": [
+      {
+        "stage": "contact",
+        "time_s": 97.59999999998372,
+        "metric": "two_pad_contact_hold_s",
+        "measured": 0.13499999999988077,
+        "limit": ">= 0.2",
+        "message": "both pads did not secure the handle"
+      },
+      {
+        "stage": "operate",
+        "time_s": 97.6249999999837,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.024999999999980815,
+        "limit": "<= 0.02",
+        "message": "a pad lost contact too long"
+      },
+      {
+        "stage": "operate",
+        "time_s": 98.7299999999827,
+        "metric": "max_base_shift_m",
+        "measured": 0.010014687314020516,
+        "limit": "<= 0.01",
+        "message": "M1 stability limit exceeded"
+      },
+      {
+        "stage": "operate",
+        "time_s": 99.83499999998169,
+        "metric": "hinge_friction_torque_nm",
+        "measured": 0.1510499209927332,
+        "limit": ">= 9.98",
+        "message": "measured valve resistance is insufficient"
+      },
+      {
+        "stage": "operate",
+        "time_s": 99.87499999998165,
+        "metric": "pad_closing_torque_nm",
+        "measured": 0.0,
+        "limit": "> 0 in each loaded angle bin",
+        "message": "pads did not provide a measured closing-direction torque"
+      },
+      {
+        "stage": "operate",
+        "time_s": 99.88499999998164,
+        "metric": "pad_closing_torque_nm",
+        "measured": 0.0,
+        "limit": "> 0 in each loaded angle bin",
+        "message": "pads did not provide a measured closing-direction torque"
+      },
+      {
+        "stage": "operate",
+        "time_s": 99.91499999998162,
+        "metric": "pad_closing_torque_nm",
+        "measured": 0.0,
+        "limit": "> 0 in each loaded angle bin",
+        "message": "pads did not provide a measured closing-direction torque"
+      },
+      {
+        "stage": "operate",
+        "time_s": 99.92499999998161,
+        "metric": "pad_closing_torque_nm",
+        "measured": 0.0,
+        "limit": "> 0 in each loaded angle bin",
+        "message": "pads did not provide a measured closing-direction torque"
+      },
+      {
+        "stage": "operate",
+        "time_s": 99.9299999999816,
+        "metric": "unexpected_contact_force_n",
+        "measured": 27.242169636225743,
+        "limit": "<= 10.0",
+        "message": "unexpected contact exceeded its limit"
+      },
+      {
+        "stage": "operate",
+        "time_s": 99.9399999999816,
+        "metric": "pad_closing_torque_nm",
+        "measured": 0.0,
+        "limit": "> 0 in each loaded angle bin",
+        "message": "pads did not provide a measured closing-direction torque"
+      },
+      {
+        "stage": "operate",
+        "time_s": 99.95499999998158,
+        "metric": "pad_closing_torque_nm",
+        "measured": 0.0,
+        "limit": "> 0 in each loaded angle bin",
+        "message": "pads did not provide a measured closing-direction torque"
+      },
+      {
+        "stage": "operate",
+        "time_s": 99.98499999998155,
+        "metric": "hinge_friction_torque_nm",
+        "measured": 8.81602765207738,
+        "limit": ">= 9.98",
+        "message": "measured valve resistance is insufficient"
+      },
+      {
+        "stage": "operate",
+        "time_s": 100.05999999998149,
+        "metric": "max_foot_shift_m",
+        "measured": 0.005017755175596407,
+        "limit": "<= 0.005",
+        "message": "M1 stability limit exceeded"
+      },
+      {
+        "stage": "operate",
+        "time_s": 100.2649999999813,
+        "metric": "max_friction_use",
+        "measured": 1.0,
+        "limit": "<= 0.8",
+        "message": "M1 stability limit exceeded"
+      },
+      {
+        "stage": "operate",
+        "time_s": 100.27499999998129,
+        "metric": "min_foot_normal_force_n",
+        "measured": 0.07215110523500658,
+        "limit": ">= 1.0",
+        "message": "M1 stability limit exceeded"
+      },
+      {
+        "stage": "hold",
+        "time_s": 108.60499999997371,
+        "metric": "angle_deg",
+        "measured": 80.98701359836441,
+        "limit": "90.0 +/- 0.25",
+        "message": "hold angle left the allowed band"
+      },
+      {
+        "stage": "operate",
+        "time_s": 113.59999999996917,
+        "metric": "max_angle_deg",
+        "measured": 85.2616262620119,
+        "limit": ">= 90.0",
+        "message": "valve did not reach the closed stop"
+      },
+      {
+        "stage": "release",
+        "time_s": 113.60499999996917,
+        "metric": "post_release_angle_deg",
+        "measured": 62.85158449391092,
+        "limit": "90.0 +/- 0.25",
+        "message": "valve moved after release"
+      },
+      {
+        "stage": "continuity",
+        "time_s": null,
+        "metric": "robot_saturated_steps",
+        "measured": 54,
+        "limit": 0,
+        "message": "run metadata violates the mission contract"
+      },
+      {
+        "stage": "continuity",
+        "time_s": null,
+        "metric": "qp_failed_ticks",
+        "measured": 2578,
+        "limit": 0,
+        "message": "run metadata violates the mission contract"
+      },
+      {
+        "stage": "continuity",
+        "time_s": null,
+        "metric": "qp_relaxed_ticks",
+        "measured": 44,
+        "limit": 0,
+        "message": "run metadata violates the mission contract"
+      },
+      {
+        "stage": "continuity",
+        "time_s": null,
+        "metric": "fell",
+        "measured": true,
+        "limit": false,
+        "message": "the robot fell"
+      }
+    ],
+    "measurements": {
+      "max_record_step_s": 0.005000000000002558,
+      "total_saturated_steps": 54,
+      "contact_hold_s": 0.13499999999988077,
+      "max_angle_deg": 85.2616262620119,
+      "hold_s": 4.999999999995456,
+      "resistance_limit_nm": 9.98,
+      "loaded_angle_bins": 16,
+      "pad_closing_torque_by_bin_nm": [
+        {
+          "angle_deg": [
+            5.0,
+            10.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 9.798297977112274
+        },
+        {
+          "angle_deg": [
+            10.0,
+            15.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 9.758420017254698
+        },
+        {
+          "angle_deg": [
+            15.0,
+            20.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 9.734054388919077
+        },
+        {
+          "angle_deg": [
+            20.0,
+            25.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 9.703469779171531
+        },
+        {
+          "angle_deg": [
+            25.0,
+            30.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 9.701545267574039
+        },
+        {
+          "angle_deg": [
+            30.0,
+            35.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 9.710653551045896
+        },
+        {
+          "angle_deg": [
+            35.0,
+            40.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 9.726222099155617
+        },
+        {
+          "angle_deg": [
+            40.0,
+            45.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 9.750553543718794
+        },
+        {
+          "angle_deg": [
+            45.0,
+            50.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 9.768123289991923
+        },
+        {
+          "angle_deg": [
+            50.0,
+            55.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 9.767269369686058
+        },
+        {
+          "angle_deg": [
+            55.0,
+            60.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 0.0
+        },
+        {
+          "angle_deg": [
+            60.0,
+            65.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 0.0
+        },
+        {
+          "angle_deg": [
+            65.0,
+            70.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 0.0
+        },
+        {
+          "angle_deg": [
+            70.0,
+            75.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 0.0
+        },
+        {
+          "angle_deg": [
+            75.0,
+            80.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 0.0
+        },
+        {
+          "angle_deg": [
+            80.0,
+            85.0
+          ],
+          "min_nm": 0.0,
+          "max_nm": 0.0
+        }
+      ],
+      "max_pad_loss_s": 13.77999999998747,
+      "max_base_shift_m": 2.3525550991787783,
+      "max_foot_shift_m": 2.9042083934043457,
+      "max_friction_use": 1244.721087736913,
+      "min_foot_normal_force_n": 0.0,
+      "release_hold_s": 4.999999999995456,
+      "post_release_observation_s": 12.399999999988726
+    }
+  },
+  "outcome": "physical_failed",
+  "first_failure": {
+    "stage": "contact",
+    "time_s": 97.59999999998372,
+    "metric": "two_pad_contact_hold_s",
+    "measured": 0.13499999999988077,
+    "limit": ">= 0.2",
+    "message": "both pads did not secure the handle"
+  }
+}

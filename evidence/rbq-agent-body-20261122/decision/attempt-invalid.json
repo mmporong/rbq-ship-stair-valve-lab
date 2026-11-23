@@ -1,0 +1,43 @@
+{
+  "schema": "rbq_agent_decision_attempt_v1",
+  "attempted_at": "2026-11-22T09:51:42.9366345+09:00",
+  "status": "invalid_model_decision",
+  "execution_gate": "hold",
+  "retry_performed": false,
+  "retry_budget": 0,
+  "semantic_choice_retries": 0,
+  "cpu_only": true,
+  "model": "gemma3:4b",
+  "source_commit": "7731f5f2f94049fde9af98682594885c323bedac",
+  "source_bindings": {
+    "development": {
+      "path": "evidence/stair-open-20261122/triage/rbq-host-ab-v1/development-results.json",
+      "sha256": "1b3d885d2ea2ce25561aabd4552d96eb76c26fb5e3f36e222627e243f8ec2468"
+    },
+    "catalog": {
+      "path": "evidence/rbq-agent-body-20261122/catalog.json",
+      "sha256": "b2cdf843cb316e87c6f48610943f4a8c2590d679bd22f6874ff24dbfc5ba5213"
+    },
+    "adapter": {
+      "path": "tools/rbq_agent_decision.py",
+      "sha256": "69832a47b880eb35febc0036e4727664882ad46b3568c6035a36183a7038c120"
+    },
+    "tests": {
+      "path": "tests/test_rbq_agent_decision.py",
+      "sha256": "565f7dcf5edc2e23c3f3bc4541d9776a62502e622b8dfafccc4a6c3bb97fe957"
+    }
+  },
+  "failed_stage": "initial_diagnosis_validation",
+  "exception_type": "ValueError",
+  "exception_summary": "The model cited baseline:premature_termination_count with a value different from the source-bound evidence fact.",
+  "process_exit_code": 1,
+  "result_json_created": false,
+  "raw_model_response_retained": false,
+  "raw_response_gap": "The committed adapter validates before writing its result, so the rejected provider body was not persisted.",
+  "original_agent_native_probe": {
+    "probe": "P_episode",
+    "classification": "unknown",
+    "reason": "No no_intervention development trial ended by phase_timeout; early safety termination was not reclassified as a timeout defect."
+  },
+  "efficacy_claim_supported": false
+}

@@ -1,0 +1,173 @@
+{
+  "scope": "50 degrees, rise 190 mm; floor through first walking transfer after physical two-pad release",
+  "source_commit": "0db7b29e7130fbf7ad416dfb1986a32bb4f71c75",
+  "shared_reference": "../full/walk50.npz",
+  "shared_reference_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+  "numerics": {
+    "physics_timestep_s": 0.001,
+    "actuation_period_s": 0.005,
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "control": {
+    "motion_s": 9.0,
+    "jaw_load_bias_m": 0.0005,
+    "stance_spring_gain_n_per_m": 2500,
+    "hold_s": 5.0,
+    "resistance_nm": 10.0
+  },
+  "cases": [
+    {
+      "folder": "settle-2s",
+      "physical_settle_s": 2,
+      "extra_settle_s": 0,
+      "physics_steps": 129750,
+      "first_failure": {
+        "stage": "hold",
+        "time_s": 108.8510000001557,
+        "metric": "angle_deg",
+        "measured": 89.41300889307279,
+        "limit": "90.0 +/- 0.25",
+        "message": "hold angle left the allowed band"
+      },
+      "pose_before_first_failure": {
+        "raw_index": 108849,
+        "time_s": 108.85000000015569,
+        "file": "settle-2s/before-first-failure.png",
+        "sha256": "379bfa255f48a36d2529193a816869b04c3e276f7a68630ebbe44db52172ad18"
+      },
+      "first_valve_failure": {
+        "stage": "hold",
+        "time_s": 108.8510000001557,
+        "metric": "angle_deg",
+        "measured": 89.41300889307279,
+        "limit": "90.0 +/- 0.25",
+        "message": "hold angle left the allowed band"
+      },
+      "first_walking_failure": {
+        "stage": "hold",
+        "time_s": 111.85100000017002,
+        "metric": "stance_slip_m",
+        "measured": 0.01000009856095138,
+        "limit": "<= 0.01"
+      },
+      "five_second_hold_angle_deg": [
+        89.41300889307279,
+        90.0680641581479
+      ],
+      "hold_samples": 5000,
+      "final_angle_deg": 90.00002638241517,
+      "foot_peak": {
+        "leg": "FL",
+        "time_s": 113.85000000017956,
+        "displacement_xyz_m": [
+          -0.0012285899104524933,
+          0.004676975168728642,
+          -0.0011543679968443188
+        ],
+        "norm_m": 0.004971528474132311
+      },
+      "all_history_stance_slip_max_m": 0.01329253579285656,
+      "first_time_of_stance_slip_max_s": 125.03500000023297,
+      "per_foot_slip_max_mm": {
+        "FL": 9.287,
+        "FR": 8.005,
+        "RL": 13.293,
+        "RR": 9.53
+      },
+      "post_release_observation_s": 13.685000000065344,
+      "max_pad_loss_s": 0.0,
+      "loaded_angle_bins": 16,
+      "grip_diagnostics": {
+        "bilateral_loaded_rotation_samples_5_to_85_deg": 6573,
+        "pad_closing_torque_nm": {
+          "min": 9.999798881439373,
+          "max": 10.000307031333262
+        },
+        "pad_closing_tangent_force_n": {
+          "min": 82.24937856886753,
+          "max": 85.02735023487176
+        }
+      },
+      "without_fall_saturation_qp_failure_or_reset": true,
+      "raw_sha256": "f90114c6826a5d94ddd3cc96135f63d78a9106b0ad4200cffbca903091c5da89",
+      "scene_sha256": "9375c590f35fa59f26bc2e91bdd6c24eecff2af04f107aa48840b12755d406a0"
+    },
+    {
+      "folder": "settle-4s",
+      "physical_settle_s": 4,
+      "extra_settle_s": 2,
+      "physics_steps": 131750,
+      "first_failure": {
+        "stage": "hold",
+        "time_s": 111.85100000017002,
+        "metric": "stance_slip_m",
+        "measured": 0.01000009856095136,
+        "limit": "<= 0.01"
+      },
+      "pose_before_first_failure": {
+        "raw_index": 111849,
+        "time_s": 111.85000000017001,
+        "file": "settle-4s/before-first-failure.png",
+        "sha256": "34a61f318221d8884bb32b7055e1460cefe5dbbaac3c6782197d20b654f5e212"
+      },
+      "first_valve_failure": {
+        "stage": "hold",
+        "time_s": 114.00800000018032,
+        "metric": "max_foot_shift_m",
+        "measured": 0.005000076556645975,
+        "limit": "<= 0.005",
+        "message": "M1 stability limit exceeded"
+      },
+      "first_walking_failure": {
+        "stage": "hold",
+        "time_s": 111.85100000017002,
+        "metric": "stance_slip_m",
+        "measured": 0.01000009856095136,
+        "limit": "<= 0.01"
+      },
+      "five_second_hold_angle_deg": [
+        89.79207921352847,
+        90.06814554732094
+      ],
+      "hold_samples": 5000,
+      "final_angle_deg": 90.00002639629905,
+      "foot_peak": {
+        "leg": "FL",
+        "time_s": 115.85000000018911,
+        "displacement_xyz_m": [
+          -0.0014685665216819244,
+          0.004988042036798979,
+          -0.0011672092558945302
+        ],
+        "norm_m": 0.005329130176353784
+      },
+      "all_history_stance_slip_max_m": 0.01373769258529168,
+      "first_time_of_stance_slip_max_s": 127.03700000024253,
+      "per_foot_slip_max_mm": {
+        "FL": 9.804,
+        "FR": 8.441,
+        "RL": 13.738,
+        "RR": 9.887
+      },
+      "post_release_observation_s": 13.685000000065344,
+      "max_pad_loss_s": 0.0,
+      "loaded_angle_bins": 16,
+      "grip_diagnostics": {
+        "bilateral_loaded_rotation_samples_5_to_85_deg": 6573,
+        "pad_closing_torque_nm": {
+          "min": 9.999798881439373,
+          "max": 10.000307031333262
+        },
+        "pad_closing_tangent_force_n": {
+          "min": 82.24937856886753,
+          "max": 85.02735023487176
+        }
+      },
+      "without_fall_saturation_qp_failure_or_reset": true,
+      "raw_sha256": "801f7bc4e263367b5931ba3289c07e8b64f4ef4d3221ba29f585b1143ee9e77a",
+      "scene_sha256": "85ba36ecc439366ae1c668b0272c7ded3d57cd38428289de7acfde444ffdb719"
+    }
+  ]
+}

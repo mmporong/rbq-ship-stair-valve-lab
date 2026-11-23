@@ -1,0 +1,61 @@
+{
+  "schema": "rbq_host_selector_v1",
+  "provider_class": "local_ollama_gemma_exploratory_not_registered_nemotron",
+  "model": "gemma3:4b",
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_gpu": 0,
+    "num_predict": 512
+  },
+  "wall_s": 38.64752130000852,
+  "prompt_sha256": "fdea17f5f571f68d17e7dd95ee9e2a73df9a230653e7a3f2293dbc5f643a14be",
+  "development_sha256": "01161d2fb0f4ed381074a2bc9f853954988d03f5f5c260c17407cf36c7929f35",
+  "original_agent_boundary_used": "rl_triage.active_diagnosis.receipt_facts",
+  "receipt": {
+    "request_id": "rbqdev1",
+    "probe": "runtime_contact_window",
+    "outcome": "abnormal",
+    "exit_code": 0,
+    "over_budget": false,
+    "measurement": {
+      "no_intervention": {
+        "work_stance_rate": 0.0,
+        "mean_highest_supported_tread": 1.6666666666666667,
+        "body_collision_rate": 1.0,
+        "mean_maximum_forward_x_m": 0.002330154893559245,
+        "mean_maximum_abs_pitch_deg": 16.222243413633514
+      },
+      "phase_15": {
+        "work_stance_rate": 0.0,
+        "mean_highest_supported_tread": 1.6666666666666667,
+        "body_collision_rate": 1.0,
+        "mean_maximum_forward_x_m": -0.02677746927798293,
+        "mean_maximum_abs_pitch_deg": 17.937305157259924
+      },
+      "phase_25": {
+        "work_stance_rate": 0.0,
+        "mean_highest_supported_tread": 2.3333333333333335,
+        "body_collision_rate": 0.3333333333333333,
+        "mean_maximum_forward_x_m": -0.06855335684534848,
+        "mean_maximum_abs_pitch_deg": 29.522656760616616
+      }
+    }
+  },
+  "decision": {
+    "candidate_id": "phase_25",
+    "claims": [
+      {
+        "id": "receipt:rbqdev1:phase_25.body_collision_rate",
+        "value": 0.3333333333333333
+      },
+      {
+        "id": "receipt:rbqdev1:phase_25.mean_highest_supported_tread",
+        "value": 2.3333333333333335
+      }
+    ],
+    "reason": "The candidate `phase_25` exhibits the lowest body collision rate (0.333) and a relatively high mean highest supported tread (2.333). This aligns with the objective order of minimizing body collision rate and maximizing mean highest supported tread. Fact IDs cited: receipt:rbqdev1:phase_25.body_collision_rate and receipt:rbqdev1:phase_25.mean_highest_supported_tread"
+  },
+  "holdout_disclosed": false,
+  "official_rl_triage_agent_result": false
+}

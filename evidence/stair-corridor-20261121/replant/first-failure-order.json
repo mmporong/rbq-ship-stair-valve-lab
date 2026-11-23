@@ -1,0 +1,100 @@
+{
+  "case": "sensitivity_impratio_10",
+  "scope": "through-task",
+  "same_physics_raw_bytes": true,
+  "physical_steps": 135715,
+  "raw_arrays": 34,
+  "frozen_writer": {
+    "commit": "2c91d83ff3a222bc2919c3156b93920ebcff5ec4",
+    "writer_sha256": "511f2ba2595fd6fd0691799b0999139a3eb2fdcaa1f5b566176b3f4697adcb79",
+    "scene_sha256": "36ed9c1748af335588f11109a2cf3571648b14293c45d5aa6b5753b5a7f9cf19",
+    "result_sha256": "b8ef2e5bbb2d8269b4a2e9e2e9b2377eb3d6b36e72d174101c29137e093e9a00",
+    "raw_sha256": "21702422bc207d336c32aa48808387518a0a577813148a169191e685193f8208",
+    "reported_first_walking_failure": {
+      "stage": "prewalk",
+      "time_s": 81.6,
+      "metric": "physical_replant",
+      "measured": false,
+      "limit": "released, positive measured lift, and reloaded within 0.035 m"
+    },
+    "reported_first_overall_failure": {
+      "stage": "prewalk",
+      "time_s": 51.7469999999701,
+      "metric": "unexpected_contact_force_n",
+      "measured": 575.2866429757913,
+      "limit": "<= 10.0",
+      "message": "unexpected contact exceeded its limit"
+    },
+    "failed_relanding": {
+      "stage": "prewalk",
+      "time_s": 81.6,
+      "metric": "physical_replant",
+      "measured": false,
+      "limit": "released, positive measured lift, and reloaded within 0.035 m"
+    }
+  },
+  "chronological_writer": {
+    "commit": "1c57f456ea064b233ef5bb0851af9463bf90c37d",
+    "writer_sha256": "855d0cade750e720704774e014bad05bc4f4af629a0b40cf37834819f47cca3c",
+    "scene_sha256": "a8ac590cefc46a9494a3bcf91ca40ab0f2aebc2b92c014bd202d0a2b5d112d24",
+    "result_sha256": "ade1f0fc5d2299cfc2614c259ab07dafd3ed7da77310382aa66f6cfc228420d6",
+    "raw_sha256": "21702422bc207d336c32aa48808387518a0a577813148a169191e685193f8208",
+    "reported_first_walking_failure": {
+      "stage": "prewalk",
+      "time_s": 4.196999999999736,
+      "metric": "stance_slip_m",
+      "measured": 0.010001474806524878,
+      "limit": "<= 0.01"
+    },
+    "reported_first_overall_failure": {
+      "stage": "prewalk",
+      "time_s": 4.196999999999736,
+      "metric": "stance_slip_m",
+      "measured": 0.010001474806524878,
+      "limit": "<= 0.01"
+    },
+    "failed_relanding": {
+      "stage": "prewalk",
+      "time_s": 81.6,
+      "metric": "physical_replant",
+      "measured": false,
+      "limit": "released, positive measured lift, and reloaded within 0.035 m"
+    }
+  },
+  "rejudged_first_physical_failure": {
+    "stage": "prewalk",
+    "time_s": 4.196999999999736,
+    "metric": "stance_slip_m",
+    "measured": 0.010001474806524878,
+    "limit": "<= 0.01"
+  },
+  "frozen_rejudgment": {
+    "walking": true,
+    "control_profile_physics": true,
+    "valve_pass_fail": true,
+    "valve_measurements": true,
+    "valve_failures": true,
+    "overall_first_failure": true
+  },
+  "chronological_rejudgment": {
+    "walking": true,
+    "control_profile_physics": true,
+    "valve_pass_fail": true,
+    "valve_measurements": true,
+    "valve_failures": true,
+    "overall_first_failure": true
+  },
+  "altered_summary_negative_control": {
+    "changed_reported_time_s": 2.0,
+    "original_scene_and_raw_fingerprints_match": true,
+    "reproduced": false,
+    "comparison": {
+      "walking": true,
+      "control_profile_physics": true,
+      "valve_pass_fail": true,
+      "valve_measurements": true,
+      "valve_failures": true,
+      "overall_first_failure": false
+    }
+  }
+}

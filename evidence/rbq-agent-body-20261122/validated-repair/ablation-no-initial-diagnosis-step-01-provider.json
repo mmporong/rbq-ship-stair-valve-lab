@@ -1,0 +1,16 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-22T02:01:52.1809519Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"candidate_id\":\"opt-01b7\",\"mechanics_fact_id\":\"mechanics:opt-01b7:control_law\",\"observation_fact_id\":\"receipt:opt-3013:strict_source\", \"reason\":\"The candidate description explicitly states 'Position-error-dependent contact authority from the frozen optimized three-coefficient vector; checkpoint residual authority fixed at 0.0.', aligning with the objective of correcting a strict valve failure while preserving the work stance.\"}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 43289034200,
+  "load_duration": 8548410500,
+  "prompt_eval_count": 506,
+  "prompt_eval_duration": 8181614000,
+  "eval_count": 105,
+  "eval_duration": 26545386000
+}

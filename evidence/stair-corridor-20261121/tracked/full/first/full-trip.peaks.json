@@ -1,0 +1,82 @@
+{
+  "time_range_s": [
+    0.001,
+    998.2149999833073
+  ],
+  "mission_seconds": 998.2149999833073,
+  "mount_reference": "RB1_Base origin; force XYZ then moment XYZ in world axes",
+  "metrics": {
+    "joint_torque_nm": {
+      "value": 150.0,
+      "time_s": 191.08100000054833,
+      "stage": "return",
+      "sample_index": 191080,
+      "item": "FR_calf_joint"
+    },
+    "joint_torque_ratio": {
+      "value": 1.0,
+      "time_s": 191.06100000054823,
+      "stage": "return",
+      "sample_index": 191060,
+      "item": "FR_hip_joint"
+    },
+    "joint_off_axis_bending_nm": {
+      "value": 4883.254279384511,
+      "time_s": 192.71500000055613,
+      "stage": "return",
+      "sample_index": 192714,
+      "item": "FL_hip_joint"
+    },
+    "joint_reaction_n": {
+      "value": 7351.722689349407,
+      "time_s": 192.71500000055613,
+      "stage": "return",
+      "sample_index": 192714,
+      "item": "RL_hip_joint"
+    },
+    "rb1_mount_force_n": {
+      "value": 2522.290368385611,
+      "time_s": 233.2100000007495,
+      "stage": "return",
+      "sample_index": 233209
+    },
+    "rb1_mount_moment_nm": {
+      "value": 647.4754633304615,
+      "time_s": 191.17200000054876,
+      "stage": "return",
+      "sample_index": 191171
+    },
+    "foot_surface_force_n": {
+      "value": 1564.7781982129468,
+      "time_s": 416.04799999707365,
+      "stage": "return",
+      "sample_index": 416047,
+      "item": "FR/floor"
+    },
+    "hinge_friction_torque_nm": {
+      "value": 10.0,
+      "time_s": 98.7370000001074,
+      "stage": "operate",
+      "sample_index": 98736
+    },
+    "pad_closing_torque_nm": {
+      "value": 10.117044407888137,
+      "time_s": 97.19000000010001,
+      "stage": "contact",
+      "sample_index": 97189
+    },
+    "pad_normal_force_n": {
+      "value": 178.18237838552227,
+      "time_s": 97.2070000001001,
+      "stage": "contact",
+      "sample_index": 97206,
+      "item": "upper"
+    },
+    "pad_closing_tangent_force_n": {
+      "value": 87.37923828714162,
+      "time_s": 113.85500000017959,
+      "stage": "release",
+      "sample_index": 113854
+    }
+  }
+}

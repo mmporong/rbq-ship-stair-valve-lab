@@ -1,0 +1,198 @@
+{
+  "scope": "Floor through the first post-task transfer. All runs were independently initialized.",
+  "source_commit": "2c91d83ff3a222bc2919c3156b93920ebcff5ec4",
+  "runtime": {
+    "one_thread": "OPENBLAS_NUM_THREADS=MKL_NUM_THREADS=OMP_NUM_THREADS=1; CUDA_VISIBLE_DEVICES=-1",
+    "unset": "Those four environment variables were absent from the condition child. Both sets used CPU MuJoCo."
+  },
+  "runs": [
+    {
+      "case": "original_walk",
+      "reference_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "runtime": "one_thread",
+      "corridor_feedback": false,
+      "raw_sha256": "b39bd2e9a55501a3ee225595c89bd6ba4e506443fa04ed8717d687beffb11d73",
+      "scene_sha256": "1179525bc45b08fc00f903c1da9d3543315afe236a915e03d5713fad0bcde18f",
+      "samples": 132550,
+      "end_s": 132.55000000026885,
+      "walking": true,
+      "valve": true,
+      "valve_failures": [],
+      "first_failure": null,
+      "observed_landings": 20,
+      "max_stance_slip_mm": {
+        "FL": 9.174,
+        "FR": 9.579,
+        "RL": 9.968,
+        "RR": 8.928
+      },
+      "qp_relaxed_ticks": 0
+    },
+    {
+      "case": "local_walk",
+      "reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "runtime": "one_thread",
+      "corridor_feedback": false,
+      "raw_sha256": "dd98790b6b35a9a45d43d7ca8bff3c77da4595617e6676a25f85581a6dcebd19",
+      "scene_sha256": "378fa5aadf6ad8117e46c4da7ae1c4a5148e11e704de0aba3da4b0d768becd1f",
+      "samples": 135715,
+      "end_s": 135.71500000028396,
+      "walking": false,
+      "valve": true,
+      "valve_failures": [],
+      "first_failure": {
+        "stage": "return",
+        "time_s": 129.69400000025522,
+        "metric": "stance_slip_m",
+        "measured": 0.01000213745089215,
+        "limit": "<= 0.01"
+      },
+      "observed_landings": 20,
+      "max_stance_slip_mm": {
+        "FL": 9.255,
+        "FR": 8.549,
+        "RL": 11.219,
+        "RR": 8.934
+      },
+      "qp_relaxed_ticks": 0
+    },
+    {
+      "case": "local_walk_with_corridor_control",
+      "reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "runtime": "one_thread",
+      "corridor_feedback": true,
+      "raw_sha256": "eeb6acd2fb1efb17a80014a5faa6d7ff8584efac4939a0e389d2d3d9fc1f4a87",
+      "scene_sha256": "1fb66656d94afce7c2eff5ec26dd5bdbcd96113b0996f80e26d0420e418b1bf7",
+      "samples": 135715,
+      "end_s": 135.71500000028396,
+      "walking": false,
+      "valve": false,
+      "valve_failures": [
+        {
+          "stage": "continuity",
+          "time_s": null,
+          "metric": "qp_relaxed_ticks",
+          "measured": 19,
+          "limit": 0,
+          "message": "run metadata violates the mission contract"
+        }
+      ],
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.83100000024632,
+        "metric": "stance_slip_m",
+        "measured": 0.010000207723255565,
+        "limit": "<= 0.01"
+      },
+      "observed_landings": 20,
+      "max_stance_slip_mm": {
+        "FL": 9.538,
+        "FR": 8.435,
+        "RL": 12.804,
+        "RR": 8.922
+      },
+      "qp_relaxed_ticks": 19
+    },
+    {
+      "case": "local_walk_with_corridor_control_runtime_default",
+      "reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "runtime": "unset",
+      "corridor_feedback": true,
+      "raw_sha256": "ee849d34414cfd1183c0a3155172b4b316ae7c3e5801abc620f031cbf02f13a6",
+      "scene_sha256": "1fb66656d94afce7c2eff5ec26dd5bdbcd96113b0996f80e26d0420e418b1bf7",
+      "samples": 135715,
+      "end_s": 135.71500000028396,
+      "walking": false,
+      "valve": false,
+      "valve_failures": [
+        {
+          "stage": "continuity",
+          "time_s": null,
+          "metric": "qp_relaxed_ticks",
+          "measured": 19,
+          "limit": 0,
+          "message": "run metadata violates the mission contract"
+        }
+      ],
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.79100000024613,
+        "metric": "stance_slip_m",
+        "measured": 0.010000332587369435,
+        "limit": "<= 0.01"
+      },
+      "observed_landings": 20,
+      "max_stance_slip_mm": {
+        "FL": 9.54,
+        "FR": 8.429,
+        "RL": 12.841,
+        "RR": 8.914
+      },
+      "qp_relaxed_ticks": 19
+    }
+  ],
+  "walking_reference_comparison": {
+    "identical_prefix_samples": 127650,
+    "fields_compared": 34,
+    "first_different_state_s": 127.65100000024546,
+    "first_different_fields": [
+      "base_track_m",
+      "base_xyz_m",
+      "ctrl",
+      "feet_xyz_m",
+      "finger_slide_m",
+      "foot_force_world_n",
+      "foot_friction_use",
+      "foot_normal_force_n",
+      "handle_axial_position_m",
+      "handle_axis_offset_m",
+      "pad_surface_gap_m",
+      "qpos",
+      "qvel",
+      "robot_torque_requested_nm",
+      "stance_slip_m",
+      "torque_nm",
+      "tread_load_n"
+    ]
+  },
+  "corridor_feedback_comparison": {
+    "identical_prefix_samples": 127655,
+    "fields_compared": 34,
+    "first_different_state_s": 127.65600000024548,
+    "first_different_fields": [
+      "base_track_m",
+      "base_xyz_m",
+      "ctrl",
+      "feet_xyz_m",
+      "finger_slide_m",
+      "foot_force_world_n",
+      "foot_friction_use",
+      "foot_normal_force_n",
+      "handle_axial_position_m",
+      "handle_axis_offset_m",
+      "pad_surface_gap_m",
+      "qpos",
+      "qvel",
+      "robot_torque_requested_nm",
+      "stance_slip_m",
+      "torque_nm",
+      "tread_load_n"
+    ]
+  },
+  "runtime_comparison": {
+    "identical_prefix_samples": 0,
+    "fields_compared": 34,
+    "first_different_state_s": 0.001,
+    "first_different_fields": [
+      "ctrl",
+      "foot_force_world_n",
+      "foot_friction_use",
+      "qpos",
+      "qvel",
+      "robot_torque_requested_nm",
+      "stance_slip_m",
+      "torque_nm",
+      "tread_load_n"
+    ]
+  }
+}

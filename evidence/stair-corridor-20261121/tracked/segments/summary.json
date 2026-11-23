@@ -1,0 +1,51 @@
+{
+  "walk_sha256": "0ce148501742caacaeebfcf95caafbd8bdb3dd0a9f93c710b64bbc6e6bc8b5c6",
+  "physics_step_s": 0.001,
+  "actuation_period_s": 0.005,
+  "saved_command_period_s": 0.01,
+  "initial_condition": "Each segment starts once at the scheduled pose with a closed valve.",
+  "landing_scoring": "The public landing schedule selects the final 0.3 s of each support interval. The acquisition probe interpolated the original times; up to one 10 ms end sample differs at floating-point boundaries. Each landing has the same load pass/fail in both checks.",
+  "runs": [
+    {
+      "direction": "up",
+      "planned_landings": 19,
+      "loaded_landings": 6,
+      "raw_sha256": "7be715b888f171812a7990e3e61c293db279ae596c784adbff997eb51a20ef8e",
+      "fell": true,
+      "max_stance_slip_mm": {
+        "FL": 1264.744,
+        "FR": 1031.044,
+        "RL": 985.846,
+        "RR": 1027.385
+      },
+      "qp_failed": 42831,
+      "qp_relaxed": 813
+    },
+    {
+      "direction": "down",
+      "planned_landings": 21,
+      "loaded_landings": 21,
+      "raw_sha256": "4c189a3b94915349fb9238bb9fe5e1d1d52f3c4f3c162a0aaa86dcf80058c37a",
+      "fell": false,
+      "max_stance_slip_mm": {
+        "FL": 16.659,
+        "FR": 7.917,
+        "RL": 18.303,
+        "RR": 7.763
+      },
+      "qp_failed": 9,
+      "qp_relaxed": 37
+    }
+  ],
+  "independent_descent_replay": {
+    "physics_steps": 225170,
+    "saved_samples": 22517,
+    "raw_sha256": "4c189a3b94915349fb9238bb9fe5e1d1d52f3c4f3c162a0aaa86dcf80058c37a",
+    "exact_recording_match": true,
+    "replay_entry": "replay.py",
+    "arguments": [
+      "down",
+      "OUTPUT_DIRECTORY"
+    ]
+  }
+}

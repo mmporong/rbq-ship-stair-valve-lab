@@ -1,0 +1,1075 @@
+{
+  "host_contract": "rbq_stair_intervention_v1",
+  "registered_nvidia_task": false,
+  "checkpoint": 9100,
+  "checkpoint_sha256": "6d39b7c28c9cdda9c3964c3b37493c3bcd24f81ca46f5e367618a7f264cfc757",
+  "cpu_only": true,
+  "geometry": {
+    "slope_deg": 50,
+    "rise_m": 0.19,
+    "treads": 10
+  },
+  "work_stance": {
+    "FL": 5,
+    "FR": 5,
+    "RL": 3,
+    "RR": 3,
+    "hold_s": 0.5
+  },
+  "case_set_sha256": "8a009e9774c1497953550ed0c7e346760f64433d93e8d9f709d7998723013526",
+  "groups": {
+    "no_intervention": {
+      "summary": {
+        "n": 16,
+        "work_stance_rate": 0.0,
+        "mean_maximum_work_stance_s": 0.0,
+        "mean_highest_supported_tread": 1.5,
+        "body_collision_rate": 0.625,
+        "mean_maximum_forward_x_m": 0.42156966439026866,
+        "mean_maximum_abs_pitch_deg": 30.861138568464895
+      },
+      "trials": [
+        {
+          "case_id": "holdout-01",
+          "candidate_id": "no_intervention",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.09671541383861741,
+          "maximum_body_z_m": 0.6763804494595812,
+          "maximum_abs_pitch_deg": 24.415446292044702,
+          "final_body_xyz_m": [
+            -0.09671541383861741,
+            -0.04452282000267291,
+            0.5659558550367796
+          ],
+          "simulated_s": 9.02000000000001
+        },
+        {
+          "case_id": "holdout-02",
+          "candidate_id": "no_intervention",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": 0.03176132390425081,
+          "maximum_body_z_m": 0.6743405872777468,
+          "maximum_abs_pitch_deg": 23.640443065738456,
+          "final_body_xyz_m": [
+            0.03176132390425081,
+            0.042744476957106675,
+            0.5758110928975475
+          ],
+          "simulated_s": 7.339999999999866
+        },
+        {
+          "case_id": "holdout-03",
+          "candidate_id": "no_intervention",
+          "termination": "fell_over",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": false,
+          "maximum_forward_x_m": -0.085149101832257,
+          "maximum_body_z_m": 0.6140301771280561,
+          "maximum_abs_pitch_deg": 47.18758292539605,
+          "final_body_xyz_m": [
+            -0.2178252186534171,
+            -0.2707246669048572,
+            0.4231141570926434
+          ],
+          "simulated_s": 2.7599999999999634
+        },
+        {
+          "case_id": "holdout-04",
+          "candidate_id": "no_intervention",
+          "termination": "fell_over",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 3,
+          "supported_treads": [
+            1,
+            2,
+            3
+          ],
+          "body_collision": false,
+          "maximum_forward_x_m": -0.05938732695971525,
+          "maximum_body_z_m": 0.6850134024744067,
+          "maximum_abs_pitch_deg": 59.440455216621054,
+          "final_body_xyz_m": [
+            -0.6924251098679658,
+            -0.24780782493631992,
+            0.6041063015385948
+          ],
+          "simulated_s": 9.66000000000011
+        },
+        {
+          "case_id": "holdout-05",
+          "candidate_id": "no_intervention",
+          "termination": "fell_over",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": false,
+          "maximum_forward_x_m": -0.15584797196462333,
+          "maximum_body_z_m": 0.6046041759234081,
+          "maximum_abs_pitch_deg": 41.85416739992242,
+          "final_body_xyz_m": [
+            -0.5409895277410325,
+            -0.15539384878799326,
+            0.43863695014097703
+          ],
+          "simulated_s": 2.7999999999999625
+        },
+        {
+          "case_id": "holdout-06",
+          "candidate_id": "no_intervention",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": 7.347231277268973,
+          "maximum_body_z_m": 0.6605081069927863,
+          "maximum_abs_pitch_deg": 26.958830841101133,
+          "final_body_xyz_m": [
+            7.347231277268973,
+            -0.0022913454534219373,
+            0.08448213087016158
+          ],
+          "simulated_s": 18.860000000000532
+        },
+        {
+          "case_id": "holdout-07",
+          "candidate_id": "no_intervention",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": 0.041560222520187456,
+          "maximum_body_z_m": 0.645235578320235,
+          "maximum_abs_pitch_deg": 13.695201814980141,
+          "final_body_xyz_m": [
+            0.041560222520187456,
+            0.027459318653800708,
+            0.619512736348074
+          ],
+          "simulated_s": 2.4799999999999693
+        },
+        {
+          "case_id": "holdout-08",
+          "candidate_id": "no_intervention",
+          "termination": "fell_over",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": false,
+          "maximum_forward_x_m": -0.09681716535688636,
+          "maximum_body_z_m": 0.7084367062395098,
+          "maximum_abs_pitch_deg": 66.14438807684242,
+          "final_body_xyz_m": [
+            -1.0393671120836498,
+            -0.3069299323817307,
+            0.5696370887778504
+          ],
+          "simulated_s": 4.939999999999917
+        },
+        {
+          "case_id": "holdout-09",
+          "candidate_id": "no_intervention",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": 0.0561822841411792,
+          "maximum_body_z_m": 0.6519504642586443,
+          "maximum_abs_pitch_deg": 14.34456098301129,
+          "final_body_xyz_m": [
+            0.0561822841411792,
+            0.017800960495988852,
+            0.5916199074403219
+          ],
+          "simulated_s": 3.799999999999941
+        },
+        {
+          "case_id": "holdout-10",
+          "candidate_id": "no_intervention",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": 0.037268954572429666,
+          "maximum_body_z_m": 0.667477111741659,
+          "maximum_abs_pitch_deg": 16.15505005654632,
+          "final_body_xyz_m": [
+            0.025684426767025873,
+            -0.015506197824426176,
+            0.6270614823731105
+          ],
+          "simulated_s": 3.439999999999949
+        },
+        {
+          "case_id": "holdout-11",
+          "candidate_id": "no_intervention",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.05457667217360984,
+          "maximum_body_z_m": 0.6621921150849366,
+          "maximum_abs_pitch_deg": 18.66407408522374,
+          "final_body_xyz_m": [
+            -0.05457667217360984,
+            -0.19551893475621887,
+            0.597050259737851
+          ],
+          "simulated_s": 4.099999999999935
+        },
+        {
+          "case_id": "holdout-12",
+          "candidate_id": "no_intervention",
+          "termination": "fell_over",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": false,
+          "maximum_forward_x_m": -0.13080590147575857,
+          "maximum_body_z_m": 0.6964979258349652,
+          "maximum_abs_pitch_deg": 48.0973222259511,
+          "final_body_xyz_m": [
+            -1.0600572912161523,
+            -0.3818153254820626,
+            0.49541533468785254
+          ],
+          "simulated_s": 3.85999999999994
+        },
+        {
+          "case_id": "holdout-13",
+          "candidate_id": "no_intervention",
+          "termination": "fell_over",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": false,
+          "maximum_forward_x_m": -0.06235651111923099,
+          "maximum_body_z_m": 0.6247493936945118,
+          "maximum_abs_pitch_deg": 25.406029162037253,
+          "final_body_xyz_m": [
+            -0.9251351427892477,
+            -0.8598495196498613,
+            0.35499706843675444
+          ],
+          "simulated_s": 4.0199999999999365
+        },
+        {
+          "case_id": "holdout-14",
+          "candidate_id": "no_intervention",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": 0.06382542761267342,
+          "maximum_body_z_m": 0.6548751079270779,
+          "maximum_abs_pitch_deg": 16.636317607580956,
+          "final_body_xyz_m": [
+            0.06382542761267342,
+            0.0073552375612094805,
+            0.612447107485376
+          ],
+          "simulated_s": 2.5199999999999685
+        },
+        {
+          "case_id": "holdout-15",
+          "candidate_id": "no_intervention",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.007844535554032372,
+          "maximum_body_z_m": 0.6960541246735203,
+          "maximum_abs_pitch_deg": 26.629512674071012,
+          "final_body_xyz_m": [
+            -0.09278631219953014,
+            -0.02366401531750923,
+            0.5858315943316128
+          ],
+          "simulated_s": 14.860000000000923
+        },
+        {
+          "case_id": "holdout-16",
+          "candidate_id": "no_intervention",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.08321425950066408,
+          "maximum_body_z_m": 0.6743163153759293,
+          "maximum_abs_pitch_deg": 24.508834668370294,
+          "final_body_xyz_m": [
+            -0.08321425950066408,
+            0.09020268457698362,
+            0.5998155796497601
+          ],
+          "simulated_s": 3.3999999999999497
+        }
+      ]
+    },
+    "phase_25": {
+      "summary": {
+        "n": 16,
+        "work_stance_rate": 0.0,
+        "mean_maximum_work_stance_s": 0.0,
+        "mean_highest_supported_tread": 1.6875,
+        "body_collision_rate": 0.6875,
+        "mean_maximum_forward_x_m": -0.02969237947647671,
+        "mean_maximum_abs_pitch_deg": 25.79061079135421
+      },
+      "trials": [
+        {
+          "case_id": "holdout-01",
+          "candidate_id": "phase_25",
+          "termination": "phase_timeout",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": false,
+          "maximum_forward_x_m": 0.060130065314256624,
+          "maximum_body_z_m": 0.7452319226128673,
+          "maximum_abs_pitch_deg": 25.893072471311417,
+          "final_body_xyz_m": [
+            -0.008876726985144743,
+            -0.1978380287492667,
+            0.6646613853422068
+          ],
+          "simulated_s": 19.960000000000313
+        },
+        {
+          "case_id": "holdout-02",
+          "candidate_id": "phase_25",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": 0.07821087465803499,
+          "maximum_body_z_m": 0.6932793885879233,
+          "maximum_abs_pitch_deg": 25.79916802858474,
+          "final_body_xyz_m": [
+            0.07821087465803499,
+            -0.04515760005763179,
+            0.6695745442787111
+          ],
+          "simulated_s": 12.800000000000601
+        },
+        {
+          "case_id": "holdout-03",
+          "candidate_id": "phase_25",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.08513444596262901,
+          "maximum_body_z_m": 0.5887005588534172,
+          "maximum_abs_pitch_deg": 15.030605904553909,
+          "final_body_xyz_m": [
+            -0.08513444596262901,
+            0.016561707840345195,
+            0.545066903918681
+          ],
+          "simulated_s": 2.399999999999971
+        },
+        {
+          "case_id": "holdout-04",
+          "candidate_id": "phase_25",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": 0.078925958153551,
+          "maximum_body_z_m": 0.6991022762615208,
+          "maximum_abs_pitch_deg": 23.25698642911765,
+          "final_body_xyz_m": [
+            0.078925958153551,
+            -0.06692613606324761,
+            0.6700029990860452
+          ],
+          "simulated_s": 8.75999999999997
+        },
+        {
+          "case_id": "holdout-05",
+          "candidate_id": "phase_25",
+          "termination": "fell_over",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": false,
+          "maximum_forward_x_m": -0.11174286777195619,
+          "maximum_body_z_m": 0.6136113010467433,
+          "maximum_abs_pitch_deg": 46.280284372754444,
+          "final_body_xyz_m": [
+            -0.9918631379494405,
+            -0.4839316690650747,
+            0.4727746823173031
+          ],
+          "simulated_s": 3.1199999999999557
+        },
+        {
+          "case_id": "holdout-06",
+          "candidate_id": "phase_25",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.09121725509328908,
+          "maximum_body_z_m": 0.5907274066177186,
+          "maximum_abs_pitch_deg": 11.757679895148296,
+          "final_body_xyz_m": [
+            -0.09121725509328908,
+            0.02710398713384577,
+            0.5545689996952075
+          ],
+          "simulated_s": 2.3799999999999715
+        },
+        {
+          "case_id": "holdout-07",
+          "candidate_id": "phase_25",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.09243355631603944,
+          "maximum_body_z_m": 0.5899309771341946,
+          "maximum_abs_pitch_deg": 11.512701039182808,
+          "final_body_xyz_m": [
+            -0.09243355631603944,
+            0.030589099937575824,
+            0.5598924460947364
+          ],
+          "simulated_s": 2.3799999999999715
+        },
+        {
+          "case_id": "holdout-08",
+          "candidate_id": "phase_25",
+          "termination": "phase_timeout",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": false,
+          "maximum_forward_x_m": -0.07445302174773115,
+          "maximum_body_z_m": 0.7438935256803942,
+          "maximum_abs_pitch_deg": 22.03310197393644,
+          "final_body_xyz_m": [
+            -0.12073818696583019,
+            -0.07035540843259111,
+            0.6853882131978094
+          ],
+          "simulated_s": 19.960000000000313
+        },
+        {
+          "case_id": "holdout-09",
+          "candidate_id": "phase_25",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.08065928585527825,
+          "maximum_body_z_m": 0.6464910470713869,
+          "maximum_abs_pitch_deg": 23.291230961876195,
+          "final_body_xyz_m": [
+            -0.08065928585527825,
+            -0.08099628389773682,
+            0.5956168539736064
+          ],
+          "simulated_s": 5.019999999999915
+        },
+        {
+          "case_id": "holdout-10",
+          "candidate_id": "phase_25",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": 0.08025600826708,
+          "maximum_body_z_m": 0.7207471180200858,
+          "maximum_abs_pitch_deg": 22.247604114552,
+          "final_body_xyz_m": [
+            0.08025600826708,
+            -0.049269520988008964,
+            0.671906066817932
+          ],
+          "simulated_s": 7.039999999999872
+        },
+        {
+          "case_id": "holdout-11",
+          "candidate_id": "phase_25",
+          "termination": "fell_over",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": false,
+          "maximum_forward_x_m": -0.09056638678463906,
+          "maximum_body_z_m": 0.6818102297489806,
+          "maximum_abs_pitch_deg": 49.087761113789014,
+          "final_body_xyz_m": [
+            -1.0958242912882068,
+            -0.34370320903144025,
+            0.44701380341355423
+          ],
+          "simulated_s": 4.139999999999934
+        },
+        {
+          "case_id": "holdout-12",
+          "candidate_id": "phase_25",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": 0.09511996031604338,
+          "maximum_body_z_m": 0.7243810633117601,
+          "maximum_abs_pitch_deg": 25.546218981726703,
+          "final_body_xyz_m": [
+            0.09511996031604338,
+            -0.007398260970566001,
+            0.624193853326844
+          ],
+          "simulated_s": 3.4999999999999476
+        },
+        {
+          "case_id": "holdout-13",
+          "candidate_id": "phase_25",
+          "termination": "phase_timeout",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": false,
+          "maximum_forward_x_m": 0.055519744670768964,
+          "maximum_body_z_m": 0.7113143923592161,
+          "maximum_abs_pitch_deg": 23.046427394895304,
+          "final_body_xyz_m": [
+            0.04331785002644126,
+            -0.20501673269531806,
+            0.6597357035411162
+          ],
+          "simulated_s": 19.960000000000313
+        },
+        {
+          "case_id": "holdout-14",
+          "candidate_id": "phase_25",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.10457352566678434,
+          "maximum_body_z_m": 0.6882741981574426,
+          "maximum_abs_pitch_deg": 58.72065621664341,
+          "final_body_xyz_m": [
+            -0.8834374634269117,
+            -0.16572276697714777,
+            0.38405565732929237
+          ],
+          "simulated_s": 3.3999999999999497
+        },
+        {
+          "case_id": "holdout-15",
+          "candidate_id": "phase_25",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.09648906877945315,
+          "maximum_body_z_m": 0.6627276407390853,
+          "maximum_abs_pitch_deg": 18.82714566486087,
+          "final_body_xyz_m": [
+            -0.09648906877945315,
+            -0.012202191242752493,
+            0.5511507929003417
+          ],
+          "simulated_s": 3.5999999999999455
+        },
+        {
+          "case_id": "holdout-16",
+          "candidate_id": "phase_25",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.09597126902556266,
+          "maximum_body_z_m": 0.5917093776729446,
+          "maximum_abs_pitch_deg": 10.319128098734158,
+          "final_body_xyz_m": [
+            -0.09625120449851654,
+            0.022326313072724376,
+            0.5740373455095911
+          ],
+          "simulated_s": 2.399999999999971
+        }
+      ]
+    },
+    "edge_slow_rule": {
+      "summary": {
+        "n": 16,
+        "work_stance_rate": 0.0,
+        "mean_maximum_work_stance_s": 0.0,
+        "mean_highest_supported_tread": 0.6875,
+        "body_collision_rate": 1.0,
+        "mean_maximum_forward_x_m": -0.07426515433031944,
+        "mean_maximum_abs_pitch_deg": 12.70306286999503
+      },
+      "trials": [
+        {
+          "case_id": "holdout-01",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.08988517787791112,
+          "maximum_body_z_m": 0.6348326454816574,
+          "maximum_abs_pitch_deg": 11.96253824196396,
+          "final_body_xyz_m": [
+            -0.08988517787791112,
+            0.09522931013254426,
+            0.603708771017218
+          ],
+          "simulated_s": 3.3199999999999514
+        },
+        {
+          "case_id": "holdout-02",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.0875987257517626,
+          "maximum_body_z_m": 0.6129298997931957,
+          "maximum_abs_pitch_deg": 7.507706190668782,
+          "final_body_xyz_m": [
+            -0.08840615363027557,
+            0.003812661249447483,
+            0.5789975249410734
+          ],
+          "simulated_s": 2.499999999999969
+        },
+        {
+          "case_id": "holdout-03",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.0803127229138514,
+          "maximum_body_z_m": 0.6203428429426241,
+          "maximum_abs_pitch_deg": 8.116935582916293,
+          "final_body_xyz_m": [
+            -0.0803127229138514,
+            0.0017478580304438364,
+            0.5959698434731818
+          ],
+          "simulated_s": 2.5199999999999685
+        },
+        {
+          "case_id": "holdout-04",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.08883437629113755,
+          "maximum_body_z_m": 0.6129467639289983,
+          "maximum_abs_pitch_deg": 6.953840940960049,
+          "final_body_xyz_m": [
+            -0.08883437629113755,
+            -0.016577543224493636,
+            0.5843926225957431
+          ],
+          "simulated_s": 2.5599999999999676
+        },
+        {
+          "case_id": "holdout-05",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.08702001837830384,
+          "maximum_body_z_m": 0.6104081767618275,
+          "maximum_abs_pitch_deg": 7.259197602418919,
+          "final_body_xyz_m": [
+            -0.08702001837830384,
+            -0.00922072522882334,
+            0.5827044078465496
+          ],
+          "simulated_s": 2.5599999999999676
+        },
+        {
+          "case_id": "holdout-06",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.028101452204245765,
+          "maximum_body_z_m": 0.6713196947975341,
+          "maximum_abs_pitch_deg": 20.808697945734234,
+          "final_body_xyz_m": [
+            -0.028101452204245765,
+            -0.16650900378439407,
+            0.626687323252963
+          ],
+          "simulated_s": 10.020000000000167
+        },
+        {
+          "case_id": "holdout-07",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.08710779474237153,
+          "maximum_body_z_m": 0.6136634848520661,
+          "maximum_abs_pitch_deg": 6.902746876767481,
+          "final_body_xyz_m": [
+            -0.08710779474237153,
+            0.005772373100445205,
+            0.5833845655211277
+          ],
+          "simulated_s": 2.5199999999999685
+        },
+        {
+          "case_id": "holdout-08",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.08856124311585216,
+          "maximum_body_z_m": 0.6204088074306358,
+          "maximum_abs_pitch_deg": 10.550544996913423,
+          "final_body_xyz_m": [
+            -0.09188771114961959,
+            0.08223444035168136,
+            0.5862564111294991
+          ],
+          "simulated_s": 3.239999999999953
+        },
+        {
+          "case_id": "holdout-09",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.08617185009968391,
+          "maximum_body_z_m": 0.6462953135493641,
+          "maximum_abs_pitch_deg": 13.865379410200086,
+          "final_body_xyz_m": [
+            -0.08617185009968391,
+            0.08286757889908175,
+            0.584821302089055
+          ],
+          "simulated_s": 3.7399999999999425
+        },
+        {
+          "case_id": "holdout-10",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.09362554248230219,
+          "maximum_body_z_m": 0.6498444259020566,
+          "maximum_abs_pitch_deg": 14.131903244435534,
+          "final_body_xyz_m": [
+            -0.09440967657575276,
+            0.06080690025773698,
+            0.5657209589418476
+          ],
+          "simulated_s": 3.4999999999999476
+        },
+        {
+          "case_id": "holdout-11",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.002438064141566063,
+          "maximum_body_z_m": 0.7234133871555375,
+          "maximum_abs_pitch_deg": 20.39114900592015,
+          "final_body_xyz_m": [
+            -0.002438064141566063,
+            -0.07117884963744886,
+            0.6321959083901002
+          ],
+          "simulated_s": 3.939999999999938
+        },
+        {
+          "case_id": "holdout-12",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.0855811127872487,
+          "maximum_body_z_m": 0.650277588675682,
+          "maximum_abs_pitch_deg": 12.902654444521382,
+          "final_body_xyz_m": [
+            -0.0855811127872487,
+            0.07864659759449572,
+            0.5889240556709361
+          ],
+          "simulated_s": 3.2799999999999523
+        },
+        {
+          "case_id": "holdout-13",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.08759385808337052,
+          "maximum_body_z_m": 0.6461204083285345,
+          "maximum_abs_pitch_deg": 13.63127139053082,
+          "final_body_xyz_m": [
+            -0.08759385808337052,
+            0.05149547372797574,
+            0.6022141651526952
+          ],
+          "simulated_s": 3.3199999999999514
+        },
+        {
+          "case_id": "holdout-14",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.08350165957291816,
+          "maximum_body_z_m": 0.6157215772954432,
+          "maximum_abs_pitch_deg": 7.551120677851841,
+          "final_body_xyz_m": [
+            -0.08350165957291816,
+            0.01128427989854033,
+            0.5919107325028145
+          ],
+          "simulated_s": 2.4599999999999698
+        },
+        {
+          "case_id": "holdout-15",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.09387402653038933,
+          "maximum_body_z_m": 0.6277140511688989,
+          "maximum_abs_pitch_deg": 18.39508584711395,
+          "final_body_xyz_m": [
+            -0.09387402653038933,
+            0.05306426756702258,
+            0.5864624855413266
+          ],
+          "simulated_s": 4.699999999999922
+        },
+        {
+          "case_id": "holdout-16",
+          "candidate_id": "edge_slow_rule",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 0,
+          "supported_treads": [],
+          "body_collision": true,
+          "maximum_forward_x_m": -0.018034844312196197,
+          "maximum_body_z_m": 0.7099989665609455,
+          "maximum_abs_pitch_deg": 22.318233521003556,
+          "final_body_xyz_m": [
+            -0.02579792843086798,
+            -0.08187868202849748,
+            0.6519639995513921
+          ],
+          "simulated_s": 5.639999999999902
+        }
+      ]
+    }
+  }
+}

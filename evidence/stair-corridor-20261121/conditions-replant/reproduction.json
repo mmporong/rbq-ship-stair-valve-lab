@@ -1,0 +1,254 @@
+{
+  "profile": {
+    "name": "rl-mid-replant-k3075-v1",
+    "replant_after_landing_index": 15,
+    "replant_trigger_s": 78.8,
+    "replant_duration_s": 2.8,
+    "replant_leg": "RL",
+    "slip_spring_gain_n_per_m": 3075,
+    "slip_spring_active_s": [
+      116.65,
+      129.4
+    ],
+    "stance_spring_gain_n_per_m": 2500,
+    "terminal_overtravel_deg": 1.3
+  },
+  "frozen_source_commit": "2c91d83ff3a222bc2919c3156b93920ebcff5ec4",
+  "scope": {
+    "physical_rows": 14,
+    "planning_rows": 3,
+    "extent": "through-task",
+    "walking_reference": "evidence/stair-corridor-20261121/local-repair/walk50.npz",
+    "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+    "low_load_control": "evidence/stair-corridor-20261121/tracked/low-control/loaded.json.gz",
+    "low_load_control_sha256": "03c5da8f27b93f6a951a9db8d77dccea9312e175f26aceb6f30c7a1df197b012",
+    "control_profile": "rl-mid-replant-k3075-v1",
+    "nominal_endpoint_s": 135.715,
+    "expected_landings_at_endpoint": 20,
+    "original_scheduled_landings": 156,
+    "supplementary_landings": 1
+  },
+  "results": [
+    {
+      "id": "nominal",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.83100000024632,
+        "metric": "stance_slip_m",
+        "measured": 0.010000207723255565,
+        "limit": "<= 0.01"
+      }
+    },
+    {
+      "id": "slope_60",
+      "outcome": "planning_failed",
+      "m1": "N/A",
+      "n1": "N/A",
+      "first_failure": {
+        "stage": "segment_16_shift",
+        "time_s": 13.6,
+        "metric": "unexpected_overlap_m",
+        "measured": 0.000684301907967113,
+        "limit": 0.0001
+      }
+    },
+    {
+      "id": "rise_165",
+      "outcome": "planning_failed",
+      "m1": "N/A",
+      "n1": "N/A",
+      "first_failure": {
+        "stage": "segment_58_swing",
+        "time_s": 55.95999999999998,
+        "metric": "max_foot_ik_error_m",
+        "measured": 0.002213606451974058,
+        "limit": 0.002
+      }
+    },
+    {
+      "id": "rise_200",
+      "outcome": "planning_failed",
+      "m1": "N/A",
+      "n1": "N/A",
+      "first_failure": {
+        "stage": "segment_36_shift",
+        "time_s": 34.51999999999999,
+        "metric": "max_foot_ik_error_m",
+        "measured": 0.006968599759779576,
+        "limit": 0.002
+      }
+    },
+    {
+      "id": "floor_mu_050",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.65600000024548,
+        "metric": "qp_attempt",
+        "measured": 1.0,
+        "limit": "== 0"
+      }
+    },
+    {
+      "id": "floor_mu_080",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.83000000024632,
+        "metric": "stance_slip_m",
+        "measured": 0.010000560389329437,
+        "limit": "<= 0.01"
+      }
+    },
+    {
+      "id": "resistance_5",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 100.62000000011639,
+        "metric": "max_base_shift_m",
+        "measured": 0.01002688798756198,
+        "limit": "<= 0.01"
+      }
+    },
+    {
+      "id": "resistance_15",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 102.57900000012575,
+        "metric": "max_base_shift_m",
+        "measured": 0.010011330221381108,
+        "limit": "<= 0.01"
+      }
+    },
+    {
+      "id": "sensitivity_lever_m_0_1",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 100.5580000001161,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.021000000000100272,
+        "limit": "<= 0.02"
+      }
+    },
+    {
+      "id": "sensitivity_lever_m_0_14",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 125.93900000023729,
+        "metric": "stance_slip_m",
+        "measured": 0.010000001126633696,
+        "limit": "<= 0.01"
+      }
+    },
+    {
+      "id": "sensitivity_pad_mu_0_6",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.87300000024652,
+        "metric": "stance_slip_m",
+        "measured": 0.010000984066392157,
+        "limit": "<= 0.01"
+      }
+    },
+    {
+      "id": "sensitivity_pad_mu_1",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "hold",
+        "time_s": 111.65100000016906,
+        "metric": "angle_deg",
+        "measured": 89.67201632689441,
+        "limit": "90.0 +/- 0.25"
+      }
+    },
+    {
+      "id": "sensitivity_finger_force_limit_n_75",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 100.46000000011563,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.021000000000100272,
+        "limit": "<= 0.02"
+      }
+    },
+    {
+      "id": "sensitivity_finger_slide_frictionloss_n_15",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.83100000024632,
+        "metric": "stance_slip_m",
+        "measured": 0.010000582520050042,
+        "limit": "<= 0.01"
+      }
+    },
+    {
+      "id": "sensitivity_arm_limits_named_lims_ex_joint_limits",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 100.40100000011535,
+        "metric": "requested_torque_ratio",
+        "measured": 2.006824450634009,
+        "limit": "<= 1.0"
+      }
+    },
+    {
+      "id": "sensitivity_timestep_s_0_0025",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 100.40249999994494,
+        "metric": "start_angle_deg",
+        "measured": 0.3788404844932397,
+        "limit": "abs <= 0.25"
+      }
+    },
+    {
+      "id": "sensitivity_impratio_10",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "prewalk",
+        "time_s": 4.196999999999736,
+        "metric": "stance_slip_m",
+        "measured": 0.010001474806524878,
+        "limit": "<= 0.01"
+      }
+    }
+  ]
+}

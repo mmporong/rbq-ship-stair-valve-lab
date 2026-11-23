@@ -1,0 +1,11 @@
+{
+  "case_id": "dev-02",
+  "candidate_id": "initial",
+  "state_sha256": "b29f85e3ff72f7e6ac82a3e3485d004ea973c770f83d00d8fcbadbbcea7a1a69",
+  "strict_success": false,
+  "complete_horizon": false,
+  "outcome": "early_termination",
+  "first_failure": "fall",
+  "simulated_s": 7.804,
+  "maximum_angle_deg": 0.0
+}

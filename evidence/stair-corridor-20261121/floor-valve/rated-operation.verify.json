@@ -1,0 +1,40 @@
+{
+  "scope": "through-task",
+  "verified": true,
+  "peaks": {
+    "joint_torque_ratio": {
+      "value": 0.37791576535536175,
+      "time_s": 120.26100000021017,
+      "raw_index": 120260
+    },
+    "foot_surface_force_n": {
+      "value": 248.41156409535608,
+      "time_s": 101.29000000011959,
+      "raw_index": 101289
+    },
+    "pad_closing_torque_nm": {
+      "value": 10.117044407888137,
+      "time_s": 97.19000000010001,
+      "raw_index": 97189
+    },
+    "joint_torque_nm": {
+      "value": 56.68736480330426,
+      "time_s": 120.26100000021017,
+      "raw_index": 120260
+    }
+  },
+  "frame_count": 349,
+  "fps": 25.0,
+  "playback_speed": 2.0,
+  "duration_s": 13.96,
+  "max_caption_time_error_s": 1.4210854715202004e-14,
+  "physical_seconds_per_frame": 0.08,
+  "sha256": {
+    "mission.npz": "d95cbd16987e3ef8b634de6a4cfda951e848c9617948ee3413e9cd11acb47b81",
+    "rated-operation.mp4": "1b5090c245d0881acee7277a006190713814b54818178bc8d9771a8699f35600",
+    "rated-operation.ass": "ae7be55ad8d2a4ac55e5eb90bb42fe0323cda2ae2b44e9427f9beba9b242927f",
+    "rated-operation.peaks.json": "c433256b3ad9054c0597e1b437ecb6b71371909b70fc06396c88420cec65d89d",
+    "rated-operation.loads.csv": "43b5bf5dd17afa193db4366c7b66b275ca44ddeba5aa63c9626d2a79372c9d4e",
+    "rated-operation.heatmap.html": "7500d5affcb8e50a3765495ebc51fdc7f4fab301f6a6ca9054840ce4ebf95a98"
+  }
+}

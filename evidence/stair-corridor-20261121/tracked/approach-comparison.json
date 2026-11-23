@@ -1,0 +1,276 @@
+{
+  "scope": "Separate physical floor-start design trials through the next transfer, each with its own commands and initial walking reference. The selected control retains the original foot schedule.",
+  "physical_step_s": 0.001,
+  "command_period_s": 0.005,
+  "nominal_resistance_nm": 10,
+  "rows": [
+    {
+      "id": "control",
+      "change": "Unchanged approach and grasp timing",
+      "raw_sha256": "7e5d6052a8cfcdbcb006ed6e3bf1bc79a543c3313b2c6c4dab3142fc3df5b87a",
+      "original_result_sha256": "a279c94ef99254ed65e711e89fa02a3c14abc003e235e0598c9e9800c33457e8",
+      "recording_location": ".omx/mission-success-20261121/terminal-clean-replication/mission.npz",
+      "controller_entry": "tools/replay_stair_mission.py",
+      "entry_sha256": "8145f4913e035a00a0ee90832f3b75b1a521aad0256e1ca053858ab292744daf",
+      "physics_steps": 129750,
+      "M1": true,
+      "walking": false,
+      "first_valve_failure": null,
+      "first_walking_failure": {
+        "stage": "hold",
+        "time_s": 111.76800000016962,
+        "metric": "stance_slip_m",
+        "measured": 0.010000016097540768,
+        "limit": "<= 0.01"
+      },
+      "max_stance_slip_mm": {
+        "FL": 9.288,
+        "FR": 8.027,
+        "RL": 13.312,
+        "RR": 9.541
+      },
+      "max_foot_shift_m": 0.004937045505191955,
+      "max_base_shift_m": 0.004900704594702907,
+      "unexpected_contacts_n": {},
+      "saturated_steps": 0,
+      "qp_failed_ticks": 0,
+      "qp_relaxed_ticks": 0
+    },
+    {
+      "id": "clock-65",
+      "change": "Compressed walking clock before manipulation",
+      "raw_sha256": "422e462091496d1bf9ecf6ce9cbfc972a66553bb61115ef80f6588b4ae410a14",
+      "original_result_sha256": "5d8c5956d9726537b84b6156b9308633501afd4e0c9e043002e5f91ae330f805",
+      "recording_location": ".omx/mission-success-20261121/approach-clock/run-065-ramp5/mission.npz",
+      "controller_entry": ".omx/mission-success-20261121/approach-clock/run.py",
+      "entry_sha256": "90f864708159947c1ad99970ecccd5f8f5ddbdb28340da8491e9f0fe6bc21311",
+      "physics_steps": 129750,
+      "M1": false,
+      "walking": false,
+      "first_valve_failure": {
+        "stage": "hold",
+        "time_s": 108.8510000001557,
+        "metric": "angle_deg",
+        "measured": 89.74515014782622,
+        "limit": "90.0 +/- 0.25",
+        "message": "hold angle left the allowed band"
+      },
+      "first_walking_failure": {
+        "stage": "prewalk",
+        "time_s": 41.04599999999504,
+        "metric": "requested_torque_ratio",
+        "measured": 1.252011926989725,
+        "limit": "<= 1.0"
+      },
+      "max_stance_slip_mm": {
+        "FL": 9.181,
+        "FR": 7.822,
+        "RL": 11.863,
+        "RR": 9.291
+      },
+      "max_foot_shift_m": 0.004927055898085979,
+      "max_base_shift_m": 0.0049891603839891845,
+      "unexpected_contacts_n": {},
+      "saturated_steps": 10,
+      "qp_failed_ticks": 0,
+      "qp_relaxed_ticks": 1
+    },
+    {
+      "id": "clock-70",
+      "change": "Less walking-clock compression before manipulation",
+      "raw_sha256": "a80ca6818e8942c0a21eb8b829de449001c49fadb8e1fdf0e24ce9d6a715f6e0",
+      "original_result_sha256": "aaaf9c3d30368a6a1159f644711753e6126fc8881eeb4c450e78e57346d1acd1",
+      "recording_location": ".omx/mission-success-20261121/approach-clock/run-070-ramp5/mission.npz",
+      "controller_entry": ".omx/mission-success-20261121/approach-clock/run.py",
+      "entry_sha256": "90f864708159947c1ad99970ecccd5f8f5ddbdb28340da8491e9f0fe6bc21311",
+      "physics_steps": 129750,
+      "M1": false,
+      "walking": false,
+      "first_valve_failure": {
+        "stage": "continuity",
+        "time_s": null,
+        "metric": "qp_relaxed_ticks",
+        "measured": 1,
+        "limit": 0,
+        "message": "run metadata violates the mission contract"
+      },
+      "first_walking_failure": {
+        "stage": "prewalk",
+        "time_s": 80.19100000001885,
+        "metric": "qp_attempt",
+        "measured": 2.0,
+        "limit": "== 0"
+      },
+      "max_stance_slip_mm": {
+        "FL": 9.197,
+        "FR": 7.841,
+        "RL": 12.06,
+        "RR": 9.311
+      },
+      "max_foot_shift_m": 0.004930309300143725,
+      "max_base_shift_m": 0.004951225267084992,
+      "unexpected_contacts_n": {},
+      "saturated_steps": 0,
+      "qp_failed_ticks": 0,
+      "qp_relaxed_ticks": 1
+    },
+    {
+      "id": "arm-travel-2p5",
+      "change": "Body transition 2.5 s, arm approach 2.5 s, arm retract 5 s",
+      "raw_sha256": "85ce189177b0d92d3e9cb0fcd10b84622678b147ef83bc7f81e47fcff005ec87",
+      "original_result_sha256": "b7d7e80601a22e8ddaa462588a7422dcd6adeef31502763e23af971eb3a1f026",
+      "recording_location": ".omx/mission-success-20261121/timing-grip/shift2p5-approach2p5-retract5/mission.npz",
+      "controller_entry": ".omx/mission-success-20261121/timing-grip/run_timing_floor.py",
+      "entry_sha256": "3a75d0e247761abf2c31992ec3343b1c97aa7360053300807b7b439144daf9f0",
+      "physics_steps": 127250,
+      "M1": false,
+      "walking": false,
+      "first_valve_failure": {
+        "stage": "hold",
+        "time_s": 107.85100000015092,
+        "metric": "angle_deg",
+        "measured": 89.74921691209009,
+        "limit": "90.0 +/- 0.25",
+        "message": "hold angle left the allowed band"
+      },
+      "first_walking_failure": {
+        "stage": "hold",
+        "time_s": 111.25500000016717,
+        "metric": "stance_slip_m",
+        "measured": 0.010000084290520333,
+        "limit": "<= 0.01"
+      },
+      "max_stance_slip_mm": {
+        "FL": 8.662,
+        "FR": 7.725,
+        "RL": 12.736,
+        "RR": 9.044
+      },
+      "max_foot_shift_m": 0.0047957369640821675,
+      "max_base_shift_m": 0.00943411211644145,
+      "unexpected_contacts_n": {},
+      "saturated_steps": 0,
+      "qp_failed_ticks": 0,
+      "qp_relaxed_ticks": 0
+    },
+    {
+      "id": "arm-travel-2",
+      "change": "Body transition 2 s, arm approach 2 s, arm retract 4 s",
+      "raw_sha256": "455d764529e4c746f6051dc3c9bab59e497ce7fc27835ef95a2a7e44b72033f6",
+      "original_result_sha256": "6f6c7716b9e685c08817c5896bfc68d5e739dd6d32e06710dec876c0b6fb243a",
+      "recording_location": ".omx/mission-success-20261121/timing-grip/shift2-approach2-retract4/mission.npz",
+      "controller_entry": ".omx/mission-success-20261121/timing-grip/run_timing_floor.py",
+      "entry_sha256": "3a75d0e247761abf2c31992ec3343b1c97aa7360053300807b7b439144daf9f0",
+      "physics_steps": 124750,
+      "M1": false,
+      "walking": false,
+      "first_valve_failure": {
+        "stage": "approach",
+        "time_s": 93.28200000008135,
+        "metric": "unexpected_contact_force_n",
+        "measured": 217.96730587978269,
+        "limit": "<= 10.0",
+        "message": "unexpected contact exceeded its limit"
+      },
+      "first_walking_failure": {
+        "stage": "approach",
+        "time_s": 93.28200000008135,
+        "metric": "unexpected_contact_force_n",
+        "measured": 217.96730587978269,
+        "limit": "<= 10 N"
+      },
+      "max_stance_slip_mm": {
+        "FL": 8.614,
+        "FR": 7.236,
+        "RL": 12.068,
+        "RR": 8.468
+      },
+      "max_foot_shift_m": 0.004936022119228726,
+      "max_base_shift_m": 0.009474121100226765,
+      "unexpected_contacts_n": {
+        "FL_thigh+world": 217.96730587978269
+      },
+      "saturated_steps": 0,
+      "qp_failed_ticks": 0,
+      "qp_relaxed_ticks": 0
+    },
+    {
+      "id": "rear-reseat",
+      "change": "Additional physical same-tread rear placement during ascent",
+      "raw_sha256": "da69d56d11fe77b2c3641c0cc6b0d1e1362222859fed08b63fb83440864e9b41",
+      "original_result_sha256": "7171e7e95bb2da73dd94b6f7349d42e4bdf9364d79ef535e56e63dfe43d4b270",
+      "recording_location": ".omx/mission-success-20261121/grip/floor-rl-mid-refresh-overtravel120-settle2/mission.npz",
+      "controller_entry": ".omx/mission-success-20261121/grip/run_rl_mid_refresh_overtravel120.py",
+      "entry_sha256": "bfeaf458e086bb897facf9c7c9130fa660637d349dd8db4dc2d1f7b79e121fe7",
+      "physics_steps": 132550,
+      "M1": false,
+      "walking": false,
+      "first_valve_failure": {
+        "stage": "hold",
+        "time_s": 111.65100000016906,
+        "metric": "angle_deg",
+        "measured": 89.72807516456689,
+        "limit": "90.0 +/- 0.25",
+        "message": "hold angle left the allowed band"
+      },
+      "first_walking_failure": {
+        "stage": "retract",
+        "time_s": 122.26200000021973,
+        "metric": "stance_slip_m",
+        "measured": 0.01000027441241084,
+        "limit": "<= 0.01"
+      },
+      "max_stance_slip_mm": {
+        "FL": 9.391,
+        "FR": 8.052,
+        "RL": 11.583,
+        "RR": 9.733
+      },
+      "max_foot_shift_m": 0.0049482756551272235,
+      "max_base_shift_m": 0.004926220275920386,
+      "unexpected_contacts_n": {},
+      "saturated_steps": 0,
+      "qp_failed_ticks": 0,
+      "qp_relaxed_ticks": 0
+    },
+    {
+      "id": "rear-reseat-spring",
+      "change": "Physical same-tread placement with rear slip feedback",
+      "raw_sha256": "d3b21c2faa83b580cd83770c683ee6ba62107be085500b7589bbceb48fdb9713",
+      "original_result_sha256": "9de57bc2b8640f0be13114b5819063a6f5de34a61f1ecbf28796911e3276b7ab",
+      "recording_location": ".omx/mission-success-20261121/grip/floor-rl-mid-overtravel120-slipk600/mission.npz",
+      "controller_entry": ".omx/mission-success-20261121/grip/run_rl_mid_overtravel_slipk600.py",
+      "entry_sha256": "bd4de9e37dc6118a2220858867175b166e0bb7f20d1ab3d32b0fa519c1f27520",
+      "physics_steps": 132550,
+      "M1": false,
+      "walking": false,
+      "first_valve_failure": {
+        "stage": "hold",
+        "time_s": 116.2670000001911,
+        "metric": "max_foot_shift_m",
+        "measured": 0.005000030084209829,
+        "limit": "<= 0.005",
+        "message": "M1 stability limit exceeded"
+      },
+      "first_walking_failure": {
+        "stage": "retract",
+        "time_s": 124.17600000022887,
+        "metric": "stance_slip_m",
+        "measured": 0.01000010899940637,
+        "limit": "<= 0.01"
+      },
+      "max_stance_slip_mm": {
+        "FL": 9.253,
+        "FR": 7.868,
+        "RL": 10.896,
+        "RR": 9.645
+      },
+      "max_foot_shift_m": 0.005076951155542185,
+      "max_base_shift_m": 0.0060681706046020216,
+      "unexpected_contacts_n": {},
+      "saturated_steps": 0,
+      "qp_failed_ticks": 0,
+      "qp_relaxed_ticks": 0
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "selected_trial": "b1",
+  "trials": [
+    {
+      "trial": "a0",
+      "verified_sequence": true,
+      "controller_metrics": {
+        "passed": false,
+        "fell": false,
+        "saturated_steps": 0,
+        "qp_failed_ticks": 0,
+        "qp_relaxed_ticks": 0,
+        "max_ratio": 0.5366472169494555,
+        "max_base_track_mm": 4.931678719477546,
+        "max_tilt_track_deg": 1.9992818658829876,
+        "return_error_mm": 1.5433499802023514,
+        "feet_down_at_end": false,
+        "max_stance_slip_mm": {
+          "FL": 1.925,
+          "FR": 1.219,
+          "RL": 0.992,
+          "RR": 1.342
+        },
+        "max_friction_use": {
+          "FL": 0.442,
+          "FR": 0.45,
+          "RL": 0.528,
+          "RR": 0.519
+        },
+        "unexpected_contacts_n": {},
+        "floor_mu": 0.6,
+        "wall_mu": 0.6,
+        "physics": {
+          "timestep": 0.005
+        },
+        "gains_scale": 1.5,
+        "mode": "force",
+        "seconds": 8.6
+      },
+      "last": {
+        "motion_end_s": 8.6,
+        "moved_leg": "RL",
+        "expected_foot_xyz_m": [
+          1.4743603693131488,
+          -0.19285000000000002,
+          1.93
+        ],
+        "actual_foot_xyz_m": [
+          1.4713063101954114,
+          -0.1924809543759599,
+          1.9259993185211173
+        ],
+        "terminal_foot_xy_error_m": 0.0030762756325236227,
+        "base_xyz_m": [
+          1.3835265875548022,
+          -0.016766797476093304,
+          2.3915182530080603
+        ],
+        "base_heading_deg": 179.64750649972933,
+        "support": {
+          "time_s": [
+            8.299999999999999,
+            8.6
+          ],
+          "treads": [
+            9,
+            9,
+            10,
+            10
+          ],
+          "all_expected_feet_ge_1n": true,
+          "last_load_n": [
+            126.2533931921446,
+            107.7838480287989,
+            134.06869458796953,
+            112.1279425774253
+          ]
+        }
+      }
+    },
+    {
+      "trial": "b0",
+      "verified_sequence": true,
+      "controller_metrics": {
+        "passed": false,
+        "fell": false,
+        "saturated_steps": 0,
+        "qp_failed_ticks": 0,
+        "qp_relaxed_ticks": 0,
+        "max_ratio": 0.4459408496182704,
+        "max_base_track_mm": 5.4311812544839295,
+        "max_tilt_track_deg": 2.643993139939508,
+        "return_error_mm": 1.7037502536719866,
+        "feet_down_at_end": false,
+        "max_stance_slip_mm": {
+          "FL": 1.602,
+          "FR": 1.527,
+          "RL": 10.793,
+          "RR": 1.687
+        },
+        "max_friction_use": {
+          "FL": 0.425,
+          "FR": 0.478,
+          "RL": 0.712,
+          "RR": 0.518
+        },
+        "unexpected_contacts_n": {},
+        "floor_mu": 0.6,
+        "wall_mu": 0.6,
+        "physics": {
+          "timestep": 0.005
+        },
+        "gains_scale": 1.5,
+        "mode": "force",
+        "seconds": 7.6
+      },
+      "last": {
+        "motion_end_s": 7.6,
+        "moved_leg": "RL",
+        "expected_foot_xyz_m": [
+          1.4743603693131488,
+          -0.19285000000000002,
+          1.93
+        ],
+        "actual_foot_xyz_m": [
+          1.4626412889008826,
+          -0.1845964275189139,
+          1.9266612587909768
+        ],
+        "terminal_foot_xy_error_m": 0.01433381681233941,
+        "base_xyz_m": [
+          1.3845285457705188,
+          0.022730918540221003,
+          2.3919757277421896
+        ],
+        "base_heading_deg": 178.47031309024803,
+        "support": {
+          "time_s": [
+            7.3,
+            7.6
+          ],
+          "treads": [
+            9,
+            9,
+            10,
+            10
+          ],
+          "all_expected_feet_ge_1n": true,
+          "last_load_n": [
+            101.52414328158463,
+            125.24102387204759,
+            116.24651192069776,
+            137.19752893019427
+          ]
+        }
+      }
+    },
+    {
+      "trial": "b1",
+      "verified_sequence": true,
+      "controller_metrics": {
+        "passed": false,
+        "fell": false,
+        "saturated_steps": 0,
+        "qp_failed_ticks": 0,
+        "qp_relaxed_ticks": 0,
+        "max_ratio": 0.5139990751216936,
+        "max_base_track_mm": 4.251225719608065,
+        "max_tilt_track_deg": 2.718316697496627,
+        "return_error_mm": 1.7988222203549027,
+        "feet_down_at_end": false,
+        "max_stance_slip_mm": {
+          "FL": 1.881,
+          "FR": 1.443,
+          "RL": 0.844,
+          "RR": 1.488
+        },
+        "max_friction_use": {
+          "FL": 0.439,
+          "FR": 0.449,
+          "RL": 0.595,
+          "RR": 0.518
+        },
+        "unexpected_contacts_n": {},
+        "floor_mu": 0.6,
+        "wall_mu": 0.6,
+        "physics": {
+          "timestep": 0.005
+        },
+        "gains_scale": 1.5,
+        "mode": "force",
+        "seconds": 8.6
+      },
+      "last": {
+        "motion_end_s": 8.6,
+        "moved_leg": "RL",
+        "expected_foot_xyz_m": [
+          1.4743603693131488,
+          -0.19285000000000002,
+          1.93
+        ],
+        "actual_foot_xyz_m": [
+          1.4711557032025122,
+          -0.19200772112686304,
+          1.9259534344241547
+        ],
+        "terminal_foot_xy_error_m": 0.0033135054822341597,
+        "base_xyz_m": [
+          1.3844270305760487,
+          -0.017332417547339427,
+          2.391805320595409
+        ],
+        "base_heading_deg": 179.43604718969064,
+        "support": {
+          "time_s": [
+            8.299999999999999,
+            8.6
+          ],
+          "treads": [
+            9,
+            9,
+            10,
+            10
+          ],
+          "all_expected_feet_ge_1n": true,
+          "last_load_n": [
+            124.17126970440754,
+            107.55331043892473,
+            135.38830129818928,
+            113.11550780989272
+          ]
+        }
+      }
+    }
+  ]
+}

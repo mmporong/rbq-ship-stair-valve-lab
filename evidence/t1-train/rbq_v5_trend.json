@@ -1,0 +1,26 @@
+{
+  "run": "logs/rsl_rl/rbq10_rb1_stairs/2026-11-10_12-12-41_v5",
+  "scalars": {
+    "Curriculum/terrain_levels": {
+      "3999": 3.3677
+    },
+    "Train/mean_episode_length": {
+      "3999": 993.65
+    },
+    "Train/mean_reward": {
+      "3999": 33.2563
+    },
+    "Episode_Reward/track_linear_velocity": {
+      "3999": 0.7007
+    },
+    "Episode_Termination/time_out": {
+      "3999": 2.9167
+    },
+    "Episode_Termination/fell_over": {
+      "3999": 0.0417
+    },
+    "Episode_Termination/illegal_contact": {
+      "3999": 0.0
+    }
+  }
+}

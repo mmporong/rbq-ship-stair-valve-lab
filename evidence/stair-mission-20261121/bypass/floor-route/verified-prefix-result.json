@@ -1,0 +1,71 @@
+{
+  "scope": "cold-closed valve walking diagnostic",
+  "duration_s": 107.50000000014924,
+  "timestep_s": 0.001,
+  "cold_initial_hinge_deg": 90.0,
+  "external_force_n": 0.0,
+  "gain": 1.5,
+  "metrics": {
+    "passed": false,
+    "fell": false,
+    "saturated_steps": 0,
+    "qp_failed_ticks": 0,
+    "qp_relaxed_ticks": 4,
+    "max_ratio": 0.895470809889642,
+    "max_base_track_mm": 56.72642737370406,
+    "max_tilt_track_deg": 10.501619848850046,
+    "return_error_mm": 51.73531601593491,
+    "feet_down_at_end": false,
+    "max_stance_slip_mm": {
+      "FL": 6.767,
+      "FR": 5.471,
+      "RL": 4.826,
+      "RR": 2.657
+    },
+    "max_friction_use": {
+      "FL": 1.0,
+      "FR": 1.0,
+      "RL": 1.0,
+      "RR": 1.0
+    },
+    "unexpected_contacts_n": {},
+    "floor_mu": 0.6,
+    "wall_mu": 0.6,
+    "physics": {},
+    "gains_scale": 1.5,
+    "mode": "force",
+    "seconds": 107.50000000000003,
+    "gripper_audit": {
+      "physics_steps": 107500,
+      "finger_clipped_steps": 0,
+      "qpos_write_count_after_start": 0,
+      "qvel_write_count_after_start": 0,
+      "act_write_count_after_start": 0,
+      "mocap_write_count_after_start": 0,
+      "state_reset_count": 0,
+      "max_qfrc_applied_n": 0.0,
+      "max_xfrc_applied_n": 0.0
+    }
+  },
+  "first_lever_contact": null,
+  "peak_lever_contact": {
+    "force_n": 0.0
+  },
+  "first_unexpected_contact_over_10n": null,
+  "peak_unexpected_contact": {
+    "force_n": 0.0
+  },
+  "min_finger_slide_m": [
+    0.040003462867349605,
+    0.04000197703461043
+  ],
+  "raw_sha256": "8261155fc8545ca457373c3e302ca8598a24a464391693e9a78eff043058ac02",
+  "trace_sha256": "1abf1548cb7bb337532d7674192e7443fd08d7b7623d158453faa5d7993cf23c",
+  "valve_angle_range_deg": [
+    90.0,
+    90.0
+  ],
+  "peak_pad_normal_n": 0.0,
+  "peak_pad_torque_nm": 0.0,
+  "first_contact_sample": null
+}

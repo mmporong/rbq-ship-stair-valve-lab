@@ -1,0 +1,64 @@
+{
+  "raw_sha256": [
+    "c5e1481da7b5b0e0b8650c06b45f71605ab746ce205eeedcdb4a77b3df36b0e2",
+    "55f0d9efba6abf00bcde88c7ce1498402bab4163fc0255d6dd73fc1f199c4016"
+  ],
+  "physics_steps": [
+    943895,
+    943895
+  ],
+  "actuation_period_s": [
+    0.005,
+    0.005
+  ],
+  "exact_raw_file_match": false,
+  "scene_field_differences": [],
+  "source_files_changed": [],
+  "checked_raw_fields": [
+    "arm_target_rad",
+    "base_track_m",
+    "base_xyz_m",
+    "ctrl",
+    "feet_xyz_m",
+    "fell",
+    "finger_slide_m",
+    "foot_force_world_n",
+    "foot_friction_use",
+    "foot_normal_force_n",
+    "gripper_open",
+    "handle_axial_position_m",
+    "handle_axis_offset_m",
+    "handle_nonpad_force_n",
+    "hinge_friction_torque_nm",
+    "nominal_arm_target_rad",
+    "pad_closing_tangent_force_n",
+    "pad_closing_torque_nm",
+    "pad_normal_force_n",
+    "pad_surface_gap_m",
+    "qp_attempt",
+    "qpos",
+    "qvel",
+    "requested_finger_force_n",
+    "robot_torque_requested_nm",
+    "signed_hinge_friction_torque_nm",
+    "stage",
+    "stance_slip_m",
+    "time_s",
+    "torque_nm",
+    "tread_load_n",
+    "unexpected_contact_force_n",
+    "valve_angle_deg",
+    "valve_speed_rad_s"
+  ],
+  "unmatched_sensor_fields": [
+    "foot_surface_force_world_n",
+    "joint_force_world_n",
+    "joint_moment_world_nm",
+    "joint_off_axis_bending_nm",
+    "joint_reaction_n",
+    "rb1_mount_wrench_world"
+  ],
+  "raw_differences": {},
+  "same_scene_and_common_samples": true,
+  "same_source_scene_and_common_samples": true
+}

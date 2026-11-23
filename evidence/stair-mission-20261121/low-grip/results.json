@@ -1,0 +1,146 @@
+{
+  "goal": {
+    "resistance_nm": 1.0,
+    "angle_deg": 20.0
+  },
+  "controller_grasp_motion_git_blob": "708cdfe75b53834a90c9c67fa74e5825d9e0a942",
+  "replay_tool_git_blob": "dd131518d4d120092a8fa8fb4b3f18aacd3bb673",
+  "control_stroke_deg": 23,
+  "loaded": {
+    "raw": "loaded.json.gz",
+    "raw_gzip_sha256": "a90f145c021f8e674ecb5fd235552809440e39f5cf8f043c0eba908192e61ffe",
+    "expanded_json_sha256": "140cd955bd946d01d905f88c51a38ced0f16c8d3385f7ab83603e183a26dae8e",
+    "verdict": {
+      "verified": true,
+      "first_failure": null,
+      "failures": [],
+      "measurements": {
+        "max_record_step_s": 0.005000000000000782,
+        "total_saturated_steps": 0,
+        "contact_hold_s": 0.3599999999999923,
+        "low_load_max_angle_deg": 20.42157010207636,
+        "low_load_max_axial_slip_m": 0.00038820018905558196
+      }
+    },
+    "bins": [
+      {
+        "range_deg": [
+          5,
+          10
+        ],
+        "samples": 120,
+        "min_pad_torque_nm": 0.999960915659968,
+        "min_hinge_resistance_nm": 1.0
+      },
+      {
+        "range_deg": [
+          10,
+          15
+        ],
+        "samples": 124,
+        "min_pad_torque_nm": 0.9998939374120348,
+        "min_hinge_resistance_nm": 1.0
+      }
+    ],
+    "ctrl_max_ratio": 0.39196892138418876,
+    "foot_treads": [
+      5,
+      5,
+      3,
+      3
+    ],
+    "samples": 3952
+  },
+  "open_hand": {
+    "raw": "open_hand.json.gz",
+    "raw_gzip_sha256": "9821fcf6c53686c82a2ac0ac8159598a751b7d6209d90c461245ab5e3d45b128",
+    "expanded_json_sha256": "046aee87d2d368704740c752f7f27ad4bdd007248535c1d2e44a2848d3b12627",
+    "verdict": {
+      "verified": false,
+      "first_failure": {
+        "stage": "contact",
+        "time_s": 4.999999999999916,
+        "metric": "two_pad_contact_hold_s",
+        "measured": 0.0,
+        "limit": ">= 0.2",
+        "message": "both pads did not secure the handle"
+      },
+      "failures": [
+        {
+          "stage": "contact",
+          "time_s": 4.999999999999916,
+          "metric": "two_pad_contact_hold_s",
+          "measured": 0.0,
+          "limit": ">= 0.2",
+          "message": "both pads did not secure the handle"
+        },
+        {
+          "stage": "low_load",
+          "time_s": 7.189999999999869,
+          "metric": "two_loaded_pads_n",
+          "measured": 0.0,
+          "limit": 1.0,
+          "message": "both pads must carry the rotating handle"
+        },
+        {
+          "stage": "low_load",
+          "time_s": 7.189999999999869,
+          "metric": "pad_closing_torque_nm",
+          "measured": 0.0,
+          "limit": ">= 0.98",
+          "message": "measured low-load torque is insufficient"
+        },
+        {
+          "stage": "low_load",
+          "time_s": 7.314999999999866,
+          "metric": "two_loaded_pads_n",
+          "measured": 0.0,
+          "limit": 1.0,
+          "message": "both pads must carry the rotating handle"
+        },
+        {
+          "stage": "low_load",
+          "time_s": 7.314999999999866,
+          "metric": "pad_closing_torque_nm",
+          "measured": 0.0,
+          "limit": ">= 0.98",
+          "message": "measured low-load torque is insufficient"
+        }
+      ],
+      "measurements": {
+        "max_record_step_s": 0.005000000000000782,
+        "total_saturated_steps": 0,
+        "contact_hold_s": 0.0,
+        "low_load_max_angle_deg": 38.34927483644779
+      }
+    },
+    "bins": [
+      {
+        "range_deg": [
+          5,
+          10
+        ],
+        "samples": 25,
+        "min_pad_torque_nm": 0.0,
+        "min_hinge_resistance_nm": 1.0
+      },
+      {
+        "range_deg": [
+          10,
+          15
+        ],
+        "samples": 26,
+        "min_pad_torque_nm": 0.0,
+        "min_hinge_resistance_nm": 1.0
+      }
+    ],
+    "ctrl_max_ratio": 0.3962591514212588,
+    "foot_treads": [
+      5,
+      5,
+      3,
+      3
+    ],
+    "samples": 3952
+  }
+}

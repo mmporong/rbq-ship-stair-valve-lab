@@ -1,0 +1,41 @@
+{
+  "scope": "Continuous simulation from the floor, through valve release, until the next walking transfer. Candidate 4, 1 ms physics, 5 ms actuation, 0.5 mm jaw bias.",
+  "source_base_commit": "b704ccf5f19a2ab87efd102fbb7a263f34221f7d",
+  "source_overrides": [
+    {
+      "commit": "e835c8b8406ee4e76085d94a98ac620e2c22ac7b",
+      "paths": [
+        "src/go2_wall/transition.py",
+        "tools/replay_stair_mission.py"
+      ]
+    },
+    {
+      "apply": "jaw-bias.patch",
+      "effective_grasp_sha256_lf": "9d1bd67971fa19a3f5222d48d223455ea6be0ef0949bd2180c695f9bcc4cd960"
+    }
+  ],
+  "reference_walk": {
+    "path": "../full/walk50.npz",
+    "sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac"
+  },
+  "argv": [
+    "python",
+    "tools/replay_stair_mission.py",
+    "OUTPUT",
+    "--walk",
+    "WALK50.npz",
+    "--case",
+    "nominal",
+    "--extent",
+    "through-task",
+    "--timestep",
+    "0.001",
+    "--motion-seconds",
+    "8.75"
+  ],
+  "raw_sha256": "c56b0dca3cd969ed7970c5526dbb39a83032b4434ce0ebd4aaa1b533bb03ed04",
+  "raw_layout": "raw-parts/parts.json",
+  "check": "python tools/verify_stair_replay.py RUN_DIR OUTPUT.json",
+  "source_hashes": "scene.json",
+  "thresholds": "../protocol.json"
+}

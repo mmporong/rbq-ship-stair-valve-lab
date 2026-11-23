@@ -1,0 +1,23 @@
+{
+  "scope": "released_development_only",
+  "new_holdout_accessed": false,
+  "cpu_only": true,
+  "checkpoint": 9100,
+  "checkpoint_sha256": "6d39b7c28c9cdda9c3964c3b37493c3bcd24f81ca46f5e367618a7f264cfc757",
+  "control_steps": 998,
+  "control_timestep_s": 0.02,
+  "time_limit_s": 19.96,
+  "work_stance": {"FL": 5, "FR": 5, "RL": 3, "RR": 3, "hold_s": 0.5},
+  "released_development_cases": 9,
+  "combined": {
+    "ppo": {"work_stance": "0/9", "mean_highest_supported_tread": 1.3333333333333333, "body_collision": "7/9"},
+    "phase25": {"work_stance": "0/9", "mean_highest_supported_tread": 2.0, "body_collision": "5/9"},
+    "phase25_feedback": {"work_stance": "0/9", "mean_highest_supported_tread": 1.6666666666666667, "body_collision": "4/9"}
+  },
+  "illegal_contact_diagnosis": {
+    "identified_events": 16,
+    "only_sensor": "nonfoot_ground_touch_base_link_collision1_force",
+    "rb1_sensor_events": 0
+  },
+  "claim": "No frozen-PPO intervention tested here improved work-stance success."
+}

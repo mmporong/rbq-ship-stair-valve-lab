@@ -1,0 +1,11 @@
+{
+  "verified_from_git_blobs": true,
+  "archive_commit": "d9fda6801c40da55e1455a47120ebe7b5c3e75ae",
+  "remote_ref_checked": "origin refs/heads/main",
+  "remote_head_at_check": "2c91d83ff3a222bc2919c3156b93920ebcff5ec4",
+  "archive_commit_reachable_from_checked_head": true,
+  "notes": "Local Git object bytes at the published commit were streamed in manifest order. The listed remote tip contained that commit.",
+  "parts": 39,
+  "bytes": 1960454163,
+  "raw_sha256": "9e338635a2c193423795744222b7394322e72fed448d448d7e1d4bf5838ebffd"
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "dev-03",
+  "candidate_id": "teacher_open_loop",
+  "state_sha256": "fb35c3b19be3a7243c871be806ec63446904c74e4960835d3a8260c12267b2ae",
+  "strict_success": false,
+  "complete_horizon": false,
+  "outcome": "early_termination",
+  "first_failure": "terrain_body_contact",
+  "simulated_s": 2.215,
+  "maximum_angle_deg": 0.0
+}

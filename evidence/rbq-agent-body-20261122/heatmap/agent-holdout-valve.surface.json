@@ -1,0 +1,9 @@
+{
+  "method": "MuJoCo geom segmentation plus depth reprojected onto the trunk axis; thin-wall section stress from the four hip and RB1 mount wrenches",
+  "base_geom_ids": [
+    14,
+    15
+  ],
+  "added_overlay_geoms": 0,
+  "samples": []
+}

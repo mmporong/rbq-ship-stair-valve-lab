@@ -1,0 +1,433 @@
+{
+  "runs": [
+    {
+      "name": "over_tread_0",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.14",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.14166666666666666,
+      "planned_time_s": 38.03999999999999,
+      "max_foot_ik_error_m": 0.006053816895656918,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.16610213459788709,
+        -0.029999999999999992,
+        0.7625000000000001
+      ],
+      "candidate": {
+        "base": [
+          0.16610213459788709,
+          -0.029999999999999992,
+          0.7625000000000001,
+          0.8377580409572781
+        ],
+        "pitch_offset_deg": 13.0,
+        "offset_xyz_m": [
+          0.02000000000000001,
+          0.030000000000000006,
+          0.015
+        ],
+        "unload_ratio": 0.3278163254891792,
+        "swing_ratio": 0.3020985750436521
+      }
+    },
+    {
+      "name": "over_tread_1",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.12",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.125,
+      "planned_time_s": 37.999999999999986,
+      "max_foot_ik_error_m": 0.004341772077640216,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.16610213459788709,
+        -0.029999999999999992,
+        0.7625000000000001
+      ],
+      "candidate": {
+        "base": [
+          0.16610213459788709,
+          -0.029999999999999992,
+          0.7625000000000001,
+          0.8552113334772214
+        ],
+        "pitch_offset_deg": 14.0,
+        "offset_xyz_m": [
+          0.02000000000000001,
+          0.030000000000000006,
+          0.015
+        ],
+        "unload_ratio": 0.34154853142640157,
+        "swing_ratio": 0.29648546441292556
+      }
+    },
+    {
+      "name": "over_tread_2",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.12",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.125,
+      "planned_time_s": 37.999999999999986,
+      "max_foot_ik_error_m": 0.007759812251596082,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.16610213459788709,
+        -0.029999999999999992,
+        0.7575000000000001
+      ],
+      "candidate": {
+        "base": [
+          0.16610213459788709,
+          -0.029999999999999992,
+          0.7575000000000001,
+          0.8552113334772214
+        ],
+        "pitch_offset_deg": 14.0,
+        "offset_xyz_m": [
+          0.02000000000000001,
+          0.030000000000000006,
+          0.01
+        ],
+        "unload_ratio": 0.3494783236971498,
+        "swing_ratio": 0.2973017953713713
+      }
+    },
+    {
+      "name": "over_tread_3",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.12",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.11666666666666667,
+      "planned_time_s": 37.97999999999999,
+      "max_foot_ik_error_m": 0.0029844317082533874,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.16610213459788709,
+        -0.029999999999999992,
+        0.7525000000000001
+      ],
+      "candidate": {
+        "base": [
+          0.16610213459788709,
+          -0.029999999999999992,
+          0.7525000000000001,
+          0.8552113334772214
+        ],
+        "pitch_offset_deg": 14.0,
+        "offset_xyz_m": [
+          0.02000000000000001,
+          0.030000000000000006,
+          0.005
+        ],
+        "unload_ratio": 0.3570804242645119,
+        "swing_ratio": 0.29808246926103726
+      }
+    },
+    {
+      "name": "over_tread_4",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.15",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.15,
+      "planned_time_s": 38.05999999999999,
+      "max_foot_ik_error_m": 0.0029273582557775664,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.16610213459788709,
+        -0.019999999999999983,
+        0.7625000000000001
+      ],
+      "candidate": {
+        "base": [
+          0.16610213459788709,
+          -0.019999999999999983,
+          0.7625000000000001,
+          0.8377580409572781
+        ],
+        "pitch_offset_deg": 13.0,
+        "offset_xyz_m": [
+          0.02000000000000001,
+          0.040000000000000015,
+          0.015
+        ],
+        "unload_ratio": 0.3805082731411216,
+        "swing_ratio": 0.3333410405995014
+      }
+    },
+    {
+      "name": "over_tread_5",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.14",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.14166666666666666,
+      "planned_time_s": 38.03999999999999,
+      "max_foot_ik_error_m": 0.010098282837229047,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.16610213459788709,
+        -0.019999999999999983,
+        0.7625000000000001
+      ],
+      "candidate": {
+        "base": [
+          0.16610213459788709,
+          -0.019999999999999983,
+          0.7625000000000001,
+          0.8552113334772214
+        ],
+        "pitch_offset_deg": 14.0,
+        "offset_xyz_m": [
+          0.02000000000000001,
+          0.040000000000000015,
+          0.015
+        ],
+        "unload_ratio": 0.3957001639611258,
+        "swing_ratio": 0.3268861979345646
+      }
+    },
+    {
+      "name": "over_tread_6",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.13",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.13333333333333333,
+      "planned_time_s": 38.01999999999999,
+      "max_foot_ik_error_m": 0.004901740874584334,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.16610213459788709,
+        -0.019999999999999983,
+        0.7575000000000001
+      ],
+      "candidate": {
+        "base": [
+          0.16610213459788709,
+          -0.019999999999999983,
+          0.7575000000000001,
+          0.8552113334772214
+        ],
+        "pitch_offset_deg": 14.0,
+        "offset_xyz_m": [
+          0.02000000000000001,
+          0.040000000000000015,
+          0.01
+        ],
+        "unload_ratio": 0.40344303156070177,
+        "swing_ratio": 0.3277124599607283
+      }
+    },
+    {
+      "name": "over_tread_7",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.13",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.13333333333333333,
+      "planned_time_s": 38.01999999999999,
+      "max_foot_ik_error_m": 0.008688172639130637,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.16610213459788709,
+        -0.019999999999999983,
+        0.7525000000000001
+      ],
+      "candidate": {
+        "base": [
+          0.16610213459788709,
+          -0.019999999999999983,
+          0.7525000000000001,
+          0.8552113334772214
+        ],
+        "pitch_offset_deg": 14.0,
+        "offset_xyz_m": [
+          0.02000000000000001,
+          0.040000000000000015,
+          0.005
+        ],
+        "unload_ratio": 0.41086482534033913,
+        "swing_ratio": 0.3285072360141278
+      }
+    },
+    {
+      "name": "over_tread_8",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.11",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.10833333333333334,
+      "planned_time_s": 37.95999999999999,
+      "max_foot_ik_error_m": 0.002849555138985006,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.15610213459788708,
+        -0.04999999999999999,
+        0.7625000000000001
+      ],
+      "candidate": {
+        "base": [
+          0.15610213459788708,
+          -0.04999999999999999,
+          0.7625000000000001,
+          0.8552113334772214
+        ],
+        "pitch_offset_deg": 14.0,
+        "offset_xyz_m": [
+          0.010000000000000009,
+          0.010000000000000009,
+          0.015
+        ],
+        "unload_ratio": 0.5129179720629993,
+        "swing_ratio": 0.28217379770749124
+      }
+    },
+    {
+      "name": "over_tread_9",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.11",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.10833333333333334,
+      "planned_time_s": 37.95999999999999,
+      "max_foot_ik_error_m": 0.00580855083129518,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.15610213459788708,
+        -0.04999999999999999,
+        0.7575000000000001
+      ],
+      "candidate": {
+        "base": [
+          0.15610213459788708,
+          -0.04999999999999999,
+          0.7575000000000001,
+          0.8552113334772214
+        ],
+        "pitch_offset_deg": 14.0,
+        "offset_xyz_m": [
+          0.010000000000000009,
+          0.010000000000000009,
+          0.01
+        ],
+        "unload_ratio": 0.5223463537130177,
+        "swing_ratio": 0.28550800326148107
+      }
+    },
+    {
+      "name": "over_tread_10",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.07",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.06666666666666667,
+      "planned_time_s": 37.859999999999985,
+      "max_foot_ik_error_m": 6.5171440376276e-09,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.15610213459788708,
+        -0.03999999999999999,
+        0.7675000000000001
+      ],
+      "candidate": {
+        "base": [
+          0.15610213459788708,
+          -0.03999999999999999,
+          0.7675000000000001,
+          0.8203047484373349
+        ],
+        "pitch_offset_deg": 12.0,
+        "offset_xyz_m": [
+          0.010000000000000009,
+          0.02000000000000001,
+          0.02
+        ],
+        "unload_ratio": 0.5386181481379507,
+        "swing_ratio": 0.2998119919891614
+      }
+    },
+    {
+      "name": "over_tread_11",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.04",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.041666666666666664,
+      "planned_time_s": 37.79999999999999,
+      "max_foot_ik_error_m": 4.6719091428017957e-07,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.15610213459788708,
+        -0.03999999999999999,
+        0.7625000000000001
+      ],
+      "candidate": {
+        "base": [
+          0.15610213459788708,
+          -0.03999999999999999,
+          0.7625000000000001,
+          0.8203047484373349
+        ],
+        "pitch_offset_deg": 12.0,
+        "offset_xyz_m": [
+          0.010000000000000009,
+          0.02000000000000001,
+          0.015
+        ],
+        "unload_ratio": 0.548104451190537,
+        "swing_ratio": 0.3008820248015818
+      }
+    },
+    {
+      "name": "over_tread_12",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.08",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.08333333333333333,
+      "planned_time_s": 37.89999999999999,
+      "max_foot_ik_error_m": 0.005345067016634738,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.14610213459788707,
+        -0.07999999999999999,
+        0.7625000000000001
+      ],
+      "candidate": {
+        "base": [
+          0.14610213459788707,
+          -0.07999999999999999,
+          0.7625000000000001,
+          0.8552113334772214
+        ],
+        "pitch_offset_deg": 14.0,
+        "offset_xyz_m": [
+          6.938893903907228e-18,
+          -0.019999999999999997,
+          0.015
+        ],
+        "unload_ratio": 0.6526968992795787,
+        "swing_ratio": 0.3396097796219227
+      }
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "plan": "four-feet-plan.json",
+  "varied_move": "last RL",
+  "cases": [
+    {
+      "last_shift_s": 1.5,
+      "verified_sequence": false,
+      "seconds": 37.59999999999999,
+      "fell": false,
+      "torque_ratio": 0.7032288565097059,
+      "saturated_steps": 0,
+      "qp_relaxed_ticks": 4,
+      "nonfoot_contact_n": {
+        "base+world": 1265.808436628507
+      },
+      "max_stance_slip_mm": 25.337,
+      "max_base_tracking_error_mm": 41.79942941121344,
+      "final_milestone": {
+        "motion_end_s": 37.6,
+        "moved_leg": "RL",
+        "expected_foot_xyz_m": [
+          0.0635,
+          0.19285,
+          0.22
+        ],
+        "actual_foot_xyz_m": [
+          0.06173159231788193,
+          0.19444186379056605,
+          0.21934904804279048
+        ],
+        "terminal_foot_xy_error_m": 0.002379347821964989,
+        "base_xyz_m": [
+          0.21169997315122605,
+          -0.06007578464602188,
+          0.748111317186356
+        ],
+        "support": {
+          "time_s": [
+            37.300000000000004,
+            37.6
+          ],
+          "treads": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "all_expected_feet_ge_1n": true,
+          "last_load_n": [
+            130.9212033635253,
+            202.39430513981605,
+            44.23332583003301,
+            102.67090465171688
+          ]
+        }
+      }
+    },
+    {
+      "last_shift_s": 2.5,
+      "verified_sequence": true,
+      "seconds": 38.59999999999999,
+      "fell": false,
+      "torque_ratio": 0.4588767955599105,
+      "saturated_steps": 0,
+      "qp_relaxed_ticks": 0,
+      "nonfoot_contact_n": {},
+      "max_stance_slip_mm": 5.118,
+      "max_base_tracking_error_mm": 17.82948876731669,
+      "final_milestone": {
+        "motion_end_s": 38.6,
+        "moved_leg": "RL",
+        "expected_foot_xyz_m": [
+          0.0635,
+          0.19285,
+          0.22
+        ],
+        "actual_foot_xyz_m": [
+          0.06174495205426799,
+          0.19434070171489692,
+          0.2192885416921242
+        ],
+        "terminal_foot_xy_error_m": 0.0023026907944000636,
+        "base_xyz_m": [
+          0.21168594806546365,
+          -0.05886871077037775,
+          0.7486428194429754
+        ],
+        "support": {
+          "time_s": [
+            38.300000000000004,
+            38.6
+          ],
+          "treads": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "all_expected_feet_ge_1n": true,
+          "last_load_n": [
+            130.08286497980967,
+            202.22837275790448,
+            45.85729712565459,
+            102.05231099567536
+          ]
+        }
+      }
+    },
+    {
+      "last_shift_s": 3.5,
+      "verified_sequence": true,
+      "seconds": 39.59999999999999,
+      "fell": false,
+      "torque_ratio": 0.4588767955599105,
+      "saturated_steps": 0,
+      "qp_relaxed_ticks": 0,
+      "nonfoot_contact_n": {},
+      "max_stance_slip_mm": 4.98,
+      "max_base_tracking_error_mm": 17.82948876731669,
+      "final_milestone": {
+        "motion_end_s": 39.6,
+        "moved_leg": "RL",
+        "expected_foot_xyz_m": [
+          0.0635,
+          0.19285,
+          0.22
+        ],
+        "actual_foot_xyz_m": [
+          0.06174504897260781,
+          0.19436106484527196,
+          0.21928601498915923
+        ],
+        "terminal_foot_xy_error_m": 0.0023158519113193974,
+        "base_xyz_m": [
+          0.2116088499933225,
+          -0.05897293041524388,
+          0.7485795776170652
+        ],
+        "support": {
+          "time_s": [
+            39.300000000000004,
+            39.6
+          ],
+          "treads": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "all_expected_feet_ge_1n": true,
+          "last_load_n": [
+            130.12373766859645,
+            201.9393365469887,
+            45.92375417562279,
+            102.23375550570496
+          ]
+        }
+      }
+    },
+    {
+      "last_shift_s": 4.5,
+      "verified_sequence": true,
+      "seconds": 40.59999999999999,
+      "fell": false,
+      "torque_ratio": 0.4588767955599105,
+      "saturated_steps": 0,
+      "qp_relaxed_ticks": 0,
+      "nonfoot_contact_n": {},
+      "max_stance_slip_mm": 4.957,
+      "max_base_tracking_error_mm": 17.82948876731669,
+      "final_milestone": {
+        "motion_end_s": 40.6,
+        "moved_leg": "RL",
+        "expected_foot_xyz_m": [
+          0.0635,
+          0.19285,
+          0.22
+        ],
+        "actual_foot_xyz_m": [
+          0.061768383580609626,
+          0.1943811353730945,
+          0.21928913816592538
+        ],
+        "terminal_foot_xy_error_m": 0.0023114651099775717,
+        "base_xyz_m": [
+          0.21164725893606925,
+          -0.05902454734879993,
+          0.7480583409185273
+        ],
+        "support": {
+          "time_s": [
+            40.300000000000004,
+            40.6
+          ],
+          "treads": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "all_expected_feet_ge_1n": true,
+          "last_load_n": [
+            130.32227019233787,
+            201.54332686881241,
+            45.83877266697499,
+            102.51410105779757
+          ]
+        }
+      }
+    }
+  ]
+}

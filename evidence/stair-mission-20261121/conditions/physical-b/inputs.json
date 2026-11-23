@@ -1,0 +1,81 @@
+{
+  "protocol": "../../protocol.json",
+  "replay_source_commit": "874f3bee820322502f0025180c4f279308d353c0",
+  "walking_reference_source_commit": "25117a003b785a0358ae77eaf2dd61628edf6d84",
+  "reference_npz_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+  "normalization": "Source digests use LF. Scene and raw trace digests cover exact bytes.",
+  "process": "Fresh MuJoCo CPU process starts on the floor for each executed condition and extent.",
+  "control_period_s": 0.005,
+  "physics_timestep_nominal_s": 0.005,
+  "physics_timestep_refinement_s": 0.0025,
+  "command_prefix": [
+    "python",
+    "tools/replay_stair_mission.py",
+    "OUTPUT",
+    "--walk",
+    "WALK50.npz",
+    "--extent",
+    "through-task"
+  ],
+  "case_arguments": {
+    "nominal": [
+      "--case",
+      "nominal",
+      "--capture-loads"
+    ],
+    "floor_mu_050": [
+      "--case",
+      "floor_mu_050"
+    ],
+    "floor_mu_080": [
+      "--case",
+      "floor_mu_080"
+    ],
+    "resistance_5": [
+      "--case",
+      "resistance_5"
+    ],
+    "resistance_15": [
+      "--case",
+      "resistance_15"
+    ],
+    "sensitivity_lever_m_0_1": [
+      "--handle-length-m",
+      "0.1"
+    ],
+    "sensitivity_lever_m_0_14": [
+      "--handle-length-m",
+      "0.14"
+    ],
+    "sensitivity_pad_mu_0_6": [
+      "--pad-mu",
+      "0.6"
+    ],
+    "sensitivity_pad_mu_1": [
+      "--pad-mu",
+      "1.0"
+    ],
+    "sensitivity_finger_force_limit_n_75": [
+      "--finger-force-n",
+      "75"
+    ],
+    "sensitivity_finger_slide_frictionloss_n_15": [
+      "--slide-loss-n",
+      "15"
+    ],
+    "sensitivity_arm_limits_named_lims_ex_joint_limits": [
+      "--arm-limits",
+      "lims-ex"
+    ],
+    "sensitivity_timestep_s_0_0025": [
+      "--timestep",
+      "0.0025"
+    ],
+    "sensitivity_impratio_10": [
+      "--impratio",
+      "10"
+    ]
+  },
+  "physical_success_requires_full_replay": true,
+  "baseline_shared_channels": "nominal/through-task/matched-five-ms.json"
+}

@@ -1,0 +1,7 @@
+{
+  "protocol_id": "rbq-host-ab-v1",
+  "case_count": 6,
+  "canonicalization": "UTF-8 JSON, sort_keys=true, separators=(',', ':'), ensure_ascii=false",
+  "case_set_sha256": "b0dda94ef453e0eae930fe9d68c407793cd8235ae320dd884042c00a24bdd39f",
+  "revealed_before_agent_selection": false
+}

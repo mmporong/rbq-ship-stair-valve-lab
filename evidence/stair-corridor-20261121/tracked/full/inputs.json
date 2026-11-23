@@ -1,0 +1,83 @@
+{
+  "controller_commit": "fcdf5d881b17c6b3d46490350a6ee2b340d932d7",
+  "walking_reference": "evidence/stair-corridor-20261121/tracked/walk50.npz",
+  "walking_sha256": "0ce148501742caacaeebfcf95caafbd8bdb3dd0a9f93c710b64bbc6e6bc8b5c6",
+  "physical_step_s": 0.001,
+  "motor_step_s": 0.005,
+  "structural_observer": "first",
+  "common_channels": [
+    "arm_target_rad",
+    "base_track_m",
+    "base_xyz_m",
+    "ctrl",
+    "feet_xyz_m",
+    "fell",
+    "finger_slide_m",
+    "foot_force_world_n",
+    "foot_friction_use",
+    "foot_normal_force_n",
+    "gripper_open",
+    "handle_axial_position_m",
+    "handle_axis_offset_m",
+    "handle_nonpad_force_n",
+    "hinge_friction_torque_nm",
+    "nominal_arm_target_rad",
+    "pad_closing_tangent_force_n",
+    "pad_closing_torque_nm",
+    "pad_normal_force_n",
+    "pad_surface_gap_m",
+    "qp_attempt",
+    "qpos",
+    "qvel",
+    "requested_finger_force_n",
+    "robot_torque_requested_nm",
+    "signed_hinge_friction_torque_nm",
+    "stage",
+    "stance_slip_m",
+    "time_s",
+    "torque_nm",
+    "tread_load_n",
+    "unexpected_contact_force_n",
+    "valve_angle_deg",
+    "valve_speed_rad_s"
+  ],
+  "common_source_files": 13,
+  "raw": [
+    {
+      "relative_local_file": ".omx/mission-success-20261121/rated-full-a/mission.npz",
+      "bytes": 1879559101,
+      "sha256": "cd66300d85d761770d9d1dd643c238d306c43440bc0700844b56a69a50d64410"
+    },
+    {
+      "relative_local_file": ".omx/mission-success-20261121/rated-full-b/mission.npz",
+      "bytes": 699493508,
+      "sha256": "56acf0ade185bd8039dd66098c9397e0997c0e8dbe9c97281f04294dff9b53c6"
+    }
+  ],
+  "common_arguments": [
+    "--extent",
+    "full",
+    "--corridor-feedback",
+    "--timestep",
+    ".001",
+    "--motion-seconds",
+    "9",
+    "--jaw-load-bias-m",
+    ".0005",
+    "--stance-spring-gain-n-per-m",
+    "2500",
+    "--terminal-overtravel-deg",
+    "1.2",
+    "--low-run",
+    "evidence/stair-mission-20261121/conditions/physical-b/low-control/frozen-grip-loaded.json.gz"
+  ],
+  "archive": "first/local-archive-manifest.json",
+  "repeat_reconstruction": "restore-without-loads verified against the independently generated second file",
+  "archive_storage": {
+    "location": "local workspace",
+    "directory": ".omx/mission-success-20261121/rated-full-a/raw-parts-verified",
+    "local_first_and_repeat_digests_verified": true,
+    "recalculate": "Use controller_commit, walking_reference and common_arguments above. Supply --capture-loads for the first recording.",
+    "public_full_recording_for_route_with_local_corrections": "../../local-repair/full/first/raw-parts/parts.json"
+  }
+}

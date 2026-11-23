@@ -1,0 +1,141 @@
+{
+  "study_sha256": "4be86dc565e9da8581f1fc8ef6c70acf43f2dc7133c94ebeff0c8045f27786b0",
+  "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+  "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+  "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+  "scoring_source_sha256": "a67d4ddd84f9076b00c907e6746c9e3d02253de513e777801d1a4e9a6bcf246a",
+  "trials": [
+    {
+      "case_id": "reward-holdout-01",
+      "candidate_id": "initial_no_ppo",
+      "state_sha256": "cf092fd56d3834cd7ca869a754b7148d79a9ed6bfa56fa6679bb496b9170e2f5",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 7.6770000000000005,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "reward-holdout-02",
+      "candidate_id": "initial_no_ppo",
+      "state_sha256": "d6334de6bc22f10dff59a51aeebf9326797e2e61794aefe0760b79a3aa9f56ed",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 7.247,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "reward-holdout-03",
+      "candidate_id": "initial_no_ppo",
+      "state_sha256": "4e04594379fe56fc4d0e7e32b8292605af8f1087a3a81f18d037806b47dbd31d",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 4.94,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "reward-holdout-04",
+      "candidate_id": "initial_no_ppo",
+      "state_sha256": "2cb5ef9b6c63686363682debed75dc6ab5053280abdf8d66baebed39794d4d0b",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 5.877,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "reward-holdout-05",
+      "candidate_id": "initial_no_ppo",
+      "state_sha256": "09da66ffd419953f36f0c5f0d44a6b9824e3e13c013e10880b0a94c1a997e98c",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "fall",
+      "simulated_s": 7.841,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "reward-holdout-06",
+      "candidate_id": "initial_no_ppo",
+      "state_sha256": "a085383cda4cc1c0e262a7156272dd2676bff7882aaa72727a6ceaecfa3442e3",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 5.508,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "reward-holdout-07",
+      "candidate_id": "initial_no_ppo",
+      "state_sha256": "0bf03343b63bb329365b75a264007fa649941e86c2bd273d6f8fbfeb0c76a31e",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 4.932,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "reward-holdout-08",
+      "candidate_id": "initial_no_ppo",
+      "state_sha256": "2de51673169b52d26205b2bc8c0f2cfcfd074d3a8858afa0816719bdd2993d65",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 7.586,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "reward-holdout-09",
+      "candidate_id": "initial_no_ppo",
+      "state_sha256": "e1ee3600ce39c0ceb6a138c39cde875b04d09aaa07f10bfdcdf42192b267b661",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 7.6690000000000005,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "reward-holdout-10",
+      "candidate_id": "initial_no_ppo",
+      "state_sha256": "16d498b1a115d53209dd700ee86fc1daa2dfa87d9c309ab08df85c2ba48fbde5",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "fall",
+      "simulated_s": 5.186,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "reward-holdout-11",
+      "candidate_id": "initial_no_ppo",
+      "state_sha256": "52f72ed819a4a6790810875d2ebc15a65d9bf13e423d2d16cf408730ec933233",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 5.105,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "reward-holdout-12",
+      "candidate_id": "initial_no_ppo",
+      "state_sha256": "a8bc0341b0fd3c2095e21a91ad20019a3745416fdb4601126227a27cbf2aeff3",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 7.675,
+      "maximum_angle_deg": 0.0
+    }
+  ]
+}

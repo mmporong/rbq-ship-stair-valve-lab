@@ -1,0 +1,111 @@
+{
+  "walk_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+  "common_replay": "../../tracked/segments/replay.py",
+  "physics_step_s": 0.001,
+  "actuation_step_s": 0.005,
+  "recorded_interval_s": 0.01,
+  "initialization": "Each segment starts at its scheduled stair pose, with the passive valve closed at 90 degrees and the hand open. Neither segment starts on the floor. Start-floor-specific checks in the general walking report do not describe these initial conditions.",
+  "landing_rule": "All prescribed feet have at least 1 N normal load on their intended surfaces in the landing observation window.",
+  "rows": [
+    {
+      "direction": "up",
+      "source_walk_interval_s": [
+        89.6,
+        189.6
+      ],
+      "segment_duration_s": 198.265,
+      "physics_steps": 198265,
+      "saved_samples": 19827,
+      "raw_sha256": "524d6e9baf728e08ddf1ddf522ea30e1c9c061fc7f8cd8dadb285b6380e62e31",
+      "landings": 19,
+      "supported_landings": 19,
+      "fell": false,
+      "recorded_hinge_range_deg": [
+        90.0,
+        90.0
+      ],
+      "any_forbidden_lever_contact": false,
+      "unexpected_contacts_n": {
+        "FL_calf+world": 136.58188779888982,
+        "FR_calf+RB1_Shoulder_Pitch": 4.442902059791892
+      },
+      "peak_stance_slip_mm": {
+        "FL": 23.781,
+        "FR": 8.143,
+        "RL": 13.887,
+        "RR": 7.185
+      },
+      "peak_base_track_mm": 23.92950904083222,
+      "saturated_steps": 0,
+      "failed_force_distributions": 0,
+      "relaxed_force_distributions": 512,
+      "max_applied_joint_limit_ratio": 0.8818227121382232
+    },
+    {
+      "direction": "down",
+      "source_walk_interval_s": [
+        544.6,
+        651.7
+      ],
+      "segment_duration_s": 213.82500000000005,
+      "physics_steps": 213825,
+      "saved_samples": 21383,
+      "raw_sha256": "3ac51477569678b85382211bcb0f81458e658e11b4fd71f62f7dc8014f82a6b9",
+      "landings": 21,
+      "supported_landings": 21,
+      "fell": false,
+      "recorded_hinge_range_deg": [
+        90.0,
+        90.0
+      ],
+      "any_forbidden_lever_contact": false,
+      "unexpected_contacts_n": {},
+      "peak_stance_slip_mm": {
+        "FL": 15.258,
+        "FR": 7.28,
+        "RL": 16.893,
+        "RR": 9.639
+      },
+      "peak_base_track_mm": 9.344004316886016,
+      "saturated_steps": 0,
+      "failed_force_distributions": 7,
+      "relaxed_force_distributions": 99,
+      "max_applied_joint_limit_ratio": 0.8168024895416509
+    }
+  ],
+  "independent_ascent_replay": {
+    "checked_fields": [
+      "time",
+      "base",
+      "qpos",
+      "qvel",
+      "feet",
+      "loads",
+      "slip",
+      "track",
+      "unexpected",
+      "hinge",
+      "attempt",
+      "fell"
+    ],
+    "exact_raw_file_match": true,
+    "raw_sha256": "524d6e9baf728e08ddf1ddf522ea30e1c9c061fc7f8cd8dadb285b6380e62e31",
+    "local_probe": ".omx/mission-success-20261121/minimal-corridor/minimal-final-up-1896.npz"
+  },
+  "discarded_input_effect": {
+    "discarded_recording_sha256": "f89b53c5a92348f1b9bbdb3701cfce3eacc97b65313197954826e41d4f14f886",
+    "zero_force_recording_sha256": "524d6e9baf728e08ddf1ddf522ea30e1c9c061fc7f8cd8dadb285b6380e62e31",
+    "sample_count": 19827,
+    "maximum_change_in_recorded_foot_surface_load_n": 16.947984622352635,
+    "at_command_time_s": 136.74,
+    "leg": "FR",
+    "surface_index": 8
+  },
+  "all_step_lever_contact_measurement": {
+    "report": "contact-audit/summary.json",
+    "physics_steps": 412090,
+    "lever_contact_ticks": 0,
+    "observed_pairs": "Upper pad, lower pad, and all non-pad lever contacts just after each physics step.",
+    "instrumented_replays_match_preserved_segment_bytes": true
+  }
+}

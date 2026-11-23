@@ -1,0 +1,226 @@
+{
+  "total_mass_kg": {
+    "value": 2.37,
+    "grade": "official",
+    "source": "https://unitree.com/D1-T (Weight: About 2.37Kg)"
+  },
+  "rated_payload_kg": {
+    "value": 0.5,
+    "grade": "official",
+    "source": "https://unitree.com/D1-T (Payload: 500g)"
+  },
+  "reach_without_gripper_m": {
+    "value": 0.55,
+    "grade": "official",
+    "source": "https://unitree.com/D1-T (Reach: 550mm, gripper not included)"
+  },
+  "reach_with_gripper_m": {
+    "value": 0.67,
+    "grade": "official",
+    "source": "https://unitree.com/D1-T (Reach: 670mm, gripper included)"
+  },
+  "servo_count": {
+    "value": 7,
+    "grade": "public_model",
+    "source": "Caltech SURF report 2025: seven servo positions; gripper is one servo"
+  },
+  "mount_offset_on_go2_base_m": {
+    "value": [
+      0.0,
+      0.0,
+      0.055
+    ],
+    "grade": "public_model",
+    "source": "nayon007/Loco-Manipulation-with-RL-for-Go2-D1-Robot go2d1.urdf, joint z1_to_go2"
+  },
+  "front_bracket": {
+    "value": {
+      "mount_forward_m": 0.15,
+      "plate_rear_x_m": -0.04,
+      "plate_ahead_of_arm_m": 0.035,
+      "plate_width_m": 0.08,
+      "plate_thickness_m": 0.006
+    },
+    "grade": "assumption",
+    "source": "Decision D1 (2026-11-08): move the arm 150 mm forward on a plate bolted to the stock mount, chosen from evidence/s4-mount-study. Plate spans 40 mm behind the stock mount (x=0) to 35 mm ahead of the arm axis (x=0.15) and stays inside the trunk box (half-length 0.1881 m). The arm sits on the plate, so the mount rises by the plate thickness. The S9 beam estimate gives at most 14.5 MPa at the bolt line (safety factor 19 to 6061-T6 yield); hole stresses and deflection are not computed."
+  },
+  "aluminum_density_kg_m3": {
+    "value": 2700,
+    "grade": "derived",
+    "source": "Standard density of 6061 aluminum, 2.70 g/cm3. Plate mass = density x plate volume."
+  },
+  "joint_velocity_limit_rad_s": {
+    "value": [
+      1.05,
+      1.05,
+      1.05,
+      1.73,
+      1.73,
+      1.73
+    ],
+    "grade": "public_model",
+    "source": "d1_550_description.urdf; osudrl go2_d1.py uses 100 deg/s"
+  },
+  "joint_torque_limit_public_nm": {
+    "urdf": [
+      3.33,
+      3.33,
+      3.33,
+      1.67,
+      1.67,
+      1.67
+    ],
+    "osu": [
+      4.9,
+      4.9,
+      4.9,
+      4.9,
+      4.9,
+      4.9
+    ],
+    "grade": "public_model",
+    "source": "d1_550_description.urdf and osudrl go2_d1.py. Both conflict with official mass and payload; see docs/parameters.md"
+  },
+  "arm_torque_lower_bound_nm": {
+    "value": [
+      9.9683,
+      9.9683,
+      9.9683,
+      1.5548,
+      1.5548,
+      1.5548
+    ],
+    "grade": "derived",
+    "formula": "Rated payload held at full reach, largest over both mass cases, grouped by URDF torque class. Reproduce with go2_wall.d1_estimate. Depends on the assumption that 500g is rated at full reach"
+  },
+  "mass_distribution_cases": {
+    "scaled": "Scale all URDF link masses and inertias by total_mass_kg / URDF mass",
+    "servo_lumped": "Keep URDF links and split the missing mass equally over servo_count servos at joint origins",
+    "grade": "derived",
+    "source": "Official total mass with URDF link geometry. The true split is unknown, so both cases bound it"
+  },
+  "gripper_tip_from_joint6_m": {
+    "value": 0.1286,
+    "grade": "public_model",
+    "source": "D1 finger mesh: URDF finger origin 0.0718 plus mesh extent 0.0568. Gives 682 mm reach against the official 670 mm"
+  },
+  "payload_point_from_joint6_m": {
+    "value": 0.1002,
+    "grade": "derived",
+    "formula": "Midpoint of the URDF finger origin 0.0718 and the finger tip 0.1286"
+  },
+  "arm_joint_damping_nms_rad": {
+    "value": 0.1,
+    "grade": "assumption",
+    "source": "No public value. Compare before using results that depend on it"
+  },
+  "arm_joint_armature_kgm2": {
+    "value": 0.005,
+    "grade": "assumption",
+    "source": "No public value. Compare before using results that depend on it"
+  },
+  "lever_scene": {
+    "value": {
+      "hinge_height_m": 1.28,
+      "handle_length_m": 0.12,
+      "handle_radius_m": 0.012,
+      "handle_mass_kg": 0.1,
+      "target_deg": 40.0,
+      "tip_force_n": 5.0,
+      "contact_from_hinge_m": 0.1
+    },
+    "grade": "assumption",
+    "source": "Scene choice for S7 (2026-11-08). Hinge height puts the handle start above the four-leg reach (1.20 m reachable, 1.25 m not, at x 0.60-0.66 m) and inside the wall-braced reach (1.30 m). Tip force 5 N is inside the D2 recommendation (below 10 N); D2 is still open, so the lever resistance is an assumption and is varied in S8."
+  },
+  "aluminum_6061_t6_yield_mpa": {
+    "value": 276,
+    "grade": "derived",
+    "source": "Minimum tensile yield strength of 6061-T6 aluminium plate, 276 MPa (ASTM B209 / ASM Aluminum Handbook). The bracket alloy is an assumption of the S9 load study."
+  },
+  "bracket_bolt_line": {
+    "value": {
+      "cantilever_m": 0.15
+    },
+    "grade": "assumption",
+    "source": "S9 assumes the plate is held only at the stock mount bolts, 0.15 m behind the arm, and ignores support from the trunk top. This overestimates bending, so stresses are upper bounds."
+  },
+  "ball_valve_operating_torque_nm": {
+    "value": {
+      "quarter_inch": 10.0,
+      "half_inch_reduced_bore": 10.0,
+      "half_inch_full_bore": 15.0,
+      "one_inch_reduced_bore": 25.0
+    },
+    "grade": "official",
+    "source": "Spirax Sarco M10HP Ball Valve DN1/4\" to DN2\", TI-P133-45 CMGT Issue 10, page 4 (UK Product Handbook 2026 Vol. 2, ebooks.spiraxsarco.com/view/77580004/940). Operating torque for frequently operated valves at maximum differential pressure; valves left static may need more break-out torque. Size-to-value pairing was read from extracted text by position."
+  },
+  "ship_stair": {
+    "value": {
+      "slopes_deg": [
+        50,
+        60,
+        70
+      ],
+      "rises_m": [
+        0.165,
+        0.2,
+        0.235,
+        0.27,
+        0.305
+      ],
+      "tread_depth_m": 0.127,
+      "tread_thickness_m": 0.03,
+      "clear_width_m": 0.61
+    },
+    "grade": "assumption",
+    "source": "OSHA 29 CFR 1910.21(b) defines a ship stair as 50-70 deg with treads and open risers. Rise 6.5-12 in, tread depth at least 4 in (5 in common), width at least 18 in come from secondary summaries (OSHA cheat sheets, Archtoolbox). Tread depth 5 in and width 24 in are common choices, not code values."
+  },
+  "valve_handle_length_m": {
+    "value": 0.12,
+    "grade": "assumption",
+    "source": "Lever length for a 1/2 in ball valve is not in the M10HP data found; 0.12 m is a typical small lever length chosen for T2 and varied in N4."
+  },
+  "z1_torque_limit_nm": {
+    "value": [
+      30.0,
+      60.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0
+    ],
+    "grade": "public_model",
+    "source": "MuJoCo Menagerie unitree_z1/z1_gripper.xml at commit 98a70c5: actuator forcerange -30..30 N m, joint2 -60..60 N m. The model is derived from Unitree's public z1_description URDF. A reseller lists 33 N m maximum joint torque for Z1 Air/Pro."
+  },
+  "rbq_leg_torque_limit_nm": {
+    "value": [
+      100.0,
+      100.0,
+      150.0
+    ],
+    "grade": "public_model",
+    "source": "RainbowRobotics/RBQ resources/model/rbq10_with_rb1.xml at commit c7b80ba: motor ctrlrange -100..100 N m for abduction and hip, -150..150 N m for knee. Order hip (abduction), thigh, calf. Official RBQ-10 data: 42 kg, payload 15 kg; no joint torque published."
+  },
+  "rb1_torque_limit_nm": {
+    "value": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "grade": "assumption",
+    "source": "Same model: every RB1 arm motor has ctrlrange -100..100 N m, wrist included, so this reads as a model input rather than a rated torque. No public RB1 specification found. Results that depend on wrist torque are checked against the LIMS-EX arm model in the same repository (gear 92.5, 85, 42.5, 15.2, 7.6, 15.2 N m)."
+  },
+  "rb1_finger_drive": {
+    "value": {"travel_per_slide_m": 0.04, "motor_limit_n": 100.0, "frictionloss_per_slide_n": 30.0},
+    "grade": "public_model",
+    "source": "RainbowRobotics/RBQ c7b80ba49f9a79f983cb977e2726cb2246701fcf, resources/model/rbq10_with_rb1.xml. Equality at line 56 couples the two slides. Lines 353 and 360 set the travel and dry friction for each slide. Line 410 specifies the force range of the single upper slide motor."
+  },
+  "rb1_pad_lever_contact": {
+    "value": {"friction": [0.8, 0.02, 0.005], "condim": 4, "lever_radius_m": 0.01},
+    "grade": "assumption",
+    "source": "Contact-grip simulation inputs frozen for the 2026-11-21 stair mission. The sliding coefficients 0.6, 0.8 and 1.0 are tested against the same passive lever and coupled jaw model."
+  }
+}

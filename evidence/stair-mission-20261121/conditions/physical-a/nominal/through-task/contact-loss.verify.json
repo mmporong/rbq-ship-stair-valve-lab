@@ -1,0 +1,33 @@
+{
+  "scope": "through-task",
+  "verified": true,
+  "peaks": {
+    "joint_torque_ratio": {
+      "value": 0.33397471855476313,
+      "time_s": 99.99999999998154,
+      "raw_index": 19999
+    },
+    "foot_surface_force_n": {
+      "value": 238.30379717816118,
+      "time_s": 99.99999999998154,
+      "raw_index": 19999
+    },
+    "pad_closing_torque_nm": {
+      "value": 10.049960534533115,
+      "time_s": 97.1899999999841,
+      "raw_index": 19437
+    }
+  },
+  "frame_count": 175,
+  "fps": 25.0,
+  "playback_speed": 0.5,
+  "duration_s": 7.0,
+  "max_caption_time_error_s": 0.005000000000009663,
+  "physical_seconds_per_frame": 0.02,
+  "sha256": {
+    "mission.npz": "33988075b67df7751c98db91c58562e216977112fec1c7e3b76aad7ef808da8f",
+    "contact-loss.mp4": "87fb66554fd0291aebf5b72fe6fc64b799f391a0c2bea4c75772570bc280e306",
+    "contact-loss.ass": "d5e105d5c73782ac58aa87e22ecb6f90154150644609280aa5e94eda554b41ba",
+    "contact-loss.peaks.json": "b2c20177974a28f4e94c278d0daa0cd1cacbce374d5c5b6e87990788ca0219e2"
+  }
+}

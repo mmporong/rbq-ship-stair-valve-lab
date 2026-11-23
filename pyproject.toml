@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rbq-ship-stair-valve-lab"
+version = "0.1.0"
+description = "RBQ-10 with RB1 arm climbing a ship stair to open a valve, with load analysis"
+requires-python = ">=3.12"
+dependencies = ["mujoco==4.0.0", "numpy>=2,<3", "scipy>=1.14,<2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<9", "ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]

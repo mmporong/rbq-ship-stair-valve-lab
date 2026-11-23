@@ -1,0 +1,99 @@
+{
+  "scope": "closed valve, approach planning before manipulation",
+  "slope_deg": 60.0,
+  "rise_m": 0.19,
+  "outcome": "approach_planning_failed",
+  "work_stance_reference_s": 89.6,
+  "first_failure": {
+    "segment": 16,
+    "kind": "shift",
+    "progress": 0.6,
+    "planned_time_s": 13.6,
+    "foot_ik_error_m": {
+      "FL": 4.0591796499243315e-08,
+      "FR": 5.370180465252912e-08,
+      "RL": 4.5569189702311995e-08,
+      "RR": 9.46357790001485e-08
+    },
+    "foot_ik_limit_m": 0.002,
+    "collision_tolerance_m": 0.0001,
+    "unexpected_overlaps": [
+      {
+        "geoms": [
+          "tread3",
+          "base"
+        ],
+        "penetration_m": 0.00034693594868848675
+      },
+      {
+        "geoms": [
+          "tread3",
+          "base"
+        ],
+        "penetration_m": 0.000684301907967113
+      },
+      {
+        "geoms": [
+          "tread3",
+          "base"
+        ],
+        "penetration_m": 0.000684301907967113
+      },
+      {
+        "geoms": [
+          "tread3",
+          "base"
+        ],
+        "penetration_m": 0.0003469359486884851
+      }
+    ],
+    "static_reference_available": false,
+    "planning_qpos": [
+      -0.18485000000000001,
+      0.007199999999999998,
+      0.605,
+      0.9990482215818578,
+      0.0,
+      -0.043619387365336,
+      0.0,
+      -0.013399043436350224,
+      0.8522940996227777,
+      -1.175500821052383,
+      -0.01296906642492004,
+      0.45739149992850175,
+      -1.1774429117960035,
+      0.10880854232836203,
+      1.1629059635076007,
+      -1.849394722680607,
+      -0.01780826451933212,
+      1.145426953355383,
+      -1.8231519393312217,
+      0.0,
+      -1.4,
+      0.6,
+      0.0,
+      -2.967,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "planner_source_sha256": {
+    "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+    "tools/replay_stair_sequence.py": "bcd28c7baa4e0dd869e3e24a754f8061bc35bc4b2292adb579e4ba8aab5d716e",
+    "tools/probe_stair_transfer.py": "a9208f54d5df499e158bb3f92ed36457cb8bd833297cf7fdcfe4f98639d6a39f",
+    "tools/replay_stair_entry.py": "8bd0a7e2a5f61b7415b7fe35d4bef59348f5f6bf4e0ba484a36f969e9d92b80c",
+    "tools/replay_stair_transfer.py": "d4e0fe0554fffaff751791ccc47353c65683f5e2376af4e17261b0917f789514",
+    "src/go2_wall/pose_search.py": "f88f4e4c632e7ee70f840525ccfdf37996db4281f0a732bd5167402fd70a1cbf",
+    "src/go2_wall/stairs.py": "a0dff6cef937dc81a1f3ac126382dd9ec0bd243111c5e825cd5017d3de35696f",
+    "src/go2_wall/transition.py": "5b2582b067efb8bcce8580fdc5cb1fc116af285a0b5fa581d65f75033bc12839",
+    "src/go2_wall/robot.py": "8c4bf030f05ee4fd7e05a9d96049eacf8d6a7d4589c1f181107c84101131ebb4",
+    "src/go2_wall/statics.py": "30a9b1da0e6b057af33b4012d43487907296d5412e5447afd61e7b9f5e070841"
+  },
+  "repeat": {
+    "first_failure_fields_preserved": true,
+    "previous_source_hashes_that_changed": {
+      "src/go2_wall/transition.py": "6372f217d171df2480f6c2ee5ef91669dc722ea1584212ceba3a0f13ac30fbfc"
+    }
+  }
+}

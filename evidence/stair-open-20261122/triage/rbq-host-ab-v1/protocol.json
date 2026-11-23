@@ -1,0 +1,54 @@
+{
+  "protocol_id": "rbq-host-ab-v1",
+  "status": "independent_go2_host_experiment_not_nvidia_registered",
+  "actor": {
+    "bundle": ".omx/t1-v8-cpu-9100",
+    "checkpoint": 9100,
+    "frozen_for_all_arms": true
+  },
+  "compute": {
+    "device": "CPU",
+    "training": false,
+    "same_simulation_horizon_per_case": true
+  },
+  "geometry": {
+    "slope_deg": 50,
+    "rise_m": 0.19,
+    "treads": 10,
+    "friction": 0.6,
+    "unchanged_across_arms": true
+  },
+  "primary_endpoint": {
+    "name": "work_stance_rate",
+    "condition": "FL and FR support tread 5 while RL and RR support tread 3",
+    "continuous_hold_s": 0.5
+  },
+  "secondary_endpoints": [
+    "highest_supported_tread",
+    "body_collision_rate",
+    "maximum_forward_x_m",
+    "maximum_body_z_m",
+    "maximum_abs_pitch_deg"
+  ],
+  "arms": {
+    "no_intervention": "phase 0, 0.60 m/s",
+    "independent_rule": "edge_slow_rule fixed before development results",
+    "local_agent": "one candidate selected from development summaries; invalid or HOLD maps to no_intervention"
+  },
+  "candidate_catalog": {
+    "no_intervention": {"speed_mps": 0.6, "phase_offset_steps": 0},
+    "phase_15": {"speed_mps": 0.6, "phase_offset_steps": 15},
+    "phase_25": {"speed_mps": 0.6, "phase_offset_steps": 25},
+    "edge_slow_rule": {"speed_mps": 0.6, "phase_offset_steps": 0, "edge_speed_mps": 0.22}
+  },
+  "development": {
+    "visible_to_selector": true,
+    "cases_file": "development-cases.json"
+  },
+  "holdout": {
+    "hidden_from_selector": true,
+    "commitment_file": "holdout-commitment.json",
+    "reveal_only_after_selection": true
+  },
+  "claim_rule": "Agent efficacy requires paired holdout improvement; development gain or recorded replay alone is insufficient."
+}

@@ -1,0 +1,95 @@
+{
+  "menagerie": {
+    "repo": "google-deepmind/mujoco_menagerie",
+    "commit": "98a70c569c4c1b6da467a20012f766ee1f8dc521",
+    "files": {
+      "unitree_go2/LICENSE": "7e2dfda59b98e38d123f539b59ecb637ffd8908d19e09f7765884a309f010d40",
+      "unitree_go2/assets/base_0.obj": "8cdc53719002a5ee737d867904e534a6d6fa930b616bdcc1b3131e577d4e46c0",
+      "unitree_go2/assets/base_1.obj": "39d2f4724ff64dd5a0640c308fd98902a2946660a8d033ec8dbf368fd5af0dd6",
+      "unitree_go2/assets/base_2.obj": "29cae463f95d678e4ede863c36c9b19b0d356b8340412add10670d70bdcc3095",
+      "unitree_go2/assets/base_3.obj": "f51ba43bf300e68957a0c1aa83eaf3e4926f4ac7e64a0d6c33ae5d21fcbcf5f6",
+      "unitree_go2/assets/base_4.obj": "49ddec0129546e5dd2075d5beacf7f207baa2860aeff7626818e64d2efbf3821",
+      "unitree_go2/assets/calf_0.obj": "4a818cd563c5b7e2a271504442d05fd777d38cbaa028d4a10ad29c9f87bb355e",
+      "unitree_go2/assets/calf_1.obj": "51950c3a153ae3208592df86ea11c9d6756f8f645ebca5caf6910c61aeb03817",
+      "unitree_go2/assets/calf_mirror_0.obj": "6dc0406207a1c08a5953fd5962aca1a270fd06593d30d100205e05c1b32d4af2",
+      "unitree_go2/assets/calf_mirror_1.obj": "f84f5af90b914633165beb3a5493ee499169144c5797dcf04c6eb5842f74b31a",
+      "unitree_go2/assets/foot.obj": "df9e78a7c0110d02557439010f2a5f11f0ec4fd907b32704145dbd6aa7affc0b",
+      "unitree_go2/assets/hip_0.obj": "cc29932ab4d251ce3f72389ec4c1f757e44eee138b87e772b648c2bc76b506cd",
+      "unitree_go2/assets/hip_1.obj": "3fd5bd9b2ef6abe622c0739d3c67eaa1679b19b47132951972c4892a779ea7cf",
+      "unitree_go2/assets/thigh_0.obj": "bb3edfe6a7b04f4f4dff1ce7b05d426ddce941e276cc6372fb542055893c71ec",
+      "unitree_go2/assets/thigh_1.obj": "3a631822f9f7d2114b1b79dcdff5abf95103630abb7d91d1f3b8b18117132ed2",
+      "unitree_go2/assets/thigh_mirror_0.obj": "07abaedce761f1dd48647384ac14ba1959276bc78d5a2a62051e8f1c6093933b",
+      "unitree_go2/assets/thigh_mirror_1.obj": "db984a3e983eabbc9b38183427cca9ab0bb3bdb049f9eab030e06edda36579d6",
+      "unitree_go2/go2.xml": "50adb09a4365293e2acdaf2010ae35a82b0f09fea18ae51806fef91e310ed04a"
+    }
+  },
+  "z1": {
+    "repo": "google-deepmind/mujoco_menagerie",
+    "commit": "98a70c569c4c1b6da467a20012f766ee1f8dc521",
+    "files": {
+      "unitree_z1/LICENSE": "2b794acf1e250f5545ae5a47d81e5685ea5488ce077d1087ed8be5f81e9ba5c0",
+      "unitree_z1/assets/z1_GripperMover.stl": "7b88f56bd0c92448713ce167286cf1a8a27df027081bbcfec68650449fe2aa09",
+      "unitree_z1/assets/z1_GripperMover_col_1.stl": "e5f3f92d4444d58d5bb438af3bb554e3415b822f38d15a00af3f0cda22d6baef",
+      "unitree_z1/assets/z1_GripperMover_col_2.stl": "2c236c4bd283c4ad8370ad80a01a778c9f629a72876303cab2c0bbad044d3e5f",
+      "unitree_z1/assets/z1_GripperMover_col_3.stl": "e7cc5f0a728855a6611a8c9545315058a476478675841dcf33f9d4d6f9f8eab8",
+      "unitree_z1/assets/z1_GripperMover_col_4.stl": "a0a330f50af07470bc61a7aa5046e2ef74dfeffb75ea0542c4ea171df51d6ebb",
+      "unitree_z1/assets/z1_GripperMover_col_5.stl": "13b959c18081ea848b022662ef51c4c9778231ae3393fd197db7290dfb091ad8",
+      "unitree_z1/assets/z1_GripperStator.stl": "9f5dc7cc40f53de018c9bc201c14e2602eb10fedbd130609a3ddcb162ed9cee7",
+      "unitree_z1/assets/z1_GripperStator_col_1.stl": "14e70222863b725f462381cf1cc3b1bb7c078611a7deaa928bac58fca77d5576",
+      "unitree_z1/assets/z1_GripperStator_col_2.stl": "6eff356928ad4f76fe82aa69d7f755ad402ca5b50428dee9aab7ddc4374da0c9",
+      "unitree_z1/assets/z1_GripperStator_col_3.stl": "a20f5d9c651e3eda86af3f78dcaabd6a2e906bfd0285f80849bdbca21db58885",
+      "unitree_z1/assets/z1_GripperStator_col_4.stl": "10d12c40f52841b250a9aa7d3078e8ee26faad027e7b0098f471bf4364c61b61",
+      "unitree_z1/assets/z1_GripperStator_col_5.stl": "8589982f430e2cf49f34a7fb6910e6881321f4d80ad2d46962200e843f4e9030",
+      "unitree_z1/assets/z1_GripperStator_col_6.stl": "385bd1ee96796b8756b208e8b474a0064daf83d334f90097122e54724b285f3d",
+      "unitree_z1/assets/z1_Link00.stl": "d75a404679bd85795b09fdc95cfd490211d1bced9a8b9228b2e737394f8dccbf",
+      "unitree_z1/assets/z1_Link01.stl": "489238d3af107b967e57d260887363b3ffc635b2005e378b8f6d881f796da649",
+      "unitree_z1/assets/z1_Link02.stl": "20b767758fce2d00991180abb5893cb1208c99ca912b9d787821ee3f28214949",
+      "unitree_z1/assets/z1_Link03.stl": "bc367e92accb5653e7f59ce8f92c67f6fe5ca58adb6f34b58b10e2c98ac3adf1",
+      "unitree_z1/assets/z1_Link04.stl": "cf597837f10e7c062f24234f80c443f1ccd5f29db0eb8acd47f639612248e804",
+      "unitree_z1/assets/z1_Link05.stl": "11672541c399a9fe93621f30f323f012d8216a064749dabf437bf849c0ea81bc",
+      "unitree_z1/assets/z1_Link06.stl": "c6f401da94b1dd329ff3ab4cc094fcab034f514db8edaa95a3e84d457d313431",
+      "unitree_z1/z1_gripper.xml": "b7cf72ca30b53808f70f96e1a01758cbde4912d4541abba7d24ce63b63e8e86d"
+    }
+  },
+  "rbq": {
+    "repo": "RainbowRobotics/RBQ",
+    "commit": "c7b80ba49f9a79f983cb977e2726cb2246701fcf",
+    "files": {
+      "resources/meshes/rb1/Link0.stl": "45e637f4a07d34238c401682389316b23b2e59c01a492534700c635388928e86",
+      "resources/meshes/rb1/Link1.stl": "581e578df79d66f03cf2587f551dcf92c4843f05ac20a0f44199988e467b3108",
+      "resources/meshes/rb1/Link2.stl": "2c2d632ab45575b91710c7a94dc47910319eee940d8262859546126ae1b937a9",
+      "resources/meshes/rb1/Link3.stl": "c5e21860caa8e6cd6d853fe7cdb7e8e6d85ba89443e2e63165fcc5e23c6d3559",
+      "resources/meshes/rb1/Link4.stl": "d0a6191685e902b21b32d64fc12ba4a14b97c05b688a350317bc9ad7d9bfb130",
+      "resources/meshes/rb1/Link5.stl": "47d90e2501197dd80083be31363b54624c33d81878e015e9c6b38e17e41910a6",
+      "resources/meshes/rb1/Link6.stl": "ee45c66ce6d93bb439eb26e473bb8e1b7a2252b321e9a101a85ddcd060f8e2f4",
+      "resources/meshes/rb1/RB1_Handcam.stl": "f414e54ef898f4f3510269c4e7dfadc5a094616234e8a7a0f5742121840a814d",
+      "resources/meshes/rb1/RB1_Palm.stl": "6e6a1a93e3500d7f2150b29156b03c2bf2620bff9063cd89fe021cc61c2cbb1d",
+      "resources/meshes/rb1/RB1_finger_lower.stl": "8d3219788aa6db0c7ac271f063aa87fb2186b189dd1a1c166858fd0c8d2e51de",
+      "resources/meshes/rb1/RB1_finger_upper.stl": "f0c6967aa54b2d2aa8a91bb7c11bb2524847201d3fccac91f16470ba3a9de4cf",
+      "resources/meshes/rbq/calf.obj": "c690fa922cef7734c7649f09f6a040035353f38873a9dda874fdd010928517e9",
+      "resources/meshes/rbq/hip2.obj": "0c260eaf543767ebc60da2082bd1027c27377244eb93d440a7be89d447d59c1a",
+      "resources/meshes/rbq/hip3.obj": "7603867d4b96061301f226637ebbbad31c54fad9c799e8b66b01b063e50b5945",
+      "resources/meshes/rbq/thigh.obj": "575533eaa7dbee1779a67b6ec292e5aa6b158a1b7dd002cf3e1ecd082e0aeb8f",
+      "resources/meshes/rbq/trunk.obj": "f11a4ff2065b7483112400456df8d7c9210fb7279c150f62bf0acdb8d2ac2891",
+      "resources/model/README.md": "5685135a54f76044fe7e28cf217fa45de70edc6689fb948924d9d932a90e0fdc",
+      "resources/model/rbq10_with_rb1.xml": "fa01e1ff0df8575a60773efef9339f15ce710e7beb3d6dc4af7009238909f32a"
+    }
+  },
+  "d1": {
+    "repo": "JeewanthaSadaruwan/unitree-D1-550-Robot-ARM",
+    "commit": "3bb0435cbf027826995b96248e60c2026e6e6be3",
+    "files": {
+      "d1_550_description/meshes/Empty_Link1.STL": "56877ac5196443d67a23bad0f81ed2da4ce266e396ff93c34f61f54ebe5d298c",
+      "d1_550_description/meshes/Empty_Link2.STL": "79d79f6fe45e1c12baec9cbce4d4681f555e83a867af92353d244e0f2cc81b68",
+      "d1_550_description/meshes/Empty_Link3.STL": "6a145f7b46c6ca9067138f594b204cb92833f6668245643770ef79d226a6d203",
+      "d1_550_description/meshes/Empty_Link4.STL": "df39639dad1664426ca113cc5bc8c5385fe3a5fa0506dd85a7eea6ee5bf7baf9",
+      "d1_550_description/meshes/Empty_Link5.STL": "71d217f0318c9858ccddb9f29eedba82a63360d434c45788a3bb396c75fa45aa",
+      "d1_550_description/meshes/Empty_Link6.STL": "066308dcc9a97cf1bb231cf0b1e5725488bf9dc7b64787ae4959f590d74b6644",
+      "d1_550_description/meshes/Empty_Link_L.STL": "dfd21b3dda9446a047abccfa6f3eae248a8ec9f661761c6a73a0917f4f8bfc74",
+      "d1_550_description/meshes/Empty_Link_R.STL": "596169b1b4d20bbc64f27ac20f5a33ba5ef36b85483a8f992a62c14e9452123f",
+      "d1_550_description/meshes/base_link.STL": "a977e9e063c9fc7ff5a9d252358ad16976a28da5fd5d1c5b8edaf46e2d8dca1d",
+      "d1_550_description/urdf/d1_550_description.urdf": "c961de2ca23b7ac54a3b5914866b7052cc43082636beb6fc33e16bc432b0b770",
+      "d1_550_description/urdf/d1_550_description.urdf.xacro": "b25bc22a74397c5cd89685bee03dc644ad55261a691ddac920535766fe581742"
+    }
+  }
+}

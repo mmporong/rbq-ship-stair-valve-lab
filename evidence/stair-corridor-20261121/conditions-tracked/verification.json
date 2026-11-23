@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "status": "passed",
+  "checks": {
+    "row_count": 17,
+    "physical_row_count": 14,
+    "planning_row_count": 3,
+    "all_scene_result_hashes_match": true,
+    "all_raw_hashes_match": true,
+    "all_npz_arrays_aligned": true,
+    "all_raw_timesteps_match_scene": true,
+    "all_observed_settings_match_protocol": true,
+    "physical_controller_revision_count": 1,
+    "shared_physical_planner_and_reference_fingerprints": true,
+    "cross_phase_planner_revision_match": true,
+    "planning_recheck_first_failures_match": true,
+    "official_reverification_count": 14,
+    "official_failure_scene_count": 17,
+    "raw_files_copied": 0
+  }
+}

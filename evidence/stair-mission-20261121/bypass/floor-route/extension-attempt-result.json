@@ -1,0 +1,117 @@
+{
+  "scope": "cold-closed valve walking diagnostic",
+  "duration_s": 111.82000000016987,
+  "timestep_s": 0.001,
+  "cold_initial_hinge_deg": 90.0,
+  "external_force_n": 0.0,
+  "gain": 1.5,
+  "metrics": {
+    "passed": false,
+    "fell": true,
+    "saturated_steps": 429,
+    "qp_failed_ticks": 372,
+    "qp_relaxed_ticks": 77,
+    "max_ratio": 1.0,
+    "max_base_track_mm": 1880.9915593709154,
+    "max_tilt_track_deg": 110.17751968648079,
+    "return_error_mm": 1880.9898913543436,
+    "feet_down_at_end": true,
+    "max_stance_slip_mm": {
+      "FL": 266.15,
+      "FR": 1841.938,
+      "RL": 1692.608,
+      "RR": 670.337
+    },
+    "max_friction_use": {
+      "FL": 1.0,
+      "FR": 13.685,
+      "RL": 45.534,
+      "RR": 1.087
+    },
+    "unexpected_contacts_n": {
+      "RR_calf+world": 682.2912563709588,
+      "FR_calf+world": 288.9878565068787,
+      "RR_thigh+world": 7770.102802995011,
+      "RB1_Wrist_Pitch+world": 2796.866927650593,
+      "RB1_finger_upper+RL_foot": 1350.2228320288839,
+      "RB1_Wrist_Yaw+RL_foot": 1082.5203640158545,
+      "RB1_Elbow_Pitch+RL_calf": 936.5856261077463,
+      "RB1_finger_lower+RL_foot": 1330.775926269903,
+      "FR_thigh+base": 0.0,
+      "RB1_Shoulder_Pitch+RL_calf": 465.59448924386487,
+      "FR_calf+RB1_Elbow_Pitch": 516.6704819820673,
+      "RB1_Shoulder_Pitch+RB1_finger_upper": 304.6450039433965,
+      "RB1_Elbow_Pitch+base": 410.1089800448988,
+      "FR_calf+RB1_Elbow_Yaw": 322.7372906499829,
+      "FR_thigh+world": 2466.986275252352,
+      "RB1_Elbow_Yaw+RL_calf": 438.58458950937376,
+      "FR_calf+RL_calf": 577.5045974157232,
+      "FR_thigh+RB1_Base_Yaw": 1085.9824095493723,
+      "RL_thigh+base": 0.0,
+      "FR_calf+RB1_Shoulder_Pitch": 546.1157829779733,
+      "FR_foot+RB1_finger_lower": 104.95157893489366,
+      "RL_calf+world": 295.6107278925886,
+      "RB1_finger_lower+base": 779.3749622842068,
+      "FL_foot+RL_foot": 57.30253690045639,
+      "RL_foot+RR_calf": 93.15723524781879
+    },
+    "floor_mu": 0.6,
+    "wall_mu": 0.6,
+    "physics": {},
+    "gains_scale": 1.5,
+    "mode": "force",
+    "seconds": 111.82000000000004,
+    "gripper_audit": {
+      "physics_steps": 111820,
+      "finger_clipped_steps": 0,
+      "qpos_write_count_after_start": 0,
+      "qvel_write_count_after_start": 0,
+      "act_write_count_after_start": 0,
+      "mocap_write_count_after_start": 0,
+      "state_reset_count": 0,
+      "max_qfrc_applied_n": 0.0,
+      "max_xfrc_applied_n": 0.0
+    }
+  },
+  "first_lever_contact": null,
+  "peak_lever_contact": {
+    "force_n": 0.0
+  },
+  "first_unexpected_contact_over_10n": {
+    "time_s": 108.98900000015635,
+    "force_n": 682.2912563709588,
+    "bodies": [
+      "world",
+      "RR_calf"
+    ],
+    "geoms": [
+      "tread3",
+      "geom[22]"
+    ]
+  },
+  "peak_unexpected_contact": {
+    "time_s": 109.07300000015675,
+    "force_n": 7770.10280299501,
+    "bodies": [
+      "RR_thigh",
+      "world"
+    ],
+    "geoms": [
+      "geom[18]",
+      "stringerR"
+    ]
+  },
+  "min_finger_slide_m": [
+    0.0395374013270985,
+    0.03850271240481909
+  ],
+  "raw_sha256": "eb28ae261cdd0147fa562952765ac04d0f3c8d38ba84268b4810ae5e530ddf25",
+  "trace_sha256": "764dc080f15899d7bbd3bf929246a32815fc06c0e7243a8d791c53cfc0844038",
+  "valve_angle_range_deg": [
+    90.0,
+    90.0
+  ],
+  "peak_pad_normal_n": 0.0,
+  "peak_pad_torque_nm": 0.0,
+  "first_contact_sample": null
+}

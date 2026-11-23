@@ -1,0 +1,32 @@
+{
+  "controller_commit": "ee6c61073af5bb3e71603b44c107aca874e3c796",
+  "walking_input": "evidence/stair-corridor-20261121/lateral/walk50.npz",
+  "walking_input_sha256": "94ce57fd711bc5e5eea2bdf5f6e8ec8301f9a2033363a143dbda9898e2a50a1f",
+  "raw_bytes": 614270114,
+  "raw_sha256": "2f958bf172bc7560164a80ea0eab8a292685ba3ea937016674c04219f45ebc7f",
+  "local_raw": ".omx/mission-success-20261121/ablation-geometry-full/mission.npz",
+  "common_arguments": [
+    "--extent",
+    "full",
+    "--timestep",
+    ".001",
+    "--motion-seconds",
+    "9",
+    "--jaw-load-bias-m",
+    ".0005",
+    "--stance-spring-gain-n-per-m",
+    "2500",
+    "--extra-settle-seconds",
+    "2"
+  ],
+  "evaluated_landings": 156,
+  "supported_landings": 22,
+  "full_endpoint": {
+    "planned_end_s": 913.09,
+    "last_physical_sample_s": 913.0899999853202,
+    "scheduled_landings": 156,
+    "evaluated_landings": 156,
+    "endpoint_recorded": true
+  },
+  "storage": "Raw kept locally. The frozen reference and controller revision reproduce it."
+}

@@ -1,0 +1,456 @@
+{
+  "schema": "stair-corridor-independent-review-v1",
+  "recorded_at": "2026-11-21T21:38:29.9092841+09:00",
+  "review_scope": {
+    "official_full_pair": [
+      ".omx/mission-success-20261121/replant-full-a/mission.npz",
+      ".omx/mission-success-20261121/replant-full-b/mission.npz"
+    ],
+    "full_evidence": "evidence/stair-corridor-20261121/replant/full",
+    "conditions": "evidence/stair-corridor-20261121/conditions-replant",
+    "short_source_replay": "evidence/stair-corridor-20261121/replant/matched-through-task/source-replay.json",
+    "official_video_packages": [
+      "evidence/stair-corridor-20261121/replant/full/first/route-follow",
+      "evidence/stair-corridor-20261121/replant/full/first/first-violation",
+      "evidence/stair-corridor-20261121/replant/full/first/fall-follow"
+    ],
+    "excluded": [
+      "remote object availability and remote commit containment",
+      "the earlier local-repair full pair as a substitute for this replant pair",
+      "any later controller experiment not represented by the two reviewed raw files"
+    ]
+  },
+  "verdict": "partial",
+  "verdict_summary": {
+    "evidence_integrity": "pass",
+    "mechanical_replant_subtask": "pass",
+    "loaded_valve_operation_hold_and_release_subtask": "pass",
+    "strict_full_mission_acceptance": "fail",
+    "n1_route_completion": "fail",
+    "conditions_replant_completion": "pass_with_no_successful_physical_case",
+    "official_video_and_load_packages": "pass",
+    "frozen_source_and_short_replay_reproduction": "pass",
+    "reproduction_from_current_head_or_dirty_worktree": "fail",
+    "reason": "The two 979040-sample full replays use the same captured scene and frozen controller source set and have byte-identical values in all 34 common raw arrays. The first replay adds six structural-load arrays. The physical RL unload, swing, same-tread relanding, loaded valve rotation, five-second hold, and clean release are supported by raw samples. The strict mission nevertheless fails first at 127.831 s when stance slip reaches 10.000207723 mm, then records a nonzero QP attempt, a 575.244 N forbidden RL_foot-FL_calf contact, and a fall. Only 24 of 156 original landings plus the one auxiliary replant landing remain supported, so no platform turn or stable floor return is established."
+  },
+  "full_pair": {
+    "physics_steps_each": 979040,
+    "physical_timestep_s": 0.001,
+    "actuation_period_s": 0.005,
+    "first_state_time_s": 0.001,
+    "last_state_time_s": 979.0399999837607,
+    "first": {
+      "bytes": 1817100836,
+      "sha256": "b86c249c84e93a852f73d58ccdae1366acec49eac984a338223ab8557b000f11",
+      "array_count": 40,
+      "structural_observer_fields": [
+        "foot_surface_force_world_n",
+        "joint_force_world_n",
+        "joint_moment_world_nm",
+        "joint_off_axis_bending_nm",
+        "joint_reaction_n",
+        "rb1_mount_wrench_world"
+      ]
+    },
+    "repeat": {
+      "bytes": 670097686,
+      "sha256": "a66654a8f80aee04ccce04b5265291f3e1f62ca59b150e310e3bedc0e5069f84",
+      "array_count": 34
+    },
+    "comparison": {
+      "common_array_count": 34,
+      "common_arrays_identical_by_streamed_uncompressed_sha256": true,
+      "raw_value_differences": {},
+      "scene_field_differences": [],
+      "source_file_differences_between_runs": [],
+      "same_scene_and_common_samples": true,
+      "same_source_scene_and_common_samples": true,
+      "exact_npz_file_match": false,
+      "exact_npz_mismatch_explained_by_first_only_structural_fields": true,
+      "first_and_repeat_scene_json_identical": true,
+      "first_and_repeat_result_json_differences": [
+        "raw_sha256"
+      ],
+      "first_and_repeat_raw_check_json_differences": [
+        "raw_sha256"
+      ]
+    }
+  },
+  "mission_measurements": {
+    "physical_replant": {
+      "profile": "rl-mid-replant-k3075-v1",
+      "leg": "RL",
+      "trigger_after_original_landing_index": 15,
+      "motion_window_s": [
+        78.8,
+        81.6
+      ],
+      "zero_normal_force_samples": 1992,
+      "zero_normal_force_state_time_s": [
+        79.20500000001414,
+        81.19600000002364
+      ],
+      "maximum_vertical_foot_lift_m": 0.051469976534138207,
+      "terminal_foot_xy_error_m": 0.000814893987665133,
+      "relanding_support_window_s": [
+        81.3,
+        81.6
+      ],
+      "relanding_tread": 3,
+      "minimum_rl_tread_load_during_relanding_window_n": 8.838165724589368,
+      "support_window_last_load_by_leg_n": [
+        195.22992283048282,
+        150.19672490653014,
+        46.600286110808796,
+        88.19353610475412
+      ],
+      "minimum_rl_normal_force_next_5s_n": 46.600286110808796,
+      "released_from_support": true,
+      "same_tread_relanding_verified": true,
+      "mechanical_replant_subtask_passed": true
+    },
+    "loaded_valve_operation": {
+      "moving_angle_range_deg": [
+        5.0,
+        85.0
+      ],
+      "loaded_angle_bins": 16,
+      "all_loaded_angle_bins_populated": true,
+      "moving_pad_closing_torque_range_nm": [
+        9.999791026607111,
+        10.000324921782147
+      ],
+      "hold_window_state_time_s": [
+        111.65100000016906,
+        116.65000000019293
+      ],
+      "hold_samples": 5000,
+      "hold_duration_s": 5.00000000002387,
+      "hold_angle_range_deg": [
+        89.76607952063279,
+        90.06804747691373
+      ],
+      "hold_minimum_pad_normal_force_n": [
+        92.10697487809534,
+        5.261561584197027
+      ],
+      "maximum_manipulation_foot_shift_mm": 4.945430885006069,
+      "maximum_manipulation_base_shift_mm": 4.946304431378008,
+      "mechanical_operation_and_hold_passed": true,
+      "strict_full_valve_contract_passed": false,
+      "strict_full_valve_contract_failure_reason": "A later forbidden contact reaches 575.2436662387622 N at 190.83000000054713 s, above the 10 N limit."
+    },
+    "formal_release": {
+      "separation_state_time_s": 118.60400000020226,
+      "release_dwell_end_state_time_s": 119.10300000020464,
+      "release_dwell_state_samples": 500,
+      "release_dwell_s": 0.5,
+      "release_dwell_elapsed_timestamp_s": 0.49900000000238,
+      "separation_to_endpoint_elapsed_timestamp_s": 860.4359999835584,
+      "post_dwell_to_endpoint_elapsed_timestamp_s": 859.936999983556,
+      "elapsed_time_convention": "Endpoint timestamp minus the start timestamp; an inclusive 1 ms state-sample window is 0.001 s longer.",
+      "maximum_upper_pad_force_after_separation_n": 0.0,
+      "maximum_lower_pad_force_after_separation_n": 0.0,
+      "maximum_nonpad_handle_force_after_separation_n": 0.0,
+      "maximum_upper_pad_force_after_dwell_n": 0.0,
+      "maximum_lower_pad_force_after_dwell_n": 0.0,
+      "maximum_nonpad_handle_force_after_dwell_n": 0.0,
+      "first_post_release_contact": null,
+      "clean_release_verified": true
+    },
+    "strict_failure_sequence": {
+      "walking_verified": false,
+      "mission_verified": false,
+      "n1_verified": false,
+      "first_failure": {
+        "stage": "return",
+        "state_time_s": 127.83100000024632,
+        "metric": "stance_slip_m",
+        "measured_m": 0.010000207723255565,
+        "measured_mm": 10.000207723255565,
+        "limit_m": 0.01
+      },
+      "first_nonzero_qp_attempt": {
+        "state_time_s": 127.97100000024699,
+        "attempt": 1
+      },
+      "first_base_track_over_30mm": {
+        "state_time_s": 189.59700000054124,
+        "measured_m": 0.030031029690011757
+      },
+      "first_forbidden_contact": {
+        "state_time_s": 190.83000000054713,
+        "recorded_force_n": 575.2436662387622,
+        "recomputed_force_n": 575.2436687100957,
+        "body_pair": [
+          "RL_foot",
+          "FL_calf"
+        ],
+        "source": "evidence/stair-corridor-20261121/replant/full/contact-geometry.json"
+      },
+      "first_observed_fall_state_time_s": 190.88100000054737,
+      "peak_forbidden_contact": {
+        "state_time_s": 191.010000000548,
+        "recorded_force_n": 14036.593628511677,
+        "recomputed_force_n": 14036.593628480796,
+        "body_pair": [
+          "world",
+          "base"
+        ],
+        "surface": "floor"
+      },
+      "robot_saturated_steps": 233815,
+      "qp_failed_ticks": 116227,
+      "qp_relaxed_ticks": 25218,
+      "state_resets": 0,
+      "maximum_applied_generalized_force": 0.0,
+      "maximum_applied_external_wrench": 0.0
+    },
+    "route_completion": {
+      "original_scheduled_landings": 156,
+      "auxiliary_replant_landings": 1,
+      "total_scheduled_landings": 157,
+      "original_supported_landings": 24,
+      "auxiliary_supported_landings": 1,
+      "total_supported_landings": 25,
+      "first_failed_total_milestone_index_zero_based": 25,
+      "first_failed_milestone_end_s": 193.51000000000002,
+      "first_failed_milestone_expected_support_minimum_n": 0.0,
+      "first_all_platform_s": null,
+      "first_platform_turn_s": null,
+      "physical_round_trip_verified": false,
+      "stable_floor_return": {
+        "time_s": [
+          978.54,
+          979.04
+        ],
+        "sample_count": 500,
+        "maximum_start_xy_error_m": 3.8861093633949797,
+        "minimum_up_z": -0.1269929973097988,
+        "minimum_floor_force_n": 0.0,
+        "verified": false
+      }
+    }
+  },
+  "archive_and_reconstruction": {
+    "part_count": 37,
+    "all_part_sizes_match_manifest": true,
+    "all_part_sha256_match_manifest": true,
+    "concatenated_bytes": 1817100836,
+    "concatenated_sha256": "b86c249c84e93a852f73d58ccdae1366acec49eac984a338223ab8557b000f11",
+    "restored_first": {
+      "path": ".omx/mission-success-20261121/restored-replant-first.npz",
+      "bytes": 1817100836,
+      "sha256": "b86c249c84e93a852f73d58ccdae1366acec49eac984a338223ab8557b000f11",
+      "matches_original": true
+    },
+    "restored_repeat": {
+      "path": ".omx/mission-success-20261121/restored-replant-repeat.npz",
+      "bytes": 670097686,
+      "sha256": "a66654a8f80aee04ccce04b5265291f3e1f62ca59b150e310e3bedc0e5069f84",
+      "matches_original": true
+    },
+    "restored_short_nominal": {
+      "path": ".omx/mission-success-20261121/restored-replant-nominal.npz",
+      "bytes": 109012531,
+      "sha256": "eeb6acd2fb1efb17a80014a5faa6d7ff8584efac4939a0e389d2d3d9fc1f4a87",
+      "samples": 135715,
+      "array_count": 34,
+      "matches_matched_through_task_nominal": true
+    },
+    "short_nominal_is_exact_34_array_prefix_of_repeat": true,
+    "prefix_comparison_method": "Streamed data-byte SHA-256 for C-order arrays and numeric array equality for the two Fortran-order arrays.",
+    "remote_publication_reviewed": false
+  },
+  "short_transfer_and_source_replay": {
+    "transfer_comparison": "evidence/stair-corridor-20261121/replant/transfer-comparison.json",
+    "original_short_raw_sha256": "b39bd2e9a55501a3ee225595c89bd6ba4e506443fa04ed8717d687beffb11d73",
+    "no_corridor_raw_sha256": "dd98790b6b35a9a45d43d7ca8bff3c77da4595617e6676a25f85581a6dcebd19",
+    "matched_corridor_raw_sha256": "eeb6acd2fb1efb17a80014a5faa6d7ff8584efac4939a0e389d2d3d9fc1f4a87",
+    "original_vs_no_corridor_common_prefix_samples": 127650,
+    "original_vs_no_corridor_first_physical_difference_state_time_s": 127.651,
+    "no_corridor_vs_matched_common_prefix_samples": 127655,
+    "no_corridor_vs_matched_first_physical_difference_state_time_s": 127.656,
+    "no_corridor_first_rl_slip_state_time_s": 129.694,
+    "matched_corridor_first_rl_slip_state_time_s": 127.831,
+    "corridor_failure_advance_s": 1.863,
+    "matched_first_violation": {
+      "rl_normal_force_n": 210.488431,
+      "rl_friction_use": 0.290745,
+      "rl_tread3_load_n": 210.488431,
+      "all_four_feet_supported": true,
+      "qp_attempt": 0,
+      "unexpected_contact_force_n": 0.0,
+      "fell": false
+    },
+    "source_replay": {
+      "frozen_commit": "2c91d83ff3a222bc2919c3156b93920ebcff5ec4",
+      "recorded_source_files": 14,
+      "rbq_assets": 18,
+      "samples": 135715,
+      "raw_sha256": "eeb6acd2fb1efb17a80014a5faa6d7ff8584efac4939a0e389d2d3d9fc1f4a87",
+      "raw_scene_and_result_match_original": true,
+      "same_source_scene_and_common_samples": true
+    }
+  },
+  "conditions_replant": {
+    "row_count": 17,
+    "physical_rows": 14,
+    "planning_rows": 3,
+    "scene_count": 18,
+    "outcomes": {
+      "success": 0,
+      "physical_failed": 14,
+      "planning_failed": 3,
+      "pending": 0
+    },
+    "physical_m1_passed": 0,
+    "physical_n1_passed": 0,
+    "nominal_landings_evaluated": 20,
+    "nominal_endpoint_s": 135.71500000028396,
+    "verification": {
+      "all_scene_result_raw_hashes_match": true,
+      "all_raw_timesteps_match_scene": true,
+      "all_observed_settings_match_protocol": true,
+      "all_control_profiles_match_frozen_profile": true,
+      "source_root_sha256_gate": true,
+      "official_reverification_count": 14,
+      "official_scene_count": 17,
+      "supplemental_failure_scene_count": 1,
+      "raw_files_copied": 0
+    },
+    "impratio_10_failure_order": {
+      "actual_overall_first_failure": {
+        "state_time_s": 4.196999999999736,
+        "metric": "stance_slip_m",
+        "measured_m": 0.010001474806524878
+      },
+      "archived_writer_result_first_failure": {
+        "state_time_s": 51.747,
+        "metric": "unexpected_contact_force_n"
+      },
+      "physical_replant_failure": {
+        "state_time_s": 81.6,
+        "metric": "physical_replant"
+      },
+      "published_table_uses_actual_overall_first_failure": true
+    },
+    "published_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "CUDA_VISIBLE_DEVICES": "-1",
+      "device": "CPU MuJoCo"
+    },
+    "inherited_environment_comparison": {
+      "kept_separate_from_published_table": true,
+      "raw_byte_equal": 0,
+      "raw_byte_different": 14,
+      "verdict_equal": 14,
+      "verdict_different": 0
+    },
+    "interpretation": "The completed matrix is a negative robustness result. It establishes neither a passing M1 physical row nor a passing N1 operating range. The 60-degree, 165 mm, and 200 mm rows fail in planning before physical execution."
+  },
+  "official_video_and_load_packages": {
+    "route_follow": {
+      "time_range_s": [
+        0.001,
+        979.0399999837607
+      ],
+      "mp4_sha256": "64200174bf3dfbda1867bfb79793b5a3f6039e035c4d81eab11400dfeb97a293",
+      "frame_count": 980,
+      "fps": 25.0,
+      "duration_s": 39.2,
+      "playback_speed": 25.0,
+      "maximum_caption_time_error_s": 0.0010000000000331966,
+      "walking_caption_samples": 980,
+      "all_six_manifest_hashes_match": true,
+      "decoded_frame_count_matches_manifest": true,
+      "csv_rows": 179,
+      "csv_quantity_groups": 12,
+      "all_csv_rows_match_raw": true,
+      "recomputed_peak_metrics_exact": 11
+    },
+    "first_violation": {
+      "time_range_s": [
+        124.00000000022803,
+        131.99900000026622
+      ],
+      "mp4_sha256": "0205b34d3ae7a5a00c57a06b3749373d12a1574df7e62633d0b15459d0dc3e35",
+      "frame_count": 200,
+      "fps": 25.0,
+      "duration_s": 8.0,
+      "playback_speed": 1.0,
+      "maximum_caption_time_error_s": 0.0,
+      "walking_caption_samples": 200,
+      "all_six_manifest_hashes_match": true,
+      "decoded_frame_count_matches_manifest": true,
+      "csv_rows": 179,
+      "csv_quantity_groups": 12,
+      "all_csv_rows_match_raw": true,
+      "recomputed_peak_metrics_exact": 11
+    },
+    "fall_follow": {
+      "time_range_s": [
+        187.00000000052884,
+        194.99900000056704
+      ],
+      "mp4_sha256": "83e95f62afd18bc040b1ca8c4afe51e87058e5a3a0da19e2d8590a8b69eb8a6e",
+      "frame_count": 200,
+      "fps": 25.0,
+      "duration_s": 8.0,
+      "playback_speed": 1.0,
+      "maximum_caption_time_error_s": 0.0,
+      "walking_caption_samples": 200,
+      "all_six_manifest_hashes_match": true,
+      "decoded_frame_count_matches_manifest": true,
+      "csv_rows": 179,
+      "csv_quantity_groups": 12,
+      "all_csv_rows_match_raw": true,
+      "recomputed_peak_metrics_exact": 11,
+      "selected_recomputed_peaks": {
+        "joint_torque_nm": 150.0,
+        "joint_torque_ratio": 1.0,
+        "joint_off_axis_bending_nm": 714.8145542976591,
+        "joint_reaction_n": 5276.603445378552,
+        "rb1_mount_force_n": 1761.1469993868932,
+        "rb1_mount_moment_nm": 327.04173478793547,
+        "foot_surface_force_n": 1164.7864252053175,
+        "hinge_friction_torque_nm": 3.350958680668774e-10,
+        "pad_closing_torque_nm": 0.0,
+        "pad_normal_force_n": 0.0,
+        "pad_closing_tangent_force_n": 0.0
+      }
+    },
+    "container_check": "OpenCV independently decoded the declared frame count and duration for all three MP4 files. Subtitle raw times and every displayed stance-slip and forbidden-contact value match the closest raw sample."
+  },
+  "source_and_reproduction_scope": {
+    "recorded_controller_commit": "2c91d83ff3a222bc2919c3156b93920ebcff5ec4",
+    "recorded_controller_source_file_count": 14,
+    "recorded_controller_source_hashes_match_commit": true,
+    "walking_reference": "evidence/stair-corridor-20261121/local-repair/walk50.npz",
+    "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+    "low_load_control": "evidence/stair-corridor-20261121/tracked/low-control/loaded.json.gz",
+    "current_head_at_review": "c0ebd68effe4f717a206b39cb8b1d998f1cea547",
+    "current_head_or_worktree_matches_recorded_source_hashes": false,
+    "mismatched_recorded_sources_in_current_worktree": [
+      "tools/replay_stair_mission.py",
+      "tools/stair_mission_control_profile.py",
+      "src/go2_wall/grasp_motion.py",
+      "src/go2_wall/transition.py"
+    ],
+    "reproduction_rule": "Use commit 2c91d83 with the recorded walk50.npz, low-load control, RBQ asset set, arguments in inputs.json, and the pinned one-thread CPU environment for the published short and condition evidence. The current later HEAD or dirty worktree is not an equivalent recorded source checkout."
+  },
+  "test_evidence": {
+    "command": ".venv\\Scripts\\python.exe -m pytest -q",
+    "result": "158 passed in 23.26s",
+    "passed": true
+  },
+  "gaps_and_stop_conditions": [
+    "The strict mission cannot be marked passed without a new independent full pair that remains within the 10 mm stance-slip limit, has zero QP attempts or relaxations, stays below the 10 N forbidden-contact limit, completes all original route landings, turns on the upper platform, descends, and verifies stable floor return.",
+    "The mechanical replant and loaded valve subtasks must not be reported as a strict full-mission or M1 pass; the later strict failures remain part of the same trial.",
+    "No passing replant robustness range can be claimed from conditions-replant because all 14 physical rows fail M1 and N1 and all three geometry variants fail during planning.",
+    "The published one-thread condition set and inherited-environment comparison must remain separate because all 14 raw files differ even though all 14 verdicts agree.",
+    "Remote publication state was intentionally not reviewed and does not change the local evidence verdict."
+  ]
+}

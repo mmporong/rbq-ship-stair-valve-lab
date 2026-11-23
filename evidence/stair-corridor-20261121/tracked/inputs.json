@@ -1,0 +1,41 @@
+{
+  "controller_commit": "fcdf5d881b17c6b3d46490350a6ee2b340d932d7",
+  "inputs": {
+    "parent": "../refined/walk50.npz",
+    "parent_sha256": "78bd8f3370267a8f6556f80b74c7bcf7f9b0085f0f113442a7579d3312c17bf2",
+    "frozen_input_sha256": "0ce148501742caacaeebfcf95caafbd8bdb3dd0a9f93c710b64bbc6e6bc8b5c6",
+    "original_route_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac"
+  },
+  "construction": {
+    "foot_schedule": "156 planned landings with unchanged surface, support flags and load transfer. The original floor approach and work stance are preserved.",
+    "pose_selection": "Use measured body tracking residuals, solve leg inverse kinematics at the fixed targets and screen all candidate poses against the closed lever and terrain. Smooth the two crossings around original walk phases 126.67 s and 578.47 s.",
+    "retiming": "Increase segment durations on the 5 ms command grid after the pose repair. Limit component speeds of base translation, orientation, leg joints and arm joints in the two affected windows.",
+    "force_validation": "Static support solutions use the original friction reserve, joint torque limits and scheduled normal-force caps."
+  },
+  "samples": 53020,
+  "changed_rows": 44324,
+  "pre_manipulation_samples": 4481,
+  "walk_seconds": 962.965,
+  "full_replay_seconds": 998.215,
+  "full_physics_steps": 998215,
+  "windows_in_original_walk_s": [
+    [
+      89.6,
+      189.6
+    ],
+    [
+      544.6,
+      651.7
+    ]
+  ],
+  "realized_peak_absolute_velocity_in_windows": {
+    "base_component_m_s": 0.086825546596056,
+    "angular_component_rad_s": 0.4221992702627358,
+    "leg_joint_rad_s": 0.9982432242624937,
+    "arm_joint_rad_s": 0.39423819822011813
+  },
+  "checks": [
+    "geometry.json",
+    "motor-geometry.json"
+  ]
+}

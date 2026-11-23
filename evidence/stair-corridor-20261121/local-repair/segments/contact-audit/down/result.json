@@ -1,0 +1,154 @@
+{
+  "scope": "Post-mj_step lever contact audit using existing MuJoCo constraints",
+  "direction": "down",
+  "walking_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+  "physics_step_s": 0.001,
+  "observed_physics_steps": 213825,
+  "expected_physics_steps": 213825,
+  "all_steps_observed": true,
+  "sparse_contact_rows": 0,
+  "contact_mask_bits": {
+    "pad_upper": 1,
+    "pad_lower": 2,
+    "nonpad": 4
+  },
+  "force_value": "maximum resultant norm from mj_contactForce force[0:3] per category and tick",
+  "normal_value": "maximum absolute mj_contactForce force[0] per category and tick",
+  "contacts": {
+    "pad_upper": {
+      "contact_ticks": 0,
+      "first_time_s": null,
+      "last_time_s": null,
+      "peak_resultant_n": 0.0,
+      "peak_resultant_time_s": null,
+      "peak_normal_n": 0.0,
+      "peak_normal_time_s": null
+    },
+    "pad_lower": {
+      "contact_ticks": 0,
+      "first_time_s": null,
+      "last_time_s": null,
+      "peak_resultant_n": 0.0,
+      "peak_resultant_time_s": null,
+      "peak_normal_n": 0.0,
+      "peak_normal_time_s": null
+    },
+    "nonpad": {
+      "contact_ticks": 0,
+      "first_time_s": null,
+      "last_time_s": null,
+      "peak_resultant_n": 0.0,
+      "peak_resultant_time_s": null,
+      "peak_normal_n": 0.0,
+      "peak_normal_time_s": null
+    }
+  },
+  "raw_sha256": "623f5084984a5f8126b984d3c6fe6dfa1cec5ea71660d43eac8c754e4cba7bb0",
+  "segment_reproduction": {
+    "reference_sha256": "3ac51477569678b85382211bcb0f81458e658e11b4fd71f62f7dc8014f82a6b9",
+    "replayed_sha256": "3ac51477569678b85382211bcb0f81458e658e11b4fd71f62f7dc8014f82a6b9",
+    "file_bytes_equal": true,
+    "keys_equal": true,
+    "all_arrays_equal": true,
+    "arrays": {
+      "time": {
+        "shape": [
+          21383
+        ],
+        "equal": true,
+        "sha256": "7016e92110ef338dd4b6e302af569f8b04ab42695f76490e737dd820eb2b47ed"
+      },
+      "base": {
+        "shape": [
+          21383,
+          7
+        ],
+        "equal": true,
+        "sha256": "b7c96cf73c39039a41776ba02560198bf9712589358fccdee403809b6c422bca"
+      },
+      "qpos": {
+        "shape": [
+          21383,
+          28
+        ],
+        "equal": true,
+        "sha256": "ab566fa1621fc3b2d77ab67ee5cc53f9cdb6ef91b44ccbe4fb7311cc19c9c002"
+      },
+      "qvel": {
+        "shape": [
+          21383,
+          27
+        ],
+        "equal": true,
+        "sha256": "1425627aba96a8f1d3dc09e3236333773b09138499bdd90b2cbf54040fb8c442"
+      },
+      "feet": {
+        "shape": [
+          21383,
+          4,
+          3
+        ],
+        "equal": true,
+        "sha256": "da9831dceacfb3741f41c82ae3a660e868e968b5f00b6fc6f70d1291dbc37964"
+      },
+      "loads": {
+        "shape": [
+          21383,
+          4,
+          12
+        ],
+        "equal": true,
+        "sha256": "5cbcec519378b83f9eee0e1a8f66042a40e0f41f418500387c4e51f98cbf8382"
+      },
+      "slip": {
+        "shape": [
+          21383
+        ],
+        "equal": true,
+        "sha256": "dc794984cb3d919981922f431ef1e459c08934c7c2c5378d6f2df2addbdced6c"
+      },
+      "track": {
+        "shape": [
+          21383
+        ],
+        "equal": true,
+        "sha256": "a5c5481e13f2b31a46120e8546d8de9f932b7ac77eaa532f1f63001f923d3f55"
+      },
+      "unexpected": {
+        "shape": [
+          21383
+        ],
+        "equal": true,
+        "sha256": "3688613c6d50a944921c9181395068dd117fae6ab27ffc69419e8e91b3fbb3ab"
+      },
+      "hinge": {
+        "shape": [
+          21383
+        ],
+        "equal": true,
+        "sha256": "1ba07763e4aad4f957a93f2a9f398b59da26d193fd351c07f5831ffd9ac8fe90"
+      },
+      "attempt": {
+        "shape": [
+          21383
+        ],
+        "equal": true,
+        "sha256": "a9f89a84cfa21eaf09b8a9c0cb0e07c5cea506b76837f755d65af1134a9fded8"
+      },
+      "fell": {
+        "shape": [
+          21383
+        ],
+        "equal": true,
+        "sha256": "c82cb46714d3665576989b5fbcb295910164b8ab19f7ae93f184ecdb0aff73ca"
+      }
+    }
+  },
+  "state_mutation": {
+    "extra_mj_forward_calls": 0,
+    "qpos_writes": 0,
+    "qvel_writes": 0,
+    "force_writes": 0,
+    "command_writes": 0
+  }
+}

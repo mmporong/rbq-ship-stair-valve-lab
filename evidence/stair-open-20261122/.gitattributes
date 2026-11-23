@@ -1,0 +1,5 @@
+# Simulator, triage, and renderer manifests fingerprint the original bytes.
+*.json -text
+*.csv -text
+*.html -text
+*.ass -text

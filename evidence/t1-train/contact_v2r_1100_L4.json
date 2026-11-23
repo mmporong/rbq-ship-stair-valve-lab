@@ -1,0 +1,95 @@
+{
+  "checkpoint": "logs/rsl_rl/rbq10_rb1_stairs/2026-11-10_07-54-47_v2r/model_1100.pt",
+  "level": 4,
+  "command": "straight 0.6",
+  "geoms": [
+    "base_link_collision1",
+    "RR_thigh_collision1",
+    "RR_thigh_collision2",
+    "RR_calf_collision1",
+    "RR_calf_collision2",
+    "RL_thigh_collision1",
+    "RL_thigh_collision2",
+    "RL_calf_collision1",
+    "RL_calf_collision2",
+    "FR_thigh_collision1",
+    "FR_thigh_collision2",
+    "FR_calf_collision1",
+    "FR_calf_collision2",
+    "FL_thigh_collision1",
+    "FL_thigh_collision2",
+    "FL_calf_collision1",
+    "FL_calf_collision2",
+    "RB1_Base_Yaw_collision1",
+    "RB1_Shoulder_Pitch_collision1",
+    "RB1_Elbow_Pitch_collision1",
+    "RB1_Elbow_Yaw_collision1",
+    "RB1_Wrist_Pitch_collision1",
+    "RB1_Wrist_Yaw_collision1",
+    "RB1_finger_upper_collision",
+    "RB1_finger_lower_collision"
+  ],
+  "per_type": {
+    "flat": {
+      "envs": 20,
+      "illegal_first": 0,
+      "geoms": []
+    },
+    "stairs_up": {
+      "envs": 40,
+      "illegal_first": 0,
+      "geoms": []
+    },
+    "stairs_down": {
+      "envs": 40,
+      "illegal_first": 3,
+      "geoms": [
+        [
+          "FR_calf_collision2",
+          2
+        ],
+        [
+          "FL_calf_collision2",
+          1
+        ]
+      ]
+    },
+    "open_stairs_up": {
+      "envs": 60,
+      "illegal_first": 41,
+      "geoms": [
+        [
+          "FR_calf_collision2",
+          27
+        ],
+        [
+          "FL_calf_collision2",
+          13
+        ],
+        [
+          "RL_calf_collision2",
+          1
+        ]
+      ]
+    },
+    "open_stairs_down": {
+      "envs": 40,
+      "illegal_first": 5,
+      "geoms": [
+        [
+          "FR_calf_collision2",
+          4
+        ],
+        [
+          "FL_calf_collision2",
+          1
+        ]
+      ]
+    }
+  },
+  "camera": {
+    "type": "open_stairs_up",
+    "env": 100,
+    "done_step": 130
+  }
+}

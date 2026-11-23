@@ -1,0 +1,247 @@
+{
+  "schema": "rbq_articulated_verdict_v1",
+  "outcome": "physical_failed",
+  "strict_success": false,
+  "complete_horizon": true,
+  "physics_steps": 127750,
+  "state_sha256": "0f2db74105971f79792d9ccd48a14de0974fc31b9ca7aa7856b0746e1e5204dc",
+  "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+  "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+  "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+  "controller": {
+    "qp_applicable": false,
+    "qp_metrics": null
+  },
+  "continuity_audit": {
+    "state_samples_are_post_step_prefix": true,
+    "state_write_counters": "runner_contract_not_encoded_in_state_file",
+    "legacy_valve_judge_qp_compatibility_value": 0,
+    "qp_metrics_are_publicly_reported_as": "not_applicable"
+  },
+  "physical_metrics": {
+    "maximum_requested_torque_ratio": 0.5416201120528352,
+    "maximum_material_slip_m": {
+      "FL": 0.009858899157598763,
+      "FR": 0.008287834392654953,
+      "RL": 0.007898349829183906,
+      "RR": 0.006533803353784493
+    },
+    "unexpected_contacts_n": {},
+    "fell": false
+  },
+  "walking": {
+    "landings_evaluated": 18,
+    "verified": true,
+    "first_failure": null,
+    "failures": [],
+    "scheduled_landings": 18
+  },
+  "valve": {
+    "verified": false,
+    "first_failure": {
+      "stage": "hold",
+      "time_s": 108.751,
+      "metric": "angle_deg",
+      "measured": 89.7405047123972,
+      "limit": "90.0 +/- 0.25",
+      "message": "hold angle left the allowed band"
+    },
+    "failures": [
+      {
+        "stage": "hold",
+        "time_s": 108.751,
+        "metric": "angle_deg",
+        "measured": 89.7405047123972,
+        "limit": "90.0 +/- 0.25",
+        "message": "hold angle left the allowed band"
+      },
+      {
+        "stage": "operate",
+        "time_s": 113.75,
+        "metric": "max_angle_deg",
+        "measured": 89.99061256343441,
+        "limit": ">= 90.0",
+        "message": "valve did not reach the open stop"
+      }
+    ],
+    "measurements": {
+      "max_record_step_s": 0.0010000000000047748,
+      "total_saturated_steps": 0,
+      "contact_hold_s": 0.799000000000003,
+      "max_angle_deg": 89.99061256343441,
+      "hold_s": 4.9999999999999964,
+      "resistance_limit_nm": 9.98,
+      "loaded_angle_bins": 16,
+      "pad_closing_torque_by_bin_nm": [
+        {
+          "angle_deg": [
+            5.0,
+            10.0
+          ],
+          "min_nm": 10.000058541827448,
+          "max_nm": 10.00024828496195
+        },
+        {
+          "angle_deg": [
+            10.0,
+            15.0
+          ],
+          "min_nm": 10.000023693098075,
+          "max_nm": 10.000350581865163
+        },
+        {
+          "angle_deg": [
+            15.0,
+            20.0
+          ],
+          "min_nm": 10.000049739979127,
+          "max_nm": 10.000179789362331
+        },
+        {
+          "angle_deg": [
+            20.0,
+            25.0
+          ],
+          "min_nm": 9.99997949733301,
+          "max_nm": 10.000136882766643
+        },
+        {
+          "angle_deg": [
+            25.0,
+            30.0
+          ],
+          "min_nm": 9.999970734258687,
+          "max_nm": 10.000145895165534
+        },
+        {
+          "angle_deg": [
+            30.0,
+            35.0
+          ],
+          "min_nm": 9.999937708397807,
+          "max_nm": 10.000188953715524
+        },
+        {
+          "angle_deg": [
+            35.0,
+            40.0
+          ],
+          "min_nm": 9.999934060321126,
+          "max_nm": 10.000124256695399
+        },
+        {
+          "angle_deg": [
+            40.0,
+            45.0
+          ],
+          "min_nm": 9.999882447477999,
+          "max_nm": 10.000138916025984
+        },
+        {
+          "angle_deg": [
+            45.0,
+            50.0
+          ],
+          "min_nm": 9.999747570382697,
+          "max_nm": 10.000246866366133
+        },
+        {
+          "angle_deg": [
+            50.0,
+            55.0
+          ],
+          "min_nm": 9.999592173864382,
+          "max_nm": 10.000140775887122
+        },
+        {
+          "angle_deg": [
+            55.0,
+            60.0
+          ],
+          "min_nm": 9.999744164313265,
+          "max_nm": 10.000139940707633
+        },
+        {
+          "angle_deg": [
+            60.0,
+            65.0
+          ],
+          "min_nm": 9.999722669547529,
+          "max_nm": 10.000046446981756
+        },
+        {
+          "angle_deg": [
+            65.0,
+            70.0
+          ],
+          "min_nm": 9.999691981439856,
+          "max_nm": 10.00007510355931
+        },
+        {
+          "angle_deg": [
+            70.0,
+            75.0
+          ],
+          "min_nm": 9.999758742275269,
+          "max_nm": 10.000036145254661
+        },
+        {
+          "angle_deg": [
+            75.0,
+            80.0
+          ],
+          "min_nm": 9.999784625131925,
+          "max_nm": 9.99994014137331
+        },
+        {
+          "angle_deg": [
+            80.0,
+            85.0
+          ],
+          "min_nm": 9.999712321220606,
+          "max_nm": 9.999897362086378
+        }
+      ],
+      "max_pad_loss_s": 0.0,
+      "max_base_shift_m": 0.004259673013191004,
+      "max_foot_shift_m": 0.0044001276055088846,
+      "max_friction_use": 0.5115971623384921,
+      "min_foot_normal_force_n": 29.28465443665119,
+      "release_hold_s": 7.0739999999999945,
+      "post_release_observation_s": 11.573999999999995
+    }
+  },
+  "station": {
+    "verified": true,
+    "first_failure": null,
+    "failures": [],
+    "measurements": {
+      "station_s": 5.0,
+      "closed_start_error_deg": 7.016709298534876e-15,
+      "open_finish_error_deg": 1.617622998204235e-05,
+      "scheduled_landings": 18,
+      "evaluated_landings": 18,
+      "max_base_position_error_m": 0.0030116394035271123,
+      "max_station_attitude_error_deg": 0.6478188418246091,
+      "max_linear_speed_mps": 0.0004173995090814567,
+      "max_angular_speed_radps": 0.0007550399030101132,
+      "min_each_prescribed_tread_load_n": 96.69667004891957,
+      "max_open_angle_error_deg": 0.0001839695703012012,
+      "gripper_open_during_station": true,
+      "min_pad_clearance_m": 0.6004450825107711,
+      "max_pad_contact_n": 0.0,
+      "max_nonpad_contact_n": 0.0
+    }
+  },
+  "first_failure": {
+    "stage": "hold",
+    "time_s": 108.751,
+    "metric": "angle_deg",
+    "measured": 89.7405047123972,
+    "limit": "90.0 +/- 0.25",
+    "message": "hold angle left the allowed band"
+  },
+  "trial_identity": {
+    "case_id": "dev-01"
+  }
+}

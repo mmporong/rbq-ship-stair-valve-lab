@@ -1,0 +1,64 @@
+{
+  "repository": "RainbowRobotics/RBQ",
+  "commit": "c7b80ba49f9a79f983cb977e2726cb2246701fcf",
+  "source_path": "resources/model/rbq10_with_lims_ex.xml",
+  "source_sha256": "7da57ec99a5a9fdd29b64e378f4146cbcd057415acd644aaaa7075136d098c51",
+  "source_url": "https://github.com/RainbowRobotics/RBQ/blob/c7b80ba49f9a79f983cb977e2726cb2246701fcf/resources/model/rbq10_with_lims_ex.xml#L328-L335",
+  "raw_source_url": "https://raw.githubusercontent.com/RainbowRobotics/RBQ/c7b80ba49f9a79f983cb977e2726cb2246701fcf/resources/model/rbq10_with_lims_ex.xml",
+  "interpretation": "Each motor has ctrlrange -1..1. Multiplying that control interval by the positive gear gives the public model torque interval below; these are model inputs, not a manufacturer-rated torque specification.",
+  "actuated_arm_joints": [
+    {
+      "order": 1,
+      "motor": "LIMS_EX_Shoulder_Yaw",
+      "joint": "LIMS_EX_Shoulder_Yaw_Joint",
+      "gear": 92.5,
+      "torque_range_nm": [-92.5, 92.5]
+    },
+    {
+      "order": 2,
+      "motor": "LIMS_EX_Shoulder_Pitch",
+      "joint": "LIMS_EX_Shoulder_Pitch_Joint",
+      "gear": 85.0,
+      "torque_range_nm": [-85.0, 85.0]
+    },
+    {
+      "order": 3,
+      "motor": "LIMS_EX_Elbow_1",
+      "joint": "LIMS_EX_Elbow_Joint_1",
+      "gear": 42.5,
+      "torque_range_nm": [-42.5, 42.5]
+    },
+    {
+      "order": 4,
+      "motor": "LIMS_EX_Wrist_Pitch",
+      "joint": "LIMS_EX_Wrist_Pitch_Joint",
+      "gear": 15.2,
+      "torque_range_nm": [-15.2, 15.2]
+    },
+    {
+      "order": 5,
+      "motor": "LIMS_EX_Wrist_Roll",
+      "joint": "LIMS_EX_Wrist_Roll_Joint",
+      "gear": 7.6,
+      "torque_range_nm": [-7.6, 7.6]
+    },
+    {
+      "order": 6,
+      "motor": "LIMS_EX_Wrist_Yaw",
+      "joint": "LIMS_EX_Wrist_Yaw_Joint",
+      "gear": 15.2,
+      "torque_range_nm": [-15.2, 15.2]
+    }
+  ],
+  "existing_order_check": {
+    "configs/d1_parameters.json": {
+      "values_nm": [92.5, 85.0, 42.5, 15.2, 7.6, 15.2],
+      "matches_named_source_order": true
+    },
+    "docs/valve-capacity.md": {
+      "values_nm": [92.5, 85.0, 42.5, 7.6, 15.2, 15.2],
+      "matches_named_source_order": false,
+      "difference": "The fourth and fifth values are swapped. Named source order is Wrist_Pitch 15.2 N m, then Wrist_Roll 7.6 N m."
+    }
+  }
+}

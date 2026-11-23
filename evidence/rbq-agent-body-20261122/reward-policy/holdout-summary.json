@@ -1,0 +1,191 @@
+{
+  "schema": "rbq_reward_policy_holdout_summary_v1",
+  "case_set_sha256": "f0d31ec70f45427d4164e23ac82358120b0f83ca12eaa4bab50b6eacaa0c4a3d",
+  "evaluation_contract": {
+    "cases": 12,
+    "horizon_s": 127.75,
+    "strict_scoring": "tools/rbq_articulated_verdict.py via tools/score_rbq_agent_cohort.py",
+    "early_termination_rule": "terrain_body_contact and fall are strict failures",
+    "state_binding": "Every scored state SHA-256 was checked against its evaluation trial before scoring."
+  },
+  "artifacts_sha256": {
+    "holdout-cases.json": "43f764b887a439277c6e13e77a43ae6d1b311c7f8aa9007ce2a6fc0ad5a7c537",
+    "holdout-evaluation.json": "b1e54cfe2bfffa9a466606e79a08657616331e79a094fb3bbac9b528c6f57f9d",
+    "holdout-strict-input.json": "1e88ae2d3a462b12e8a310853e50392bd862cd2e2d5707a2316b9d9075deed61",
+    "holdout-strict.json": "490f978f94964664904403fd65ac29500c080654fbbf051cf806ec71a8b05dfa",
+    "initial-no-ppo-evaluation.json": "25e7290d5ec6092ac34ec8ab11dfc6243d7d8fa84d40d9be3723f68eab666c4e",
+    "initial-no-ppo-strict-input.json": "4be86dc565e9da8581f1fc8ef6c70acf43f2dc7133c94ebeff0c8045f27786b0",
+    "initial-no-ppo-strict.json": "42c40be11d2d56645ff1ce7a3a0351cc578542cbda65e58d792769d801735b28"
+  },
+  "arms": {
+    "initial": {
+      "n": 12,
+      "work_stance_successes": 0,
+      "proxy_full_mission_successes": 0,
+      "strict_full_mission_successes": 0,
+      "body_collision_or_fall": 12,
+      "mean_contact_authority": 0.33518468851287686,
+      "mean_ppo_authority": 0.011856468294391782,
+      "mean_ppo_torque_rms_nm": 0.9216250721450305,
+      "mean_rollout_return": -925.9636355179545,
+      "termination_counts": {
+        "fall": 1,
+        "terrain_body_contact": 11
+      },
+      "strict_outcome_counts": {
+        "fall": 1,
+        "terrain_body_contact": 11
+      }
+    },
+    "initial_no_ppo": {
+      "n": 12,
+      "work_stance_successes": 0,
+      "proxy_full_mission_successes": 0,
+      "strict_full_mission_successes": 0,
+      "body_collision_or_fall": 12,
+      "mean_contact_authority": 0.3213873292787723,
+      "mean_ppo_authority": 0.0,
+      "mean_ppo_torque_rms_nm": 0.0,
+      "mean_rollout_return": -925.7018162612106,
+      "termination_counts": {
+        "fall": 2,
+        "terrain_body_contact": 10
+      },
+      "strict_outcome_counts": {
+        "fall": 2,
+        "terrain_body_contact": 10
+      }
+    },
+    "teacher_open_loop": {
+      "n": 12,
+      "work_stance_successes": 0,
+      "proxy_full_mission_successes": 0,
+      "strict_full_mission_successes": 0,
+      "body_collision_or_fall": 12,
+      "mean_contact_authority": 0.0,
+      "mean_ppo_authority": 0.0,
+      "mean_ppo_torque_rms_nm": 0.0,
+      "mean_rollout_return": -997.7269166666666,
+      "termination_counts": {
+        "terrain_body_contact": 12
+      },
+      "strict_outcome_counts": {
+        "terrain_body_contact": 12
+      }
+    },
+    "fixed_contact": {
+      "n": 12,
+      "work_stance_successes": 12,
+      "proxy_full_mission_successes": 12,
+      "strict_full_mission_successes": 9,
+      "body_collision_or_fall": 0,
+      "mean_contact_authority": 1.0,
+      "mean_ppo_authority": 0.0,
+      "mean_ppo_torque_rms_nm": 0.0,
+      "mean_rollout_return": 16427.75,
+      "termination_counts": {
+        "horizon": 12
+      },
+      "strict_outcome_counts": {
+        "prewalk:stance_slip_m": 3,
+        "success": 9
+      }
+    },
+    "learned": {
+      "n": 12,
+      "work_stance_successes": 12,
+      "proxy_full_mission_successes": 12,
+      "strict_full_mission_successes": 0,
+      "body_collision_or_fall": 0,
+      "mean_contact_authority": 0.674387659963123,
+      "mean_ppo_authority": 0.0030192053616731576,
+      "mean_ppo_torque_rms_nm": 0.2029724769749369,
+      "mean_rollout_return": 16460.311234003686,
+      "termination_counts": {
+        "horizon": 12
+      },
+      "strict_outcome_counts": {
+        "hold:angle_deg": 9,
+        "prewalk:stance_slip_m": 3
+      }
+    },
+    "learned_no_ppo": {
+      "n": 12,
+      "work_stance_successes": 12,
+      "proxy_full_mission_successes": 12,
+      "strict_full_mission_successes": 9,
+      "body_collision_or_fall": 0,
+      "mean_contact_authority": 0.6733697315238437,
+      "mean_ppo_authority": 0.0,
+      "mean_ppo_torque_rms_nm": 0.0,
+      "mean_rollout_return": 16460.413026847615,
+      "termination_counts": {
+        "horizon": 12
+      },
+      "strict_outcome_counts": {
+        "prewalk:stance_slip_m": 3,
+        "success": 9
+      }
+    },
+    "learned_contact_off": {
+      "n": 12,
+      "work_stance_successes": 0,
+      "proxy_full_mission_successes": 0,
+      "strict_full_mission_successes": 0,
+      "body_collision_or_fall": 12,
+      "mean_contact_authority": 0.0,
+      "mean_ppo_authority": 0.003019205361673965,
+      "mean_ppo_torque_rms_nm": 0.23155080746154502,
+      "mean_rollout_return": -998.3795,
+      "termination_counts": {
+        "terrain_body_contact": 12
+      },
+      "strict_outcome_counts": {
+        "terrain_body_contact": 12
+      }
+    }
+  },
+  "paired_strict_contrasts": [
+    {
+      "treatment": "learned_no_ppo",
+      "control": "initial_no_ppo",
+      "treatment_only_success": 9,
+      "control_only_success": 0,
+      "both_success": 0,
+      "neither_success": 3,
+      "exact_two_sided_mcnemar_p": 0.00390625
+    },
+    {
+      "treatment": "learned",
+      "control": "learned_no_ppo",
+      "treatment_only_success": 0,
+      "control_only_success": 9,
+      "both_success": 0,
+      "neither_success": 3,
+      "exact_two_sided_mcnemar_p": 0.00390625
+    },
+    {
+      "treatment": "learned_no_ppo",
+      "control": "fixed_contact",
+      "treatment_only_success": 0,
+      "control_only_success": 0,
+      "both_success": 9,
+      "neither_success": 3,
+      "exact_two_sided_mcnemar_p": 1.0
+    }
+  ],
+  "derived": {
+    "learned_no_ppo_contact_authority_reduction_vs_fixed_fraction": 0.3266302684761563,
+    "ppo_effect_on_strict_success_count": -9,
+    "rollout_learning_effect_without_ppo_count": 9,
+    "observed_rl_triage_choice": "learned",
+    "observation_removed_rl_triage_choice": "learned_no_ppo",
+    "observed_agent_strict_success_difference_count": -9
+  },
+  "interpretation": {
+    "rollout_learning": "Supported for the two contact-authority parameters: learned_no_ppo achieved 9/12 strict successes while matched initial_no_ppo achieved 0/12.",
+    "ppo_checkpoint": "Not supported: learned achieved 0/12 while learned_no_ppo achieved 9/12; the nonzero checkpoint torque changed valve hold enough to fail the fixed band.",
+    "assistance_reduction": "learned_no_ppo matched fixed_contact case by case at 9/12 while using lower mean contact authority.",
+    "rl_triage_agent": "The observation-aware choice learned underperformed the observation-removed choice learned_no_ppo by 9 strict successes, so this trial does not validate the triage agent."
+  }
+}

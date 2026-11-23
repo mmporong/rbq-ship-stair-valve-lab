@@ -1,0 +1,367 @@
+{
+  "protocol_plan_commit": "953e36ca48f070a62e72e4d3d0d0d38d36705ecc",
+  "counts": {
+    "success": 0,
+    "planning_failed": 3,
+    "physical_failed": 14,
+    "pending": 0
+  },
+  "conditions": [
+    {
+      "id": "nominal",
+      "group": "single_factor",
+      "changes": {},
+      "outcome": "physical_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/physical-b/nominal/through-task/result.json",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.6249999999837,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.024999999999980815,
+        "limit": "<= 0.02"
+      },
+      "snapshot": {
+        "raw_index": 19523,
+        "time_s": 97.6199999999837,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/nominal.png"
+      }
+    },
+    {
+      "id": "slope_60",
+      "group": "single_factor",
+      "changes": {
+        "slope_deg": 60
+      },
+      "outcome": "planning_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/v2/condition-60.failure.json",
+      "first_failure": {
+        "stage": "shift",
+        "time_s": 13.6,
+        "metric": "unexpected_overlap_m",
+        "measured": 0.000684301907967113,
+        "limit": 0.0001
+      },
+      "snapshot": {
+        "type": "planned pose",
+        "time_s": 13.6,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/slope_60.png"
+      }
+    },
+    {
+      "id": "rise_165",
+      "group": "single_factor",
+      "changes": {
+        "rise_m": 0.165
+      },
+      "outcome": "planning_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/v2/condition-165.failure.json",
+      "first_failure": {
+        "stage": "swing",
+        "time_s": 55.95999999999998,
+        "metric": "max_foot_ik_error_m",
+        "measured": 0.002213606451974058,
+        "limit": 0.002
+      },
+      "snapshot": {
+        "type": "planned pose",
+        "time_s": 55.95999999999998,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/rise_165.png"
+      }
+    },
+    {
+      "id": "rise_200",
+      "group": "single_factor",
+      "changes": {
+        "rise_m": 0.2
+      },
+      "outcome": "planning_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/v2/condition-200.failure.json",
+      "first_failure": {
+        "stage": "shift",
+        "time_s": 34.51999999999999,
+        "metric": "max_foot_ik_error_m",
+        "measured": 0.006968599759779576,
+        "limit": 0.002
+      },
+      "snapshot": {
+        "type": "planned pose",
+        "time_s": 34.51999999999999,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/rise_200.png"
+      }
+    },
+    {
+      "id": "floor_mu_050",
+      "group": "single_factor",
+      "changes": {
+        "floor_mu": 0.5
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/physical-b/floor_mu_050/through-task/result.json",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.6249999999837,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.024999999999980815,
+        "limit": "<= 0.02"
+      },
+      "snapshot": {
+        "raw_index": 19523,
+        "time_s": 97.6199999999837,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/floor_mu_050.png"
+      }
+    },
+    {
+      "id": "floor_mu_080",
+      "group": "single_factor",
+      "changes": {
+        "floor_mu": 0.8
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/physical-b/floor_mu_080/through-task/result.json",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.6249999999837,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.024999999999980815,
+        "limit": "<= 0.02"
+      },
+      "snapshot": {
+        "raw_index": 19523,
+        "time_s": 97.6199999999837,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/floor_mu_080.png"
+      }
+    },
+    {
+      "id": "resistance_5",
+      "group": "single_factor",
+      "changes": {
+        "resistance_nm": 5
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/physical-b/resistance_5/through-task/result.json",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.85999999998349,
+        "metric": "max_base_shift_m",
+        "measured": 0.010159584693516929,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 19570,
+        "time_s": 97.85499999998349,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/resistance_5.png"
+      }
+    },
+    {
+      "id": "resistance_15",
+      "group": "single_factor",
+      "changes": {
+        "resistance_nm": 15
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/physical-b/resistance_15/through-task/result.json",
+      "first_failure": {
+        "stage": "contact",
+        "time_s": 97.59999999998372,
+        "metric": "two_pad_contact_hold_s",
+        "measured": 0.09499999999991715,
+        "limit": ">= 0.2"
+      },
+      "snapshot": {
+        "raw_index": 19518,
+        "time_s": 97.59499999998373,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/resistance_15.png"
+      }
+    },
+    {
+      "id": "sensitivity_lever_m_0_1",
+      "group": "sensitivity",
+      "changes": {
+        "lever_m": 0.1
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/physical-b/sensitivity_lever_m_0_1/through-task/result.json",
+      "first_failure": {
+        "stage": "contact",
+        "time_s": 97.59999999998372,
+        "metric": "two_pad_contact_hold_s",
+        "measured": 0.13499999999988077,
+        "limit": ">= 0.2"
+      },
+      "snapshot": {
+        "raw_index": 19518,
+        "time_s": 97.59499999998373,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/sensitivity_lever_m_0_1.png"
+      }
+    },
+    {
+      "id": "sensitivity_lever_m_0_14",
+      "group": "sensitivity",
+      "changes": {
+        "lever_m": 0.14
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/physical-b/sensitivity_lever_m_0_14/through-task/result.json",
+      "first_failure": {
+        "stage": "hold",
+        "time_s": 108.60499999997371,
+        "metric": "angle_deg",
+        "measured": 89.36587476927366,
+        "limit": "90.0 +/- 0.25"
+      },
+      "snapshot": {
+        "raw_index": 21719,
+        "time_s": 108.59999999997372,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/sensitivity_lever_m_0_14.png"
+      }
+    },
+    {
+      "id": "sensitivity_pad_mu_0_6",
+      "group": "sensitivity",
+      "changes": {
+        "pad_mu": 0.6
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/physical-b/sensitivity_pad_mu_0_6/through-task/result.json",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.6249999999837,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.024999999999980815,
+        "limit": "<= 0.02"
+      },
+      "snapshot": {
+        "raw_index": 19523,
+        "time_s": 97.6199999999837,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/sensitivity_pad_mu_0_6.png"
+      }
+    },
+    {
+      "id": "sensitivity_pad_mu_1",
+      "group": "sensitivity",
+      "changes": {
+        "pad_mu": 1.0
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/physical-b/sensitivity_pad_mu_1/through-task/result.json",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.6249999999837,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.024999999999980815,
+        "limit": "<= 0.02"
+      },
+      "snapshot": {
+        "raw_index": 19523,
+        "time_s": 97.6199999999837,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/sensitivity_pad_mu_1.png"
+      }
+    },
+    {
+      "id": "sensitivity_finger_force_limit_n_75",
+      "group": "sensitivity",
+      "changes": {
+        "finger_force_limit_n": 75
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/physical-b/sensitivity_finger_force_limit_n_75/through-task/result.json",
+      "first_failure": {
+        "stage": "contact",
+        "time_s": 97.59999999998372,
+        "metric": "two_pad_contact_hold_s",
+        "measured": 0.15999999999985803,
+        "limit": ">= 0.2"
+      },
+      "snapshot": {
+        "raw_index": 19518,
+        "time_s": 97.59499999998373,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/sensitivity_finger_force_limit_n_75.png"
+      }
+    },
+    {
+      "id": "sensitivity_finger_slide_frictionloss_n_15",
+      "group": "sensitivity",
+      "changes": {
+        "finger_slide_frictionloss_n": 15
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/physical-b/sensitivity_finger_slide_frictionloss_n_15/through-task/result.json",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.6249999999837,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.024999999999980815,
+        "limit": "<= 0.02"
+      },
+      "snapshot": {
+        "raw_index": 19523,
+        "time_s": 97.6199999999837,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/sensitivity_finger_slide_frictionloss_n_15.png"
+      }
+    },
+    {
+      "id": "sensitivity_arm_limits_named_lims_ex_joint_limits",
+      "group": "sensitivity",
+      "changes": {
+        "arm_limits": "named LIMS-EX joint limits"
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/physical-b/sensitivity_arm_limits_named_lims_ex_joint_limits/through-task/result.json",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.60499999998372,
+        "metric": "requested_torque_ratio",
+        "measured": 2.1608374415858274,
+        "limit": "<= 1.0"
+      },
+      "snapshot": {
+        "raw_index": 19519,
+        "time_s": 97.59999999998372,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/sensitivity_arm_limits_named_lims_ex_joint_limits.png"
+      }
+    },
+    {
+      "id": "sensitivity_timestep_s_0_0025",
+      "group": "sensitivity",
+      "changes": {
+        "timestep_s": 0.0025
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/physical-b/sensitivity_timestep_s_0_0025/through-task/result.json",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.60249999994748,
+        "metric": "start_angle_deg",
+        "measured": 0.27524989543348527,
+        "limit": "abs <= 0.25"
+      },
+      "snapshot": {
+        "raw_index": 39039,
+        "time_s": 97.59999999994749,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/sensitivity_timestep_s_0_0025.png"
+      }
+    },
+    {
+      "id": "sensitivity_impratio_10",
+      "group": "sensitivity",
+      "changes": {
+        "impratio": 10
+      },
+      "outcome": "physical_failed",
+      "evidence_path": "evidence/stair-mission-20261121/conditions/physical-b/sensitivity_impratio_10/through-task/result.json",
+      "first_failure": {
+        "stage": "prewalk",
+        "time_s": 4.194999999999933,
+        "metric": "stance_slip_m",
+        "measured": 0.010002295722020809,
+        "limit": "<= 0.01"
+      },
+      "snapshot": {
+        "raw_index": 837,
+        "time_s": 4.189999999999933,
+        "path": "evidence/stair-mission-20261121/conditions/physical-b/frames/sensitivity_impratio_10.png"
+      }
+    }
+  ],
+  "unmatched_evidence": []
+}

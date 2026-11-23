@@ -1,0 +1,72 @@
+{
+  "runs": [
+    {
+      "name": "seg36_arch_13_to_15",
+      "outcome": "planning_failed",
+      "message": "segment 38 unload infeasible at s=0.95",
+      "segment": 38,
+      "kind": "unload",
+      "progress": 0.95,
+      "planned_time_s": 37.67999999999999,
+      "max_foot_ik_error_m": 1.6883057536160649e-16,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.14610213459788707,
+        -0.06,
+        0.7475
+      ]
+    },
+    {
+      "name": "seg36_arch_13_to_15",
+      "outcome": "planning_failed",
+      "message": "segment 38 unload infeasible at s=0.95",
+      "segment": 38,
+      "kind": "unload",
+      "progress": 0.95,
+      "planned_time_s": 37.67999999999999,
+      "max_foot_ik_error_m": 2.7476618026966064e-16,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.14610213459788707,
+        -0.06,
+        0.7475
+      ]
+    },
+    {
+      "name": "seg36_arch_14_to_15",
+      "outcome": "planning_failed",
+      "message": "segment 38 unload infeasible at s=0.95",
+      "segment": 38,
+      "kind": "unload",
+      "progress": 0.95,
+      "planned_time_s": 37.67999999999999,
+      "max_foot_ik_error_m": 2.1389921281142964e-16,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.14610213459788707,
+        -0.06,
+        0.7475
+      ]
+    },
+    {
+      "name": "seg36_arch_14_to_15",
+      "outcome": "planning_failed",
+      "message": "segment 38 unload infeasible at s=0.95",
+      "segment": 38,
+      "kind": "unload",
+      "progress": 0.95,
+      "planned_time_s": 37.67999999999999,
+      "max_foot_ik_error_m": 2.5626980138831173e-16,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.14610213459788707,
+        -0.06,
+        0.7475
+      ]
+    }
+  ]
+}

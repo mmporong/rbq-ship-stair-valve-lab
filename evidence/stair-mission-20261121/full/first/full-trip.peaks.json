@@ -1,0 +1,82 @@
+{
+  "time_range_s": [
+    0.005,
+    767.999999999374
+  ],
+  "mission_seconds": 767.999999999374,
+  "mount_reference": "RB1_Base origin; force XYZ then moment XYZ in world axes",
+  "metrics": {
+    "joint_torque_nm": {
+      "value": 150.0,
+      "time_s": 170.34499999991758,
+      "stage": "return",
+      "sample_index": 34068,
+      "item": "RR_calf_joint"
+    },
+    "joint_torque_ratio": {
+      "value": 1.0,
+      "time_s": 149.91499999993616,
+      "stage": "return",
+      "sample_index": 29982,
+      "item": "RR_hip_joint"
+    },
+    "joint_off_axis_bending_nm": {
+      "value": 1149.1843666862399,
+      "time_s": 442.1449999996704,
+      "stage": "return",
+      "sample_index": 88428,
+      "item": "arm_joint2"
+    },
+    "joint_reaction_n": {
+      "value": 8563.34800842845,
+      "time_s": 360.84999999974434,
+      "stage": "return",
+      "sample_index": 72169,
+      "item": "arm_joint2"
+    },
+    "rb1_mount_force_n": {
+      "value": 8046.14445425668,
+      "time_s": 360.84999999974434,
+      "stage": "return",
+      "sample_index": 72169
+    },
+    "rb1_mount_moment_nm": {
+      "value": 1173.058205469165,
+      "time_s": 442.1449999996704,
+      "stage": "return",
+      "sample_index": 88428
+    },
+    "foot_surface_force_n": {
+      "value": 1400.2487067643785,
+      "time_s": 443.1249999996695,
+      "stage": "return",
+      "sample_index": 88624,
+      "item": "RR/floor"
+    },
+    "hinge_friction_torque_nm": {
+      "value": 10.0,
+      "time_s": 97.1899999999841,
+      "stage": "contact",
+      "sample_index": 19437
+    },
+    "pad_closing_torque_nm": {
+      "value": 10.753434243819303,
+      "time_s": 111.35999999997121,
+      "stage": "hold",
+      "sample_index": 22271
+    },
+    "pad_normal_force_n": {
+      "value": 184.2271626952591,
+      "time_s": 97.20999999998408,
+      "stage": "contact",
+      "sample_index": 19441,
+      "item": "upper"
+    },
+    "pad_closing_tangent_force_n": {
+      "value": 93.01168622593548,
+      "time_s": 111.35999999997121,
+      "stage": "hold",
+      "sample_index": 22271
+    }
+  }
+}

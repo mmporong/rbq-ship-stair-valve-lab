@@ -1,0 +1,27 @@
+{
+  "scope": "Minimal successful pose candidates for deterministic RR-before-RL recheck",
+  "search": {
+    "rr_first_path_attempts": [
+      {
+        "base": [
+          0.705773219704887,
+          0.06,
+          1.280000000023606,
+          0.6108652381980153
+        ],
+        "midpoint_ratio": 0.47437746582374807
+      }
+    ],
+    "rl_second_path_attempts": [
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "midpoint_ratio": 0.4773533804232366
+      }
+    ]
+  }
+}

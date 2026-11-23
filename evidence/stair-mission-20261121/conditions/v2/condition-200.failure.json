@@ -1,0 +1,63 @@
+{
+  "outcome": "planning_failed",
+  "slope_deg": 50.0,
+  "rise_m": 0.2,
+  "planner_source_sha256": {
+    "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+    "tools/replay_stair_sequence.py": "b1f8584915aeb189c825d9a95c16c20551e5af50211c8372a65550eeb4394e24",
+    "tools/probe_stair_transfer.py": "a9208f54d5df499e158bb3f92ed36457cb8bd833297cf7fdcfe4f98639d6a39f",
+    "tools/replay_stair_entry.py": "8bd0a7e2a5f61b7415b7fe35d4bef59348f5f6bf4e0ba484a36f969e9d92b80c",
+    "tools/replay_stair_transfer.py": "d4e0fe0554fffaff751791ccc47353c65683f5e2376af4e17261b0917f789514",
+    "src/go2_wall/pose_search.py": "f88f4e4c632e7ee70f840525ccfdf37996db4281f0a732bd5167402fd70a1cbf",
+    "src/go2_wall/stairs.py": "a0dff6cef937dc81a1f3ac126382dd9ec0bd243111c5e825cd5017d3de35696f",
+    "src/go2_wall/transition.py": "2e1e3a502876854c4a6126b522bfd3f65e92bbeff33e0880c61e30e831bb87b1",
+    "src/go2_wall/robot.py": "8c4bf030f05ee4fd7e05a9d96049eacf8d6a7d4589c1f181107c84101131ebb4",
+    "src/go2_wall/statics.py": "30a9b1da0e6b057af33b4012d43487907296d5412e5447afd61e7b9f5e070841"
+  },
+  "message": "segment 36 shift infeasible at s=0.89",
+  "first_failure": {
+    "segment": 36,
+    "kind": "shift",
+    "progress": 0.888,
+    "planned_time_s": 34.51999999999999,
+    "foot_ik_error_m": {
+      "FL": 6.206335383118183e-17,
+      "FR": 2.7755575615628914e-17,
+      "RL": 0.006968599759779576,
+      "RR": 4.163336342344337e-17
+    },
+    "foot_ik_limit_m": 0.002,
+    "collision_tolerance_m": 0.0001,
+    "unexpected_overlaps": [],
+    "static_reference_available": false,
+    "planning_qpos": [
+      0.2119525068498446,
+      -0.0547766784,
+      0.7558077536302411,
+      0.9550777177844239,
+      0.0,
+      -0.29635545041671896,
+      0.0,
+      0.15917923739927,
+      1.3310007804144828,
+      -2.0484247588889906,
+      0.1977017841816792,
+      1.2986035039779378,
+      -0.4189,
+      0.20075073345343997,
+      1.674443643669245,
+      -1.232156300933081,
+      0.18719216224028373,
+      1.5567737881932078,
+      -1.1203023526648384,
+      0.0,
+      -1.4,
+      0.6,
+      0.0,
+      -2.967,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

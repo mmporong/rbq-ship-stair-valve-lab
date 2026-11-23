@@ -1,0 +1,87 @@
+{
+  "verdict": "pass",
+  "recorded_at": "2026-11-21T19:10:54+09:00",
+  "checker": {
+    "path": "tools/check_stair_corridor.py",
+    "sha256": "367b01bc38edbb75327b29d0a02ed37422951aac1ccd1e11415aeb0ebb028a7a",
+    "behavior": [
+      "interpolates nominal tip force at each reference time",
+      "requires recorded tip shape to match the interpolated force shape",
+      "requires values to match within absolute tolerance 1e-12 and zero relative tolerance",
+      "passes each recorded tip force to the static solver"
+    ],
+    "normalized_lf_sha256": "367b01bc38edbb75327b29d0a02ed37422951aac1ccd1e11415aeb0ebb028a7a",
+    "sha256_scope": "sha256 records the reviewed working copy; normalized_lf_sha256 also verifies the indexed source across Windows and Unix checkout line endings."
+  },
+  "archives": [
+    {
+      "path": "evidence/stair-mission-20261121/full/walk50.npz",
+      "sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "rows": 36801,
+      "tip_shape": [
+        36801,
+        3
+      ],
+      "tip_nonzero_elements": 0,
+      "tip_nonzero_rows": 0,
+      "tip_abs_max": 0.0
+    },
+    {
+      "path": "evidence/stair-corridor-20261121/refined/walk50.npz",
+      "sha256": "78bd8f3370267a8f6556f80b74c7bcf7f9b0085f0f113442a7579d3312c17bf2",
+      "rows": 50828,
+      "tip_shape": [
+        50828,
+        3
+      ],
+      "tip_nonzero_elements": 0,
+      "tip_nonzero_rows": 0,
+      "tip_abs_max": 0.0
+    },
+    {
+      "path": "evidence/stair-corridor-20261121/tracked/walk50.npz",
+      "sha256": "0ce148501742caacaeebfcf95caafbd8bdb3dd0a9f93c710b64bbc6e6bc8b5c6",
+      "rows": 53020,
+      "tip_shape": [
+        53020,
+        3
+      ],
+      "tip_nonzero_elements": 0,
+      "tip_nonzero_rows": 0,
+      "tip_abs_max": 0.0
+    },
+    {
+      "path": "evidence/stair-corridor-20261121/local-repair/walk50.npz",
+      "sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+      "rows": 50950,
+      "tip_shape": [
+        50950,
+        3
+      ],
+      "tip_nonzero_elements": 0,
+      "tip_nonzero_rows": 0,
+      "tip_abs_max": 0.0,
+      "identical_to": ".omx/mission-success-20261121/minimal-corridor/tracked-motor-minimal-final.npz"
+    }
+  ],
+  "negative_control": {
+    "path": ".omx/mission-success-20261121/minimal-corridor/tracked-motor-minimal.npz",
+    "sha256": "e34a36c46edb3376dd7109d499d787a2f66df43f92c4304289da892b3a3cf054",
+    "rows": 50950,
+    "tip_shape": [
+      50950,
+      3
+    ],
+    "tip_nonzero_elements": 372,
+    "tip_nonzero_rows": 124,
+    "tip_abs_max": 1.7924170459754485,
+    "checker_exit_code": 1,
+    "checker_error": "Walking reference changes the prescribed tip force",
+    "checker_output_created": false
+  },
+  "validation": {
+    "pytest": "3 passed in 1.47s",
+    "ruff": "All checks passed"
+  },
+  "excluded": "The two active 976.240 second full replays were not evaluated or inferred."
+}

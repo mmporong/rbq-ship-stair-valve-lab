@@ -1,0 +1,296 @@
+{
+  "scene": {
+    "physical_baseline_timestep_s": 0.001,
+    "timestep_sensitivity_s": 0.0025,
+    "actuation_period_s": 0.005,
+    "extent": "through-task",
+    "terminal_overtravel_deg": 1.2,
+    "walking_reference": "evidence/stair-corridor-20261121/refined/walk50.npz",
+    "walking_reference_sha256": "78bd8f3370267a8f6556f80b74c7bcf7f9b0085f0f113442a7579d3312c17bf2",
+    "physical_controller_sources": [
+      {
+        "src/go2_wall/grasp_motion.py": "01d3717f6f20e08497ee517343512bf5ccdfeb04bb145bca8a0ddf2d0f3eeb22",
+        "src/go2_wall/gripper_control.py": "f753eca35d2a0d0902863503571f7d54b5a6e08ef8a9d015e85bc0de04be1057",
+        "src/go2_wall/mission_verdict.py": "b99448d31bb1c84eb71fcedb4fdd39b8ecc671b0755de7d20b2801995e724b8c",
+        "src/go2_wall/stair_loads.py": "08b9dd9cd64cda48fd50761402de3a6273004d81300652386c1a190241e49771",
+        "src/go2_wall/stair_valve.py": "c032a75c4c0c8d356d205dee7490a2a91487890c5f36704a6d468332791c53d3",
+        "src/go2_wall/stair_walking_control.py": "baf47c2f255abac60da2ce0767bd2863d4e32857c3fe60103a51921a695645bb",
+        "src/go2_wall/transition.py": "100136d8a18d36a5af541670d3fb57cc96f3f19c1fb0293404885789c7c2b336",
+        "tools/replay_stair_mission.py": "7e03f241de345a32d4a2e4dc4841d698d136a27903e1cf582838445a46492484",
+        "tools/replay_stair_sequence.py": "bcd28c7baa4e0dd869e3e24a754f8061bc35bc4b2292adb579e4ba8aab5d716e",
+        "tools/stair_mission_limits.py": "ca87784e73c96eff026bf4d83de4e3b3e739aad5704fec22b16a1a68b3c82a88",
+        "tools/stair_mission_reference.py": "9766b122204ccf993f2c066dfbc63ac3364de212935bff54be2fe51d912404aa",
+        "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+        "tools/stair_mission_trace.py": "9c0790c0d9918ba977360381a2eaaa0b5cf6c4dd50e51bfca353771d66158638"
+      },
+      {
+        "src/go2_wall/grasp_motion.py": "01d3717f6f20e08497ee517343512bf5ccdfeb04bb145bca8a0ddf2d0f3eeb22",
+        "src/go2_wall/gripper_control.py": "f753eca35d2a0d0902863503571f7d54b5a6e08ef8a9d015e85bc0de04be1057",
+        "src/go2_wall/mission_verdict.py": "b99448d31bb1c84eb71fcedb4fdd39b8ecc671b0755de7d20b2801995e724b8c",
+        "src/go2_wall/stair_loads.py": "08b9dd9cd64cda48fd50761402de3a6273004d81300652386c1a190241e49771",
+        "src/go2_wall/stair_valve.py": "c032a75c4c0c8d356d205dee7490a2a91487890c5f36704a6d468332791c53d3",
+        "src/go2_wall/stair_walking_control.py": "baf47c2f255abac60da2ce0767bd2863d4e32857c3fe60103a51921a695645bb",
+        "src/go2_wall/transition.py": "100136d8a18d36a5af541670d3fb57cc96f3f19c1fb0293404885789c7c2b336",
+        "tools/replay_stair_mission.py": "9baa53858ffb82762da13fd0a922dfd76e0dd569158911a8259d0fbaf373d773",
+        "tools/replay_stair_sequence.py": "bcd28c7baa4e0dd869e3e24a754f8061bc35bc4b2292adb579e4ba8aab5d716e",
+        "tools/stair_mission_limits.py": "ca87784e73c96eff026bf4d83de4e3b3e739aad5704fec22b16a1a68b3c82a88",
+        "tools/stair_mission_reference.py": "9766b122204ccf993f2c066dfbc63ac3364de212935bff54be2fe51d912404aa",
+        "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+        "tools/stair_mission_trace.py": "9c0790c0d9918ba977360381a2eaaa0b5cf6c4dd50e51bfca353771d66158638"
+      }
+    ],
+    "physical_planner_source": {
+      "src/go2_wall/pose_search.py": "f88f4e4c632e7ee70f840525ccfdf37996db4281f0a732bd5167402fd70a1cbf",
+      "src/go2_wall/robot.py": "8c4bf030f05ee4fd7e05a9d96049eacf8d6a7d4589c1f181107c84101131ebb4",
+      "src/go2_wall/stairs.py": "a0dff6cef937dc81a1f3ac126382dd9ec0bd243111c5e825cd5017d3de35696f",
+      "src/go2_wall/statics.py": "30a9b1da0e6b057af33b4012d43487907296d5412e5447afd61e7b9f5e070841",
+      "src/go2_wall/transition.py": "2e1e3a502876854c4a6126b522bfd3f65e92bbeff33e0880c61e30e831bb87b1",
+      "tools/probe_stair_transfer.py": "a9208f54d5df499e158bb3f92ed36457cb8bd833297cf7fdcfe4f98639d6a39f",
+      "tools/replay_stair_entry.py": "8bd0a7e2a5f61b7415b7fe35d4bef59348f5f6bf4e0ba484a36f969e9d92b80c",
+      "tools/replay_stair_sequence.py": "b1f8584915aeb189c825d9a95c16c20551e5af50211c8372a65550eeb4394e24",
+      "tools/replay_stair_transfer.py": "d4e0fe0554fffaff751791ccc47353c65683f5e2376af4e17261b0917f789514",
+      "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7"
+    },
+    "planning_planner_source": {
+      "src/go2_wall/pose_search.py": "f88f4e4c632e7ee70f840525ccfdf37996db4281f0a732bd5167402fd70a1cbf",
+      "src/go2_wall/robot.py": "8c4bf030f05ee4fd7e05a9d96049eacf8d6a7d4589c1f181107c84101131ebb4",
+      "src/go2_wall/stairs.py": "a0dff6cef937dc81a1f3ac126382dd9ec0bd243111c5e825cd5017d3de35696f",
+      "src/go2_wall/statics.py": "30a9b1da0e6b057af33b4012d43487907296d5412e5447afd61e7b9f5e070841",
+      "src/go2_wall/transition.py": "2e1e3a502876854c4a6126b522bfd3f65e92bbeff33e0880c61e30e831bb87b1",
+      "tools/probe_stair_transfer.py": "a9208f54d5df499e158bb3f92ed36457cb8bd833297cf7fdcfe4f98639d6a39f",
+      "tools/replay_stair_entry.py": "8bd0a7e2a5f61b7415b7fe35d4bef59348f5f6bf4e0ba484a36f969e9d92b80c",
+      "tools/replay_stair_sequence.py": "b1f8584915aeb189c825d9a95c16c20551e5af50211c8372a65550eeb4394e24",
+      "tools/replay_stair_transfer.py": "d4e0fe0554fffaff751791ccc47353c65683f5e2376af4e17261b0917f789514",
+      "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7"
+    }
+  },
+  "result": [
+    {
+      "id": "nominal",
+      "outcome": "physical_failed",
+      "m1": "PASS",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "hold",
+        "time_s": 111.76800000016962,
+        "metric": "stance_slip_m",
+        "measured": 0.010000016097540768,
+        "limit": "<= 0.01"
+      }
+    },
+    {
+      "id": "slope_60",
+      "outcome": "planning_failed",
+      "m1": "N/A",
+      "n1": "N/A",
+      "first_failure": {
+        "stage": "segment_16_shift",
+        "time_s": 13.6,
+        "metric": "unexpected_overlap_m",
+        "measured": 0.000684301907967113,
+        "limit": 0.0001
+      }
+    },
+    {
+      "id": "rise_165",
+      "outcome": "planning_failed",
+      "m1": "N/A",
+      "n1": "N/A",
+      "first_failure": {
+        "stage": "segment_58_swing",
+        "time_s": 55.95999999999998,
+        "metric": "max_foot_ik_error_m",
+        "measured": 0.002213606451974058,
+        "limit": 0.002
+      }
+    },
+    {
+      "id": "rise_200",
+      "outcome": "planning_failed",
+      "m1": "N/A",
+      "n1": "N/A",
+      "first_failure": {
+        "stage": "segment_36_shift",
+        "time_s": 34.51999999999999,
+        "metric": "max_foot_ik_error_m",
+        "measured": 0.006968599759779576,
+        "limit": 0.002
+      }
+    },
+    {
+      "id": "floor_mu_050",
+      "outcome": "physical_failed",
+      "m1": "PASS",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "hold",
+        "time_s": 111.90200000017026,
+        "metric": "stance_slip_m",
+        "measured": 0.01000017627580094,
+        "limit": "<= 0.01"
+      }
+    },
+    {
+      "id": "floor_mu_080",
+      "outcome": "physical_failed",
+      "m1": "PASS",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "hold",
+        "time_s": 111.86500000017008,
+        "metric": "stance_slip_m",
+        "measured": 0.01000011477979767,
+        "limit": "<= 0.01"
+      }
+    },
+    {
+      "id": "resistance_5",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.82000000010302,
+        "metric": "max_base_shift_m",
+        "measured": 0.01005107993037919,
+        "limit": "<= 0.01",
+        "message": "M1 stability limit exceeded"
+      }
+    },
+    {
+      "id": "resistance_15",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 99.78100000011239,
+        "metric": "max_base_shift_m",
+        "measured": 0.01000311184168239,
+        "limit": "<= 0.01",
+        "message": "M1 stability limit exceeded"
+      }
+    },
+    {
+      "id": "sensitivity_lever_m_0_1",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.75800000010273,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.021000000000100272,
+        "limit": "<= 0.02",
+        "message": "a pad lost contact too long"
+      }
+    },
+    {
+      "id": "sensitivity_lever_m_0_14",
+      "outcome": "physical_failed",
+      "m1": "PASS",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "hold",
+        "time_s": 110.64400000016425,
+        "metric": "stance_slip_m",
+        "measured": 0.010000195929014286,
+        "limit": "<= 0.01"
+      }
+    },
+    {
+      "id": "sensitivity_pad_mu_0_6",
+      "outcome": "physical_failed",
+      "m1": "PASS",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "hold",
+        "time_s": 111.95900000017053,
+        "metric": "stance_slip_m",
+        "measured": 0.01000004173544747,
+        "limit": "<= 0.01"
+      }
+    },
+    {
+      "id": "sensitivity_pad_mu_1",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "hold",
+        "time_s": 108.8510000001557,
+        "metric": "angle_deg",
+        "measured": 89.65967587105114,
+        "limit": "90.0 +/- 0.25",
+        "message": "hold angle left the allowed band"
+      }
+    },
+    {
+      "id": "sensitivity_finger_force_limit_n_75",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.66000000010226,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.021000000000100272,
+        "limit": "<= 0.02",
+        "message": "a pad lost contact too long"
+      }
+    },
+    {
+      "id": "sensitivity_finger_slide_frictionloss_n_15",
+      "outcome": "physical_failed",
+      "m1": "PASS",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "hold",
+        "time_s": 111.7850000001697,
+        "metric": "stance_slip_m",
+        "measured": 0.01000013924532778,
+        "limit": "<= 0.01"
+      }
+    },
+    {
+      "id": "sensitivity_arm_limits_named_lims_ex_joint_limits",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.60100000010198,
+        "metric": "requested_torque_ratio",
+        "measured": 2.0058471119075185,
+        "limit": "<= 1.0"
+      }
+    },
+    {
+      "id": "sensitivity_timestep_s_0_0025",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 97.60249999994748,
+        "metric": "start_angle_deg",
+        "measured": 0.3943154486448407,
+        "limit": "abs <= 0.25",
+        "message": "valve did not start open"
+      }
+    },
+    {
+      "id": "sensitivity_impratio_10",
+      "outcome": "physical_failed",
+      "m1": "FAIL",
+      "n1": "FAIL",
+      "first_failure": {
+        "stage": "prewalk",
+        "time_s": 4.196999999999736,
+        "metric": "stance_slip_m",
+        "measured": 0.010001474806524878,
+        "limit": "<= 0.01"
+      }
+    }
+  ]
+}

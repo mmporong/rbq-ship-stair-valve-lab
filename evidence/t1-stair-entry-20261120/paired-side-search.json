@@ -1,0 +1,218 @@
+{
+  "slope_deg": 50.0,
+  "rise_m": 0.19,
+  "swing_curve": "over_tread",
+  "cases": [
+    {
+      "preceding_steps": [
+        {
+          "leg": "FR",
+          "foot_target_xyz_m": [
+            0.2229289299236832,
+            -0.19285,
+            0.41000000000000003
+          ],
+          "path": {
+            "start_base": [
+              -0.12325,
+              0.06,
+              0.605,
+              0.08726646259971647
+            ],
+            "swing_base": [
+              -0.12825,
+              0.06,
+              0.605,
+              0.3490658503988659
+            ],
+            "path_cost": 0.2800662236019965
+          },
+          "swing_s": 2.0,
+          "swing_curve": "over_tread"
+        },
+        {
+          "leg": "RR",
+          "foot_target_xyz_m": [
+            0.0635,
+            -0.19285,
+            0.22
+          ],
+          "path": {
+            "start_base": [
+              -0.12825,
+              0.06,
+              0.605,
+              0.3490658503988659
+            ],
+            "swing_base": [
+              -0.08839276751907921,
+              0.09,
+              0.5925,
+              0.3490658503988659
+            ],
+            "path_cost": 0.2796116390785092
+          },
+          "swing_s": 2.4,
+          "swing_curve": "over_tread"
+        }
+      ],
+      "attempt": {
+        "name": "front_left_after_right_entry",
+        "leg": "FL",
+        "foot_target_xyz_m": [
+          0.2229289299236832,
+          0.19285,
+          0.41000000000000003
+        ],
+        "swing_poses": 0,
+        "tried": 0,
+        "connections": 0,
+        "replays": []
+      },
+      "swing_s": 2.0
+    },
+    {
+      "preceding_steps": [
+        {
+          "leg": "FL",
+          "foot_target_xyz_m": [
+            0.2229289299236832,
+            0.19285,
+            0.41000000000000003
+          ],
+          "path": {
+            "start_base": [
+              -0.12325,
+              0.06,
+              0.605,
+              0.08726646259971647
+            ],
+            "swing_base": [
+              -0.15825,
+              -0.03,
+              0.575,
+              0.17453292519943295
+            ],
+            "path_cost": 0.32818660041340453
+          },
+          "swing_s": 2.0,
+          "swing_curve": "over_tread"
+        },
+        {
+          "leg": "RL",
+          "foot_target_xyz_m": [
+            0.0635,
+            0.19285,
+            0.22
+          ],
+          "path": {
+            "start_base": [
+              -0.15825,
+              -0.03,
+              0.575,
+              0.17453292519943295
+            ],
+            "swing_base": [
+              -0.1183927675190792,
+              -0.09,
+              0.5625,
+              0.17453292519943295
+            ],
+            "path_cost": 0.31496454326805096
+          },
+          "swing_s": 2.4,
+          "swing_curve": "over_tread"
+        }
+      ],
+      "attempt": {
+        "name": "front_right_after_left_entry",
+        "leg": "FR",
+        "foot_target_xyz_m": [
+          0.2229289299236832,
+          -0.19285,
+          0.41000000000000003
+        ],
+        "swing_poses": 1,
+        "tried": 1,
+        "connections": 0,
+        "replays": []
+      },
+      "swing_s": 2.0
+    }
+  ],
+  "search": {
+    "base_grid": {
+      "dx": [
+        -0.21,
+        -0.18,
+        -0.15,
+        -0.12,
+        -0.09,
+        -0.06,
+        -0.03,
+        0.0,
+        0.03,
+        0.06,
+        0.09,
+        0.12,
+        0.15,
+        0.18,
+        0.21
+      ],
+      "dy": [
+        -0.09,
+        -0.06,
+        -0.03,
+        0.0,
+        0.03,
+        0.06,
+        0.09
+      ],
+      "dz": [
+        0.24,
+        0.27,
+        0.3,
+        0.33,
+        0.36,
+        0.39,
+        0.42,
+        0.45,
+        0.48,
+        0.51,
+        0.54,
+        0.57,
+        0.6,
+        0.63,
+        0.66
+      ]
+    },
+    "pitch_offsets_deg": [
+      -50,
+      -45,
+      -40,
+      -35,
+      -30,
+      -25,
+      -20,
+      -15,
+      -10,
+      -5,
+      0,
+      5,
+      10
+    ],
+    "max_per_ranking": 24,
+    "rankings_in_merge_order": [
+      "translation_metres + 0.08 * pitch_distance_radians",
+      "static torque ratio",
+      "descending base x then static torque ratio"
+    ],
+    "clearance_m": 0.03,
+    "horizontal_disturbance_fraction": 0.1,
+    "search_functions": [
+      "tools/probe_stair_transfer.py:scored_poses",
+      "tools/probe_stair_transfer.py:continuous_path"
+    ],
+    "floor_and_deck_prefix": "both-rear-deck-plan.json"
+  }
+}

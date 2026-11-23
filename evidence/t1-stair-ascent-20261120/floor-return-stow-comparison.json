@@ -1,0 +1,153 @@
+{
+  "slope_deg": 50.0,
+  "rise_m": 0.19,
+  "reference_plan": "floor-return-with-arm-offset-plan.json",
+  "stow_profiles": [
+    {
+      "arm_stow_rad": {
+        "arm_joint1": 0.0,
+        "arm_joint2": -1.2,
+        "arm_joint3": 0.3,
+        "arm_joint4": 0.0,
+        "arm_joint5": -2.967,
+        "arm_joint6": 0.0
+      },
+      "local": {
+        "duration_s": 75.9,
+        "verified_sequence": true,
+        "peak_torque_ratio": 0.5464997548350303,
+        "max_base_track_mm": 12.187785752893395,
+        "max_stance_slip_mm": 5.908,
+        "fell": false,
+        "saturated_steps": 0,
+        "qp_failed_ticks": 0,
+        "qp_relaxed_ticks": 0,
+        "unexpected_contacts_n": {}
+      },
+      "full": {
+        "duration_s": 733.9999999999972,
+        "verified_sequence": true,
+        "peak_torque_ratio": 0.6469525799919111,
+        "max_base_track_mm": 33.98708094883533,
+        "max_stance_slip_mm": 8.273,
+        "fell": false,
+        "saturated_steps": 0,
+        "qp_failed_ticks": 0,
+        "qp_relaxed_ticks": 0,
+        "unexpected_contacts_n": {},
+        "stable_floor_return": {
+          "time_s": [
+            733.4999999999972,
+            733.9999999999972
+          ],
+          "sample_count": 50,
+          "max_start_xy_error_m": 0.028260186169289804,
+          "min_up_z": 0.9974536988416113,
+          "max_linear_speed_mps": 0.002752553328143799,
+          "max_angular_speed_radps": 0.005208904686620707,
+          "min_floor_force_n": 69.51759306649322,
+          "verified": true
+        },
+        "physical_round_trip_verified": false
+      }
+    },
+    {
+      "arm_stow_rad": {
+        "arm_joint1": 0.0,
+        "arm_joint2": -1.4,
+        "arm_joint3": 0.6,
+        "arm_joint4": 0.0,
+        "arm_joint5": -2.967,
+        "arm_joint6": 0.0
+      },
+      "local": {
+        "duration_s": 75.9,
+        "verified_sequence": true,
+        "peak_torque_ratio": 0.545153089129094,
+        "max_base_track_mm": 12.16544482423646,
+        "max_stance_slip_mm": 5.797,
+        "fell": false,
+        "saturated_steps": 0,
+        "qp_failed_ticks": 0,
+        "qp_relaxed_ticks": 0,
+        "unexpected_contacts_n": {}
+      },
+      "full": {
+        "duration_s": 733.9999999999972,
+        "verified_sequence": true,
+        "peak_torque_ratio": 0.6470088149354783,
+        "max_base_track_mm": 34.111429063722866,
+        "max_stance_slip_mm": 6.753,
+        "fell": false,
+        "saturated_steps": 0,
+        "qp_failed_ticks": 0,
+        "qp_relaxed_ticks": 0,
+        "unexpected_contacts_n": {},
+        "stable_floor_return": {
+          "time_s": [
+            733.4999999999972,
+            733.9999999999972
+          ],
+          "sample_count": 50,
+          "max_start_xy_error_m": 0.028249769108707013,
+          "min_up_z": 0.9974793075302324,
+          "max_linear_speed_mps": 0.0027252247305331657,
+          "max_angular_speed_radps": 0.005106470146798445,
+          "min_floor_force_n": 69.27199207296991,
+          "verified": true
+        },
+        "physical_round_trip_verified": false
+      }
+    }
+  ],
+  "modified_move_index_zero_based": 108,
+  "timing_comparison_move_slice_zero_based": [
+    103,
+    113
+  ],
+  "timing_comparison_stop_exclusive": true,
+  "timing_comparison": [
+    {
+      "body_shift_seconds": 1.5,
+      "duration_s": 48.59999999999999,
+      "verified_sequence": true,
+      "peak_torque_ratio": 0.6468876419378249,
+      "max_base_track_mm": 34.10803178745858,
+      "max_stance_slip_mm": 5.405,
+      "fell": false,
+      "saturated_steps": 0,
+      "qp_failed_ticks": 0,
+      "qp_relaxed_ticks": 0,
+      "unexpected_contacts_n": {},
+      "peak_watch_seconds_into_shift": 0.5349999999995454
+    },
+    {
+      "body_shift_seconds": 2.5,
+      "duration_s": 49.59999999999999,
+      "verified_sequence": true,
+      "peak_torque_ratio": 0.6153202028956217,
+      "max_base_track_mm": 24.511018607992447,
+      "max_stance_slip_mm": 5.405,
+      "fell": false,
+      "saturated_steps": 0,
+      "qp_failed_ticks": 0,
+      "qp_relaxed_ticks": 0,
+      "unexpected_contacts_n": {},
+      "peak_watch_seconds_into_shift": 0.7149999999995096
+    },
+    {
+      "body_shift_seconds": 3.5,
+      "duration_s": 50.59999999999999,
+      "verified_sequence": true,
+      "peak_torque_ratio": 0.6027520613821832,
+      "max_base_track_mm": 21.2348493852409,
+      "max_stance_slip_mm": 5.436,
+      "fell": false,
+      "saturated_steps": 0,
+      "qp_failed_ticks": 0,
+      "qp_relaxed_ticks": 0,
+      "unexpected_contacts_n": {},
+      "peak_watch_seconds_into_shift": 0.8849999999994758
+    }
+  ]
+}

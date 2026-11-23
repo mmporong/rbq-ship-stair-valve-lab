@@ -1,0 +1,82 @@
+{
+  "time_range_s": [
+    0.001,
+    976.2399999838269
+  ],
+  "mission_seconds": 976.2399999838269,
+  "mount_reference": "RB1_Base origin; force XYZ then moment XYZ in world axes",
+  "metrics": {
+    "joint_torque_nm": {
+      "value": 118.44072064234594,
+      "time_s": 186.35100000052574,
+      "stage": "return",
+      "sample_index": 186350,
+      "item": "RL_calf_joint"
+    },
+    "joint_torque_ratio": {
+      "value": 0.8826606041543397,
+      "time_s": 199.29600000058755,
+      "stage": "return",
+      "sample_index": 199295,
+      "item": "FL_thigh_joint"
+    },
+    "joint_off_axis_bending_nm": {
+      "value": 107.22753082703281,
+      "time_s": 199.3050000005876,
+      "stage": "return",
+      "sample_index": 199304,
+      "item": "FL_hip_joint"
+    },
+    "joint_reaction_n": {
+      "value": 559.5199328168053,
+      "time_s": 35.20500000000865,
+      "stage": "prewalk",
+      "sample_index": 35204,
+      "item": "RL_calf_joint"
+    },
+    "rb1_mount_force_n": {
+      "value": 173.22710849215625,
+      "time_s": 333.7249999990203,
+      "stage": "return",
+      "sample_index": 333724
+    },
+    "rb1_mount_moment_nm": {
+      "value": 61.56722517667961,
+      "time_s": 333.7249999990203,
+      "stage": "return",
+      "sample_index": 333724
+    },
+    "foot_surface_force_n": {
+      "value": 556.5245203122835,
+      "time_s": 35.20500000000865,
+      "stage": "prewalk",
+      "sample_index": 35204,
+      "item": "RL/floor"
+    },
+    "hinge_friction_torque_nm": {
+      "value": 10.0,
+      "time_s": 98.7370000001074,
+      "stage": "operate",
+      "sample_index": 98736
+    },
+    "pad_closing_torque_nm": {
+      "value": 10.117044407888137,
+      "time_s": 97.19000000010001,
+      "stage": "contact",
+      "sample_index": 97189
+    },
+    "pad_normal_force_n": {
+      "value": 178.18237838552227,
+      "time_s": 97.2070000001001,
+      "stage": "contact",
+      "sample_index": 97206,
+      "item": "upper"
+    },
+    "pad_closing_tangent_force_n": {
+      "value": 87.37923828714162,
+      "time_s": 113.85500000017959,
+      "stage": "release",
+      "sample_index": 113854
+    }
+  }
+}

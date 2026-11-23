@@ -1,0 +1,19 @@
+{
+  "schema": "rbq_residual_attribution_before_holdout_v1",
+  "case_set_sha256": "f0d31ec70f45427d4164e23ac82358120b0f83ca12eaa4bab50b6eacaa0c4a3d",
+  "design_origin": "The development-only learned controller reached the work stance three times but missed the strict valve hold three times. The learned controller with frozen PPO torque removed passed those same three strict development runs.",
+  "original_comparisons": "The six arms, learned parameters, reward, clocks and strict endpoints in protocol.json are frozen. This addendum does not change them.",
+  "matched_learning_comparison": {
+    "initial": "Use the existing learned_no_ppo controller with INITIAL_PARAMETERS, including identical expert torque and measured contact feedback.",
+    "trained": "Use learned_no_ppo with the return-optimized parameters in training.json.",
+    "contrast": "Training-time parameter changes alone. Report paired work stance, strict full mission, collision, and realized contact authority across all twelve cases."
+  },
+  "agent_comparison": {
+    "input": "Only the three development failures of the learned residual and the mechanics of each of the six frozen controls. No development outcomes of alternatives or test outcomes in the prompts.",
+    "treatment": "The original rl-triage-agent source-bound engine makes one proposal from the six controls with opaque labels. Freeze its answer before evaluating the cases.",
+    "controls": ["leave the learned policy unchanged", "same model with failure observations withheld", "fixed full contact feedback"],
+    "endpoints": ["strict_full_mission", "work_stance", "body_collision"],
+    "invalid_or_unchanged_choice": "Report the actual result without substitution or a second attempt."
+  },
+  "attribution": "A candidate equal to a fixed or observation-free candidate has identical physical outcomes. Compare chosen interventions, success rate, and selection evidence separately."
+}

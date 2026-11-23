@@ -1,0 +1,82 @@
+{
+  "time_range_s": [
+    124.00000000022803,
+    131.99900000026622
+  ],
+  "mission_seconds": 8.000000000038193,
+  "mount_reference": "RB1_Base origin; force XYZ then moment XYZ in world axes",
+  "metrics": {
+    "joint_torque_nm": {
+      "value": 99.63173726939091,
+      "time_s": 128.04600000024735,
+      "stage": "return",
+      "sample_index": 4046,
+      "item": "RL_calf_joint"
+    },
+    "joint_torque_ratio": {
+      "value": 0.6642115817959394,
+      "time_s": 128.04600000024735,
+      "stage": "return",
+      "sample_index": 4046,
+      "item": "RL_calf_joint"
+    },
+    "joint_off_axis_bending_nm": {
+      "value": 39.047955901759444,
+      "time_s": 128.04600000024735,
+      "stage": "return",
+      "sample_index": 4046,
+      "item": "RL_hip_joint"
+    },
+    "joint_reaction_n": {
+      "value": 292.05503253513274,
+      "time_s": 128.05000000024737,
+      "stage": "return",
+      "sample_index": 4050,
+      "item": "RL_calf_joint"
+    },
+    "rb1_mount_force_n": {
+      "value": 91.64402752893652,
+      "time_s": 127.95600000024692,
+      "stage": "return",
+      "sample_index": 3956
+    },
+    "rb1_mount_moment_nm": {
+      "value": 31.591082287179585,
+      "time_s": 128.05000000024737,
+      "stage": "return",
+      "sample_index": 4050
+    },
+    "foot_surface_force_n": {
+      "value": 296.30692842381035,
+      "time_s": 128.05000000024737,
+      "stage": "return",
+      "sample_index": 4050,
+      "item": "RL/tread3"
+    },
+    "hinge_friction_torque_nm": {
+      "value": 0.05299470156576434,
+      "time_s": 124.00000000022803,
+      "stage": "retract",
+      "sample_index": 0
+    },
+    "pad_closing_torque_nm": {
+      "value": 0.0,
+      "time_s": 124.00000000022803,
+      "stage": "retract",
+      "sample_index": 0
+    },
+    "pad_normal_force_n": {
+      "value": 0.0,
+      "time_s": 124.00000000022803,
+      "stage": "retract",
+      "sample_index": 0,
+      "item": "upper"
+    },
+    "pad_closing_tangent_force_n": {
+      "value": 0.0,
+      "time_s": 124.00000000022803,
+      "stage": "retract",
+      "sample_index": 0
+    }
+  }
+}

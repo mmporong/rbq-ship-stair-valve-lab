@@ -1,0 +1,197 @@
+{
+  "name": "mission.npz",
+  "bytes": 1879559101,
+  "sha256": "cd66300d85d761770d9d1dd643c238d306c43440bc0700844b56a69a50d64410",
+  "parts": [
+    {
+      "name": "mission.npz.001",
+      "bytes": 50331648,
+      "sha256": "03ba3cb066e1c45436647002fafb0e7e6f866581a8f6a09d860605231c0c2432"
+    },
+    {
+      "name": "mission.npz.002",
+      "bytes": 50331648,
+      "sha256": "44d3430de7ca96d4bdfc17e92c71e83d84d0f710ddde3e4a9db3c9aa24c74678"
+    },
+    {
+      "name": "mission.npz.003",
+      "bytes": 50331648,
+      "sha256": "bc376db9d66b3e277cdb790bc5819e3922f5091f7347318cce39bef114d0bd59"
+    },
+    {
+      "name": "mission.npz.004",
+      "bytes": 50331648,
+      "sha256": "41c6c9907917d5f2f1e417f51813eae0ec957fe7bf3776273e48c8567286856b"
+    },
+    {
+      "name": "mission.npz.005",
+      "bytes": 50331648,
+      "sha256": "457a58c2dd79f4285b6ae464791ba81b467464fa5dc80e88b78d6f720dd41c21"
+    },
+    {
+      "name": "mission.npz.006",
+      "bytes": 50331648,
+      "sha256": "d366af774423c769b909142c0b968acda0dbf47cf0ef950c23f244eb5105e732"
+    },
+    {
+      "name": "mission.npz.007",
+      "bytes": 50331648,
+      "sha256": "e016ee2e4a540af99540c99257fe9b0d6ca46d00736b69a30374728ec9aee1f5"
+    },
+    {
+      "name": "mission.npz.008",
+      "bytes": 50331648,
+      "sha256": "86c79d814f4c6bfeaa59a06878a69be0ebed1206a45819aaf8336bf043a7fc9b"
+    },
+    {
+      "name": "mission.npz.009",
+      "bytes": 50331648,
+      "sha256": "e2b70c70fc4d2ada31d15fc72844752eab18289322ff603415546cfd20d7c6e4"
+    },
+    {
+      "name": "mission.npz.010",
+      "bytes": 50331648,
+      "sha256": "84a84919d0a7c539e7c5fc393fb3bb0125e58ecd368931d5481866b8a9047974"
+    },
+    {
+      "name": "mission.npz.011",
+      "bytes": 50331648,
+      "sha256": "9e2653c7878984a406cc49c27e104790d4bbb299ceea087132838017629a11dc"
+    },
+    {
+      "name": "mission.npz.012",
+      "bytes": 50331648,
+      "sha256": "af0291ed5579d7adcc1e2717ff355ffac18a147753619db0661755df41f690c3"
+    },
+    {
+      "name": "mission.npz.013",
+      "bytes": 50331648,
+      "sha256": "94c3cbfb5e3dce7f8665318566b64e0bc977abd3b545a6325cc993a3f9eaefcc"
+    },
+    {
+      "name": "mission.npz.014",
+      "bytes": 50331648,
+      "sha256": "05c54ba04a30929a1bf4b7ae7e7b32a36a9931cbacd9eb36b651eec93e4d9c29"
+    },
+    {
+      "name": "mission.npz.015",
+      "bytes": 50331648,
+      "sha256": "7530792f6a92654d0330902f1a815472c47bf478f13051bb42b1bf065136d559"
+    },
+    {
+      "name": "mission.npz.016",
+      "bytes": 50331648,
+      "sha256": "e619600e0e8f4f4d953bc5737bb793a68d260e139a86dafb34aec2fe622bf947"
+    },
+    {
+      "name": "mission.npz.017",
+      "bytes": 50331648,
+      "sha256": "6f1ddea119f75b6df779515af0e5181bfe648f79ae0853383b0bacd3d3e3d550"
+    },
+    {
+      "name": "mission.npz.018",
+      "bytes": 50331648,
+      "sha256": "0e3efeeded0ec04d145c862b3078e3274691908925cd320cb698eb7494008411"
+    },
+    {
+      "name": "mission.npz.019",
+      "bytes": 50331648,
+      "sha256": "0bb0b83b8e71178b602e29454e0b96d67b8cd3d3c41411b6cb3db38edfb9fff3"
+    },
+    {
+      "name": "mission.npz.020",
+      "bytes": 50331648,
+      "sha256": "9afb00214de5428e619ff5c36668ca9131b8fc6b2b121a4eb4aebaa2d5bde175"
+    },
+    {
+      "name": "mission.npz.021",
+      "bytes": 50331648,
+      "sha256": "31ba1a3ffc64e3e8689c230afac48245450e488ccd668909845d8688131a5a3b"
+    },
+    {
+      "name": "mission.npz.022",
+      "bytes": 50331648,
+      "sha256": "2bc5774a3ee9a58feed678975810a3e33c39eedacd3b20fe05d9dad04a34adc5"
+    },
+    {
+      "name": "mission.npz.023",
+      "bytes": 50331648,
+      "sha256": "8277a460683df3b9e415c7e751532b2c179127bf6a9040b1a79978f8115e37cd"
+    },
+    {
+      "name": "mission.npz.024",
+      "bytes": 50331648,
+      "sha256": "a5b13782a24825c8c2a1dda2358d4349b54738de02ae08537ce007569e3a2429"
+    },
+    {
+      "name": "mission.npz.025",
+      "bytes": 50331648,
+      "sha256": "b643835ef117d697ad53e77c025d7b6b0052cdae8b0058b15995da650c61b469"
+    },
+    {
+      "name": "mission.npz.026",
+      "bytes": 50331648,
+      "sha256": "08cf73037c61955ce49d9c24a0db789726b427713d2ddd689917f43c52665b02"
+    },
+    {
+      "name": "mission.npz.027",
+      "bytes": 50331648,
+      "sha256": "c94886cc167f7e1d342814347e4b4bc09763966ba7f1f92149df3ae8967ed3bd"
+    },
+    {
+      "name": "mission.npz.028",
+      "bytes": 50331648,
+      "sha256": "b0f9c33ebaae63f0654cbcf437f500850959116ea1b9c0bc0576a9b48cd8e9ea"
+    },
+    {
+      "name": "mission.npz.029",
+      "bytes": 50331648,
+      "sha256": "a3289383f49ad937285f40bae7fa2f907a45d99a8db80ef8cf1d936f0341fbbc"
+    },
+    {
+      "name": "mission.npz.030",
+      "bytes": 50331648,
+      "sha256": "371a1a4312cb9833ec17a0b4f4035234173e3dae95cc16541cb63fb4a66d3120"
+    },
+    {
+      "name": "mission.npz.031",
+      "bytes": 50331648,
+      "sha256": "8e7ccf86d5bd92d7fba446ba5f9807094ebd3caa974066f1a2f2d3bbd9db7bc5"
+    },
+    {
+      "name": "mission.npz.032",
+      "bytes": 50331648,
+      "sha256": "ab869762cc691ad3fb80cafb7fd45bac36a15af0581b9750374ae103079eaafd"
+    },
+    {
+      "name": "mission.npz.033",
+      "bytes": 50331648,
+      "sha256": "1ae46e2f6003715278f34047e4b88aef7d0a67c0d0b982370c26944894bcf40d"
+    },
+    {
+      "name": "mission.npz.034",
+      "bytes": 50331648,
+      "sha256": "59abf1d38e07e02a8dede9be919e17e8562707ae6e1bdf2d1e8302eafb914e53"
+    },
+    {
+      "name": "mission.npz.035",
+      "bytes": 50331648,
+      "sha256": "c511cfeb5d2e872666406d55cbd4db0997731bc9a9b3fc328fd7377c9a1ed6ae"
+    },
+    {
+      "name": "mission.npz.036",
+      "bytes": 50331648,
+      "sha256": "e2576c82c1997eae5941867c3764a0edad95dab168a08531009875ad0ba90590"
+    },
+    {
+      "name": "mission.npz.037",
+      "bytes": 50331648,
+      "sha256": "1fd3ca593740952e87e7192a70da75eae13725d9344acd2beca1be785530eee1"
+    },
+    {
+      "name": "mission.npz.038",
+      "bytes": 17288125,
+      "sha256": "44defb7cbb99b27aa1d5101040d02a5fa9b6e06317920e2d9b52ee1c9641f29d"
+    }
+  ]
+}

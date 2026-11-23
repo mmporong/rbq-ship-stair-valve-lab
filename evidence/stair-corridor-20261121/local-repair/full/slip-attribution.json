@@ -1,0 +1,170 @@
+{
+  "schema": "stair-slip-attribution-v1",
+  "recorded_at": "2026-11-21T20:17:50.3044904+09:00",
+  "verdict": "pass_rl_attribution_for_first_10mm_crossing",
+  "scope_limit": "This attribution applies to the first 10 mm stance-slip crossing at 111.768 s in the original local-repair path. It does not identify the leg responsible for later scalar maxima after the two raw traces diverge at 124.851 s, and it does not apply to the later replant experiment.",
+  "sources": {
+    "short_original_path": {
+      "raw": ".omx/mission-success-20261121/grip/floor-terminal-overtravel120-settle2/mission.npz",
+      "result": "evidence/stair-corridor-20261121/floor-valve/result.json",
+      "scene": "evidence/stair-corridor-20261121/floor-valve/scene.json",
+      "raw_bytes": 104240041,
+      "raw_sha256": "7e5d6052a8cfcdbcb006ed6e3bf1bc79a543c3313b2c6c4dab3142fc3df5b87a",
+      "physics_steps": 129750,
+      "public_archive": {
+        "manifest": "evidence/stair-corridor-20261121/floor-valve/raw-parts/parts.json",
+        "part_count": 3,
+        "concatenated_sha256": "7e5d6052a8cfcdbcb006ed6e3bf1bc79a543c3313b2c6c4dab3142fc3df5b87a"
+      }
+    },
+    "official_full_b": {
+      "raw": ".omx/mission-success-20261121/local-full-b/mission.npz",
+      "result": "evidence/stair-corridor-20261121/local-repair/full/repeat/result.json",
+      "scene": "evidence/stair-corridor-20261121/local-repair/full/repeat/scene.json",
+      "raw_bytes": 758489872,
+      "raw_sha256": "59577a223264a5d8b38ee57e336b24a3e38de9b909eec6683db07b9051ffe556",
+      "physics_steps": 976240
+    }
+  },
+  "source_and_schedule_equivalence": {
+    "short_recorded_source_files": 12,
+    "full_recorded_source_files": 13,
+    "common_recorded_source_files": 12,
+    "all_common_source_hashes_equal": true,
+    "full_only_source": "src/go2_wall/stair_walking_control.py",
+    "planner_source_hashes_equal": true,
+    "walking_reference_hashes_equal": false,
+    "short_walking_reference_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+    "full_walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+    "walking_schedule_cross_check": {
+      "original_knot_rows": 36801,
+      "local_repair_rows": 50950,
+      "mapping": "local-repair clock_knot_rows",
+      "stance_equal_at_every_original_knot": true,
+      "segment_equal_at_every_original_knot": true,
+      "wall_equal_at_every_original_knot": true,
+      "cap_equal_at_every_original_knot": true,
+      "anchor_time_s": 89.6,
+      "anchor_stance": [true, true, true, true],
+      "local_repair_changed_rows_at_or_before_anchor": 0,
+      "first_pose_target_feet_difference_after_anchor_reference_time_s": 89.62
+    },
+    "interpretation": "The walk files have different hashes because local-repair changes the later pose trajectory, but their recorded stance schedule and support metadata are identical at all original clock knots. Both mission traces then remain byte-identical through 124.850 s, which covers the 111.768 s failure."
+  },
+  "raw_prefix_comparison": {
+    "method": "Stream each NPY member from both ZIP containers. Compare the semantic first-axis prefix byte-for-byte; the two Fortran-order members are compared after C-order row slicing. No physics replay is performed.",
+    "common_fields": 34,
+    "checked_fields": [
+      "arm_target_rad",
+      "base_track_m",
+      "base_xyz_m",
+      "ctrl",
+      "feet_xyz_m",
+      "fell",
+      "finger_slide_m",
+      "foot_force_world_n",
+      "foot_friction_use",
+      "foot_normal_force_n",
+      "gripper_open",
+      "handle_axial_position_m",
+      "handle_axis_offset_m",
+      "handle_nonpad_force_n",
+      "hinge_friction_torque_nm",
+      "nominal_arm_target_rad",
+      "pad_closing_tangent_force_n",
+      "pad_closing_torque_nm",
+      "pad_normal_force_n",
+      "pad_surface_gap_m",
+      "qp_attempt",
+      "qpos",
+      "qvel",
+      "requested_finger_force_n",
+      "robot_torque_requested_nm",
+      "signed_hinge_friction_torque_nm",
+      "stage",
+      "stance_slip_m",
+      "time_s",
+      "torque_nm",
+      "tread_load_n",
+      "unexpected_contact_force_n",
+      "valve_angle_deg",
+      "valve_speed_rad_s"
+    ],
+    "prefixes": {
+      "through_112_000_s": {
+        "samples": 112000,
+        "all_34_fields_byte_identical": true,
+        "aggregate_semantic_sha256": "406647cf535205e430bd1d227774792fbe10a5560e7ca80ba9e537b4584241d6"
+      },
+      "through_124_000_s": {
+        "samples": 124000,
+        "all_34_fields_byte_identical": true,
+        "aggregate_semantic_sha256": "ddb19ac8033ddd5bd9c3d503063b9a4ffd00a739103842f0da62daf6722188cd"
+      },
+      "through_124_850_s": {
+        "samples": 124850,
+        "last_equal_row_index": 124849,
+        "all_34_fields_byte_identical": true,
+        "aggregate_semantic_sha256": "8c5ee64d6dfda266b0c1c307d484d7680f9acd9d8daa8727e5ca5987a1030e48"
+      }
+    },
+    "earliest_raw_divergence": {
+      "row_index": 124850,
+      "state_time_s": 124.851,
+      "first_differing_fields": [
+        "base_track_m",
+        "base_xyz_m",
+        "ctrl",
+        "feet_xyz_m",
+        "finger_slide_m",
+        "foot_force_world_n",
+        "foot_friction_use",
+        "foot_normal_force_n",
+        "handle_axial_position_m",
+        "handle_axis_offset_m",
+        "pad_surface_gap_m",
+        "qpos",
+        "qvel",
+        "robot_torque_requested_nm",
+        "stance_slip_m",
+        "torque_nm",
+        "tread_load_n"
+      ],
+      "note": "Command targets first differ five physics ticks later, at the next motor update on row 124855. Fields that remain equal longer do not extend the common physical trajectory beyond the earliest divergence."
+    }
+  },
+  "first_failure_row": {
+    "row_index": 111767,
+    "state_time_s": 111.76800000016962,
+    "stage": "hold",
+    "stance_slip_m": 0.010000016097540768,
+    "limit_m": 0.01,
+    "short_and_full_values_equal": true,
+    "selected_row_fields": [
+      "time_s",
+      "stage",
+      "stance_slip_m",
+      "qpos",
+      "qvel",
+      "ctrl",
+      "torque_nm",
+      "robot_torque_requested_nm",
+      "foot_force_world_n",
+      "foot_normal_force_n",
+      "tread_load_n"
+    ],
+    "selected_row_semantic_sha256": "02c2ffd18b3806cacaffaa21fab30e0397db3f451d7b7b6dea3bb07b6da6d6d3"
+  },
+  "leg_attribution": {
+    "short_run_max_stance_slip_mm": {
+      "FL": 9.288,
+      "FR": 8.027,
+      "RL": 13.312,
+      "RR": 9.541
+    },
+    "legs_below_10mm_for_entire_short_run": ["FL", "FR", "RR"],
+    "only_leg_above_10mm_for_entire_short_run": "RL",
+    "attributed_leg_at_first_crossing": "RL",
+    "logic": "The short run and full B are the same 34-field physical trace through 124.850 s, including the scalar first crossing at 111.768 s. In the longer 129.750 s short observation, FL, FR, and RR never reach 10 mm, while RL reaches 13.312 mm. Therefore the shared first 10 mm crossing is attributable to RL."
+  }
+}

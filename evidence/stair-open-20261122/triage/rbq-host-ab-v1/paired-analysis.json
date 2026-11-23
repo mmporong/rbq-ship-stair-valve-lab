@@ -1,0 +1,162 @@
+{
+  "schema": "rbq_host_paired_analysis_v1",
+  "denominator_per_arm": 6,
+  "agent_candidate": "phase_25",
+  "primary_endpoint": {
+    "baseline_work_stance_rate": 0.0,
+    "agent_work_stance_rate": 0.0,
+    "absolute_difference": 0.0,
+    "observed_rate_improved_without_more_collisions": false
+  },
+  "agent_vs_no_intervention": {
+    "highest_supported_tread": {
+      "field": "highest_supported_tread",
+      "paired_differences": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "mean_difference": 0.6666666666666666,
+      "median_difference": 1.0,
+      "sign_test": {
+        "nonzero_pairs": 6,
+        "positive_pairs": 5,
+        "two_sided_p": 0.21875
+      }
+    },
+    "maximum_forward_x_m": {
+      "field": "maximum_forward_x_m",
+      "paired_differences": [
+        -0.017441978950036782,
+        0.12307321762477269,
+        0.026062086736161935,
+        0.1810779435406362,
+        0.16837949472457153,
+        -0.018064593433360587
+      ],
+      "mean_difference": 0.07718102837379083,
+      "median_difference": 0.07456765218046732,
+      "sign_test": {
+        "nonzero_pairs": 6,
+        "positive_pairs": 4,
+        "two_sided_p": 0.6875
+      }
+    },
+    "maximum_body_z_m": {
+      "field": "maximum_body_z_m",
+      "paired_differences": [
+        0.014863424419340188,
+        -0.0029345441561132724,
+        0.097732478077862,
+        0.06531790062661924,
+        0.08947335527496547,
+        -0.027620374353427013
+      ],
+      "mean_difference": 0.039472039981541106,
+      "median_difference": 0.040090662522979714,
+      "sign_test": {
+        "nonzero_pairs": 6,
+        "positive_pairs": 4,
+        "two_sided_p": 0.6875
+      }
+    },
+    "maximum_abs_pitch_deg": {
+      "field": "maximum_abs_pitch_deg",
+      "paired_differences": [
+        10.5168985600778,
+        1.6976401897686273,
+        9.546497413298404,
+        2.2568267843910377,
+        11.474369508233076,
+        2.1701639338583156
+      ],
+      "mean_difference": 6.277066064937877,
+      "median_difference": 5.901662098844721,
+      "sign_test": {
+        "nonzero_pairs": 6,
+        "positive_pairs": 6,
+        "two_sided_p": 0.03125
+      }
+    },
+    "body_collision_rate_difference": 0.0
+  },
+  "rule_vs_no_intervention": {
+    "highest_supported_tread": {
+      "field": "highest_supported_tread",
+      "paired_differences": [
+        -1,
+        0,
+        -1,
+        0,
+        -1,
+        1
+      ],
+      "mean_difference": -0.3333333333333333,
+      "median_difference": -0.5,
+      "sign_test": {
+        "nonzero_pairs": 4,
+        "positive_pairs": 1,
+        "two_sided_p": 0.625
+      }
+    },
+    "maximum_forward_x_m": {
+      "field": "maximum_forward_x_m",
+      "paired_differences": [
+        0.10762192499988492,
+        -0.012713165728745389,
+        0.03427464556369984,
+        0.008529928997752817,
+        -0.0003045751610475239,
+        0.05959294319396417
+      ],
+      "mean_difference": 0.03283361697758481,
+      "median_difference": 0.02140228728072633,
+      "sign_test": {
+        "nonzero_pairs": 6,
+        "positive_pairs": 4,
+        "two_sided_p": 0.6875
+      }
+    },
+    "maximum_body_z_m": {
+      "field": "maximum_body_z_m",
+      "paired_differences": [
+        0.0038944350602377886,
+        -0.06808969112146979,
+        0.01077855089099955,
+        0.06649908045763187,
+        0.05296765002378212,
+        -0.026028498960274704
+      ],
+      "mean_difference": 0.006670254391817805,
+      "median_difference": 0.007336492975618669,
+      "sign_test": {
+        "nonzero_pairs": 6,
+        "positive_pairs": 4,
+        "two_sided_p": 0.6875
+      }
+    },
+    "maximum_abs_pitch_deg": {
+      "field": "maximum_abs_pitch_deg",
+      "paired_differences": [
+        0.3244527194921023,
+        -6.282674320052788,
+        -9.285796366318541,
+        10.269242670749527,
+        -1.8431047099971867,
+        -0.7461897934007133
+      ],
+      "mean_difference": -1.2606782999212667,
+      "median_difference": -1.29464725169895,
+      "sign_test": {
+        "nonzero_pairs": 6,
+        "positive_pairs": 2,
+        "two_sided_p": 0.6875
+      }
+    },
+    "body_collision_rate_difference": 0.16666666666666674
+  },
+  "interpretation": "The selected candidate did not improve the pre-registered work-stance endpoint. Secondary locomotion deltas are exploratory."
+}

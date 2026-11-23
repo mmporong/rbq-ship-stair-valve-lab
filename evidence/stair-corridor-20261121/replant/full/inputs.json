@@ -1,0 +1,57 @@
+{
+  "controller_commit": "2c91d83ff3a222bc2919c3156b93920ebcff5ec4",
+  "source_files": 14,
+  "walk": "evidence/stair-corridor-20261121/local-repair/walk50.npz",
+  "walking_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+  "arguments": [
+    "--extent",
+    "full",
+    "--corridor-feedback",
+    "--control-profile",
+    "rl-mid-replant-k3075-v1",
+    "--low-run",
+    "evidence/stair-corridor-20261121/tracked/low-control/loaded.json.gz"
+  ],
+  "load_observer": "first",
+  "physics_step_s": 0.001,
+  "actuation_s": 0.005,
+  "original_landing_support": [
+    24,
+    156
+  ],
+  "auxiliary_landing_support": [
+    1,
+    1
+  ],
+  "first_full_failure": {
+    "stage": "return",
+    "time_s": 127.83100000024632,
+    "metric": "stance_slip_m",
+    "measured": 0.010000207723255565,
+    "limit": "<= 0.01"
+  },
+  "strict_full_mission": false,
+  "stable_floor_return": false,
+  "raw": [
+    {
+      "sha256": "b86c249c84e93a852f73d58ccdae1366acec49eac984a338223ab8557b000f11",
+      "bytes": 1817100836
+    },
+    {
+      "sha256": "a66654a8f80aee04ccce04b5265291f3e1f62ca59b150e310e3bedc0e5069f84",
+      "bytes": 670097686
+    }
+  ],
+  "published_raw": "first/raw-parts/parts.json",
+  "repeat_restored_from_first": true,
+  "short_nominal_from_repeat": {
+    "runtime": "single-thread BLAS/MKL/OMP; CUDA disabled; same source, input and controller as full",
+    "samples": 135715,
+    "physical_step_s": 0.001,
+    "sha256": "eeb6acd2fb1efb17a80014a5faa6d7ff8584efac4939a0e389d2d3d9fc1f4a87",
+    "separately_generated_and_byte_exact": true,
+    "field_differences": {}
+  },
+  "raw_source_comparison": "reproduction.json",
+  "measured_results": "measurements.json"
+}

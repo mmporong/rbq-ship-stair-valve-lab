@@ -1,0 +1,59 @@
+{
+  "schema": "rbq_agent_body_prereg_v1",
+  "geometry": {
+    "slope_deg": 50,
+    "rise_m": 0.19,
+    "treads": 10,
+    "floor_mu": 0.6
+  },
+  "start_distribution": {
+    "lateral_m": [
+      -0.025,
+      0.025
+    ],
+    "yaw_deg": [
+      -2.5,
+      2.5
+    ],
+    "joint_noise_rad": [
+      0.003,
+      0.005
+    ],
+    "joint_seed": "independent nonrepeating random draws"
+  },
+  "frozen_at": "before new evaluation cases or their simulation outcomes were exposed",
+  "actor_checkpoint": 9100,
+  "actor_checkpoint_sha256": "6d39b7c28c9cdda9c3964c3b37493c3bcd24f81ca46f5e367618a7f264cfc757",
+  "primary_endpoint": {
+    "description": "Four simultaneous loaded feet on FL5 FR5 RL3 RR3 continuously for 0.5 s; >=1 N upward foot contact each",
+    "duration_s": 0.5,
+    "strict_mission": "Installed closed passive 10 Nm valve, physical opening to 90 +/- 0.25 deg for 5 s, gripper release and a further 5 s standing; apply published manipulation and walking limits."
+  },
+  "clock": "Report original 19.96 s and extended horizon up to 150 s separately. Within each comparison, use exactly the same start, model, actuator limits, geometry, termination, horizon and task criteria. The original actor stair scene has a fixed arm; test valve completion separately on the articulated task model.",
+  "arms": [
+    "unmodified_actor",
+    "previous_fixed_edge_slow",
+    "previous_phase_25",
+    "agent_selected",
+    "development_best_fixed"
+  ],
+  "attribution": "Freeze controller and catalog before decryption/reveal. Source-bound original agent decision, log real inputs, predeclared contrasts including same catalog best fixed on development and no evidence/teacher-only where relevant. A matched best fixed result does not establish a model-specific advantage. Record demonstration or planner assistance and actor intervention magnitude/ablation separately.",
+  "criterion": {
+    "minimum_pairs": 12,
+    "min_absolute_success_gain_over_noop_and_fixed_slow": 0.25,
+    "max_collision_rate_increase": 0.0,
+    "signed_paired_test": "exact two-sided; report paired uncertainty, failed cohorts and number of attempts",
+    "confirmation": "After any positive holdout run, repeat frozen successful method on the independently committed untouched confirmation block."
+  },
+  "development": "Previous data are visible. Never reuse an opened test block for new efficacy claims. No selection from test outcomes.",
+  "case_set_commitments": {
+    "holdout": {
+      "count": 16,
+      "sha256": "8a009e9774c1497953550ed0c7e346760f64433d93e8d9f709d7998723013526"
+    },
+    "confirmation": {
+      "count": 16,
+      "sha256": "ba3a71216e5819f503bcbf00b37c99f9f33b8b8ffe67ea9fed02a884c96b20ef"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "scope": "14 physical through-task condition processes",
+  "device": "CPU MuJoCo",
+  "command_mode": {
+    "corridor_feedback": true,
+    "extent": "through-task",
+    "control_profile": "rl-mid-replant-k3075-v1"
+  },
+  "observed_child_process_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "CUDA_VISIBLE_DEVICES": "-1"
+  },
+  "observation_method": "Read the live Windows child process environment block during execution.",
+  "reproducibility_note": "The published 17-row set uses the same pinned CPU environment and corridor-feedback command mode as the bound full runs. The inherited-environment comparison is reported separately and is not mixed into this table."
+}

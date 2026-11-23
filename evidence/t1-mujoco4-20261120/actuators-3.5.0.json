@@ -1,0 +1,274 @@
+{
+  "mujoco": "3.5.0",
+  "probe": {
+    "mass_kg": 1.0,
+    "timestep_s": 0.02,
+    "position_gain_n_m": 20.0,
+    "velocity_gain_ns_m": 4.0,
+    "force_limit_n": 5.0,
+    "rows": [
+      {
+        "limit": "none",
+        "integrator": "Euler",
+        "command_m": 0.1,
+        "actuator_force_n": 2.0,
+        "joint_force_n": 2.0,
+        "implicit_velocity_derivative_ns_per_m": null,
+        "next_velocity_m_s": 0.04
+      },
+      {
+        "limit": "none",
+        "integrator": "Euler",
+        "command_m": 1.0,
+        "actuator_force_n": 20.0,
+        "joint_force_n": 20.0,
+        "implicit_velocity_derivative_ns_per_m": null,
+        "next_velocity_m_s": 0.4
+      },
+      {
+        "limit": "none",
+        "integrator": "implicitfast",
+        "command_m": 0.1,
+        "actuator_force_n": 2.0,
+        "joint_force_n": 2.0,
+        "implicit_velocity_derivative_ns_per_m": -4.0,
+        "next_velocity_m_s": 0.037037037037037035
+      },
+      {
+        "limit": "none",
+        "integrator": "implicitfast",
+        "command_m": 1.0,
+        "actuator_force_n": 20.0,
+        "joint_force_n": 20.0,
+        "implicit_velocity_derivative_ns_per_m": -4.0,
+        "next_velocity_m_s": 0.3703703703703703
+      },
+      {
+        "limit": "control",
+        "integrator": "Euler",
+        "command_m": 0.1,
+        "actuator_force_n": 2.0,
+        "joint_force_n": 2.0,
+        "implicit_velocity_derivative_ns_per_m": null,
+        "next_velocity_m_s": 0.04
+      },
+      {
+        "limit": "control",
+        "integrator": "Euler",
+        "command_m": 1.0,
+        "actuator_force_n": 2.0,
+        "joint_force_n": 2.0,
+        "implicit_velocity_derivative_ns_per_m": null,
+        "next_velocity_m_s": 0.04
+      },
+      {
+        "limit": "control",
+        "integrator": "implicitfast",
+        "command_m": 0.1,
+        "actuator_force_n": 2.0,
+        "joint_force_n": 2.0,
+        "implicit_velocity_derivative_ns_per_m": -4.0,
+        "next_velocity_m_s": 0.037037037037037035
+      },
+      {
+        "limit": "control",
+        "integrator": "implicitfast",
+        "command_m": 1.0,
+        "actuator_force_n": 2.0,
+        "joint_force_n": 2.0,
+        "implicit_velocity_derivative_ns_per_m": -4.0,
+        "next_velocity_m_s": 0.037037037037037035
+      },
+      {
+        "limit": "actuator_force",
+        "integrator": "Euler",
+        "command_m": 0.1,
+        "actuator_force_n": 2.0,
+        "joint_force_n": 2.0,
+        "implicit_velocity_derivative_ns_per_m": null,
+        "next_velocity_m_s": 0.04
+      },
+      {
+        "limit": "actuator_force",
+        "integrator": "Euler",
+        "command_m": 1.0,
+        "actuator_force_n": 5.0,
+        "joint_force_n": 5.0,
+        "implicit_velocity_derivative_ns_per_m": null,
+        "next_velocity_m_s": 0.1
+      },
+      {
+        "limit": "actuator_force",
+        "integrator": "implicitfast",
+        "command_m": 0.1,
+        "actuator_force_n": 2.0,
+        "joint_force_n": 2.0,
+        "implicit_velocity_derivative_ns_per_m": -4.0,
+        "next_velocity_m_s": 0.037037037037037035
+      },
+      {
+        "limit": "actuator_force",
+        "integrator": "implicitfast",
+        "command_m": 1.0,
+        "actuator_force_n": 5.0,
+        "joint_force_n": 5.0,
+        "implicit_velocity_derivative_ns_per_m": 0.0,
+        "next_velocity_m_s": 0.1
+      },
+      {
+        "limit": "joint_force",
+        "integrator": "Euler",
+        "command_m": 0.1,
+        "actuator_force_n": 2.0,
+        "joint_force_n": 2.0,
+        "implicit_velocity_derivative_ns_per_m": null,
+        "next_velocity_m_s": 0.04
+      },
+      {
+        "limit": "joint_force",
+        "integrator": "Euler",
+        "command_m": 1.0,
+        "actuator_force_n": 20.0,
+        "joint_force_n": 5.0,
+        "implicit_velocity_derivative_ns_per_m": null,
+        "next_velocity_m_s": 0.1
+      },
+      {
+        "limit": "joint_force",
+        "integrator": "implicitfast",
+        "command_m": 0.1,
+        "actuator_force_n": 2.0,
+        "joint_force_n": 2.0,
+        "implicit_velocity_derivative_ns_per_m": -4.0,
+        "next_velocity_m_s": 0.037037037037037035
+      },
+      {
+        "limit": "joint_force",
+        "integrator": "implicitfast",
+        "command_m": 1.0,
+        "actuator_force_n": 20.0,
+        "joint_force_n": 5.0,
+        "implicit_velocity_derivative_ns_per_m": -4.0,
+        "next_velocity_m_s": 0.09259259259259257
+      }
+    ]
+  },
+  "models": {
+    "rbq_stairs": {
+      "integrator": "mjINT_IMPLICITFAST",
+      "timestep_s": 0.005,
+      "joint_force_limits": {},
+      "tendon_force_limits": {},
+      "actuators": [
+        {
+          "name": "robot/RR_hip_joint",
+          "ctrlrange": null,
+          "forcerange": [
+            -100.0,
+            100.0
+          ],
+          "affine_velocity_bias": -2.5
+        },
+        {
+          "name": "robot/RL_hip_joint",
+          "ctrlrange": null,
+          "forcerange": [
+            -100.0,
+            100.0
+          ],
+          "affine_velocity_bias": -2.5
+        },
+        {
+          "name": "robot/FR_hip_joint",
+          "ctrlrange": null,
+          "forcerange": [
+            -100.0,
+            100.0
+          ],
+          "affine_velocity_bias": -2.5
+        },
+        {
+          "name": "robot/FL_hip_joint",
+          "ctrlrange": null,
+          "forcerange": [
+            -100.0,
+            100.0
+          ],
+          "affine_velocity_bias": -2.5
+        },
+        {
+          "name": "robot/RR_thigh_joint",
+          "ctrlrange": null,
+          "forcerange": [
+            -100.0,
+            100.0
+          ],
+          "affine_velocity_bias": -2.3
+        },
+        {
+          "name": "robot/RL_thigh_joint",
+          "ctrlrange": null,
+          "forcerange": [
+            -100.0,
+            100.0
+          ],
+          "affine_velocity_bias": -2.3
+        },
+        {
+          "name": "robot/FR_thigh_joint",
+          "ctrlrange": null,
+          "forcerange": [
+            -100.0,
+            100.0
+          ],
+          "affine_velocity_bias": -2.3
+        },
+        {
+          "name": "robot/FL_thigh_joint",
+          "ctrlrange": null,
+          "forcerange": [
+            -100.0,
+            100.0
+          ],
+          "affine_velocity_bias": -2.3
+        },
+        {
+          "name": "robot/RR_calf_joint",
+          "ctrlrange": null,
+          "forcerange": [
+            -150.0,
+            150.0
+          ],
+          "affine_velocity_bias": -2.3
+        },
+        {
+          "name": "robot/RL_calf_joint",
+          "ctrlrange": null,
+          "forcerange": [
+            -150.0,
+            150.0
+          ],
+          "affine_velocity_bias": -2.3
+        },
+        {
+          "name": "robot/FR_calf_joint",
+          "ctrlrange": null,
+          "forcerange": [
+            -150.0,
+            150.0
+          ],
+          "affine_velocity_bias": -2.3
+        },
+        {
+          "name": "robot/FL_calf_joint",
+          "ctrlrange": null,
+          "forcerange": [
+            -150.0,
+            150.0
+          ],
+          "affine_velocity_bias": -2.3
+        }
+      ]
+    }
+  }
+}

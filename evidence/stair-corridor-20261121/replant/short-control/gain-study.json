@@ -1,0 +1,92 @@
+{
+  "walk": "evidence/stair-mission-20261121/full/walk50.npz",
+  "extent": "through-task",
+  "physics_step_s": 0.001,
+  "actuation_s": 0.005,
+  "corridor_feedback": false,
+  "scope": "Prototype scorer evaluated the original 19 observed landings. The same K=3075 trajectory with the auxiliary counted is recorded in frozen-result.json.",
+  "runs": [
+    {
+      "gain_n_per_m": 600,
+      "raw_sha256": "03a7f4b8f8307407ca4f705868237f981f4fca18e3aba72d277ddaadb5c6d5d6",
+      "observed_landings": 19,
+      "valve_pass": true,
+      "walking_pass": false,
+      "first_failure": {
+        "stage": "retract",
+        "time_s": 122.84000000022249,
+        "metric": "stance_slip_m",
+        "measured": 0.010000249915754074,
+        "limit": "<= 0.01"
+      },
+      "maximum_stance_slip_mm": {
+        "FL": 9.191,
+        "FR": 8.038,
+        "RL": 11.282,
+        "RR": 9.667
+      },
+      "max_manipulation_foot_shift_mm": 4.945430885006069,
+      "maximum_added_joint_torque_nm": 2.218001389628568
+    },
+    {
+      "gain_n_per_m": 3000,
+      "raw_sha256": "855284c0c656fa9f4957e090f99492d04d1778761d5173474f20903630a00635",
+      "observed_landings": 19,
+      "valve_pass": true,
+      "walking_pass": false,
+      "first_failure": {
+        "stage": "return",
+        "time_s": 127.765000000246,
+        "metric": "stance_slip_m",
+        "measured": 0.010000035266066255,
+        "limit": "<= 0.01"
+      },
+      "maximum_stance_slip_mm": {
+        "FL": 9.186,
+        "FR": 9.176,
+        "RL": 10.001,
+        "RR": 8.97
+      },
+      "max_manipulation_foot_shift_mm": 4.945430885006069,
+      "maximum_added_joint_torque_nm": 7.598449837774217
+    },
+    {
+      "gain_n_per_m": 3075,
+      "raw_sha256": "b39bd2e9a55501a3ee225595c89bd6ba4e506443fa04ed8717d687beffb11d73",
+      "observed_landings": 19,
+      "valve_pass": true,
+      "walking_pass": true,
+      "first_failure": null,
+      "maximum_stance_slip_mm": {
+        "FL": 9.174,
+        "FR": 9.579,
+        "RL": 9.968,
+        "RR": 8.928
+      },
+      "max_manipulation_foot_shift_mm": 4.945430885006069,
+      "maximum_added_joint_torque_nm": 7.788395648502017
+    },
+    {
+      "gain_n_per_m": 3300,
+      "raw_sha256": "ca7dd8701ee06096be6cf7ee891ee3a9550f24ed086e83d05b0567ce9c6d7059",
+      "observed_landings": 19,
+      "valve_pass": true,
+      "walking_pass": false,
+      "first_failure": {
+        "stage": "return",
+        "time_s": 130.37700000025848,
+        "metric": "stance_slip_m",
+        "measured": 0.010000194685087211,
+        "limit": "<= 0.01"
+      },
+      "maximum_stance_slip_mm": {
+        "FL": 9.172,
+        "FR": 10.451,
+        "RL": 9.944,
+        "RR": 8.794
+      },
+      "max_manipulation_foot_shift_mm": 4.945430885006069,
+      "maximum_added_joint_torque_nm": 8.358228361596705
+    }
+  ]
+}

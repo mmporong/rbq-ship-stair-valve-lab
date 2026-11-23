@@ -1,0 +1,317 @@
+{
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "timestep_s": 0.001,
+  "actuation_period_s": 0.005,
+  "jaw_load_bias_m": 0.0005,
+  "stance_spring_gain_n_per_m": 2500,
+  "runs": [
+    {
+      "id": "rated",
+      "source_commit": "0db7b29e7130fbf7ad416dfb1986a32bb4f71c75",
+      "source_sha256_lf": {
+        "src/go2_wall/grasp_motion.py": "f88173f97ca4be79caf9d82fcec5a29dfca7b36645a0a76f37145816512db27a",
+        "tools/replay_contact_valve.py": "7c9dd12aa9bde1e98c972aa71ea456c44d11e9ea171f425c192773c8accc809a",
+        "src/go2_wall/transition.py": "32d370bafaeb745774a8f38fc3cc52c535df9459de20871893a6f90138a2d099",
+        "src/go2_wall/gripper_control.py": "f753eca35d2a0d0902863503571f7d54b5a6e08ef8a9d015e85bc0de04be1057",
+        "src/go2_wall/stair_valve.py": "c032a75c4c0c8d356d205dee7490a2a91487890c5f36704a6d468332791c53d3",
+        "src/go2_wall/mission_verdict.py": "b99448d31bb1c84eb71fcedb4fdd39b8ecc671b0755de7d20b2801995e724b8c"
+      },
+      "candidate": 4,
+      "target_deg": 90.0,
+      "resistance_nm": 10.0,
+      "motion_s": 9,
+      "extra_settle_s": 0,
+      "open_hand_control": false,
+      "physics_steps": 29250,
+      "track_duration_s": 29.25,
+      "raw_gzip": "rated.json.gz",
+      "gzip_sha256": "4bc6f2b3c5fd516f4b1dc40997dd06c5403c54c757ee5936dd0ee99236615612",
+      "expanded_sha256": "f3092cecbb57f99807807cf59df1e3e96c2caa07551304c2697cbf15109867b1",
+      "expanded_bytes": 112023174,
+      "operation_max_angle_deg": 88.66209495762111,
+      "hold_range_deg": [
+        90.06619729953685,
+        90.06837408465792
+      ],
+      "final_angle_deg": 90.00129517361192,
+      "verdict": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000012221,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.3950000000001319,
+          "max_angle_deg": 90.06837408465792,
+          "hold_s": 5.00000000000611,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 9.999990289406659,
+              "max_nm": 10.000178202096235
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 9.99994968770079,
+              "max_nm": 10.000185696079448
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 9.999912274962266,
+              "max_nm": 10.000190682298019
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 9.99986969130603,
+              "max_nm": 10.000191413575026
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.99988203184773,
+              "max_nm": 10.00032647435
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.999848523856144,
+              "max_nm": 10.000175214044104
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.999846786552105,
+              "max_nm": 10.00015429146281
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.99988922298861,
+              "max_nm": 10.000115284991011
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.999885276006022,
+              "max_nm": 10.000075947385625
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.999889357578521,
+              "max_nm": 10.00005866531445
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.999883689345664,
+              "max_nm": 10.000036404339143
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.99988644604928,
+              "max_nm": 9.999983718165186
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.999880480889512,
+              "max_nm": 9.999979720358924
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.999864705380823,
+              "max_nm": 10.000022971004409
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.99981545763627,
+              "max_nm": 9.999977860602465
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.999847197760031,
+              "max_nm": 9.99994169361816
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.004952171998231573,
+          "max_foot_shift_m": 0.0049807540374269795,
+          "max_friction_use": 0.4481437528182942,
+          "min_foot_normal_force_n": 44.125843769218186,
+          "release_hold_s": 6.27700000000767,
+          "post_release_observation_s": 5.777000000007059
+        }
+      }
+    },
+    {
+      "id": "low-loaded",
+      "source_commit": "e084e820a744b7d575f9d27fa421223e20fe984f",
+      "source_sha256_lf": {
+        "src/go2_wall/grasp_motion.py": "f88173f97ca4be79caf9d82fcec5a29dfca7b36645a0a76f37145816512db27a",
+        "tools/replay_contact_valve.py": "dfdf89a9d4bbcdea37cdc5fabc3422573048558865580729342cb39950913edd",
+        "src/go2_wall/transition.py": "32d370bafaeb745774a8f38fc3cc52c535df9459de20871893a6f90138a2d099",
+        "src/go2_wall/gripper_control.py": "f753eca35d2a0d0902863503571f7d54b5a6e08ef8a9d015e85bc0de04be1057",
+        "src/go2_wall/stair_valve.py": "c032a75c4c0c8d356d205dee7490a2a91487890c5f36704a6d468332791c53d3",
+        "src/go2_wall/mission_verdict.py": "b99448d31bb1c84eb71fcedb4fdd39b8ecc671b0755de7d20b2801995e724b8c"
+      },
+      "candidate": 4,
+      "target_deg": 20.0,
+      "resistance_nm": 1.0,
+      "motion_s": 4,
+      "extra_settle_s": 2,
+      "open_hand_control": false,
+      "physics_steps": 26250,
+      "track_duration_s": 26.25,
+      "raw_gzip": "low-loaded.json.gz",
+      "gzip_sha256": "65bbbedd5d6bf636771767e3d9dc2de150249a7fcbc6228bfcfa7a210fb9cab7",
+      "expanded_sha256": "341a421e84290bd55e70638b21013134541bb142db172607043124cdab0946c4",
+      "expanded_bytes": 100376555,
+      "operation_max_angle_deg": 21.92151266921915,
+      "hold_range_deg": [
+        23.02254223059224,
+        23.764097352355343
+      ],
+      "final_angle_deg": 23.658326787175735,
+      "verdict": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000012221,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.3950000000001319,
+          "low_load_max_angle_deg": 21.92151266921915,
+          "low_load_max_axial_slip_m": 1.497253572693702e-05
+        }
+      }
+    },
+    {
+      "id": "low-open",
+      "source_commit": "e084e820a744b7d575f9d27fa421223e20fe984f",
+      "source_sha256_lf": {
+        "src/go2_wall/grasp_motion.py": "f88173f97ca4be79caf9d82fcec5a29dfca7b36645a0a76f37145816512db27a",
+        "tools/replay_contact_valve.py": "dfdf89a9d4bbcdea37cdc5fabc3422573048558865580729342cb39950913edd",
+        "src/go2_wall/transition.py": "32d370bafaeb745774a8f38fc3cc52c535df9459de20871893a6f90138a2d099",
+        "src/go2_wall/gripper_control.py": "f753eca35d2a0d0902863503571f7d54b5a6e08ef8a9d015e85bc0de04be1057",
+        "src/go2_wall/stair_valve.py": "c032a75c4c0c8d356d205dee7490a2a91487890c5f36704a6d468332791c53d3",
+        "src/go2_wall/mission_verdict.py": "b99448d31bb1c84eb71fcedb4fdd39b8ecc671b0755de7d20b2801995e724b8c"
+      },
+      "candidate": 4,
+      "target_deg": 20.0,
+      "resistance_nm": 1.0,
+      "motion_s": 4,
+      "extra_settle_s": 2,
+      "open_hand_control": true,
+      "physics_steps": 26250,
+      "track_duration_s": 26.25,
+      "raw_gzip": "low-open.json.gz",
+      "gzip_sha256": "e6a4911c25fdc5c5e8252ab66e50789454ec5736976aa43fe2909b013b2e533a",
+      "expanded_sha256": "bf633b89ebc1c24d46babc9a75d77565390b13dc350c7904f6fd570548d9e1cc",
+      "expanded_bytes": 100027145,
+      "operation_max_angle_deg": 7.198680654892628,
+      "hold_range_deg": [
+        9.840254112943235,
+        11.02805563718089
+      ],
+      "final_angle_deg": 11.042008926703359,
+      "verdict": {
+        "verified": false,
+        "first_failure": {
+          "stage": "contact",
+          "time_s": 5.000000000000004,
+          "metric": "two_pad_contact_hold_s",
+          "measured": 0.0,
+          "limit": ">= 0.2",
+          "message": "both pads did not secure the handle"
+        },
+        "failures": [
+          {
+            "stage": "contact",
+            "time_s": 5.000000000000004,
+            "metric": "two_pad_contact_hold_s",
+            "measured": 0.0,
+            "limit": ">= 0.2",
+            "message": "both pads did not secure the handle"
+          },
+          {
+            "stage": "low_load",
+            "time_s": 8.58800000000068,
+            "metric": "two_loaded_pads_n",
+            "measured": 0.0,
+            "limit": 1.0,
+            "message": "both pads must carry the rotating handle"
+          },
+          {
+            "stage": "low_load",
+            "time_s": 9.250000000000313,
+            "metric": "max_angle_deg",
+            "measured": 7.198680654892628,
+            "limit": ">= 20.0",
+            "message": "low-load rotation did not reach its target"
+          },
+          {
+            "stage": "low_load",
+            "time_s": 9.250000000000313,
+            "metric": "angle_bin_10_15_deg",
+            "measured": 0,
+            "limit": ">= 1 sample",
+            "message": "low-load angle coverage is missing"
+          }
+        ],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000012221,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.0,
+          "low_load_max_angle_deg": 7.198680654892628
+        }
+      }
+    }
+  ]
+}

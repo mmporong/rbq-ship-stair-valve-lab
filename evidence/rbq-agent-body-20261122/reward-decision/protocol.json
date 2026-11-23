@@ -1,0 +1,142 @@
+{
+  "schema": "rbq_residual_decision_protocol_v1",
+  "source_binding": {
+    "reward_source": {
+      "path": "C:/Users/LIMMM/go2-wall-reach-lab/train/rbq_reward_residual.py",
+      "sha256": "0368f4323f0758d1996558033f5064d6e9c1e8195478b22b1adeb9f2ba4d4430"
+    },
+    "development": {
+      "evaluation": {
+        "path": "C:/Users/LIMMM/go2-wall-reach-lab/evidence/rbq-agent-body-20261122/reward-policy/development-evaluation.json",
+        "sha256": "8f8778df73c2f412a038754ff8822f365d1d2f1e1d97a3dc36cba85433d2a9a6",
+        "rows_consumed": [
+          "dev-01/learned",
+          "dev-02/learned",
+          "dev-03/learned"
+        ]
+      },
+      "strict_learned": [
+        {
+          "path": "C:/Users/LIMMM/go2-wall-reach-lab/evidence/rbq-agent-body-20261122/reward-policy/development-strict/dev-01--learned.json",
+          "sha256": "b055ae01378d6b943ee211b76a78cc79377a9d6b6f2c93bf17510de3d1a642c7"
+        },
+        {
+          "path": "C:/Users/LIMMM/go2-wall-reach-lab/evidence/rbq-agent-body-20261122/reward-policy/development-strict/dev-02--learned.json",
+          "sha256": "2d8523ebc343c721a4425ff717d421dc40b41dba2663afb55f7c05b6834564c8"
+        },
+        {
+          "path": "C:/Users/LIMMM/go2-wall-reach-lab/evidence/rbq-agent-body-20261122/reward-policy/development-strict/dev-03--learned.json",
+          "sha256": "306b73abd3a9e5dba392d304d5ae05cb964cd4c498bad9eaad7455fd1057534d"
+        }
+      ]
+    },
+    "original_agent": {
+      "module_path": "C:/Users/LIMMM/go2-wall-reach-lab/.omx/rbq-agent-body-dev/rl-triage-worktree/src/rl_triage/grounded_recovery.py",
+      "module_sha256": "91b92b8244c6a9e5c9d39bffab5e0a3ab44b0805d44cb02d8143242eceaf0493",
+      "git_repository": "C:/Users/LIMMM/go2-wall-reach-lab/.omx/rbq-agent-body-dev/rl-triage-worktree",
+      "git_sha": "5e9bfe804d8545f0d5fb64a1039e9ed44ca6480e",
+      "explicit_src_override": true,
+      "api": "rl_triage.grounded_recovery.bind_typed_proposal"
+    }
+  },
+  "model_contract": {
+    "model": "gemma3:4b",
+    "temperature": 0,
+    "seed": 2026112202,
+    "num_gpu": 0,
+    "format_retry_budget": 0,
+    "semantic_retry_budget": 0
+  },
+  "fairness_contract": {
+    "same_model": true,
+    "same_candidate_menu_order_descriptions": true,
+    "only_observation_arm_differs": true,
+    "candidate_results_hidden": true,
+    "heldout_inputs_consumed": false
+  },
+  "menu": [
+    {
+      "candidate_id": "opt-844b",
+      "mechanics_fact_id": "mechanics:opt-844b:control_law",
+      "description": "Contact-feedback authority fixed at 1.0 for the full trajectory; checkpoint residual authority fixed at 0.0."
+    },
+    {
+      "candidate_id": "opt-72b8",
+      "mechanics_fact_id": "mechanics:opt-72b8:control_law",
+      "description": "Position-error-dependent contact authority from the frozen optimized three-coefficient vector; bounded checkpoint residual authority from the same frozen vector."
+    },
+    {
+      "candidate_id": "opt-3013",
+      "mechanics_fact_id": "mechanics:opt-3013:control_law",
+      "description": "Contact-feedback authority fixed at 0.0; bounded checkpoint residual authority from the frozen optimized three-coefficient vector."
+    },
+    {
+      "candidate_id": "opt-2a5e",
+      "mechanics_fact_id": "mechanics:opt-2a5e:control_law",
+      "description": "Recorded teacher command only; contact-feedback and checkpoint residual authorities both fixed at 0.0."
+    },
+    {
+      "candidate_id": "opt-6cb8",
+      "mechanics_fact_id": "mechanics:opt-6cb8:control_law",
+      "description": "Position-error-dependent contact authority and bounded checkpoint residual authority from the fixed pre-optimization three-coefficient vector."
+    },
+    {
+      "candidate_id": "opt-01b7",
+      "mechanics_fact_id": "mechanics:opt-01b7:control_law",
+      "description": "Position-error-dependent contact authority from the frozen optimized three-coefficient vector; checkpoint residual authority fixed at 0.0."
+    }
+  ],
+  "mechanics_facts": {
+    "mechanics:opt-844b:control_law": "Contact-feedback authority fixed at 1.0 for the full trajectory; checkpoint residual authority fixed at 0.0.",
+    "mechanics:opt-72b8:control_law": "Position-error-dependent contact authority from the frozen optimized three-coefficient vector; bounded checkpoint residual authority from the same frozen vector.",
+    "mechanics:opt-3013:control_law": "Contact-feedback authority fixed at 0.0; bounded checkpoint residual authority from the frozen optimized three-coefficient vector.",
+    "mechanics:opt-2a5e:control_law": "Recorded teacher command only; contact-feedback and checkpoint residual authorities both fixed at 0.0.",
+    "mechanics:opt-6cb8:control_law": "Position-error-dependent contact authority and bounded checkpoint residual authority from the fixed pre-optimization three-coefficient vector.",
+    "mechanics:opt-01b7:control_law": "Position-error-dependent contact authority from the frozen optimized three-coefficient vector; checkpoint residual authority fixed at 0.0."
+  },
+  "candidate_fact_ids": {
+    "opt-844b": [
+      "mechanics:opt-844b:control_law"
+    ],
+    "opt-72b8": [
+      "mechanics:opt-72b8:control_law"
+    ],
+    "opt-3013": [
+      "mechanics:opt-3013:control_law"
+    ],
+    "opt-2a5e": [
+      "mechanics:opt-2a5e:control_law"
+    ],
+    "opt-6cb8": [
+      "mechanics:opt-6cb8:control_law"
+    ],
+    "opt-01b7": [
+      "mechanics:opt-01b7:control_law"
+    ]
+  },
+  "observations": {
+    "observation:development:case_count": 3,
+    "observation:development:work_stance_success_count": 3,
+    "observation:development:strict_success_count": 0,
+    "observation:development:hold_min_angle_deg": 89.74049400800124,
+    "observation:development:hold_lower_limit_deg": 89.75,
+    "observation:development:max_valve_angle_min_deg": 89.99060158756518,
+    "observation:development:required_open_angle_deg": 90.0,
+    "observation:development:nonzero_ppo_torque_case_count": 3,
+    "observation:development:mean_ppo_torque_rms_nm": 0.20305141476259644
+  },
+  "arms": {
+    "ablation-no-observation": {
+      "prompt": "Choose exactly one candidate from the packet. Return JSON only. Do not infer that candidate order or opaque IDs encode quality.\n{\"candidate_menu\":[{\"candidate_id\":\"opt-844b\",\"description\":\"Contact-feedback authority fixed at 1.0 for the full trajectory; checkpoint residual authority fixed at 0.0.\",\"mechanics_fact_id\":\"mechanics:opt-844b:control_law\"},{\"candidate_id\":\"opt-72b8\",\"description\":\"Position-error-dependent contact authority from the frozen optimized three-coefficient vector; bounded checkpoint residual authority from the same frozen vector.\",\"mechanics_fact_id\":\"mechanics:opt-72b8:control_law\"},{\"candidate_id\":\"opt-3013\",\"description\":\"Contact-feedback authority fixed at 0.0; bounded checkpoint residual authority from the frozen optimized three-coefficient vector.\",\"mechanics_fact_id\":\"mechanics:opt-3013:control_law\"},{\"candidate_id\":\"opt-2a5e\",\"description\":\"Recorded teacher command only; contact-feedback and checkpoint residual authorities both fixed at 0.0.\",\"mechanics_fact_id\":\"mechanics:opt-2a5e:control_law\"},{\"candidate_id\":\"opt-6cb8\",\"description\":\"Position-error-dependent contact authority and bounded checkpoint residual authority from the fixed pre-optimization three-coefficient vector.\",\"mechanics_fact_id\":\"mechanics:opt-6cb8:control_law\"},{\"candidate_id\":\"opt-01b7\",\"description\":\"Position-error-dependent contact authority from the frozen optimized three-coefficient vector; checkpoint residual authority fixed at 0.0.\",\"mechanics_fact_id\":\"mechanics:opt-01b7:control_law\"}],\"candidate_order_seeded_before_selection\":true,\"candidate_outcomes_disclosed\":false,\"citation_contract\":\"Return the selected candidate mechanics_fact_id and one supplied observation fact ID; use null only when the observation set is empty.\",\"development_observations\":{},\"objective\":\"Select one immutable control structure most plausibly repairing the supplied development failure while preserving the completed work stance.\"}",
+      "prompt_sha256": "d596326d50f05494a5cfe2c63711d9e57b3dad2e3ca7a16acc32bae89052f70c"
+    },
+    "observed-development": {
+      "prompt": "Choose exactly one candidate from the packet. Return JSON only. Do not infer that candidate order or opaque IDs encode quality.\n{\"candidate_menu\":[{\"candidate_id\":\"opt-844b\",\"description\":\"Contact-feedback authority fixed at 1.0 for the full trajectory; checkpoint residual authority fixed at 0.0.\",\"mechanics_fact_id\":\"mechanics:opt-844b:control_law\"},{\"candidate_id\":\"opt-72b8\",\"description\":\"Position-error-dependent contact authority from the frozen optimized three-coefficient vector; bounded checkpoint residual authority from the same frozen vector.\",\"mechanics_fact_id\":\"mechanics:opt-72b8:control_law\"},{\"candidate_id\":\"opt-3013\",\"description\":\"Contact-feedback authority fixed at 0.0; bounded checkpoint residual authority from the frozen optimized three-coefficient vector.\",\"mechanics_fact_id\":\"mechanics:opt-3013:control_law\"},{\"candidate_id\":\"opt-2a5e\",\"description\":\"Recorded teacher command only; contact-feedback and checkpoint residual authorities both fixed at 0.0.\",\"mechanics_fact_id\":\"mechanics:opt-2a5e:control_law\"},{\"candidate_id\":\"opt-6cb8\",\"description\":\"Position-error-dependent contact authority and bounded checkpoint residual authority from the fixed pre-optimization three-coefficient vector.\",\"mechanics_fact_id\":\"mechanics:opt-6cb8:control_law\"},{\"candidate_id\":\"opt-01b7\",\"description\":\"Position-error-dependent contact authority from the frozen optimized three-coefficient vector; checkpoint residual authority fixed at 0.0.\",\"mechanics_fact_id\":\"mechanics:opt-01b7:control_law\"}],\"candidate_order_seeded_before_selection\":true,\"candidate_outcomes_disclosed\":false,\"citation_contract\":\"Return the selected candidate mechanics_fact_id and one supplied observation fact ID; use null only when the observation set is empty.\",\"development_observations\":{\"observation:development:case_count\":3,\"observation:development:hold_lower_limit_deg\":89.75,\"observation:development:hold_min_angle_deg\":89.74049400800124,\"observation:development:max_valve_angle_min_deg\":89.99060158756518,\"observation:development:mean_ppo_torque_rms_nm\":0.20305141476259644,\"observation:development:nonzero_ppo_torque_case_count\":3,\"observation:development:required_open_angle_deg\":90.0,\"observation:development:strict_success_count\":0,\"observation:development:work_stance_success_count\":3},\"objective\":\"Select one immutable control structure most plausibly repairing the supplied development failure while preserving the completed work stance.\"}",
+      "prompt_sha256": "c90f6ddf3378105217859a99fa9ab8528bb0191733fba40b48eb9fc2a9738dfc"
+    }
+  },
+  "candidate_map": {
+    "path": "candidate-map.json",
+    "sha256": "aee2fad3a3c0e3d7870f04686ee17adeefe9d98727835a28129ff1c06a48e560"
+  }
+}

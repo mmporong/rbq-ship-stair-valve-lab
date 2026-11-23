@@ -1,0 +1,44 @@
+{
+  "scope": "full",
+  "verified": true,
+  "peaks": {
+    "joint_torque_ratio": {
+      "value": 1.0,
+      "time_s": 190.7610000005468,
+      "raw_index": 190760
+    },
+    "foot_surface_force_n": {
+      "value": 1164.7864252053175,
+      "time_s": 192.09400000055317,
+      "raw_index": 192093
+    },
+    "pad_closing_torque_nm": {
+      "value": 0.0,
+      "time_s": 187.00000000052884,
+      "raw_index": 186999
+    },
+    "joint_torque_nm": {
+      "value": 150.0,
+      "time_s": 191.07100000054828,
+      "raw_index": 191070
+    }
+  },
+  "frame_count": 200,
+  "fps": 25.0,
+  "playback_speed": 1.0,
+  "duration_s": 8.0,
+  "max_caption_time_error_s": 0.0,
+  "walking_caption_samples": {
+    "stance_slip_m": 200,
+    "unexpected_contact_force_n": 200
+  },
+  "physical_seconds_per_frame": 0.04,
+  "sha256": {
+    "mission.npz": "b86c249c84e93a852f73d58ccdae1366acec49eac984a338223ab8557b000f11",
+    "fall-follow.mp4": "83e95f62afd18bc040b1ca8c4afe51e87058e5a3a0da19e2d8590a8b69eb8a6e",
+    "fall-follow.ass": "9c812325046d3884f5732b5e5a7d426ad40189c9539eea83a8ea889e9d0c9fc3",
+    "fall-follow.peaks.json": "50598fca7dfc204d73321377d667c491f38ec68fe0fd28631d6e51397476fd5b",
+    "fall-follow.loads.csv": "f04566f1581ee25b82817cd9e42a6d79bd880ba21c79a49450c8b9d17716ccf0",
+    "fall-follow.heatmap.html": "1a9cd50f87e895a7ceb39379e606d6f36551e41000ea0628f16a4b25996604f0"
+  }
+}

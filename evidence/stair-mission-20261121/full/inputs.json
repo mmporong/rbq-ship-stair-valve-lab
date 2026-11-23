@@ -1,0 +1,78 @@
+{
+  "replay_source_commit": "e835c8b8406ee4e76085d94a98ac620e2c22ac7b",
+  "walking_reference_source_commit": "25117a003b785a0358ae77eaf2dd61628edf6d84",
+  "reference_npz": {
+    "file": "walk50.npz",
+    "sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac"
+  },
+  "low_load_reference": {
+    "file": "../conditions/physical-b/low-control/frozen-grip-loaded.json.gz",
+    "gzip_sha256": "1d55f98bb4bac4ed74922c032b07e757126f9e55d47ecbc6e71c13c5b3d5fd9e"
+  },
+  "argv": [
+    "python",
+    "tools/replay_stair_mission.py",
+    "NEW_RUN_DIRECTORY",
+    "--walk",
+    "WALK50.npz",
+    "--case",
+    "nominal",
+    "--extent",
+    "full",
+    "--capture-loads",
+    "--low-run",
+    "frozen-grip-loaded.json.gz"
+  ],
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "CUDA_VISIBLE_DEVICES": "-1"
+  },
+  "runtime": {
+    "python": "3.14.0",
+    "mujoco": "4.0.0",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1"
+  },
+  "inputs_from_physics_commit": {
+    "evidence/stair-mission-20261121/protocol.json": "c0efbf7734c80a31ecc646e50a57c77e8fb71284bd458b57d09f75399a559317",
+    "configs/assets.lock.json": "f8f259306ef584fd4397ea71a9c2228132583bacb29a231e65df1dadb07aa3a1",
+    "configs/d1_parameters.json": "19a144b06a4b9936f3d516166ab7ae68cacd6efb4b17b4873ff221619ff55ab8",
+    "evidence/t1-stair-ascent-20261120/target-round-trip-geometry.json": "38f5f74a7c36dcf17d6f5466b1d407785b9cb6835f87f1992478bad93df1480a",
+    "evidence/t1-stair-ascent-20261120/target-round-trip-plan.json": "6f98b509bb28375dffac36b6589b185ea9032a0dafaa8ce7044feeb73ed5a56f",
+    "evidence/t1-stair-posture-20261120/front-pair.json": "7eb8da1890b629862925390bf2d01e782e13663930f19a719271f013abd8b27c",
+    "evidence/t3-valve-20261120/fixed-body-candidates.json": "76b31a10b1faf1c6ae35889d35f8cb40614c2e97dac83f513c8adab2ebc83791"
+  },
+  "fresh_processes": [
+    {
+      "folder": "first",
+      "cpu_process_id_at_execution": 59324,
+      "process_start_local": "2026-11-21T11:14:06+09:00",
+      "raw_bytes": 336161212,
+      "raw_sha256": "9c75b913fde4bb84e270a6f368e9987613ad649e23dffc644f4ee0c224d726ab",
+      "scene_sha256": "1aa27f117e1d856b5ec73d257c87948fd02ab3cd5cd902a0387989ceaa0bf956",
+      "result_sha256": "0e9e86eb215fb33027a34d6072a5c463bb3b73af899e7239988f2be4f47cd868",
+      "physics_steps": 153600,
+      "scheduled_landing_windows_evaluated": 156,
+      "mission_verified": false
+    },
+    {
+      "folder": "repeat",
+      "cpu_process_id_at_execution": 75584,
+      "process_start_local": "2026-11-21T11:14:06+09:00",
+      "raw_bytes": 336161212,
+      "raw_sha256": "9c75b913fde4bb84e270a6f368e9987613ad649e23dffc644f4ee0c224d726ab",
+      "scene_sha256": "1aa27f117e1d856b5ec73d257c87948fd02ab3cd5cd902a0387989ceaa0bf956",
+      "result_sha256": "0e9e86eb215fb33027a34d6072a5c463bb3b73af899e7239988f2be4f47cd868",
+      "physics_steps": 153600,
+      "scheduled_landing_windows_evaluated": 156,
+      "mission_verified": false
+    }
+  ],
+  "raw_archive": "raw-parts/parts.json",
+  "compare": "two-process-comparison.json",
+  "independent_review": "../audit/final-review.json",
+  "physical_timestep_s": 0.005,
+  "actuation_period_s": 0.005,
+  "control_clock": "stage label at command time; each corresponding observation is after the physics step"
+}

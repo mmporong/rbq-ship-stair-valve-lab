@@ -1,0 +1,93 @@
+{
+  "scope": "Matched nominal floor-start experiments. Multiple changes between controller revisions; differences apply to each complete configuration.",
+  "geometry": {
+    "slope_deg": 50,
+    "rise_m": 0.19,
+    "handle_m": 0.12,
+    "resistance_nm": 10
+  },
+  "runs": [
+    {
+      "source_commit": "083c00d04077f67b361e56bb179b0dc5a47c841a",
+      "change": "Brace legs at contact in the original rear landing positions.",
+      "scene_sha256": "98e7071065da7beb72fa53a7491955e85a5fad616ae645dca0aa43e96af8bbd4",
+      "raw_sha256": "514d9f499d1b8572915f5b8a84e2e40e10adf60b0bdd8cb622982e341e060b76",
+      "walking": true,
+      "valve": false,
+      "station": true,
+      "fell": false,
+      "landings": 18,
+      "outcome": "physical_failed",
+      "manipulation_foot_shift_mm": 7.972262635716147,
+      "manipulation_base_shift_mm": 8.525580251218242,
+      "manipulation_min_foot_load_n": 2.0864523660410104,
+      "manipulation_peak_friction_use": 1.0000000000000004,
+      "full_route_peak_material_slip_mm": 8.646,
+      "final_open_direction_error_deg": 6.239252724761542e-05,
+      "station_min_foot_load_n": 102.45300036786959,
+      "first_failure": {
+        "stage": "operate",
+        "time_s": 101.81100000012208,
+        "metric": "max_friction_use",
+        "measured": 0.8056134076180784,
+        "limit": "<= 0.8",
+        "message": "M1 stability limit exceeded"
+      },
+      "failed_valve_metrics": [
+        "max_friction_use",
+        "max_foot_shift_m"
+      ]
+    },
+    {
+      "source_commit": "e7fca2d789b79322914c36ed7c141c17ecdfdcc2",
+      "change": "Place both rear feet 40 mm farther back on tread 3, lower the working base by 5 mm and increase base position feedback.",
+      "scene_sha256": "b14a5dba796765eae60bc71e3ae77c5a22446f0277833bb377489f987b0351dd",
+      "raw_sha256": "6f3833364794595eba1b7700bf7124f0c138a8e9a9b8cc0fe3565747cf4df152",
+      "walking": true,
+      "valve": false,
+      "station": true,
+      "fell": false,
+      "landings": 18,
+      "outcome": "physical_failed",
+      "manipulation_foot_shift_mm": 6.823832073152248,
+      "manipulation_base_shift_mm": 8.132897537361238,
+      "manipulation_min_foot_load_n": 26.77575942030221,
+      "manipulation_peak_friction_use": 0.4848474648369244,
+      "full_route_peak_material_slip_mm": 9.488,
+      "final_open_direction_error_deg": 6.236448291874861e-05,
+      "station_min_foot_load_n": 94.77921971363766,
+      "first_failure": {
+        "stage": "settle",
+        "time_s": 111.46100000016816,
+        "metric": "max_foot_shift_m",
+        "measured": 0.0050000082594430515,
+        "limit": "<= 0.005",
+        "message": "M1 stability limit exceeded"
+      },
+      "failed_valve_metrics": [
+        "max_foot_shift_m"
+      ]
+    },
+    {
+      "source_commit": "e0fa476a5a54796e57bbcaf1f80ead513469eaf8",
+      "change": "Keep the rear placements and bracing, use a 7.5 s stroke and 3.4 s settling interval, then taper the controller's tangent load to 20% in 0.8 s starting 2 s after the stroke.",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "raw_sha256": "362cbd836802d2f29b8febd2917a4ba987d9990bea4e02ec32f84f7978bf96b9",
+      "walking": true,
+      "valve": true,
+      "station": true,
+      "fell": false,
+      "landings": 18,
+      "outcome": "success",
+      "manipulation_foot_shift_mm": 4.439581813587703,
+      "manipulation_base_shift_mm": 5.025194679162016,
+      "manipulation_min_foot_load_n": 29.8286425290449,
+      "manipulation_peak_friction_use": 0.4957527957671821,
+      "full_route_peak_material_slip_mm": 9.769,
+      "final_open_direction_error_deg": 5.8554864137942506e-05,
+      "station_min_foot_load_n": 95.8118389518863,
+      "first_failure": null,
+      "failed_valve_metrics": []
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "commit": "dbe915c95f0476e4f71736c42fd2bffd10f32831",
+  "geometry": {
+    "slope_deg": 60.0,
+    "rise_m": 0.19
+  },
+  "criteria": {
+    "sample_s": 0.02,
+    "ik_tolerance_m": 0.002,
+    "collision_tolerance_m": 0.0001,
+    "arm": "rb1"
+  },
+  "runs": [
+    {
+      "name": "support_centroid_x",
+      "outcome": "planning_failed",
+      "message": "segment 16 shift infeasible at s=0.60",
+      "segment": 16,
+      "kind": "shift",
+      "progress": 0.6,
+      "planned_time_s": 13.6,
+      "max_foot_ik_error_m": 9.46357790001485e-08,
+      "max_unexpected_overlap_m": 0.000684301907967113,
+      "unexpected_overlaps": [
+        {
+          "geoms": [
+            "tread3",
+            "base"
+          ],
+          "penetration_m": 0.00034693594868848675
+        },
+        {
+          "geoms": [
+            "tread3",
+            "base"
+          ],
+          "penetration_m": 0.000684301907967113
+        },
+        {
+          "geoms": [
+            "tread3",
+            "base"
+          ],
+          "penetration_m": 0.000684301907967113
+        },
+        {
+          "geoms": [
+            "tread3",
+            "base"
+          ],
+          "penetration_m": 0.0003469359486884851
+        }
+      ],
+      "planning_base_xyz": [
+        -0.18485000000000001,
+        0.007199999999999998,
+        0.605
+      ]
+    },
+    {
+      "name": "standard_z0.000_pitch_plus_5",
+      "outcome": "planning_failed",
+      "message": "segment 36 shift infeasible at s=0.29",
+      "segment": 36,
+      "kind": "shift",
+      "progress": 0.288,
+      "planned_time_s": 33.01999999999999,
+      "max_foot_ik_error_m": 5.5700277493118595e-08,
+      "max_unexpected_overlap_m": 0.0014573650842745686,
+      "unexpected_overlaps": [
+        {
+          "geoms": [
+            "tread4",
+            "base"
+          ],
+          "penetration_m": 0.0014573650842745686
+        },
+        {
+          "geoms": [
+            "tread4",
+            "base"
+          ],
+          "penetration_m": 0.0014573650842745686
+        }
+      ],
+      "planning_base_xyz": [
+        -0.05733903854457022,
+        0.0598415616,
+        0.6136769228800001
+      ]
+    },
+    {
+      "name": "standard_z0.000_pitch_plus_10",
+      "outcome": "planning_failed",
+      "message": "segment 36 shift infeasible at s=0.70",
+      "segment": 36,
+      "kind": "shift",
+      "progress": 0.704,
+      "planned_time_s": 34.05999999999999,
+      "max_foot_ik_error_m": 1.5539944601282954e-07,
+      "max_unexpected_overlap_m": 0.0009760718513500896,
+      "unexpected_overlaps": [
+        {
+          "geoms": [
+            "tread5",
+            "base"
+          ],
+          "penetration_m": 0.0009760718513500896
+        },
+        {
+          "geoms": [
+            "tread5",
+            "base"
+          ],
+          "penetration_m": 0.0009760718513500896
+        }
+      ],
+      "planning_base_xyz": [
+        0.09237885017458816,
+        -0.028353100799999986,
+        0.71216096256
+      ]
+    },
+    {
+      "name": "standard_z0.000_pitch_plus_15",
+      "outcome": "planning_failed",
+      "message": "segment 37 unload infeasible at s=0.90",
+      "segment": 37,
+      "kind": "unload",
+      "progress": 0.9,
+      "planned_time_s": 35.15999999999999,
+      "max_foot_ik_error_m": 2.0770370905276122e-16,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.14610213459788707,
+        -0.06,
+        0.7475
+      ]
+    },
+    {
+      "name": "standard_z0.000_pitch_plus_20",
+      "outcome": "planning_failed",
+      "message": "segment 36 shift infeasible at s=0.82",
+      "segment": 36,
+      "kind": "shift",
+      "progress": 0.824,
+      "planned_time_s": 34.35999999999999,
+      "max_foot_ik_error_m": 0.004635501759495896,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.12521562030598404,
+        -0.04769633279999999,
+        0.73376090496
+      ]
+    },
+    {
+      "name": "standard_z0.010_pitch_plus_5",
+      "outcome": "planning_failed",
+      "message": "segment 36 shift infeasible at s=0.29",
+      "segment": 36,
+      "kind": "shift",
+      "progress": 0.288,
+      "planned_time_s": 33.01999999999999,
+      "max_foot_ik_error_m": 5.652156945808523e-08,
+      "max_unexpected_overlap_m": 0.0014573650842745686,
+      "unexpected_overlaps": [
+        {
+          "geoms": [
+            "tread4",
+            "base"
+          ],
+          "penetration_m": 0.0014573650842745686
+        },
+        {
+          "geoms": [
+            "tread4",
+            "base"
+          ],
+          "penetration_m": 0.0014573650842745686
+        }
+      ],
+      "planning_base_xyz": [
+        -0.05733903854457022,
+        0.0598415616,
+        0.6236769228800001
+      ]
+    },
+    {
+      "name": "standard_z0.010_pitch_plus_10",
+      "outcome": "planning_failed",
+      "message": "segment 36 shift infeasible at s=0.70",
+      "segment": 36,
+      "kind": "shift",
+      "progress": 0.704,
+      "planned_time_s": 34.05999999999999,
+      "max_foot_ik_error_m": 1.6403060109373534e-07,
+      "max_unexpected_overlap_m": 0.0009760718513500896,
+      "unexpected_overlaps": [
+        {
+          "geoms": [
+            "tread5",
+            "base"
+          ],
+          "penetration_m": 0.0009760718513500896
+        },
+        {
+          "geoms": [
+            "tread5",
+            "base"
+          ],
+          "penetration_m": 0.0009760718513500896
+        }
+      ],
+      "planning_base_xyz": [
+        0.09237885017458816,
+        -0.028353100799999986,
+        0.7221609625600001
+      ]
+    }
+  ],
+  "centroid_rule": {
+    "unique_body_waypoints": 79,
+    "min_x_shift_m": -0.4973237877765427,
+    "max_x_shift_m": 0.0
+  }
+}

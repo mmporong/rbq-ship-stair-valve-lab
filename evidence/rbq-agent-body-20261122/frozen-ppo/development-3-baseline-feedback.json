@@ -1,0 +1,265 @@
+{
+  "scope": "development_only_previous_cases",
+  "cpu_only": true,
+  "checkpoint": 9100,
+  "checkpoint_sha256": "6d39b7c28c9cdda9c3964c3b37493c3bcd24f81ca46f5e367618a7f264cfc757",
+  "teacher_disclosure": "weight 1 replaces PPO leg targets after activation; 0<weight<1 is a PPO actor residual",
+  "groups": {
+    "ppo": {
+      "candidate": {
+        "candidate_id": "ppo",
+        "speed_mps": 0.6,
+        "phase_offset_steps": 0,
+        "teacher_weight": 0.0,
+        "teacher_time_scale": 0.18,
+        "activation_x_m": -0.46,
+        "teacher_command_speed_mps": 0.0,
+        "lateral_gain": 1.0,
+        "lateral_limit_mps": 0.15,
+        "speed_after_tread3_mps": null
+      },
+      "summary": {
+        "n": 3,
+        "work_stance_rate": 0.0,
+        "mean_highest_supported_tread": 1.6666666666666667,
+        "body_collision_rate": 1.0,
+        "mean_maximum_forward_x_m": 0.002330154893559245
+      },
+      "trials": [
+        {
+          "case_id": "dev-01",
+          "candidate_id": "ppo",
+          "controller_class": "frozen_ppo",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "first_illegal_sensor": "nonfoot_ground_touch_base_link_collision1_force",
+          "maximum_forward_x_m": -0.04223833007202235,
+          "maximum_body_z_m": 0.6028307876629109,
+          "maximum_abs_pitch_deg": 10.869763576690143,
+          "teacher_activated": false,
+          "teacher_activation_s": null,
+          "simulated_s": 2.399999999999971
+        },
+        {
+          "case_id": "dev-02",
+          "candidate_id": "ppo",
+          "controller_class": "frozen_ppo",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 3,
+          "supported_treads": [
+            2,
+            3
+          ],
+          "body_collision": true,
+          "first_illegal_sensor": "nonfoot_ground_touch_base_link_collision1_force",
+          "maximum_forward_x_m": 0.0741770194856592,
+          "maximum_body_z_m": 0.7100771287753677,
+          "maximum_abs_pitch_deg": 23.179799341720354,
+          "teacher_activated": false,
+          "teacher_activation_s": null,
+          "simulated_s": 13.900000000000773
+        },
+        {
+          "case_id": "dev-03",
+          "candidate_id": "ppo",
+          "controller_class": "frozen_ppo",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": true,
+          "first_illegal_sensor": "nonfoot_ground_touch_base_link_collision1_force",
+          "maximum_forward_x_m": -0.02494822473295912,
+          "maximum_body_z_m": 0.6360204221441871,
+          "maximum_abs_pitch_deg": 14.61716732249004,
+          "teacher_activated": false,
+          "teacher_activation_s": null,
+          "simulated_s": 4.0199999999999365
+        }
+      ]
+    },
+    "phase25": {
+      "candidate": {
+        "candidate_id": "phase25",
+        "speed_mps": 0.6,
+        "phase_offset_steps": 25,
+        "teacher_weight": 0.0,
+        "teacher_time_scale": 0.18,
+        "activation_x_m": -0.46,
+        "teacher_command_speed_mps": 0.0,
+        "lateral_gain": 1.0,
+        "lateral_limit_mps": 0.15,
+        "speed_after_tread3_mps": null
+      },
+      "summary": {
+        "n": 3,
+        "work_stance_rate": 0.0,
+        "mean_highest_supported_tread": 2.3333333333333335,
+        "body_collision_rate": 0.3333333333333333,
+        "mean_maximum_forward_x_m": -0.06855335684534848
+      },
+      "trials": [
+        {
+          "case_id": "dev-01",
+          "candidate_id": "phase25",
+          "controller_class": "frozen_ppo",
+          "termination": "fell_over",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 3,
+          "supported_treads": [
+            1,
+            2,
+            3
+          ],
+          "body_collision": false,
+          "first_illegal_sensor": null,
+          "maximum_forward_x_m": -0.09272567496261577,
+          "maximum_body_z_m": 0.6795957014034197,
+          "maximum_abs_pitch_deg": 40.125183880746036,
+          "teacher_activated": false,
+          "teacher_activation_s": null,
+          "simulated_s": 4.2999999999999305
+        },
+        {
+          "case_id": "dev-02",
+          "candidate_id": "phase25",
+          "controller_class": "frozen_ppo",
+          "termination": "phase_timeout",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": false,
+          "first_illegal_sensor": null,
+          "maximum_forward_x_m": -0.10943079145837349,
+          "maximum_body_z_m": 0.7020864657316369,
+          "maximum_abs_pitch_deg": 27.148440970205044,
+          "teacher_activated": false,
+          "teacher_activation_s": null,
+          "simulated_s": 19.960000000000313
+        },
+        {
+          "case_id": "dev-03",
+          "candidate_id": "phase25",
+          "controller_class": "frozen_ppo",
+          "termination": "illegal_contact",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": true,
+          "first_illegal_sensor": "nonfoot_ground_touch_base_link_collision1_force",
+          "maximum_forward_x_m": -0.0035036041150561933,
+          "maximum_body_z_m": 0.6797834930277981,
+          "maximum_abs_pitch_deg": 21.294345430898773,
+          "teacher_activated": false,
+          "teacher_activation_s": null,
+          "simulated_s": 6.519999999999883
+        }
+      ]
+    },
+    "phase25_feedback": {
+      "candidate": {
+        "candidate_id": "phase25_feedback",
+        "speed_mps": 0.6,
+        "phase_offset_steps": 25,
+        "teacher_weight": 0.0,
+        "teacher_time_scale": 0.18,
+        "activation_x_m": -0.46,
+        "teacher_command_speed_mps": 0.0,
+        "lateral_gain": 3.0,
+        "lateral_limit_mps": 0.35,
+        "speed_after_tread3_mps": 0.35
+      },
+      "summary": {
+        "n": 3,
+        "work_stance_rate": 0.0,
+        "mean_highest_supported_tread": 1.6666666666666667,
+        "body_collision_rate": 0.0,
+        "mean_maximum_forward_x_m": -0.05622395500395477
+      },
+      "trials": [
+        {
+          "case_id": "dev-01",
+          "candidate_id": "phase25_feedback",
+          "controller_class": "frozen_ppo",
+          "termination": "phase_timeout",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": false,
+          "first_illegal_sensor": null,
+          "maximum_forward_x_m": -0.03131672383294082,
+          "maximum_body_z_m": 0.7131612839880521,
+          "maximum_abs_pitch_deg": 25.069211124746197,
+          "teacher_activated": false,
+          "teacher_activation_s": null,
+          "simulated_s": 19.960000000000313
+        },
+        {
+          "case_id": "dev-02",
+          "candidate_id": "phase25_feedback",
+          "controller_class": "frozen_ppo",
+          "termination": "phase_timeout",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 1,
+          "supported_treads": [
+            1
+          ],
+          "body_collision": false,
+          "first_illegal_sensor": null,
+          "maximum_forward_x_m": -0.03876728705712805,
+          "maximum_body_z_m": 0.6885491185333887,
+          "maximum_abs_pitch_deg": 29.59264996356463,
+          "teacher_activated": false,
+          "teacher_activation_s": null,
+          "simulated_s": 19.960000000000313
+        },
+        {
+          "case_id": "dev-03",
+          "candidate_id": "phase25_feedback",
+          "controller_class": "frozen_ppo",
+          "termination": "fell_over",
+          "work_stance_reached": false,
+          "maximum_work_stance_s": 0.0,
+          "highest_supported_tread": 2,
+          "supported_treads": [
+            1,
+            2
+          ],
+          "body_collision": false,
+          "first_illegal_sensor": null,
+          "maximum_forward_x_m": -0.09858785412179547,
+          "maximum_body_z_m": 0.5917800169859854,
+          "maximum_abs_pitch_deg": 37.12575435998324,
+          "teacher_activated": false,
+          "teacher_activation_s": null,
+          "simulated_s": 2.8599999999999612
+        }
+      ]
+    }
+  }
+}

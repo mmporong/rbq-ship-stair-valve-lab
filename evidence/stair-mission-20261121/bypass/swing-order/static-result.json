@@ -1,0 +1,1114 @@
+{
+  "scope": "candidate4 shut-valve real RR-before-RL reorder at the 112.20 s swing",
+  "inputs": {
+    "walk": "evidence\\stair-mission-20261121\\bypass\\swing-order\\walk50.npz",
+    "slope_deg": 50.0,
+    "rise_m": 0.19,
+    "query_time_s": 112.2,
+    "candidate": 4,
+    "hinge_rad": 1.5707963267948966
+  },
+  "input_audit": {
+    "sha256_at_start": {
+      "evidence\\stair-mission-20261121\\bypass\\swing-order\\walk50.npz": "10711a9e5ce58e6db3cebc4c2e56abb586570202acd4e06050e19d7b514472bf",
+      "evidence\\stair-mission-20261121\\bypass\\swing-order\\incoming-frontier.npz": "0bc034394979dcdede30b6e2a1e9d329f70b324db47414c262e28d5b204e281c",
+      "evidence\\stair-mission-20261121\\bypass\\swing-order\\recheck-candidates.json": "799fcf2f3dda587b5ed376a05f2856f54f8934394653ad624e8e9580d6152649"
+    },
+    "sha256_at_end": {
+      "evidence\\stair-mission-20261121\\bypass\\swing-order\\walk50.npz": "10711a9e5ce58e6db3cebc4c2e56abb586570202acd4e06050e19d7b514472bf",
+      "evidence\\stair-mission-20261121\\bypass\\swing-order\\incoming-frontier.npz": "0bc034394979dcdede30b6e2a1e9d329f70b324db47414c262e28d5b204e281c",
+      "evidence\\stair-mission-20261121\\bypass\\swing-order\\recheck-candidates.json": "799fcf2f3dda587b5ed376a05f2856f54f8934394653ad624e8e9580d6152649"
+    },
+    "unchanged_during_run": true
+  },
+  "provenance": {
+    "source_sha256_lf": {
+      "configs/assets.lock.json": "f8f259306ef584fd4397ea71a9c2228132583bacb29a231e65df1dadb07aa3a1",
+      "configs/d1_parameters.json": "19a144b06a4b9936f3d516166ab7ae68cacd6efb4b17b4873ff221619ff55ab8",
+      "evidence/t1-stair-ascent-20261120/target-round-trip-geometry.json": "38f5f74a7c36dcf17d6f5466b1d407785b9cb6835f87f1992478bad93df1480a",
+      "evidence/t1-stair-ascent-20261120/target-round-trip-plan.json": "6f98b509bb28375dffac36b6589b185ea9032a0dafaa8ce7044feeb73ed5a56f",
+      "evidence/t1-stair-posture-20261120/front-pair.json": "7eb8da1890b629862925390bf2d01e782e13663930f19a719271f013abd8b27c",
+      "evidence/t3-valve-20261120/fixed-body-candidates.json": "76b31a10b1faf1c6ae35889d35f8cb40614c2e97dac83f513c8adab2ebc83791",
+      "pyproject.toml": "efafd00dbcb36cbb8dd32b6426341663e5bd85c37b21aac7e4fe4e23da0d7753",
+      "src/go2_wall/grasp_motion.py": "08071870d3097fec5e9b466c8ced0011489af137732fefcb3fb4eb64900cff86",
+      "src/go2_wall/gripper_control.py": "f753eca35d2a0d0902863503571f7d54b5a6e08ef8a9d015e85bc0de04be1057",
+      "src/go2_wall/hold.py": "b8a58688721cd70f47f262fe1a2c48e1d65523779ed6b3d74bd9f8abdf2b9fd6",
+      "src/go2_wall/pose_search.py": "f88f4e4c632e7ee70f840525ccfdf37996db4281f0a732bd5167402fd70a1cbf",
+      "src/go2_wall/robot.py": "8c4bf030f05ee4fd7e05a9d96049eacf8d6a7d4589c1f181107c84101131ebb4",
+      "src/go2_wall/stair_valve.py": "c032a75c4c0c8d356d205dee7490a2a91487890c5f36704a6d468332791c53d3",
+      "src/go2_wall/stairs.py": "a0dff6cef937dc81a1f3ac126382dd9ec0bd243111c5e825cd5017d3de35696f",
+      "src/go2_wall/statics.py": "30a9b1da0e6b057af33b4012d43487907296d5412e5447afd61e7b9f5e070841",
+      "src/go2_wall/transition.py": "b57d7ee17c39c1d2f72976b81106d237b5bdf9dc52fd613ce5b3c49c1d5ddf69",
+      "tools/probe_stair_transfer.py": "a9208f54d5df499e158bb3f92ed36457cb8bd833297cf7fdcfe4f98639d6a39f",
+      "tools/replay_stair_entry.py": "8bd0a7e2a5f61b7415b7fe35d4bef59348f5f6bf4e0ba484a36f969e9d92b80c",
+      "tools/replay_stair_sequence.py": "b1f8584915aeb189c825d9a95c16c20551e5af50211c8372a65550eeb4394e24",
+      "tools/replay_stair_transfer.py": "d4e0fe0554fffaff751791ccc47353c65683f5e2376af4e17261b0917f789514",
+      "tools/stair_bypass_inputs.py": "c367fe6c094b12d4c550e1130bfebaff3815f3d2430fe4384d9a14c4c8134981",
+      "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+      "tools/stair_valve_swing_order.py": "2abf928ff9ccf1df6f498a0e443b9702d4e65df2ff7ef4c7ab56994bd102b76c"
+    },
+    "rbq_asset_commit": "c7b80ba49f9a79f983cb977e2726cb2246701fcf",
+    "rbq_asset_files": {
+      "resources/meshes/rb1/Link0.stl": "45e637f4a07d34238c401682389316b23b2e59c01a492534700c635388928e86",
+      "resources/meshes/rb1/Link1.stl": "581e578df79d66f03cf2587f551dcf92c4843f05ac20a0f44199988e467b3108",
+      "resources/meshes/rb1/Link2.stl": "2c2d632ab45575b91710c7a94dc47910319eee940d8262859546126ae1b937a9",
+      "resources/meshes/rb1/Link3.stl": "c5e21860caa8e6cd6d853fe7cdb7e8e6d85ba89443e2e63165fcc5e23c6d3559",
+      "resources/meshes/rb1/Link4.stl": "d0a6191685e902b21b32d64fc12ba4a14b97c05b688a350317bc9ad7d9bfb130",
+      "resources/meshes/rb1/Link5.stl": "47d90e2501197dd80083be31363b54624c33d81878e015e9c6b38e17e41910a6",
+      "resources/meshes/rb1/Link6.stl": "ee45c66ce6d93bb439eb26e473bb8e1b7a2252b321e9a101a85ddcd060f8e2f4",
+      "resources/meshes/rb1/RB1_Handcam.stl": "f414e54ef898f4f3510269c4e7dfadc5a094616234e8a7a0f5742121840a814d",
+      "resources/meshes/rb1/RB1_Palm.stl": "6e6a1a93e3500d7f2150b29156b03c2bf2620bff9063cd89fe021cc61c2cbb1d",
+      "resources/meshes/rb1/RB1_finger_lower.stl": "8d3219788aa6db0c7ac271f063aa87fb2186b189dd1a1c166858fd0c8d2e51de",
+      "resources/meshes/rb1/RB1_finger_upper.stl": "f0c6967aa54b2d2aa8a91bb7c11bb2524847201d3fccac91f16470ba3a9de4cf",
+      "resources/meshes/rbq/calf.obj": "c690fa922cef7734c7649f09f6a040035353f38873a9dda874fdd010928517e9",
+      "resources/meshes/rbq/hip2.obj": "0c260eaf543767ebc60da2082bd1027c27377244eb93d440a7be89d447d59c1a",
+      "resources/meshes/rbq/hip3.obj": "7603867d4b96061301f226637ebbbad31c54fad9c799e8b66b01b063e50b5945",
+      "resources/meshes/rbq/thigh.obj": "575533eaa7dbee1779a67b6ec292e5aa6b158a1b7dd002cf3e1ecd082e0aeb8f",
+      "resources/meshes/rbq/trunk.obj": "f11a4ff2065b7483112400456df8d7c9210fb7279c150f62bf0acdb8d2ac2891",
+      "resources/model/README.md": "5685135a54f76044fe7e28cf217fa45de70edc6689fb948924d9d932a90e0fdc",
+      "resources/model/rbq10_with_rb1.xml": "fa01e1ff0df8575a60773efef9339f15ce710e7beb3d6dc4af7009238909f32a"
+    },
+    "runtime": {
+      "python": "3.14.0",
+      "mujoco": "4.0.0",
+      "numpy": "2.5.5",
+      "scipy": "1.18.1"
+    }
+  },
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "baseline_commit": "632fcc21a2c6f0ceed236cfe83cef5837736c791",
+  "executor_sources_changed_from_baseline": [
+    "tools/stair_valve_swing_order.py"
+  ],
+  "observed_query": {
+    "row": 5610,
+    "time_s": 112.20000000000003,
+    "segment": 113,
+    "stance": [
+      true,
+      true,
+      false,
+      true
+    ],
+    "feet_xyz_m": [
+      [
+        0.8606446496184161,
+        0.19285,
+        1.1700000000000002
+      ],
+      [
+        0.8606446496184162,
+        -0.19285000000000002,
+        1.1700000000000002
+      ],
+      [
+        0.5417867625530647,
+        0.1928499610249473,
+        0.8149600556027368
+      ],
+      [
+        0.5417867897710497,
+        -0.19285,
+        0.7899999999999998
+      ]
+    ],
+    "base_xyz_m": [
+      0.7612157196947329,
+      -0.03,
+      1.37
+    ]
+  },
+  "incoming_bypass_frontier": {
+    "path": "evidence\\stair-mission-20261121\\bypass\\swing-order\\incoming-frontier.npz",
+    "time_s": 112.02000000000002,
+    "body_offset": [
+      -0.05455526088050673,
+      0.08129290843225272,
+      -0.08255626407907703,
+      1.8772307205001615,
+      6.516474198742624,
+      -0.04824298126763116
+    ],
+    "foot_x_delta_m": [
+      0.01823,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "foot_y_delta_m": [
+      0.023863,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ratio": 0.28024676444492697,
+    "lever_clearance_m": 0.005117448542114437,
+    "start_base": [
+      0.7066604588142261,
+      0.05129290843225272,
+      1.287443735920923,
+      0.730895557690045,
+      0.11373393038931812,
+      -0.0008419988640981114
+    ],
+    "arm_pose_rad": {
+      "arm_joint1": 0.0,
+      "arm_joint2": -1.4,
+      "arm_joint3": 0.6,
+      "arm_joint4": 0.0,
+      "arm_joint5": -2.967,
+      "arm_joint6": 0.0
+    }
+  },
+  "original": {
+    "first": {
+      "leg": "RL",
+      "end_s": 115.1,
+      "stance": {
+        "FL": {
+          "xyz_m": [
+            0.8606446496184161,
+            0.19285,
+            1.1700000000000002
+          ],
+          "surface": "floor"
+        },
+        "FR": {
+          "xyz_m": [
+            0.8606446496184161,
+            -0.19285,
+            1.1700000000000002
+          ],
+          "surface": "floor"
+        },
+        "RL": {
+          "xyz_m": [
+            0.7012157196947328,
+            0.19285,
+            0.9800000000000001
+          ],
+          "surface": "floor"
+        },
+        "RR": {
+          "xyz_m": [
+            0.5417867897710497,
+            -0.19285,
+            0.79
+          ],
+          "surface": "floor"
+        }
+      }
+    },
+    "second": {
+      "leg": "RR",
+      "end_s": 120.0,
+      "stance": {
+        "FL": {
+          "xyz_m": [
+            0.8606446496184161,
+            0.19285,
+            1.1700000000000002
+          ],
+          "surface": "floor"
+        },
+        "FR": {
+          "xyz_m": [
+            0.8606446496184161,
+            -0.19285,
+            1.1700000000000002
+          ],
+          "surface": "floor"
+        },
+        "RL": {
+          "xyz_m": [
+            0.7012157196947328,
+            0.19285,
+            0.9800000000000001
+          ],
+          "surface": "floor"
+        },
+        "RR": {
+          "xyz_m": [
+            0.7012157196947328,
+            -0.19285,
+            0.9800000000000001
+          ],
+          "surface": "floor"
+        }
+      }
+    }
+  },
+  "reordered": {
+    "first": {
+      "leg": "RR",
+      "stance": {
+        "FL": {
+          "xyz_m": [
+            0.8788746497063902,
+            0.21671300034925586,
+            1.1699999998937354
+          ],
+          "surface": "floor"
+        },
+        "FR": {
+          "xyz_m": [
+            0.8606446495801852,
+            -0.19284999957283044,
+            1.170000000188398
+          ],
+          "surface": "floor"
+        },
+        "RL": {
+          "xyz_m": [
+            0.5417867897631597,
+            0.19284999999045305,
+            0.7900000000109192
+          ],
+          "surface": "floor"
+        },
+        "RR": {
+          "xyz_m": [
+            0.7012157196947328,
+            -0.19285,
+            0.9800000000000001
+          ],
+          "surface": "floor"
+        }
+      }
+    },
+    "second": {
+      "leg": "RL",
+      "stance": {
+        "FL": {
+          "xyz_m": [
+            0.8788746497063902,
+            0.21671300034925586,
+            1.1699999998937354
+          ],
+          "surface": "floor"
+        },
+        "FR": {
+          "xyz_m": [
+            0.8606446495801852,
+            -0.19284999957283044,
+            1.170000000188398
+          ],
+          "surface": "floor"
+        },
+        "RL": {
+          "xyz_m": [
+            0.7012157196947328,
+            0.19285,
+            0.9800000000000001
+          ],
+          "surface": "floor"
+        },
+        "RR": {
+          "xyz_m": [
+            0.7012157196947328,
+            -0.19285,
+            0.9800000000000001
+          ],
+          "surface": "floor"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "nominal_intended_landings": 156,
+    "reordered_intended_landings": 156,
+    "landing_count_preserved": true,
+    "target_support_multiset_preserved": true,
+    "handoff_support_feet": 4,
+    "swing_support_feet": 3,
+    "sample_period_s": 0.02
+  },
+  "search": {
+    "rr_first_quick_passes": 1,
+    "rr_first_path_attempts": [
+      {
+        "base": [
+          0.705773219704887,
+          0.06,
+          1.280000000023606,
+          0.6108652381980153
+        ],
+        "waypoint": null,
+        "midpoint_ratio": 0.47437746582374807,
+        "physical_max_ratio": 0.4822522602024297
+      }
+    ],
+    "rl_second_quick_passes": 1,
+    "rl_second_path_attempts": [
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": null,
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 0.68,
+          "progress": 0.18666666666666668,
+          "reason": "ik_or_collision",
+          "base": [
+            0.7176583692410418,
+            0.05450851555555556,
+            1.2898389096532044,
+            0.6268393189276165
+          ],
+          "max_foot_ik_error_m": 2.8511911362368813e-08,
+          "foot_ik_errors_m": {
+            "FL": 2.8511911362368813e-08,
+            "FR": 1.9838806940540862e-08,
+            "RL": 2.1040467220877577e-08,
+            "RR": 1.415789422454752e-08
+          },
+          "overlaps": [
+            {
+              "geoms": [
+                "valve_lever",
+                "RB1_Base_Yaw"
+              ],
+              "penetration_m": 0.0004914844444410356
+            }
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.705773219704887,
+          0.06,
+          1.340000000023606,
+          0.6108652381980153
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 2.06,
+          "progress": 0.10666666666666667,
+          "reason": "lever_geometric_overlap",
+          "lever_clearance_m": -2.3959831220218136e-06,
+          "base": [
+            0.7098904827369912,
+            0.058097635555555555,
+            1.3415060385421136,
+            0.6163989920527533
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.705773219704887,
+          0.06,
+          1.340000000023606,
+          0.6981317007977318
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 1.3199999999999998,
+          "progress": 0.6133333333333333,
+          "reason": "ik_or_collision",
+          "base": [
+            0.705773219704887,
+            0.06,
+            1.3200253155791617,
+            0.6690796999141944
+          ],
+          "max_foot_ik_error_m": 8.837841534156688e-09,
+          "foot_ik_errors_m": {
+            "FL": 7.896523935658476e-09,
+            "FR": 8.837841534156688e-09,
+            "RL": 5.397758873557813e-09,
+            "RR": 2.5252626298927833e-09
+          },
+          "overlaps": [
+            {
+              "geoms": [
+                "valve_lever",
+                "base"
+              ],
+              "penetration_m": 0.0013037419710653
+            }
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.705773219704887,
+          0.06,
+          1.340000000023606,
+          0.7853981633974483
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 1.1400000000000001,
+          "progress": 0.49333333333333335,
+          "reason": "ik_or_collision",
+          "base": [
+            0.7057732197048872,
+            0.06,
+            1.3094000355791617,
+            0.696386474972656
+          ],
+          "max_foot_ik_error_m": 1.2428756995062212e-08,
+          "foot_ik_errors_m": {
+            "FL": 1.095169759581113e-08,
+            "FR": 1.2428756995062212e-08,
+            "RL": 6.917260647818205e-09,
+            "RR": 3.4671811524113117e-09
+          },
+          "overlaps": [
+            {
+              "geoms": [
+                "valve_lever",
+                "base"
+              ],
+              "penetration_m": 0.0017716902852596191
+            }
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.705773219704887,
+          0.09,
+          1.340000000023606,
+          0.6108652381980153
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 2.06,
+          "progress": 0.10666666666666667,
+          "reason": "lever_geometric_overlap",
+          "lever_clearance_m": -2.3959831220218136e-06,
+          "base": [
+            0.7098904827369912,
+            0.08714645333333333,
+            1.3415060385421136,
+            0.6163989920527533
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.705773219704887,
+          0.09,
+          1.340000000023606,
+          0.6981317007977318
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 1.3199999999999998,
+          "progress": 0.6133333333333333,
+          "reason": "ik_or_collision",
+          "base": [
+            0.705773219704887,
+            0.08001265777777777,
+            1.3200253155791617,
+            0.6690796999141944
+          ],
+          "max_foot_ik_error_m": 1.0648022720668788e-08,
+          "foot_ik_errors_m": {
+            "FL": 1.0648022720668788e-08,
+            "FR": 9.047080397388327e-09,
+            "RL": 5.808012615781383e-09,
+            "RR": 5.214766790017279e-09
+          },
+          "overlaps": [
+            {
+              "geoms": [
+                "valve_lever",
+                "base"
+              ],
+              "penetration_m": 0.0013037419710653
+            }
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.705773219704887,
+          0.09,
+          1.340000000023606,
+          0.7853981633974483
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 1.1400000000000001,
+          "progress": 0.49333333333333335,
+          "reason": "ik_or_collision",
+          "base": [
+            0.7057732197048872,
+            0.07470001777777778,
+            1.3094000355791617,
+            0.696386474972656
+          ],
+          "max_foot_ik_error_m": 1.4813160469765556e-08,
+          "foot_ik_errors_m": {
+            "FL": 1.4813160469765556e-08,
+            "FR": 1.194597281236259e-08,
+            "RL": 7.193201149261816e-09,
+            "RR": 4.953946188289046e-09
+          },
+          "overlaps": [
+            {
+              "geoms": [
+                "valve_lever",
+                "base"
+              ],
+              "penetration_m": 0.0017716902852596191
+            }
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.675773219704887,
+          0.06,
+          1.340000000023606,
+          0.6108652381980153
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 1.42,
+          "progress": 0.68,
+          "reason": "ik_or_collision",
+          "base": [
+            0.683023139704887,
+            0.06,
+            1.3255001600236063,
+            0.6108652381980153
+          ],
+          "max_foot_ik_error_m": 6.632975576664505e-09,
+          "foot_ik_errors_m": {
+            "FL": 5.52623391155463e-09,
+            "FR": 6.632975576664505e-09,
+            "RL": 5.472858089155075e-09,
+            "RR": 5.4280599925911715e-09
+          },
+          "overlaps": [
+            {
+              "geoms": [
+                "valve_lever",
+                "base"
+              ],
+              "penetration_m": 0.0006760582809320122
+            }
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.675773219704887,
+          0.06,
+          1.340000000023606,
+          0.6981317007977318
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 1.1800000000000002,
+          "progress": 0.52,
+          "reason": "ik_or_collision",
+          "base": [
+            0.6898736997048871,
+            0.06,
+            1.3117990400236061,
+            0.6571150671124635
+          ],
+          "max_foot_ik_error_m": 9.779668189318277e-09,
+          "foot_ik_errors_m": {
+            "FL": 6.8746850121715045e-09,
+            "FR": 9.779668189318277e-09,
+            "RL": 4.503743532575188e-09,
+            "RR": 4.684683881423581e-09
+          },
+          "overlaps": [
+            {
+              "geoms": [
+                "valve_lever",
+                "base"
+              ],
+              "penetration_m": 0.0007449645908504717
+            }
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.675773219704887,
+          0.06,
+          1.340000000023606,
+          0.7853981633974483
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 1.06,
+          "progress": 0.44,
+          "reason": "ik_or_collision",
+          "base": [
+            0.693460259704887,
+            0.06,
+            1.3046259200236061,
+            0.682499135753469
+          ],
+          "max_foot_ik_error_m": 1.184609715499583e-08,
+          "foot_ik_errors_m": {
+            "FL": 8.060717261243127e-09,
+            "FR": 1.184609715499583e-08,
+            "RL": 4.037336457657867e-09,
+            "RR": 2.6417195659632596e-09
+          },
+          "overlaps": [
+            {
+              "geoms": [
+                "valve_lever",
+                "base"
+              ],
+              "penetration_m": 0.0013485281860088402
+            }
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.675773219704887,
+          0.09,
+          1.340000000023606,
+          0.6108652381980153
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 1.42,
+          "progress": 0.68,
+          "reason": "ik_or_collision",
+          "base": [
+            0.683023139704887,
+            0.08275008,
+            1.3255001600236063,
+            0.6108652381980153
+          ],
+          "max_foot_ik_error_m": 8.057827029784423e-09,
+          "foot_ik_errors_m": {
+            "FL": 8.057827029784423e-09,
+            "FR": 6.582314610767985e-09,
+            "RL": 6.392598923048497e-09,
+            "RR": 6.6706683611165075e-09
+          },
+          "overlaps": [
+            {
+              "geoms": [
+                "valve_lever",
+                "base"
+              ],
+              "penetration_m": 0.0006760582809320122
+            }
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.675773219704887,
+          0.09,
+          1.340000000023606,
+          0.6981317007977318
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 1.1800000000000002,
+          "progress": 0.52,
+          "reason": "ik_or_collision",
+          "base": [
+            0.6898736997048871,
+            0.07589952,
+            1.3117990400236061,
+            0.6571150671124635
+          ],
+          "max_foot_ik_error_m": 1.152666992798482e-08,
+          "foot_ik_errors_m": {
+            "FL": 1.152666992798482e-08,
+            "FR": 8.632590951518224e-09,
+            "RL": 5.378539686517485e-09,
+            "RR": 6.862217355600589e-09
+          },
+          "overlaps": [
+            {
+              "geoms": [
+                "valve_lever",
+                "base"
+              ],
+              "penetration_m": 0.0007449645908504717
+            }
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.675773219704887,
+          0.09,
+          1.340000000023606,
+          0.7853981633974483
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 1.06,
+          "progress": 0.44,
+          "reason": "ik_or_collision",
+          "base": [
+            0.693460259704887,
+            0.07231296,
+            1.3046259200236061,
+            0.682499135753469
+          ],
+          "max_foot_ik_error_m": 1.3471889126590143e-08,
+          "foot_ik_errors_m": {
+            "FL": 1.3471889126590143e-08,
+            "FR": 1.0130376438986966e-08,
+            "RL": 4.181399601285058e-09,
+            "RR": 5.4208373800389875e-09
+          },
+          "overlaps": [
+            {
+              "geoms": [
+                "valve_lever",
+                "base"
+              ],
+              "penetration_m": 0.0013485281860088402
+            }
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.7357732197048871,
+          0.06,
+          1.340000000023606,
+          0.6108652381980153
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 2.1799999999999997,
+          "progress": 0.18666666666666668,
+          "reason": "ik_or_collision",
+          "base": [
+            0.7449126270188196,
+            0.05450851555555556,
+            1.34434742520876,
+            0.6268393189276165
+          ],
+          "max_foot_ik_error_m": 1.8674880349970424e-08,
+          "foot_ik_errors_m": {
+            "FL": 1.8674880349970424e-08,
+            "FR": 1.0473506614870643e-08,
+            "RL": 1.1412567760608331e-08,
+            "RR": 1.1500044774210053e-08
+          },
+          "overlaps": [
+            {
+              "geoms": [
+                "valve_lever",
+                "RB1_Base_Yaw"
+              ],
+              "penetration_m": 0.0004914844444443749
+            }
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.7357732197048871,
+          0.06,
+          1.340000000023606,
+          0.6981317007977318
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 1.58,
+          "progress": 0.7866666666666666,
+          "reason": "ik_or_collision",
+          "base": [
+            0.7322597619271093,
+            0.06,
+            1.3329730844680507,
+            0.6879114664057275
+          ],
+          "max_foot_ik_error_m": 7.1647214629850495e-09,
+          "foot_ik_errors_m": {
+            "FL": 7.1647214629850495e-09,
+            "FR": 6.843702317072978e-09,
+            "RL": 4.055785867099133e-09,
+            "RR": 1.893037594080209e-09
+          },
+          "overlaps": [
+            {
+              "geoms": [
+                "valve_lever",
+                "base"
+              ],
+              "penetration_m": 0.0004278519253730403
+            }
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.7357732197048871,
+          0.06,
+          1.340000000023606,
+          0.7853981633974483
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": null,
+        "first_failure": {
+          "phase": "shift",
+          "time_s": 1.2400000000000002,
+          "progress": 0.56,
+          "reason": "ik_or_collision",
+          "base": [
+            0.7234602597048871,
+            0.06,
+            1.3153740800236062,
+            0.7137642658419947
+          ],
+          "max_foot_ik_error_m": 1.5343760562303955e-08,
+          "foot_ik_errors_m": {
+            "FL": 1.5343760562303955e-08,
+            "FR": 1.502610716013038e-08,
+            "RL": 1.1388196889523583e-08,
+            "RR": 8.006866117897565e-09
+          },
+          "overlaps": [
+            {
+              "geoms": [
+                "valve_lever",
+                "base"
+              ],
+              "penetration_m": 0.0003421412220580757
+            }
+          ]
+        }
+      },
+      {
+        "base": [
+          0.835630452186117,
+          0.0,
+          1.3875000000232633,
+          0.7853981633974483
+        ],
+        "waypoint": [
+          0.7357732197048871,
+          0.09,
+          1.340000000023606,
+          0.6108652381980153
+        ],
+        "midpoint_ratio": 0.4773533804232366,
+        "physical_max_ratio": 0.48165600732632735
+      }
+    ]
+  },
+  "outcome": "verified_reorder",
+  "paths": {
+    "rr_first": {
+      "start_base": [
+        0.7066604588142261,
+        0.05129290843225272,
+        1.287443735920923,
+        0.730895557690045,
+        0.11373393038931812,
+        -0.0008419988640981114
+      ],
+      "swing_base": [
+        0.705773219704887,
+        0.06,
+        1.280000000023606,
+        0.6108652381980153
+      ],
+      "physical_max_ratio": 0.4822522602024297
+    },
+    "rl_second": {
+      "start_base": [
+        0.705773219704887,
+        0.06,
+        1.280000000023606,
+        0.6108652381980153
+      ],
+      "swing_base": [
+        0.835630452186117,
+        0.0,
+        1.3875000000232633,
+        0.7853981633974483
+      ],
+      "waypoints": [
+        [
+          0.7357732197048871,
+          0.09,
+          1.340000000023606,
+          0.6108652381980153
+        ]
+      ],
+      "physical_max_ratio": 0.48165600732632735
+    }
+  },
+  "verification": {
+    "samples": 526,
+    "duration_s": 10.5,
+    "max_torque_ratio": 0.4822522602024297,
+    "min_support_feet": 3,
+    "max_support_feet": 4,
+    "three_foot_swing_samples": {
+      "RR": 59,
+      "RL": 59
+    },
+    "hinge_min_rad": 1.5707963267948966,
+    "hinge_max_rad": 1.5707963267948966,
+    "minimum_lever_clearance_m": 0.002511411932833347,
+    "closest_collision_enabled_lever_pair": {
+      "sample": 360,
+      "time_s": 7.2,
+      "distance_m": 0.002511411932833347,
+      "geom_id": 50,
+      "geom": "RB1_Base_Yaw",
+      "combined_margin_m": 0.001
+    },
+    "lever_contact_samples": 0,
+    "maximum_lever_contact_force_n": 0.0,
+    "collision_filter": {
+      "explicit_pairs": 0,
+      "excluded_body_pairs": 3,
+      "eligible_robot_geoms": 29
+    },
+    "maximum_terminal_foot_error_m": 2.482534153247273e-16,
+    "terminal_foot_errors_m": {
+      "FL": 0.0,
+      "FR": 0.0,
+      "RL": 2.482534153247273e-16,
+      "RR": 2.482534153247273e-16
+    },
+    "collision_contract": "every sample passed transition.place active-contact gate",
+    "all_finite": true
+  }
+}

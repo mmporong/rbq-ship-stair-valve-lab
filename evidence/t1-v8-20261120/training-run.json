@@ -1,0 +1,88 @@
+{
+  "run": "2026-11-20_11-52-41_v8_term50_10col",
+  "resume_run": "2026-11-10_17-45-51_v7",
+  "resume_checkpoint": "model_8997.pt",
+  "resume_checkpoint_sha256": "e1f146bd3d583b7c9b56870756b90abdfa6b43c8eb00a30ec383202db7bf4341",
+  "first_iteration": 8997,
+  "last_iteration": 9496,
+  "updates": 500,
+  "seed": 42,
+  "env_count": 2048,
+  "terrain_cols": 10,
+  "rollout_steps": 24,
+  "median_iteration_s": 4.37,
+  "training_wall_s_from_rounded_iterations": 2172.44,
+  "environment_sha256": {
+    "v7": "6428a32bf38a854c3da0b6906df3157abedc78e264bbdf72c41d8c3a7327d147",
+    "v8": "4efce8be5ccd2aeb08c3de8988fd5abe29f36f354319ea1a0a2296e8fff74fc5"
+  },
+  "environment_config_diff": [
+    "@@ -1532,9 +1532,9 @@\n",
+    "     weight: -0.025",
+    "   is_terminated:",
+    "     func: !!python/name:mjlab.envs.mdp.rewards.is_terminated ''",
+    "     params: {}",
+    "-    weight: -200.0",
+    "+    weight: -50.0",
+    "   joint_acc_l2:",
+    "     func: !!python/name:mjlab.envs.mdp.rewards.joint_acc_l2 ''",
+    "     params: {}",
+    "     weight: -2.5e-07"
+  ],
+  "checkpoints": {
+    "9000": {
+      "sha256": "f55530d78e560b3dc60628a6d34b68fc8bb52fa773aacbb6f575f7ce32bf650a",
+      "size_bytes": 7044405,
+      "tensorboard": {
+        "Curriculum/terrain_levels": 1.9068197011947632,
+        "Train/mean_reward": 2.818103075027466,
+        "Train/mean_episode_length": 76.27999877929688
+      }
+    },
+    "9100": {
+      "sha256": "6d39b7c28c9cdda9c3964c3b37493c3bcd24f81ca46f5e367618a7f264cfc757",
+      "size_bytes": 7044405,
+      "tensorboard": {
+        "Curriculum/terrain_levels": 2.58966064453125,
+        "Train/mean_reward": 39.437400817871094,
+        "Train/mean_episode_length": 996.25
+      }
+    },
+    "9200": {
+      "sha256": "6d14e00832ab710255edb3253feea42594e186b2156f19bc923ec08f6b0a11c4",
+      "size_bytes": 7044405,
+      "tensorboard": {
+        "Curriculum/terrain_levels": 3.4583537578582764,
+        "Train/mean_reward": 33.09354019165039,
+        "Train/mean_episode_length": 988.0399780273438
+      }
+    },
+    "9300": {
+      "sha256": "e5ec9f8bb665c8e4d29ca6a6da2d32e1f3fe73e38ce7fff184f4ff886afc2c99",
+      "size_bytes": 7044405,
+      "tensorboard": {
+        "Curriculum/terrain_levels": 4.13983154296875,
+        "Train/mean_reward": 35.19868087768555,
+        "Train/mean_episode_length": 989.77001953125
+      }
+    },
+    "9400": {
+      "sha256": "0a5d2586c1223205534cc9c6e9bafc423185bfdc275b418e87508cb5f7392f15",
+      "size_bytes": 7044405,
+      "tensorboard": {
+        "Curriculum/terrain_levels": 4.530049800872803,
+        "Train/mean_reward": 34.491336822509766,
+        "Train/mean_episode_length": 978.7899780273438
+      }
+    },
+    "9496": {
+      "sha256": "68c8aba08b1bbc02bdefbec780836b435bc5e23f624349218e18d7bd98e49a00",
+      "size_bytes": 7044405,
+      "tensorboard": {
+        "Curriculum/terrain_levels": 4.675252437591553,
+        "Train/mean_reward": 32.93302917480469,
+        "Train/mean_episode_length": 977.530029296875
+      }
+    }
+  }
+}

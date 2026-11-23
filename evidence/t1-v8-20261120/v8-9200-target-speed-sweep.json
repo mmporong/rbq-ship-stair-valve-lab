@@ -1,0 +1,256 @@
+{
+  "mujoco": "4.0.0",
+  "checkpoint": "model_9200.pt",
+  "checkpoint_sha256": "6d14e00832ab710255edb3253feea42594e186b2156f19bc923ec08f6b0a11c4",
+  "actor_sha256": "2a91d77eda0aba0a8b7a0c8b1b60c3a11daf156e5411cd02486238191518a4ef",
+  "slope_deg": 50,
+  "rise_m": 0.19,
+  "going_m": 0.1594289299236832,
+  "treads": 10,
+  "control_timestep_s": 0.02,
+  "physics_timestep_s": 0.005,
+  "phase_timeout_s": 19.96,
+  "route_criteria": {
+    "tread_sections_each_direction": 3,
+    "minimum_foot_support_n": 1.0,
+    "return_tolerance_m": 0.15,
+    "return_hold_s": 0.5,
+    "return_max_linear_mps": 0.05,
+    "return_max_angular_radps": 0.15,
+    "return_max_tilt_from_vertical_deg": 10.000000000000012
+  },
+  "start_xyz_m": [
+    -1.1,
+    0.0,
+    0.5600000023841858
+  ],
+  "stair_geometry": {
+    "slopes_deg": [
+      50,
+      60,
+      70
+    ],
+    "rises_m": [
+      0.165,
+      0.2,
+      0.235,
+      0.27,
+      0.305
+    ],
+    "tread_depth_m": 0.127,
+    "tread_thickness_m": 0.03,
+    "clear_width_m": 0.61
+  },
+  "trials": [
+    {
+      "speed_mps": 0.2,
+      "passed_round_trip": false,
+      "last_phase": "ascend",
+      "termination": "illegal_contact",
+      "events": {
+        "ascend_s": 0.0
+      },
+      "ascent_treads": [
+        1
+      ],
+      "descent_treads": [],
+      "maximum_body_z_m": 0.6260980536914179,
+      "maximum_forward_x_m": -0.09546991946700606,
+      "final_body_xyz_m": [
+        -0.09546991946700606,
+        0.1594332989036487,
+        0.5732132563279078
+      ],
+      "peak_torque_ratio": 1.0,
+      "first_illegal_contacts": [
+        {
+          "time_s": 6.0849999999998925,
+          "robot_geom": "robot/base_link_collision1",
+          "terrain_geom": "tread3",
+          "force_n": 1377.6299185928222,
+          "contact_xyz_m": [
+            0.31869556980185826,
+            0.15883207969700097,
+            0.5399907524093057
+          ],
+          "body_xyz_m": [
+            -0.09626630252703282,
+            0.16016088583240706,
+            0.5721881112112275
+          ],
+          "body_pitch_up_deg": 4.335868551593226
+        }
+      ],
+      "first_route_violation": {
+        "reason": "off_route_support",
+        "time_s": 6.019999999999894,
+        "phase": "ascend",
+        "foot": "robot/FL_foot_collision",
+        "surface": "approach_floor",
+        "contact_xyz_m": [
+          0.16713086640270783,
+          0.26773869058222005,
+          -0.0011963222693907594
+        ]
+      },
+      "stable_return_s": 0.0
+    },
+    {
+      "speed_mps": 0.25,
+      "passed_round_trip": false,
+      "last_phase": "ascend",
+      "termination": "illegal_contact",
+      "events": {
+        "ascend_s": 0.0
+      },
+      "ascent_treads": [
+        1
+      ],
+      "descent_treads": [],
+      "maximum_body_z_m": 0.6211965836839367,
+      "maximum_forward_x_m": -0.05404729456255265,
+      "final_body_xyz_m": [
+        -0.05404729456255265,
+        -0.08598443384802497,
+        0.5909296884733969
+      ],
+      "peak_torque_ratio": 1.0,
+      "first_illegal_contacts": [
+        {
+          "time_s": 5.164999999999912,
+          "robot_geom": "robot/base_link_collision1",
+          "terrain_geom": "tread3",
+          "force_n": 1103.8531735717968,
+          "contact_xyz_m": [
+            0.3189637289651247,
+            -0.2228186697758881,
+            0.5692696765752672
+          ],
+          "body_xyz_m": [
+            -0.05685401427774474,
+            -0.0840230692251657,
+            0.5974365492770566
+          ],
+          "body_pitch_up_deg": 8.186768612905528
+        }
+      ],
+      "first_route_violation": {
+        "reason": "off_route_support",
+        "time_s": 4.899999999999918,
+        "phase": "ascend",
+        "foot": "robot/FL_foot_collision",
+        "surface": "approach_floor",
+        "contact_xyz_m": [
+          0.16541525820204417,
+          0.058552169147061746,
+          -0.0020615574141741866
+        ]
+      },
+      "stable_return_s": 0.0
+    },
+    {
+      "speed_mps": 0.7,
+      "passed_round_trip": false,
+      "last_phase": "ascend",
+      "termination": "illegal_contact",
+      "events": {
+        "ascend_s": 0.0
+      },
+      "ascent_treads": [
+        1
+      ],
+      "descent_treads": [],
+      "maximum_body_z_m": 0.6339429003769702,
+      "maximum_forward_x_m": -0.0175103699975805,
+      "final_body_xyz_m": [
+        -0.0175103699975805,
+        -0.036840468998913634,
+        0.5976864219721687
+      ],
+      "peak_torque_ratio": 1.0,
+      "first_illegal_contacts": [
+        {
+          "time_s": 2.164999999999976,
+          "robot_geom": "robot/base_link_collision1",
+          "terrain_geom": "tread3",
+          "force_n": 3133.576397156046,
+          "contact_xyz_m": [
+            0.31920636528059854,
+            -0.14611561754520533,
+            0.5663976590180289
+          ],
+          "body_xyz_m": [
+            -0.01863473297273683,
+            -0.03873582352049883,
+            0.6085481214631597
+          ],
+          "body_pitch_up_deg": 5.52306610385752
+        }
+      ],
+      "first_route_violation": {
+        "reason": "off_route_support",
+        "time_s": 2.159999999999976,
+        "phase": "ascend",
+        "foot": "robot/FR_foot_collision",
+        "surface": "approach_floor",
+        "contact_xyz_m": [
+          0.23151700933368,
+          -0.18194215314176249,
+          -0.0030053913169232893
+        ]
+      },
+      "stable_return_s": 0.0
+    },
+    {
+      "speed_mps": 0.8,
+      "passed_round_trip": false,
+      "last_phase": "ascend",
+      "termination": "illegal_contact",
+      "events": {
+        "ascend_s": 0.0
+      },
+      "ascent_treads": [],
+      "descent_treads": [],
+      "maximum_body_z_m": 0.6374696336350542,
+      "maximum_forward_x_m": -0.0287822615596314,
+      "final_body_xyz_m": [
+        -0.032349122284936714,
+        0.028966047632893878,
+        0.5882277945255874
+      ],
+      "peak_torque_ratio": 1.0,
+      "first_illegal_contacts": [
+        {
+          "time_s": 2.1499999999999764,
+          "robot_geom": "robot/base_link_collision1",
+          "terrain_geom": "tread3",
+          "force_n": 1384.928916592877,
+          "contact_xyz_m": [
+            0.31894010386111954,
+            0.11336005268931106,
+            0.5693929197407152
+          ],
+          "body_xyz_m": [
+            -0.02911774022325327,
+            0.02707793546684382,
+            0.597808675877694
+          ],
+          "body_pitch_up_deg": 7.709816033374875
+        }
+      ],
+      "first_route_violation": {
+        "reason": "off_route_support",
+        "time_s": 1.824999999999983,
+        "phase": "ascend",
+        "foot": "robot/FL_foot_collision",
+        "surface": "approach_floor",
+        "contact_xyz_m": [
+          0.17485506812016813,
+          0.11563831110897224,
+          0.0004250746853517451
+        ]
+      },
+      "stable_return_s": 0.0
+    }
+  ]
+}

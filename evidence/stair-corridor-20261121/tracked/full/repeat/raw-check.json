@@ -1,0 +1,4993 @@
+{
+  "scope": "full",
+  "physics_steps": 998215,
+  "raw_sha256": "56acf0ade185bd8039dd66098c9397e0997c0e8dbe9c97281f04294dff9b53c6",
+  "scene_sha256": "50f020d73f69416167040231c91f24664d5ea7acd7e72d591742def93cc6411d",
+  "fingerprints_match_original": true,
+  "time_axis_verified": true,
+  "stage_schedule_verified": true,
+  "verified_walk_sha256": "0ce148501742caacaeebfcf95caafbd8bdb3dd0a9f93c710b64bbc6e6bc8b5c6",
+  "actuation_period_s": 0.005,
+  "physics_steps_per_actuation_tick": 5,
+  "walking": {
+    "landings_evaluated": 156,
+    "verified": false,
+    "first_failure": {
+      "stage": "hold",
+      "time_s": 111.76800000016962,
+      "metric": "stance_slip_m",
+      "measured": 0.010000016097540768,
+      "limit": "<= 0.01"
+    },
+    "failures": [
+      {
+        "stage": "hold",
+        "time_s": 111.76800000016962,
+        "metric": "stance_slip_m",
+        "measured": 0.010000016097540768,
+        "limit": "<= 0.01"
+      },
+      {
+        "stage": "return",
+        "time_s": 187.7010000005322,
+        "metric": "qp_attempt",
+        "measured": 1.0,
+        "limit": "== 0"
+      },
+      {
+        "stage": "return",
+        "time_s": 189.70300000054175,
+        "metric": "base_track_m",
+        "measured": 0.030032365074750107,
+        "limit": "<= 0.03"
+      },
+      {
+        "stage": "return",
+        "time_s": 191.06100000054823,
+        "metric": "requested_torque_ratio",
+        "measured": 2.4060030381415993,
+        "limit": "<= 1.0"
+      },
+      {
+        "stage": "return",
+        "time_s": 191.08400000054834,
+        "metric": "unexpected_contact_force_n",
+        "measured": 187.419926458204,
+        "limit": "<= 10 N"
+      },
+      {
+        "stage": "return",
+        "time_s": 191.08600000054835,
+        "metric": "fell",
+        "measured": 1.0,
+        "limit": "<= 0"
+      },
+      {
+        "stage": "return",
+        "time_s": 191.1810000005488,
+        "metric": "tread_lateral_position_m",
+        "measured": 0.3057690352322263,
+        "limit": "<= 0.305"
+      },
+      {
+        "stage": "return",
+        "time_s": 193.32100000055902,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 25
+      },
+      {
+        "stage": "return",
+        "time_s": 193.62000000056045,
+        "metric": "landing_xy_m",
+        "measured": 4.145330114037032,
+        "limit": "<= 0.035",
+        "landing": 25
+      },
+      {
+        "stage": "return",
+        "time_s": 216.00100000066732,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 26
+      },
+      {
+        "stage": "return",
+        "time_s": 216.30000000066875,
+        "metric": "landing_xy_m",
+        "measured": 3.6940647072455737,
+        "limit": "<= 0.035",
+        "landing": 26
+      },
+      {
+        "stage": "return",
+        "time_s": 228.81100000072848,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 27
+      },
+      {
+        "stage": "return",
+        "time_s": 229.1100000007299,
+        "metric": "landing_xy_m",
+        "measured": 3.595877623149457,
+        "limit": "<= 0.035",
+        "landing": 27
+      },
+      {
+        "stage": "return",
+        "time_s": 238.12600000077296,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 28
+      },
+      {
+        "stage": "return",
+        "time_s": 238.4250000007744,
+        "metric": "landing_xy_m",
+        "measured": 3.9807683116128065,
+        "limit": "<= 0.035",
+        "landing": 28
+      },
+      {
+        "stage": "return",
+        "time_s": 247.556000000818,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 29
+      },
+      {
+        "stage": "return",
+        "time_s": 247.85500000081942,
+        "metric": "landing_xy_m",
+        "measured": 4.370188788740234,
+        "limit": "<= 0.035",
+        "landing": 29
+      },
+      {
+        "stage": "return",
+        "time_s": 255.50600000085595,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 30
+      },
+      {
+        "stage": "return",
+        "time_s": 255.80500000085738,
+        "metric": "landing_xy_m",
+        "measured": 3.488581669680055,
+        "limit": "<= 0.035",
+        "landing": 30
+      },
+      {
+        "stage": "return",
+        "time_s": 269.8310000005312,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 31
+      },
+      {
+        "stage": "return",
+        "time_s": 270.13000000052415,
+        "metric": "landing_xy_m",
+        "measured": 3.759979664628865,
+        "limit": "<= 0.035",
+        "landing": 31
+      },
+      {
+        "stage": "return",
+        "time_s": 282.5110000002314,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 32
+      },
+      {
+        "stage": "return",
+        "time_s": 282.8100000002243,
+        "metric": "landing_xy_m",
+        "measured": 2.802102597354341,
+        "limit": "<= 0.035",
+        "landing": 32
+      },
+      {
+        "stage": "return",
+        "time_s": 297.63099999987384,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 33
+      },
+      {
+        "stage": "return",
+        "time_s": 297.92999999986677,
+        "metric": "landing_xy_m",
+        "measured": 2.871600183944086,
+        "limit": "<= 0.035",
+        "landing": 33
+      },
+      {
+        "stage": "return",
+        "time_s": 305.69099999968324,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 34
+      },
+      {
+        "stage": "return",
+        "time_s": 305.9899999996762,
+        "metric": "landing_xy_m",
+        "measured": 3.9125312720597383,
+        "limit": "<= 0.035",
+        "landing": 34
+      },
+      {
+        "stage": "return",
+        "time_s": 314.28599999948,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 35
+      },
+      {
+        "stage": "return",
+        "time_s": 314.5849999994729,
+        "metric": "landing_xy_m",
+        "measured": 4.2919951803429885,
+        "limit": "<= 0.035",
+        "landing": 35
+      },
+      {
+        "stage": "return",
+        "time_s": 322.5659999992842,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 36
+      },
+      {
+        "stage": "return",
+        "time_s": 322.86499999927713,
+        "metric": "landing_xy_m",
+        "measured": 2.9917237407731205,
+        "limit": "<= 0.035",
+        "landing": 36
+      },
+      {
+        "stage": "return",
+        "time_s": 331.0409999990838,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 37
+      },
+      {
+        "stage": "return",
+        "time_s": 331.3399999990767,
+        "metric": "landing_xy_m",
+        "measured": 3.1614740605427816,
+        "limit": "<= 0.035",
+        "landing": 37
+      },
+      {
+        "stage": "return",
+        "time_s": 336.445999998956,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 38
+      },
+      {
+        "stage": "return",
+        "time_s": 336.7449999989489,
+        "metric": "landing_xy_m",
+        "measured": 4.118334200180396,
+        "limit": "<= 0.035",
+        "landing": 38
+      },
+      {
+        "stage": "return",
+        "time_s": 341.3459999988401,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 39
+      },
+      {
+        "stage": "return",
+        "time_s": 341.64499999883304,
+        "metric": "landing_xy_m",
+        "measured": 4.456404284776427,
+        "limit": "<= 0.035",
+        "landing": 39
+      },
+      {
+        "stage": "return",
+        "time_s": 346.24599999872424,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 40
+      },
+      {
+        "stage": "return",
+        "time_s": 346.5449999987172,
+        "metric": "landing_xy_m",
+        "measured": 3.2118224431689786,
+        "limit": "<= 0.035",
+        "landing": 40
+      },
+      {
+        "stage": "return",
+        "time_s": 352.1459999985847,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 41
+      },
+      {
+        "stage": "return",
+        "time_s": 352.44499999857766,
+        "metric": "landing_xy_m",
+        "measured": 3.4699027564825786,
+        "limit": "<= 0.035",
+        "landing": 41
+      },
+      {
+        "stage": "return",
+        "time_s": 357.04599999846886,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 42
+      },
+      {
+        "stage": "return",
+        "time_s": 357.3449999984618,
+        "metric": "landing_xy_m",
+        "measured": 4.2934154328505265,
+        "limit": "<= 0.035",
+        "landing": 42
+      },
+      {
+        "stage": "return",
+        "time_s": 361.945999998353,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 43
+      },
+      {
+        "stage": "return",
+        "time_s": 362.2449999983459,
+        "metric": "landing_xy_m",
+        "measured": 4.613141815610919,
+        "limit": "<= 0.035",
+        "landing": 43
+      },
+      {
+        "stage": "return",
+        "time_s": 366.8459999982371,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 44
+      },
+      {
+        "stage": "return",
+        "time_s": 367.14499999823005,
+        "metric": "landing_xy_m",
+        "measured": 3.38714070520212,
+        "limit": "<= 0.035",
+        "landing": 44
+      },
+      {
+        "stage": "return",
+        "time_s": 372.1459999981118,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 45
+      },
+      {
+        "stage": "return",
+        "time_s": 372.4449999981047,
+        "metric": "landing_xy_m",
+        "measured": 4.60794102367581,
+        "limit": "<= 0.035",
+        "landing": 45
+      },
+      {
+        "stage": "return",
+        "time_s": 377.44599999798646,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 46
+      },
+      {
+        "stage": "return",
+        "time_s": 377.7449999979794,
+        "metric": "landing_xy_m",
+        "measured": 3.779893152357837,
+        "limit": "<= 0.035",
+        "landing": 46
+      },
+      {
+        "stage": "return",
+        "time_s": 382.74599999786113,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 47
+      },
+      {
+        "stage": "return",
+        "time_s": 383.04499999785406,
+        "metric": "landing_xy_m",
+        "measured": 3.578626899775112,
+        "limit": "<= 0.035",
+        "landing": 47
+      },
+      {
+        "stage": "return",
+        "time_s": 388.0459999977358,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 48
+      },
+      {
+        "stage": "return",
+        "time_s": 388.34499999772873,
+        "metric": "landing_xy_m",
+        "measured": 4.81250952373073,
+        "limit": "<= 0.035",
+        "landing": 48
+      },
+      {
+        "stage": "return",
+        "time_s": 392.14599999763885,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 49
+      },
+      {
+        "stage": "return",
+        "time_s": 392.4449999976318,
+        "metric": "landing_xy_m",
+        "measured": 4.030400288571662,
+        "limit": "<= 0.035",
+        "landing": 49
+      },
+      {
+        "stage": "return",
+        "time_s": 396.2459999975419,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 50
+      },
+      {
+        "stage": "return",
+        "time_s": 396.54499999753483,
+        "metric": "landing_xy_m",
+        "measured": 4.856303212023036,
+        "limit": "<= 0.035",
+        "landing": 50
+      },
+      {
+        "stage": "return",
+        "time_s": 400.34599999744495,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 51
+      },
+      {
+        "stage": "return",
+        "time_s": 400.6449999974379,
+        "metric": "landing_xy_m",
+        "measured": 5.032881610326639,
+        "limit": "<= 0.035",
+        "landing": 51
+      },
+      {
+        "stage": "return",
+        "time_s": 404.445999997348,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 52
+      },
+      {
+        "stage": "return",
+        "time_s": 404.7449999973409,
+        "metric": "landing_xy_m",
+        "measured": 3.8328321326513044,
+        "limit": "<= 0.035",
+        "landing": 52
+      },
+      {
+        "stage": "return",
+        "time_s": 408.54599999725104,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 53
+      },
+      {
+        "stage": "return",
+        "time_s": 408.844999997244,
+        "metric": "landing_xy_m",
+        "measured": 4.309671868925258,
+        "limit": "<= 0.035",
+        "landing": 53
+      },
+      {
+        "stage": "return",
+        "time_s": 412.6459999971541,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 54
+      },
+      {
+        "stage": "return",
+        "time_s": 412.944999997147,
+        "metric": "landing_xy_m",
+        "measured": 5.151841371348642,
+        "limit": "<= 0.035",
+        "landing": 54
+      },
+      {
+        "stage": "return",
+        "time_s": 416.74599999705714,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 55
+      },
+      {
+        "stage": "return",
+        "time_s": 417.04499999705007,
+        "metric": "landing_xy_m",
+        "measured": 4.148540672660351,
+        "limit": "<= 0.035",
+        "landing": 55
+      },
+      {
+        "stage": "return",
+        "time_s": 420.8459999969602,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 56
+      },
+      {
+        "stage": "return",
+        "time_s": 421.1449999969531,
+        "metric": "landing_xy_m",
+        "measured": 3.9945662195013747,
+        "limit": "<= 0.035",
+        "landing": 56
+      },
+      {
+        "stage": "return",
+        "time_s": 424.94599999686324,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 57
+      },
+      {
+        "stage": "return",
+        "time_s": 425.24499999685617,
+        "metric": "landing_xy_m",
+        "measured": 4.002530223411391,
+        "limit": "<= 0.035",
+        "landing": 57
+      },
+      {
+        "stage": "return",
+        "time_s": 429.0459999967663,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 58
+      },
+      {
+        "stage": "return",
+        "time_s": 429.3449999967592,
+        "metric": "landing_xy_m",
+        "measured": 4.238689863055675,
+        "limit": "<= 0.035",
+        "landing": 58
+      },
+      {
+        "stage": "return",
+        "time_s": 433.14599999666933,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 59
+      },
+      {
+        "stage": "return",
+        "time_s": 433.44499999666226,
+        "metric": "landing_xy_m",
+        "measured": 4.303892075080279,
+        "limit": "<= 0.035",
+        "landing": 59
+      },
+      {
+        "stage": "return",
+        "time_s": 437.2459999965724,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 60
+      },
+      {
+        "stage": "return",
+        "time_s": 437.5449999965653,
+        "metric": "landing_xy_m",
+        "measured": 4.238652736010868,
+        "limit": "<= 0.035",
+        "landing": 60
+      },
+      {
+        "stage": "return",
+        "time_s": 441.3459999964754,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 61
+      },
+      {
+        "stage": "return",
+        "time_s": 441.64499999646836,
+        "metric": "landing_xy_m",
+        "measured": 4.048611141003617,
+        "limit": "<= 0.035",
+        "landing": 61
+      },
+      {
+        "stage": "return",
+        "time_s": 445.4459999963785,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 62
+      },
+      {
+        "stage": "return",
+        "time_s": 445.7449999963714,
+        "metric": "landing_xy_m",
+        "measured": 4.264395040641186,
+        "limit": "<= 0.035",
+        "landing": 62
+      },
+      {
+        "stage": "return",
+        "time_s": 449.5459999962815,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 63
+      },
+      {
+        "stage": "return",
+        "time_s": 449.84499999627445,
+        "metric": "landing_xy_m",
+        "measured": 4.084854450165237,
+        "limit": "<= 0.035",
+        "landing": 63
+      },
+      {
+        "stage": "return",
+        "time_s": 453.64599999618457,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 64
+      },
+      {
+        "stage": "return",
+        "time_s": 453.9449999961775,
+        "metric": "landing_xy_m",
+        "measured": 4.4004649077972635,
+        "limit": "<= 0.035",
+        "landing": 64
+      },
+      {
+        "stage": "return",
+        "time_s": 457.7459999960876,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 65
+      },
+      {
+        "stage": "return",
+        "time_s": 458.04499999608055,
+        "metric": "landing_xy_m",
+        "measured": 3.9628892088614083,
+        "limit": "<= 0.035",
+        "landing": 65
+      },
+      {
+        "stage": "return",
+        "time_s": 461.84599999599067,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 66
+      },
+      {
+        "stage": "return",
+        "time_s": 462.1449999959836,
+        "metric": "landing_xy_m",
+        "measured": 4.40598905876142,
+        "limit": "<= 0.035",
+        "landing": 66
+      },
+      {
+        "stage": "return",
+        "time_s": 465.9459999958937,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 67
+      },
+      {
+        "stage": "return",
+        "time_s": 466.24499999588664,
+        "metric": "landing_xy_m",
+        "measured": 3.9483024167238443,
+        "limit": "<= 0.035",
+        "landing": 67
+      },
+      {
+        "stage": "return",
+        "time_s": 470.04599999579676,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 68
+      },
+      {
+        "stage": "return",
+        "time_s": 470.3449999957897,
+        "metric": "landing_xy_m",
+        "measured": 4.510620004122008,
+        "limit": "<= 0.035",
+        "landing": 68
+      },
+      {
+        "stage": "return",
+        "time_s": 474.1459999956998,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 69
+      },
+      {
+        "stage": "return",
+        "time_s": 474.44499999569274,
+        "metric": "landing_xy_m",
+        "measured": 3.819825256199875,
+        "limit": "<= 0.035",
+        "landing": 69
+      },
+      {
+        "stage": "return",
+        "time_s": 478.24599999560286,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 70
+      },
+      {
+        "stage": "return",
+        "time_s": 478.5449999955958,
+        "metric": "landing_xy_m",
+        "measured": 4.564542487683064,
+        "limit": "<= 0.035",
+        "landing": 70
+      },
+      {
+        "stage": "return",
+        "time_s": 482.3459999955059,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 71
+      },
+      {
+        "stage": "return",
+        "time_s": 482.64499999549884,
+        "metric": "landing_xy_m",
+        "measured": 3.8899302618818528,
+        "limit": "<= 0.035",
+        "landing": 71
+      },
+      {
+        "stage": "return",
+        "time_s": 486.44599999540895,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 72
+      },
+      {
+        "stage": "return",
+        "time_s": 486.7449999954019,
+        "metric": "landing_xy_m",
+        "measured": 4.581293137187236,
+        "limit": "<= 0.035",
+        "landing": 72
+      },
+      {
+        "stage": "return",
+        "time_s": 490.545999995312,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 73
+      },
+      {
+        "stage": "return",
+        "time_s": 490.84499999530493,
+        "metric": "landing_xy_m",
+        "measured": 3.657094352759166,
+        "limit": "<= 0.035",
+        "landing": 73
+      },
+      {
+        "stage": "return",
+        "time_s": 494.64599999521505,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 74
+      },
+      {
+        "stage": "return",
+        "time_s": 494.944999995208,
+        "metric": "landing_xy_m",
+        "measured": 4.647784149660334,
+        "limit": "<= 0.035",
+        "landing": 74
+      },
+      {
+        "stage": "return",
+        "time_s": 498.7459999951181,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 75
+      },
+      {
+        "stage": "return",
+        "time_s": 499.044999995111,
+        "metric": "landing_xy_m",
+        "measured": 3.7551813436195194,
+        "limit": "<= 0.035",
+        "landing": 75
+      },
+      {
+        "stage": "return",
+        "time_s": 502.84599999502115,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 76
+      },
+      {
+        "stage": "return",
+        "time_s": 503.1449999950141,
+        "metric": "landing_xy_m",
+        "measured": 4.486369273461288,
+        "limit": "<= 0.035",
+        "landing": 76
+      },
+      {
+        "stage": "return",
+        "time_s": 506.9459999949242,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 77
+      },
+      {
+        "stage": "return",
+        "time_s": 507.2449999949171,
+        "metric": "landing_xy_m",
+        "measured": 3.5357071005307232,
+        "limit": "<= 0.035",
+        "landing": 77
+      },
+      {
+        "stage": "return",
+        "time_s": 511.04599999482724,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 78
+      },
+      {
+        "stage": "return",
+        "time_s": 511.34499999482017,
+        "metric": "landing_xy_m",
+        "measured": 4.795562390362176,
+        "limit": "<= 0.035",
+        "landing": 78
+      },
+      {
+        "stage": "return",
+        "time_s": 515.1459999947303,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 79
+      },
+      {
+        "stage": "return",
+        "time_s": 515.4449999947233,
+        "metric": "landing_xy_m",
+        "measured": 4.660938507465516,
+        "limit": "<= 0.035",
+        "landing": 79
+      },
+      {
+        "stage": "return",
+        "time_s": 519.2469999946334,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 80
+      },
+      {
+        "stage": "return",
+        "time_s": 519.5459999946263,
+        "metric": "landing_xy_m",
+        "measured": 3.687271141461656,
+        "limit": "<= 0.035",
+        "landing": 80
+      },
+      {
+        "stage": "return",
+        "time_s": 523.3459999945364,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 81
+      },
+      {
+        "stage": "return",
+        "time_s": 523.6449999945294,
+        "metric": "landing_xy_m",
+        "measured": 4.5518762090357425,
+        "limit": "<= 0.035",
+        "landing": 81
+      },
+      {
+        "stage": "return",
+        "time_s": 527.4459999944395,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 82
+      },
+      {
+        "stage": "return",
+        "time_s": 527.7449999944324,
+        "metric": "landing_xy_m",
+        "measured": 3.7459900337742567,
+        "limit": "<= 0.035",
+        "landing": 82
+      },
+      {
+        "stage": "return",
+        "time_s": 531.5469999943425,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 83
+      },
+      {
+        "stage": "return",
+        "time_s": 531.8449999943355,
+        "metric": "landing_xy_m",
+        "measured": 4.48104977707521,
+        "limit": "<= 0.035",
+        "landing": 83
+      },
+      {
+        "stage": "return",
+        "time_s": 535.6459999942456,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 84
+      },
+      {
+        "stage": "return",
+        "time_s": 535.9449999942385,
+        "metric": "landing_xy_m",
+        "measured": 3.8771987754878485,
+        "limit": "<= 0.035",
+        "landing": 84
+      },
+      {
+        "stage": "return",
+        "time_s": 539.7469999941486,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 85
+      },
+      {
+        "stage": "return",
+        "time_s": 540.0459999941415,
+        "metric": "landing_xy_m",
+        "measured": 4.526671916461627,
+        "limit": "<= 0.035",
+        "landing": 85
+      },
+      {
+        "stage": "return",
+        "time_s": 543.8459999940517,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 86
+      },
+      {
+        "stage": "return",
+        "time_s": 544.1449999940446,
+        "metric": "landing_xy_m",
+        "measured": 3.7974928950883395,
+        "limit": "<= 0.035",
+        "landing": 86
+      },
+      {
+        "stage": "return",
+        "time_s": 547.9459999939547,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 87
+      },
+      {
+        "stage": "return",
+        "time_s": 548.2449999939477,
+        "metric": "landing_xy_m",
+        "measured": 4.305692149769115,
+        "limit": "<= 0.035",
+        "landing": 87
+      },
+      {
+        "stage": "return",
+        "time_s": 552.0469999938578,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 88
+      },
+      {
+        "stage": "return",
+        "time_s": 552.3449999938507,
+        "metric": "landing_xy_m",
+        "measured": 4.0525525996496405,
+        "limit": "<= 0.035",
+        "landing": 88
+      },
+      {
+        "stage": "return",
+        "time_s": 556.1469999937608,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 89
+      },
+      {
+        "stage": "return",
+        "time_s": 556.4449999937538,
+        "metric": "landing_xy_m",
+        "measured": 4.419775609385519,
+        "limit": "<= 0.035",
+        "landing": 89
+      },
+      {
+        "stage": "return",
+        "time_s": 560.2459999936639,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 90
+      },
+      {
+        "stage": "return",
+        "time_s": 560.5449999936568,
+        "metric": "landing_xy_m",
+        "measured": 3.921701921977819,
+        "limit": "<= 0.035",
+        "landing": 90
+      },
+      {
+        "stage": "return",
+        "time_s": 564.3459999935669,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 91
+      },
+      {
+        "stage": "return",
+        "time_s": 564.6449999935598,
+        "metric": "landing_xy_m",
+        "measured": 4.18267851064318,
+        "limit": "<= 0.035",
+        "landing": 91
+      },
+      {
+        "stage": "return",
+        "time_s": 568.44599999347,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 92
+      },
+      {
+        "stage": "return",
+        "time_s": 568.7449999934629,
+        "metric": "landing_xy_m",
+        "measured": 4.183648436982098,
+        "limit": "<= 0.035",
+        "landing": 92
+      },
+      {
+        "stage": "return",
+        "time_s": 572.546999993373,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 93
+      },
+      {
+        "stage": "return",
+        "time_s": 572.844999993366,
+        "metric": "landing_xy_m",
+        "measured": 4.25788489951511,
+        "limit": "<= 0.035",
+        "landing": 93
+      },
+      {
+        "stage": "return",
+        "time_s": 576.646999993276,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 94
+      },
+      {
+        "stage": "return",
+        "time_s": 576.944999993269,
+        "metric": "landing_xy_m",
+        "measured": 4.081355492895074,
+        "limit": "<= 0.035",
+        "landing": 94
+      },
+      {
+        "stage": "return",
+        "time_s": 580.7459999931791,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 95
+      },
+      {
+        "stage": "return",
+        "time_s": 581.044999993172,
+        "metric": "landing_xy_m",
+        "measured": 4.133442356203694,
+        "limit": "<= 0.035",
+        "landing": 95
+      },
+      {
+        "stage": "return",
+        "time_s": 584.8459999930822,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 96
+      },
+      {
+        "stage": "return",
+        "time_s": 585.1449999930751,
+        "metric": "landing_xy_m",
+        "measured": 4.263718696493815,
+        "limit": "<= 0.035",
+        "landing": 96
+      },
+      {
+        "stage": "return",
+        "time_s": 588.9459999929852,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 97
+      },
+      {
+        "stage": "return",
+        "time_s": 589.2449999929781,
+        "metric": "landing_xy_m",
+        "measured": 4.0802103020725005,
+        "limit": "<= 0.035",
+        "landing": 97
+      },
+      {
+        "stage": "return",
+        "time_s": 593.0469999928882,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 98
+      },
+      {
+        "stage": "return",
+        "time_s": 593.3449999928812,
+        "metric": "landing_xy_m",
+        "measured": 4.197555997913356,
+        "limit": "<= 0.035",
+        "landing": 98
+      },
+      {
+        "stage": "return",
+        "time_s": 597.1469999927913,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 99
+      },
+      {
+        "stage": "return",
+        "time_s": 597.4449999927842,
+        "metric": "landing_xy_m",
+        "measured": 4.19808338688873,
+        "limit": "<= 0.035",
+        "landing": 99
+      },
+      {
+        "stage": "return",
+        "time_s": 601.2459999926944,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 100
+      },
+      {
+        "stage": "return",
+        "time_s": 601.5449999926873,
+        "metric": "landing_xy_m",
+        "measured": 4.2353308947017805,
+        "limit": "<= 0.035",
+        "landing": 100
+      },
+      {
+        "stage": "return",
+        "time_s": 605.3459999925974,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 101
+      },
+      {
+        "stage": "return",
+        "time_s": 605.6449999925903,
+        "metric": "landing_xy_m",
+        "measured": 3.935359490579519,
+        "limit": "<= 0.035",
+        "landing": 101
+      },
+      {
+        "stage": "return",
+        "time_s": 609.4459999925004,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 102
+      },
+      {
+        "stage": "return",
+        "time_s": 609.7449999924934,
+        "metric": "landing_xy_m",
+        "measured": 4.293328754016525,
+        "limit": "<= 0.035",
+        "landing": 102
+      },
+      {
+        "stage": "return",
+        "time_s": 613.5469999924035,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 103
+      },
+      {
+        "stage": "return",
+        "time_s": 613.8449999923964,
+        "metric": "landing_xy_m",
+        "measured": 3.985206571606519,
+        "limit": "<= 0.035",
+        "landing": 103
+      },
+      {
+        "stage": "return",
+        "time_s": 617.6469999923065,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 104
+      },
+      {
+        "stage": "return",
+        "time_s": 617.9449999922995,
+        "metric": "landing_xy_m",
+        "measured": 3.9755595356489053,
+        "limit": "<= 0.035",
+        "landing": 104
+      },
+      {
+        "stage": "return",
+        "time_s": 621.7459999922096,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 105
+      },
+      {
+        "stage": "return",
+        "time_s": 622.0449999922025,
+        "metric": "landing_xy_m",
+        "measured": 3.7208629840651994,
+        "limit": "<= 0.035",
+        "landing": 105
+      },
+      {
+        "stage": "return",
+        "time_s": 625.8459999921126,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 106
+      },
+      {
+        "stage": "return",
+        "time_s": 626.1449999921056,
+        "metric": "landing_xy_m",
+        "measured": 3.9689884594853906,
+        "limit": "<= 0.035",
+        "landing": 106
+      },
+      {
+        "stage": "return",
+        "time_s": 629.9459999920157,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 107
+      },
+      {
+        "stage": "return",
+        "time_s": 630.2449999920086,
+        "metric": "landing_xy_m",
+        "measured": 3.7427907925589747,
+        "limit": "<= 0.035",
+        "landing": 107
+      },
+      {
+        "stage": "return",
+        "time_s": 634.0469999919187,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 108
+      },
+      {
+        "stage": "return",
+        "time_s": 634.3449999919117,
+        "metric": "landing_xy_m",
+        "measured": 3.6910384705579484,
+        "limit": "<= 0.035",
+        "landing": 108
+      },
+      {
+        "stage": "return",
+        "time_s": 639.3459999917934,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 109
+      },
+      {
+        "stage": "return",
+        "time_s": 639.6449999917863,
+        "metric": "landing_xy_m",
+        "measured": 3.7740199938430585,
+        "limit": "<= 0.035",
+        "landing": 109
+      },
+      {
+        "stage": "return",
+        "time_s": 644.646999991668,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 110
+      },
+      {
+        "stage": "return",
+        "time_s": 644.944999991661,
+        "metric": "landing_xy_m",
+        "measured": 3.5304377865131062,
+        "limit": "<= 0.035",
+        "landing": 110
+      },
+      {
+        "stage": "return",
+        "time_s": 651.9459999914955,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 111
+      },
+      {
+        "stage": "return",
+        "time_s": 652.2449999914884,
+        "metric": "landing_xy_m",
+        "measured": 3.3624079543612075,
+        "limit": "<= 0.035",
+        "landing": 111
+      },
+      {
+        "stage": "return",
+        "time_s": 657.2459999913701,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 112
+      },
+      {
+        "stage": "return",
+        "time_s": 657.544999991363,
+        "metric": "landing_xy_m",
+        "measured": 3.5510995209503653,
+        "limit": "<= 0.035",
+        "landing": 112
+      },
+      {
+        "stage": "return",
+        "time_s": 662.1469999912542,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 113
+      },
+      {
+        "stage": "return",
+        "time_s": 662.4449999912472,
+        "metric": "landing_xy_m",
+        "measured": 3.3750230421009317,
+        "limit": "<= 0.035",
+        "landing": 113
+      },
+      {
+        "stage": "return",
+        "time_s": 667.0469999911384,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 114
+      },
+      {
+        "stage": "return",
+        "time_s": 667.3449999911313,
+        "metric": "landing_xy_m",
+        "measured": 3.593396273629606,
+        "limit": "<= 0.035",
+        "landing": 114
+      },
+      {
+        "stage": "return",
+        "time_s": 671.9459999910225,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 115
+      },
+      {
+        "stage": "return",
+        "time_s": 672.2449999910154,
+        "metric": "landing_xy_m",
+        "measured": 3.297228883622791,
+        "limit": "<= 0.035",
+        "landing": 115
+      },
+      {
+        "stage": "return",
+        "time_s": 676.8459999909066,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 116
+      },
+      {
+        "stage": "return",
+        "time_s": 677.1449999908996,
+        "metric": "landing_xy_m",
+        "measured": 3.26939156845816,
+        "limit": "<= 0.035",
+        "landing": 116
+      },
+      {
+        "stage": "return",
+        "time_s": 682.7459999907671,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 117
+      },
+      {
+        "stage": "return",
+        "time_s": 683.0449999907601,
+        "metric": "landing_xy_m",
+        "measured": 3.227071136193347,
+        "limit": "<= 0.035",
+        "landing": 117
+      },
+      {
+        "stage": "return",
+        "time_s": 687.6469999906512,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 118
+      },
+      {
+        "stage": "return",
+        "time_s": 687.9449999906442,
+        "metric": "landing_xy_m",
+        "measured": 3.489724781613813,
+        "limit": "<= 0.035",
+        "landing": 118
+      },
+      {
+        "stage": "return",
+        "time_s": 695.5369999904647,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 119
+      },
+      {
+        "stage": "return",
+        "time_s": 695.8349999904576,
+        "metric": "landing_xy_m",
+        "measured": 3.1861932396418626,
+        "limit": "<= 0.035",
+        "landing": 119
+      },
+      {
+        "stage": "return",
+        "time_s": 702.5509999902988,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 120
+      },
+      {
+        "stage": "return",
+        "time_s": 702.8499999902917,
+        "metric": "landing_xy_m",
+        "measured": 3.1457596017213016,
+        "limit": "<= 0.035",
+        "landing": 120
+      },
+      {
+        "stage": "return",
+        "time_s": 711.7769999900806,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 121
+      },
+      {
+        "stage": "return",
+        "time_s": 712.0749999900736,
+        "metric": "landing_xy_m",
+        "measured": 3.102769695745644,
+        "limit": "<= 0.035",
+        "landing": 121
+      },
+      {
+        "stage": "return",
+        "time_s": 719.8459999898898,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 122
+      },
+      {
+        "stage": "return",
+        "time_s": 720.1449999898828,
+        "metric": "landing_xy_m",
+        "measured": 3.369904176323225,
+        "limit": "<= 0.035",
+        "landing": 122
+      },
+      {
+        "stage": "return",
+        "time_s": 728.4359999896867,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 123
+      },
+      {
+        "stage": "return",
+        "time_s": 728.7349999896796,
+        "metric": "landing_xy_m",
+        "measured": 3.0710934220668835,
+        "limit": "<= 0.035",
+        "landing": 123
+      },
+      {
+        "stage": "return",
+        "time_s": 736.3919999894986,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 124
+      },
+      {
+        "stage": "return",
+        "time_s": 736.6899999894915,
+        "metric": "landing_xy_m",
+        "measured": 3.011618952271817,
+        "limit": "<= 0.035",
+        "landing": 124
+      },
+      {
+        "stage": "return",
+        "time_s": 756.3709999890261,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 125
+      },
+      {
+        "stage": "return",
+        "time_s": 756.6699999890191,
+        "metric": "landing_xy_m",
+        "measured": 2.9641729607777645,
+        "limit": "<= 0.035",
+        "landing": 125
+      },
+      {
+        "stage": "return",
+        "time_s": 765.4169999888122,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 126
+      },
+      {
+        "stage": "return",
+        "time_s": 765.7149999888052,
+        "metric": "landing_xy_m",
+        "measured": 3.257790631984607,
+        "limit": "<= 0.035",
+        "landing": 126
+      },
+      {
+        "stage": "return",
+        "time_s": 774.516999988597,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 127
+      },
+      {
+        "stage": "return",
+        "time_s": 774.81499998859,
+        "metric": "landing_xy_m",
+        "measured": 2.982743869424579,
+        "limit": "<= 0.035",
+        "landing": 127
+      },
+      {
+        "stage": "return",
+        "time_s": 781.5959999884296,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 128
+      },
+      {
+        "stage": "return",
+        "time_s": 781.8949999884226,
+        "metric": "landing_xy_m",
+        "measured": 2.873102198324763,
+        "limit": "<= 0.035",
+        "landing": 128
+      },
+      {
+        "stage": "return",
+        "time_s": 793.0169999881596,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 129
+      },
+      {
+        "stage": "return",
+        "time_s": 793.3149999881525,
+        "metric": "landing_xy_m",
+        "measured": 2.8087444775571617,
+        "limit": "<= 0.035",
+        "landing": 129
+      },
+      {
+        "stage": "return",
+        "time_s": 803.7209999879065,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 130
+      },
+      {
+        "stage": "return",
+        "time_s": 804.0199999878994,
+        "metric": "landing_xy_m",
+        "measured": 3.086970428510388,
+        "limit": "<= 0.035",
+        "landing": 130
+      },
+      {
+        "stage": "return",
+        "time_s": 814.56599998765,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 131
+      },
+      {
+        "stage": "return",
+        "time_s": 814.8649999876429,
+        "metric": "landing_xy_m",
+        "measured": 2.803584915354463,
+        "limit": "<= 0.035",
+        "landing": 131
+      },
+      {
+        "stage": "return",
+        "time_s": 842.391999986992,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 132
+      },
+      {
+        "stage": "return",
+        "time_s": 842.689999986985,
+        "metric": "landing_xy_m",
+        "measured": 2.7531357374148135,
+        "limit": "<= 0.035",
+        "landing": 132
+      },
+      {
+        "stage": "return",
+        "time_s": 855.6569999866783,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 133
+      },
+      {
+        "stage": "return",
+        "time_s": 855.9549999866713,
+        "metric": "landing_xy_m",
+        "measured": 2.6655282790942483,
+        "limit": "<= 0.035",
+        "landing": 133
+      },
+      {
+        "stage": "return",
+        "time_s": 864.6809999864649,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 134
+      },
+      {
+        "stage": "return",
+        "time_s": 864.9799999864579,
+        "metric": "landing_xy_m",
+        "measured": 2.9392278280868043,
+        "limit": "<= 0.035",
+        "landing": 134
+      },
+      {
+        "stage": "return",
+        "time_s": 875.0069999862208,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 135
+      },
+      {
+        "stage": "return",
+        "time_s": 875.3049999862137,
+        "metric": "landing_xy_m",
+        "measured": 2.6283498641489573,
+        "limit": "<= 0.035",
+        "landing": 135
+      },
+      {
+        "stage": "return",
+        "time_s": 886.5909999859468,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 136
+      },
+      {
+        "stage": "return",
+        "time_s": 886.8899999859398,
+        "metric": "landing_xy_m",
+        "measured": 2.6096954989956194,
+        "limit": "<= 0.035",
+        "landing": 136
+      },
+      {
+        "stage": "return",
+        "time_s": 896.7519999857066,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 137
+      },
+      {
+        "stage": "return",
+        "time_s": 897.0499999856995,
+        "metric": "landing_xy_m",
+        "measured": 2.517326395232826,
+        "limit": "<= 0.035",
+        "landing": 137
+      },
+      {
+        "stage": "return",
+        "time_s": 904.9559999855126,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 138
+      },
+      {
+        "stage": "return",
+        "time_s": 905.2549999855055,
+        "metric": "landing_xy_m",
+        "measured": 2.7594740728283513,
+        "limit": "<= 0.035",
+        "landing": 138
+      },
+      {
+        "stage": "return",
+        "time_s": 913.6159999853078,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 139
+      },
+      {
+        "stage": "return",
+        "time_s": 913.9149999853007,
+        "metric": "landing_xy_m",
+        "measured": 2.476880954334702,
+        "limit": "<= 0.035",
+        "landing": 139
+      },
+      {
+        "stage": "return",
+        "time_s": 918.5169999851919,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 140
+      },
+      {
+        "stage": "return",
+        "time_s": 918.8149999851848,
+        "metric": "landing_xy_m",
+        "measured": 2.4305857164872964,
+        "limit": "<= 0.035",
+        "landing": 140
+      },
+      {
+        "stage": "return",
+        "time_s": 924.4169999850524,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 141
+      },
+      {
+        "stage": "return",
+        "time_s": 924.7149999850453,
+        "metric": "landing_xy_m",
+        "measured": 2.370530602081999,
+        "limit": "<= 0.035",
+        "landing": 141
+      },
+      {
+        "stage": "return",
+        "time_s": 929.3159999849365,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 142
+      },
+      {
+        "stage": "return",
+        "time_s": 929.6149999849295,
+        "metric": "landing_xy_m",
+        "measured": 2.5982326314058843,
+        "limit": "<= 0.035",
+        "landing": 142
+      },
+      {
+        "stage": "return",
+        "time_s": 934.2159999848207,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 143
+      },
+      {
+        "stage": "return",
+        "time_s": 934.5149999848136,
+        "metric": "landing_xy_m",
+        "measured": 2.3106140473044494,
+        "limit": "<= 0.035",
+        "landing": 143
+      },
+      {
+        "stage": "return",
+        "time_s": 939.1159999847048,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 144
+      },
+      {
+        "stage": "return",
+        "time_s": 939.4149999846977,
+        "metric": "landing_xy_m",
+        "measured": 2.239678375577943,
+        "limit": "<= 0.035",
+        "landing": 144
+      },
+      {
+        "stage": "return",
+        "time_s": 945.0169999845652,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 145
+      },
+      {
+        "stage": "return",
+        "time_s": 945.3149999845582,
+        "metric": "landing_xy_m",
+        "measured": 2.234961952809475,
+        "limit": "<= 0.035",
+        "landing": 145
+      },
+      {
+        "stage": "return",
+        "time_s": 949.9169999844494,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 146
+      },
+      {
+        "stage": "return",
+        "time_s": 950.2149999844423,
+        "metric": "landing_xy_m",
+        "measured": 2.5644323208051567,
+        "limit": "<= 0.035",
+        "landing": 146
+      },
+      {
+        "stage": "return",
+        "time_s": 954.8159999843335,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 147
+      },
+      {
+        "stage": "return",
+        "time_s": 955.1149999843265,
+        "metric": "landing_xy_m",
+        "measured": 2.3481070860891737,
+        "limit": "<= 0.035",
+        "landing": 147
+      },
+      {
+        "stage": "return",
+        "time_s": 959.7159999842177,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 148
+      },
+      {
+        "stage": "return",
+        "time_s": 960.0149999842106,
+        "metric": "landing_xy_m",
+        "measured": 2.117232454598246,
+        "limit": "<= 0.035",
+        "landing": 148
+      },
+      {
+        "stage": "return",
+        "time_s": 965.0169999840923,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 149
+      },
+      {
+        "stage": "return",
+        "time_s": 965.3149999840853,
+        "metric": "landing_xy_m",
+        "measured": 2.070714716138648,
+        "limit": "<= 0.035",
+        "landing": 149
+      },
+      {
+        "stage": "return",
+        "time_s": 971.3159999839434,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 150
+      },
+      {
+        "stage": "return",
+        "time_s": 971.6149999839363,
+        "metric": "landing_xy_m",
+        "measured": 1.7996515819115981,
+        "limit": "<= 0.035",
+        "landing": 150
+      },
+      {
+        "stage": "return",
+        "time_s": 976.2159999838275,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 151
+      },
+      {
+        "stage": "return",
+        "time_s": 976.5149999838204,
+        "metric": "landing_xy_m",
+        "measured": 2.076423470868612,
+        "limit": "<= 0.035",
+        "landing": 151
+      },
+      {
+        "stage": "return",
+        "time_s": 981.1159999837116,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 152
+      },
+      {
+        "stage": "return",
+        "time_s": 981.4149999837045,
+        "metric": "landing_xy_m",
+        "measured": 2.040692241687484,
+        "limit": "<= 0.035",
+        "landing": 152
+      },
+      {
+        "stage": "return",
+        "time_s": 985.6159999836052,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 153
+      },
+      {
+        "stage": "return",
+        "time_s": 985.9149999835981,
+        "metric": "landing_xy_m",
+        "measured": 1.6269301941288,
+        "limit": "<= 0.035",
+        "landing": 153
+      },
+      {
+        "stage": "return",
+        "time_s": 989.7159999835083,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 154
+      },
+      {
+        "stage": "return",
+        "time_s": 990.0149999835012,
+        "metric": "landing_xy_m",
+        "measured": 1.8643603119866494,
+        "limit": "<= 0.035",
+        "landing": 154
+      },
+      {
+        "stage": "return",
+        "time_s": 993.8159999834113,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 155
+      },
+      {
+        "stage": "return",
+        "time_s": 994.1149999834042,
+        "metric": "landing_xy_m",
+        "measured": 1.931096240247952,
+        "limit": "<= 0.035",
+        "landing": 155
+      },
+      {
+        "stage": "return",
+        "time_s": 997.7159999833191,
+        "metric": "return_xy_m",
+        "measured": 2.1561460779307478,
+        "limit": "<= 0.15"
+      },
+      {
+        "stage": "return",
+        "time_s": 997.7159999833191,
+        "metric": "return_tilt_deg",
+        "measured": 117.68897949638361,
+        "limit": "<= 10.0"
+      },
+      {
+        "stage": "return",
+        "time_s": 997.7159999833191,
+        "metric": "return_floor_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N"
+      },
+      {
+        "stage": "return",
+        "time_s": 997.9159999833144,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 156
+      },
+      {
+        "stage": "return",
+        "time_s": 998.2149999833073,
+        "metric": "landing_xy_m",
+        "measured": 1.8673204056986086,
+        "limit": "<= 0.035",
+        "landing": 156
+      },
+      {
+        "stage": "return",
+        "time_s": 998.2149999833073,
+        "metric": "platform_turn_error_deg",
+        "measured": 180.0,
+        "limit": "<= 10.0"
+      }
+    ]
+  },
+  "valve": {
+    "verified": false,
+    "first_failure": {
+      "stage": "return",
+      "time_s": 191.08400000054834,
+      "metric": "unexpected_contact_force_n",
+      "measured": 187.419926458204,
+      "limit": "<= 10.0",
+      "message": "unexpected contact exceeded its limit"
+    },
+    "failures": [
+      {
+        "stage": "return",
+        "time_s": 191.08400000054834,
+        "metric": "unexpected_contact_force_n",
+        "measured": 187.419926458204,
+        "limit": "<= 10.0",
+        "message": "unexpected contact exceeded its limit"
+      },
+      {
+        "stage": "continuity",
+        "time_s": null,
+        "metric": "robot_saturated_steps",
+        "measured": 699840,
+        "limit": 0,
+        "message": "run metadata violates the mission contract"
+      },
+      {
+        "stage": "continuity",
+        "time_s": null,
+        "metric": "qp_failed_ticks",
+        "measured": 127169,
+        "limit": 0,
+        "message": "run metadata violates the mission contract"
+      },
+      {
+        "stage": "continuity",
+        "time_s": null,
+        "metric": "qp_relaxed_ticks",
+        "measured": 24156,
+        "limit": 0,
+        "message": "run metadata violates the mission contract"
+      },
+      {
+        "stage": "continuity",
+        "time_s": null,
+        "metric": "fell",
+        "measured": true,
+        "limit": false,
+        "message": "the robot fell"
+      }
+    ],
+    "measurements": {
+      "max_record_step_s": 0.0010000000000331966,
+      "total_saturated_steps": 699840,
+      "contact_hold_s": 0.39500000000185764,
+      "max_angle_deg": 90.06807264219331,
+      "hold_s": 5.000000000023846,
+      "resistance_limit_nm": 9.98,
+      "loaded_angle_bins": 16,
+      "pad_closing_torque_by_bin_nm": [
+        {
+          "angle_deg": [
+            5.0,
+            10.0
+          ],
+          "min_nm": 9.999955625609,
+          "max_nm": 10.000204700723483
+        },
+        {
+          "angle_deg": [
+            10.0,
+            15.0
+          ],
+          "min_nm": 9.999905720843401,
+          "max_nm": 10.000221099712673
+        },
+        {
+          "angle_deg": [
+            15.0,
+            20.0
+          ],
+          "min_nm": 9.999848587395412,
+          "max_nm": 10.00022389585947
+        },
+        {
+          "angle_deg": [
+            20.0,
+            25.0
+          ],
+          "min_nm": 9.999827457006395,
+          "max_nm": 10.000231515405739
+        },
+        {
+          "angle_deg": [
+            25.0,
+            30.0
+          ],
+          "min_nm": 9.999854682249698,
+          "max_nm": 10.00032326073135
+        },
+        {
+          "angle_deg": [
+            30.0,
+            35.0
+          ],
+          "min_nm": 9.999806713640787,
+          "max_nm": 10.000199710659873
+        },
+        {
+          "angle_deg": [
+            35.0,
+            40.0
+          ],
+          "min_nm": 9.999834026530419,
+          "max_nm": 10.000211408656849
+        },
+        {
+          "angle_deg": [
+            40.0,
+            45.0
+          ],
+          "min_nm": 9.999867524831203,
+          "max_nm": 10.000147492810266
+        },
+        {
+          "angle_deg": [
+            45.0,
+            50.0
+          ],
+          "min_nm": 9.999863672061075,
+          "max_nm": 10.000076236079497
+        },
+        {
+          "angle_deg": [
+            50.0,
+            55.0
+          ],
+          "min_nm": 9.999879661147542,
+          "max_nm": 10.00009595894445
+        },
+        {
+          "angle_deg": [
+            55.0,
+            60.0
+          ],
+          "min_nm": 9.999876224175102,
+          "max_nm": 10.000025903520411
+        },
+        {
+          "angle_deg": [
+            60.0,
+            65.0
+          ],
+          "min_nm": 9.999870293869037,
+          "max_nm": 9.999996354972764
+        },
+        {
+          "angle_deg": [
+            65.0,
+            70.0
+          ],
+          "min_nm": 9.999875940338264,
+          "max_nm": 9.999973663970346
+        },
+        {
+          "angle_deg": [
+            70.0,
+            75.0
+          ],
+          "min_nm": 9.999841886376212,
+          "max_nm": 10.00003450789072
+        },
+        {
+          "angle_deg": [
+            75.0,
+            80.0
+          ],
+          "min_nm": 9.999792484515599,
+          "max_nm": 9.999999372334385
+        },
+        {
+          "angle_deg": [
+            80.0,
+            85.0
+          ],
+          "min_nm": 9.999826160766474,
+          "max_nm": 9.999948208760953
+        }
+      ],
+      "max_pad_loss_s": 0.0,
+      "max_base_shift_m": 0.004900704594702907,
+      "max_foot_shift_m": 0.004937045505191955,
+      "max_friction_use": 0.4610824093412297,
+      "min_foot_normal_force_n": 44.353106960265606,
+      "release_hold_s": 6.286000000029986,
+      "post_release_observation_s": 882.1509999831171
+    }
+  },
+  "grip_diagnostics": {
+    "bilateral_loaded_rotation_samples_5_to_85_deg": 6485,
+    "pad_closing_torque_nm": {
+      "min": 9.999792484515599,
+      "max": 10.00032326073135
+    },
+    "pad_closing_tangent_force_n": {
+      "min": 82.25801993365006,
+      "max": 84.99742931809351
+    },
+    "snapshots": {
+      "first_valve_failure": {
+        "time_s": 191.08400000054834,
+        "valve_angle_deg": 90.00000000001306,
+        "pad_normal_force_n": [
+          0.0,
+          0.0
+        ],
+        "finger_slide_m": [
+          0.04000028079203224,
+          0.039934368201313054
+        ],
+        "pad_surface_gap_m": [
+          1.0,
+          1.0
+        ],
+        "pad_midpoint_along_lever_m": 1.3031134614334376,
+        "pose_reconstructed_contacts": []
+      },
+      "peak_pad_closing_torque_nm": {
+        "time_s": 101.37000000011997,
+        "valve_angle_deg": 26.195325680237975,
+        "pad_normal_force_n": [
+          90.79858022493885,
+          8.528622971291012
+        ],
+        "finger_slide_m": [
+          0.009681141606479737,
+          0.00983685994011306
+        ],
+        "pad_surface_gap_m": [
+          -0.0008231345771388277,
+          0.0006618213460941706
+        ],
+        "pad_midpoint_along_lever_m": 0.12699441476171489,
+        "pose_reconstructed_contacts": [
+          {
+            "pad": "RB1_finger_upper_collision",
+            "position_world_m": [
+              0.856253637868725,
+              -0.000409198663193203,
+              1.4670698548792185
+            ]
+          },
+          {
+            "pad": "RB1_finger_upper_collision",
+            "position_world_m": [
+              0.8626552862720451,
+              -0.0004432909401192245,
+              1.4782881102348615
+            ]
+          },
+          {
+            "pad": "RB1_finger_lower_collision",
+            "position_world_m": [
+              0.8452994142988146,
+              0.000419967545311325,
+              1.4897234519467684
+            ]
+          }
+        ]
+      },
+      "peak_pad_closing_tangent_force_n": {
+        "time_s": 106.03200000014223,
+        "valve_angle_deg": 84.99726311540451,
+        "pad_normal_force_n": [
+          91.8269259621927,
+          5.016853284382352
+        ],
+        "finger_slide_m": [
+          0.00974026313990317,
+          0.009745030223964803
+        ],
+        "pad_surface_gap_m": [
+          -0.0007553223465559446,
+          0.0007965881449493225
+        ],
+        "pad_midpoint_along_lever_m": 0.12732064161737802,
+        "pose_reconstructed_contacts": [
+          {
+            "pad": "RB1_finger_upper_collision",
+            "position_world_m": [
+              0.7814494452080994,
+              -0.00042020811846345523,
+              1.5599250377729847
+            ]
+          },
+          {
+            "pad": "RB1_finger_upper_collision",
+            "position_world_m": [
+              0.7938858979907639,
+              -0.0004502931436612574,
+              1.5603270117944101
+            ]
+          },
+          {
+            "pad": "RB1_finger_lower_collision",
+            "position_world_m": [
+              0.7944122900813337,
+              0.0004641872439546599,
+              1.581078421732206
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "last_landing_coverage": {
+    "planned_end_s": 998.215,
+    "last_physical_sample_s": 998.2149999833073,
+    "scheduled_landings": 156,
+    "evaluated_landings": 156,
+    "endpoint_recorded": true
+  },
+  "mission": {
+    "verified": false,
+    "first_failure": {
+      "stage": "hold",
+      "time_s": 111.76800000016962,
+      "metric": "stance_slip_m",
+      "measured": 0.010000016097540768,
+      "limit": "<= 0.01"
+    },
+    "failures": [
+      {
+        "stage": "hold",
+        "time_s": 111.76800000016962,
+        "metric": "stance_slip_m",
+        "measured": 0.010000016097540768,
+        "limit": "<= 0.01"
+      },
+      {
+        "stage": "return",
+        "time_s": 187.7010000005322,
+        "metric": "qp_attempt",
+        "measured": 1.0,
+        "limit": "== 0"
+      },
+      {
+        "stage": "return",
+        "time_s": 189.70300000054175,
+        "metric": "base_track_m",
+        "measured": 0.030032365074750107,
+        "limit": "<= 0.03"
+      },
+      {
+        "stage": "return",
+        "time_s": 191.06100000054823,
+        "metric": "requested_torque_ratio",
+        "measured": 2.4060030381415993,
+        "limit": "<= 1.0"
+      },
+      {
+        "stage": "return",
+        "time_s": 191.08400000054834,
+        "metric": "unexpected_contact_force_n",
+        "measured": 187.419926458204,
+        "limit": "<= 10.0",
+        "message": "unexpected contact exceeded its limit"
+      },
+      {
+        "stage": "return",
+        "time_s": 191.08400000054834,
+        "metric": "unexpected_contact_force_n",
+        "measured": 187.419926458204,
+        "limit": "<= 10 N"
+      },
+      {
+        "stage": "return",
+        "time_s": 191.08600000054835,
+        "metric": "fell",
+        "measured": 1.0,
+        "limit": "<= 0"
+      },
+      {
+        "stage": "return",
+        "time_s": 191.1810000005488,
+        "metric": "tread_lateral_position_m",
+        "measured": 0.3057690352322263,
+        "limit": "<= 0.305"
+      },
+      {
+        "stage": "return",
+        "time_s": 193.32100000055902,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 25
+      },
+      {
+        "stage": "return",
+        "time_s": 193.62000000056045,
+        "metric": "landing_xy_m",
+        "measured": 4.145330114037032,
+        "limit": "<= 0.035",
+        "landing": 25
+      },
+      {
+        "stage": "return",
+        "time_s": 216.00100000066732,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 26
+      },
+      {
+        "stage": "return",
+        "time_s": 216.30000000066875,
+        "metric": "landing_xy_m",
+        "measured": 3.6940647072455737,
+        "limit": "<= 0.035",
+        "landing": 26
+      },
+      {
+        "stage": "return",
+        "time_s": 228.81100000072848,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 27
+      },
+      {
+        "stage": "return",
+        "time_s": 229.1100000007299,
+        "metric": "landing_xy_m",
+        "measured": 3.595877623149457,
+        "limit": "<= 0.035",
+        "landing": 27
+      },
+      {
+        "stage": "return",
+        "time_s": 238.12600000077296,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 28
+      },
+      {
+        "stage": "return",
+        "time_s": 238.4250000007744,
+        "metric": "landing_xy_m",
+        "measured": 3.9807683116128065,
+        "limit": "<= 0.035",
+        "landing": 28
+      },
+      {
+        "stage": "return",
+        "time_s": 247.556000000818,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 29
+      },
+      {
+        "stage": "return",
+        "time_s": 247.85500000081942,
+        "metric": "landing_xy_m",
+        "measured": 4.370188788740234,
+        "limit": "<= 0.035",
+        "landing": 29
+      },
+      {
+        "stage": "return",
+        "time_s": 255.50600000085595,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 30
+      },
+      {
+        "stage": "return",
+        "time_s": 255.80500000085738,
+        "metric": "landing_xy_m",
+        "measured": 3.488581669680055,
+        "limit": "<= 0.035",
+        "landing": 30
+      },
+      {
+        "stage": "return",
+        "time_s": 269.8310000005312,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 31
+      },
+      {
+        "stage": "return",
+        "time_s": 270.13000000052415,
+        "metric": "landing_xy_m",
+        "measured": 3.759979664628865,
+        "limit": "<= 0.035",
+        "landing": 31
+      },
+      {
+        "stage": "return",
+        "time_s": 282.5110000002314,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 32
+      },
+      {
+        "stage": "return",
+        "time_s": 282.8100000002243,
+        "metric": "landing_xy_m",
+        "measured": 2.802102597354341,
+        "limit": "<= 0.035",
+        "landing": 32
+      },
+      {
+        "stage": "return",
+        "time_s": 297.63099999987384,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 33
+      },
+      {
+        "stage": "return",
+        "time_s": 297.92999999986677,
+        "metric": "landing_xy_m",
+        "measured": 2.871600183944086,
+        "limit": "<= 0.035",
+        "landing": 33
+      },
+      {
+        "stage": "return",
+        "time_s": 305.69099999968324,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 34
+      },
+      {
+        "stage": "return",
+        "time_s": 305.9899999996762,
+        "metric": "landing_xy_m",
+        "measured": 3.9125312720597383,
+        "limit": "<= 0.035",
+        "landing": 34
+      },
+      {
+        "stage": "return",
+        "time_s": 314.28599999948,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 35
+      },
+      {
+        "stage": "return",
+        "time_s": 314.5849999994729,
+        "metric": "landing_xy_m",
+        "measured": 4.2919951803429885,
+        "limit": "<= 0.035",
+        "landing": 35
+      },
+      {
+        "stage": "return",
+        "time_s": 322.5659999992842,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 36
+      },
+      {
+        "stage": "return",
+        "time_s": 322.86499999927713,
+        "metric": "landing_xy_m",
+        "measured": 2.9917237407731205,
+        "limit": "<= 0.035",
+        "landing": 36
+      },
+      {
+        "stage": "return",
+        "time_s": 331.0409999990838,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 37
+      },
+      {
+        "stage": "return",
+        "time_s": 331.3399999990767,
+        "metric": "landing_xy_m",
+        "measured": 3.1614740605427816,
+        "limit": "<= 0.035",
+        "landing": 37
+      },
+      {
+        "stage": "return",
+        "time_s": 336.445999998956,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 38
+      },
+      {
+        "stage": "return",
+        "time_s": 336.7449999989489,
+        "metric": "landing_xy_m",
+        "measured": 4.118334200180396,
+        "limit": "<= 0.035",
+        "landing": 38
+      },
+      {
+        "stage": "return",
+        "time_s": 341.3459999988401,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 39
+      },
+      {
+        "stage": "return",
+        "time_s": 341.64499999883304,
+        "metric": "landing_xy_m",
+        "measured": 4.456404284776427,
+        "limit": "<= 0.035",
+        "landing": 39
+      },
+      {
+        "stage": "return",
+        "time_s": 346.24599999872424,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 40
+      },
+      {
+        "stage": "return",
+        "time_s": 346.5449999987172,
+        "metric": "landing_xy_m",
+        "measured": 3.2118224431689786,
+        "limit": "<= 0.035",
+        "landing": 40
+      },
+      {
+        "stage": "return",
+        "time_s": 352.1459999985847,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 41
+      },
+      {
+        "stage": "return",
+        "time_s": 352.44499999857766,
+        "metric": "landing_xy_m",
+        "measured": 3.4699027564825786,
+        "limit": "<= 0.035",
+        "landing": 41
+      },
+      {
+        "stage": "return",
+        "time_s": 357.04599999846886,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 42
+      },
+      {
+        "stage": "return",
+        "time_s": 357.3449999984618,
+        "metric": "landing_xy_m",
+        "measured": 4.2934154328505265,
+        "limit": "<= 0.035",
+        "landing": 42
+      },
+      {
+        "stage": "return",
+        "time_s": 361.945999998353,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 43
+      },
+      {
+        "stage": "return",
+        "time_s": 362.2449999983459,
+        "metric": "landing_xy_m",
+        "measured": 4.613141815610919,
+        "limit": "<= 0.035",
+        "landing": 43
+      },
+      {
+        "stage": "return",
+        "time_s": 366.8459999982371,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 44
+      },
+      {
+        "stage": "return",
+        "time_s": 367.14499999823005,
+        "metric": "landing_xy_m",
+        "measured": 3.38714070520212,
+        "limit": "<= 0.035",
+        "landing": 44
+      },
+      {
+        "stage": "return",
+        "time_s": 372.1459999981118,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 45
+      },
+      {
+        "stage": "return",
+        "time_s": 372.4449999981047,
+        "metric": "landing_xy_m",
+        "measured": 4.60794102367581,
+        "limit": "<= 0.035",
+        "landing": 45
+      },
+      {
+        "stage": "return",
+        "time_s": 377.44599999798646,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 46
+      },
+      {
+        "stage": "return",
+        "time_s": 377.7449999979794,
+        "metric": "landing_xy_m",
+        "measured": 3.779893152357837,
+        "limit": "<= 0.035",
+        "landing": 46
+      },
+      {
+        "stage": "return",
+        "time_s": 382.74599999786113,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 47
+      },
+      {
+        "stage": "return",
+        "time_s": 383.04499999785406,
+        "metric": "landing_xy_m",
+        "measured": 3.578626899775112,
+        "limit": "<= 0.035",
+        "landing": 47
+      },
+      {
+        "stage": "return",
+        "time_s": 388.0459999977358,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 48
+      },
+      {
+        "stage": "return",
+        "time_s": 388.34499999772873,
+        "metric": "landing_xy_m",
+        "measured": 4.81250952373073,
+        "limit": "<= 0.035",
+        "landing": 48
+      },
+      {
+        "stage": "return",
+        "time_s": 392.14599999763885,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 49
+      },
+      {
+        "stage": "return",
+        "time_s": 392.4449999976318,
+        "metric": "landing_xy_m",
+        "measured": 4.030400288571662,
+        "limit": "<= 0.035",
+        "landing": 49
+      },
+      {
+        "stage": "return",
+        "time_s": 396.2459999975419,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 50
+      },
+      {
+        "stage": "return",
+        "time_s": 396.54499999753483,
+        "metric": "landing_xy_m",
+        "measured": 4.856303212023036,
+        "limit": "<= 0.035",
+        "landing": 50
+      },
+      {
+        "stage": "return",
+        "time_s": 400.34599999744495,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 51
+      },
+      {
+        "stage": "return",
+        "time_s": 400.6449999974379,
+        "metric": "landing_xy_m",
+        "measured": 5.032881610326639,
+        "limit": "<= 0.035",
+        "landing": 51
+      },
+      {
+        "stage": "return",
+        "time_s": 404.445999997348,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 52
+      },
+      {
+        "stage": "return",
+        "time_s": 404.7449999973409,
+        "metric": "landing_xy_m",
+        "measured": 3.8328321326513044,
+        "limit": "<= 0.035",
+        "landing": 52
+      },
+      {
+        "stage": "return",
+        "time_s": 408.54599999725104,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 53
+      },
+      {
+        "stage": "return",
+        "time_s": 408.844999997244,
+        "metric": "landing_xy_m",
+        "measured": 4.309671868925258,
+        "limit": "<= 0.035",
+        "landing": 53
+      },
+      {
+        "stage": "return",
+        "time_s": 412.6459999971541,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 54
+      },
+      {
+        "stage": "return",
+        "time_s": 412.944999997147,
+        "metric": "landing_xy_m",
+        "measured": 5.151841371348642,
+        "limit": "<= 0.035",
+        "landing": 54
+      },
+      {
+        "stage": "return",
+        "time_s": 416.74599999705714,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 55
+      },
+      {
+        "stage": "return",
+        "time_s": 417.04499999705007,
+        "metric": "landing_xy_m",
+        "measured": 4.148540672660351,
+        "limit": "<= 0.035",
+        "landing": 55
+      },
+      {
+        "stage": "return",
+        "time_s": 420.8459999969602,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 56
+      },
+      {
+        "stage": "return",
+        "time_s": 421.1449999969531,
+        "metric": "landing_xy_m",
+        "measured": 3.9945662195013747,
+        "limit": "<= 0.035",
+        "landing": 56
+      },
+      {
+        "stage": "return",
+        "time_s": 424.94599999686324,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 57
+      },
+      {
+        "stage": "return",
+        "time_s": 425.24499999685617,
+        "metric": "landing_xy_m",
+        "measured": 4.002530223411391,
+        "limit": "<= 0.035",
+        "landing": 57
+      },
+      {
+        "stage": "return",
+        "time_s": 429.0459999967663,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 58
+      },
+      {
+        "stage": "return",
+        "time_s": 429.3449999967592,
+        "metric": "landing_xy_m",
+        "measured": 4.238689863055675,
+        "limit": "<= 0.035",
+        "landing": 58
+      },
+      {
+        "stage": "return",
+        "time_s": 433.14599999666933,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 59
+      },
+      {
+        "stage": "return",
+        "time_s": 433.44499999666226,
+        "metric": "landing_xy_m",
+        "measured": 4.303892075080279,
+        "limit": "<= 0.035",
+        "landing": 59
+      },
+      {
+        "stage": "return",
+        "time_s": 437.2459999965724,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 60
+      },
+      {
+        "stage": "return",
+        "time_s": 437.5449999965653,
+        "metric": "landing_xy_m",
+        "measured": 4.238652736010868,
+        "limit": "<= 0.035",
+        "landing": 60
+      },
+      {
+        "stage": "return",
+        "time_s": 441.3459999964754,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 61
+      },
+      {
+        "stage": "return",
+        "time_s": 441.64499999646836,
+        "metric": "landing_xy_m",
+        "measured": 4.048611141003617,
+        "limit": "<= 0.035",
+        "landing": 61
+      },
+      {
+        "stage": "return",
+        "time_s": 445.4459999963785,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 62
+      },
+      {
+        "stage": "return",
+        "time_s": 445.7449999963714,
+        "metric": "landing_xy_m",
+        "measured": 4.264395040641186,
+        "limit": "<= 0.035",
+        "landing": 62
+      },
+      {
+        "stage": "return",
+        "time_s": 449.5459999962815,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 63
+      },
+      {
+        "stage": "return",
+        "time_s": 449.84499999627445,
+        "metric": "landing_xy_m",
+        "measured": 4.084854450165237,
+        "limit": "<= 0.035",
+        "landing": 63
+      },
+      {
+        "stage": "return",
+        "time_s": 453.64599999618457,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 64
+      },
+      {
+        "stage": "return",
+        "time_s": 453.9449999961775,
+        "metric": "landing_xy_m",
+        "measured": 4.4004649077972635,
+        "limit": "<= 0.035",
+        "landing": 64
+      },
+      {
+        "stage": "return",
+        "time_s": 457.7459999960876,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 65
+      },
+      {
+        "stage": "return",
+        "time_s": 458.04499999608055,
+        "metric": "landing_xy_m",
+        "measured": 3.9628892088614083,
+        "limit": "<= 0.035",
+        "landing": 65
+      },
+      {
+        "stage": "return",
+        "time_s": 461.84599999599067,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 66
+      },
+      {
+        "stage": "return",
+        "time_s": 462.1449999959836,
+        "metric": "landing_xy_m",
+        "measured": 4.40598905876142,
+        "limit": "<= 0.035",
+        "landing": 66
+      },
+      {
+        "stage": "return",
+        "time_s": 465.9459999958937,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 67
+      },
+      {
+        "stage": "return",
+        "time_s": 466.24499999588664,
+        "metric": "landing_xy_m",
+        "measured": 3.9483024167238443,
+        "limit": "<= 0.035",
+        "landing": 67
+      },
+      {
+        "stage": "return",
+        "time_s": 470.04599999579676,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 68
+      },
+      {
+        "stage": "return",
+        "time_s": 470.3449999957897,
+        "metric": "landing_xy_m",
+        "measured": 4.510620004122008,
+        "limit": "<= 0.035",
+        "landing": 68
+      },
+      {
+        "stage": "return",
+        "time_s": 474.1459999956998,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 69
+      },
+      {
+        "stage": "return",
+        "time_s": 474.44499999569274,
+        "metric": "landing_xy_m",
+        "measured": 3.819825256199875,
+        "limit": "<= 0.035",
+        "landing": 69
+      },
+      {
+        "stage": "return",
+        "time_s": 478.24599999560286,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 70
+      },
+      {
+        "stage": "return",
+        "time_s": 478.5449999955958,
+        "metric": "landing_xy_m",
+        "measured": 4.564542487683064,
+        "limit": "<= 0.035",
+        "landing": 70
+      },
+      {
+        "stage": "return",
+        "time_s": 482.3459999955059,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 71
+      },
+      {
+        "stage": "return",
+        "time_s": 482.64499999549884,
+        "metric": "landing_xy_m",
+        "measured": 3.8899302618818528,
+        "limit": "<= 0.035",
+        "landing": 71
+      },
+      {
+        "stage": "return",
+        "time_s": 486.44599999540895,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 72
+      },
+      {
+        "stage": "return",
+        "time_s": 486.7449999954019,
+        "metric": "landing_xy_m",
+        "measured": 4.581293137187236,
+        "limit": "<= 0.035",
+        "landing": 72
+      },
+      {
+        "stage": "return",
+        "time_s": 490.545999995312,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 73
+      },
+      {
+        "stage": "return",
+        "time_s": 490.84499999530493,
+        "metric": "landing_xy_m",
+        "measured": 3.657094352759166,
+        "limit": "<= 0.035",
+        "landing": 73
+      },
+      {
+        "stage": "return",
+        "time_s": 494.64599999521505,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 74
+      },
+      {
+        "stage": "return",
+        "time_s": 494.944999995208,
+        "metric": "landing_xy_m",
+        "measured": 4.647784149660334,
+        "limit": "<= 0.035",
+        "landing": 74
+      },
+      {
+        "stage": "return",
+        "time_s": 498.7459999951181,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 75
+      },
+      {
+        "stage": "return",
+        "time_s": 499.044999995111,
+        "metric": "landing_xy_m",
+        "measured": 3.7551813436195194,
+        "limit": "<= 0.035",
+        "landing": 75
+      },
+      {
+        "stage": "return",
+        "time_s": 502.84599999502115,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 76
+      },
+      {
+        "stage": "return",
+        "time_s": 503.1449999950141,
+        "metric": "landing_xy_m",
+        "measured": 4.486369273461288,
+        "limit": "<= 0.035",
+        "landing": 76
+      },
+      {
+        "stage": "return",
+        "time_s": 506.9459999949242,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 77
+      },
+      {
+        "stage": "return",
+        "time_s": 507.2449999949171,
+        "metric": "landing_xy_m",
+        "measured": 3.5357071005307232,
+        "limit": "<= 0.035",
+        "landing": 77
+      },
+      {
+        "stage": "return",
+        "time_s": 511.04599999482724,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 78
+      },
+      {
+        "stage": "return",
+        "time_s": 511.34499999482017,
+        "metric": "landing_xy_m",
+        "measured": 4.795562390362176,
+        "limit": "<= 0.035",
+        "landing": 78
+      },
+      {
+        "stage": "return",
+        "time_s": 515.1459999947303,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 79
+      },
+      {
+        "stage": "return",
+        "time_s": 515.4449999947233,
+        "metric": "landing_xy_m",
+        "measured": 4.660938507465516,
+        "limit": "<= 0.035",
+        "landing": 79
+      },
+      {
+        "stage": "return",
+        "time_s": 519.2469999946334,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 80
+      },
+      {
+        "stage": "return",
+        "time_s": 519.5459999946263,
+        "metric": "landing_xy_m",
+        "measured": 3.687271141461656,
+        "limit": "<= 0.035",
+        "landing": 80
+      },
+      {
+        "stage": "return",
+        "time_s": 523.3459999945364,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 81
+      },
+      {
+        "stage": "return",
+        "time_s": 523.6449999945294,
+        "metric": "landing_xy_m",
+        "measured": 4.5518762090357425,
+        "limit": "<= 0.035",
+        "landing": 81
+      },
+      {
+        "stage": "return",
+        "time_s": 527.4459999944395,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 82
+      },
+      {
+        "stage": "return",
+        "time_s": 527.7449999944324,
+        "metric": "landing_xy_m",
+        "measured": 3.7459900337742567,
+        "limit": "<= 0.035",
+        "landing": 82
+      },
+      {
+        "stage": "return",
+        "time_s": 531.5469999943425,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 83
+      },
+      {
+        "stage": "return",
+        "time_s": 531.8449999943355,
+        "metric": "landing_xy_m",
+        "measured": 4.48104977707521,
+        "limit": "<= 0.035",
+        "landing": 83
+      },
+      {
+        "stage": "return",
+        "time_s": 535.6459999942456,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 84
+      },
+      {
+        "stage": "return",
+        "time_s": 535.9449999942385,
+        "metric": "landing_xy_m",
+        "measured": 3.8771987754878485,
+        "limit": "<= 0.035",
+        "landing": 84
+      },
+      {
+        "stage": "return",
+        "time_s": 539.7469999941486,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 85
+      },
+      {
+        "stage": "return",
+        "time_s": 540.0459999941415,
+        "metric": "landing_xy_m",
+        "measured": 4.526671916461627,
+        "limit": "<= 0.035",
+        "landing": 85
+      },
+      {
+        "stage": "return",
+        "time_s": 543.8459999940517,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 86
+      },
+      {
+        "stage": "return",
+        "time_s": 544.1449999940446,
+        "metric": "landing_xy_m",
+        "measured": 3.7974928950883395,
+        "limit": "<= 0.035",
+        "landing": 86
+      },
+      {
+        "stage": "return",
+        "time_s": 547.9459999939547,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 87
+      },
+      {
+        "stage": "return",
+        "time_s": 548.2449999939477,
+        "metric": "landing_xy_m",
+        "measured": 4.305692149769115,
+        "limit": "<= 0.035",
+        "landing": 87
+      },
+      {
+        "stage": "return",
+        "time_s": 552.0469999938578,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 88
+      },
+      {
+        "stage": "return",
+        "time_s": 552.3449999938507,
+        "metric": "landing_xy_m",
+        "measured": 4.0525525996496405,
+        "limit": "<= 0.035",
+        "landing": 88
+      },
+      {
+        "stage": "return",
+        "time_s": 556.1469999937608,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 89
+      },
+      {
+        "stage": "return",
+        "time_s": 556.4449999937538,
+        "metric": "landing_xy_m",
+        "measured": 4.419775609385519,
+        "limit": "<= 0.035",
+        "landing": 89
+      },
+      {
+        "stage": "return",
+        "time_s": 560.2459999936639,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 90
+      },
+      {
+        "stage": "return",
+        "time_s": 560.5449999936568,
+        "metric": "landing_xy_m",
+        "measured": 3.921701921977819,
+        "limit": "<= 0.035",
+        "landing": 90
+      },
+      {
+        "stage": "return",
+        "time_s": 564.3459999935669,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 91
+      },
+      {
+        "stage": "return",
+        "time_s": 564.6449999935598,
+        "metric": "landing_xy_m",
+        "measured": 4.18267851064318,
+        "limit": "<= 0.035",
+        "landing": 91
+      },
+      {
+        "stage": "return",
+        "time_s": 568.44599999347,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 92
+      },
+      {
+        "stage": "return",
+        "time_s": 568.7449999934629,
+        "metric": "landing_xy_m",
+        "measured": 4.183648436982098,
+        "limit": "<= 0.035",
+        "landing": 92
+      },
+      {
+        "stage": "return",
+        "time_s": 572.546999993373,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 93
+      },
+      {
+        "stage": "return",
+        "time_s": 572.844999993366,
+        "metric": "landing_xy_m",
+        "measured": 4.25788489951511,
+        "limit": "<= 0.035",
+        "landing": 93
+      },
+      {
+        "stage": "return",
+        "time_s": 576.646999993276,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 94
+      },
+      {
+        "stage": "return",
+        "time_s": 576.944999993269,
+        "metric": "landing_xy_m",
+        "measured": 4.081355492895074,
+        "limit": "<= 0.035",
+        "landing": 94
+      },
+      {
+        "stage": "return",
+        "time_s": 580.7459999931791,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 95
+      },
+      {
+        "stage": "return",
+        "time_s": 581.044999993172,
+        "metric": "landing_xy_m",
+        "measured": 4.133442356203694,
+        "limit": "<= 0.035",
+        "landing": 95
+      },
+      {
+        "stage": "return",
+        "time_s": 584.8459999930822,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 96
+      },
+      {
+        "stage": "return",
+        "time_s": 585.1449999930751,
+        "metric": "landing_xy_m",
+        "measured": 4.263718696493815,
+        "limit": "<= 0.035",
+        "landing": 96
+      },
+      {
+        "stage": "return",
+        "time_s": 588.9459999929852,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 97
+      },
+      {
+        "stage": "return",
+        "time_s": 589.2449999929781,
+        "metric": "landing_xy_m",
+        "measured": 4.0802103020725005,
+        "limit": "<= 0.035",
+        "landing": 97
+      },
+      {
+        "stage": "return",
+        "time_s": 593.0469999928882,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 98
+      },
+      {
+        "stage": "return",
+        "time_s": 593.3449999928812,
+        "metric": "landing_xy_m",
+        "measured": 4.197555997913356,
+        "limit": "<= 0.035",
+        "landing": 98
+      },
+      {
+        "stage": "return",
+        "time_s": 597.1469999927913,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 99
+      },
+      {
+        "stage": "return",
+        "time_s": 597.4449999927842,
+        "metric": "landing_xy_m",
+        "measured": 4.19808338688873,
+        "limit": "<= 0.035",
+        "landing": 99
+      },
+      {
+        "stage": "return",
+        "time_s": 601.2459999926944,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 100
+      },
+      {
+        "stage": "return",
+        "time_s": 601.5449999926873,
+        "metric": "landing_xy_m",
+        "measured": 4.2353308947017805,
+        "limit": "<= 0.035",
+        "landing": 100
+      },
+      {
+        "stage": "return",
+        "time_s": 605.3459999925974,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 101
+      },
+      {
+        "stage": "return",
+        "time_s": 605.6449999925903,
+        "metric": "landing_xy_m",
+        "measured": 3.935359490579519,
+        "limit": "<= 0.035",
+        "landing": 101
+      },
+      {
+        "stage": "return",
+        "time_s": 609.4459999925004,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 102
+      },
+      {
+        "stage": "return",
+        "time_s": 609.7449999924934,
+        "metric": "landing_xy_m",
+        "measured": 4.293328754016525,
+        "limit": "<= 0.035",
+        "landing": 102
+      },
+      {
+        "stage": "return",
+        "time_s": 613.5469999924035,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 103
+      },
+      {
+        "stage": "return",
+        "time_s": 613.8449999923964,
+        "metric": "landing_xy_m",
+        "measured": 3.985206571606519,
+        "limit": "<= 0.035",
+        "landing": 103
+      },
+      {
+        "stage": "return",
+        "time_s": 617.6469999923065,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 104
+      },
+      {
+        "stage": "return",
+        "time_s": 617.9449999922995,
+        "metric": "landing_xy_m",
+        "measured": 3.9755595356489053,
+        "limit": "<= 0.035",
+        "landing": 104
+      },
+      {
+        "stage": "return",
+        "time_s": 621.7459999922096,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 105
+      },
+      {
+        "stage": "return",
+        "time_s": 622.0449999922025,
+        "metric": "landing_xy_m",
+        "measured": 3.7208629840651994,
+        "limit": "<= 0.035",
+        "landing": 105
+      },
+      {
+        "stage": "return",
+        "time_s": 625.8459999921126,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 106
+      },
+      {
+        "stage": "return",
+        "time_s": 626.1449999921056,
+        "metric": "landing_xy_m",
+        "measured": 3.9689884594853906,
+        "limit": "<= 0.035",
+        "landing": 106
+      },
+      {
+        "stage": "return",
+        "time_s": 629.9459999920157,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 107
+      },
+      {
+        "stage": "return",
+        "time_s": 630.2449999920086,
+        "metric": "landing_xy_m",
+        "measured": 3.7427907925589747,
+        "limit": "<= 0.035",
+        "landing": 107
+      },
+      {
+        "stage": "return",
+        "time_s": 634.0469999919187,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 108
+      },
+      {
+        "stage": "return",
+        "time_s": 634.3449999919117,
+        "metric": "landing_xy_m",
+        "measured": 3.6910384705579484,
+        "limit": "<= 0.035",
+        "landing": 108
+      },
+      {
+        "stage": "return",
+        "time_s": 639.3459999917934,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 109
+      },
+      {
+        "stage": "return",
+        "time_s": 639.6449999917863,
+        "metric": "landing_xy_m",
+        "measured": 3.7740199938430585,
+        "limit": "<= 0.035",
+        "landing": 109
+      },
+      {
+        "stage": "return",
+        "time_s": 644.646999991668,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 110
+      },
+      {
+        "stage": "return",
+        "time_s": 644.944999991661,
+        "metric": "landing_xy_m",
+        "measured": 3.5304377865131062,
+        "limit": "<= 0.035",
+        "landing": 110
+      },
+      {
+        "stage": "return",
+        "time_s": 651.9459999914955,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 111
+      },
+      {
+        "stage": "return",
+        "time_s": 652.2449999914884,
+        "metric": "landing_xy_m",
+        "measured": 3.3624079543612075,
+        "limit": "<= 0.035",
+        "landing": 111
+      },
+      {
+        "stage": "return",
+        "time_s": 657.2459999913701,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 112
+      },
+      {
+        "stage": "return",
+        "time_s": 657.544999991363,
+        "metric": "landing_xy_m",
+        "measured": 3.5510995209503653,
+        "limit": "<= 0.035",
+        "landing": 112
+      },
+      {
+        "stage": "return",
+        "time_s": 662.1469999912542,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 113
+      },
+      {
+        "stage": "return",
+        "time_s": 662.4449999912472,
+        "metric": "landing_xy_m",
+        "measured": 3.3750230421009317,
+        "limit": "<= 0.035",
+        "landing": 113
+      },
+      {
+        "stage": "return",
+        "time_s": 667.0469999911384,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 114
+      },
+      {
+        "stage": "return",
+        "time_s": 667.3449999911313,
+        "metric": "landing_xy_m",
+        "measured": 3.593396273629606,
+        "limit": "<= 0.035",
+        "landing": 114
+      },
+      {
+        "stage": "return",
+        "time_s": 671.9459999910225,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 115
+      },
+      {
+        "stage": "return",
+        "time_s": 672.2449999910154,
+        "metric": "landing_xy_m",
+        "measured": 3.297228883622791,
+        "limit": "<= 0.035",
+        "landing": 115
+      },
+      {
+        "stage": "return",
+        "time_s": 676.8459999909066,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 116
+      },
+      {
+        "stage": "return",
+        "time_s": 677.1449999908996,
+        "metric": "landing_xy_m",
+        "measured": 3.26939156845816,
+        "limit": "<= 0.035",
+        "landing": 116
+      },
+      {
+        "stage": "return",
+        "time_s": 682.7459999907671,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 117
+      },
+      {
+        "stage": "return",
+        "time_s": 683.0449999907601,
+        "metric": "landing_xy_m",
+        "measured": 3.227071136193347,
+        "limit": "<= 0.035",
+        "landing": 117
+      },
+      {
+        "stage": "return",
+        "time_s": 687.6469999906512,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 118
+      },
+      {
+        "stage": "return",
+        "time_s": 687.9449999906442,
+        "metric": "landing_xy_m",
+        "measured": 3.489724781613813,
+        "limit": "<= 0.035",
+        "landing": 118
+      },
+      {
+        "stage": "return",
+        "time_s": 695.5369999904647,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 119
+      },
+      {
+        "stage": "return",
+        "time_s": 695.8349999904576,
+        "metric": "landing_xy_m",
+        "measured": 3.1861932396418626,
+        "limit": "<= 0.035",
+        "landing": 119
+      },
+      {
+        "stage": "return",
+        "time_s": 702.5509999902988,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 120
+      },
+      {
+        "stage": "return",
+        "time_s": 702.8499999902917,
+        "metric": "landing_xy_m",
+        "measured": 3.1457596017213016,
+        "limit": "<= 0.035",
+        "landing": 120
+      },
+      {
+        "stage": "return",
+        "time_s": 711.7769999900806,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 121
+      },
+      {
+        "stage": "return",
+        "time_s": 712.0749999900736,
+        "metric": "landing_xy_m",
+        "measured": 3.102769695745644,
+        "limit": "<= 0.035",
+        "landing": 121
+      },
+      {
+        "stage": "return",
+        "time_s": 719.8459999898898,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 122
+      },
+      {
+        "stage": "return",
+        "time_s": 720.1449999898828,
+        "metric": "landing_xy_m",
+        "measured": 3.369904176323225,
+        "limit": "<= 0.035",
+        "landing": 122
+      },
+      {
+        "stage": "return",
+        "time_s": 728.4359999896867,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 123
+      },
+      {
+        "stage": "return",
+        "time_s": 728.7349999896796,
+        "metric": "landing_xy_m",
+        "measured": 3.0710934220668835,
+        "limit": "<= 0.035",
+        "landing": 123
+      },
+      {
+        "stage": "return",
+        "time_s": 736.3919999894986,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 124
+      },
+      {
+        "stage": "return",
+        "time_s": 736.6899999894915,
+        "metric": "landing_xy_m",
+        "measured": 3.011618952271817,
+        "limit": "<= 0.035",
+        "landing": 124
+      },
+      {
+        "stage": "return",
+        "time_s": 756.3709999890261,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 125
+      },
+      {
+        "stage": "return",
+        "time_s": 756.6699999890191,
+        "metric": "landing_xy_m",
+        "measured": 2.9641729607777645,
+        "limit": "<= 0.035",
+        "landing": 125
+      },
+      {
+        "stage": "return",
+        "time_s": 765.4169999888122,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 126
+      },
+      {
+        "stage": "return",
+        "time_s": 765.7149999888052,
+        "metric": "landing_xy_m",
+        "measured": 3.257790631984607,
+        "limit": "<= 0.035",
+        "landing": 126
+      },
+      {
+        "stage": "return",
+        "time_s": 774.516999988597,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 127
+      },
+      {
+        "stage": "return",
+        "time_s": 774.81499998859,
+        "metric": "landing_xy_m",
+        "measured": 2.982743869424579,
+        "limit": "<= 0.035",
+        "landing": 127
+      },
+      {
+        "stage": "return",
+        "time_s": 781.5959999884296,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 128
+      },
+      {
+        "stage": "return",
+        "time_s": 781.8949999884226,
+        "metric": "landing_xy_m",
+        "measured": 2.873102198324763,
+        "limit": "<= 0.035",
+        "landing": 128
+      },
+      {
+        "stage": "return",
+        "time_s": 793.0169999881596,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 129
+      },
+      {
+        "stage": "return",
+        "time_s": 793.3149999881525,
+        "metric": "landing_xy_m",
+        "measured": 2.8087444775571617,
+        "limit": "<= 0.035",
+        "landing": 129
+      },
+      {
+        "stage": "return",
+        "time_s": 803.7209999879065,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 130
+      },
+      {
+        "stage": "return",
+        "time_s": 804.0199999878994,
+        "metric": "landing_xy_m",
+        "measured": 3.086970428510388,
+        "limit": "<= 0.035",
+        "landing": 130
+      },
+      {
+        "stage": "return",
+        "time_s": 814.56599998765,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 131
+      },
+      {
+        "stage": "return",
+        "time_s": 814.8649999876429,
+        "metric": "landing_xy_m",
+        "measured": 2.803584915354463,
+        "limit": "<= 0.035",
+        "landing": 131
+      },
+      {
+        "stage": "return",
+        "time_s": 842.391999986992,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 132
+      },
+      {
+        "stage": "return",
+        "time_s": 842.689999986985,
+        "metric": "landing_xy_m",
+        "measured": 2.7531357374148135,
+        "limit": "<= 0.035",
+        "landing": 132
+      },
+      {
+        "stage": "return",
+        "time_s": 855.6569999866783,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 133
+      },
+      {
+        "stage": "return",
+        "time_s": 855.9549999866713,
+        "metric": "landing_xy_m",
+        "measured": 2.6655282790942483,
+        "limit": "<= 0.035",
+        "landing": 133
+      },
+      {
+        "stage": "return",
+        "time_s": 864.6809999864649,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 134
+      },
+      {
+        "stage": "return",
+        "time_s": 864.9799999864579,
+        "metric": "landing_xy_m",
+        "measured": 2.9392278280868043,
+        "limit": "<= 0.035",
+        "landing": 134
+      },
+      {
+        "stage": "return",
+        "time_s": 875.0069999862208,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 135
+      },
+      {
+        "stage": "return",
+        "time_s": 875.3049999862137,
+        "metric": "landing_xy_m",
+        "measured": 2.6283498641489573,
+        "limit": "<= 0.035",
+        "landing": 135
+      },
+      {
+        "stage": "return",
+        "time_s": 886.5909999859468,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 136
+      },
+      {
+        "stage": "return",
+        "time_s": 886.8899999859398,
+        "metric": "landing_xy_m",
+        "measured": 2.6096954989956194,
+        "limit": "<= 0.035",
+        "landing": 136
+      },
+      {
+        "stage": "return",
+        "time_s": 896.7519999857066,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 137
+      },
+      {
+        "stage": "return",
+        "time_s": 897.0499999856995,
+        "metric": "landing_xy_m",
+        "measured": 2.517326395232826,
+        "limit": "<= 0.035",
+        "landing": 137
+      },
+      {
+        "stage": "return",
+        "time_s": 904.9559999855126,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 138
+      },
+      {
+        "stage": "return",
+        "time_s": 905.2549999855055,
+        "metric": "landing_xy_m",
+        "measured": 2.7594740728283513,
+        "limit": "<= 0.035",
+        "landing": 138
+      },
+      {
+        "stage": "return",
+        "time_s": 913.6159999853078,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 139
+      },
+      {
+        "stage": "return",
+        "time_s": 913.9149999853007,
+        "metric": "landing_xy_m",
+        "measured": 2.476880954334702,
+        "limit": "<= 0.035",
+        "landing": 139
+      },
+      {
+        "stage": "return",
+        "time_s": 918.5169999851919,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 140
+      },
+      {
+        "stage": "return",
+        "time_s": 918.8149999851848,
+        "metric": "landing_xy_m",
+        "measured": 2.4305857164872964,
+        "limit": "<= 0.035",
+        "landing": 140
+      },
+      {
+        "stage": "return",
+        "time_s": 924.4169999850524,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 141
+      },
+      {
+        "stage": "return",
+        "time_s": 924.7149999850453,
+        "metric": "landing_xy_m",
+        "measured": 2.370530602081999,
+        "limit": "<= 0.035",
+        "landing": 141
+      },
+      {
+        "stage": "return",
+        "time_s": 929.3159999849365,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 142
+      },
+      {
+        "stage": "return",
+        "time_s": 929.6149999849295,
+        "metric": "landing_xy_m",
+        "measured": 2.5982326314058843,
+        "limit": "<= 0.035",
+        "landing": 142
+      },
+      {
+        "stage": "return",
+        "time_s": 934.2159999848207,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 143
+      },
+      {
+        "stage": "return",
+        "time_s": 934.5149999848136,
+        "metric": "landing_xy_m",
+        "measured": 2.3106140473044494,
+        "limit": "<= 0.035",
+        "landing": 143
+      },
+      {
+        "stage": "return",
+        "time_s": 939.1159999847048,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 144
+      },
+      {
+        "stage": "return",
+        "time_s": 939.4149999846977,
+        "metric": "landing_xy_m",
+        "measured": 2.239678375577943,
+        "limit": "<= 0.035",
+        "landing": 144
+      },
+      {
+        "stage": "return",
+        "time_s": 945.0169999845652,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 145
+      },
+      {
+        "stage": "return",
+        "time_s": 945.3149999845582,
+        "metric": "landing_xy_m",
+        "measured": 2.234961952809475,
+        "limit": "<= 0.035",
+        "landing": 145
+      },
+      {
+        "stage": "return",
+        "time_s": 949.9169999844494,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 146
+      },
+      {
+        "stage": "return",
+        "time_s": 950.2149999844423,
+        "metric": "landing_xy_m",
+        "measured": 2.5644323208051567,
+        "limit": "<= 0.035",
+        "landing": 146
+      },
+      {
+        "stage": "return",
+        "time_s": 954.8159999843335,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 147
+      },
+      {
+        "stage": "return",
+        "time_s": 955.1149999843265,
+        "metric": "landing_xy_m",
+        "measured": 2.3481070860891737,
+        "limit": "<= 0.035",
+        "landing": 147
+      },
+      {
+        "stage": "return",
+        "time_s": 959.7159999842177,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 148
+      },
+      {
+        "stage": "return",
+        "time_s": 960.0149999842106,
+        "metric": "landing_xy_m",
+        "measured": 2.117232454598246,
+        "limit": "<= 0.035",
+        "landing": 148
+      },
+      {
+        "stage": "return",
+        "time_s": 965.0169999840923,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 149
+      },
+      {
+        "stage": "return",
+        "time_s": 965.3149999840853,
+        "metric": "landing_xy_m",
+        "measured": 2.070714716138648,
+        "limit": "<= 0.035",
+        "landing": 149
+      },
+      {
+        "stage": "return",
+        "time_s": 971.3159999839434,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 150
+      },
+      {
+        "stage": "return",
+        "time_s": 971.6149999839363,
+        "metric": "landing_xy_m",
+        "measured": 1.7996515819115981,
+        "limit": "<= 0.035",
+        "landing": 150
+      },
+      {
+        "stage": "return",
+        "time_s": 976.2159999838275,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 151
+      },
+      {
+        "stage": "return",
+        "time_s": 976.5149999838204,
+        "metric": "landing_xy_m",
+        "measured": 2.076423470868612,
+        "limit": "<= 0.035",
+        "landing": 151
+      },
+      {
+        "stage": "return",
+        "time_s": 981.1159999837116,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 152
+      },
+      {
+        "stage": "return",
+        "time_s": 981.4149999837045,
+        "metric": "landing_xy_m",
+        "measured": 2.040692241687484,
+        "limit": "<= 0.035",
+        "landing": 152
+      },
+      {
+        "stage": "return",
+        "time_s": 985.6159999836052,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 153
+      },
+      {
+        "stage": "return",
+        "time_s": 985.9149999835981,
+        "metric": "landing_xy_m",
+        "measured": 1.6269301941288,
+        "limit": "<= 0.035",
+        "landing": 153
+      },
+      {
+        "stage": "return",
+        "time_s": 989.7159999835083,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 154
+      },
+      {
+        "stage": "return",
+        "time_s": 990.0149999835012,
+        "metric": "landing_xy_m",
+        "measured": 1.8643603119866494,
+        "limit": "<= 0.035",
+        "landing": 154
+      },
+      {
+        "stage": "return",
+        "time_s": 993.8159999834113,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 155
+      },
+      {
+        "stage": "return",
+        "time_s": 994.1149999834042,
+        "metric": "landing_xy_m",
+        "measured": 1.931096240247952,
+        "limit": "<= 0.035",
+        "landing": 155
+      },
+      {
+        "stage": "return",
+        "time_s": 997.7159999833191,
+        "metric": "return_xy_m",
+        "measured": 2.1561460779307478,
+        "limit": "<= 0.15"
+      },
+      {
+        "stage": "return",
+        "time_s": 997.7159999833191,
+        "metric": "return_tilt_deg",
+        "measured": 117.68897949638361,
+        "limit": "<= 10.0"
+      },
+      {
+        "stage": "return",
+        "time_s": 997.7159999833191,
+        "metric": "return_floor_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N"
+      },
+      {
+        "stage": "return",
+        "time_s": 997.9159999833144,
+        "metric": "landing_support_n",
+        "measured": 0.0,
+        "limit": ">= 1 N",
+        "landing": 156
+      },
+      {
+        "stage": "return",
+        "time_s": 998.2149999833073,
+        "metric": "landing_xy_m",
+        "measured": 1.8673204056986086,
+        "limit": "<= 0.035",
+        "landing": 156
+      },
+      {
+        "stage": "return",
+        "time_s": 998.2149999833073,
+        "metric": "platform_turn_error_deg",
+        "measured": 180.0,
+        "limit": "<= 10.0"
+      },
+      {
+        "stage": "continuity",
+        "time_s": null,
+        "metric": "robot_saturated_steps",
+        "measured": 699840,
+        "limit": 0,
+        "message": "run metadata violates the mission contract"
+      },
+      {
+        "stage": "continuity",
+        "time_s": null,
+        "metric": "qp_failed_ticks",
+        "measured": 127169,
+        "limit": 0,
+        "message": "run metadata violates the mission contract"
+      },
+      {
+        "stage": "continuity",
+        "time_s": null,
+        "metric": "qp_relaxed_ticks",
+        "measured": 24156,
+        "limit": 0,
+        "message": "run metadata violates the mission contract"
+      },
+      {
+        "stage": "continuity",
+        "time_s": null,
+        "metric": "fell",
+        "measured": true,
+        "limit": false,
+        "message": "the robot fell"
+      },
+      {
+        "stage": "return",
+        "time_s": null,
+        "metric": "physical_round_trip_verified",
+        "measured": false,
+        "limit": true,
+        "message": "N1 round trip did not pass"
+      },
+      {
+        "stage": "return",
+        "time_s": null,
+        "metric": "saturated_steps",
+        "measured": 699840,
+        "limit": 0,
+        "message": "N1 controller metric failed"
+      },
+      {
+        "stage": "return",
+        "time_s": null,
+        "metric": "qp_failed_ticks",
+        "measured": 127169,
+        "limit": 0,
+        "message": "N1 controller metric failed"
+      },
+      {
+        "stage": "return",
+        "time_s": null,
+        "metric": "qp_relaxed_ticks",
+        "measured": 24156,
+        "limit": 0,
+        "message": "N1 controller metric failed"
+      },
+      {
+        "stage": "return",
+        "time_s": null,
+        "metric": "fell",
+        "measured": true,
+        "limit": false,
+        "message": "N1 controller recorded a fall"
+      }
+    ],
+    "measurements": {
+      "max_record_step_s": 0.0010000000000331966,
+      "total_saturated_steps": 699840,
+      "contact_hold_s": 0.39500000000185764,
+      "max_angle_deg": 90.06807264219331,
+      "hold_s": 5.000000000023846,
+      "resistance_limit_nm": 9.98,
+      "loaded_angle_bins": 16,
+      "pad_closing_torque_by_bin_nm": [
+        {
+          "angle_deg": [
+            5.0,
+            10.0
+          ],
+          "min_nm": 9.999955625609,
+          "max_nm": 10.000204700723483
+        },
+        {
+          "angle_deg": [
+            10.0,
+            15.0
+          ],
+          "min_nm": 9.999905720843401,
+          "max_nm": 10.000221099712673
+        },
+        {
+          "angle_deg": [
+            15.0,
+            20.0
+          ],
+          "min_nm": 9.999848587395412,
+          "max_nm": 10.00022389585947
+        },
+        {
+          "angle_deg": [
+            20.0,
+            25.0
+          ],
+          "min_nm": 9.999827457006395,
+          "max_nm": 10.000231515405739
+        },
+        {
+          "angle_deg": [
+            25.0,
+            30.0
+          ],
+          "min_nm": 9.999854682249698,
+          "max_nm": 10.00032326073135
+        },
+        {
+          "angle_deg": [
+            30.0,
+            35.0
+          ],
+          "min_nm": 9.999806713640787,
+          "max_nm": 10.000199710659873
+        },
+        {
+          "angle_deg": [
+            35.0,
+            40.0
+          ],
+          "min_nm": 9.999834026530419,
+          "max_nm": 10.000211408656849
+        },
+        {
+          "angle_deg": [
+            40.0,
+            45.0
+          ],
+          "min_nm": 9.999867524831203,
+          "max_nm": 10.000147492810266
+        },
+        {
+          "angle_deg": [
+            45.0,
+            50.0
+          ],
+          "min_nm": 9.999863672061075,
+          "max_nm": 10.000076236079497
+        },
+        {
+          "angle_deg": [
+            50.0,
+            55.0
+          ],
+          "min_nm": 9.999879661147542,
+          "max_nm": 10.00009595894445
+        },
+        {
+          "angle_deg": [
+            55.0,
+            60.0
+          ],
+          "min_nm": 9.999876224175102,
+          "max_nm": 10.000025903520411
+        },
+        {
+          "angle_deg": [
+            60.0,
+            65.0
+          ],
+          "min_nm": 9.999870293869037,
+          "max_nm": 9.999996354972764
+        },
+        {
+          "angle_deg": [
+            65.0,
+            70.0
+          ],
+          "min_nm": 9.999875940338264,
+          "max_nm": 9.999973663970346
+        },
+        {
+          "angle_deg": [
+            70.0,
+            75.0
+          ],
+          "min_nm": 9.999841886376212,
+          "max_nm": 10.00003450789072
+        },
+        {
+          "angle_deg": [
+            75.0,
+            80.0
+          ],
+          "min_nm": 9.999792484515599,
+          "max_nm": 9.999999372334385
+        },
+        {
+          "angle_deg": [
+            80.0,
+            85.0
+          ],
+          "min_nm": 9.999826160766474,
+          "max_nm": 9.999948208760953
+        }
+      ],
+      "max_pad_loss_s": 0.0,
+      "max_base_shift_m": 0.004900704594702907,
+      "max_foot_shift_m": 0.004937045505191955,
+      "max_friction_use": 0.4610824093412297,
+      "min_foot_normal_force_n": 44.353106960265606,
+      "release_hold_s": 6.286000000029986,
+      "post_release_observation_s": 882.1509999831171
+    }
+  },
+  "n1_verified": false,
+  "stable_floor_return": {
+    "time_s": [
+      997.715,
+      998.215
+    ],
+    "sample_count": 500,
+    "max_start_xy_error_m": 2.1561460779307478,
+    "min_up_z": -0.4648068955628394,
+    "max_linear_speed_mps": 0.0002123857955515561,
+    "max_angular_speed_radps": 0.0007072137026263674,
+    "min_floor_force_n": 0.0,
+    "verified": false
+  },
+  "landings": 156,
+  "loaded_landings": 24,
+  "first_all_platform_s": null,
+  "first_turn_s": null,
+  "comparison_with_original": {
+    "walking": true,
+    "valve_pass_fail": true,
+    "valve_measurements": true,
+    "valve_failures": true,
+    "mission_pass_fail": true,
+    "n1_route": true,
+    "landing_measurements": true,
+    "mission_first_failure": true
+  },
+  "reproduced": true
+}

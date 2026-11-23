@@ -1,0 +1,59 @@
+{
+  "raw": {
+    "restored_name": "mission.npz",
+    "restored_bytes": 106378299,
+    "restored_sha256": "b39bd2e9a55501a3ee225595c89bd6ba4e506443fa04ed8717d687beffb11d73",
+    "parts": [
+      {
+        "file": "raw-parts/mission.npz.001",
+        "bytes": 35459433,
+        "sha256": "447ba1aa6a8d25bce0a0f9d72256fd56a02a9492a78f3b458ea8f377fca87d1d"
+      },
+      {
+        "file": "raw-parts/mission.npz.002",
+        "bytes": 35459433,
+        "sha256": "6168c3ef2915758e9b382a9964706829c4d91ced0ba8fe747a5d6949e154481b"
+      },
+      {
+        "file": "raw-parts/mission.npz.003",
+        "bytes": 35459433,
+        "sha256": "84f87a91c2932479829e8beca1ba352042b8304680b1a9e6fe7e98b97ec21134"
+      }
+    ],
+    "archive": "raw-parts/parts.json"
+  },
+  "evidence": {
+    "k3075-result.json": "075f2aa7bfefa5933f0d887c0d3005cd34b273357f78c19d74caf67c2dabca13",
+    "k3075-repeat-result.json": "075f2aa7bfefa5933f0d887c0d3005cd34b273357f78c19d74caf67c2dabca13",
+    "product-cli-result.json": "18a78b77faad4f317b63920649bcbdcfe91f7cd44818eb5f7597ce67b410da63",
+    "product-cli-scene.json": "0f148adf4fe65fb85bcbd03573686d33344719d303113e29860f4571c8b7fb66",
+    "frozen-result.json": "eb61a2278fd4d9e5d0294870aa343a54b074bdd7638a8d76e1418299268265b1",
+    "frozen-scene.json": "1179525bc45b08fc00f903c1da9d3543315afe236a915e03d5713fad0bcde18f"
+  },
+  "initial_product_source": {
+    "fixed_walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+    "tools/stair_mission_control_profile.py": "d4a74d5e312b588ad04746e7dc0069be55f3b52630d77f3934c294ee33956fcc",
+    "tools/replay_stair_mission.py": "05692bb03241c9adfcdb0b4ff28401f103837e255951d5fcf51789dc5c1bf248",
+    "src/go2_wall/transition.py": "76dc76ab336f9710543a225b79b3411e5562e91271f5e9c3ad0b730d879a4555",
+    "apply_replant_sha256_lf": "3edced7a592966b091070e83468cf8308a2caeef9cd2319d31e47b67d817400a",
+    "replant_landings_sha256_lf": "3babe7ef96e214b4c31c4091c7598d05bdcbe9455845e9d4bfb4607fecbbbdf0"
+  },
+  "frozen_product_commit": "2c91d83ff3a222bc2919c3156b93920ebcff5ec4",
+  "frozen_source_sha256": {
+    "tools/replay_stair_mission.py": "511f2ba2595fd6fd0691799b0999139a3eb2fdcaa1f5b566176b3f4697adcb79",
+    "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+    "tools/stair_mission_reference.py": "9c51e60516804438b53db1c4ee64eb5508a5236657d3158cde8626e266b9caeb",
+    "tools/stair_mission_control_profile.py": "d4a74d5e312b588ad04746e7dc0069be55f3b52630d77f3934c294ee33956fcc",
+    "tools/stair_mission_trace.py": "9c0790c0d9918ba977360381a2eaaa0b5cf6c4dd50e51bfca353771d66158638",
+    "tools/replay_stair_sequence.py": "bcd28c7baa4e0dd869e3e24a754f8061bc35bc4b2292adb579e4ba8aab5d716e",
+    "src/go2_wall/grasp_motion.py": "01d3717f6f20e08497ee517343512bf5ccdfeb04bb145bca8a0ddf2d0f3eeb22",
+    "src/go2_wall/stair_valve.py": "c032a75c4c0c8d356d205dee7490a2a91487890c5f36704a6d468332791c53d3",
+    "src/go2_wall/transition.py": "6372f217d171df2480f6c2ee5ef91669dc722ea1584212ceba3a0f13ac30fbfc",
+    "src/go2_wall/gripper_control.py": "f753eca35d2a0d0902863503571f7d54b5a6e08ef8a9d015e85bc0de04be1057",
+    "src/go2_wall/stair_loads.py": "08b9dd9cd64cda48fd50761402de3a6273004d81300652386c1a190241e49771",
+    "src/go2_wall/mission_verdict.py": "b99448d31bb1c84eb71fcedb4fdd39b8ecc671b0755de7d20b2801995e724b8c",
+    "tools/stair_mission_limits.py": "ca87784e73c96eff026bf4d83de4e3b3e739aad5704fec22b16a1a68b3c82a88"
+  },
+  "frozen_verification": "frozen-verification.json",
+  "prototype_revision_note": "The source_commit in the original k3075-variant.json is a historical script label. Use frozen_product_commit and the source hashes in frozen-scene.json for the measured product replay."
+}

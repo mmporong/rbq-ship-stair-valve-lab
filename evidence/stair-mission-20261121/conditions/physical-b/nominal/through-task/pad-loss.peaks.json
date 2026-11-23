@@ -1,0 +1,75 @@
+{
+  "time_range_s": [
+    96.50499999998472,
+    99.99999999998154
+  ],
+  "mission_seconds": 3.499999999996821,
+  "mount_reference": "RB1_Base origin; force XYZ then moment XYZ in world axes",
+  "metrics": {
+    "joint_torque_ratio": {
+      "value": 0.33397471855476313,
+      "time_s": 99.99999999998154,
+      "stage": "operate",
+      "sample_index": 699,
+      "item": "FL_calf_joint"
+    },
+    "joint_off_axis_bending_nm": {
+      "value": 25.021230847395376,
+      "time_s": 99.99999999998154,
+      "stage": "operate",
+      "sample_index": 699,
+      "item": "FL_calf_joint"
+    },
+    "joint_reaction_n": {
+      "value": 233.39448438381055,
+      "time_s": 99.99999999998154,
+      "stage": "operate",
+      "sample_index": 699,
+      "item": "FL_calf_joint"
+    },
+    "rb1_mount_force_n": {
+      "value": 126.80040537125684,
+      "time_s": 99.99999999998154,
+      "stage": "operate",
+      "sample_index": 699
+    },
+    "rb1_mount_moment_nm": {
+      "value": 26.150158854388124,
+      "time_s": 99.98999999998155,
+      "stage": "operate",
+      "sample_index": 697
+    },
+    "foot_surface_force_n": {
+      "value": 238.30379717816118,
+      "time_s": 99.99999999998154,
+      "stage": "operate",
+      "sample_index": 699,
+      "item": "FL/tread5"
+    },
+    "hinge_friction_torque_nm": {
+      "value": 10.0,
+      "time_s": 97.1899999999841,
+      "stage": "contact",
+      "sample_index": 137
+    },
+    "pad_closing_torque_nm": {
+      "value": 10.049960534533115,
+      "time_s": 97.1899999999841,
+      "stage": "contact",
+      "sample_index": 137
+    },
+    "pad_normal_force_n": {
+      "value": 184.2271626952591,
+      "time_s": 97.20999999998408,
+      "stage": "contact",
+      "sample_index": 141,
+      "item": "upper"
+    },
+    "pad_closing_tangent_force_n": {
+      "value": 91.05449206751169,
+      "time_s": 98.24499999998314,
+      "stage": "operate",
+      "sample_index": 348
+    }
+  }
+}

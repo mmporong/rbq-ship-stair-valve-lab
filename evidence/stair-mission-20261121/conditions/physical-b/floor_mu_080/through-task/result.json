@@ -1,0 +1,311 @@
+{
+  "extent": "through-task",
+  "metrics": {
+    "passed": false,
+    "fell": false,
+    "saturated_steps": 0,
+    "qp_failed_ticks": 0,
+    "qp_relaxed_ticks": 0,
+    "max_ratio": 0.5433645257211864,
+    "max_base_track_mm": 18.101298155573847,
+    "max_tilt_track_deg": 10.57963697367703,
+    "return_error_mm": 1.71388136896777,
+    "feet_down_at_end": false,
+    "max_stance_slip_mm": {
+      "FL": 9.271,
+      "FR": 7.374,
+      "RL": 12.509,
+      "RR": 9.041
+    },
+    "max_friction_use": {
+      "FL": 1.0,
+      "FR": 0.93,
+      "RL": 0.769,
+      "RR": 0.642
+    },
+    "unexpected_contacts_n": {},
+    "floor_mu": 0.8,
+    "wall_mu": 0.6,
+    "physics": {
+      "timestep": 0.005
+    },
+    "gains_scale": 1.5,
+    "mode": "force",
+    "seconds": 126.50000000000001,
+    "gripper_audit": {
+      "physics_steps": 25300,
+      "finger_clipped_steps": 0,
+      "qpos_write_count_after_start": 0,
+      "qvel_write_count_after_start": 0,
+      "act_write_count_after_start": 0,
+      "mocap_write_count_after_start": 0,
+      "state_reset_count": 0,
+      "max_qfrc_applied_n": 0.0,
+      "max_xfrc_applied_n": 0.0
+    }
+  },
+  "audit": {
+    "physics_steps": 25300,
+    "finger_clipped_steps": 0,
+    "qpos_write_count_after_start": 0,
+    "qvel_write_count_after_start": 0,
+    "act_write_count_after_start": 0,
+    "mocap_write_count_after_start": 0,
+    "state_reset_count": 0,
+    "max_qfrc_applied_n": 0.0,
+    "max_xfrc_applied_n": 0.0,
+    "physics_timestep_s": 0.005,
+    "record_every_step": true,
+    "finger_equality_count": 1,
+    "other_equality_count": 0,
+    "hinge_actuator_count": 0,
+    "valve_resistance_nm": 10.0,
+    "robot_saturated_steps": 0,
+    "finger_saturated_steps": 0,
+    "qp_failed_ticks": 0,
+    "qp_relaxed_ticks": 0,
+    "fell": false
+  },
+  "walking": {
+    "landings_evaluated": 19,
+    "verified": false,
+    "first_failure": {
+      "stage": "hold",
+      "time_s": 111.48999999997109,
+      "metric": "stance_slip_m",
+      "measured": 0.010000136781441574,
+      "limit": "<= 0.01"
+    },
+    "failures": [
+      {
+        "stage": "hold",
+        "time_s": 111.48999999997109,
+        "metric": "stance_slip_m",
+        "measured": 0.010000136781441574,
+        "limit": "<= 0.01"
+      }
+    ]
+  },
+  "settings": {
+    "slope_deg": 50.0,
+    "rise_m": 0.19,
+    "floor_mu": 0.8,
+    "pad_mu": 0.8,
+    "resistance_nm": 10.0,
+    "handle_length_m": 0.12,
+    "finger_force_n": 100.0,
+    "slide_loss_n": 30.0
+  },
+  "scene_sha256": "438145d817a542797532359f2a130ba0431482e7e480629421186fc33e71e82b",
+  "raw_sha256": "fce620feab546788e4fc8d390680523e321e8cb4ee842a0077bbe20b29408a01",
+  "arm_feedback": {
+    "samples": 4000,
+    "correction_limited_steps": 255,
+    "slew_limited_steps": 6,
+    "max_position_error_m": 0.08000030832956369,
+    "max_rotation_error_rad": 0.13797547065973223,
+    "max_raw_correction_rad": 0.22509372573393951,
+    "correction_limit_rad": 0.15,
+    "target_step_limit_rad": 0.01
+  },
+  "valve": {
+    "verified": false,
+    "first_failure": {
+      "stage": "operate",
+      "time_s": 97.6249999999837,
+      "metric": "pad_contact_loss_s",
+      "measured": 0.024999999999980815,
+      "limit": "<= 0.02",
+      "message": "a pad lost contact too long"
+    },
+    "failures": [
+      {
+        "stage": "operate",
+        "time_s": 97.6249999999837,
+        "metric": "pad_contact_loss_s",
+        "measured": 0.024999999999980815,
+        "limit": "<= 0.02",
+        "message": "a pad lost contact too long"
+      },
+      {
+        "stage": "hold",
+        "time_s": 108.60499999997371,
+        "metric": "angle_deg",
+        "measured": 88.99726512393585,
+        "limit": "90.0 +/- 0.25",
+        "message": "hold angle left the allowed band"
+      },
+      {
+        "stage": "hold",
+        "time_s": 113.41999999996933,
+        "metric": "max_foot_shift_m",
+        "measured": 0.005000838597454123,
+        "limit": "<= 0.005",
+        "message": "M1 stability limit exceeded"
+      },
+      {
+        "stage": "release",
+        "time_s": 114.64499999996822,
+        "metric": "post_release_angle_deg",
+        "measured": 89.74714138142801,
+        "limit": "90.0 +/- 0.25",
+        "message": "valve moved after release"
+      }
+    ],
+    "measurements": {
+      "max_record_step_s": 0.005000000000002558,
+      "total_saturated_steps": 0,
+      "contact_hold_s": 0.3949999999996443,
+      "max_angle_deg": 90.06338219273874,
+      "hold_s": 4.999999999995456,
+      "resistance_limit_nm": 9.98,
+      "loaded_angle_bins": 16,
+      "pad_closing_torque_by_bin_nm": [
+        {
+          "angle_deg": [
+            5.0,
+            10.0
+          ],
+          "min_nm": 9.999865026746035,
+          "max_nm": 10.00021895727137
+        },
+        {
+          "angle_deg": [
+            10.0,
+            15.0
+          ],
+          "min_nm": 10.000013738612855,
+          "max_nm": 10.000196106149943
+        },
+        {
+          "angle_deg": [
+            15.0,
+            20.0
+          ],
+          "min_nm": 9.99999634478219,
+          "max_nm": 10.000193936455165
+        },
+        {
+          "angle_deg": [
+            20.0,
+            25.0
+          ],
+          "min_nm": 9.999962184247833,
+          "max_nm": 10.000194239493554
+        },
+        {
+          "angle_deg": [
+            25.0,
+            30.0
+          ],
+          "min_nm": 9.999950993546802,
+          "max_nm": 10.000269142999764
+        },
+        {
+          "angle_deg": [
+            30.0,
+            35.0
+          ],
+          "min_nm": 9.999949962949483,
+          "max_nm": 10.00017905670432
+        },
+        {
+          "angle_deg": [
+            35.0,
+            40.0
+          ],
+          "min_nm": 9.999903338910926,
+          "max_nm": 10.000139158419273
+        },
+        {
+          "angle_deg": [
+            40.0,
+            45.0
+          ],
+          "min_nm": 9.99991689414281,
+          "max_nm": 10.00018437919266
+        },
+        {
+          "angle_deg": [
+            45.0,
+            50.0
+          ],
+          "min_nm": 9.999906251079267,
+          "max_nm": 10.000066443481156
+        },
+        {
+          "angle_deg": [
+            50.0,
+            55.0
+          ],
+          "min_nm": 9.999909125242565,
+          "max_nm": 10.000091166847575
+        },
+        {
+          "angle_deg": [
+            55.0,
+            60.0
+          ],
+          "min_nm": 9.999892556223575,
+          "max_nm": 10.000030843166057
+        },
+        {
+          "angle_deg": [
+            60.0,
+            65.0
+          ],
+          "min_nm": 9.999890574995357,
+          "max_nm": 10.000012855357044
+        },
+        {
+          "angle_deg": [
+            65.0,
+            70.0
+          ],
+          "min_nm": 9.999884280227594,
+          "max_nm": 9.999992103938906
+        },
+        {
+          "angle_deg": [
+            70.0,
+            75.0
+          ],
+          "min_nm": 9.999885277137682,
+          "max_nm": 9.999956038930021
+        },
+        {
+          "angle_deg": [
+            75.0,
+            80.0
+          ],
+          "min_nm": 9.99986138277174,
+          "max_nm": 9.999931496820508
+        },
+        {
+          "angle_deg": [
+            80.0,
+            85.0
+          ],
+          "min_nm": 9.99985486623469,
+          "max_nm": 9.999915551214112
+        }
+      ],
+      "max_pad_loss_s": 0.13999999999987622,
+      "max_base_shift_m": 0.006850600832933418,
+      "max_foot_shift_m": 0.005043328538783296,
+      "max_friction_use": 0.37335326624388276,
+      "min_foot_normal_force_n": 42.65609432909057,
+      "release_hold_s": 2.7499999999975024,
+      "post_release_observation_s": 10.149999999990772
+    }
+  },
+  "outcome": "physical_failed",
+  "first_failure": {
+    "stage": "operate",
+    "time_s": 97.6249999999837,
+    "metric": "pad_contact_loss_s",
+    "measured": 0.024999999999980815,
+    "limit": "<= 0.02",
+    "message": "a pad lost contact too long"
+  }
+}

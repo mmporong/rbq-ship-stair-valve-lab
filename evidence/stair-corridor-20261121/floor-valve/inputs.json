@@ -1,0 +1,58 @@
+{
+  "controller_commit": "fcdf5d881b17c6b3d46490350a6ee2b340d932d7",
+  "verified_source_files": 12,
+  "walking_reference": {
+    "sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+    "repo_file": "evidence/stair-mission-20261121/full/walk50.npz",
+    "footprint_profile": null
+  },
+  "common_arguments": [
+    "--extent",
+    "through-task",
+    "--timestep",
+    "0.001",
+    "--motion-seconds",
+    "9",
+    "--jaw-load-bias-m",
+    "0.0005",
+    "--stance-spring-gain-n-per-m",
+    "2500",
+    "--terminal-overtravel-deg",
+    "1.2"
+  ],
+  "original_trial": {
+    "fixed_walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+    "physics_timestep_s": 0.001,
+    "actuation_period_s": 0.005,
+    "extra_settle_s": 0.0,
+    "command_target_deg": 92.60000000000001,
+    "hold_target_deg": 91.4,
+    "terminal_overtravel_deg": 1.2,
+    "original_make_grasp_track_sha256_lf": "24132b99330063870f7baeea46bf452f3d37c854583f4b7009d6351f92d98834",
+    "transformed_make_grasp_track_sha256_lf": "b27b11bae65bda1b8513fa2f82d00c1ab8e7b7993236c5ef4884a57c87a1e9e8",
+    "runner_sha256_lf": "bbfcaba65c2997515205e773d7ccb6051835426dc1e3429c9991e096db6432a9"
+  },
+  "frozen_replay_sha256": "7e5d6052a8cfcdbcb006ed6e3bf1bc79a543c3313b2c6c4dab3142fc3df5b87a",
+  "archive": "raw-parts/parts.json",
+  "structural_recording": {
+    "walking_reference": "../refined/walk50.npz",
+    "extra_arguments": [
+      "--corridor-feedback",
+      "--capture-loads"
+    ],
+    "raw_sha256": "d95cbd16987e3ef8b634de6a4cfda951e848c9617948ee3413e9cd11acb47b81",
+    "physics_steps": 132875,
+    "video_interval_s": [
+      94.0,
+      121.84
+    ],
+    "speed": 2.0
+  },
+  "scope": "Floor start through the first following landing. Structural recording uses the same approach and manipulation, then the lateral walk.",
+  "independent_replays": {
+    "unchanged_controller_comparison": "same-source.json",
+    "prototype_to_product_comparison": "reproduction.json",
+    "archived_result": "result.json",
+    "archived_raw_rejudgment": "raw-check.json"
+  }
+}

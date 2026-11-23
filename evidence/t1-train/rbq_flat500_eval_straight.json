@@ -1,0 +1,22 @@
+{
+  "checkpoint": "logs/rsl_rl/rbq10_rb1_flat/2026-11-10_03-26-21_flat500/model_499.pt",
+  "task": "flat",
+  "command": "straight",
+  "num_envs": 1000,
+  "steps": 998,
+  "levels": {
+    "plane": {
+      "plane": {
+        "envs": 1000,
+        "survived": 0.999,
+        "distance_median_m": 10.36,
+        "promote_share": 1.0,
+        "demote_share": 0.0,
+        "dz_median_m": 0.545,
+        "command_median_mps": 0.6,
+        "speed_median_mps": 0.56,
+        "tracking_error_median_mps": 0.09
+      }
+    }
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "case_count": 12,
+  "choices": {
+    "unchanged_learned": "learned",
+    "fixed_contact": "fixed_contact",
+    "single_observed": "learned",
+    "validated_observed": "learned_no_ppo",
+    "single_ablation": "learned_no_ppo",
+    "validated_ablation": "learned_no_ppo"
+  },
+  "criterion_passed": true,
+  "strict_sha256": "87f8a65bff95854c4b660ffa7ff960795f53c4d4c034db5064071732aad3b556",
+  "physics_sha256": "f5a0b911956607465cd2e7f204a20c09cb2ffeaf6e70760f4b7c624a6c1156b5",
+  "groups": {
+    "learned": {
+      "strict": 0,
+      "work": 12,
+      "collision": 0,
+      "failures": {
+        "angle_deg": 11,
+        "stance_slip_m": 1
+      }
+    },
+    "initial": {
+      "strict": 0,
+      "work": 0,
+      "collision": 10,
+      "failures": {
+        "terrain_body_contact": 10,
+        "fall": 2
+      }
+    },
+    "fixed_contact": {
+      "strict": 10,
+      "work": 12,
+      "collision": 0,
+      "failures": {
+        "stance_slip_m": 2
+      }
+    },
+    "teacher_open_loop": {
+      "strict": 0,
+      "work": 0,
+      "collision": 12,
+      "failures": {
+        "terrain_body_contact": 12
+      }
+    },
+    "learned_no_ppo": {
+      "strict": 10,
+      "work": 12,
+      "collision": 0,
+      "failures": {
+        "stance_slip_m": 2
+      }
+    },
+    "learned_contact_off": {
+      "strict": 0,
+      "work": 0,
+      "collision": 12,
+      "failures": {
+        "terrain_body_contact": 12
+      }
+    }
+  },
+  "paired_validated_observed_vs": {
+    "unchanged_learned": {
+      "strict": {
+        "n": 12,
+        "wins": 10,
+        "losses": 0,
+        "paired_gain": 0.8333333333333334,
+        "paired_difference_ci95_conservative": [
+          0.16899832576674811,
+          0.985559819567051
+        ],
+        "mcnemar_two_sided_exact_p": 0.001953125
+      },
+      "work": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      },
+      "collision": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      }
+    },
+    "fixed_contact": {
+      "strict": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      },
+      "work": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      },
+      "collision": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      }
+    },
+    "single_observed": {
+      "strict": {
+        "n": 12,
+        "wins": 10,
+        "losses": 0,
+        "paired_gain": 0.8333333333333334,
+        "paired_difference_ci95_conservative": [
+          0.16899832576674811,
+          0.985559819567051
+        ],
+        "mcnemar_two_sided_exact_p": 0.001953125
+      },
+      "work": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      },
+      "collision": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      }
+    },
+    "validated_observed": {
+      "strict": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      },
+      "work": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      },
+      "collision": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      }
+    },
+    "single_ablation": {
+      "strict": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      },
+      "work": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      },
+      "collision": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      }
+    },
+    "validated_ablation": {
+      "strict": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      },
+      "work": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      },
+      "collision": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "paired_gain": 0.0,
+        "paired_difference_ci95_conservative": [
+          -0.3059205794727106,
+          0.3059205794727106
+        ],
+        "mcnemar_two_sided_exact_p": 1.0
+      }
+    }
+  }
+}

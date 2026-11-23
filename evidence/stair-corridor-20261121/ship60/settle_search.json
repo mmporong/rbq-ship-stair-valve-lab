@@ -1,0 +1,417 @@
+{
+  "endpoint_candidates": 14,
+  "origin": [
+    0.14610213459788707,
+    -0.06,
+    0.7475,
+    0.8412486994612668
+  ],
+  "runs": [
+    {
+      "name": "settle_0",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.14",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.14166666666666666,
+      "planned_time_s": 38.03999999999999,
+      "max_foot_ik_error_m": 0.008971054091899062,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.16610213459788709,
+        -0.029999999999999985,
+        0.7625000000000001
+      ],
+      "endpoint_ratio": 0.3290827933224829,
+      "offset_xyz_m": [
+        0.02000000000000001,
+        0.030000000000000013,
+        0.015000000000000013
+      ],
+      "endpoint_base": [
+        0.16610213459788709,
+        -0.029999999999999985,
+        0.7625000000000001,
+        0.8412486994612668
+      ]
+    },
+    {
+      "name": "settle_1",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.13",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.13333333333333333,
+      "planned_time_s": 38.01999999999999,
+      "max_foot_ik_error_m": 0.007746405354954712,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.16110213459788708,
+        -0.03999999999999999,
+        0.7625000000000001
+      ],
+      "endpoint_ratio": 0.41490106853170516,
+      "offset_xyz_m": [
+        0.015000000000000013,
+        0.02000000000000001,
+        0.015000000000000013
+      ],
+      "endpoint_base": [
+        0.16110213459788708,
+        -0.03999999999999999,
+        0.7625000000000001,
+        0.8412486994612668
+      ]
+    },
+    {
+      "name": "settle_2",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.13",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.13333333333333333,
+      "planned_time_s": 38.01999999999999,
+      "max_foot_ik_error_m": 0.002506277004803871,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.16110213459788708,
+        -0.03499999999999999,
+        0.7625000000000001
+      ],
+      "endpoint_ratio": 0.4434344509397698,
+      "offset_xyz_m": [
+        0.015000000000000013,
+        0.02500000000000001,
+        0.015000000000000013
+      ],
+      "endpoint_base": [
+        0.16110213459788708,
+        -0.03499999999999999,
+        0.7625000000000001,
+        0.8412486994612668
+      ]
+    },
+    {
+      "name": "settle_3",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.13",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.13333333333333333,
+      "planned_time_s": 38.01999999999999,
+      "max_foot_ik_error_m": 0.005833794481927179,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.16110213459788708,
+        -0.03499999999999999,
+        0.7575000000000001
+      ],
+      "endpoint_ratio": 0.45107527097037947,
+      "offset_xyz_m": [
+        0.015000000000000013,
+        0.02500000000000001,
+        0.010000000000000009
+      ],
+      "endpoint_base": [
+        0.16110213459788708,
+        -0.03499999999999999,
+        0.7575000000000001,
+        0.8412486994612668
+      ]
+    },
+    {
+      "name": "settle_4",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.14",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.14166666666666666,
+      "planned_time_s": 38.03999999999999,
+      "max_foot_ik_error_m": 0.0050897180097079974,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.16110213459788708,
+        -0.029999999999999985,
+        0.7625000000000001
+      ],
+      "endpoint_ratio": 0.4711375170304129,
+      "offset_xyz_m": [
+        0.015000000000000013,
+        0.030000000000000013,
+        0.015000000000000013
+      ],
+      "endpoint_base": [
+        0.16110213459788708,
+        -0.029999999999999985,
+        0.7625000000000001,
+        0.8412486994612668
+      ]
+    },
+    {
+      "name": "settle_5",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.14",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.14166666666666666,
+      "planned_time_s": 38.03999999999999,
+      "max_foot_ik_error_m": 0.00856050270010701,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.16110213459788708,
+        -0.029999999999999985,
+        0.7575000000000001
+      ],
+      "endpoint_ratio": 0.47868575640502864,
+      "offset_xyz_m": [
+        0.015000000000000013,
+        0.030000000000000013,
+        0.010000000000000009
+      ],
+      "endpoint_base": [
+        0.16110213459788708,
+        -0.029999999999999985,
+        0.7575000000000001,
+        0.8412486994612668
+      ]
+    },
+    {
+      "name": "settle_6",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.13",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.13333333333333333,
+      "planned_time_s": 38.01999999999999,
+      "max_foot_ik_error_m": 0.0037856444043932536,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.16110213459788708,
+        -0.029999999999999985,
+        0.7525000000000001
+      ],
+      "endpoint_ratio": 0.48590168747996454,
+      "offset_xyz_m": [
+        0.015000000000000013,
+        0.030000000000000013,
+        0.0050000000000000044
+      ],
+      "endpoint_base": [
+        0.16110213459788708,
+        -0.029999999999999985,
+        0.7525000000000001,
+        0.8412486994612668
+      ]
+    },
+    {
+      "name": "settle_7",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.12",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.125,
+      "planned_time_s": 37.999999999999986,
+      "max_foot_ik_error_m": 0.0067186620136011985,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.15610213459788708,
+        -0.04999999999999999,
+        0.7625000000000001
+      ],
+      "endpoint_ratio": 0.5004207082023087,
+      "offset_xyz_m": [
+        0.010000000000000009,
+        0.010000000000000009,
+        0.015000000000000013
+      ],
+      "endpoint_base": [
+        0.15610213459788708,
+        -0.04999999999999999,
+        0.7625000000000001,
+        0.8412486994612668
+      ]
+    },
+    {
+      "name": "settle_8",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.13",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.13333333333333333,
+      "planned_time_s": 38.01999999999999,
+      "max_foot_ik_error_m": 0.006085191872445149,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.15610213459788708,
+        -0.044999999999999984,
+        0.7675000000000001
+      ],
+      "endpoint_ratio": 0.5253401840338449,
+      "offset_xyz_m": [
+        0.010000000000000009,
+        0.015000000000000013,
+        0.02000000000000001
+      ],
+      "endpoint_base": [
+        0.15610213459788708,
+        -0.044999999999999984,
+        0.7675000000000001,
+        0.8412486994612668
+      ]
+    },
+    {
+      "name": "settle_9",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.13",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.13333333333333333,
+      "planned_time_s": 38.01999999999999,
+      "max_foot_ik_error_m": 0.009190832554714442,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.15610213459788708,
+        -0.044999999999999984,
+        0.7625000000000001
+      ],
+      "endpoint_ratio": 0.5351231896096711,
+      "offset_xyz_m": [
+        0.010000000000000009,
+        0.015000000000000013,
+        0.015000000000000013
+      ],
+      "endpoint_base": [
+        0.15610213459788708,
+        -0.044999999999999984,
+        0.7625000000000001,
+        0.8412486994612668
+      ]
+    },
+    {
+      "name": "settle_10",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.12",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.11666666666666667,
+      "planned_time_s": 37.97999999999999,
+      "max_foot_ik_error_m": 1.6587110926303843e-08,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.15610213459788708,
+        -0.044999999999999984,
+        0.7575000000000001
+      ],
+      "endpoint_ratio": 0.5443762225066962,
+      "offset_xyz_m": [
+        0.010000000000000009,
+        0.015000000000000013,
+        0.010000000000000009
+      ],
+      "endpoint_base": [
+        0.15610213459788708,
+        -0.044999999999999984,
+        0.7575000000000001,
+        0.8412486994612668
+      ]
+    },
+    {
+      "name": "settle_11",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.08",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.08333333333333333,
+      "planned_time_s": 37.89999999999999,
+      "max_foot_ik_error_m": 6.811443004709278e-09,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.15110213459788707,
+        -0.05999999999999999,
+        0.7675000000000001
+      ],
+      "endpoint_ratio": 0.5997782493470212,
+      "offset_xyz_m": [
+        0.0050000000000000044,
+        6.938893903907228e-18,
+        0.02000000000000001
+      ],
+      "endpoint_base": [
+        0.15110213459788707,
+        -0.05999999999999999,
+        0.7675000000000001,
+        0.8412486994612668
+      ]
+    },
+    {
+      "name": "settle_12",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.07",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.06666666666666667,
+      "planned_time_s": 37.859999999999985,
+      "max_foot_ik_error_m": 5.530171621663731e-09,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.15110213459788707,
+        -0.05999999999999999,
+        0.7625000000000001
+      ],
+      "endpoint_ratio": 0.6091368916555318,
+      "offset_xyz_m": [
+        0.0050000000000000044,
+        6.938893903907228e-18,
+        0.015000000000000013
+      ],
+      "endpoint_base": [
+        0.15110213459788707,
+        -0.05999999999999999,
+        0.7625000000000001,
+        0.8412486994612668
+      ]
+    },
+    {
+      "name": "settle_13",
+      "outcome": "planning_failed",
+      "message": "segment 39 swing infeasible at s=0.01",
+      "segment": 39,
+      "kind": "swing",
+      "progress": 0.008333333333333333,
+      "planned_time_s": 37.71999999999999,
+      "max_foot_ik_error_m": 2.253171076567223e-08,
+      "max_unexpected_overlap_m": null,
+      "unexpected_overlaps": [],
+      "planning_base_xyz": [
+        0.14610213459788707,
+        -0.075,
+        0.7675000000000001
+      ],
+      "endpoint_ratio": 0.669818695694168,
+      "offset_xyz_m": [
+        6.938893903907228e-18,
+        -0.014999999999999996,
+        0.02000000000000001
+      ],
+      "endpoint_base": [
+        0.14610213459788707,
+        -0.075,
+        0.7675000000000001,
+        0.8412486994612668
+      ]
+    }
+  ]
+}

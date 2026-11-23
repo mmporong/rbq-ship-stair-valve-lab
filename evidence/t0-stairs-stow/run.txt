@@ -1,0 +1,26 @@
+84:def tuck_arm() -> dict[str, float]:
+85-    return {name: TUCK.get(name, 0.0) for name in ARM_JOINTS}
+86-
+87-
+All checks passed!
+50 0.165 2 False no pose for swing ['RR'] [583, 49, 0, 4, 30]
+50 0.2 2 False no pose for swing ['RR'] [371, 71, 0, 150, 104]
+50 0.235 2 False no pose for swing ['RR'] [83, 23, 0, 169, 41]
+50 0.27 2 False no start stance [0]
+50 0.305 1 False no pose for swing ['RR', 'FL'] [910, 127, 0, 0, 340]
+60 0.165 3 False no pose for swing ['RL', 'RR', 'FL', 'FR'] [48, 0, 0, 0, 0]
+60 0.2 2 False no pose for swing ['RL', 'RR', 'FL', 'FR'] [109, 0, 0, 0, 0]
+60 0.235 2 False no pose for swing ['RL', 'RR', 'FR'] [65, 0, 0, 1, 0]
+60 0.27 2 False no pose for swing ['RL', 'RR', 'FR'] [3, 0, 0, 17, 0]
+60 0.305 2 False no start stance [0]
+70 0.165 3 False no start stance [0]
+70 0.2 2 False no start stance [0]
+70 0.235 2 False no start stance [0]
+70 0.27 2 False no start stance [0]
+70 0.305 2 False no start stance [0]
+
+real	30m33.269s
+user	0m1.171s
+sys	0m3.093s
+
+[exited with code 0]

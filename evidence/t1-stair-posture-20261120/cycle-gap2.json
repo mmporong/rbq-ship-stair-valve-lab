@@ -1,0 +1,16 @@
+{
+  "arm": "rb1",
+  "slope_deg": 50.0,
+  "rise_m": 0.19,
+  "first_rear_tread": 2,
+  "gap": 2,
+  "found": false,
+  "reason": "no connected swing sequence",
+  "candidates": [
+    2869,
+    614,
+    30,
+    11,
+    891
+  ]
+}

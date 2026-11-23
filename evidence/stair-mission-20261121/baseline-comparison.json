@@ -1,0 +1,95 @@
+{
+  "protocol": "protocol.json",
+  "engine": "MuJoCo 4.0.0, native Windows CPU",
+  "inputs_match_frozen_sha256": {
+    "evidence/t1-stair-ascent-20261120/target-round-trip-geometry.json": true,
+    "evidence/t1-stair-posture-20261120/front-pair.json": true,
+    "evidence/t1-stair-ascent-20261120/target-round-trip-plan.json": true,
+    "evidence/t3-valve-20261120/fixed-body-candidates.json": true,
+    "configs/assets.lock.json": true
+  },
+  "n1": {
+    "existing_result": "evidence/t1-stair-ascent-20261120/target-round-trip-replay.json",
+    "fresh_replay_sha256": "69e59930185b92f051ca9442aef1f598961ce47c1222f1b03a27c37e47424103",
+    "reference_sha256": "69e59930185b92f051ca9442aef1f598961ce47c1222f1b03a27c37e47424103",
+    "same_bytes": true,
+    "command_arguments": [
+      "tools/replay_stair_sequence.py",
+      "evidence/t1-stair-ascent-20261120/target-round-trip-geometry.json",
+      "evidence/t1-stair-posture-20261120/front-pair.json",
+      "evidence/t1-stair-ascent-20261120/target-round-trip-plan.json",
+      "{fresh-output}.json",
+      "--round-trip"
+    ],
+    "measurements": {
+      "verified": true,
+      "sequence": true,
+      "landings": 156,
+      "seconds": 735.9999999999973,
+      "max_torque_ratio": 0.6027975164993434,
+      "max_base_track_mm": 23.963237004336676,
+      "return": {
+        "time_s": [
+          735.4999999999973,
+          735.9999999999973
+        ],
+        "sample_count": 50,
+        "max_start_xy_error_m": 0.028249861065391214,
+        "min_up_z": 0.9974793689317064,
+        "max_linear_speed_mps": 0.002725340227208506,
+        "max_angular_speed_radps": 0.005106694150496241,
+        "min_floor_force_n": 69.27607691033072,
+        "verified": true
+      }
+    }
+  },
+  "n3": {
+    "existing_result": "evidence/t3-valve-20261120/loaded-turn-replay.json",
+    "fresh_replay_sha256": "dc95603e5f55f1927ea77da55837762164e3d9520f155535e9ca7cd38a6225e5",
+    "reference_sha256": "dc95603e5f55f1927ea77da55837762164e3d9520f155535e9ca7cd38a6225e5",
+    "same_bytes": true,
+    "command_arguments": [
+      "tools/replay_stair_valve.py",
+      "replay",
+      "evidence/t3-valve-20261120/fixed-body-candidates.json",
+      "{fresh-output}.json",
+      "--candidate",
+      "4",
+      "--motion-seconds",
+      "8.75",
+      "--settle-seconds",
+      "5.75",
+      "--gain",
+      "2.5",
+      "--hold-feedforward-nm",
+      "3",
+      "--timestep",
+      "0.005"
+    ],
+    "measurements": {
+      "grip_model": "ideal_pin",
+      "seconds": 21.0,
+      "start_deg": 0.16069765184266388,
+      "max_angle_deg": 90.0162220831127,
+      "final_angle_deg": 90.00073082250168,
+      "min_hold_angle_deg": 89.97710983328531,
+      "max_hold_angle_deg": 90.0162220831127,
+      "hold_s": 5.0,
+      "max_base_shift_mm": 5.247261437162306,
+      "max_foot_slip_mm": 4.435510093673119,
+      "max_friction_use": 0.47037595566640455,
+      "min_foot_normal_force_n": 52.740376271451744,
+      "min_expected_tread_force_n": 52.740376271451744,
+      "loaded_motion_samples": 1647,
+      "loaded_motion_angle_range_deg": [
+        5.032553700879261,
+        84.9208164271999
+      ],
+      "min_motion_resistance_nm": 10.0,
+      "max_motion_resistance_nm": 10.0,
+      "max_grip_gap_m": 0.00179156367600958,
+      "max_abs_pin_torque_nm": 10.001485003721008,
+      "verified": true
+    }
+  }
+}

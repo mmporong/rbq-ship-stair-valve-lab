@@ -1,0 +1,86 @@
+[
+  {
+    "case_id": "reward-holdout-01",
+    "lateral_m": -0.004348133539344788,
+    "yaw_deg": -2.135883612495326,
+    "joint_seed": 2709443466498340944,
+    "joint_noise_rad": 0.004992985924104271
+  },
+  {
+    "case_id": "reward-holdout-02",
+    "lateral_m": -0.011344712984800382,
+    "yaw_deg": 0.12373940253953952,
+    "joint_seed": 8430288723233422968,
+    "joint_noise_rad": 0.003293394998181832
+  },
+  {
+    "case_id": "reward-holdout-03",
+    "lateral_m": 0.009348134734221344,
+    "yaw_deg": -0.35832679469867745,
+    "joint_seed": 7468847258217944659,
+    "joint_noise_rad": 0.003804366512407199
+  },
+  {
+    "case_id": "reward-holdout-04",
+    "lateral_m": 0.018995669079505444,
+    "yaw_deg": 2.0917747437230236,
+    "joint_seed": 5751418210417634078,
+    "joint_noise_rad": 0.004803193254667128
+  },
+  {
+    "case_id": "reward-holdout-05",
+    "lateral_m": 0.02301884232227938,
+    "yaw_deg": -0.6632175111301848,
+    "joint_seed": 7413391567987850538,
+    "joint_noise_rad": 0.004253219724729196
+  },
+  {
+    "case_id": "reward-holdout-06",
+    "lateral_m": -0.012686046140999503,
+    "yaw_deg": 0.9018514156155302,
+    "joint_seed": 152286800458806860,
+    "joint_noise_rad": 0.003485152716557964
+  },
+  {
+    "case_id": "reward-holdout-07",
+    "lateral_m": -0.00010864891075978989,
+    "yaw_deg": -0.8441049136375449,
+    "joint_seed": 5676432337521193021,
+    "joint_noise_rad": 0.0035825159507694927
+  },
+  {
+    "case_id": "reward-holdout-08",
+    "lateral_m": -0.023092094729172136,
+    "yaw_deg": 2.3280857249337474,
+    "joint_seed": 7027276505042904350,
+    "joint_noise_rad": 0.003968479432788804
+  },
+  {
+    "case_id": "reward-holdout-09",
+    "lateral_m": 0.008114613122718953,
+    "yaw_deg": 1.165794264334632,
+    "joint_seed": 4630851499181501902,
+    "joint_noise_rad": 0.004566425531765539
+  },
+  {
+    "case_id": "reward-holdout-10",
+    "lateral_m": 0.002999021214918886,
+    "yaw_deg": -0.5646908710971261,
+    "joint_seed": 1421709912345404022,
+    "joint_noise_rad": 0.003377697927947396
+  },
+  {
+    "case_id": "reward-holdout-11",
+    "lateral_m": -0.021987230345424654,
+    "yaw_deg": -1.557762097841115,
+    "joint_seed": 7041026772622461792,
+    "joint_noise_rad": 0.003686810049187597
+  },
+  {
+    "case_id": "reward-holdout-12",
+    "lateral_m": -0.0024299418415203895,
+    "yaw_deg": -2.070208139311327,
+    "joint_seed": 6145124481093986448,
+    "joint_noise_rad": 0.0032006816616854737
+  }
+]

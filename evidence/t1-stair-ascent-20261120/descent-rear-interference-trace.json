@@ -1,0 +1,211 @@
+{
+  "continuous": {
+    "first_events": {
+      "nonfoot": {
+        "time_s": 15.22500000000098,
+        "segment": "swing",
+        "leg": "RL",
+        "time_into_segment_s": 2.72500000000098,
+        "forces_n": {
+          "FL_calf+RL_foot": 53.00158932768443
+        },
+        "qpos": [
+          1.3584836430487577,
+          0.026980231554198788,
+          2.348771831449126,
+          -0.0038842594416422177,
+          -0.3518260206360199,
+          0.011016284095863811,
+          0.9359925241243815,
+          0.03203692286972147,
+          -0.6283501632567837,
+          -0.5990745739648226,
+          0.07935434847979307,
+          -0.16087180114270816,
+          -1.6214172635974544,
+          -0.00032266567358214956,
+          -0.143111032209558,
+          -0.982472995090758,
+          0.01930704987868888,
+          0.5575310639228539,
+          -1.5952216003771889,
+          -0.00017804500210867873,
+          -1.6004848351838095,
+          -0.0006397312987994487,
+          0.0002327435572218837,
+          -2.9665773186277224,
+          9.573982652313538e-06,
+          5.696502935722653e-06,
+          0.00015030872550152505
+        ]
+      },
+      "tracking": {
+        "time_s": 15.465000000001018,
+        "segment": "swing",
+        "leg": "RL",
+        "time_into_segment_s": 2.9650000000010177,
+        "translation_error_m": 0.031176599341388743
+      },
+      "tip": {
+        "time_s": 15.665000000001049,
+        "segment": "swing",
+        "leg": "RL",
+        "time_into_segment_s": 3.165000000001049
+      }
+    },
+    "controller_metrics": {
+      "passed": false,
+      "fell": true,
+      "saturated_steps": 6,
+      "qp_failed_ticks": 87,
+      "qp_relaxed_ticks": 43,
+      "max_ratio": 1.0,
+      "max_base_track_mm": 2467.2854778256306,
+      "max_tilt_track_deg": 179.86314108831795,
+      "return_error_mm": 2467.2854778256306,
+      "feet_down_at_end": false,
+      "max_stance_slip_mm": {
+        "FL": 1253.007,
+        "FR": 902.83,
+        "RL": 1438.34,
+        "RR": 1104.799
+      },
+      "max_friction_use": {
+        "FL": 6.258,
+        "FR": 1.292,
+        "RL": 0.672,
+        "RR": 9.885
+      },
+      "unexpected_contacts_n": {
+        "FL_calf+RL_foot": 528.7897342346257,
+        "FL_thigh+RL_foot": 15.881098724392674,
+        "RR_calf+world": 689.5442017097262,
+        "RL_calf+world": 290.7274956964241,
+        "RL_thigh+world": 6185.489095137461,
+        "FR_calf+world": 0.0,
+        "FR_foot+RR_calf": 336.57259207119415,
+        "FL_thigh+RB1_Shoulder_Pitch": 1209.2587092510353,
+        "FL_calf+RB1_Shoulder_Pitch": 334.64890485734867,
+        "FL_calf+world": 2280.493448053657,
+        "FR_calf+RR_thigh": 337.85789251891566,
+        "FR_foot+RR_thigh": 2165.492621359832,
+        "FR_calf+RR_foot": 288.23031793159515,
+        "FR_foot+RR_foot": 619.3156888151025,
+        "RB1_Wrist_Yaw+world": 2071.614177220974,
+        "FL_thigh+world": 8430.671517358722
+      },
+      "floor_mu": 0.6,
+      "wall_mu": 0.6,
+      "physics": {
+        "timestep": 0.005
+      },
+      "gains_scale": 1.5,
+      "mode": "force",
+      "seconds": 16.8
+    },
+    "verified_sequence": false
+  },
+  "isolated": {
+    "first_events": {
+      "nonfoot": {
+        "time_s": 7.034999999999872,
+        "segment": "swing",
+        "leg": "RL",
+        "time_into_segment_s": 2.7349999999998724,
+        "forces_n": {
+          "FL_calf+RL_foot": 16.879978393481387
+        },
+        "qpos": [
+          1.3584380104243574,
+          0.026803295416811826,
+          2.3477952617320934,
+          -0.00617088582324313,
+          -0.3462357383787163,
+          0.014745106104847352,
+          0.9380113621291909,
+          0.015908779417116756,
+          -0.5938863261035624,
+          -0.6476557012753472,
+          0.07561038188302303,
+          -0.1584585587758997,
+          -1.6130986523110007,
+          -0.011927350349775918,
+          -0.13111609620191617,
+          -0.9658311382300956,
+          0.0033977018899307423,
+          0.559681638471928,
+          -1.5982686648127238,
+          -0.00016611298953269106,
+          -1.6004644956241632,
+          -0.0006316137581737669,
+          0.00024994335092494283,
+          -2.966628726301179,
+          8.29236728367208e-06,
+          7.671268129236983e-07,
+          0.00014495850235491276
+        ]
+      },
+      "tracking": {
+        "time_s": 7.194999999999869,
+        "segment": "swing",
+        "leg": "RL",
+        "time_into_segment_s": 2.894999999999869,
+        "translation_error_m": 0.030329574177700894
+      },
+      "tip": {
+        "time_s": 7.484999999999863,
+        "segment": "swing",
+        "leg": "RL",
+        "time_into_segment_s": 3.184999999999863
+      }
+    },
+    "controller_metrics": {
+      "passed": false,
+      "fell": true,
+      "saturated_steps": 2,
+      "qp_failed_ticks": 89,
+      "qp_relaxed_ticks": 61,
+      "max_ratio": 1.0,
+      "max_base_track_mm": 2479.8255185525713,
+      "max_tilt_track_deg": 179.87028742867494,
+      "return_error_mm": 2479.8255185525713,
+      "feet_down_at_end": false,
+      "max_stance_slip_mm": {
+        "FL": 2124.948,
+        "FR": 1133.909,
+        "RL": 1625.735,
+        "RR": 1215.536
+      },
+      "max_friction_use": {
+        "FL": 1.0,
+        "FR": 1.0,
+        "RL": 1.0,
+        "RR": 56.815
+      },
+      "unexpected_contacts_n": {
+        "FL_calf+RL_foot": 529.2630471149575,
+        "FL_thigh+RL_foot": 1372.6341838001458,
+        "RR_calf+world": 1204.203527665793,
+        "RL_thigh+world": 8715.691851941556,
+        "RB1_finger_lower+base": 64.61964666235475,
+        "RB1_Wrist_Yaw+base": 43.80533419602121,
+        "FR_foot+RR_thigh": 722.8940564552995,
+        "FR_foot+RR_calf": 814.6241882160531,
+        "RB1_Wrist_Yaw+world": 7740.642857936169,
+        "RL_calf+world": 5.096782178696258,
+        "FL_calf+world": 409.022314609204
+      },
+      "floor_mu": 0.6,
+      "wall_mu": 0.6,
+      "physics": {
+        "timestep": 0.005
+      },
+      "gains_scale": 1.5,
+      "mode": "force",
+      "seconds": 8.6
+    },
+    "verified_sequence": false
+  },
+  "contact_threshold_n": 10,
+  "sample_period_s": 0.01
+}

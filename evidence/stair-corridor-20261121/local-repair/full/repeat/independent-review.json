@@ -1,0 +1,126 @@
+{
+  "verdict": "strict_mission_fail_with_route_completion",
+  "recorded_at": "2026-11-21T19:47:12+09:00",
+  "full_replay_b": {
+    "raw_path": ".omx/mission-success-20261121/local-full-b/mission.npz",
+    "raw_sha256": "59577a223264a5d8b38ee57e336b24a3e38de9b909eec6683db07b9051ffe556",
+    "raw_check_path": "evidence/stair-corridor-20261121/local-repair/full/repeat/raw-check.json",
+    "physics_steps": 976240,
+    "first_state_time_s": 0.001,
+    "last_state_time_s": 976.2399999838269,
+    "floor_start": {
+      "window_s": [0.2, 0.4],
+      "samples": 201,
+      "treads": [0, 0, 0, 0],
+      "minimum_load_by_leg_n": [77.26495168422412, 121.45891526345986, 120.13609177749244, 158.31397052730873],
+      "all_expected_feet_ge_1n": true,
+      "maximum_other_tread_load_n": 0.0
+    },
+    "loaded_operation_and_hold": {
+      "moving_angle_bins_deg": [5.0, 85.0],
+      "moving_pad_closing_torque_range_nm": [9.999792484515599, 10.00032326073135],
+      "hold_window_s": [108.8510000001557, 113.85000000017956],
+      "hold_duration_s": 5.000000000023846,
+      "hold_samples": 5000,
+      "hold_angle_range_deg": [89.75665266175773, 90.06807264219331],
+      "hold_pad_closing_torque_range_nm": [9.872073167050383, 10.082448425193602],
+      "hold_minimum_pad_normal_force_n": [92.16194038705783, 5.205765417856356],
+      "both_pads_ge_1n_throughout_hold": true,
+      "both_pads_ge_1n_throughout_operate_settle_hold": true,
+      "minimum_pad_normal_force_during_operate_settle_hold_n": 4.8215181513291485,
+      "interpretation": "The moving 10 N m resistance bins and the five second bilateral loaded hold both pass. Static hinge friction is not expected to read exactly 10 N m at every stationary hold sample."
+    },
+    "formal_release": {
+      "definition": "first 0.5 second release or retract window with both pad gaps at least 5 mm and both pad normal forces at most 1e-6 N",
+      "separation_index": 115564,
+      "separation_state_time_s": 115.56500000018775,
+      "release_window_end_index": 116063,
+      "release_window_end_state_time_s": 116.06400000019013,
+      "post_release_observation_s": 860.1759999836368,
+      "upper_pad_contact_steps_after_separation": 0,
+      "upper_pad_max_force_after_separation_n": 0.0,
+      "lower_pad_contact_steps_after_separation": 0,
+      "lower_pad_max_force_after_separation_n": 0.0,
+      "nonpad_contact_steps_after_separation": 0,
+      "nonpad_max_force_after_separation_n": 0.0
+    },
+    "landing_support": {
+      "scheduled": 156,
+      "evaluated": 156,
+      "supported": 156,
+      "support_rule_n": 1.0,
+      "minimum_observed_expected_surface_load_n": 2.3283731949068183,
+      "minimum_landing": 129
+    },
+    "upper_turn": {
+      "first_all_platform_s": 377.71500000000003,
+      "first_turn_on_platform_s": 496.615,
+      "checked_milestone_s": 504.815,
+      "raw_heading_deg": 179.925825344189,
+      "support_window_s": [504.515, 504.815],
+      "support_samples": 300,
+      "minimum_top_tread_load_n": 67.98293376622654,
+      "all_four_top_tread_loads_ge_1n": true
+    },
+    "physical_return": {
+      "start_base_xyz_m": [-0.40499990292651356, -0.029999986297502043, 0.6599989428283002],
+      "maximum_base_x_m": 2.2747688228377756,
+      "final_base_xyz_m": [-0.43320802136013925, -0.02961117972979488, 0.6552191378801261],
+      "backward_distance_from_maximum_x_m": 2.7079768441979146,
+      "final_treads": [0, 0, 0, 0],
+      "feet_down_at_end": true,
+      "return_error_mm": 5.120450298312162,
+      "stable_floor_return_verified": true,
+      "stable_window_s": [975.74, 976.24],
+      "stable_minimum_floor_force_n": 68.71334117161035
+    },
+    "strict_failures": {
+      "first": {
+        "stage": "hold",
+        "state_time_s": 111.76800000016962,
+        "metric": "stance_slip_m",
+        "measured_m": 0.010000016097540768,
+        "limit_m": 0.01
+      },
+      "first_nonzero_qp_attempt": {
+        "state_time_s": 185.35100000052097,
+        "attempt": 1
+      },
+      "first_failed_qp_attempt": {
+        "state_time_s": 755.5609999890453,
+        "attempt": -1
+      },
+      "audit_qp_failed_ticks": 8,
+      "audit_qp_relaxed_ticks": 604,
+      "first_unexpected_contact": {
+        "state_time_s": 187.3460000005305,
+        "force_n": 13.07783654695218,
+        "limit_n": 10.0
+      },
+      "unexpected_contact_pair_peaks_n": {
+        "FL_calf+world": 136.4541830865264,
+        "FR_calf+RB1_Shoulder_Pitch": 5.26957237786848
+      },
+      "inference": "FL_calf+world is the only recorded unexpected pair whose peak can explain the 10 N threshold failure."
+    },
+    "strict_result": {
+      "walking_verified": false,
+      "valve_verified": false,
+      "mission_verified": false,
+      "n1_verified": false,
+      "fell": false,
+      "saturated_steps": 0
+    }
+  },
+  "cold_segment_contact_audit": {
+    "summary_path": "evidence/stair-corridor-20261121/local-repair/segments/contact-audit/summary.json",
+    "total_observed_physics_steps": 412090,
+    "up_steps": 198265,
+    "down_steps": 213825,
+    "initialization": "Each segment starts at its scheduled stair pose with the passive valve closed at 90 degrees and the hand open. Neither segment starts on the floor.",
+    "upper_pad_contact_ticks": 0,
+    "lower_pad_contact_ticks": 0,
+    "nonpad_contact_ticks": 0,
+    "scope_limit": "This audit proves closed-lever clearance in two isolated cold-start segments. It does not prove floor departure, manipulation, platform turn, full descent, or floor return."
+  }
+}

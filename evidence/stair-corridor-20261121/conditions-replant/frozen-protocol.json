@@ -1,0 +1,236 @@
+{
+  "plan_commit": "953e36ca48f070a62e72e4d3d0d0d38d36705ecc",
+  "baseline_commit": "54c8a123cfd5318dcb776d39ac0ff109d65a01a7",
+  "physics": {
+    "engine": "MuJoCo",
+    "version": "4.0.0",
+    "device": "CPU",
+    "timestep_s": 0.001,
+    "baseline_only": true,
+    "actuation_period_s": 0.005,
+    "sensitivity_override": {
+      "sensitivity_timestep_s_0_0025": 0.0025
+    }
+  },
+  "robot": "RBQ-10+RB1",
+  "geometry": {
+    "slope_deg": 50,
+    "rise_m": 0.19,
+    "treads": 10,
+    "tread_depth_m": 0.127,
+    "width_m": 0.61
+  },
+  "actuation": {
+    "nominal_hinge_resistance_nm": 10,
+    "lever_m": 0.12,
+    "candidate": 4,
+    "anchor_move_index": 15,
+    "foot_treads": [
+      5,
+      5,
+      3,
+      3
+    ],
+    "base_z_offset_m": -0.04
+  },
+  "gripper": {
+    "pad_mu": 0.8,
+    "pad_mu_grade": "assumption",
+    "finger_force_limit_n": 100,
+    "finger_slide_frictionloss_n": 30,
+    "floor_mu": 0.6
+  },
+  "contact": {
+    "each_pad_min_n": 1,
+    "acquire_s": 0.2,
+    "max_dropout_s": 0.02
+  },
+  "low_load": {
+    "hinge_resistance_nm": 1,
+    "target_deg": 20,
+    "loaded_bins_deg": [
+      5,
+      10,
+      15
+    ],
+    "opposing_friction_min_nm": 0.98,
+    "pad_torque_min_nm": 0.98,
+    "max_axial_slip_m": 0.002
+  },
+  "loaded_turn": {
+    "start_deg": 0,
+    "target_deg": 90,
+    "angle_tolerance_deg": 0.25,
+    "hold_s": 5,
+    "moving_from_deg": 5,
+    "moving_to_deg": 85,
+    "angle_bin_deg": 5,
+    "min_speed_rad_s": 0.02,
+    "resistance_tolerance_nm": 0.02,
+    "max_body_motion_m": 0.01,
+    "max_foot_motion_m": 0.005,
+    "max_friction_use": 0.8,
+    "min_expected_tread_load_n": 1
+  },
+  "release": {
+    "min_surface_gap_m": 0.005,
+    "zero_force_dwell_s": 0.5,
+    "min_observation_s": 5,
+    "max_angle_error_deg_until_floor": 0.25
+  },
+  "nominal_round_trip": {
+    "landings": 157,
+    "independent_process_repeats": 2,
+    "all_existing_n1_checks": true,
+    "qp_failed_ticks": 0,
+    "qp_relaxed_ticks": 0,
+    "saturated_steps": 0,
+    "post_start_state_writes": 0,
+    "original_landings": 156,
+    "supplementary_landings": 1
+  },
+  "comparison_slope_decision": {
+    "choice": "ship_stair",
+    "slope_deg": 60,
+    "rise_m": 0.19,
+    "source": "user Q2, 2026-11-21"
+  },
+  "single_factor_cases": {
+    "nominal": {},
+    "slope_60": {
+      "slope_deg": 60
+    },
+    "rise_165": {
+      "rise_m": 0.165
+    },
+    "rise_200": {
+      "rise_m": 0.2
+    },
+    "floor_mu_050": {
+      "floor_mu": 0.5
+    },
+    "floor_mu_080": {
+      "floor_mu": 0.8
+    },
+    "resistance_5": {
+      "resistance_nm": 5
+    },
+    "resistance_15": {
+      "resistance_nm": 15
+    }
+  },
+  "sensitivity": {
+    "lever_m": [
+      0.1,
+      0.14
+    ],
+    "pad_mu": [
+      0.6,
+      1.0
+    ],
+    "finger_force_limit_n": [
+      75
+    ],
+    "finger_slide_frictionloss_n": [
+      15
+    ],
+    "arm_limits": [
+      "named LIMS-EX joint limits"
+    ],
+    "timestep_s": [
+      0.0025
+    ],
+    "impratio": [
+      10
+    ]
+  },
+  "inputs_sha256_windows_worktree": {
+    "evidence/t1-stair-ascent-20261120/target-round-trip-geometry.json": "db898347ce07a9cee49f4a967bea0592e785b6e7171ee9a7fcb3b3bd898ea325",
+    "evidence/t1-stair-posture-20261120/front-pair.json": "f4237c7a1d5cd5e3bfbe2c2b924b7c467c50f01b9feba0e4703e003164507010",
+    "evidence/t1-stair-ascent-20261120/target-round-trip-plan.json": "017857a0f866666bd1b8af1bbd8e5c522728205da3d4f690e3684ed09d4b1642",
+    "evidence/t3-valve-20261120/fixed-body-candidates.json": "71e54a28215658d3d2472e4fe0d5505563160f8bd62c6abe62c37f74e5046883",
+    "configs/assets.lock.json": "4f775b3a5b295650a5c2ffb17da74009b96160549b8262cd82d435ead526be11"
+  },
+  "evaluation_scope": {
+    "physical_rows": 14,
+    "planning_rows": 3,
+    "extent": "through-task",
+    "walking_reference": "evidence/stair-corridor-20261121/local-repair/walk50.npz",
+    "walking_reference_sha256": "f9dee535505fcf8032d40176d75e277adb743e5cf86f664ae7bf2537b2241176",
+    "low_load_control": "evidence/stair-corridor-20261121/tracked/low-control/loaded.json.gz",
+    "low_load_control_sha256": "03c5da8f27b93f6a951a9db8d77dccea9312e175f26aceb6f30c7a1df197b012",
+    "control_profile": "rl-mid-replant-k3075-v1",
+    "nominal_endpoint_s": 135.715,
+    "expected_landings_at_endpoint": 20,
+    "original_scheduled_landings": 156,
+    "supplementary_landings": 1
+  },
+  "control_profile": {
+    "name": "rl-mid-replant-k3075-v1",
+    "replant_after_landing_index": 15,
+    "replant_trigger_s": 78.8,
+    "replant_duration_s": 2.8,
+    "replant_leg": "RL",
+    "slip_spring_gain_n_per_m": 3075,
+    "slip_spring_active_s": [
+      116.65,
+      129.4
+    ],
+    "stance_spring_gain_n_per_m": 2500,
+    "terminal_overtravel_deg": 1.3
+  },
+  "frozen_cli": {
+    "common": [
+      "--walk",
+      "evidence/stair-corridor-20261121/local-repair/walk50.npz",
+      "--extent",
+      "through-task",
+      "--corridor-feedback",
+      "--control-profile",
+      "rl-mid-replant-k3075-v1",
+      "--low-run",
+      "evidence/stair-corridor-20261121/tracked/low-control/loaded.json.gz"
+    ],
+    "baseline_timestep_s": 0.001,
+    "timestep_sensitivity_s": 0.0025
+  },
+  "execution_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "CUDA_VISIBLE_DEVICES": "-1"
+  },
+  "source_commit": "2c91d83ff3a222bc2919c3156b93920ebcff5ec4",
+  "source_file_sha256": {
+    "tools/replay_stair_mission.py": "a5e22d394b4dcdbde509f0dd654cfda637a61b5b9f4b4fdd8e050b0a5d2e2ea6",
+    "tools/stair_mission_control_profile.py": "d4a74d5e312b588ad04746e7dc0069be55f3b52630d77f3934c294ee33956fcc",
+    "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+    "tools/stair_mission_reference.py": "9c51e60516804438b53db1c4ee64eb5508a5236657d3158cde8626e266b9caeb",
+    "tools/stair_mission_trace.py": "9c0790c0d9918ba977360381a2eaaa0b5cf6c4dd50e51bfca353771d66158638",
+    "tools/replay_stair_sequence.py": "bcd28c7baa4e0dd869e3e24a754f8061bc35bc4b2292adb579e4ba8aab5d716e",
+    "src/go2_wall/grasp_motion.py": "6533cfe08b39250a33c811970cd189fea3b03c151533d69d15578169a2efaf66",
+    "src/go2_wall/stair_valve.py": "c032a75c4c0c8d356d205dee7490a2a91487890c5f36704a6d468332791c53d3",
+    "src/go2_wall/transition.py": "76dc76ab336f9710543a225b79b3411e5562e91271f5e9c3ad0b730d879a4555",
+    "src/go2_wall/gripper_control.py": "f753eca35d2a0d0902863503571f7d54b5a6e08ef8a9d015e85bc0de04be1057",
+    "src/go2_wall/stair_loads.py": "08b9dd9cd64cda48fd50761402de3a6273004d81300652386c1a190241e49771",
+    "src/go2_wall/mission_verdict.py": "b99448d31bb1c84eb71fcedb4fdd39b8ecc671b0755de7d20b2801995e724b8c",
+    "tools/stair_mission_limits.py": "ca87784e73c96eff026bf4d83de4e3b3e739aad5704fec22b16a1a68b3c82a88",
+    "src/go2_wall/stair_walking_control.py": "baf47c2f255abac60da2ce0767bd2863d4e32857c3fe60103a51921a695645bb"
+  },
+  "source_sha256": {
+    "tools/replay_stair_mission.py": "511f2ba2595fd6fd0691799b0999139a3eb2fdcaa1f5b566176b3f4697adcb79",
+    "tools/stair_mission_control_profile.py": "d4a74d5e312b588ad04746e7dc0069be55f3b52630d77f3934c294ee33956fcc",
+    "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+    "tools/stair_mission_reference.py": "9c51e60516804438b53db1c4ee64eb5508a5236657d3158cde8626e266b9caeb",
+    "tools/stair_mission_trace.py": "9c0790c0d9918ba977360381a2eaaa0b5cf6c4dd50e51bfca353771d66158638",
+    "tools/replay_stair_sequence.py": "bcd28c7baa4e0dd869e3e24a754f8061bc35bc4b2292adb579e4ba8aab5d716e",
+    "src/go2_wall/grasp_motion.py": "01d3717f6f20e08497ee517343512bf5ccdfeb04bb145bca8a0ddf2d0f3eeb22",
+    "src/go2_wall/stair_valve.py": "c032a75c4c0c8d356d205dee7490a2a91487890c5f36704a6d468332791c53d3",
+    "src/go2_wall/transition.py": "6372f217d171df2480f6c2ee5ef91669dc722ea1584212ceba3a0f13ac30fbfc",
+    "src/go2_wall/gripper_control.py": "f753eca35d2a0d0902863503571f7d54b5a6e08ef8a9d015e85bc0de04be1057",
+    "src/go2_wall/stair_loads.py": "08b9dd9cd64cda48fd50761402de3a6273004d81300652386c1a190241e49771",
+    "src/go2_wall/mission_verdict.py": "b99448d31bb1c84eb71fcedb4fdd39b8ecc671b0755de7d20b2801995e724b8c",
+    "tools/stair_mission_limits.py": "ca87784e73c96eff026bf4d83de4e3b3e739aad5704fec22b16a1a68b3c82a88",
+    "src/go2_wall/stair_walking_control.py": "baf47c2f255abac60da2ce0767bd2863d4e32857c3fe60103a51921a695645bb"
+  }
+}

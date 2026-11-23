@@ -1,0 +1,8 @@
+[
+  {"case_id":"hold-01","lateral_m":0.015,"yaw_deg":-1.5,"joint_seed":301,"joint_noise_rad":0.004},
+  {"case_id":"hold-02","lateral_m":-0.015,"yaw_deg":1.5,"joint_seed":302,"joint_noise_rad":0.004},
+  {"case_id":"hold-03","lateral_m":0.025,"yaw_deg":0.5,"joint_seed":303,"joint_noise_rad":0.005},
+  {"case_id":"hold-04","lateral_m":-0.025,"yaw_deg":-0.5,"joint_seed":304,"joint_noise_rad":0.005},
+  {"case_id":"hold-05","lateral_m":0.005,"yaw_deg":2.5,"joint_seed":305,"joint_noise_rad":0.004},
+  {"case_id":"hold-06","lateral_m":-0.005,"yaw_deg":-2.5,"joint_seed":306,"joint_noise_rad":0.004}
+]

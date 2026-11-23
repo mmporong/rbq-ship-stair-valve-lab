@@ -1,0 +1,98 @@
+{
+  "status": "no_156_landing_reference_found",
+  "commit_tested": "dbe915c95f0476e4f71736c42fd2bffd10f32831",
+  "geometry": {
+    "slope_deg": 60.0,
+    "rise_m": 0.19,
+    "going_m": 0.10969655114602891,
+    "arm": "rb1"
+  },
+  "unchanged_criteria": {
+    "reference_sample_s": 0.02,
+    "ik_tolerance_m": 0.002,
+    "collision_tolerance_m": 0.0001,
+    "floor_mu": 0.6,
+    "friction_margin": "repository transition.contacts_for",
+    "torque_limits": "rb1"
+  },
+  "frozen_transform_first_violation": {
+    "planned_time_s": 13.6,
+    "segment": 16,
+    "kind": "shift",
+    "progress": 0.6,
+    "geoms": [
+      "base",
+      "tread3"
+    ],
+    "penetration_m": 0.000684301907967113,
+    "max_foot_ik_error_m": 9.46357790001485e-08
+  },
+  "diagnosed_geometry_rule": {
+    "feet": "Keep each foot on its numbered tread centre; for 50 to 60 degrees at fixed 190 mm rise, shift x by (max(level-1,0) * (going_60-going_50)).",
+    "body": "Do not scale body x only by global stair progress. Before tread3, the feet are still at levels 0 and 1 and therefore do not shift, while tread3 moves 99.465 mm rearward. Use a local collision-clearing pitch arch and re-solve the following support/swing pose.",
+    "first_arch": "At transformed segment 36, approach with nominal pitch+10 deg, reach nominal pitch+15 deg over the obstructing tread, then settle to a re-solved support pose before unloading.",
+    "best_settle_pose": {
+      "base_xyz_m": [
+        0.16610213459788709,
+        -0.019999999999999983,
+        0.7625000000000001
+      ],
+      "pitch_deg": 48.0,
+      "delta_from_frozen_target_xyz_m": [
+        0.02000000000000001,
+        0.040000000000000015,
+        0.015
+      ],
+      "unload_torque_ratio": 0.3805082731411216,
+      "sampled_swing_torque_ratio": 0.3333410405995014
+    }
+  },
+  "best_connected_candidate": {
+    "planned_time_s": 38.05999999999999,
+    "segment": 39,
+    "kind": "RL_swing",
+    "progress": 0.15,
+    "unexpected_overlap_m": null,
+    "first_violation": "foot_ik",
+    "max_foot_ik_error_m": 0.0029273582557775664,
+    "ik_excess_m": 0.0009273582557775664,
+    "landing_milestones_reached": 7,
+    "required_landing_milestones": 156
+  },
+  "search_coverage": {
+    "simple_global_rules": [
+      "body z +5 to +40 mm",
+      "body pitch +5, +10, +15, +20 deg",
+      "combined z and pitch",
+      "support-centroid x transform",
+      "raised shift midpoint",
+      "local pitch arch"
+    ],
+    "settle_endpoint_grid": {
+      "xyz_range_m": "plus/minus 0.03",
+      "step_m": 0.005,
+      "fully_unloadable_poses": 14
+    },
+    "unload_and_swing_common_grid": {
+      "poses_tested": 4374,
+      "pitch_offset_deg": [
+        9.0,
+        14.0
+      ],
+      "xy_range_m": "plus/minus 0.04",
+      "xy_step_m": 0.01,
+      "z_raise_range_m": [
+        0.0,
+        0.04
+      ],
+      "z_step_m": 0.005,
+      "coarse_common_poses": 13,
+      "continuous_20ms_passes": 0
+    },
+    "swing_curves": [
+      "transition.swing_point",
+      "stairs.swing_over_tread"
+    ]
+  },
+  "conclusion": "The 50 degree product remains untouched. Under the fixed 60 degree geometry and unchanged acceptance criteria, no 156-landing/platform/return reference was obtained. The best candidate clears the original body-tread collision and preserves support/friction/torque margin, but fails before the next landing because the RL swing IK error exceeds 2 mm. Physics execution is not valid until a complete planning reference exists."
+}

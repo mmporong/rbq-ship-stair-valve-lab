@@ -1,0 +1,25 @@
+{
+  "method": "MuJoCo geom segmentation plus depth reprojected onto the trunk axis; thin-wall section stress from the four hip and RB1 mount wrenches",
+  "base_geom_ids": [
+    14,
+    15
+  ],
+  "added_overlay_geoms": 0,
+  "samples": [
+    {
+      "time_s": 35.201,
+      "mesh_pixel_count": 14685,
+      "visible_min_mpa": 3.718175810142787e-17,
+      "visible_max_mpa": 0.5501663609878046,
+      "visible_mean_mpa": 0.2616236916232959
+    },
+    {
+      "time_s": 66.241,
+      "mesh_pixel_count": 13862,
+      "visible_min_mpa": 3.020784530648121e-17,
+      "visible_max_mpa": 0.6839549305222246,
+      "visible_mean_mpa": 0.44644605653803876
+    }
+  ],
+  "visible_mean_change_mpa": 0.18482236491474285
+}

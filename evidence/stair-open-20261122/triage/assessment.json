@@ -1,0 +1,203 @@
+{
+  "schema": "rbq_rl_triage_applicability_v1",
+  "triage_agent": {
+    "repository_head": "81a2ff5647b49da2dca2c4f9e6bd15f84fb9e5ef",
+    "registered_control": {
+      "status": "passed_recorded_control_revalidation",
+      "fresh_simulation": false,
+      "task": {
+        "robot": "Go2",
+        "direction": "down",
+        "command_x_m_s": 0.25,
+        "step_height_m": 0.05,
+        "step_width_m": 0.3,
+        "duration_s": 30
+      },
+      "before": {
+        "command_preserved": true,
+        "reset_count": 0,
+        "inverted_samples": 888,
+        "first_inverted_s": 12.26,
+        "minimum_body_up_z": -0.9888558003648724,
+        "tracking_rmse_xy_m_s": 0.23284981411905725,
+        "dx_m": 2.761855363845825,
+        "dz_m": -0.6000061929225922,
+        "acceptance": {
+          "min_progress_m": 3.75,
+          "max_height_change_m": -0.3,
+          "min_body_up_z": 0.5,
+          "max_tracking_rmse_xy_m_s": 0.25,
+          "inverted_samples": 0,
+          "reset_count": 0
+        },
+        "accepted": false
+      },
+      "after": {
+        "command_preserved": true,
+        "reset_count": 0,
+        "inverted_samples": 0,
+        "first_inverted_s": null,
+        "minimum_body_up_z": 0.7996094892775596,
+        "tracking_rmse_xy_m_s": 0.06402938994462828,
+        "dx_m": 7.217530727386475,
+        "dz_m": -0.35295048356056213,
+        "acceptance": {
+          "min_progress_m": 3.75,
+          "max_height_change_m": -0.3,
+          "min_body_up_z": 0.5,
+          "max_tracking_rmse_xy_m_s": 0.25,
+          "inverted_samples": 0,
+          "reset_count": 0
+        },
+        "accepted": true
+      },
+      "probe_receipts_reproduced": true,
+      "decision_contract_reproduced": true,
+      "authorization_reproduced": true,
+      "summary_sha256": "cb09eaee18a3a89f887bb46a71b59e7393a283d0eca821b8bd229d6ec1739f95",
+      "scope": "This proves the recorded standard-Go2 control remains internally valid; it does not transfer its effect to RBQ-10+RB1."
+    },
+    "rbq_prepare_only": {
+      "status": "prepared",
+      "dependencies_ok": true,
+      "config_ok": true,
+      "telemetry_evidence_count": 259,
+      "telemetry_group_count": 37,
+      "ready_for_model_execute": false,
+      "model_calls": 0,
+      "checks_executed": false,
+      "cause_confirmed": false,
+      "correction_applied": false,
+      "policy_recovery_verified": false
+    },
+    "registered_adaptation_compatible_with_rbq_task": false,
+    "task_mismatches": {
+      "robot": [
+        "Go2",
+        "RBQ-10+RB1"
+      ],
+      "direction": [
+        "down",
+        "up"
+      ],
+      "step_height_m": [
+        0.05,
+        0.19
+      ],
+      "geometry": [
+        "0.05 m high, 0.30 m wide descending steps",
+        "50 deg, 0.19 m rise ship stair"
+      ]
+    }
+  },
+  "fresh_rbq_cpu_evaluation": {
+    "task": {
+      "robot": "RBQ-10+RB1",
+      "direction": "up",
+      "slope_deg": 50,
+      "rise_m": 0.19,
+      "goal": "reach the work platform and operate the valve"
+    },
+    "baseline_v7": {
+      "checkpoint": "model_8997.pt",
+      "checkpoint_sha256": "e1f146bd3d583b7c9b56870756b90abdfa6b43c8eb00a30ec383202db7bf4341",
+      "trials": 3,
+      "work_platform_reached": 0,
+      "round_trip_passed": 0,
+      "maximum_supported_tread_by_trial": [
+        1,
+        1,
+        1
+      ],
+      "maximum_forward_progress_m_by_trial": [
+        1.0087112762274522,
+        1.0153039197039304,
+        1.047440063907442
+      ],
+      "first_illegal_contact_force_n_by_trial": [
+        2337.116348678602,
+        2152.713897258701,
+        1384.098521166034
+      ],
+      "termination_by_trial": [
+        "illegal_contact",
+        "illegal_contact",
+        "illegal_contact"
+      ]
+    },
+    "comparison_v8": {
+      "checkpoint": "model_9496.pt",
+      "checkpoint_sha256": "68c8aba08b1bbc02bdefbec780836b435bc5e23f624349218e18d7bd98e49a00",
+      "trials": 3,
+      "work_platform_reached": 0,
+      "round_trip_passed": 0,
+      "maximum_supported_tread_by_trial": [
+        1,
+        1,
+        1
+      ],
+      "maximum_forward_progress_m_by_trial": [
+        1.017397728864562,
+        1.0520950510950395,
+        1.0119830883764724
+      ],
+      "first_illegal_contact_force_n_by_trial": [
+        1679.7012477217677,
+        1346.728796182148,
+        1337.811580417515
+      ],
+      "termination_by_trial": [
+        "illegal_contact",
+        "illegal_contact",
+        "illegal_contact"
+      ]
+    },
+    "paired_v8_minus_v7": [
+      {
+        "speed_mps": 0.35,
+        "forward_progress_delta_m": 0.008686452637109668,
+        "supported_tread_delta": 0,
+        "work_platform_reached_delta": 0
+      },
+      {
+        "speed_mps": 0.5,
+        "forward_progress_delta_m": 0.03679113139110917,
+        "supported_tread_delta": 0,
+        "work_platform_reached_delta": 0
+      },
+      {
+        "speed_mps": 0.6,
+        "forward_progress_delta_m": -0.03545697553096954,
+        "supported_tread_delta": 0,
+        "work_platform_reached_delta": 0
+      }
+    ],
+    "agent_selected_or_authorized_v8": false,
+    "comparison_interpretation": "V8 is a historical human-designed termination-penalty experiment, not an RL Triage Agent intervention."
+  },
+  "agent_effect_on_rbq": {
+    "measured": false,
+    "improvement_verified": false,
+    "reason": "The repository ingested the RBQ training telemetry, but no registered RBQ check, RBQ adaptation authorization, adapted checkpoint, or held-out post-evaluation exists."
+  },
+  "minimum_independent_host_adapter": {
+    "required": true,
+    "inputs": [
+      "frozen RBQ checkpoint and exact CPU bundle",
+      "training telemetry and source hashes",
+      "fresh matched 50 deg, 190 mm route traces"
+    ],
+    "registered_checks": [
+      "task and observation integrity",
+      "body-to-tread clearance and stability",
+      "actuator saturation and torque limits",
+      "PPO optimizer update count"
+    ],
+    "evaluation": "Freeze task, command grid, seed split, simulator and acceptance before intervention; compare baseline, agent-selected intervention, and no-intervention or rule-selected control on unseen seeds. Count work-platform reach and valve-ready stability as primary outcomes."
+  },
+  "resource_use": {
+    "new_api_calls": 0,
+    "new_gpu_training_runs": 0,
+    "new_gpu_evaluations": 0
+  }
+}

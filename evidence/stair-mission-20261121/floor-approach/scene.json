@@ -1,0 +1,26 @@
+{
+  "extent": "approach",
+  "case": "nominal",
+  "settings": {
+    "slope_deg": 50.0,
+    "rise_m": 0.19,
+    "floor_mu": 0.6,
+    "pad_mu": 0.8,
+    "resistance_nm": 10.0,
+    "handle_length_m": 0.12,
+    "finger_force_n": 100.0,
+    "slide_loss_n": 30.0
+  },
+  "centre_m": [
+    0.9012157196947328,
+    0.0,
+    1.58
+  ],
+  "start_deg": 270,
+  "sense": -1,
+  "timestep_s": 0.005,
+  "impratio": 100.0,
+  "gain": 2.5,
+  "anchor_time_s": 89.6,
+  "motion": {}
+}

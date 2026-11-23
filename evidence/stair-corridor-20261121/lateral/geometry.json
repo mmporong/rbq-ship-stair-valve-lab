@@ -1,0 +1,18 @@
+{
+  "scope": "kinematic walking samples before and after manipulation",
+  "walking_sha256": "94ce57fd711bc5e5eea2bdf5f6e8ec8301f9a2033363a143dbda9898e2a50a1f",
+  "parent_walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+  "footprint_profile": "fixed-side-72-upper-v2",
+  "samples": 36801,
+  "changed_pose_samples": 28104,
+  "scheduled_landings": 156,
+  "walking_duration_s": 875.84,
+  "task_anchor_s": 89.6,
+  "max_foot_ik_error_m": 0.0019339454488262655,
+  "max_unexpected_penetration_m": 8.453689588177335e-05,
+  "min_closed_valve_clearance_m": 0.011065043491240585,
+  "nominal_time_at_closest_closed_valve_s": 135.84000000000006,
+  "ik_limit_m": 0.002,
+  "penetration_limit_m": 0.0001,
+  "verified": true
+}

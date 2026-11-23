@@ -1,0 +1,5 @@
+{
+  "schema": "nemotron35_task_context_v1",
+  "task": "RBQ10RB1-50deg-190mm-stair-valve-open",
+  "observed_problem": "Frozen RBQ-10+RB1 policies model_8997 and model_9496 do not reach the work platform on a 50 degree, 190 mm rise ship stair. In matched MuJoCo CPU evaluations they load at most the first tread and terminate when the body contacts tread 3. Determine whether the registered RL Triage Agent can diagnose or authorize an intervention for this run without changing the task, and preserve HOLD when the registered checks or adaptation recipe do not cover this robot and geometry."
+}

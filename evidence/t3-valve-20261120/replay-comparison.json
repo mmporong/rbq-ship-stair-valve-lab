@@ -1,0 +1,292 @@
+{
+  "initial_soft_constraint": {
+    "arm": "rb1",
+    "slope_deg": 50.0,
+    "rise_m": 0.19,
+    "candidate": 0,
+    "motion_s": 8.75,
+    "hinge_frictionloss_nm": 10.0,
+    "controller_metrics": {
+      "passed": false,
+      "fell": false,
+      "saturated_steps": 0,
+      "qp_failed_ticks": 0,
+      "qp_relaxed_ticks": 0,
+      "max_ratio": 0.4031867776473934,
+      "max_base_track_mm": 16.301901833640333,
+      "max_tilt_track_deg": 12.308381829768178,
+      "return_error_mm": 2.8052008822345305,
+      "feet_down_at_end": false,
+      "max_stance_slip_mm": {
+        "FL": 4.323,
+        "FR": 3.316,
+        "RL": 3.702,
+        "RR": 2.895
+      },
+      "max_friction_use": {
+        "FL": 0.406,
+        "FR": 0.42,
+        "RL": 0.43,
+        "RR": 0.416
+      },
+      "unexpected_contacts_n": {},
+      "floor_mu": 0.6,
+      "wall_mu": 0.6,
+      "physics": {
+        "timestep": 0.005
+      },
+      "gains_scale": 1.5,
+      "mode": "force",
+      "seconds": 16.0
+    },
+    "valve": {
+      "start_deg": 0.07279554728577341,
+      "max_angle_deg": 97.12793605739958,
+      "min_hold_angle_deg": 90.006515328862,
+      "hold_s": 5.0,
+      "max_base_shift_mm": 16.7586296672513,
+      "max_foot_slip_mm": 3.3569170512902335,
+      "max_friction_use": 0.4296993606623814,
+      "min_foot_normal_force_n": 64.20519851705369,
+      "loaded_motion_samples": 152,
+      "min_motion_resistance_nm": 0.5702784399534582,
+      "max_motion_resistance_nm": 5.841273994824306,
+      "max_grip_gap_m": 0.0015535193511143504,
+      "verified": false
+    }
+  },
+  "direct_damping_without_end_preload": {
+    "arm": "rb1",
+    "slope_deg": 50.0,
+    "rise_m": 0.19,
+    "candidate": 0,
+    "motion_s": 10.75,
+    "settle_s": 4.75,
+    "hinge_frictionloss_nm": 10.0,
+    "foot_treads": [
+      5,
+      5,
+      3,
+      3
+    ],
+    "foot_order": [
+      "FL",
+      "FR",
+      "RL",
+      "RR"
+    ],
+    "grip_model": "ideal_pin",
+    "controller_metrics": {
+      "passed": false,
+      "fell": false,
+      "saturated_steps": 0,
+      "qp_failed_ticks": 0,
+      "qp_relaxed_ticks": 0,
+      "max_ratio": 0.4284669875765974,
+      "max_base_track_mm": 2.6938699132520485,
+      "max_tilt_track_deg": 0.5168901281311856,
+      "return_error_mm": 0.6828154557954286,
+      "feet_down_at_end": false,
+      "max_stance_slip_mm": {
+        "FL": 5.714,
+        "FR": 4.402,
+        "RL": 5.182,
+        "RR": 3.986
+      },
+      "max_friction_use": {
+        "FL": 0.417,
+        "FR": 0.443,
+        "RL": 0.47,
+        "RR": 0.375
+      },
+      "unexpected_contacts_n": {},
+      "floor_mu": 0.6,
+      "wall_mu": 0.6,
+      "physics": {
+        "timestep": 0.005
+      },
+      "gains_scale": 2.8,
+      "mode": "force",
+      "seconds": 22.0
+    },
+    "valve": {
+      "start_deg": 0.1442803977380465,
+      "max_angle_deg": 89.73312819347835,
+      "final_angle_deg": 89.72209561708968,
+      "min_hold_angle_deg": 89.69069514971356,
+      "max_hold_angle_deg": 89.73312819347835,
+      "hold_s": 5.0,
+      "max_base_shift_mm": 2.5918989599135798,
+      "max_foot_slip_mm": 4.87308609682638,
+      "max_friction_use": 0.47001755528595424,
+      "min_foot_normal_force_n": 49.413925076372614,
+      "min_expected_tread_force_n": 49.413925076372614,
+      "loaded_motion_samples": 944,
+      "min_motion_resistance_nm": 10.0,
+      "max_motion_resistance_nm": 10.0,
+      "max_grip_gap_m": 0.0016765155966206788,
+      "max_abs_pin_torque_nm": 10.000966900105938,
+      "verified": false
+    }
+  },
+  "stand_stance_with_end_preload": {
+    "arm": "rb1",
+    "slope_deg": 50.0,
+    "rise_m": 0.19,
+    "candidate": 0,
+    "motion_s": 8.75,
+    "settle_s": 5.75,
+    "hold_feedforward_nm": 3.0,
+    "observation_step_s": 0.005,
+    "hinge_frictionloss_nm": 10.0,
+    "foot_treads": [
+      5,
+      5,
+      3,
+      3
+    ],
+    "foot_order": [
+      "FL",
+      "FR",
+      "RL",
+      "RR"
+    ],
+    "grip_model": "ideal_pin",
+    "controller_metrics": {
+      "passed": false,
+      "fell": false,
+      "saturated_steps": 0,
+      "qp_failed_ticks": 0,
+      "qp_relaxed_ticks": 0,
+      "max_ratio": 0.4359204419366092,
+      "max_base_track_mm": 3.6642416165727685,
+      "max_tilt_track_deg": 0.48023338013085864,
+      "return_error_mm": 0.6443847398470449,
+      "feet_down_at_end": false,
+      "max_stance_slip_mm": {
+        "FL": 5.641,
+        "FR": 4.348,
+        "RL": 5.025,
+        "RR": 3.867
+      },
+      "max_friction_use": {
+        "FL": 0.417,
+        "FR": 0.445,
+        "RL": 0.472,
+        "RR": 0.381
+      },
+      "unexpected_contacts_n": {},
+      "floor_mu": 0.6,
+      "wall_mu": 0.6,
+      "physics": {
+        "timestep": 0.005
+      },
+      "gains_scale": 2.4,
+      "mode": "force",
+      "seconds": 21.0
+    },
+    "valve": {
+      "start_deg": 0.22503419889552728,
+      "max_angle_deg": 90.03331804956709,
+      "final_angle_deg": 89.9865149586803,
+      "min_hold_angle_deg": 89.978672599375,
+      "max_hold_angle_deg": 90.01088826797049,
+      "hold_s": 5.0,
+      "max_base_shift_mm": 3.3397637431205167,
+      "max_foot_slip_mm": 4.6862271462808405,
+      "max_friction_use": 0.47207575198524615,
+      "min_foot_normal_force_n": 49.02812822644284,
+      "min_expected_tread_force_n": 49.02812822644284,
+      "loaded_motion_samples": 1605,
+      "loaded_motion_angle_range_deg": [
+        5.013418602109757,
+        84.93911408995803
+      ],
+      "min_motion_resistance_nm": 10.0,
+      "max_motion_resistance_nm": 10.0,
+      "max_grip_gap_m": 0.0017236468716505012,
+      "max_abs_pin_torque_nm": 10.001463029214847,
+      "verified": true
+    }
+  },
+  "lower_body_with_end_preload": {
+    "arm": "rb1",
+    "slope_deg": 50.0,
+    "rise_m": 0.19,
+    "candidate": 4,
+    "motion_s": 8.75,
+    "settle_s": 5.75,
+    "hold_feedforward_nm": 3.0,
+    "observation_step_s": 0.005,
+    "hinge_frictionloss_nm": 10.0,
+    "foot_treads": [
+      5,
+      5,
+      3,
+      3
+    ],
+    "foot_order": [
+      "FL",
+      "FR",
+      "RL",
+      "RR"
+    ],
+    "grip_model": "ideal_pin",
+    "controller_metrics": {
+      "passed": false,
+      "fell": false,
+      "saturated_steps": 0,
+      "qp_failed_ticks": 0,
+      "qp_relaxed_ticks": 0,
+      "max_ratio": 0.4535359370129217,
+      "max_base_track_mm": 5.620199439585087,
+      "max_tilt_track_deg": 0.4022285087785314,
+      "return_error_mm": 0.8620643587829333,
+      "feet_down_at_end": false,
+      "max_stance_slip_mm": {
+        "FL": 5.426,
+        "FR": 4.158,
+        "RL": 4.949,
+        "RR": 3.977
+      },
+      "max_friction_use": {
+        "FL": 0.443,
+        "FR": 0.47,
+        "RL": 0.423,
+        "RR": 0.371
+      },
+      "unexpected_contacts_n": {},
+      "floor_mu": 0.6,
+      "wall_mu": 0.6,
+      "physics": {
+        "timestep": 0.005
+      },
+      "gains_scale": 2.5,
+      "mode": "force",
+      "seconds": 21.0
+    },
+    "valve": {
+      "start_deg": 0.16069765184266388,
+      "max_angle_deg": 90.0162220831127,
+      "final_angle_deg": 90.00073082250168,
+      "min_hold_angle_deg": 89.97710983328531,
+      "max_hold_angle_deg": 90.0162220831127,
+      "hold_s": 5.0,
+      "max_base_shift_mm": 5.247261437162306,
+      "max_foot_slip_mm": 4.435510093673119,
+      "max_friction_use": 0.47037595566640455,
+      "min_foot_normal_force_n": 52.740376271451744,
+      "min_expected_tread_force_n": 52.740376271451744,
+      "loaded_motion_samples": 1647,
+      "loaded_motion_angle_range_deg": [
+        5.032553700879261,
+        84.9208164271999
+      ],
+      "min_motion_resistance_nm": 10.0,
+      "max_motion_resistance_nm": 10.0,
+      "max_grip_gap_m": 0.00179156367600958,
+      "max_abs_pin_torque_nm": 10.001485003721008,
+      "verified": true
+    }
+  }
+}

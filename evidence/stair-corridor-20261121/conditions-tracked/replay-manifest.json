@@ -1,0 +1,173 @@
+{
+  "raw_policy": "do not duplicate multi-GB raw; verify in-place by SHA-256",
+  "physical": {
+    "nominal": {
+      "result": ".omx/mission-success-20261121/conditions-tracked/nominal/result.json",
+      "scene": ".omx/mission-success-20261121/conditions-tracked/nominal/scene.json",
+      "raw": ".omx/mission-success-20261121/conditions-tracked/nominal/mission.npz",
+      "result_sha256": "9b9f8dcae00cf172626e7e958b49d5138d45b9721e82f6cdc7f7be6d8c1b10da",
+      "scene_sha256": "e27a8cb1d866471d84d286011b8abdc2ec362759cc30f87ee68f11a470626f2a",
+      "raw_sha256": "fb2f30178dc6c08c0e411c6521b825d970b7430cbdca7db94d79a5cc7b97277b"
+    },
+    "floor_mu_050": {
+      "result": ".omx/mission-success-20261121/conditions-tracked/floor_mu_050/result.json",
+      "scene": ".omx/mission-success-20261121/conditions-tracked/floor_mu_050/scene.json",
+      "raw": ".omx/mission-success-20261121/conditions-tracked/floor_mu_050/mission.npz",
+      "result_sha256": "a841aef0eee4e08f388d582b6fcce2a1c71cde3af6cc33f37e6acd982a42cd07",
+      "scene_sha256": "14d24173de00be3f30d30b745590f237429a0dd0e70853e214c0468f23be52c6",
+      "raw_sha256": "9ae6ffbc2b15f555a776bc5c9b15039331ccdc3937ab21130365eab9040c01a9"
+    },
+    "floor_mu_080": {
+      "result": ".omx/mission-success-20261121/conditions-tracked/floor_mu_080/result.json",
+      "scene": ".omx/mission-success-20261121/conditions-tracked/floor_mu_080/scene.json",
+      "raw": ".omx/mission-success-20261121/conditions-tracked/floor_mu_080/mission.npz",
+      "result_sha256": "aa1b7b3af2008401a922e2123c8ce32bae27ebf883377a1bc67ecf699c648054",
+      "scene_sha256": "79b6bdd92e48b133ed8f6690339c326feed02320d4bc0e2b654c1c19d285ebd5",
+      "raw_sha256": "73719b5d87be6521c9868eccb1a258e87e557e5a7aaf93dcc941519fa06405c9"
+    },
+    "resistance_5": {
+      "result": ".omx/mission-success-20261121/conditions-tracked/resistance_5/result.json",
+      "scene": ".omx/mission-success-20261121/conditions-tracked/resistance_5/scene.json",
+      "raw": ".omx/mission-success-20261121/conditions-tracked/resistance_5/mission.npz",
+      "result_sha256": "1ccacdcae82b3d77ddd35d5f0d3e9b5be7dcbb64404834ab7bfa85d841daeb86",
+      "scene_sha256": "22a525ba49825fb8151d2c415dfc91635b6ea096e5c01800e1e5bc814ad3ecee",
+      "raw_sha256": "6fa2223ec8ee97006c21b2a13ee0ff57b951e0a902ec581faf2c86ad672cd19c"
+    },
+    "resistance_15": {
+      "result": ".omx/mission-success-20261121/conditions-tracked/resistance_15/result.json",
+      "scene": ".omx/mission-success-20261121/conditions-tracked/resistance_15/scene.json",
+      "raw": ".omx/mission-success-20261121/conditions-tracked/resistance_15/mission.npz",
+      "result_sha256": "8193430d3ff03fc3bcc95a64c5c5daf4ea30dcfb4ba093a84ecb3938f4324cdc",
+      "scene_sha256": "9ef5194550d2819a67e2d348734efb8be75cc70a5f315014f71016b3d9fab5c7",
+      "raw_sha256": "df73f942b175626ce35e54b3e5ee3d3d6c1aa820436e58eaa92d7db31dafba17"
+    },
+    "sensitivity_lever_m_0_1": {
+      "result": ".omx/mission-success-20261121/conditions-tracked/sensitivity_lever_m_0_1/result.json",
+      "scene": ".omx/mission-success-20261121/conditions-tracked/sensitivity_lever_m_0_1/scene.json",
+      "raw": ".omx/mission-success-20261121/conditions-tracked/sensitivity_lever_m_0_1/mission.npz",
+      "result_sha256": "7133df7d52e933ac45e8c163cf908f993da274f08c88e3005637bb8f56371c33",
+      "scene_sha256": "48359cdb07ddc9f16860f7ca872beacf212a18ff9e696cbdfbec9d62e5960ed7",
+      "raw_sha256": "187d8bb233fb8519f3dee2f1011e1e525b51d9cbd82f972af16b497f01b675b4"
+    },
+    "sensitivity_lever_m_0_14": {
+      "result": ".omx/mission-success-20261121/conditions-tracked/sensitivity_lever_m_0_14/result.json",
+      "scene": ".omx/mission-success-20261121/conditions-tracked/sensitivity_lever_m_0_14/scene.json",
+      "raw": ".omx/mission-success-20261121/conditions-tracked/sensitivity_lever_m_0_14/mission.npz",
+      "result_sha256": "ef1d6188d235f2d5eb552f45f061df32f2367644306f58f3b41a2fceb855baf2",
+      "scene_sha256": "609798f4136b48b0c87fd7ecc49eb05e8ff054c98a55c07f84df5ea708a1fab1",
+      "raw_sha256": "dc531e544fa7aea2eeca7b23e47c900879275d9c25597b534c8d9cc8c0dddf20"
+    },
+    "sensitivity_pad_mu_0_6": {
+      "result": ".omx/mission-success-20261121/conditions-tracked/sensitivity_pad_mu_0_6/result.json",
+      "scene": ".omx/mission-success-20261121/conditions-tracked/sensitivity_pad_mu_0_6/scene.json",
+      "raw": ".omx/mission-success-20261121/conditions-tracked/sensitivity_pad_mu_0_6/mission.npz",
+      "result_sha256": "7bd6b4378b9490b49d2b004227a6980c5830a334268cedd2fb361e8ca9184f50",
+      "scene_sha256": "9db829a0549c5e10ba628d1d588e05644294bacb7b2434bae4b1a9fd83ebbf52",
+      "raw_sha256": "a46147fc5cfa2aa10d17da70a422a6a680307840c05b6c0216db40bec809a4c9"
+    },
+    "sensitivity_pad_mu_1": {
+      "result": ".omx/mission-success-20261121/conditions-tracked/sensitivity_pad_mu_1/result.json",
+      "scene": ".omx/mission-success-20261121/conditions-tracked/sensitivity_pad_mu_1/scene.json",
+      "raw": ".omx/mission-success-20261121/conditions-tracked/sensitivity_pad_mu_1/mission.npz",
+      "result_sha256": "493d8016e2d4e242d05d21aa2d29c9dfcc194db47d651ea89d9768ce4a103ea3",
+      "scene_sha256": "e80601eb4acf688138becf801c9b9c84160ec2a5942ff1968f587c7926b9d0fa",
+      "raw_sha256": "7d2b697ce5f98094072ef2fc2520350d3ba57daa56208a890ac5367565cd4ad9"
+    },
+    "sensitivity_finger_force_limit_n_75": {
+      "result": ".omx/mission-success-20261121/conditions-tracked/sensitivity_finger_force_limit_n_75/result.json",
+      "scene": ".omx/mission-success-20261121/conditions-tracked/sensitivity_finger_force_limit_n_75/scene.json",
+      "raw": ".omx/mission-success-20261121/conditions-tracked/sensitivity_finger_force_limit_n_75/mission.npz",
+      "result_sha256": "73c6d0a0ce57aa7aceec9597b6a9df31aa977f167f66aa1387f040bcf1b649e1",
+      "scene_sha256": "5d9af3e5d0ee4753f7f8fb64a994ae1eed613cd031f0170ba20e6da8551fe4c8",
+      "raw_sha256": "56fa2d0ee9e3511c8dfe91d1e10b64e4b7a648eb6ab21b69d69034bf07b8c62d"
+    },
+    "sensitivity_finger_slide_frictionloss_n_15": {
+      "result": ".omx/mission-success-20261121/conditions-tracked/sensitivity_finger_slide_frictionloss_n_15/result.json",
+      "scene": ".omx/mission-success-20261121/conditions-tracked/sensitivity_finger_slide_frictionloss_n_15/scene.json",
+      "raw": ".omx/mission-success-20261121/conditions-tracked/sensitivity_finger_slide_frictionloss_n_15/mission.npz",
+      "result_sha256": "369ffbb77a15d3b7c14f1efcfb750dd80463a61604f0b759669b71534ec60b02",
+      "scene_sha256": "2018aceaa24e4e3ad572ac5a49b6fe0f534fa5d986c9ea97f878b1b7d6571fd8",
+      "raw_sha256": "a2f167e03d31d4290868c06050d603276c86afc71d89d08c2899258f171d94d8"
+    },
+    "sensitivity_arm_limits_named_lims_ex_joint_limits": {
+      "result": ".omx/mission-success-20261121/conditions-tracked/sensitivity_arm_limits_named_lims_ex_joint_limits/result.json",
+      "scene": ".omx/mission-success-20261121/conditions-tracked/sensitivity_arm_limits_named_lims_ex_joint_limits/scene.json",
+      "raw": ".omx/mission-success-20261121/conditions-tracked/sensitivity_arm_limits_named_lims_ex_joint_limits/mission.npz",
+      "result_sha256": "6f3068903439681c39583ee03f9994b236f52a1aca201ec52dd4e493175c97d9",
+      "scene_sha256": "bac1c8b20ca0c58806cb9528717f12fe88372f8ce9238ba206e244e07a9bff5e",
+      "raw_sha256": "57820fbfe0a823e7caefad41b5b7e36e69fa7c86730b8be7c79703369c6f49e0"
+    },
+    "sensitivity_timestep_s_0_0025": {
+      "result": ".omx/mission-success-20261121/conditions-tracked/sensitivity_timestep_s_0_0025/result.json",
+      "scene": ".omx/mission-success-20261121/conditions-tracked/sensitivity_timestep_s_0_0025/scene.json",
+      "raw": ".omx/mission-success-20261121/conditions-tracked/sensitivity_timestep_s_0_0025/mission.npz",
+      "result_sha256": "25db69a2a6fc4c38f235e9e05f7163acc2fb481cb00c947beb0df3300fbe147c",
+      "scene_sha256": "cef5de1d692010594e5170bff764398cec361c3a45efa7b156cf980bfe541f99",
+      "raw_sha256": "a97e84f28f6f46f22892506b64fbfb0c7984ed11315d9bdde407cc9ecf82ecc9"
+    },
+    "sensitivity_impratio_10": {
+      "result": ".omx/mission-success-20261121/conditions-tracked/sensitivity_impratio_10/result.json",
+      "scene": ".omx/mission-success-20261121/conditions-tracked/sensitivity_impratio_10/scene.json",
+      "raw": ".omx/mission-success-20261121/conditions-tracked/sensitivity_impratio_10/mission.npz",
+      "result_sha256": "7e69f7d768dadbb8368d3fe9693d23dacd25a182d75977712f8a6164fe51c741",
+      "scene_sha256": "0eea50c89d1bb23d41ee506e811c3d4a57fa5251a811bc0ea81c408f7114f39c",
+      "raw_sha256": "9613c7a3b00a548c71206b901a70cbf4cd9b32d1e078f2706efb847d5d216025"
+    }
+  },
+  "planning": {
+    "slope_60": {
+      "failure": "evidence/stair-mission-20261121/conditions/v2/condition-60.failure.json",
+      "failure_sha256": "b5d9b3c8c089276d4b3f30b4e4cd92b9296a6ee51747161c06bc333075a5e0af",
+      "planner_source_sha256": {
+        "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+        "tools/replay_stair_sequence.py": "b1f8584915aeb189c825d9a95c16c20551e5af50211c8372a65550eeb4394e24",
+        "tools/probe_stair_transfer.py": "a9208f54d5df499e158bb3f92ed36457cb8bd833297cf7fdcfe4f98639d6a39f",
+        "tools/replay_stair_entry.py": "8bd0a7e2a5f61b7415b7fe35d4bef59348f5f6bf4e0ba484a36f969e9d92b80c",
+        "tools/replay_stair_transfer.py": "d4e0fe0554fffaff751791ccc47353c65683f5e2376af4e17261b0917f789514",
+        "src/go2_wall/pose_search.py": "f88f4e4c632e7ee70f840525ccfdf37996db4281f0a732bd5167402fd70a1cbf",
+        "src/go2_wall/stairs.py": "a0dff6cef937dc81a1f3ac126382dd9ec0bd243111c5e825cd5017d3de35696f",
+        "src/go2_wall/transition.py": "2e1e3a502876854c4a6126b522bfd3f65e92bbeff33e0880c61e30e831bb87b1",
+        "src/go2_wall/robot.py": "8c4bf030f05ee4fd7e05a9d96049eacf8d6a7d4589c1f181107c84101131ebb4",
+        "src/go2_wall/statics.py": "30a9b1da0e6b057af33b4012d43487907296d5412e5447afd61e7b9f5e070841"
+      }
+    },
+    "rise_165": {
+      "failure": "evidence/stair-mission-20261121/conditions/v2/condition-165.failure.json",
+      "failure_sha256": "561e3b2f67cedf0bfba6ea80ccc9d7f2ccee3d80246dac3432273f2286d6fe45",
+      "planner_source_sha256": {
+        "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+        "tools/replay_stair_sequence.py": "b1f8584915aeb189c825d9a95c16c20551e5af50211c8372a65550eeb4394e24",
+        "tools/probe_stair_transfer.py": "a9208f54d5df499e158bb3f92ed36457cb8bd833297cf7fdcfe4f98639d6a39f",
+        "tools/replay_stair_entry.py": "8bd0a7e2a5f61b7415b7fe35d4bef59348f5f6bf4e0ba484a36f969e9d92b80c",
+        "tools/replay_stair_transfer.py": "d4e0fe0554fffaff751791ccc47353c65683f5e2376af4e17261b0917f789514",
+        "src/go2_wall/pose_search.py": "f88f4e4c632e7ee70f840525ccfdf37996db4281f0a732bd5167402fd70a1cbf",
+        "src/go2_wall/stairs.py": "a0dff6cef937dc81a1f3ac126382dd9ec0bd243111c5e825cd5017d3de35696f",
+        "src/go2_wall/transition.py": "2e1e3a502876854c4a6126b522bfd3f65e92bbeff33e0880c61e30e831bb87b1",
+        "src/go2_wall/robot.py": "8c4bf030f05ee4fd7e05a9d96049eacf8d6a7d4589c1f181107c84101131ebb4",
+        "src/go2_wall/statics.py": "30a9b1da0e6b057af33b4012d43487907296d5412e5447afd61e7b9f5e070841"
+      }
+    },
+    "rise_200": {
+      "failure": "evidence/stair-mission-20261121/conditions/v2/condition-200.failure.json",
+      "failure_sha256": "3d2a741935b8ab2ce016483eb2bc63167408a400816c65d3913fea77fcbf1c92",
+      "planner_source_sha256": {
+        "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+        "tools/replay_stair_sequence.py": "b1f8584915aeb189c825d9a95c16c20551e5af50211c8372a65550eeb4394e24",
+        "tools/probe_stair_transfer.py": "a9208f54d5df499e158bb3f92ed36457cb8bd833297cf7fdcfe4f98639d6a39f",
+        "tools/replay_stair_entry.py": "8bd0a7e2a5f61b7415b7fe35d4bef59348f5f6bf4e0ba484a36f969e9d92b80c",
+        "tools/replay_stair_transfer.py": "d4e0fe0554fffaff751791ccc47353c65683f5e2376af4e17261b0917f789514",
+        "src/go2_wall/pose_search.py": "f88f4e4c632e7ee70f840525ccfdf37996db4281f0a732bd5167402fd70a1cbf",
+        "src/go2_wall/stairs.py": "a0dff6cef937dc81a1f3ac126382dd9ec0bd243111c5e825cd5017d3de35696f",
+        "src/go2_wall/transition.py": "2e1e3a502876854c4a6126b522bfd3f65e92bbeff33e0880c61e30e831bb87b1",
+        "src/go2_wall/robot.py": "8c4bf030f05ee4fd7e05a9d96049eacf8d6a7d4589c1f181107c84101131ebb4",
+        "src/go2_wall/statics.py": "30a9b1da0e6b057af33b4012d43487907296d5412e5447afd61e7b9f5e070841"
+      }
+    }
+  },
+  "commands": {
+    "aggregate_policy": "The assembler calls assess_stair_conditions.aggregate once per controller-source revision partition and once for planning evidence.",
+    "rebuild": ".venv/Scripts/python .omx/mission-success-20261121/t4-conditions/assemble.py --source-root .omx/mission-success-20261121/conditions-tracked --output-root evidence/stair-corridor-20261121/conditions-tracked",
+    "tracked_rebuild": ".venv/Scripts/python .omx/mission-success-20261121/t4-conditions/assemble.py --source-root .omx/mission-success-20261121/conditions-tracked --output-root evidence/stair-corridor-20261121/conditions-tracked",
+    "render_planning": "use assess_stair_conditions.render_planning_snapshot on the three *.failure.json files"
+  }
+}

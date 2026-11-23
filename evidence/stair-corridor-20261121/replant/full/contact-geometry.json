@@ -1,0 +1,107 @@
+{
+  "raw_sha256": "b86c249c84e93a852f73d58ccdae1366acec49eac984a338223ab8557b000f11",
+  "scene_sha256": "71ec72539567873b993ae52ce485e1bc100ef81699484186a60a446077429b8e",
+  "limit_n": 10.0,
+  "events": [
+    {
+      "event": "first_over_limit",
+      "sample_index": 190829,
+      "state_time_s": 190.83000000054713,
+      "recorded_force_n": 575.2436662387622,
+      "contacts_in_forward_solve": [
+        {
+          "bodies": [
+            "RL_foot",
+            "FL_calf"
+          ],
+          "geoms": [
+            "RL",
+            null
+          ],
+          "geom_ids": [
+            31,
+            45
+          ],
+          "location_world_m": [
+            0.45447450747217205,
+            0.32768564778232045,
+            0.7885677489415401
+          ],
+          "signed_distance_m": 0.001782618068307755,
+          "recomputed_force_n": 575.2436687100957
+        }
+      ]
+    },
+    {
+      "event": "peak",
+      "sample_index": 191009,
+      "state_time_s": 191.010000000548,
+      "recorded_force_n": 14036.593628511677,
+      "contacts_in_forward_solve": [
+        {
+          "bodies": [
+            "world",
+            "base"
+          ],
+          "geoms": [
+            "floor",
+            null
+          ],
+          "geom_ids": [
+            0,
+            15
+          ],
+          "location_world_m": [
+            -0.24298900960363723,
+            0.24672096071810193,
+            -0.0006880893676502464
+          ],
+          "signed_distance_m": -0.0013761787353004928,
+          "recomputed_force_n": 14036.593628480796
+        },
+        {
+          "bodies": [
+            "RL_foot",
+            "FL_calf"
+          ],
+          "geoms": [
+            "RL",
+            null
+          ],
+          "geom_ids": [
+            31,
+            45
+          ],
+          "location_world_m": [
+            0.29162246037075723,
+            0.33949657113986614,
+            0.6075288572950766
+          ],
+          "signed_distance_m": 0.00048536119111421486,
+          "recomputed_force_n": 620.370037946884
+        },
+        {
+          "bodies": [
+            "world",
+            "RR_calf"
+          ],
+          "geoms": [
+            "tread1",
+            null
+          ],
+          "geom_ids": [
+            1,
+            21
+          ],
+          "location_world_m": [
+            0.00025025456203602026,
+            0.07339510813534549,
+            0.18987654582995858
+          ],
+          "signed_distance_m": -0.0005580977617602595,
+          "recomputed_force_n": 0.0
+        }
+      ]
+    }
+  ]
+}

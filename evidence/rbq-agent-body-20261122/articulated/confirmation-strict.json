@@ -1,0 +1,4473 @@
+{
+  "study_sha256": "2266f8d4d31b2ed6090be3dcba0e2b0651afac753721b31e401aeda5971c691d",
+  "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+  "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+  "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+  "scoring_source_sha256": "a67d4ddd84f9076b00c907e6746c9e3d02253de513e777801d1a4e9a6bcf246a",
+  "trials": [
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "success",
+      "strict_success": true,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "5cbb451bcf44a13608f206d4182227a1d603bf7913cba10f413db71dac0e7512",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.5413517720929564,
+        "maximum_material_slip_m": {
+          "FL": 0.00977359202691359,
+          "FR": 0.007725894734051912,
+          "RL": 0.007679291041180358,
+          "RR": 0.006502229481105709
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.06617615624516,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.00008352349402,
+              "max_nm": 10.000197217392516
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.000054319356895,
+              "max_nm": 10.000320270499508
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.000025769393021,
+              "max_nm": 10.000246884050192
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.000011678017815,
+              "max_nm": 10.000229765899316
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.99996892120273,
+              "max_nm": 10.000229930102401
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.999940992313098,
+              "max_nm": 10.000129089380286
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.999939987246204,
+              "max_nm": 10.000140166352615
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.999721838469465,
+              "max_nm": 10.000317089629299
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.99965278823615,
+              "max_nm": 10.0001791996665
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.999625247105342,
+              "max_nm": 10.000145050239253
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.999819469877723,
+              "max_nm": 10.000050975576874
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.999723331780803,
+              "max_nm": 10.000049297155575
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.99966857563884,
+              "max_nm": 10.000088029292632
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.999680373456101,
+              "max_nm": 10.000045840288545
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.999763108447043,
+              "max_nm": 9.999938145814612
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.999701413272838,
+              "max_nm": 9.99991738994106
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.005023793803434963,
+          "max_foot_shift_m": 0.004439611742254504,
+          "max_friction_use": 0.495734729197151,
+          "min_foot_normal_force_n": 29.82793210023875,
+          "release_hold_s": 7.049999999999994,
+          "post_release_observation_s": 11.549999999999994
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.854997488326768e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.0015653098752854524,
+          "max_station_attitude_error_deg": 0.709567752136362,
+          "max_linear_speed_mps": 0.0002992205294124162,
+          "max_angular_speed_radps": 0.0005656307801557749,
+          "min_each_prescribed_tread_load_n": 95.80974064116697,
+          "max_open_angle_error_deg": 0.000665912463560403,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984409264735867,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": null,
+      "trial_identity": {
+        "case_id": "confirmation-01",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-01",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-01",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "662cab3b76d6956753fab15ac9f9eb63b8873439ba481b788391ad0c4eaeea16",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.054,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-01",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "6ca1cb5a27cce8c6c6235b66f521282f1f651b9058f9381a5d1dd2eaddfebd79",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 8.352,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-01",
+      "candidate_id": "no_intervention",
+      "state_sha256": "77e2a0871decb0e5f3a4eaa3bc933081357ac3edde04a5806169d3b994520b3e",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.07,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-01",
+      "candidate_id": "phase_25",
+      "state_sha256": "5f5712a40c7d1e7aa217e4004cb6ececb968b03b29de4845b220671b72a9636b",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.041,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-01",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "836f6476fc159140c5f1cd2080003afc2d365026ccac0a83ed491acf7f830620",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 2.141,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "success",
+      "strict_success": true,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "98a65528455ed6212437b3a1e24c639dacf0303f7ecb1d7e07b8057ba4fe6327",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.5413060699743999,
+        "maximum_material_slip_m": {
+          "FL": 0.009773600670364974,
+          "FR": 0.00772614664865516,
+          "RL": 0.007679191746148026,
+          "RR": 0.006502098284642397
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.06618073865536,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.000083522137492,
+              "max_nm": 10.000197215143851
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.000054327838047,
+              "max_nm": 10.00032028787136
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.00002600275562,
+              "max_nm": 10.000246820461285
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.00001161973168,
+              "max_nm": 10.000229703311838
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.999968919678066,
+              "max_nm": 10.000229767257562
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.999940990626477,
+              "max_nm": 10.000125355024357
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.999939986392258,
+              "max_nm": 10.00014017023498
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.999722138147362,
+              "max_nm": 10.00031700937587
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.999652795737799,
+              "max_nm": 10.000179168329513
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.999625285659379,
+              "max_nm": 10.000145042381073
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.999819460331128,
+              "max_nm": 10.000050976987927
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.999723353465292,
+              "max_nm": 10.000049284928911
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.999668589399956,
+              "max_nm": 10.000088014701543
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.999680382348632,
+              "max_nm": 10.000045836848551
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.999764902453622,
+              "max_nm": 9.999933798391545
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.99970140835562,
+              "max_nm": 9.999917391760963
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.005023815564593338,
+          "max_foot_shift_m": 0.004439614522457721,
+          "max_friction_use": 0.4957420326912634,
+          "min_foot_normal_force_n": 29.8293069316371,
+          "release_hold_s": 7.049999999999994,
+          "post_release_observation_s": 11.549999999999994
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.8563536291346226e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.0015656716944489428,
+          "max_station_attitude_error_deg": 0.7096489631226971,
+          "max_linear_speed_mps": 0.0002992200385501334,
+          "max_angular_speed_radps": 0.0005656310932358913,
+          "min_each_prescribed_tread_load_n": 95.81136078768905,
+          "max_open_angle_error_deg": 0.0006660667217062155,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984410797329056,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": null,
+      "trial_identity": {
+        "case_id": "confirmation-02",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-02",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-02",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "60ebb7ca289ab6a0145cb7ef12dc6036706bb3c318658be9c6e55d4cdb53f502",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.048,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-02",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "f53d3c7457885a52868454db10922066b6c1cf7211c8db83548635ee56111483",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 4.815,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-02",
+      "candidate_id": "no_intervention",
+      "state_sha256": "51f3d215e30206d734a1411e1433a5124af07ebc990a15eefe7efbbdc3357522",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.053,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-02",
+      "candidate_id": "phase_25",
+      "state_sha256": "d2f1ebaeabc36c4692ffa86666940f61df60cd94ee5448ee95a423c0ee348bdc",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.036,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-02",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "2ee89a642007d53b96ffad9d9810b1ab0636186ab84d3dbb92136667aa016686",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 2.123,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "success",
+      "strict_success": true,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "2583f697c7f9742f92e091099e0059136781d7c7de489d67050965c7bc622db7",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.5414095002869883,
+        "maximum_material_slip_m": {
+          "FL": 0.009773629530664435,
+          "FR": 0.007725416830560008,
+          "RL": 0.007679599881081875,
+          "RR": 0.006502471130201451
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.0661725729062,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.00008352407819,
+              "max_nm": 10.000197226286744
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.000054297756824,
+              "max_nm": 10.00032021584292
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.000025106332451,
+              "max_nm": 10.00024714027127
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.00001186926676,
+              "max_nm": 10.000230008120253
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.999968926947782,
+              "max_nm": 10.000230480566602
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.999940999400742,
+              "max_nm": 10.00012911167832
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.999939990444272,
+              "max_nm": 10.00014015638223
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.99972093125351,
+              "max_nm": 10.000317305513468
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.999652768214329,
+              "max_nm": 10.000179284987448
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.999625137979283,
+              "max_nm": 10.000145053709984
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.99981569534138,
+              "max_nm": 10.000050972525617
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.99972327416282,
+              "max_nm": 10.000049331144332
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.999668535220176,
+              "max_nm": 10.000088084559714
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.99968034644599,
+              "max_nm": 10.000045852197674
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.999761770239237,
+              "max_nm": 9.999941615969826
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.999701405747677,
+              "max_nm": 9.99991738451274
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.005023695397606581,
+          "max_foot_shift_m": 0.0044396007813406035,
+          "max_friction_use": 0.4957167080605924,
+          "min_foot_normal_force_n": 29.825158902006645,
+          "release_hold_s": 7.049999999999994,
+          "post_release_observation_s": 11.549999999999994
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.8550122567023385e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.0015643327799085892,
+          "max_station_attitude_error_deg": 0.7094508100261994,
+          "max_linear_speed_mps": 0.000299216172200717,
+          "max_angular_speed_radps": 0.0005656179925350466,
+          "min_each_prescribed_tread_load_n": 95.80454361000834,
+          "max_open_angle_error_deg": 0.0006659141437808103,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984404124098099,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": null,
+      "trial_identity": {
+        "case_id": "confirmation-03",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-03",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-03",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "7ee4e19c9a03ce16e1ec9582580d433a70e675e9ba562442578977c584e446a5",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.049,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-03",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "62b39260b0fa105e3a68582c5f02b6e568e6b8c00ecffa1cc65d42f4f3714be7",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 4.019,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-03",
+      "candidate_id": "no_intervention",
+      "state_sha256": "7619dc9acd821c94020b05d27996bede829ed6125951fe391c718b277f521951",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.054,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-03",
+      "candidate_id": "phase_25",
+      "state_sha256": "6292935b646de5b30bebffe6fa5e53aea14fd1bfa66a36d745b988e63b481fea",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.038,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-03",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "a309861f574dcc7ed1b404dc13b9a74bd0181bf0fc2798f113de735107846c43",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 1.948,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "success",
+      "strict_success": true,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "2151042940963dca5ec81fd1baf79f7280051e03fe03e26dde2a0f1cc3d9693d",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.5413807141903476,
+        "maximum_material_slip_m": {
+          "FL": 0.009773611056385838,
+          "FR": 0.007725584462823899,
+          "RL": 0.007679487628372829,
+          "RR": 0.0065023804751645885
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.06617432553293,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.000083527525952,
+              "max_nm": 10.000197223508412
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.000054305650675,
+              "max_nm": 10.000320234261048
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.000025336008235,
+              "max_nm": 10.0002470601863
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.00001180444104,
+              "max_nm": 10.000229930871717
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.999968925068899,
+              "max_nm": 10.000230295333099
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.999940997140564,
+              "max_nm": 10.000129104821557
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.999939989389464,
+              "max_nm": 10.000140160109307
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.999721245489594,
+              "max_nm": 10.000317229247756
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.999652775908027,
+              "max_nm": 10.000179254174743
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.99962517696239,
+              "max_nm": 10.00014505002438
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.999819493001555,
+              "max_nm": 10.000050973554869
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.999723294621937,
+              "max_nm": 10.000049319207369
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.999668549003077,
+              "max_nm": 10.000088067842263
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.999680355503026,
+              "max_nm": 10.000045848510965
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.999762269496939,
+              "max_nm": 9.999939865447447
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.999701407215836,
+              "max_nm": 9.999917386244535
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.005023734062987514,
+          "max_foot_shift_m": 0.004439604733674153,
+          "max_friction_use": 0.4957229441720057,
+          "min_foot_normal_force_n": 29.82634224612378,
+          "release_hold_s": 7.049999999999994,
+          "post_release_observation_s": 11.549999999999994
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.855558760811405e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.00156471816157028,
+          "max_station_attitude_error_deg": 0.7095092938424248,
+          "max_linear_speed_mps": 0.00029921727758972617,
+          "max_angular_speed_radps": 0.0005656214988953354,
+          "min_each_prescribed_tread_load_n": 95.80632239160994,
+          "max_open_angle_error_deg": 0.0006659763097331961,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984406031277079,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": null,
+      "trial_identity": {
+        "case_id": "confirmation-04",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-04",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-04",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "afc1f21300ca7796d77a4f6f73dc40153e279cb3a08c279190283fe63db19df4",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.049,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-04",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "05a7b0e7a2926a72c58f7bc3dc0b69729ef45bcde8698e393506c2de2f50fb3c",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 4.771,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-04",
+      "candidate_id": "no_intervention",
+      "state_sha256": "9602602679e940a29f59dbe0ce3436a6a982f15fa5d3b2576f5de2d819486d13",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.054,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-04",
+      "candidate_id": "phase_25",
+      "state_sha256": "3562026e919f8c719611cbd6db99be931bdb8b5f8852f9b16a8950bcc36531fb",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.036,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-04",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "73d35f52a39d98e09fa03b3f2d271a9d61772daf3c1a68f833575e36f3ece99c",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 2.089,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "physical_failed",
+      "strict_success": false,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "865441f615d09b5ecea3ebab151bf206b334bf415ed7a058f8fe4c02b12a4ede",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.5412144866672327,
+        "maximum_material_slip_m": {
+          "FL": 0.009773004574805408,
+          "FR": 0.013838876373139292,
+          "RL": 0.0076927216630777616,
+          "RR": 0.006501612603606748
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": false,
+        "first_failure": {
+          "stage": "prewalk",
+          "time_s": 19.066,
+          "metric": "stance_slip_m",
+          "measured": 0.0101236423109757,
+          "limit": "<= 0.01"
+        },
+        "failures": [
+          {
+            "stage": "prewalk",
+            "time_s": 19.066,
+            "metric": "stance_slip_m",
+            "measured": 0.0101236423109757,
+            "limit": "<= 0.01"
+          }
+        ],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.06618473745502,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.000083507817205,
+              "max_nm": 10.000197200706815
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.000054359524377,
+              "max_nm": 10.000320374002161
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.000026926821926,
+              "max_nm": 10.000246414261419
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.000011342404004,
+              "max_nm": 10.000229340082871
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.999968911024732,
+              "max_nm": 10.000228972264644
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.999940979537207,
+              "max_nm": 10.000129057128403
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.999939981345499,
+              "max_nm": 10.000140184279894
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.999723500431703,
+              "max_nm": 10.000316662822822
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.99965282758133,
+              "max_nm": 10.000179041255647
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.999625455305726,
+              "max_nm": 10.00014504687911
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.999819398415013,
+              "max_nm": 10.000050980321788
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.999723433017046,
+              "max_nm": 10.000049236464063
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.999668643284307,
+              "max_nm": 10.000087944842862
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.999680417790405,
+              "max_nm": 10.000045821830053
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.999766386275931,
+              "max_nm": 9.9999317620646
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.999701416276634,
+              "max_nm": 9.999917401114974
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.0050240582156471985,
+          "max_foot_shift_m": 0.004439620059631189,
+          "max_friction_use": 0.49578856430230617,
+          "min_foot_normal_force_n": 29.831829374390335,
+          "release_hold_s": 7.049000000000003,
+          "post_release_observation_s": 11.549000000000003
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.8544528077357186e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.0015667300949770895,
+          "max_station_attitude_error_deg": 0.709724789580948,
+          "max_linear_speed_mps": 0.00029922649199277734,
+          "max_angular_speed_radps": 0.0005656582077614368,
+          "min_each_prescribed_tread_load_n": 95.81957718004985,
+          "max_open_angle_error_deg": 0.00066585050831236,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984420648693667,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": {
+        "stage": "prewalk",
+        "time_s": 19.066,
+        "metric": "stance_slip_m",
+        "measured": 0.0101236423109757,
+        "limit": "<= 0.01"
+      },
+      "trial_identity": {
+        "case_id": "confirmation-05",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-05",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-05",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "c8faf8a332c69d0a23d8e09e331b400f1159cf0a970e58e58944fb3cfe450aff",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.048,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-05",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "78d67711b48c9c1bf793624fabc5f85bd2bc22b363c47c2083be8c6d21de1f54",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 4.678,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-05",
+      "candidate_id": "no_intervention",
+      "state_sha256": "fab5b17a3cef4e3518ba42545eeff5d749dc6d422909963ba39b078320cd46bc",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.053,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-05",
+      "candidate_id": "phase_25",
+      "state_sha256": "30b0819bf54dd18e563d38017805cca2a15a28a6219c30c0f0a42ea726aa9428",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.036,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-05",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "3aef3a063b2d35719a783aa3d152ef5374dc6fa4cf81ebca0f694ec4047d22a4",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 2.159,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "success",
+      "strict_success": true,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "55e9c95a87c0224a32c6e70eb5ede13969f0beb24e51aa20f22600e7ad28ffbb",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.5413166066477659,
+        "maximum_material_slip_m": {
+          "FL": 0.009773610561201764,
+          "FR": 0.007726056552518677,
+          "RL": 0.007679229678395884,
+          "RR": 0.006502133784880953
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.06618001898465,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.000083522761573,
+              "max_nm": 10.000197216128237
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.000054324956942,
+              "max_nm": 10.000320281291906
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.000025921486431,
+              "max_nm": 10.000246848779913
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.000011642718698,
+              "max_nm": 10.000229730550936
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.999968920342855,
+              "max_nm": 10.000229832838896
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.999940991425666,
+              "max_nm": 10.000129087182456
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.999939986766433,
+              "max_nm": 10.000140168885935
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.99972202543002,
+              "max_nm": 10.000317037986228
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.999652792905922,
+              "max_nm": 10.000179179522453
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.99962527157018,
+              "max_nm": 10.000145043807079
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.999819464141076,
+              "max_nm": 10.000050976572744
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.999723346100883,
+              "max_nm": 10.000049289160321
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.9996685845003,
+              "max_nm": 10.00008802070113
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.99968037914449,
+              "max_nm": 10.000045838141595
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.999764659460249,
+              "max_nm": 9.999934520496378
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.99970140803342,
+              "max_nm": 9.999917391131401
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.005023801166117806,
+          "max_foot_shift_m": 0.004439613206709174,
+          "max_friction_use": 0.49573960416097546,
+          "min_foot_normal_force_n": 29.828880107738257,
+          "release_hold_s": 7.049999999999994,
+          "post_release_observation_s": 11.549999999999994
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.853947099541366e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.0015655398357569646,
+          "max_station_attitude_error_deg": 0.7096274420274873,
+          "max_linear_speed_mps": 0.0002992194610464107,
+          "max_angular_speed_radps": 0.00056562942713682,
+          "min_each_prescribed_tread_load_n": 95.81070840466002,
+          "max_open_angle_error_deg": 0.0006657929878883806,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984409984528384,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": null,
+      "trial_identity": {
+        "case_id": "confirmation-06",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-06",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-06",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "ca74105f8ceb0641fef3cf09f071ea1134397601d5cb8e3c1b4ea4dc1d0d6098",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.05,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-06",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "bf24063b49a98a707fe1046c48b3bf16a3195de5dacd48406b53308351d0997b",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 4.541,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-06",
+      "candidate_id": "no_intervention",
+      "state_sha256": "3c37fb0fc2cf763dbc1019c881d68050aa9da33f72016ed7412aa08911365b0b",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.055,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-06",
+      "candidate_id": "phase_25",
+      "state_sha256": "ea558774798099e47278e104e78ed0aafa9f74202e2e97c7f9186b888f92308e",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.037,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-06",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "659edd0dc85bcf35ef7b5e7db5ccd11ecb7828af95a5fd4767f44d51a2ce2523",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 2.062,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "physical_failed",
+      "strict_success": false,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "7fc3662728523060ae4862a3ad97ec488f0a13ccd47a5882c1ce97bc2521c8b3",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.5414762048339785,
+        "maximum_material_slip_m": {
+          "FL": 0.009773752886913087,
+          "FR": 0.010211151614091805,
+          "RL": 0.007679896312794719,
+          "RR": 0.006502723441233051
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": false,
+        "first_failure": {
+          "stage": "prewalk",
+          "time_s": 19.096,
+          "metric": "stance_slip_m",
+          "measured": 0.010029870983986465,
+          "limit": "<= 0.01"
+        },
+        "failures": [
+          {
+            "stage": "prewalk",
+            "time_s": 19.096,
+            "metric": "stance_slip_m",
+            "measured": 0.010029870983986465,
+            "limit": "<= 0.01"
+          }
+        ],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.06617030730806,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.000083528078543,
+              "max_nm": 10.000197231136402
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.00005428462847,
+              "max_nm": 10.000320183712962
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.000024730842908,
+              "max_nm": 10.000247274787332
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.000011974881035,
+              "max_nm": 10.000230132433373
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.999968930022971,
+              "max_nm": 10.000230779210067
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.99994100322228,
+              "max_nm": 10.000129120370701
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.999939992225793,
+              "max_nm": 10.000140150449539
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.99972040015326,
+              "max_nm": 10.000317430487728
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.999652755318722,
+              "max_nm": 10.000179336388282
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.999625070113643,
+              "max_nm": 10.000145058006174
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.999819524519468,
+              "max_nm": 10.000050971927719
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.999723241402569,
+              "max_nm": 10.00004935045622
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.999668514457307,
+              "max_nm": 10.000088110844832
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.99968033318212,
+              "max_nm": 10.000045857226889
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.999758893119369,
+              "max_nm": 9.999945604468836
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.999701404618436,
+              "max_nm": 9.999917381379323
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.005023631156539454,
+          "max_foot_shift_m": 0.004439597338594821,
+          "max_friction_use": 0.49570335157242623,
+          "min_foot_normal_force_n": 29.823487678585078,
+          "release_hold_s": 7.049999999999994,
+          "post_release_observation_s": 11.549999999999994
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.854556080346226e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.001563699280461528,
+          "max_station_attitude_error_deg": 0.7093670992145195,
+          "max_linear_speed_mps": 0.0002992148584229679,
+          "max_angular_speed_radps": 0.0005656106435028056,
+          "min_each_prescribed_tread_load_n": 95.80159424444619,
+          "max_open_angle_error_deg": 0.0006658622566959593,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984400015306821,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": {
+        "stage": "prewalk",
+        "time_s": 19.096,
+        "metric": "stance_slip_m",
+        "measured": 0.010029870983986465,
+        "limit": "<= 0.01"
+      },
+      "trial_identity": {
+        "case_id": "confirmation-07",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-07",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-07",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "d480183a8c6d5c80c4c321e43badd56101a28d1698e089f56ac24aaa868606e4",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.048,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-07",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "060f502d7dd332b5309510531cabda5a6f34d0318f2850ee2c2e8b7e3b184ed2",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 3.096,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-07",
+      "candidate_id": "no_intervention",
+      "state_sha256": "d26e4ec36277c1c9cd3b37629b2a1dd4636c40b2d24c2546a4208ab01eeb86f0",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.055,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-07",
+      "candidate_id": "phase_25",
+      "state_sha256": "976b5215c0d9878295e5e9084aea0e43285e331dc35f14101577366088dec361",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.037,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-07",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "8d04431ef75baf79e9b855546e9e7756047f84bbaf63e0fe95ff50aa6914c435",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 2.003,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "success",
+      "strict_success": true,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "04f6c93e35bd456ecfd61670315acbed4fbca8be77e704b81d4a04fa7fb846c0",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.5414436066738766,
+        "maximum_material_slip_m": {
+          "FL": 0.009773718145536967,
+          "FR": 0.007725232664758986,
+          "RL": 0.007679720052172511,
+          "RR": 0.006502611604008304
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.06617232079793,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.00008352549329,
+              "max_nm": 10.000197227434418
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.00005429470892,
+              "max_nm": 10.00032020761724
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.000025029273825,
+              "max_nm": 10.000247168160449
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.000011890457806,
+              "max_nm": 10.000230030354091
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.99996892755601,
+              "max_nm": 10.00023053818014
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.99994100023269,
+              "max_nm": 10.000129112759677
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.999939990838369,
+              "max_nm": 10.000140155173685
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.999720805495636,
+              "max_nm": 10.000317335115103
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.999652764941473,
+              "max_nm": 10.000179297215132
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.999625120173139,
+              "max_nm": 10.000145054151064
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.99981916422609,
+              "max_nm": 10.000050973090099
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.999723267542189,
+              "max_nm": 10.000049335077643
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.99966853220219,
+              "max_nm": 10.000088089165416
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.999680344883703,
+              "max_nm": 10.000045852401426
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.9997596230318,
+              "max_nm": 9.999943516705931
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.99970140691076,
+              "max_nm": 9.99991738367403
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.005023683237803243,
+          "max_foot_shift_m": 0.004439602214743965,
+          "max_friction_use": 0.4957119422828831,
+          "min_foot_normal_force_n": 29.82491507950467,
+          "release_hold_s": 7.049999999999994,
+          "post_release_observation_s": 11.549999999999994
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.8555187865399836e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.0015641763707598642,
+          "max_station_attitude_error_deg": 0.7094344701575408,
+          "max_linear_speed_mps": 0.00029921651528653375,
+          "max_angular_speed_radps": 0.0005656157526937541,
+          "min_each_prescribed_tread_load_n": 95.80391402020997,
+          "max_open_angle_error_deg": 0.0006659717624160066,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984402480884579,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": null,
+      "trial_identity": {
+        "case_id": "confirmation-08",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-08",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-08",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "baeb415b9bcf1c08c17f212e117c44da0fffa0f27585eb31171189230f4879bb",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.052,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-08",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "90b6a938aa40c902e6694e55e6adfeb05bfee9264d4fda079f91fe803a5cab8c",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 4.039,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-08",
+      "candidate_id": "no_intervention",
+      "state_sha256": "0dce48bd6f3479f754d2a15be9738b9d6986c910f11891c4af15e235734672f8",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.06,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-08",
+      "candidate_id": "phase_25",
+      "state_sha256": "cded122b53e4a382c5b592a87133f0399d8f632340f9c1054abeddd0440fcc0a",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.038,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-08",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "85cf220df64f83522b7a942add5303538a0c6bbb547c0460fb961fc6e7386cfa",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 2.361,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "success",
+      "strict_success": true,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "0a30add5ef64121cf466d3b83b87cc721a3521cb7e7cb47813eb907cf5485413",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.5412426924347474,
+        "maximum_material_slip_m": {
+          "FL": 0.009773290301097587,
+          "FR": 0.009692993352057597,
+          "RL": 0.007685911780367083,
+          "RR": 0.006501813385094072
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.06618425828313,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.000083514772427,
+              "max_nm": 10.000197207405671
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.00005434645007,
+              "max_nm": 10.00032033591968
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.00002653501242,
+              "max_nm": 10.00024660251098
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.000011464345251,
+              "max_nm": 10.000229506631115
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.999968914948335,
+              "max_nm": 10.000229324101761
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.999940984642668,
+              "max_nm": 10.000129053146276
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.999939983631835,
+              "max_nm": 10.000140178571904
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.99972290965192,
+              "max_nm": 10.000316815032086
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.999652814127218,
+              "max_nm": 10.00017909481265
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.999625383050386,
+              "max_nm": 10.000145041026538
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.999819426808916,
+              "max_nm": 10.000050978743149
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.9997233999257,
+              "max_nm": 10.000049257077997
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.99966862010748,
+              "max_nm": 10.00008797582202
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.999680402349135,
+              "max_nm": 10.000045828672356
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.999769839655826,
+              "max_nm": 9.999931761307977
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.99970141034401,
+              "max_nm": 9.9999173969026
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.005023949201911041,
+          "max_foot_shift_m": 0.0044396180260055035,
+          "max_friction_use": 0.4957680090321713,
+          "min_foot_normal_force_n": 29.831081677365308,
+          "release_hold_s": 7.049999999999994,
+          "post_release_observation_s": 11.549999999999994
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.854081780129353e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.0015663456503868924,
+          "max_station_attitude_error_deg": 0.7097199553873416,
+          "max_linear_speed_mps": 0.00029922280190018984,
+          "max_angular_speed_radps": 0.0005656441259762126,
+          "min_each_prescribed_tread_load_n": 95.81594540488562,
+          "max_open_angle_error_deg": 0.000665808306948179,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984416182830801,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": null,
+      "trial_identity": {
+        "case_id": "confirmation-09",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-09",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-09",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "aca969a9ab50ba85031a36bc893029578526718d2d8952f778befb03eaa3fb4f",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.049,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-09",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "8f8a67bc9e13f3904e6bca0b00a47c080c5f6833331ab3c7ea1ead21001cccc9",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 15.549,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-09",
+      "candidate_id": "no_intervention",
+      "state_sha256": "6825e42a37e3633480fa1431205e90925353b59b2c4cd23e601a512b54e2f3d9",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.056,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-09",
+      "candidate_id": "phase_25",
+      "state_sha256": "326331a6a89ae5ca2071abb70f9e9579f44f544ce1f002972d720a4de6368481",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.037,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-09",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "7181b30316320a086314479d7914237c2fee9fae86061a59448339b61460a477",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 2.253,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "success",
+      "strict_success": true,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "549ef2e3dcce3c7d1d414c25bbc921012b928c776de5414be7feb895d2a2064c",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.5412676501487422,
+        "maximum_material_slip_m": {
+          "FL": 0.009773296661550723,
+          "FR": 0.00772653455486708,
+          "RL": 0.007686024813303613,
+          "RR": 0.006501871323654343
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.0661817984391,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.000083515342983,
+              "max_nm": 10.000197208782648
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.000054340882198,
+              "max_nm": 10.000320325062116
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.000026389453081,
+              "max_nm": 10.000246642376153
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.000011502605902,
+              "max_nm": 10.000229546891754
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.99996891596731,
+              "max_nm": 10.00022943146205
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.999940985806964,
+              "max_nm": 10.000129052525569
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.999939984217862,
+              "max_nm": 10.000140175900139
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.999722713884513,
+              "max_nm": 10.00031687118341
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.999652808386633,
+              "max_nm": 10.000179115879579
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.99962535748414,
+              "max_nm": 10.000145046607905
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.999819432247705,
+              "max_nm": 10.000050977724062
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.99972338604857,
+              "max_nm": 10.000049264768013
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.999668611396302,
+              "max_nm": 10.000087985505482
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.999680396794712,
+              "max_nm": 10.000045830689135
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.999769245941648,
+              "max_nm": 9.99993176136397
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.999701412080421,
+              "max_nm": 9.999917395892753
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.005023923191438542,
+          "max_foot_shift_m": 0.004439615539920684,
+          "max_friction_use": 0.49576345575813663,
+          "min_foot_normal_force_n": 29.830088036828204,
+          "release_hold_s": 7.049000000000003,
+          "post_release_observation_s": 11.549000000000003
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.857141638061577e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.0015660615021929343,
+          "max_station_attitude_error_deg": 0.709661182867463,
+          "max_linear_speed_mps": 0.0002992230109633372,
+          "max_angular_speed_radps": 0.0005656442094644778,
+          "min_each_prescribed_tread_load_n": 95.81488134128367,
+          "max_open_angle_error_deg": 0.0006661563520964364,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984415370066504,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": null,
+      "trial_identity": {
+        "case_id": "confirmation-10",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-10",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-10",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "fca2159b127fde55ed6c624a5060db434096a262380fdcd0a3e5d14279306f92",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.054,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-10",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "20b32be076a3a55fe2fe144e74af535284b2c85f36872beef14730ba43a66e5e",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 4.653,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-10",
+      "candidate_id": "no_intervention",
+      "state_sha256": "4326112b5ef7e9f0b65048004f3bb63d274561b97683682b29ef9f4220ec199e",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.065,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-10",
+      "candidate_id": "phase_25",
+      "state_sha256": "9ac4e800b078b8101ba1ad81fcfa455bc297c7534c45716ea643e3aa1d2d8652",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.04,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-10",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "bda1a7cf4a3d504d3636eec73d12e019163f6316670d7472da4f0a7e12e7b4fb",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 2.345,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "success",
+      "strict_success": true,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "9a8929208924aa72bae430b893fa79b0aa6f5d8af532d540649e73ba09ed6267",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.5414319530541921,
+        "maximum_material_slip_m": {
+          "FL": 0.009773704080063882,
+          "FR": 0.00772528976844094,
+          "RL": 0.007679658057420803,
+          "RR": 0.006502574711551671
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.06617317409746,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.00008352463624,
+              "max_nm": 10.000197226144317
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.000054298377776,
+              "max_nm": 10.000320216088554
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.000025136246228,
+              "max_nm": 10.00024713082006
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.000011860350948,
+              "max_nm": 10.000229994278644
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.99996892668272,
+              "max_nm": 10.000230452108662
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.999940999162671,
+              "max_nm": 10.00012911033545
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.99993999034748,
+              "max_nm": 10.000140156908827
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.999720950529976,
+              "max_nm": 10.000317300262235
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.999652768455666,
+              "max_nm": 10.000179283025837
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.999625138116162,
+              "max_nm": 10.000145052446694
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.999815249589993,
+              "max_nm": 10.000050973569115
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.99972327705735,
+              "max_nm": 10.00004932959345
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.999668538628281,
+              "max_nm": 10.000088081430166
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.999680349117071,
+              "max_nm": 10.000045850662584
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.999759836243626,
+              "max_nm": 9.999942715256225
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.999701407566592,
+              "max_nm": 9.999917384481973
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.005023701973634344,
+          "max_foot_shift_m": 0.004439604054778894,
+          "max_friction_use": 0.4957149539240936,
+          "min_foot_normal_force_n": 29.82545793610799,
+          "release_hold_s": 7.049999999999994,
+          "post_release_observation_s": 11.549999999999994
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.854867387737522e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.0015643510651531687,
+          "max_station_attitude_error_deg": 0.7094608379830649,
+          "max_linear_speed_mps": 0.00029921710044961673,
+          "max_angular_speed_radps": 0.0005656174504733458,
+          "min_each_prescribed_tread_load_n": 95.80473907016486,
+          "max_open_angle_error_deg": 0.0006658976647742065,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984403278115327,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": null,
+      "trial_identity": {
+        "case_id": "confirmation-11",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-11",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-11",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "f989f621aed1e108e889298647f44300acafb42194fbc60d1209d1dcb9266759",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.047,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-11",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "6c7e42dc4936e4e71c3de80001353fdfb7320f5ebcaec4e9a9be4b0acb6bee98",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 4.471,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-11",
+      "candidate_id": "no_intervention",
+      "state_sha256": "5a83a3d32a38f80d162958a1e0643cf1c2e728d574a77e7ed1905001c92390ef",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.053,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-11",
+      "candidate_id": "phase_25",
+      "state_sha256": "462098d9b3cec06bf4068bc7c5ddea878c41cae0844e5ec1b7c3695f3a4484a8",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.036,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-11",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "028d6c423a2a6f444bc28a2e88689416534d30d718bb13d1dbfc498c022fa389",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 1.868,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "physical_failed",
+      "strict_success": false,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "78b1b9a828fe99736688d3902fc965edb5ad66a98109c5ad20290bd2632ade60",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.541183103591856,
+        "maximum_material_slip_m": {
+          "FL": 0.009772981458648163,
+          "FR": 0.020158846859748048,
+          "RL": 0.007692569811531126,
+          "RR": 0.006501516038919025
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": false,
+        "first_failure": {
+          "stage": "prewalk",
+          "time_s": 19.059,
+          "metric": "stance_slip_m",
+          "measured": 0.010635674761712021,
+          "limit": "<= 0.01"
+        },
+        "failures": [
+          {
+            "stage": "prewalk",
+            "time_s": 19.059,
+            "metric": "stance_slip_m",
+            "measured": 0.010635674761712021,
+            "limit": "<= 0.01"
+          }
+        ],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.06618710755697,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.000083506065142,
+              "max_nm": 10.000197197786573
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.00005436836163,
+              "max_nm": 10.000320393776132
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.000027171260525,
+              "max_nm": 10.000246330011354
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.000011273431003,
+              "max_nm": 10.000229258819786
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.999973947800862,
+              "max_nm": 10.000228775459398
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.999940977149501,
+              "max_nm": 10.00012905850084
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.99993998020373,
+              "max_nm": 10.000140188436124
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.999723842295149,
+              "max_nm": 10.000316566171756
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.999652836847886,
+              "max_nm": 10.00017900655765
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.999625498156664,
+              "max_nm": 10.00014504204715
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.999819387273126,
+              "max_nm": 10.000050982149148
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.999723455428617,
+              "max_nm": 10.000049223607082
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.999668658237514,
+              "max_nm": 10.000087926805378
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.999680427567966,
+              "max_nm": 10.000045817900373
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.999767560685584,
+              "max_nm": 9.99995457854235
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.999701416954489,
+              "max_nm": 9.999917403002126
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.005024102183734481,
+          "max_foot_shift_m": 0.004439624222603478,
+          "max_friction_use": 0.4957958719919092,
+          "min_foot_normal_force_n": 29.833176580442135,
+          "release_hold_s": 7.049000000000003,
+          "post_release_observation_s": 11.549000000000003
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.8551640274708126e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.0015671526227555776,
+          "max_station_attitude_error_deg": 0.7097949354274267,
+          "max_linear_speed_mps": 0.00029922753834656925,
+          "max_angular_speed_radps": 0.0005656615845830576,
+          "min_each_prescribed_tread_load_n": 95.82150985283414,
+          "max_open_angle_error_deg": 0.0006659314086476797,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984422630882776,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": {
+        "stage": "prewalk",
+        "time_s": 19.059,
+        "metric": "stance_slip_m",
+        "measured": 0.010635674761712021,
+        "limit": "<= 0.01"
+      },
+      "trial_identity": {
+        "case_id": "confirmation-12",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-12",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-12",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "bd87e0c7d3a8001b7a8746be75c5a7ee19a45da1dedc026c80602c74dd8e58ba",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.051,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-12",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "ad93de2290ece9da12c89dd5cf5ac1a27f6c0535d273a062278f854716280a96",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 4.169,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-12",
+      "candidate_id": "no_intervention",
+      "state_sha256": "49a680c52ee4f59ab7e2eee46bf8690286f1af5b8c5eb42734b9dbaa459b3885",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.061,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-12",
+      "candidate_id": "phase_25",
+      "state_sha256": "fa9180d45337ddb722dcbabaf1e671d85264d6894acc88410d0d3f48a3b0eec5",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.045,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-12",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "113f5d384eddf58b2d7fa81e80bd719224fddb77a9d8990bb207ed2b4457a65f",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 1.872,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "success",
+      "strict_success": true,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "5a1eaafa612ae5ff875b042211efc9c7ef3fb74b367f8cc8db5fe0e5c6df0e59",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.5412714532734078,
+        "maximum_material_slip_m": {
+          "FL": 0.009773291882702591,
+          "FR": 0.007726502368913108,
+          "RL": 0.007686044709212312,
+          "RR": 0.006501880140310463
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.0661812438513,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.000083515621494,
+              "max_nm": 10.000197209365972
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.000054339081405,
+              "max_nm": 10.000320321175515
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.000026338185043,
+              "max_nm": 10.000246659834277
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.000011517121298,
+              "max_nm": 10.000229564295182
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.999968916385319,
+              "max_nm": 10.000229473184723
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.99994098629787,
+              "max_nm": 10.000129052235597
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.999939984451533,
+              "max_nm": 10.000140175026308
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.999722645010516,
+              "max_nm": 10.000316890014481
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.999652806575899,
+              "max_nm": 10.000179122841402
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.999625349097768,
+              "max_nm": 10.000145047730337
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.99981943421995,
+              "max_nm": 10.000050977292464
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.999723381319626,
+              "max_nm": 10.000049267461264
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.999668608088905,
+              "max_nm": 10.000087989379226
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.999680394584017,
+              "max_nm": 10.000045831627308
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.999769327945156,
+              "max_nm": 9.9999317612931
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.999701411774755,
+              "max_nm": 9.999917395527799
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.005023913804229233,
+          "max_foot_shift_m": 0.004439614365515794,
+          "max_friction_use": 0.49576221293597644,
+          "min_foot_normal_force_n": 29.829789764492,
+          "release_hold_s": 7.049000000000003,
+          "post_release_observation_s": 11.549000000000003
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.856354090315051e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.0015659796316549936,
+          "max_station_attitude_error_deg": 0.7096462883544526,
+          "max_linear_speed_mps": 0.0002992226906743007,
+          "max_angular_speed_radps": 0.0005656435805698482,
+          "min_each_prescribed_tread_load_n": 95.81447593771668,
+          "max_open_angle_error_deg": 0.0006660667720410629,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984415030438645,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": null,
+      "trial_identity": {
+        "case_id": "confirmation-13",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-13",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-13",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "e008f0f1bedf1ff66a6ac3ef887b742e2c05fb810a721d781f178553584b4b88",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.047,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-13",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "b597997a3d8f98c6807c9d14ec736efd51502287db462400d27d3e90cfda4004",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 3.381,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-13",
+      "candidate_id": "no_intervention",
+      "state_sha256": "76a731fa9e4d70edadc4a81c638b3c02e70c284ccd510a74e2bac0341c28f1de",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.053,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-13",
+      "candidate_id": "phase_25",
+      "state_sha256": "bade2ad03740c48d257070fedf7166aafa9e75f575b9e1b73b0448adb6554616",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.036,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-13",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "45751816121d937eb1987ca4d119861916e2d6387f7ef36ff38d85c8a976dc8a",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 2.658,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "success",
+      "strict_success": true,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "9e8188eff0d465c8383c2eac396bb7ba46dca9e2d80ff8c49b8c6dcf8b267313",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.5414232700334665,
+        "maximum_material_slip_m": {
+          "FL": 0.009773656341234399,
+          "FR": 0.007725339865030859,
+          "RL": 0.00767966120061588,
+          "RR": 0.006502524455720929
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.06617210072638,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.000083524849433,
+              "max_nm": 10.00019722721398
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.000054295200426,
+              "max_nm": 10.000320209625588
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.000025034180208,
+              "max_nm": 10.00024716584976
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.000011889475335,
+              "max_nm": 10.000230031688988
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.999968927534301,
+              "max_nm": 10.000230537661267
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.999941000146537,
+              "max_nm": 10.000129112997747
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.999939990786647,
+              "max_nm": 10.000140155226124
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.999720828485868,
+              "max_nm": 10.00031733002303
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.999652765682198,
+              "max_nm": 10.000179294998564
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.999625124755,
+              "max_nm": 10.000145054621267
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.999818517185565,
+              "max_nm": 10.000050972417691
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.99972326781713,
+              "max_nm": 10.00004933481454
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.999668531272015,
+              "max_nm": 10.000088089557414
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.999680343943428,
+              "max_nm": 10.000045853126675
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.999761161316552,
+              "max_nm": 9.99994245139764
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.999701405647832,
+              "max_nm": 9.999917383906498
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.0050236830327558425,
+          "max_foot_shift_m": 0.004439600185310703,
+          "max_friction_use": 0.49571406455916317,
+          "min_foot_normal_force_n": 29.82483207320571,
+          "release_hold_s": 7.049999999999994,
+          "post_release_observation_s": 11.549999999999994
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.855117867020536e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.0015642097001081275,
+          "max_station_attitude_error_deg": 0.7094337314295458,
+          "max_linear_speed_mps": 0.00029921595654191005,
+          "max_angular_speed_radps": 0.0005656166493164866,
+          "min_each_prescribed_tread_load_n": 95.80397584677875,
+          "max_open_angle_error_deg": 0.0006659261576658082,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984403343456982,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": null,
+      "trial_identity": {
+        "case_id": "confirmation-14",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-14",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-14",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "2e29365e59b80cabd4877285196b109ca4e3433b6214eb662a4b32af5d8565db",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.052,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-14",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "198917a97d3b4b5784e7c82f9131410a9a3de9e5b7bbf93dcb2811222313183c",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 5.558,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-14",
+      "candidate_id": "no_intervention",
+      "state_sha256": "23b370f849e82738c21bf0e45b0b8f62e30c5c7b95dc372944c4ef525ba97511",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.058,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-14",
+      "candidate_id": "phase_25",
+      "state_sha256": "bbbf8cb0a4cc92a2d4e474f9d6dfea9d78bf78b27c96ca290d86f623c3ffb325",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.038,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-14",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "45049df800cccad0f00cc16fa6d7d70cd5c5fcbbf477820d2a83d7c988c137fe",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 2.24,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "success",
+      "strict_success": true,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "52b09dcd1d66a6cc227ea6e3fae21a75a4a216c881a6f5631ea6c8ca7e50df6c",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.5414031868724039,
+        "maximum_material_slip_m": {
+          "FL": 0.009773614393650435,
+          "FR": 0.007725483293813008,
+          "RL": 0.0076795351189768175,
+          "RR": 0.0065024379371523885
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.06617276442081,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.00008352803581,
+              "max_nm": 10.000197224650353
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.000054301324438,
+              "max_nm": 10.000320225486231
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.00002522041066,
+              "max_nm": 10.000247092854785
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.000011835232664,
+              "max_nm": 10.000229963574617
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.999968925895551,
+              "max_nm": 10.000230381977472
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.999940998099422,
+              "max_nm": 10.000129107500248
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.999939989857678,
+              "max_nm": 10.00014015805312
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.999721089238632,
+              "max_nm": 10.000317269410543
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.999652771618877,
+              "max_nm": 10.000179270524578
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.999625156716213,
+              "max_nm": 10.00014505393717
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.99981949753071,
+              "max_nm": 10.000050972964514
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.99972328380246,
+              "max_nm": 10.000049325277894
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.999668542229392,
+              "max_nm": 10.000088075591995
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.999680351189367,
+              "max_nm": 10.000045850075669
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.999761816312974,
+              "max_nm": 9.99994144241845
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.999701408066286,
+              "max_nm": 9.99991738545068
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.005023715980142285,
+          "max_foot_shift_m": 0.004439602804691077,
+          "max_friction_use": 0.49571983704634776,
+          "min_foot_normal_force_n": 29.82558266708203,
+          "release_hold_s": 7.049999999999994,
+          "post_release_observation_s": 11.549999999999994
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.85423028022743e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.0015644958004888605,
+          "max_station_attitude_error_deg": 0.7094655788936663,
+          "max_linear_speed_mps": 0.0002992171274543574,
+          "max_angular_speed_radps": 0.0005656206324373822,
+          "min_each_prescribed_tread_load_n": 95.80547084515196,
+          "max_open_angle_error_deg": 0.0006658251993485464,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984405020043477,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": null,
+      "trial_identity": {
+        "case_id": "confirmation-15",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-15",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-15",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "c1dd070d7f6e5fbb714a22b5c7e5283637c361dc1f4afe424b47c0eecf75b134",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.053,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-15",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "f92d41f2db8da90f67124b25d5ecf6eefa9d56d56b46b47c161801a697779095",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 4.232,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-15",
+      "candidate_id": "no_intervention",
+      "state_sha256": "f621995d66ada00cadae5c7fb35eda2aa51e8b0d25b759d69cf96821a712f71b",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.059,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-15",
+      "candidate_id": "phase_25",
+      "state_sha256": "3a7e6991792762984c127253fc8392857abb4658c6c3e0ea1b60df456a79f229",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.038,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-15",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "b04378bb8c5b88087da41131faf5f5a132be946244412d17a0758cbbebc26560",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 2.801,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "schema": "rbq_articulated_verdict_v1",
+      "outcome": "physical_failed",
+      "strict_success": false,
+      "complete_horizon": true,
+      "physics_steps": 127750,
+      "state_sha256": "7b6d05632716c8975ccd782989c04542cd6498281d5ef2e9e8ef399e273f554d",
+      "reference_sha256": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+      "scene_sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56",
+      "walk_sha256": "0cc3e6a9e4dd1611dbc95a566e832c367c65d87846c26af80803a9152f7f7dac",
+      "controller": {
+        "qp_applicable": false,
+        "qp_metrics": null
+      },
+      "continuity_audit": {
+        "state_samples_are_post_step_prefix": true,
+        "state_write_counters": "runner_contract_not_encoded_in_state_file",
+        "legacy_valve_judge_qp_compatibility_value": 0,
+        "qp_metrics_are_publicly_reported_as": "not_applicable"
+      },
+      "physical_metrics": {
+        "maximum_requested_torque_ratio": 0.5415700312995052,
+        "maximum_material_slip_m": {
+          "FL": 0.00977394786527777,
+          "FR": 0.016638292517741272,
+          "RL": 0.00851636633328678,
+          "RR": 0.006503169620499859
+        },
+        "unexpected_contacts_n": {},
+        "fell": false
+      },
+      "walking": {
+        "landings_evaluated": 18,
+        "verified": false,
+        "first_failure": {
+          "stage": "prewalk",
+          "time_s": 19.055,
+          "metric": "stance_slip_m",
+          "measured": 0.010178458054540809,
+          "limit": "<= 0.01"
+        },
+        "failures": [
+          {
+            "stage": "prewalk",
+            "time_s": 19.055,
+            "metric": "stance_slip_m",
+            "measured": 0.010178458054540809,
+            "limit": "<= 0.01"
+          }
+        ],
+        "scheduled_landings": 18
+      },
+      "valve": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "max_record_step_s": 0.0010000000000047748,
+          "total_saturated_steps": 0,
+          "contact_hold_s": 0.7980000000000125,
+          "max_angle_deg": 90.06616792442743,
+          "hold_s": 4.9999999999999964,
+          "resistance_limit_nm": 9.98,
+          "loaded_angle_bins": 16,
+          "pad_closing_torque_by_bin_nm": [
+            {
+              "angle_deg": [
+                5.0,
+                10.0
+              ],
+              "min_nm": 10.000083539605273,
+              "max_nm": 10.000197245887017
+            },
+            {
+              "angle_deg": [
+                10.0,
+                15.0
+              ],
+              "min_nm": 10.000054250801977,
+              "max_nm": 10.00032009497258
+            },
+            {
+              "angle_deg": [
+                15.0,
+                20.0
+              ],
+              "min_nm": 10.000023655876742,
+              "max_nm": 10.00024769646538
+            },
+            {
+              "angle_deg": [
+                20.0,
+                25.0
+              ],
+              "min_nm": 10.000012284467598,
+              "max_nm": 10.000230526866224
+            },
+            {
+              "angle_deg": [
+                25.0,
+                30.0
+              ],
+              "min_nm": 9.999968939478714,
+              "max_nm": 10.000231670119883
+            },
+            {
+              "angle_deg": [
+                30.0,
+                35.0
+              ],
+              "min_nm": 9.99994101490494,
+              "max_nm": 10.000129155824077
+            },
+            {
+              "angle_deg": [
+                35.0,
+                40.0
+              ],
+              "min_nm": 9.999939997322171,
+              "max_nm": 10.000140135081889
+            },
+            {
+              "angle_deg": [
+                40.0,
+                45.0
+              ],
+              "min_nm": 9.999718940070096,
+              "max_nm": 10.000317746391456
+            },
+            {
+              "angle_deg": [
+                45.0,
+                50.0
+              ],
+              "min_nm": 9.99965272371105,
+              "max_nm": 10.000179470477761
+            },
+            {
+              "angle_deg": [
+                50.0,
+                55.0
+              ],
+              "min_nm": 9.99962489315629,
+              "max_nm": 10.000145058925284
+            },
+            {
+              "angle_deg": [
+                55.0,
+                60.0
+              ],
+              "min_nm": 9.999819581801496,
+              "max_nm": 10.000050969488518
+            },
+            {
+              "angle_deg": [
+                60.0,
+                65.0
+              ],
+              "min_nm": 9.999723152138273,
+              "max_nm": 10.00004940432273
+            },
+            {
+              "angle_deg": [
+                65.0,
+                70.0
+              ],
+              "min_nm": 9.999668452228033,
+              "max_nm": 10.00008819111606
+            },
+            {
+              "angle_deg": [
+                70.0,
+                75.0
+              ],
+              "min_nm": 9.999680291716473,
+              "max_nm": 10.000045875060032
+            },
+            {
+              "angle_deg": [
+                75.0,
+                80.0
+              ],
+              "min_nm": 9.999756189767957,
+              "max_nm": 9.999931757600478
+            },
+            {
+              "angle_deg": [
+                80.0,
+                85.0
+              ],
+              "min_nm": 9.999701387483626,
+              "max_nm": 9.999917372726612
+            }
+          ],
+          "max_pad_loss_s": 0.0,
+          "max_base_shift_m": 0.005023447649128577,
+          "max_foot_shift_m": 0.00443958140698851,
+          "max_friction_use": 0.49567262456963535,
+          "min_foot_normal_force_n": 29.819476135242674,
+          "release_hold_s": 7.049999999999994,
+          "post_release_observation_s": 11.549999999999994
+        }
+      },
+      "station": {
+        "verified": true,
+        "first_failure": null,
+        "failures": [],
+        "measurements": {
+          "station_s": 5.0,
+          "closed_start_error_deg": 7.016709298534876e-15,
+          "open_finish_error_deg": 5.85468633466228e-05,
+          "scheduled_landings": 18,
+          "evaluated_landings": 18,
+          "max_base_position_error_m": 0.0015621359235210945,
+          "max_station_attitude_error_deg": 0.7092112011658415,
+          "max_linear_speed_mps": 0.0002992070663855305,
+          "max_angular_speed_radps": 0.0005655863617996149,
+          "min_each_prescribed_tread_load_n": 95.79313941376088,
+          "max_open_angle_error_deg": 0.0006658770728904528,
+          "gripper_open_during_station": true,
+          "min_pad_clearance_m": 0.5984390535641593,
+          "max_pad_contact_n": 0.0,
+          "max_nonpad_contact_n": 0.0
+        }
+      },
+      "first_failure": {
+        "stage": "prewalk",
+        "time_s": 19.055,
+        "metric": "stance_slip_m",
+        "measured": 0.010178458054540809,
+        "limit": "<= 0.01"
+      },
+      "trial_identity": {
+        "case_id": "confirmation-16",
+        "mode": "contact_gated_reference"
+      },
+      "case_id": "confirmation-16",
+      "candidate_id": "contact_gated_reference"
+    },
+    {
+      "case_id": "confirmation-16",
+      "candidate_id": "edge_slow_rule",
+      "state_sha256": "21d1e547dc7642df4d8126d2cfeabb81c3eda7bde9f3fd5f4b65a089f43965dd",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.05,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-16",
+      "candidate_id": "joint_reference_pd",
+      "state_sha256": "6366f21b8a7038e4f66fa86e8f45efda4bbdbf19c52d0984b3425fb3c9faf877",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 4.663,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-16",
+      "candidate_id": "no_intervention",
+      "state_sha256": "6b5daaf295d331c2c3754e7e3706c5f7874d7b35e1e550f82fcc656de2d7ad2a",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.055,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-16",
+      "candidate_id": "phase_25",
+      "state_sha256": "800a765f7e1ef5632862ab7aac21353ef887b7415d0669d19eb4e020437f1b5f",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 0.037,
+      "maximum_angle_deg": 0.0
+    },
+    {
+      "case_id": "confirmation-16",
+      "candidate_id": "teacher_open_loop",
+      "state_sha256": "5b02b9f05eb7c93df1f1ffeb8e511c159a74fa883b5c85c00d7bb28ff1f8011d",
+      "strict_success": false,
+      "complete_horizon": false,
+      "outcome": "early_termination",
+      "first_failure": "terrain_body_contact",
+      "simulated_s": 2.147,
+      "maximum_angle_deg": 0.0
+    }
+  ]
+}

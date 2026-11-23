@@ -1,0 +1,391 @@
+{
+  "outcome": "dynamic_failed",
+  "scope": "independent cold-start RR-before-RL segment; not reached from the floor",
+  "entry_point": "python tools/stair_valve_swing_order.py --execute-track evidence\\stair-mission-20261121\\bypass\\swing-order\\static-result.track.npz --execute-out evidence\\stair-mission-20261121\\bypass\\swing-order\\dynamic-result.json",
+  "track_contract": {
+    "keys": [
+      "time",
+      "qpos",
+      "target",
+      "torque",
+      "stance",
+      "feet",
+      "wall",
+      "cap",
+      "tip"
+    ],
+    "samples": 526
+  },
+  "input_audit": {
+    "track_sha256_at_start": "117424431a4618bfdd20a9df096ac8ecb6def54df9c989b99709a792adfccf98",
+    "track_sha256_at_end": "117424431a4618bfdd20a9df096ac8ecb6def54df9c989b99709a792adfccf98",
+    "unchanged_during_run": true
+  },
+  "provenance": {
+    "source_sha256_lf": {
+      "configs/assets.lock.json": "f8f259306ef584fd4397ea71a9c2228132583bacb29a231e65df1dadb07aa3a1",
+      "configs/d1_parameters.json": "19a144b06a4b9936f3d516166ab7ae68cacd6efb4b17b4873ff221619ff55ab8",
+      "evidence/t1-stair-ascent-20261120/target-round-trip-geometry.json": "38f5f74a7c36dcf17d6f5466b1d407785b9cb6835f87f1992478bad93df1480a",
+      "evidence/t1-stair-ascent-20261120/target-round-trip-plan.json": "6f98b509bb28375dffac36b6589b185ea9032a0dafaa8ce7044feeb73ed5a56f",
+      "evidence/t1-stair-posture-20261120/front-pair.json": "7eb8da1890b629862925390bf2d01e782e13663930f19a719271f013abd8b27c",
+      "evidence/t3-valve-20261120/fixed-body-candidates.json": "76b31a10b1faf1c6ae35889d35f8cb40614c2e97dac83f513c8adab2ebc83791",
+      "pyproject.toml": "efafd00dbcb36cbb8dd32b6426341663e5bd85c37b21aac7e4fe4e23da0d7753",
+      "src/go2_wall/grasp_motion.py": "08071870d3097fec5e9b466c8ced0011489af137732fefcb3fb4eb64900cff86",
+      "src/go2_wall/gripper_control.py": "f753eca35d2a0d0902863503571f7d54b5a6e08ef8a9d015e85bc0de04be1057",
+      "src/go2_wall/hold.py": "b8a58688721cd70f47f262fe1a2c48e1d65523779ed6b3d74bd9f8abdf2b9fd6",
+      "src/go2_wall/pose_search.py": "f88f4e4c632e7ee70f840525ccfdf37996db4281f0a732bd5167402fd70a1cbf",
+      "src/go2_wall/robot.py": "8c4bf030f05ee4fd7e05a9d96049eacf8d6a7d4589c1f181107c84101131ebb4",
+      "src/go2_wall/stair_valve.py": "c032a75c4c0c8d356d205dee7490a2a91487890c5f36704a6d468332791c53d3",
+      "src/go2_wall/stairs.py": "a0dff6cef937dc81a1f3ac126382dd9ec0bd243111c5e825cd5017d3de35696f",
+      "src/go2_wall/statics.py": "30a9b1da0e6b057af33b4012d43487907296d5412e5447afd61e7b9f5e070841",
+      "src/go2_wall/transition.py": "b57d7ee17c39c1d2f72976b81106d237b5bdf9dc52fd613ce5b3c49c1d5ddf69",
+      "tools/probe_stair_transfer.py": "a9208f54d5df499e158bb3f92ed36457cb8bd833297cf7fdcfe4f98639d6a39f",
+      "tools/replay_stair_entry.py": "8bd0a7e2a5f61b7415b7fe35d4bef59348f5f6bf4e0ba484a36f969e9d92b80c",
+      "tools/replay_stair_sequence.py": "b1f8584915aeb189c825d9a95c16c20551e5af50211c8372a65550eeb4394e24",
+      "tools/replay_stair_transfer.py": "d4e0fe0554fffaff751791ccc47353c65683f5e2376af4e17261b0917f789514",
+      "tools/stair_bypass_inputs.py": "c367fe6c094b12d4c550e1130bfebaff3815f3d2430fe4384d9a14c4c8134981",
+      "tools/stair_mission_route.py": "eaabf5588b9957f00fb990c033327f95edc755442e9d01bd2872b6c824eff8e7",
+      "tools/stair_valve_swing_order.py": "2abf928ff9ccf1df6f498a0e443b9702d4e65df2ff7ef4c7ab56994bd102b76c"
+    },
+    "rbq_asset_commit": "c7b80ba49f9a79f983cb977e2726cb2246701fcf",
+    "rbq_asset_files": {
+      "resources/meshes/rb1/Link0.stl": "45e637f4a07d34238c401682389316b23b2e59c01a492534700c635388928e86",
+      "resources/meshes/rb1/Link1.stl": "581e578df79d66f03cf2587f551dcf92c4843f05ac20a0f44199988e467b3108",
+      "resources/meshes/rb1/Link2.stl": "2c2d632ab45575b91710c7a94dc47910319eee940d8262859546126ae1b937a9",
+      "resources/meshes/rb1/Link3.stl": "c5e21860caa8e6cd6d853fe7cdb7e8e6d85ba89443e2e63165fcc5e23c6d3559",
+      "resources/meshes/rb1/Link4.stl": "d0a6191685e902b21b32d64fc12ba4a14b97c05b688a350317bc9ad7d9bfb130",
+      "resources/meshes/rb1/Link5.stl": "47d90e2501197dd80083be31363b54624c33d81878e015e9c6b38e17e41910a6",
+      "resources/meshes/rb1/Link6.stl": "ee45c66ce6d93bb439eb26e473bb8e1b7a2252b321e9a101a85ddcd060f8e2f4",
+      "resources/meshes/rb1/RB1_Handcam.stl": "f414e54ef898f4f3510269c4e7dfadc5a094616234e8a7a0f5742121840a814d",
+      "resources/meshes/rb1/RB1_Palm.stl": "6e6a1a93e3500d7f2150b29156b03c2bf2620bff9063cd89fe021cc61c2cbb1d",
+      "resources/meshes/rb1/RB1_finger_lower.stl": "8d3219788aa6db0c7ac271f063aa87fb2186b189dd1a1c166858fd0c8d2e51de",
+      "resources/meshes/rb1/RB1_finger_upper.stl": "f0c6967aa54b2d2aa8a91bb7c11bb2524847201d3fccac91f16470ba3a9de4cf",
+      "resources/meshes/rbq/calf.obj": "c690fa922cef7734c7649f09f6a040035353f38873a9dda874fdd010928517e9",
+      "resources/meshes/rbq/hip2.obj": "0c260eaf543767ebc60da2082bd1027c27377244eb93d440a7be89d447d59c1a",
+      "resources/meshes/rbq/hip3.obj": "7603867d4b96061301f226637ebbbad31c54fad9c799e8b66b01b063e50b5945",
+      "resources/meshes/rbq/thigh.obj": "575533eaa7dbee1779a67b6ec292e5aa6b158a1b7dd002cf3e1ecd082e0aeb8f",
+      "resources/meshes/rbq/trunk.obj": "f11a4ff2065b7483112400456df8d7c9210fb7279c150f62bf0acdb8d2ac2891",
+      "resources/model/README.md": "5685135a54f76044fe7e28cf217fa45de70edc6689fb948924d9d932a90e0fdc",
+      "resources/model/rbq10_with_rb1.xml": "fa01e1ff0df8575a60773efef9339f15ce710e7beb3d6dc4af7009238909f32a"
+    },
+    "runtime": {
+      "python": "3.14.0",
+      "mujoco": "4.0.0",
+      "numpy": "2.5.5",
+      "scipy": "1.18.1"
+    }
+  },
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "baseline_commit": "632fcc21a2c6f0ceed236cfe83cef5837736c791",
+  "executor_sources_changed_from_baseline": [
+    "tools/stair_valve_swing_order.py"
+  ],
+  "initial_conditions": {
+    "qpos": [
+      0.7066604588142261,
+      0.05129290843225272,
+      1.287443735920923,
+      0.9324625582993004,
+      0.019918891497411374,
+      -0.3568121747434406,
+      0.05293285450733179,
+      -0.12303771772095128,
+      1.6739733082469412,
+      -2.221189472233455,
+      -0.1247902547733764,
+      1.5952518241980227,
+      -2.2645861396659366,
+      -0.3409003107927906,
+      1.9323035682808762,
+      -1.9960900905061056,
+      -0.23259016656472892,
+      1.9939316132394578,
+      -2.1786347962059565,
+      0.0,
+      -1.4,
+      0.6,
+      0.0,
+      -2.967,
+      0.0,
+      0.04,
+      0.04,
+      1.5707963267948966
+    ],
+    "qvel": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "hinge_initialized_once_rad": 1.5707963267948966,
+    "runtime_state_overwrite": false,
+    "open_hand_physical_drive": true,
+    "finger_joint_qpos": {
+      "RB1_finger_upper_joint": 0.04,
+      "RB1_finger_lower_joint": 0.04
+    },
+    "finger_aperture_m": 0.08,
+    "settling_hold_s": 0.42000000000000004
+  },
+  "physics": {
+    "model_timestep_s": 0.001,
+    "controller": "transition.execute force mode; measured-state QP + PD",
+    "physics_overrides": {},
+    "actuation_period_s": 0.005,
+    "finger_actuator_max_abs_ctrl_n": 0.9386099427731078,
+    "physics_clock_max_error_s": 1.0054179711005418e-12
+  },
+  "finger_drive": {
+    "target_per_finger_m": 0.04,
+    "upper_slide_range_m": [
+      0.03981262046493466,
+      0.03999994308561664
+    ],
+    "lower_slide_range_m": [
+      0.039991846132823305,
+      0.04002993008050817
+    ],
+    "aperture_range_m": [
+      0.07983260357076552,
+      0.07999998997438645
+    ],
+    "minimum_aperture_criterion_m": 0.07975,
+    "minimum_aperture_criterion_met": true,
+    "watch_aperture_matches_qpos": true,
+    "requested_force_range_n": [
+      0.0,
+      0.9386099427731078
+    ],
+    "applied_ctrl_range_n": [
+      0.0,
+      0.9386099427731078
+    ],
+    "actuator_force_range_n": [
+      0.0,
+      0.9386099427731078
+    ],
+    "upper_velocity_range_mps": [
+      -0.001070170361168967,
+      0.0005248308312986774
+    ],
+    "audit": {
+      "physics_steps": 10500,
+      "finger_clipped_steps": 0,
+      "qpos_write_count_after_start": 0,
+      "qvel_write_count_after_start": 0,
+      "act_write_count_after_start": 0,
+      "mocap_write_count_after_start": 0,
+      "state_reset_count": 0,
+      "max_qfrc_applied_n": 0.0,
+      "max_xfrc_applied_n": 0.0
+    }
+  },
+  "controller_metrics": {
+    "passed": false,
+    "fell": false,
+    "saturated_steps": 0,
+    "qp_failed_ticks": 164,
+    "qp_relaxed_ticks": 16,
+    "max_ratio": 0.8926504884753134,
+    "max_base_track_mm": 116.9229247021248,
+    "max_tilt_track_deg": 27.636825411335845,
+    "return_error_mm": 71.1186640720542,
+    "feet_down_at_end": false,
+    "max_stance_slip_mm": {
+      "FL": 45.745,
+      "FR": 81.264,
+      "RL": 269.763,
+      "RR": 722.117
+    },
+    "max_friction_use": {
+      "FL": 1.0,
+      "FR": 1.0,
+      "RL": 3.542,
+      "RR": 1.0
+    },
+    "unexpected_contacts_n": {
+      "base+world": 1034.3405923478342,
+      "RB1_Base_Yaw+valve": 292.1248436937186,
+      "RB1_Shoulder_Pitch+valve": 166.5039780699176,
+      "base+valve": 1140.7571449070947,
+      "FL_thigh+RB1_Shoulder_Pitch": 44.50167493657102,
+      "RR_calf+world": 797.7431021904914,
+      "RR_thigh+world": 1327.4756126530995,
+      "FR_calf+RB1_Shoulder_Pitch": 119.64234791076204,
+      "RL_calf+world": 553.1173353045434
+    },
+    "floor_mu": 0.6,
+    "wall_mu": 0.6,
+    "physics": {},
+    "gains_scale": 1.0,
+    "mode": "force",
+    "seconds": 10.5,
+    "gripper_audit": {
+      "physics_steps": 10500,
+      "finger_clipped_steps": 0,
+      "qpos_write_count_after_start": 0,
+      "qvel_write_count_after_start": 0,
+      "act_write_count_after_start": 0,
+      "mocap_write_count_after_start": 0,
+      "state_reset_count": 0,
+      "max_qfrc_applied_n": 0.0,
+      "max_xfrc_applied_n": 0.0
+    }
+  },
+  "support": {
+    "FL": {
+      "required_samples": 10500,
+      "samples_over_1n": 10456,
+      "minimum_required_normal_n": 0.0,
+      "end_normal_n": 91.48720169253802,
+      "surface_mismatch_samples": 0,
+      "terminal_xy_error_m": 0.036899191327580017
+    },
+    "FR": {
+      "required_samples": 10500,
+      "samples_over_1n": 10240,
+      "minimum_required_normal_n": 0.0,
+      "end_normal_n": 280.50310681167923,
+      "surface_mismatch_samples": 0,
+      "terminal_xy_error_m": 0.06765905142413234
+    },
+    "RL": {
+      "required_samples": 9280,
+      "samples_over_1n": 8449,
+      "minimum_required_normal_n": 0.0,
+      "end_normal_n": 0.0,
+      "surface_mismatch_samples": 149,
+      "terminal_xy_error_m": 0.319856102340406
+    },
+    "RR": {
+      "required_samples": 9280,
+      "samples_over_1n": 8131,
+      "minimum_required_normal_n": 0.0,
+      "end_normal_n": 0.0,
+      "surface_mismatch_samples": 0,
+      "terminal_xy_error_m": 0.6999698653010994
+    }
+  },
+  "support_failure_samples": 2284,
+  "surface_failure_samples": 149,
+  "settling": {
+    "end_s": 0.42000000000000004,
+    "maximum_base_displacement_m": 0.0010809809071446873,
+    "minimum_foot_normal_n": {
+      "FL": 119.49299854866857,
+      "FR": 81.28786441416354,
+      "RL": 137.31819979442773,
+      "RR": 110.25591848208197
+    }
+  },
+  "failure_timeline": {
+    "first_required_support_below_1n": {
+      "time_s": 3.52,
+      "sample": 3520,
+      "leg": "RR",
+      "normal_force_n": 0.0
+    },
+    "first_surface_mismatch": {
+      "time_s": 9.896,
+      "sample": 9896,
+      "leg": "RL",
+      "actual_geom": "stringerL",
+      "expected_geom": "tread5"
+    },
+    "first_base_tracking_over_30mm": {
+      "time_s": 6.972,
+      "sample": 6972,
+      "error_m": 0.03010889553969841
+    },
+    "first_lever_contact": {
+      "time_s": 7.332,
+      "sample": 7332,
+      "force_n": 101.41916864313791
+    },
+    "first_qp_failure": {
+      "time_s": 8.16,
+      "sample": 8160
+    },
+    "first_hinge_below_89deg": {
+      "time_s": 9.198,
+      "sample": 9198
+    }
+  },
+  "hinge": {
+    "angle_range_deg": [
+      62.1522261464871,
+      90.01058394414981
+    ],
+    "maximum_speed_rad_s": 3.4739356253657463
+  },
+  "lever_contacts": {
+    "samples": 1993,
+    "maximum_force_n": 1140.7571449070947
+  },
+  "terminal_max_foot_xy_error_m": 0.6999698653010994,
+  "terminal_actual_surface_geom": {
+    "FL": "tread6",
+    "FR": "tread6",
+    "RL": null,
+    "RR": null
+  },
+  "hashes_sha256": {
+    "evidence/stair-mission-20261121/bypass/swing-order/static-result.track.npz": "117424431a4618bfdd20a9df096ac8ecb6def54df9c989b99709a792adfccf98",
+    "tools/stair_valve_swing_order.py": "2abf928ff9ccf1df6f498a0e443b9702d4e65df2ff7ef4c7ab56994bd102b76c",
+    "src/go2_wall/transition.py": "eaccc8fe9fb05a70f60358784655ab48e7c4c4021f0d06d102c57d5e053a2904",
+    "src/go2_wall/stair_valve.py": "c032a75c4c0c8d356d205dee7490a2a91487890c5f36704a6d468332791c53d3",
+    "evidence/t3-valve-20261120/fixed-body-candidates.json": "71e54a28215658d3d2472e4fe0d5505563160f8bd62c6abe62c37f74e5046883"
+  },
+  "limitation": "The segment starts from the accepted 112.02 s bypass state with zero velocity; it does not prove physical reachability from the floor to 112.02 s.",
+  "raw_log": {
+    "path": "evidence\\stair-mission-20261121\\bypass\\swing-order\\dynamic-result.raw.npz",
+    "sha256": "5a1843010b243a8d368fafc6a979abf2da685fcdb0008a0f1635f67764ef8a10",
+    "samples": 10500,
+    "keys": [
+      "time",
+      "torque",
+      "force",
+      "base",
+      "feet",
+      "extra",
+      "qpos",
+      "qvel",
+      "ctrl",
+      "attempt",
+      "commanded",
+      "physics_time_s",
+      "requested_finger_force_n",
+      "unexpected_contact_n",
+      "robot_torque_requested_nm",
+      "base_track_m",
+      "stance_slip_m",
+      "fell"
+    ]
+  }
+}

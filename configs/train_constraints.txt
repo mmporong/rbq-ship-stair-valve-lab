@@ -1,0 +1,7 @@
+# Constraints for unitree_rl_mjlab (commit 1425b15) in WSL.
+# Install: uv pip install -p .venv/bin/python -e . -c <this file> scipy
+# mjlab 1.2.0 and mujoco-warp 3.5.0 only set lower bounds, so a fresh install
+# pulls MuJoCo 4.0 and warp-lang 1.19, and both fail at startup.
+# Versions follow uv.lock of mjlab v1.2.0 (commit 5af32e3).
+mujoco>=3.5,<3.6
+warp-lang==1.12.0

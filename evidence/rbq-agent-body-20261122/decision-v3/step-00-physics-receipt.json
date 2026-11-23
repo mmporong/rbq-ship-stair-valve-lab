@@ -1,0 +1,50 @@
+{
+  "schema": "rbq_articulated_candidate_receipt_v1",
+  "candidate_id": "contact_gated_reference",
+  "physics_source_bindings": {
+    "scene": {
+      "path": "C:/Users/LIMMM/go2-wall-reach-lab/.omx/stair-open-20261122/open-final-a/scene.json",
+      "sha256": "7de4ef3a9723d9b6b26817edde992caee5534f61bcc9ec842710b6d925624b56"
+    },
+    "reference": {
+      "path": "C:/Users/LIMMM/go2-wall-reach-lab/.omx/rbq-agent-body-dev/expert-servo.npz",
+      "sha256": "eb4277b6bf9acb727eef323dbd3e40cbc20455d8e6633b31c38c3b5cb86d5773"
+    },
+    "control_source": {
+      "path": "C:/Users/LIMMM/go2-wall-reach-lab/tools/rbq_articulated_control.py",
+      "sha256": "af752d2fe2bd424a3722a693a06b67c4e1ddf0cbec1487a2ed9084dcbf80f1a4"
+    },
+    "simulation_source": {
+      "path": "C:/Users/LIMMM/go2-wall-reach-lab/tools/rbq_articulated_study.py",
+      "sha256": "780aa8467d1d46640dde9b4a3b80c87f45bc0077edb68a2e9f5f9075d3be3d1f"
+    }
+  },
+  "development_source": {
+    "path": "C:/Users/LIMMM/go2-wall-reach-lab/evidence/rbq-agent-body-20261122/articulated/development.json",
+    "sha256": "a2b5d210f04eb7561a78f101730dd481047930e35004b0015adc3c810c11dbbd"
+  },
+  "receipt": {
+    "request_id": "rbq_dev_contact_gated_reference",
+    "probe": "go2_wall_articulated_candidate_trial",
+    "outcome": "normal",
+    "exit_code": 0,
+    "over_budget": false,
+    "measurement": {
+      "candidate_id": "contact_gated_reference",
+      "case_count": 3,
+      "work_stance_success_count": 3,
+      "body_collision_count": 0,
+      "mean_highest_supported_tread": 5.0,
+      "valve_terminal_indicator_count": 3,
+      "trial_state_set_sha256": "f1aa5f25bc03ae41a7934a10a7a4dd47811b353fd3600b57e71ff12c6a742ae3",
+      "adoption_threshold_met": true,
+      "baseline_body_collision_count": 3
+    },
+    "trial_receipt_sha256": "a495072b92b78e20e4ff9d28a182710e9243a484b44a410bedfb95765c01afd6"
+  },
+  "strict_full_mission": {
+    "used_for_adoption": false,
+    "valve_terminal_indicator_count": 3,
+    "independent_verdict_required": true
+  }
+}

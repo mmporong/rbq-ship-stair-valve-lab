@@ -1,0 +1,35 @@
+{
+  "case_id": "holdout-01",
+  "reconstructed_raw_demo_sha256": "362cbd836802d2f29b8febd2917a4ba987d9990bea4e02ec32f84f7978bf96b9",
+  "reference_sha256": "eb4277b6bf9acb727eef323dbd3e40cbc20455d8e6633b31c38c3b5cb86d5773",
+  "frozen_reference_match": true,
+  "judge_physical_arrays_bitwise_equal": [
+    "time_s",
+    "stage",
+    "qpos",
+    "stance"
+  ],
+  "judge_cache_additional_provenance_fields": [
+    "nominal_sha256",
+    "scene_sha256",
+    "walk_sha256"
+  ],
+  "judge_archive_sha256": {
+    "original": "8e26fb9060a8d3b9fa0500767d478621a664dd4b3c035848a35200b93920ae15",
+    "regenerated": "ba0e22a664e74cae8db66ce6b4650f2320907e64ce79116965598b19baa6c873"
+  },
+  "replay_modes": {
+    "contact_gated_reference": {
+      "state_sha256": "8c255a385d9502eb8a9f4ef77090603a1696d37408a6bae5b0f997556ca72f40",
+      "all_trial_fields_equal": true,
+      "all_physical_verdict_fields_equal": true,
+      "strict_success": true
+    },
+    "no_intervention": {
+      "state_sha256": "3cbf4c47a9d123701d2f1d5a4ce72f125e06b4a0d0cbc132784ef1d35ba6c0ec",
+      "all_trial_fields_equal": true,
+      "all_physical_verdict_fields_equal": true,
+      "strict_success": false
+    }
+  }
+}
